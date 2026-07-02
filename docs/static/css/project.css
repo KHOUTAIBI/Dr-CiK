@@ -463,6 +463,6 @@ header#top .figure-cap { color: #93a7b0; }
 .site-footer a:hover { color: var(--accent-dark); }
 
 /* ServiceNow marks */
-.hero-mark { display: block; margin: 0 auto 22px; width: 128px; height: 128px; }
+.hero-mark { display: block; margin: 0 auto 22px; width: 80px; height: 80px; }
 .foot-brand { display: inline-flex; align-items: center; gap: 12px; }
 .foot-logo { height: 22px; width: auto; }
