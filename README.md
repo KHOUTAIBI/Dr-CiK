@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://servicenow.github.io/Dr-CiK/">
-    <img src="docs/static/assets/dr-cik-banner.svg?v=4" alt="Dr-CiK: A Testbed for Foresight-Driven Agents — a benchmark by ServiceNow Research" width="100%">
+    <img src="docs/static/assets/dr-cik-banner.svg?v=5" alt="Dr-CiK: A Testbed for Foresight-Driven Agents — a benchmark by ServiceNow Research" width="100%">
   </a>
 </p>
 
@@ -40,9 +40,8 @@ Each task provides:
 - ground-truth evidence (`gt_evidence`) for evaluation.
 
 An agent must retrieve the supporting documents, reject the distractors,
-extract the relevant evidence, and forecast the future values. Every task is
-built around a **4-hop** reasoning chain, and each task includes exactly five
-distractor documents per distractor subtype (`confounder`, `noisy`,
+extract the relevant evidence, and forecast the future values. Each task includes
+exactly five distractor documents per distractor subtype (`confounder`, `noisy`,
 `timeseries`, `profile`, `temporal`).
 
 ## Dataset at a glance
