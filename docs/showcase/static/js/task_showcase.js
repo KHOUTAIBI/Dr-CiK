@@ -124,7 +124,7 @@ function renderSeriesChart(container, payload, options = {}) {
   }
   if (splitPoint) {
     const splitX = xScale(splitPoint.x);
-    svg.push(`<rect x="${splitX}" y="${margin.top}" width="${Math.max(width - margin.right - splitX, 0)}" height="${height - margin.top - margin.bottom}" fill="rgba(21,103,96,0.05)"></rect>`);
+    svg.push(`<rect x="${splitX}" y="${margin.top}" width="${Math.max(width - margin.right - splitX, 0)}" height="${height - margin.top - margin.bottom}" fill="rgba(98,216,78,0.07)"></rect>`);
     svg.push(`<line x1="${splitX}" x2="${splitX}" y1="${margin.top}" y2="${height - margin.bottom}" stroke="rgba(23,24,25,0.22)" stroke-dasharray="5 5"></line>`);
   }
   if (history.length) {

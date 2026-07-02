@@ -5,25 +5,30 @@
    ============================================================ */
 
 :root {
-  --bg: #fbfbf9;
-  --bg-soft: #f4f3ee;
+  /* ServiceNow-aligned palette: deep navy + brand green */
+  --navy: #032d42;         /* ServiceNow dark */
+  --navy-2: #0a3a4c;
+  --green: #62d84e;        /* ServiceNow bright green (fills / CTAs) */
+  --green-hover: #4fc93d;
+  --bg: #f5f8f9;
+  --bg-soft: #e8eef1;
   --surface: #ffffff;
-  --ink: #15181a;
-  --ink-soft: #2c3133;
-  --muted: #6a7177;
-  --faint: #9aa1a6;
-  --line: rgba(21, 24, 26, 0.10);
-  --line-strong: rgba(21, 24, 26, 0.18);
-  --accent: #156760;
-  --accent-dark: #0f4a45;
-  --accent-soft: rgba(21, 103, 96, 0.08);
-  --gold: #9a7b3f;
-  --bad: #a14b3c;
+  --ink: #05252f;
+  --ink-soft: #33474f;
+  --muted: #5c6b72;
+  --faint: #97a5ab;
+  --line: rgba(3, 45, 66, 0.12);
+  --line-strong: rgba(3, 45, 66, 0.20);
+  --accent: #1f9d4d;       /* readable green for kickers/dots/tags */
+  --accent-dark: #0f6b34;  /* darker green for links/hover (AA) */
+  --accent-soft: rgba(98, 216, 78, 0.14);
+  --gold: #b08a34;
+  --bad: #c0553f;
   --max: 1280px;
   --content: 1280px;
   --radius: 16px;
   --radius-sm: 10px;
-  --shadow: 0 1px 2px rgba(21, 24, 26, 0.04), 0 18px 48px rgba(21, 24, 26, 0.06);
+  --shadow: 0 1px 2px rgba(3, 45, 66, 0.05), 0 18px 48px rgba(3, 45, 66, 0.09);
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
@@ -386,3 +391,67 @@ table.lb tbody tr:hover td { background: var(--accent-soft); }
   display: inline-block;
 }
 .lb-track-blurb { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+/* ============================================================
+   ServiceNow theme: dark navy nav + hero, brand-green highlights
+   ============================================================ */
+
+/* green CTA buttons everywhere (green fill, navy text) */
+.badge.solid { background: var(--green); border-color: var(--green); color: var(--navy); }
+.badge.solid:hover { background: var(--green-hover); border-color: var(--green-hover); color: var(--navy); }
+
+/* green highlights read on light bg with navy text */
+.best-pill,
+.trust-badge.verified,
+.proto-tag.proto-hidden80 { background: var(--green); color: var(--navy); }
+.bar-fill { background: var(--green); opacity: 0.75; }
+.fam-dot.fam-deep_research { background: var(--green); }
+.lb-track-title::before { background: var(--green); }
+.step .num { background: var(--accent-soft); color: var(--accent-dark); }
+
+/* dark navy top nav */
+.site-nav {
+  background: rgba(3, 45, 66, 0.94);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.brand { color: #ffffff; }
+.brand .dot { color: var(--green); }
+.nav-links a { color: #b7c6ce; }
+.nav-links a:hover { color: #ffffff; }
+.nav-links .nav-cta { color: var(--green); border-color: rgba(255, 255, 255, 0.24); }
+.nav-links .nav-cta:hover { background: var(--green); border-color: var(--green); color: var(--navy); }
+
+/* dark navy hero with brand gradient */
+header#top {
+  background: linear-gradient(157deg, #032d42 0%, #063341 52%, #0c3f39 100%);
+  color: #e8f1ee;
+}
+header#top .eyebrow { color: var(--green); }
+header#top h1 { color: #ffffff; }
+header#top .tagline { color: #c7d6dc; }
+header#top .tagline em { color: var(--green); font-style: italic; }
+header#top .authors, header#top .authors span { color: #c1d0d7; }
+header#top .authors a { color: #ffffff; border-bottom: 1px solid rgba(255, 255, 255, 0.30); }
+header#top .authors a:hover { color: var(--green); }
+header#top .authors .sup, header#top .affil .sup { color: var(--green); }
+header#top .affil { color: #93a7b0; }
+header#top .badge {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #e8f1ee;
+}
+header#top .badge:hover { border-color: var(--green); color: #ffffff; }
+header#top .badge.solid { background: var(--green); border-color: var(--green); color: var(--navy); }
+header#top .figure-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+header#top .figure-cap { color: #93a7b0; }
+
+/* citation block in brand navy */
+.cite-card { background: #04252f; }
+.cite-head { border-bottom-color: rgba(255, 255, 255, 0.10); }
+
+/* footer accent */
+.site-footer a:hover { color: var(--accent-dark); }
