@@ -110,8 +110,6 @@ scorer and post a **verified** entry — so the numbers are independently checke
 than self-reported. See **[`SUBMISSION.md`](SUBMISSION.md)** for the format and process,
 and the [live leaderboard](https://servicenow.github.io/Dr-CiK/#leaderboard).
 
-The live URL will be `https://<org>.github.io/Dr-CiK/`.
-
 ## Quickstart
 
 ### Load the full dataset from Hugging Face
