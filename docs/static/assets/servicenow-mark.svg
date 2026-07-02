@@ -1,0 +1,11 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ServiceNow">
+  <defs>
+    <mask id="sn-loop">
+      <rect width="64" height="64" fill="black"/>
+      <circle cx="32" cy="30" r="22" fill="white"/>
+      <circle cx="32" cy="30" r="11" fill="black"/>
+      <circle cx="32" cy="53" r="9" fill="black"/>
+    </mask>
+  </defs>
+  <rect width="64" height="64" fill="#62d84e" mask="url(#sn-loop)"/>
+</svg>

@@ -119,8 +119,8 @@
               ? `<span class="fam-tag"><span class="fam-dot fam-${r.family}"></span>${DATA.forecasting.families[r.family].label}</span>`
               : typeTag;
           const badge = isPaper
-            ? `<span class="trust-badge paper">paper</span>`
-            : `<span class="trust-badge verified">✓ verified</span>`;
+            ? ""
+            : ` <span class="trust-badge verified">✓ verified</span>`;
           const metricCells = metrics
             .map((m) => {
               const raw = r[m.key];
@@ -142,7 +142,7 @@
           const modelSub = isForecast && isPaper ? (TYPE_LABELS[r.type] || "") : "";
           return `<tr>
             <td class="left rank ${rankClass}">${i + 1}</td>
-            <td class="left"><div class="model-cell"><span class="model-name">${r.model} ${badge}</span>${
+            <td class="left"><div class="model-cell"><span class="model-name">${r.model}${badge}</span>${
               modelSub ? `<span class="model-sub">${modelSub}</span>` : ""
             }</div></td>
             <td class="left">${contextCell}</td>
