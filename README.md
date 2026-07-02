@@ -1,9 +1,17 @@
-# Dr-CiK: A Testbed for Foresight-Driven Agents
+<p align="center">
+  <a href="https://servicenow.github.io/Dr-CiK/">
+    <img src="docs/static/assets/dr-cik-banner.svg" alt="Dr-CiK: A Testbed for Foresight-Driven Agents — a benchmark by ServiceNow Research" width="100%">
+  </a>
+</p>
 
-[![Project page](https://img.shields.io/badge/Project%20Page-Dr--CiK-156760.svg)](https://servicenow.github.io/Dr-CiK/)
-[![Paper](https://img.shields.io/badge/arXiv-2605.27904-b31b1b.svg)](https://arxiv.org/abs/2605.27904)
-[![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ServiceNow%2FDr--CiK-yellow)](https://huggingface.co/datasets/ServiceNow/Dr-CiK)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+<p align="center">
+  <a href="https://servicenow.github.io/Dr-CiK/"><img src="https://img.shields.io/badge/Project_Page-Dr--CiK-62D84E?style=for-the-badge&labelColor=032D42"></a>
+  <a href="https://arxiv.org/abs/2605.27904"><img src="https://img.shields.io/badge/arXiv-2605.27904-b31b1b?style=for-the-badge&labelColor=032D42"></a>
+  <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Dataset-ServiceNow%2FDr--CiK-FFD21E?style=for-the-badge&labelColor=032D42"></a>
+  <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC_BY_4.0-62D84E?style=for-the-badge&labelColor=032D42"></a>
+</p>
+
+# Dr-CiK: A Testbed for Foresight-Driven Agents
 
 Dr-CiK is a benchmark for evaluating whether agents can **retrieve
 forecasting-relevant context from a noisy document corpus, filter out
@@ -17,10 +25,6 @@ forecasting benchmarks typically assume the supporting context is already
 provided. Dr-CiK removes that assumption: each task pairs a time series with a
 corpus of supporting **and** distractor documents, and the agent must find and
 use the right evidence on its own.
-
-> 🌐 **Project page:** <https://servicenow.github.io/Dr-CiK/>
-> 📄 **Paper:** <https://arxiv.org/abs/2605.27904>
-> 🤗 **Full dataset:** <https://huggingface.co/datasets/ServiceNow/Dr-CiK>
 
 ![Context-Aided Forecasting via Deep Research: an agent searches a document space, distills forecast-useful evidence, and forecasts from it while resisting distractors.](docs/static/assets/overview.png)
 
