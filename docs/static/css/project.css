@@ -119,11 +119,11 @@ h1, h2, h3, h4, p { margin-top: 0; }
 .hero .tagline em { font-family: var(--serif); font-style: italic; color: var(--accent-dark); }
 
 /* authors */
-.authors { max-width: 64ch; margin: 26px auto 6px; color: var(--ink-soft); font-size: 1.02rem; line-height: 2; }
+.authors { max-width: 68ch; margin: 26px auto 6px; color: var(--ink-soft); font-size: 1.18rem; line-height: 1.95; }
 .authors a { color: var(--ink-soft); border-bottom: 1px solid var(--line-strong); }
 .authors a:hover { color: var(--accent); }
 .authors .sup { color: var(--accent); font-size: 0.7em; vertical-align: super; font-weight: 700; }
-.affil { max-width: 60ch; margin: 10px auto 0; color: var(--muted); font-size: 0.92rem; }
+.affil { max-width: 64ch; margin: 12px auto 0; color: var(--muted); font-size: 1.05rem; }
 .affil .sup { color: var(--accent); font-weight: 700; }
 
 /* link badges */
@@ -160,7 +160,7 @@ h1, h2, h3, h4, p { margin-top: 0; }
 .figure-cap { margin: 14px 6px 2px; text-align: center; color: var(--muted); font-size: 0.92rem; }
 
 /* ---------- sections ---------- */
-.section { padding: 64px 0; border-top: 1px solid var(--line); }
+.section { padding: 56px 0; }
 .section-head { max-width: 70ch; margin: 0 auto 30px; text-align: center; }
 .section-kicker {
   display: block; margin-bottom: 12px;
@@ -349,7 +349,7 @@ table.lb tbody tr:hover td { background: var(--accent-soft); }
 .cite-card pre { margin: 0; padding: 18px; overflow-x: auto; font-family: var(--mono); font-size: 0.84rem; line-height: 1.6; color: #d7e2de; }
 
 /* ---------- footer ---------- */
-.site-footer { border-top: 1px solid var(--line); padding: 40px 0 60px; color: var(--muted); font-size: 0.9rem; }
+.site-footer { padding: 40px 0 60px; color: var(--muted); font-size: 0.9rem; }
 .site-footer .wrap { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: center; }
 .site-footer a { color: var(--muted); }
 .site-footer a:hover { color: var(--accent); }
@@ -462,7 +462,7 @@ header#top .figure-cap { color: #93a7b0; }
 /* footer accent */
 .site-footer a:hover { color: var(--accent-dark); }
 
-/* ServiceNow loop mark */
-.hero-mark { display: block; margin: 0 auto 18px; width: 44px; height: 44px; }
-.sn-mark { height: 18px; width: 18px; vertical-align: -3px; margin-right: 8px; }
-.foot-brand { display: inline-flex; align-items: center; }
+/* ServiceNow marks */
+.hero-mark { display: block; margin: 0 auto 20px; width: 72px; height: 72px; }
+.foot-brand { display: inline-flex; align-items: center; gap: 12px; }
+.foot-logo { height: 22px; width: auto; }
