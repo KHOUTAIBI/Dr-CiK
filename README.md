@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://servicenow.github.io/Dr-CiK/">
-    <img src="docs/static/assets/dr-cik-banner.svg?v=5" alt="Dr-CiK: A Testbed for Foresight-Driven Agents — a benchmark by ServiceNow Research" width="100%">
+    <img src="docs/static/assets/dr-cik-banner.svg?v=6" alt="Dr-CiK: A Testbed for Foresight-Driven Agents — a benchmark by ServiceNow Research" width="100%">
   </a>
 </p>
 
