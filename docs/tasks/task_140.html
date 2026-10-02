@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>ThermalCore-88 · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>ThermalCore-88</h1>
+          <p>Forecasting <strong>occupancy rate</strong> · sensor periodic maintenance task</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="IoT sensor">IoT sensor</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="168">168</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="32">32</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>IoT sensor</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Certain</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">Specialist</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Predictable</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2024-03-11 14:00:00</span><span>Forecast horizon · through 2024-03-19 13:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,145.00 17.87,175.23 23.73,165.15 29.60,276.00 35.46,276.00 41.33,276.00 47.19,225.62 53.06,235.69 58.92,215.54 64.79,205.46 70.65,235.69 76.52,225.62 82.38,205.46 88.25,114.77 94.11,94.62 99.98,94.62 105.84,114.77 111.71,74.46 117.57,94.62 123.44,94.62 129.30,104.69 135.17,124.85 141.03,114.77 146.90,276.00 152.76,276.00 158.63,276.00 164.49,195.38 170.36,205.46 176.22,225.62 182.09,215.54 187.95,225.62 193.82,225.62 199.68,185.31 205.55,104.69 211.41,104.69 217.28,84.54 223.14,94.62 229.01,104.69 234.87,94.62 240.74,84.54 246.60,104.69 252.47,134.92 258.33,84.54 264.20,276.00 270.06,276.00 275.93,276.00 281.79,205.46 287.66,215.54 293.52,215.54 299.39,245.77 305.25,225.62 311.12,205.46 316.98,195.38 322.85,114.77 328.71,124.85 334.58,84.54 340.44,104.69 346.31,64.38 352.17,54.31 358.04,14.00 363.90,44.23 369.77,64.38 375.63,94.62 381.50,276.00 387.36,276.00 393.23,276.00 399.09,175.23 404.96,215.54 410.82,225.62 416.69,215.54 422.55,235.69 428.42,195.38 434.28,145.00 440.15,165.15 446.01,114.77 451.88,94.62 457.74,64.38 463.61,44.23 469.47,34.15 475.34,34.15 481.20,54.31 487.07,64.38 492.93,276.00 498.80,276.00 504.66,276.00 510.53,276.00 516.39,185.31 522.26,205.46 528.12,225.62 533.99,245.77 539.85,245.77 545.72,255.85 551.58,235.69 557.45,215.54 563.31,195.38 569.18,185.31 575.04,145.00 580.91,124.85 586.77,114.77 592.64,145.00 598.50,165.15 604.37,165.15 610.23,276.00 616.10,276.00 621.96,276.00 627.83,276.00 633.69,235.69 639.56,245.77 645.42,245.77 651.29,255.85 657.15,265.92 663.02,265.92 668.88,255.85 674.75,245.77 680.61,235.69 686.48,215.54 692.34,185.31 698.21,134.92 704.07,145.00 709.94,124.85 715.80,134.92 721.67,145.00 727.53,276.00 733.40,276.00 739.26,276.00 745.13,276.00 750.99,205.46 756.86,245.77 762.72,235.69 768.59,245.77 774.45,235.69 780.32,235.69 786.18,185.31 792.05,145.00 797.91,155.08 803.78,165.15 809.64,155.08 815.51,114.77 821.37,155.08 827.24,124.85 833.10,124.85" /><polyline class="chart-future" points="833.10,124.85 838.97,145.00 844.83,165.15 850.70,195.38 856.56,205.46 862.43,215.54 868.29,225.62 874.16,215.54 880.02,225.62 885.89,235.69 891.75,245.77 897.62,235.69 903.48,235.69 909.35,245.77 915.21,225.62 921.08,205.46 926.94,165.15 932.81,175.23 938.67,165.15 944.54,155.08 950.40,145.00 956.27,165.15 962.13,145.00 968.00,165.15" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (192 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2024-03-11 14:00:00</td><td>1.3</td></tr><tr><td>2</td><td>Observed history</td><td>2024-03-11 15:00:00</td><td>1.0</td></tr><tr><td>3</td><td>Observed history</td><td>2024-03-11 16:00:00</td><td>1.1</td></tr><tr><td>4</td><td>Observed history</td><td>2024-03-11 17:00:00</td><td>0.0</td></tr><tr><td>5</td><td>Observed history</td><td>2024-03-11 18:00:00</td><td>0.0</td></tr><tr><td>6</td><td>Observed history</td><td>2024-03-11 19:00:00</td><td>0.0</td></tr><tr><td>7</td><td>Observed history</td><td>2024-03-11 20:00:00</td><td>0.0</td></tr><tr><td>8</td><td>Observed history</td><td>2024-03-11 21:00:00</td><td>0.5</td></tr><tr><td>9</td><td>Observed history</td><td>2024-03-11 22:00:00</td><td>0.4</td></tr><tr><td>10</td><td>Observed history</td><td>2024-03-11 23:00:00</td><td>0.4</td></tr><tr><td>11</td><td>Observed history</td><td>2024-03-12 00:00:00</td><td>0.6</td></tr><tr><td>12</td><td>Observed history</td><td>2024-03-12 01:00:00</td><td>0.7</td></tr><tr><td>13</td><td>Observed history</td><td>2024-03-12 02:00:00</td><td>0.4</td></tr><tr><td>14</td><td>Observed history</td><td>2024-03-12 03:00:00</td><td>0.5</td></tr><tr><td>15</td><td>Observed history</td><td>2024-03-12 04:00:00</td><td>0.7</td></tr><tr><td>16</td><td>Observed history</td><td>2024-03-12 05:00:00</td><td>1.3</td></tr><tr><td>17</td><td>Observed history</td><td>2024-03-12 06:00:00</td><td>1.6</td></tr><tr><td>18</td><td>Observed history</td><td>2024-03-12 07:00:00</td><td>1.8</td></tr><tr><td>19</td><td>Observed history</td><td>2024-03-12 08:00:00</td><td>1.8</td></tr><tr><td>20</td><td>Observed history</td><td>2024-03-12 09:00:00</td><td>1.6</td></tr><tr><td>21</td><td>Observed history</td><td>2024-03-12 10:00:00</td><td>2.0</td></tr><tr><td>22</td><td>Observed history</td><td>2024-03-12 11:00:00</td><td>1.7</td></tr><tr><td>23</td><td>Observed history</td><td>2024-03-12 12:00:00</td><td>1.8</td></tr><tr><td>24</td><td>Observed history</td><td>2024-03-12 13:00:00</td><td>1.8</td></tr><tr><td>25</td><td>Observed history</td><td>2024-03-12 14:00:00</td><td>1.7</td></tr><tr><td>26</td><td>Observed history</td><td>2024-03-12 15:00:00</td><td>1.5</td></tr><tr><td>27</td><td>Observed history</td><td>2024-03-12 16:00:00</td><td>1.6</td></tr><tr><td>28</td><td>Observed history</td><td>2024-03-12 17:00:00</td><td>0.0</td></tr><tr><td>29</td><td>Observed history</td><td>2024-03-12 18:00:00</td><td>0.0</td></tr><tr><td>30</td><td>Observed history</td><td>2024-03-12 19:00:00</td><td>0.0</td></tr><tr><td>31</td><td>Observed history</td><td>2024-03-12 20:00:00</td><td>0.0</td></tr><tr><td>32</td><td>Observed history</td><td>2024-03-12 21:00:00</td><td>0.8</td></tr><tr><td>33</td><td>Observed history</td><td>2024-03-12 22:00:00</td><td>0.7</td></tr><tr><td>34</td><td>Observed history</td><td>2024-03-12 23:00:00</td><td>0.4</td></tr><tr><td>35</td><td>Observed history</td><td>2024-03-13 00:00:00</td><td>0.5</td></tr><tr><td>36</td><td>Observed history</td><td>2024-03-13 01:00:00</td><td>0.6</td></tr><tr><td>37</td><td>Observed history</td><td>2024-03-13 02:00:00</td><td>0.5</td></tr><tr><td>38</td><td>Observed history</td><td>2024-03-13 03:00:00</td><td>0.5</td></tr><tr><td>39</td><td>Observed history</td><td>2024-03-13 04:00:00</td><td>0.9</td></tr><tr><td>40</td><td>Observed history</td><td>2024-03-13 05:00:00</td><td>0.9</td></tr><tr><td>41</td><td>Observed history</td><td>2024-03-13 06:00:00</td><td>1.7</td></tr><tr><td>42</td><td>Observed history</td><td>2024-03-13 07:00:00</td><td>1.7</td></tr><tr><td>43</td><td>Observed history</td><td>2024-03-13 08:00:00</td><td>1.9</td></tr><tr><td>44</td><td>Observed history</td><td>2024-03-13 09:00:00</td><td>1.8</td></tr><tr><td>45</td><td>Observed history</td><td>2024-03-13 10:00:00</td><td>1.7</td></tr><tr><td>46</td><td>Observed history</td><td>2024-03-13 11:00:00</td><td>1.4</td></tr><tr><td>47</td><td>Observed history</td><td>2024-03-13 12:00:00</td><td>1.8</td></tr><tr><td>48</td><td>Observed history</td><td>2024-03-13 13:00:00</td><td>1.9</td></tr><tr><td>49</td><td>Observed history</td><td>2024-03-13 14:00:00</td><td>1.7</td></tr><tr><td>50</td><td>Observed history</td><td>2024-03-13 15:00:00</td><td>1.4</td></tr><tr><td>51</td><td>Observed history</td><td>2024-03-13 16:00:00</td><td>1.9</td></tr><tr><td>52</td><td>Observed history</td><td>2024-03-13 17:00:00</td><td>0.0</td></tr><tr><td>53</td><td>Observed history</td><td>2024-03-13 18:00:00</td><td>0.0</td></tr><tr><td>54</td><td>Observed history</td><td>2024-03-13 19:00:00</td><td>0.0</td></tr><tr><td>55</td><td>Observed history</td><td>2024-03-13 20:00:00</td><td>0.0</td></tr><tr><td>56</td><td>Observed history</td><td>2024-03-13 21:00:00</td><td>0.7</td></tr><tr><td>57</td><td>Observed history</td><td>2024-03-13 22:00:00</td><td>0.6</td></tr><tr><td>58</td><td>Observed history</td><td>2024-03-13 23:00:00</td><td>0.5</td></tr><tr><td>59</td><td>Observed history</td><td>2024-03-14 00:00:00</td><td>0.6</td></tr><tr><td>60</td><td>Observed history</td><td>2024-03-14 01:00:00</td><td>0.3</td></tr><tr><td>61</td><td>Observed history</td><td>2024-03-14 02:00:00</td><td>0.5</td></tr><tr><td>62</td><td>Observed history</td><td>2024-03-14 03:00:00</td><td>0.7</td></tr><tr><td>63</td><td>Observed history</td><td>2024-03-14 04:00:00</td><td>0.8</td></tr><tr><td>64</td><td>Observed history</td><td>2024-03-14 05:00:00</td><td>1.2</td></tr><tr><td>65</td><td>Observed history</td><td>2024-03-14 06:00:00</td><td>1.6</td></tr><tr><td>66</td><td>Observed history</td><td>2024-03-14 07:00:00</td><td>1.5</td></tr><tr><td>67</td><td>Observed history</td><td>2024-03-14 08:00:00</td><td>1.9</td></tr><tr><td>68</td><td>Observed history</td><td>2024-03-14 09:00:00</td><td>1.7</td></tr><tr><td>69</td><td>Observed history</td><td>2024-03-14 10:00:00</td><td>2.1</td></tr><tr><td>70</td><td>Observed history</td><td>2024-03-14 11:00:00</td><td>1.7</td></tr><tr><td>71</td><td>Observed history</td><td>2024-03-14 12:00:00</td><td>2.2</td></tr><tr><td>72</td><td>Observed history</td><td>2024-03-14 13:00:00</td><td>2.6</td></tr><tr><td>73</td><td>Observed history</td><td>2024-03-14 14:00:00</td><td>2.3</td></tr><tr><td>74</td><td>Observed history</td><td>2024-03-14 15:00:00</td><td>2.1</td></tr><tr><td>75</td><td>Observed history</td><td>2024-03-14 16:00:00</td><td>1.8</td></tr><tr><td>76</td><td>Observed history</td><td>2024-03-14 17:00:00</td><td>0.0</td></tr><tr><td>77</td><td>Observed history</td><td>2024-03-14 18:00:00</td><td>0.0</td></tr><tr><td>78</td><td>Observed history</td><td>2024-03-14 19:00:00</td><td>0.0</td></tr><tr><td>79</td><td>Observed history</td><td>2024-03-14 20:00:00</td><td>0.0</td></tr><tr><td>80</td><td>Observed history</td><td>2024-03-14 21:00:00</td><td>1.0</td></tr><tr><td>81</td><td>Observed history</td><td>2024-03-14 22:00:00</td><td>0.6</td></tr><tr><td>82</td><td>Observed history</td><td>2024-03-14 23:00:00</td><td>0.5</td></tr><tr><td>83</td><td>Observed history</td><td>2024-03-15 00:00:00</td><td>0.5</td></tr><tr><td>84</td><td>Observed history</td><td>2024-03-15 01:00:00</td><td>0.6</td></tr><tr><td>85</td><td>Observed history</td><td>2024-03-15 02:00:00</td><td>0.4</td></tr><tr><td>86</td><td>Observed history</td><td>2024-03-15 03:00:00</td><td>0.8</td></tr><tr><td>87</td><td>Observed history</td><td>2024-03-15 04:00:00</td><td>0.8</td></tr><tr><td>88</td><td>Observed history</td><td>2024-03-15 05:00:00</td><td>1.3</td></tr><tr><td>89</td><td>Observed history</td><td>2024-03-15 06:00:00</td><td>1.1</td></tr><tr><td>90</td><td>Observed history</td><td>2024-03-15 07:00:00</td><td>1.6</td></tr><tr><td>91</td><td>Observed history</td><td>2024-03-15 08:00:00</td><td>1.8</td></tr><tr><td>92</td><td>Observed history</td><td>2024-03-15 09:00:00</td><td>2.1</td></tr><tr><td>93</td><td>Observed history</td><td>2024-03-15 10:00:00</td><td>2.3</td></tr><tr><td>94</td><td>Observed history</td><td>2024-03-15 11:00:00</td><td>2.3</td></tr><tr><td>95</td><td>Observed history</td><td>2024-03-15 12:00:00</td><td>2.4</td></tr><tr><td>96</td><td>Observed history</td><td>2024-03-15 13:00:00</td><td>2.4</td></tr><tr><td>97</td><td>Observed history</td><td>2024-03-15 14:00:00</td><td>2.2</td></tr><tr><td>98</td><td>Observed history</td><td>2024-03-15 15:00:00</td><td>2.1</td></tr><tr><td>99</td><td>Observed history</td><td>2024-03-15 16:00:00</td><td>2.2</td></tr><tr><td>100</td><td>Observed history</td><td>2024-03-15 17:00:00</td><td>0.0</td></tr><tr><td>101</td><td>Observed history</td><td>2024-03-15 18:00:00</td><td>0.0</td></tr><tr><td>102</td><td>Observed history</td><td>2024-03-15 19:00:00</td><td>0.0</td></tr><tr><td>103</td><td>Observed history</td><td>2024-03-15 20:00:00</td><td>0.0</td></tr><tr><td>104</td><td>Observed history</td><td>2024-03-15 21:00:00</td><td>0.9</td></tr><tr><td>105</td><td>Observed history</td><td>2024-03-15 22:00:00</td><td>0.8</td></tr><tr><td>106</td><td>Observed history</td><td>2024-03-15 23:00:00</td><td>0.7</td></tr><tr><td>107</td><td>Observed history</td><td>2024-03-16 00:00:00</td><td>0.5</td></tr><tr><td>108</td><td>Observed history</td><td>2024-03-16 01:00:00</td><td>0.3</td></tr><tr><td>109</td><td>Observed history</td><td>2024-03-16 02:00:00</td><td>0.3</td></tr><tr><td>110</td><td>Observed history</td><td>2024-03-16 03:00:00</td><td>0.2</td></tr><tr><td>111</td><td>Observed history</td><td>2024-03-16 04:00:00</td><td>0.3</td></tr><tr><td>112</td><td>Observed history</td><td>2024-03-16 05:00:00</td><td>0.4</td></tr><tr><td>113</td><td>Observed history</td><td>2024-03-16 06:00:00</td><td>0.6</td></tr><tr><td>114</td><td>Observed history</td><td>2024-03-16 07:00:00</td><td>0.8</td></tr><tr><td>115</td><td>Observed history</td><td>2024-03-16 08:00:00</td><td>0.9</td></tr><tr><td>116</td><td>Observed history</td><td>2024-03-16 09:00:00</td><td>1.3</td></tr><tr><td>117</td><td>Observed history</td><td>2024-03-16 10:00:00</td><td>1.5</td></tr><tr><td>118</td><td>Observed history</td><td>2024-03-16 11:00:00</td><td>1.5</td></tr><tr><td>119</td><td>Observed history</td><td>2024-03-16 12:00:00</td><td>1.6</td></tr><tr><td>120</td><td>Observed history</td><td>2024-03-16 13:00:00</td><td>1.3</td></tr><tr><td>121</td><td>Observed history</td><td>2024-03-16 14:00:00</td><td>1.1</td></tr><tr><td>122</td><td>Observed history</td><td>2024-03-16 15:00:00</td><td>1.1</td></tr><tr><td>123</td><td>Observed history</td><td>2024-03-16 16:00:00</td><td>1.0</td></tr><tr><td>124</td><td>Observed history</td><td>2024-03-16 17:00:00</td><td>0.0</td></tr><tr><td>125</td><td>Observed history</td><td>2024-03-16 18:00:00</td><td>0.0</td></tr><tr><td>126</td><td>Observed history</td><td>2024-03-16 19:00:00</td><td>0.0</td></tr><tr><td>127</td><td>Observed history</td><td>2024-03-16 20:00:00</td><td>0.0</td></tr><tr><td>128</td><td>Observed history</td><td>2024-03-16 21:00:00</td><td>0.4</td></tr><tr><td>129</td><td>Observed history</td><td>2024-03-16 22:00:00</td><td>0.4</td></tr><tr><td>130</td><td>Observed history</td><td>2024-03-16 23:00:00</td><td>0.3</td></tr><tr><td>131</td><td>Observed history</td><td>2024-03-17 00:00:00</td><td>0.3</td></tr><tr><td>132</td><td>Observed history</td><td>2024-03-17 01:00:00</td><td>0.2</td></tr><tr><td>133</td><td>Observed history</td><td>2024-03-17 02:00:00</td><td>0.1</td></tr><tr><td>134</td><td>Observed history</td><td>2024-03-17 03:00:00</td><td>0.1</td></tr><tr><td>135</td><td>Observed history</td><td>2024-03-17 04:00:00</td><td>0.1</td></tr><tr><td>136</td><td>Observed history</td><td>2024-03-17 05:00:00</td><td>0.2</td></tr><tr><td>137</td><td>Observed history</td><td>2024-03-17 06:00:00</td><td>0.3</td></tr><tr><td>138</td><td>Observed history</td><td>2024-03-17 07:00:00</td><td>0.4</td></tr><tr><td>139</td><td>Observed history</td><td>2024-03-17 08:00:00</td><td>0.6</td></tr><tr><td>140</td><td>Observed history</td><td>2024-03-17 09:00:00</td><td>0.9</td></tr><tr><td>141</td><td>Observed history</td><td>2024-03-17 10:00:00</td><td>0.9</td></tr><tr><td>142</td><td>Observed history</td><td>2024-03-17 11:00:00</td><td>1.4</td></tr><tr><td>143</td><td>Observed history</td><td>2024-03-17 12:00:00</td><td>1.3</td></tr><tr><td>144</td><td>Observed history</td><td>2024-03-17 13:00:00</td><td>1.5</td></tr><tr><td>145</td><td>Observed history</td><td>2024-03-17 14:00:00</td><td>1.4</td></tr><tr><td>146</td><td>Observed history</td><td>2024-03-17 15:00:00</td><td>1.3</td></tr><tr><td>147</td><td>Observed history</td><td>2024-03-17 16:00:00</td><td>1.4</td></tr><tr><td>148</td><td>Observed history</td><td>2024-03-17 17:00:00</td><td>0.0</td></tr><tr><td>149</td><td>Observed history</td><td>2024-03-17 18:00:00</td><td>0.0</td></tr><tr><td>150</td><td>Observed history</td><td>2024-03-17 19:00:00</td><td>0.0</td></tr><tr><td>151</td><td>Observed history</td><td>2024-03-17 20:00:00</td><td>0.0</td></tr><tr><td>152</td><td>Observed history</td><td>2024-03-17 21:00:00</td><td>0.7</td></tr><tr><td>153</td><td>Observed history</td><td>2024-03-17 22:00:00</td><td>0.5</td></tr><tr><td>154</td><td>Observed history</td><td>2024-03-17 23:00:00</td><td>0.3</td></tr><tr><td>155</td><td>Observed history</td><td>2024-03-18 00:00:00</td><td>0.4</td></tr><tr><td>156</td><td>Observed history</td><td>2024-03-18 01:00:00</td><td>0.3</td></tr><tr><td>157</td><td>Observed history</td><td>2024-03-18 02:00:00</td><td>0.4</td></tr><tr><td>158</td><td>Observed history</td><td>2024-03-18 03:00:00</td><td>0.4</td></tr><tr><td>159</td><td>Observed history</td><td>2024-03-18 04:00:00</td><td>0.5</td></tr><tr><td>160</td><td>Observed history</td><td>2024-03-18 05:00:00</td><td>0.9</td></tr><tr><td>161</td><td>Observed history</td><td>2024-03-18 06:00:00</td><td>1.3</td></tr><tr><td>162</td><td>Observed history</td><td>2024-03-18 07:00:00</td><td>1.2</td></tr><tr><td>163</td><td>Observed history</td><td>2024-03-18 08:00:00</td><td>1.1</td></tr><tr><td>164</td><td>Observed history</td><td>2024-03-18 09:00:00</td><td>1.2</td></tr><tr><td>165</td><td>Observed history</td><td>2024-03-18 10:00:00</td><td>1.3</td></tr><tr><td>166</td><td>Observed history</td><td>2024-03-18 11:00:00</td><td>1.6</td></tr><tr><td>167</td><td>Observed history</td><td>2024-03-18 12:00:00</td><td>1.2</td></tr><tr><td>168</td><td>Observed history</td><td>2024-03-18 13:00:00</td><td>1.5</td></tr><tr class="future"><td>169</td><td>Forecast horizon</td><td>2024-03-18 14:00:00</td><td>1.5</td></tr><tr class="future"><td>170</td><td>Forecast horizon</td><td>2024-03-18 15:00:00</td><td>1.3</td></tr><tr class="future"><td>171</td><td>Forecast horizon</td><td>2024-03-18 16:00:00</td><td>1.1</td></tr><tr class="future"><td>172</td><td>Forecast horizon</td><td>2024-03-18 17:00:00</td><td>0.8</td></tr><tr class="future"><td>173</td><td>Forecast horizon</td><td>2024-03-18 18:00:00</td><td>0.7</td></tr><tr class="future"><td>174</td><td>Forecast horizon</td><td>2024-03-18 19:00:00</td><td>0.6</td></tr><tr class="future"><td>175</td><td>Forecast horizon</td><td>2024-03-18 20:00:00</td><td>0.5</td></tr><tr class="future"><td>176</td><td>Forecast horizon</td><td>2024-03-18 21:00:00</td><td>0.6</td></tr><tr class="future"><td>177</td><td>Forecast horizon</td><td>2024-03-18 22:00:00</td><td>0.5</td></tr><tr class="future"><td>178</td><td>Forecast horizon</td><td>2024-03-18 23:00:00</td><td>0.4</td></tr><tr class="future"><td>179</td><td>Forecast horizon</td><td>2024-03-19 00:00:00</td><td>0.3</td></tr><tr class="future"><td>180</td><td>Forecast horizon</td><td>2024-03-19 01:00:00</td><td>0.4</td></tr><tr class="future"><td>181</td><td>Forecast horizon</td><td>2024-03-19 02:00:00</td><td>0.4</td></tr><tr class="future"><td>182</td><td>Forecast horizon</td><td>2024-03-19 03:00:00</td><td>0.3</td></tr><tr class="future"><td>183</td><td>Forecast horizon</td><td>2024-03-19 04:00:00</td><td>0.5</td></tr><tr class="future"><td>184</td><td>Forecast horizon</td><td>2024-03-19 05:00:00</td><td>0.7</td></tr><tr class="future"><td>185</td><td>Forecast horizon</td><td>2024-03-19 06:00:00</td><td>1.1</td></tr><tr class="future"><td>186</td><td>Forecast horizon</td><td>2024-03-19 07:00:00</td><td>1.0</td></tr><tr class="future"><td>187</td><td>Forecast horizon</td><td>2024-03-19 08:00:00</td><td>1.1</td></tr><tr class="future"><td>188</td><td>Forecast horizon</td><td>2024-03-19 09:00:00</td><td>1.2</td></tr><tr class="future"><td>189</td><td>Forecast horizon</td><td>2024-03-19 10:00:00</td><td>1.3</td></tr><tr class="future"><td>190</td><td>Forecast horizon</td><td>2024-03-19 11:00:00</td><td>1.1</td></tr><tr class="future"><td>191</td><td>Forecast horizon</td><td>2024-03-19 12:00:00</td><td>1.3</td></tr><tr class="future"><td>192</td><td>Forecast horizon</td><td>2024-03-19 13:00:00</td><td>1.1</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-140-context" id="forecast-task-140-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-140-context" id="forecast-task-140-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-140-context" id="forecast-task-140-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-140-view" id="forecast-task-140-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-140-view" id="forecast-task-140-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-140-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-140-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-140-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-140-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-140-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 176.56 L 32.94 207.19 L 37.88 196.98 L 42.83 309.32 L 47.77 309.32 L 52.71 309.32 L 57.65 309.32 L 62.60 258.26 L 67.54 268.47 L 72.48 268.47 L 77.42 248.04 L 82.37 237.83 L 87.31 268.47 L 92.25 258.26 L 97.19 237.83 L 102.14 176.56 L 107.08 145.92 L 112.02 125.49 L 116.96 125.49 L 121.91 145.92 L 126.85 105.07 L 131.79 135.71 L 136.73 125.49 L 141.68 125.49 L 146.62 135.71 L 151.56 156.13 L 156.50 145.92 L 161.45 309.32 L 166.39 309.32 L 171.33 309.32 L 176.27 309.32 L 181.21 227.62 L 186.16 237.83 L 191.10 268.47 L 196.04 258.26 L 200.98 248.04 L 205.93 258.26 L 210.87 258.26 L 215.81 217.41 L 220.75 217.41 L 225.70 135.71 L 230.64 135.71 L 235.58 115.28 L 240.52 125.49 L 245.47 135.71 L 250.41 166.34 L 255.35 125.49 L 260.29 115.28 L 265.24 135.71 L 270.18 166.34 L 275.12 115.28 L 280.06 309.32 L 285.01 309.32 L 289.95 309.32 L 294.89 309.32 L 299.83 237.83 L 304.77 248.04 L 309.72 258.26 L 314.66 248.04 L 319.60 278.68 L 324.54 258.26 L 329.49 237.83 L 334.43 227.62 L 339.37 186.77 L 344.31 145.92 L 349.26 156.13 L 354.20 115.28 L 359.14 135.71 L 364.08 94.86 L 369.03 135.71 L 373.97 84.64 L 378.91 43.79 L 383.85 74.43 L 388.80 94.86 L 393.74 125.49 L 398.68 309.32 L 403.62 309.32 L 408.57 309.32 L 413.51 309.32 L 418.45 207.19 L 423.39 248.04 L 428.34 258.26 L 433.28 258.26 L 438.22 248.04 L 443.16 268.47 L 448.10 227.62 L 453.05 227.62 L 457.99 176.56 L 462.93 196.98 L 467.87 145.92 L 472.82 125.49 L 477.76 94.86 L 482.70 74.43 L 487.64 74.43 L 492.59 64.22 L 497.53 64.22 L 502.47 84.64 L 507.41 94.86 L 512.36 84.64 L 517.30 309.32 L 522.24 309.32 L 527.18 309.32 L 532.13 309.32 L 537.07 217.41 L 542.01 227.62 L 546.95 237.83 L 551.90 258.26 L 556.84 278.68 L 561.78 278.68 L 566.72 288.89 L 571.66 278.68 L 576.61 268.47 L 581.55 248.04 L 586.49 227.62 L 591.43 217.41 L 596.38 176.56 L 601.32 156.13 L 606.26 156.13 L 611.20 145.92 L 616.15 176.56 L 621.09 196.98 L 626.03 196.98 L 630.97 207.19 L 635.92 309.32 L 640.86 309.32 L 645.80 309.32 L 650.74 309.32 L 655.69 268.47 L 660.63 268.47 L 665.57 278.68 L 670.51 278.68 L 675.46 288.89 L 680.40 299.11 L 685.34 299.11 L 690.28 299.11 L 695.23 288.89 L 700.17 278.68 L 705.11 268.47 L 710.05 248.04 L 714.99 217.41 L 719.94 217.41 L 724.88 166.34 L 729.82 176.56 L 734.76 156.13 L 739.71 166.34 L 744.65 176.56 L 749.59 166.34 L 754.53 309.32 L 759.48 309.32 L 764.42 309.32 L 769.36 309.32 L 774.30 237.83 L 779.25 258.26 L 784.19 278.68 L 789.13 268.47 L 794.07 278.68 L 799.02 268.47 L 803.96 268.47 L 808.90 258.26 L 813.84 217.41 L 818.79 176.56 L 823.73 186.77 L 828.67 196.98 L 833.61 186.77 L 838.55 176.56 L 843.50 145.92 L 848.44 186.77 L 853.38 156.13" /><path class="forecast-svg-actual" d="M 858.32 156.13 L 863.27 176.56 L 868.21 196.98 L 873.15 227.62 L 878.09 237.83 L 883.04 248.04 L 887.98 258.26 L 892.92 248.04 L 897.86 258.26 L 902.81 268.47 L 907.75 278.68 L 912.69 268.47 L 917.63 268.47 L 922.58 278.68 L 927.52 258.26 L 932.46 237.83 L 937.40 196.98 L 942.35 207.19 L 947.29 196.98 L 952.23 186.77 L 957.17 176.56 L 962.12 196.98 L 967.06 176.56 L 972.00 196.98" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 162.04 L 863.27 168.41 L 868.21 176.09 L 873.15 287.71 L 878.09 304.55 L 883.04 303.52 L 887.98 293.93 L 892.92 250.74 L 897.86 252.18 L 902.81 257.31 L 907.75 257.46 L 912.69 266.82 L 917.63 263.16 L 922.58 253.73 L 927.52 237.88 L 932.46 211.61 L 937.40 180.95 L 942.35 162.63 L 947.29 160.10 L 952.23 147.94 L 957.17 141.91 L 962.12 128.01 L 967.06 130.85 L 972.00 118.02 L 972.00 161.58 L 967.06 166.99 L 962.12 183.63 L 957.17 179.98 L 952.23 191.88 L 947.29 200.31 L 942.35 218.43 L 937.40 230.38 L 932.46 249.13 L 927.52 269.21 L 922.58 274.68 L 917.63 282.34 L 912.69 281.21 L 907.75 272.60 L 902.81 269.19 L 897.86 262.57 L 892.92 265.18 L 887.98 309.13 L 883.04 314.24 L 878.09 316.21 L 873.15 300.73 L 868.21 198.92 L 863.27 189.81 L 858.32 183.04 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 172.54 L 863.27 179.11 L 868.21 187.51 L 873.15 294.22 L 878.09 310.38 L 883.04 308.88 L 887.98 301.53 L 892.92 257.96 L 897.86 257.38 L 902.81 263.25 L 907.75 265.03 L 912.69 274.02 L 917.63 272.75 L 922.58 264.20 L 927.52 253.54 L 932.46 230.37 L 937.40 205.67 L 942.35 190.53 L 947.29 180.21 L 952.23 169.91 L 957.17 160.95 L 962.12 155.82 L 967.06 148.92 L 972.00 139.80" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="172.54" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 858.32 167.98 L 863.27 178.60 L 868.21 188.40 L 873.15 250.09 L 878.09 260.71 L 883.04 266.02 L 887.98 268.06 L 892.92 251.72 L 897.86 259.48 L 902.81 268.47 L 907.75 268.06 L 912.69 277.86 L 917.63 278.68 L 922.58 270.51 L 927.52 256.62 L 932.46 224.76 L 937.40 189.22 L 942.35 180.23 L 947.29 180.64 L 952.23 174.92 L 957.17 164.71 L 962.12 156.95 L 967.06 165.53 L 972.00 156.54" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="167.98" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 167.25 L 863.27 176.66 L 868.21 176.22 L 873.15 201.83 L 878.09 210.48 L 883.04 219.00 L 887.98 227.00 L 892.92 245.56 L 897.86 258.16 L 902.81 269.16 L 907.75 265.39 L 912.69 265.46 L 917.63 267.86 L 922.58 261.27 L 927.52 246.57 L 932.46 212.71 L 937.40 183.47 L 942.35 173.92 L 947.29 168.93 L 952.23 164.52 L 957.17 157.50 L 962.12 157.52 L 967.06 153.78 L 972.00 145.45" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="167.25" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 176.56 L 32.94 207.19 L 37.88 196.98 L 42.83 309.32 L 47.77 309.32 L 52.71 309.32 L 57.65 309.32 L 62.60 258.26 L 67.54 268.47 L 72.48 268.47 L 77.42 248.04 L 82.37 237.83 L 87.31 268.47 L 92.25 258.26 L 97.19 237.83 L 102.14 176.56 L 107.08 145.92 L 112.02 125.49 L 116.96 125.49 L 121.91 145.92 L 126.85 105.07 L 131.79 135.71 L 136.73 125.49 L 141.68 125.49 L 146.62 135.71 L 151.56 156.13 L 156.50 145.92 L 161.45 309.32 L 166.39 309.32 L 171.33 309.32 L 176.27 309.32 L 181.21 227.62 L 186.16 237.83 L 191.10 268.47 L 196.04 258.26 L 200.98 248.04 L 205.93 258.26 L 210.87 258.26 L 215.81 217.41 L 220.75 217.41 L 225.70 135.71 L 230.64 135.71 L 235.58 115.28 L 240.52 125.49 L 245.47 135.71 L 250.41 166.34 L 255.35 125.49 L 260.29 115.28 L 265.24 135.71 L 270.18 166.34 L 275.12 115.28 L 280.06 309.32 L 285.01 309.32 L 289.95 309.32 L 294.89 309.32 L 299.83 237.83 L 304.77 248.04 L 309.72 258.26 L 314.66 248.04 L 319.60 278.68 L 324.54 258.26 L 329.49 237.83 L 334.43 227.62 L 339.37 186.77 L 344.31 145.92 L 349.26 156.13 L 354.20 115.28 L 359.14 135.71 L 364.08 94.86 L 369.03 135.71 L 373.97 84.64 L 378.91 43.79 L 383.85 74.43 L 388.80 94.86 L 393.74 125.49 L 398.68 309.32 L 403.62 309.32 L 408.57 309.32 L 413.51 309.32 L 418.45 207.19 L 423.39 248.04 L 428.34 258.26 L 433.28 258.26 L 438.22 248.04 L 443.16 268.47 L 448.10 227.62 L 453.05 227.62 L 457.99 176.56 L 462.93 196.98 L 467.87 145.92 L 472.82 125.49 L 477.76 94.86 L 482.70 74.43 L 487.64 74.43 L 492.59 64.22 L 497.53 64.22 L 502.47 84.64 L 507.41 94.86 L 512.36 84.64 L 517.30 309.32 L 522.24 309.32 L 527.18 309.32 L 532.13 309.32 L 537.07 217.41 L 542.01 227.62 L 546.95 237.83 L 551.90 258.26 L 556.84 278.68 L 561.78 278.68 L 566.72 288.89 L 571.66 278.68 L 576.61 268.47 L 581.55 248.04 L 586.49 227.62 L 591.43 217.41 L 596.38 176.56 L 601.32 156.13 L 606.26 156.13 L 611.20 145.92 L 616.15 176.56 L 621.09 196.98 L 626.03 196.98 L 630.97 207.19 L 635.92 309.32 L 640.86 309.32 L 645.80 309.32 L 650.74 309.32 L 655.69 268.47 L 660.63 268.47 L 665.57 278.68 L 670.51 278.68 L 675.46 288.89 L 680.40 299.11 L 685.34 299.11 L 690.28 299.11 L 695.23 288.89 L 700.17 278.68 L 705.11 268.47 L 710.05 248.04 L 714.99 217.41 L 719.94 217.41 L 724.88 166.34 L 729.82 176.56 L 734.76 156.13 L 739.71 166.34 L 744.65 176.56 L 749.59 166.34 L 754.53 309.32 L 759.48 309.32 L 764.42 309.32 L 769.36 309.32 L 774.30 237.83 L 779.25 258.26 L 784.19 278.68 L 789.13 268.47 L 794.07 278.68 L 799.02 268.47 L 803.96 268.47 L 808.90 258.26 L 813.84 217.41 L 818.79 176.56 L 823.73 186.77 L 828.67 196.98 L 833.61 186.77 L 838.55 176.56 L 843.50 145.92 L 848.44 186.77 L 853.38 156.13" /><path class="forecast-svg-actual" d="M 858.32 156.13 L 863.27 176.56 L 868.21 196.98 L 873.15 227.62 L 878.09 237.83 L 883.04 248.04 L 887.98 258.26 L 892.92 248.04 L 897.86 258.26 L 902.81 268.47 L 907.75 278.68 L 912.69 268.47 L 917.63 268.47 L 922.58 278.68 L 927.52 258.26 L 932.46 237.83 L 937.40 196.98 L 942.35 207.19 L 947.29 196.98 L 952.23 186.77 L 957.17 176.56 L 962.12 196.98 L 967.06 176.56 L 972.00 196.98" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 162.04 L 863.27 168.41 L 868.21 176.09 L 873.15 287.71 L 878.09 304.55 L 883.04 303.52 L 887.98 293.93 L 892.92 250.74 L 897.86 252.18 L 902.81 257.31 L 907.75 257.46 L 912.69 266.82 L 917.63 263.16 L 922.58 253.73 L 927.52 237.88 L 932.46 211.61 L 937.40 180.95 L 942.35 162.63 L 947.29 160.10 L 952.23 147.94 L 957.17 141.91 L 962.12 128.01 L 967.06 130.85 L 972.00 118.02 L 972.00 161.58 L 967.06 166.99 L 962.12 183.63 L 957.17 179.98 L 952.23 191.88 L 947.29 200.31 L 942.35 218.43 L 937.40 230.38 L 932.46 249.13 L 927.52 269.21 L 922.58 274.68 L 917.63 282.34 L 912.69 281.21 L 907.75 272.60 L 902.81 269.19 L 897.86 262.57 L 892.92 265.18 L 887.98 309.13 L 883.04 314.24 L 878.09 316.21 L 873.15 300.73 L 868.21 198.92 L 863.27 189.81 L 858.32 183.04 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 172.54 L 863.27 179.11 L 868.21 187.51 L 873.15 294.22 L 878.09 310.38 L 883.04 308.88 L 887.98 301.53 L 892.92 257.96 L 897.86 257.38 L 902.81 263.25 L 907.75 265.03 L 912.69 274.02 L 917.63 272.75 L 922.58 264.20 L 927.52 253.54 L 932.46 230.37 L 937.40 205.67 L 942.35 190.53 L 947.29 180.21 L 952.23 169.91 L 957.17 160.95 L 962.12 155.82 L 967.06 148.92 L 972.00 139.80" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="172.54" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 176.56 L 32.94 207.19 L 37.88 196.98 L 42.83 309.32 L 47.77 309.32 L 52.71 309.32 L 57.65 309.32 L 62.60 258.26 L 67.54 268.47 L 72.48 268.47 L 77.42 248.04 L 82.37 237.83 L 87.31 268.47 L 92.25 258.26 L 97.19 237.83 L 102.14 176.56 L 107.08 145.92 L 112.02 125.49 L 116.96 125.49 L 121.91 145.92 L 126.85 105.07 L 131.79 135.71 L 136.73 125.49 L 141.68 125.49 L 146.62 135.71 L 151.56 156.13 L 156.50 145.92 L 161.45 309.32 L 166.39 309.32 L 171.33 309.32 L 176.27 309.32 L 181.21 227.62 L 186.16 237.83 L 191.10 268.47 L 196.04 258.26 L 200.98 248.04 L 205.93 258.26 L 210.87 258.26 L 215.81 217.41 L 220.75 217.41 L 225.70 135.71 L 230.64 135.71 L 235.58 115.28 L 240.52 125.49 L 245.47 135.71 L 250.41 166.34 L 255.35 125.49 L 260.29 115.28 L 265.24 135.71 L 270.18 166.34 L 275.12 115.28 L 280.06 309.32 L 285.01 309.32 L 289.95 309.32 L 294.89 309.32 L 299.83 237.83 L 304.77 248.04 L 309.72 258.26 L 314.66 248.04 L 319.60 278.68 L 324.54 258.26 L 329.49 237.83 L 334.43 227.62 L 339.37 186.77 L 344.31 145.92 L 349.26 156.13 L 354.20 115.28 L 359.14 135.71 L 364.08 94.86 L 369.03 135.71 L 373.97 84.64 L 378.91 43.79 L 383.85 74.43 L 388.80 94.86 L 393.74 125.49 L 398.68 309.32 L 403.62 309.32 L 408.57 309.32 L 413.51 309.32 L 418.45 207.19 L 423.39 248.04 L 428.34 258.26 L 433.28 258.26 L 438.22 248.04 L 443.16 268.47 L 448.10 227.62 L 453.05 227.62 L 457.99 176.56 L 462.93 196.98 L 467.87 145.92 L 472.82 125.49 L 477.76 94.86 L 482.70 74.43 L 487.64 74.43 L 492.59 64.22 L 497.53 64.22 L 502.47 84.64 L 507.41 94.86 L 512.36 84.64 L 517.30 309.32 L 522.24 309.32 L 527.18 309.32 L 532.13 309.32 L 537.07 217.41 L 542.01 227.62 L 546.95 237.83 L 551.90 258.26 L 556.84 278.68 L 561.78 278.68 L 566.72 288.89 L 571.66 278.68 L 576.61 268.47 L 581.55 248.04 L 586.49 227.62 L 591.43 217.41 L 596.38 176.56 L 601.32 156.13 L 606.26 156.13 L 611.20 145.92 L 616.15 176.56 L 621.09 196.98 L 626.03 196.98 L 630.97 207.19 L 635.92 309.32 L 640.86 309.32 L 645.80 309.32 L 650.74 309.32 L 655.69 268.47 L 660.63 268.47 L 665.57 278.68 L 670.51 278.68 L 675.46 288.89 L 680.40 299.11 L 685.34 299.11 L 690.28 299.11 L 695.23 288.89 L 700.17 278.68 L 705.11 268.47 L 710.05 248.04 L 714.99 217.41 L 719.94 217.41 L 724.88 166.34 L 729.82 176.56 L 734.76 156.13 L 739.71 166.34 L 744.65 176.56 L 749.59 166.34 L 754.53 309.32 L 759.48 309.32 L 764.42 309.32 L 769.36 309.32 L 774.30 237.83 L 779.25 258.26 L 784.19 278.68 L 789.13 268.47 L 794.07 278.68 L 799.02 268.47 L 803.96 268.47 L 808.90 258.26 L 813.84 217.41 L 818.79 176.56 L 823.73 186.77 L 828.67 196.98 L 833.61 186.77 L 838.55 176.56 L 843.50 145.92 L 848.44 186.77 L 853.38 156.13" /><path class="forecast-svg-actual" d="M 858.32 156.13 L 863.27 176.56 L 868.21 196.98 L 873.15 227.62 L 878.09 237.83 L 883.04 248.04 L 887.98 258.26 L 892.92 248.04 L 897.86 258.26 L 902.81 268.47 L 907.75 278.68 L 912.69 268.47 L 917.63 268.47 L 922.58 278.68 L 927.52 258.26 L 932.46 237.83 L 937.40 196.98 L 942.35 207.19 L 947.29 196.98 L 952.23 186.77 L 957.17 176.56 L 962.12 196.98 L 967.06 176.56 L 972.00 196.98" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 164.23 L 863.27 173.60 L 868.21 182.15 L 873.15 231.15 L 878.09 242.38 L 883.04 249.61 L 887.98 254.99 L 892.92 245.34 L 897.86 254.22 L 902.81 263.47 L 907.75 262.67 L 912.69 272.15 L 917.63 273.68 L 922.58 263.44 L 927.52 248.11 L 932.46 214.54 L 937.40 179.10 L 942.35 171.63 L 947.29 169.83 L 952.23 165.05 L 957.17 155.27 L 962.12 149.35 L 967.06 152.96 L 972.00 147.65 L 972.00 165.43 L 967.06 178.09 L 962.12 164.55 L 957.17 174.15 L 952.23 184.79 L 947.29 191.45 L 942.35 188.84 L 937.40 199.34 L 932.46 234.98 L 927.52 265.13 L 922.58 277.59 L 917.63 283.69 L 912.69 283.58 L 907.75 273.45 L 902.81 273.47 L 897.86 264.75 L 892.92 258.10 L 887.98 281.13 L 883.04 282.43 L 878.09 279.04 L 873.15 269.03 L 868.21 194.65 L 863.27 183.60 L 858.32 171.72 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 167.98 L 863.27 178.60 L 868.21 188.40 L 873.15 250.09 L 878.09 260.71 L 883.04 266.02 L 887.98 268.06 L 892.92 251.72 L 897.86 259.48 L 902.81 268.47 L 907.75 268.06 L 912.69 277.86 L 917.63 278.68 L 922.58 270.51 L 927.52 256.62 L 932.46 224.76 L 937.40 189.22 L 942.35 180.23 L 947.29 180.64 L 952.23 174.92 L 957.17 164.71 L 962.12 156.95 L 967.06 165.53 L 972.00 156.54" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="167.98" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 176.56 L 32.94 207.19 L 37.88 196.98 L 42.83 309.32 L 47.77 309.32 L 52.71 309.32 L 57.65 309.32 L 62.60 258.26 L 67.54 268.47 L 72.48 268.47 L 77.42 248.04 L 82.37 237.83 L 87.31 268.47 L 92.25 258.26 L 97.19 237.83 L 102.14 176.56 L 107.08 145.92 L 112.02 125.49 L 116.96 125.49 L 121.91 145.92 L 126.85 105.07 L 131.79 135.71 L 136.73 125.49 L 141.68 125.49 L 146.62 135.71 L 151.56 156.13 L 156.50 145.92 L 161.45 309.32 L 166.39 309.32 L 171.33 309.32 L 176.27 309.32 L 181.21 227.62 L 186.16 237.83 L 191.10 268.47 L 196.04 258.26 L 200.98 248.04 L 205.93 258.26 L 210.87 258.26 L 215.81 217.41 L 220.75 217.41 L 225.70 135.71 L 230.64 135.71 L 235.58 115.28 L 240.52 125.49 L 245.47 135.71 L 250.41 166.34 L 255.35 125.49 L 260.29 115.28 L 265.24 135.71 L 270.18 166.34 L 275.12 115.28 L 280.06 309.32 L 285.01 309.32 L 289.95 309.32 L 294.89 309.32 L 299.83 237.83 L 304.77 248.04 L 309.72 258.26 L 314.66 248.04 L 319.60 278.68 L 324.54 258.26 L 329.49 237.83 L 334.43 227.62 L 339.37 186.77 L 344.31 145.92 L 349.26 156.13 L 354.20 115.28 L 359.14 135.71 L 364.08 94.86 L 369.03 135.71 L 373.97 84.64 L 378.91 43.79 L 383.85 74.43 L 388.80 94.86 L 393.74 125.49 L 398.68 309.32 L 403.62 309.32 L 408.57 309.32 L 413.51 309.32 L 418.45 207.19 L 423.39 248.04 L 428.34 258.26 L 433.28 258.26 L 438.22 248.04 L 443.16 268.47 L 448.10 227.62 L 453.05 227.62 L 457.99 176.56 L 462.93 196.98 L 467.87 145.92 L 472.82 125.49 L 477.76 94.86 L 482.70 74.43 L 487.64 74.43 L 492.59 64.22 L 497.53 64.22 L 502.47 84.64 L 507.41 94.86 L 512.36 84.64 L 517.30 309.32 L 522.24 309.32 L 527.18 309.32 L 532.13 309.32 L 537.07 217.41 L 542.01 227.62 L 546.95 237.83 L 551.90 258.26 L 556.84 278.68 L 561.78 278.68 L 566.72 288.89 L 571.66 278.68 L 576.61 268.47 L 581.55 248.04 L 586.49 227.62 L 591.43 217.41 L 596.38 176.56 L 601.32 156.13 L 606.26 156.13 L 611.20 145.92 L 616.15 176.56 L 621.09 196.98 L 626.03 196.98 L 630.97 207.19 L 635.92 309.32 L 640.86 309.32 L 645.80 309.32 L 650.74 309.32 L 655.69 268.47 L 660.63 268.47 L 665.57 278.68 L 670.51 278.68 L 675.46 288.89 L 680.40 299.11 L 685.34 299.11 L 690.28 299.11 L 695.23 288.89 L 700.17 278.68 L 705.11 268.47 L 710.05 248.04 L 714.99 217.41 L 719.94 217.41 L 724.88 166.34 L 729.82 176.56 L 734.76 156.13 L 739.71 166.34 L 744.65 176.56 L 749.59 166.34 L 754.53 309.32 L 759.48 309.32 L 764.42 309.32 L 769.36 309.32 L 774.30 237.83 L 779.25 258.26 L 784.19 278.68 L 789.13 268.47 L 794.07 278.68 L 799.02 268.47 L 803.96 268.47 L 808.90 258.26 L 813.84 217.41 L 818.79 176.56 L 823.73 186.77 L 828.67 196.98 L 833.61 186.77 L 838.55 176.56 L 843.50 145.92 L 848.44 186.77 L 853.38 156.13" /><path class="forecast-svg-actual" d="M 858.32 156.13 L 863.27 176.56 L 868.21 196.98 L 873.15 227.62 L 878.09 237.83 L 883.04 248.04 L 887.98 258.26 L 892.92 248.04 L 897.86 258.26 L 902.81 268.47 L 907.75 278.68 L 912.69 268.47 L 917.63 268.47 L 922.58 278.68 L 927.52 258.26 L 932.46 237.83 L 937.40 196.98 L 942.35 207.19 L 947.29 196.98 L 952.23 186.77 L 957.17 176.56 L 962.12 196.98 L 967.06 176.56 L 972.00 196.98" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 162.46 L 863.27 170.37 L 868.21 174.99 L 873.15 179.02 L 878.09 186.42 L 883.04 195.77 L 887.98 203.98 L 892.92 235.39 L 897.86 245.48 L 902.81 257.72 L 907.75 257.98 L 912.69 258.58 L 917.63 262.92 L 922.58 256.74 L 927.52 239.14 L 932.46 199.64 L 937.40 167.92 L 942.35 160.01 L 947.29 158.49 L 952.23 157.72 L 957.17 152.39 L 962.12 154.31 L 967.06 149.68 L 972.00 139.71 L 972.00 151.19 L 967.06 157.87 L 962.12 160.74 L 957.17 162.60 L 952.23 171.31 L 947.29 179.37 L 942.35 187.83 L 937.40 199.03 L 932.46 225.78 L 927.52 254.01 L 922.58 265.79 L 917.63 272.80 L 912.69 272.33 L 907.75 272.80 L 902.81 280.60 L 897.86 270.83 L 892.92 255.74 L 887.98 250.02 L 883.04 242.23 L 878.09 234.54 L 873.15 224.64 L 868.21 177.44 L 863.27 182.96 L 858.32 172.05 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 167.25 L 863.27 176.66 L 868.21 176.22 L 873.15 201.83 L 878.09 210.48 L 883.04 219.00 L 887.98 227.00 L 892.92 245.56 L 897.86 258.16 L 902.81 269.16 L 907.75 265.39 L 912.69 265.46 L 917.63 267.86 L 922.58 261.27 L 927.52 246.57 L 932.46 212.71 L 937.40 183.47 L 942.35 173.92 L 947.29 168.93 L 952.23 164.52 L 957.17 157.50 L 962.12 157.52 L 967.06 153.78 L 972.00 145.45" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="167.25" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 180.00 L 32.94 211.43 L 37.88 200.95 L 42.83 316.21 L 47.77 316.21 L 52.71 316.21 L 57.65 316.21 L 62.60 263.82 L 67.54 274.30 L 72.48 274.30 L 77.42 253.34 L 82.37 242.86 L 87.31 274.30 L 92.25 263.82 L 97.19 242.86 L 102.14 180.00 L 107.08 148.57 L 112.02 127.61 L 116.96 127.61 L 121.91 148.57 L 126.85 106.66 L 131.79 138.09 L 136.73 127.61 L 141.68 127.61 L 146.62 138.09 L 151.56 159.05 L 156.50 148.57 L 161.45 316.21 L 166.39 316.21 L 171.33 316.21 L 176.27 316.21 L 181.21 232.39 L 186.16 242.86 L 191.10 274.30 L 196.04 263.82 L 200.98 253.34 L 205.93 263.82 L 210.87 263.82 L 215.81 221.91 L 220.75 221.91 L 225.70 138.09 L 230.64 138.09 L 235.58 117.14 L 240.52 127.61 L 245.47 138.09 L 250.41 169.52 L 255.35 127.61 L 260.29 117.14 L 265.24 138.09 L 270.18 169.52 L 275.12 117.14 L 280.06 316.21 L 285.01 316.21 L 289.95 316.21 L 294.89 316.21 L 299.83 242.86 L 304.77 253.34 L 309.72 263.82 L 314.66 253.34 L 319.60 284.77 L 324.54 263.82 L 329.49 242.86 L 334.43 232.39 L 339.37 190.48 L 344.31 148.57 L 349.26 159.05 L 354.20 117.14 L 359.14 138.09 L 364.08 96.18 L 369.03 138.09 L 373.97 85.70 L 378.91 43.79 L 383.85 75.23 L 388.80 96.18 L 393.74 127.61 L 398.68 316.21 L 403.62 316.21 L 408.57 316.21 L 413.51 316.21 L 418.45 211.43 L 423.39 253.34 L 428.34 263.82 L 433.28 263.82 L 438.22 253.34 L 443.16 274.30 L 448.10 232.39 L 453.05 232.39 L 457.99 180.00 L 462.93 200.95 L 467.87 148.57 L 472.82 127.61 L 477.76 96.18 L 482.70 75.23 L 487.64 75.23 L 492.59 64.75 L 497.53 64.75 L 502.47 85.70 L 507.41 96.18 L 512.36 85.70 L 517.30 316.21 L 522.24 316.21 L 527.18 316.21 L 532.13 316.21 L 537.07 221.91 L 542.01 232.39 L 546.95 242.86 L 551.90 263.82 L 556.84 284.77 L 561.78 284.77 L 566.72 295.25 L 571.66 284.77 L 576.61 274.30 L 581.55 253.34 L 586.49 232.39 L 591.43 221.91 L 596.38 180.00 L 601.32 159.05 L 606.26 159.05 L 611.20 148.57 L 616.15 180.00 L 621.09 200.95 L 626.03 200.95 L 630.97 211.43 L 635.92 316.21 L 640.86 316.21 L 645.80 316.21 L 650.74 316.21 L 655.69 274.30 L 660.63 274.30 L 665.57 284.77 L 670.51 284.77 L 675.46 295.25 L 680.40 305.73 L 685.34 305.73 L 690.28 305.73 L 695.23 295.25 L 700.17 284.77 L 705.11 274.30 L 710.05 253.34 L 714.99 221.91 L 719.94 221.91 L 724.88 169.52 L 729.82 180.00 L 734.76 159.05 L 739.71 169.52 L 744.65 180.00 L 749.59 169.52 L 754.53 316.21 L 759.48 316.21 L 764.42 316.21 L 769.36 316.21 L 774.30 242.86 L 779.25 263.82 L 784.19 284.77 L 789.13 274.30 L 794.07 284.77 L 799.02 274.30 L 803.96 274.30 L 808.90 263.82 L 813.84 221.91 L 818.79 180.00 L 823.73 190.48 L 828.67 200.95 L 833.61 190.48 L 838.55 180.00 L 843.50 148.57 L 848.44 190.48 L 853.38 159.05" /><path class="forecast-svg-actual" d="M 858.32 159.05 L 863.27 180.00 L 868.21 200.95 L 873.15 232.39 L 878.09 242.86 L 883.04 253.34 L 887.98 263.82 L 892.92 253.34 L 897.86 263.82 L 902.81 274.30 L 907.75 284.77 L 912.69 274.30 L 917.63 274.30 L 922.58 284.77 L 927.52 263.82 L 932.46 242.86 L 937.40 200.95 L 942.35 211.43 L 947.29 200.95 L 952.23 190.48 L 957.17 180.00 L 962.12 200.95 L 967.06 180.00 L 972.00 200.95" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 165.84 L 863.27 176.32 L 868.21 172.31 L 873.15 183.26 L 878.09 197.93 L 883.04 208.36 L 887.98 219.81 L 892.92 239.18 L 897.86 251.19 L 902.81 261.72 L 907.75 263.61 L 912.69 272.56 L 917.63 274.51 L 922.58 266.25 L 927.52 248.49 L 932.46 209.68 L 937.40 171.62 L 942.35 156.74 L 947.29 142.20 L 952.23 140.09 L 957.17 129.90 L 962.12 135.79 L 967.06 129.70 L 972.00 123.47 L 972.00 150.19 L 967.06 164.92 L 962.12 150.45 L 957.17 160.53 L 952.23 171.29 L 947.29 178.41 L 942.35 178.11 L 937.40 188.38 L 932.46 230.79 L 927.52 268.25 L 922.58 280.67 L 917.63 284.98 L 912.69 284.42 L 907.75 274.08 L 902.81 270.11 L 897.86 258.00 L 892.92 244.87 L 887.98 236.58 L 883.04 227.91 L 878.09 218.22 L 873.15 204.40 L 868.21 188.52 L 863.27 182.00 L 858.32 171.53 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 168.68 L 863.27 179.16 L 868.21 180.42 L 873.15 193.83 L 878.09 208.08 L 883.04 218.14 L 887.98 228.20 L 892.92 242.03 L 897.86 254.60 L 902.81 265.92 L 907.75 268.85 L 912.69 278.49 L 917.63 279.75 L 922.58 273.46 L 927.52 258.37 L 932.46 220.23 L 937.40 180.00 L 942.35 167.43 L 947.29 160.30 L 952.23 155.69 L 957.17 145.21 L 962.12 143.12 L 967.06 147.31 L 972.00 136.83" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="168.68" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 172.81 L 863.27 182.63 L 868.21 180.87 L 873.15 190.09 L 878.09 191.26 L 883.04 193.94 L 887.98 200.14 L 892.92 251.16 L 897.86 264.43 L 902.81 273.72 L 907.75 268.80 L 912.69 265.98 L 917.63 264.92 L 922.58 257.84 L 927.52 242.87 L 932.46 210.12 L 937.40 180.26 L 942.35 171.43 L 947.29 168.03 L 952.23 163.93 L 957.17 158.39 L 962.12 160.11 L 967.06 157.37 L 972.00 155.89" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="172.81" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 180.00 L 32.94 211.43 L 37.88 200.95 L 42.83 316.21 L 47.77 316.21 L 52.71 316.21 L 57.65 316.21 L 62.60 263.82 L 67.54 274.30 L 72.48 274.30 L 77.42 253.34 L 82.37 242.86 L 87.31 274.30 L 92.25 263.82 L 97.19 242.86 L 102.14 180.00 L 107.08 148.57 L 112.02 127.61 L 116.96 127.61 L 121.91 148.57 L 126.85 106.66 L 131.79 138.09 L 136.73 127.61 L 141.68 127.61 L 146.62 138.09 L 151.56 159.05 L 156.50 148.57 L 161.45 316.21 L 166.39 316.21 L 171.33 316.21 L 176.27 316.21 L 181.21 232.39 L 186.16 242.86 L 191.10 274.30 L 196.04 263.82 L 200.98 253.34 L 205.93 263.82 L 210.87 263.82 L 215.81 221.91 L 220.75 221.91 L 225.70 138.09 L 230.64 138.09 L 235.58 117.14 L 240.52 127.61 L 245.47 138.09 L 250.41 169.52 L 255.35 127.61 L 260.29 117.14 L 265.24 138.09 L 270.18 169.52 L 275.12 117.14 L 280.06 316.21 L 285.01 316.21 L 289.95 316.21 L 294.89 316.21 L 299.83 242.86 L 304.77 253.34 L 309.72 263.82 L 314.66 253.34 L 319.60 284.77 L 324.54 263.82 L 329.49 242.86 L 334.43 232.39 L 339.37 190.48 L 344.31 148.57 L 349.26 159.05 L 354.20 117.14 L 359.14 138.09 L 364.08 96.18 L 369.03 138.09 L 373.97 85.70 L 378.91 43.79 L 383.85 75.23 L 388.80 96.18 L 393.74 127.61 L 398.68 316.21 L 403.62 316.21 L 408.57 316.21 L 413.51 316.21 L 418.45 211.43 L 423.39 253.34 L 428.34 263.82 L 433.28 263.82 L 438.22 253.34 L 443.16 274.30 L 448.10 232.39 L 453.05 232.39 L 457.99 180.00 L 462.93 200.95 L 467.87 148.57 L 472.82 127.61 L 477.76 96.18 L 482.70 75.23 L 487.64 75.23 L 492.59 64.75 L 497.53 64.75 L 502.47 85.70 L 507.41 96.18 L 512.36 85.70 L 517.30 316.21 L 522.24 316.21 L 527.18 316.21 L 532.13 316.21 L 537.07 221.91 L 542.01 232.39 L 546.95 242.86 L 551.90 263.82 L 556.84 284.77 L 561.78 284.77 L 566.72 295.25 L 571.66 284.77 L 576.61 274.30 L 581.55 253.34 L 586.49 232.39 L 591.43 221.91 L 596.38 180.00 L 601.32 159.05 L 606.26 159.05 L 611.20 148.57 L 616.15 180.00 L 621.09 200.95 L 626.03 200.95 L 630.97 211.43 L 635.92 316.21 L 640.86 316.21 L 645.80 316.21 L 650.74 316.21 L 655.69 274.30 L 660.63 274.30 L 665.57 284.77 L 670.51 284.77 L 675.46 295.25 L 680.40 305.73 L 685.34 305.73 L 690.28 305.73 L 695.23 295.25 L 700.17 284.77 L 705.11 274.30 L 710.05 253.34 L 714.99 221.91 L 719.94 221.91 L 724.88 169.52 L 729.82 180.00 L 734.76 159.05 L 739.71 169.52 L 744.65 180.00 L 749.59 169.52 L 754.53 316.21 L 759.48 316.21 L 764.42 316.21 L 769.36 316.21 L 774.30 242.86 L 779.25 263.82 L 784.19 284.77 L 789.13 274.30 L 794.07 284.77 L 799.02 274.30 L 803.96 274.30 L 808.90 263.82 L 813.84 221.91 L 818.79 180.00 L 823.73 190.48 L 828.67 200.95 L 833.61 190.48 L 838.55 180.00 L 843.50 148.57 L 848.44 190.48 L 853.38 159.05" /><path class="forecast-svg-actual" d="M 858.32 159.05 L 863.27 180.00 L 868.21 200.95 L 873.15 232.39 L 878.09 242.86 L 883.04 253.34 L 887.98 263.82 L 892.92 253.34 L 897.86 263.82 L 902.81 274.30 L 907.75 284.77 L 912.69 274.30 L 917.63 274.30 L 922.58 284.77 L 927.52 263.82 L 932.46 242.86 L 937.40 200.95 L 942.35 211.43 L 947.29 200.95 L 952.23 190.48 L 957.17 180.00 L 962.12 200.95 L 967.06 180.00 L 972.00 200.95" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 165.84 L 863.27 176.32 L 868.21 172.31 L 873.15 183.26 L 878.09 197.93 L 883.04 208.36 L 887.98 219.81 L 892.92 239.18 L 897.86 251.19 L 902.81 261.72 L 907.75 263.61 L 912.69 272.56 L 917.63 274.51 L 922.58 266.25 L 927.52 248.49 L 932.46 209.68 L 937.40 171.62 L 942.35 156.74 L 947.29 142.20 L 952.23 140.09 L 957.17 129.90 L 962.12 135.79 L 967.06 129.70 L 972.00 123.47 L 972.00 150.19 L 967.06 164.92 L 962.12 150.45 L 957.17 160.53 L 952.23 171.29 L 947.29 178.41 L 942.35 178.11 L 937.40 188.38 L 932.46 230.79 L 927.52 268.25 L 922.58 280.67 L 917.63 284.98 L 912.69 284.42 L 907.75 274.08 L 902.81 270.11 L 897.86 258.00 L 892.92 244.87 L 887.98 236.58 L 883.04 227.91 L 878.09 218.22 L 873.15 204.40 L 868.21 188.52 L 863.27 182.00 L 858.32 171.53 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 168.68 L 863.27 179.16 L 868.21 180.42 L 873.15 193.83 L 878.09 208.08 L 883.04 218.14 L 887.98 228.20 L 892.92 242.03 L 897.86 254.60 L 902.81 265.92 L 907.75 268.85 L 912.69 278.49 L 917.63 279.75 L 922.58 273.46 L 927.52 258.37 L 932.46 220.23 L 937.40 180.00 L 942.35 167.43 L 947.29 160.30 L 952.23 155.69 L 957.17 145.21 L 962.12 143.12 L 967.06 147.31 L 972.00 136.83" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="168.68" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 180.00 L 32.94 211.43 L 37.88 200.95 L 42.83 316.21 L 47.77 316.21 L 52.71 316.21 L 57.65 316.21 L 62.60 263.82 L 67.54 274.30 L 72.48 274.30 L 77.42 253.34 L 82.37 242.86 L 87.31 274.30 L 92.25 263.82 L 97.19 242.86 L 102.14 180.00 L 107.08 148.57 L 112.02 127.61 L 116.96 127.61 L 121.91 148.57 L 126.85 106.66 L 131.79 138.09 L 136.73 127.61 L 141.68 127.61 L 146.62 138.09 L 151.56 159.05 L 156.50 148.57 L 161.45 316.21 L 166.39 316.21 L 171.33 316.21 L 176.27 316.21 L 181.21 232.39 L 186.16 242.86 L 191.10 274.30 L 196.04 263.82 L 200.98 253.34 L 205.93 263.82 L 210.87 263.82 L 215.81 221.91 L 220.75 221.91 L 225.70 138.09 L 230.64 138.09 L 235.58 117.14 L 240.52 127.61 L 245.47 138.09 L 250.41 169.52 L 255.35 127.61 L 260.29 117.14 L 265.24 138.09 L 270.18 169.52 L 275.12 117.14 L 280.06 316.21 L 285.01 316.21 L 289.95 316.21 L 294.89 316.21 L 299.83 242.86 L 304.77 253.34 L 309.72 263.82 L 314.66 253.34 L 319.60 284.77 L 324.54 263.82 L 329.49 242.86 L 334.43 232.39 L 339.37 190.48 L 344.31 148.57 L 349.26 159.05 L 354.20 117.14 L 359.14 138.09 L 364.08 96.18 L 369.03 138.09 L 373.97 85.70 L 378.91 43.79 L 383.85 75.23 L 388.80 96.18 L 393.74 127.61 L 398.68 316.21 L 403.62 316.21 L 408.57 316.21 L 413.51 316.21 L 418.45 211.43 L 423.39 253.34 L 428.34 263.82 L 433.28 263.82 L 438.22 253.34 L 443.16 274.30 L 448.10 232.39 L 453.05 232.39 L 457.99 180.00 L 462.93 200.95 L 467.87 148.57 L 472.82 127.61 L 477.76 96.18 L 482.70 75.23 L 487.64 75.23 L 492.59 64.75 L 497.53 64.75 L 502.47 85.70 L 507.41 96.18 L 512.36 85.70 L 517.30 316.21 L 522.24 316.21 L 527.18 316.21 L 532.13 316.21 L 537.07 221.91 L 542.01 232.39 L 546.95 242.86 L 551.90 263.82 L 556.84 284.77 L 561.78 284.77 L 566.72 295.25 L 571.66 284.77 L 576.61 274.30 L 581.55 253.34 L 586.49 232.39 L 591.43 221.91 L 596.38 180.00 L 601.32 159.05 L 606.26 159.05 L 611.20 148.57 L 616.15 180.00 L 621.09 200.95 L 626.03 200.95 L 630.97 211.43 L 635.92 316.21 L 640.86 316.21 L 645.80 316.21 L 650.74 316.21 L 655.69 274.30 L 660.63 274.30 L 665.57 284.77 L 670.51 284.77 L 675.46 295.25 L 680.40 305.73 L 685.34 305.73 L 690.28 305.73 L 695.23 295.25 L 700.17 284.77 L 705.11 274.30 L 710.05 253.34 L 714.99 221.91 L 719.94 221.91 L 724.88 169.52 L 729.82 180.00 L 734.76 159.05 L 739.71 169.52 L 744.65 180.00 L 749.59 169.52 L 754.53 316.21 L 759.48 316.21 L 764.42 316.21 L 769.36 316.21 L 774.30 242.86 L 779.25 263.82 L 784.19 284.77 L 789.13 274.30 L 794.07 284.77 L 799.02 274.30 L 803.96 274.30 L 808.90 263.82 L 813.84 221.91 L 818.79 180.00 L 823.73 190.48 L 828.67 200.95 L 833.61 190.48 L 838.55 180.00 L 843.50 148.57 L 848.44 190.48 L 853.38 159.05" /><path class="forecast-svg-actual" d="M 858.32 159.05 L 863.27 180.00 L 868.21 200.95 L 873.15 232.39 L 878.09 242.86 L 883.04 253.34 L 887.98 263.82 L 892.92 253.34 L 897.86 263.82 L 902.81 274.30 L 907.75 284.77 L 912.69 274.30 L 917.63 274.30 L 922.58 284.77 L 927.52 263.82 L 932.46 242.86 L 937.40 200.95 L 942.35 211.43 L 947.29 200.95 L 952.23 190.48 L 957.17 180.00 L 962.12 200.95 L 967.06 180.00 L 972.00 200.95" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 171.51 L 863.27 180.58 L 868.21 178.09 L 873.15 157.39 L 878.09 148.42 L 883.04 141.00 L 887.98 144.10 L 892.92 226.53 L 897.86 242.58 L 902.81 254.37 L 907.75 252.62 L 912.69 248.36 L 917.63 243.39 L 922.58 236.95 L 927.52 224.82 L 932.46 200.09 L 937.40 176.15 L 942.35 166.79 L 947.29 163.47 L 952.23 156.88 L 957.17 151.86 L 962.12 150.30 L 967.06 143.99 L 972.00 125.60 L 972.00 186.17 L 967.06 170.76 L 962.12 169.92 L 957.17 164.92 L 952.23 170.97 L 947.29 172.60 L 942.35 176.07 L 937.40 184.37 L 932.46 220.16 L 927.52 260.92 L 922.58 278.73 L 917.63 286.46 L 912.69 283.61 L 907.75 284.99 L 902.81 293.07 L 897.86 286.28 L 892.92 275.79 L 887.98 256.18 L 883.04 246.89 L 878.09 234.11 L 873.15 222.78 L 868.21 183.65 L 863.27 184.69 L 858.32 174.12 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 172.81 L 863.27 182.63 L 868.21 180.87 L 873.15 190.09 L 878.09 191.26 L 883.04 193.94 L 887.98 200.14 L 892.92 251.16 L 897.86 264.43 L 902.81 273.72 L 907.75 268.80 L 912.69 265.98 L 917.63 264.92 L 922.58 257.84 L 927.52 242.87 L 932.46 210.12 L 937.40 180.26 L 942.35 171.43 L 947.29 168.03 L 952.23 163.93 L 957.17 158.39 L 962.12 160.11 L 967.06 157.37 L 972.00 155.89" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="172.81" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 179.18 L 32.94 210.42 L 37.88 200.01 L 42.83 314.57 L 47.77 314.57 L 52.71 314.57 L 57.65 314.57 L 62.60 262.49 L 67.54 272.91 L 72.48 272.91 L 77.42 252.08 L 82.37 241.67 L 87.31 272.91 L 92.25 262.49 L 97.19 241.67 L 102.14 179.18 L 107.08 147.94 L 112.02 127.11 L 116.96 127.11 L 121.91 147.94 L 126.85 106.28 L 131.79 137.52 L 136.73 127.11 L 141.68 127.11 L 146.62 137.52 L 151.56 158.35 L 156.50 147.94 L 161.45 314.57 L 166.39 314.57 L 171.33 314.57 L 176.27 314.57 L 181.21 231.25 L 186.16 241.67 L 191.10 272.91 L 196.04 262.49 L 200.98 252.08 L 205.93 262.49 L 210.87 262.49 L 215.81 220.84 L 220.75 220.84 L 225.70 137.52 L 230.64 137.52 L 235.58 116.69 L 240.52 127.11 L 245.47 137.52 L 250.41 168.77 L 255.35 127.11 L 260.29 116.69 L 265.24 137.52 L 270.18 168.77 L 275.12 116.69 L 280.06 314.57 L 285.01 314.57 L 289.95 314.57 L 294.89 314.57 L 299.83 241.67 L 304.77 252.08 L 309.72 262.49 L 314.66 252.08 L 319.60 283.32 L 324.54 262.49 L 329.49 241.67 L 334.43 231.25 L 339.37 189.59 L 344.31 147.94 L 349.26 158.35 L 354.20 116.69 L 359.14 137.52 L 364.08 95.86 L 369.03 137.52 L 373.97 85.45 L 378.91 43.79 L 383.85 75.04 L 388.80 95.86 L 393.74 127.11 L 398.68 314.57 L 403.62 314.57 L 408.57 314.57 L 413.51 314.57 L 418.45 210.42 L 423.39 252.08 L 428.34 262.49 L 433.28 262.49 L 438.22 252.08 L 443.16 272.91 L 448.10 231.25 L 453.05 231.25 L 457.99 179.18 L 462.93 200.01 L 467.87 147.94 L 472.82 127.11 L 477.76 95.86 L 482.70 75.04 L 487.64 75.04 L 492.59 64.62 L 497.53 64.62 L 502.47 85.45 L 507.41 95.86 L 512.36 85.45 L 517.30 314.57 L 522.24 314.57 L 527.18 314.57 L 532.13 314.57 L 537.07 220.84 L 542.01 231.25 L 546.95 241.67 L 551.90 262.49 L 556.84 283.32 L 561.78 283.32 L 566.72 293.74 L 571.66 283.32 L 576.61 272.91 L 581.55 252.08 L 586.49 231.25 L 591.43 220.84 L 596.38 179.18 L 601.32 158.35 L 606.26 158.35 L 611.20 147.94 L 616.15 179.18 L 621.09 200.01 L 626.03 200.01 L 630.97 210.42 L 635.92 314.57 L 640.86 314.57 L 645.80 314.57 L 650.74 314.57 L 655.69 272.91 L 660.63 272.91 L 665.57 283.32 L 670.51 283.32 L 675.46 293.74 L 680.40 304.15 L 685.34 304.15 L 690.28 304.15 L 695.23 293.74 L 700.17 283.32 L 705.11 272.91 L 710.05 252.08 L 714.99 220.84 L 719.94 220.84 L 724.88 168.77 L 729.82 179.18 L 734.76 158.35 L 739.71 168.77 L 744.65 179.18 L 749.59 168.77 L 754.53 314.57 L 759.48 314.57 L 764.42 314.57 L 769.36 314.57 L 774.30 241.67 L 779.25 262.49 L 784.19 283.32 L 789.13 272.91 L 794.07 283.32 L 799.02 272.91 L 803.96 272.91 L 808.90 262.49 L 813.84 220.84 L 818.79 179.18 L 823.73 189.59 L 828.67 200.01 L 833.61 189.59 L 838.55 179.18 L 843.50 147.94 L 848.44 189.59 L 853.38 158.35" /><path class="forecast-svg-actual" d="M 858.32 158.35 L 863.27 179.18 L 868.21 200.01 L 873.15 231.25 L 878.09 241.67 L 883.04 252.08 L 887.98 262.49 L 892.92 252.08 L 897.86 262.49 L 902.81 272.91 L 907.75 283.32 L 912.69 272.91 L 917.63 272.91 L 922.58 283.32 L 927.52 262.49 L 932.46 241.67 L 937.40 200.01 L 942.35 210.42 L 947.29 200.01 L 952.23 189.59 L 957.17 179.18 L 962.12 200.01 L 967.06 179.18 L 972.00 200.01" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 148.06 L 863.27 160.51 L 868.21 150.31 L 873.15 314.57 L 878.09 314.57 L 883.04 314.57 L 887.98 312.08 L 892.92 216.37 L 897.86 242.57 L 902.81 257.71 L 907.75 255.15 L 912.69 254.55 L 917.63 247.96 L 922.58 241.33 L 927.52 229.82 L 932.46 166.07 L 937.40 134.48 L 942.35 119.45 L 947.29 126.31 L 952.23 118.19 L 957.17 119.96 L 962.12 99.64 L 967.06 90.82 L 972.00 74.55 L 972.00 190.21 L 967.06 202.83 L 962.12 210.12 L 957.17 206.46 L 952.23 208.84 L 947.29 209.03 L 942.35 211.35 L 937.40 221.67 L 932.46 248.25 L 927.52 285.55 L 922.58 284.35 L 917.63 284.62 L 912.69 288.98 L 907.75 287.59 L 902.81 288.96 L 897.86 276.84 L 892.92 268.53 L 887.98 316.21 L 883.04 314.57 L 878.09 314.57 L 873.15 314.57 L 868.21 199.72 L 863.27 201.31 L 858.32 185.65 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 166.85 L 863.27 180.91 L 868.21 175.02 L 873.15 314.57 L 878.09 314.57 L 883.04 314.57 L 887.98 314.15 L 892.92 242.45 L 897.86 259.70 L 902.81 273.33 L 907.75 271.37 L 912.69 271.76 L 917.63 266.29 L 922.58 262.84 L 927.52 257.68 L 932.46 207.16 L 937.40 178.07 L 942.35 165.40 L 947.29 167.67 L 952.23 163.52 L 957.17 163.21 L 962.12 154.88 L 967.06 146.83 L 972.00 132.38" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="166.85" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 858.32 197.77 L 863.27 222.54 L 868.21 186.68 L 873.15 199.93 L 878.09 192.50 L 883.04 210.68 L 887.98 210.26 L 892.92 208.63 L 897.86 209.57 L 902.81 214.06 L 907.75 224.28 L 912.69 208.15 L 917.63 209.15 L 922.58 233.29 L 927.52 209.11 L 932.46 208.15 L 937.40 225.88 L 942.35 198.39 L 947.29 214.09 L 952.23 223.54 L 957.17 204.68 L 962.12 228.58 L 967.06 206.14 L 972.00 210.16" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="197.77" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 858.32 158.96 L 863.27 153.20 L 868.21 152.80 L 873.15 172.13 L 878.09 162.86 L 883.04 163.07 L 887.98 156.17 L 892.92 163.24 L 897.86 157.96 L 902.81 152.55 L 907.75 159.90 L 912.69 151.88 L 917.63 155.26 L 922.58 168.76 L 927.52 183.81 L 932.46 163.18 L 937.40 160.15 L 942.35 160.50 L 947.29 161.75 L 952.23 163.01 L 957.17 161.87 L 962.12 149.96 L 967.06 159.44 L 972.00 154.65" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="158.96" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 211.56 L 32.94 234.76 L 37.88 227.03 L 42.83 312.07 L 47.77 312.07 L 52.71 312.07 L 57.65 312.07 L 62.60 273.41 L 67.54 281.14 L 72.48 281.14 L 77.42 265.68 L 82.37 257.95 L 87.31 281.14 L 92.25 273.41 L 97.19 257.95 L 102.14 211.56 L 107.08 188.37 L 112.02 172.91 L 116.96 172.91 L 121.91 188.37 L 126.85 157.45 L 131.79 180.64 L 136.73 172.91 L 141.68 172.91 L 146.62 180.64 L 151.56 196.10 L 156.50 188.37 L 161.45 312.07 L 166.39 312.07 L 171.33 312.07 L 176.27 312.07 L 181.21 250.22 L 186.16 257.95 L 191.10 281.14 L 196.04 273.41 L 200.98 265.68 L 205.93 273.41 L 210.87 273.41 L 215.81 242.49 L 220.75 242.49 L 225.70 180.64 L 230.64 180.64 L 235.58 165.18 L 240.52 172.91 L 245.47 180.64 L 250.41 203.83 L 255.35 172.91 L 260.29 165.18 L 265.24 180.64 L 270.18 203.83 L 275.12 165.18 L 280.06 312.07 L 285.01 312.07 L 289.95 312.07 L 294.89 312.07 L 299.83 257.95 L 304.77 265.68 L 309.72 273.41 L 314.66 265.68 L 319.60 288.87 L 324.54 273.41 L 329.49 257.95 L 334.43 250.22 L 339.37 219.29 L 344.31 188.37 L 349.26 196.10 L 354.20 165.18 L 359.14 180.64 L 364.08 149.72 L 369.03 180.64 L 373.97 141.99 L 378.91 111.06 L 383.85 134.25 L 388.80 149.72 L 393.74 172.91 L 398.68 312.07 L 403.62 312.07 L 408.57 312.07 L 413.51 312.07 L 418.45 234.76 L 423.39 265.68 L 428.34 273.41 L 433.28 273.41 L 438.22 265.68 L 443.16 281.14 L 448.10 250.22 L 453.05 250.22 L 457.99 211.56 L 462.93 227.03 L 467.87 188.37 L 472.82 172.91 L 477.76 149.72 L 482.70 134.25 L 487.64 134.25 L 492.59 126.52 L 497.53 126.52 L 502.47 141.99 L 507.41 149.72 L 512.36 141.99 L 517.30 312.07 L 522.24 312.07 L 527.18 312.07 L 532.13 312.07 L 537.07 242.49 L 542.01 250.22 L 546.95 257.95 L 551.90 273.41 L 556.84 288.87 L 561.78 288.87 L 566.72 296.60 L 571.66 288.87 L 576.61 281.14 L 581.55 265.68 L 586.49 250.22 L 591.43 242.49 L 596.38 211.56 L 601.32 196.10 L 606.26 196.10 L 611.20 188.37 L 616.15 211.56 L 621.09 227.03 L 626.03 227.03 L 630.97 234.76 L 635.92 312.07 L 640.86 312.07 L 645.80 312.07 L 650.74 312.07 L 655.69 281.14 L 660.63 281.14 L 665.57 288.87 L 670.51 288.87 L 675.46 296.60 L 680.40 304.34 L 685.34 304.34 L 690.28 304.34 L 695.23 296.60 L 700.17 288.87 L 705.11 281.14 L 710.05 265.68 L 714.99 242.49 L 719.94 242.49 L 724.88 203.83 L 729.82 211.56 L 734.76 196.10 L 739.71 203.83 L 744.65 211.56 L 749.59 203.83 L 754.53 312.07 L 759.48 312.07 L 764.42 312.07 L 769.36 312.07 L 774.30 257.95 L 779.25 273.41 L 784.19 288.87 L 789.13 281.14 L 794.07 288.87 L 799.02 281.14 L 803.96 281.14 L 808.90 273.41 L 813.84 242.49 L 818.79 211.56 L 823.73 219.29 L 828.67 227.03 L 833.61 219.29 L 838.55 211.56 L 843.50 188.37 L 848.44 219.29 L 853.38 196.10" /><path class="forecast-svg-actual" d="M 858.32 196.10 L 863.27 211.56 L 868.21 227.03 L 873.15 250.22 L 878.09 257.95 L 883.04 265.68 L 887.98 273.41 L 892.92 265.68 L 897.86 273.41 L 902.81 281.14 L 907.75 288.87 L 912.69 281.14 L 917.63 281.14 L 922.58 288.87 L 927.52 273.41 L 932.46 257.95 L 937.40 227.03 L 942.35 234.76 L 947.29 227.03 L 952.23 219.29 L 957.17 211.56 L 962.12 227.03 L 967.06 211.56 L 972.00 227.03" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 188.46 L 863.27 197.70 L 868.21 190.14 L 873.15 312.07 L 878.09 312.07 L 883.04 312.07 L 887.98 310.22 L 892.92 239.17 L 897.86 258.62 L 902.81 269.86 L 907.75 267.96 L 912.69 267.51 L 917.63 262.62 L 922.58 257.70 L 927.52 249.15 L 932.46 201.83 L 937.40 178.38 L 942.35 167.22 L 947.29 172.31 L 952.23 166.29 L 957.17 167.60 L 962.12 152.52 L 967.06 145.97 L 972.00 133.89 L 972.00 219.76 L 967.06 229.12 L 962.12 234.53 L 957.17 231.81 L 952.23 233.58 L 947.29 233.72 L 942.35 235.44 L 937.40 243.11 L 932.46 262.84 L 927.52 290.52 L 922.58 289.64 L 917.63 289.84 L 912.69 293.07 L 907.75 292.04 L 902.81 293.06 L 897.86 284.06 L 892.92 277.89 L 887.98 313.28 L 883.04 312.07 L 878.09 312.07 L 873.15 312.07 L 868.21 226.81 L 863.27 227.99 L 858.32 216.37 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 202.41 L 863.27 212.85 L 868.21 208.47 L 873.15 312.07 L 878.09 312.07 L 883.04 312.07 L 887.98 311.75 L 892.92 258.53 L 897.86 271.34 L 902.81 281.46 L 907.75 280.00 L 912.69 280.29 L 917.63 276.23 L 922.58 273.67 L 927.52 269.84 L 932.46 232.34 L 937.40 210.74 L 942.35 201.33 L 947.29 203.02 L 952.23 199.94 L 957.17 199.71 L 962.12 193.52 L 967.06 187.55 L 972.00 176.82" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="202.41" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 211.56 L 32.94 234.76 L 37.88 227.03 L 42.83 312.07 L 47.77 312.07 L 52.71 312.07 L 57.65 312.07 L 62.60 273.41 L 67.54 281.14 L 72.48 281.14 L 77.42 265.68 L 82.37 257.95 L 87.31 281.14 L 92.25 273.41 L 97.19 257.95 L 102.14 211.56 L 107.08 188.37 L 112.02 172.91 L 116.96 172.91 L 121.91 188.37 L 126.85 157.45 L 131.79 180.64 L 136.73 172.91 L 141.68 172.91 L 146.62 180.64 L 151.56 196.10 L 156.50 188.37 L 161.45 312.07 L 166.39 312.07 L 171.33 312.07 L 176.27 312.07 L 181.21 250.22 L 186.16 257.95 L 191.10 281.14 L 196.04 273.41 L 200.98 265.68 L 205.93 273.41 L 210.87 273.41 L 215.81 242.49 L 220.75 242.49 L 225.70 180.64 L 230.64 180.64 L 235.58 165.18 L 240.52 172.91 L 245.47 180.64 L 250.41 203.83 L 255.35 172.91 L 260.29 165.18 L 265.24 180.64 L 270.18 203.83 L 275.12 165.18 L 280.06 312.07 L 285.01 312.07 L 289.95 312.07 L 294.89 312.07 L 299.83 257.95 L 304.77 265.68 L 309.72 273.41 L 314.66 265.68 L 319.60 288.87 L 324.54 273.41 L 329.49 257.95 L 334.43 250.22 L 339.37 219.29 L 344.31 188.37 L 349.26 196.10 L 354.20 165.18 L 359.14 180.64 L 364.08 149.72 L 369.03 180.64 L 373.97 141.99 L 378.91 111.06 L 383.85 134.25 L 388.80 149.72 L 393.74 172.91 L 398.68 312.07 L 403.62 312.07 L 408.57 312.07 L 413.51 312.07 L 418.45 234.76 L 423.39 265.68 L 428.34 273.41 L 433.28 273.41 L 438.22 265.68 L 443.16 281.14 L 448.10 250.22 L 453.05 250.22 L 457.99 211.56 L 462.93 227.03 L 467.87 188.37 L 472.82 172.91 L 477.76 149.72 L 482.70 134.25 L 487.64 134.25 L 492.59 126.52 L 497.53 126.52 L 502.47 141.99 L 507.41 149.72 L 512.36 141.99 L 517.30 312.07 L 522.24 312.07 L 527.18 312.07 L 532.13 312.07 L 537.07 242.49 L 542.01 250.22 L 546.95 257.95 L 551.90 273.41 L 556.84 288.87 L 561.78 288.87 L 566.72 296.60 L 571.66 288.87 L 576.61 281.14 L 581.55 265.68 L 586.49 250.22 L 591.43 242.49 L 596.38 211.56 L 601.32 196.10 L 606.26 196.10 L 611.20 188.37 L 616.15 211.56 L 621.09 227.03 L 626.03 227.03 L 630.97 234.76 L 635.92 312.07 L 640.86 312.07 L 645.80 312.07 L 650.74 312.07 L 655.69 281.14 L 660.63 281.14 L 665.57 288.87 L 670.51 288.87 L 675.46 296.60 L 680.40 304.34 L 685.34 304.34 L 690.28 304.34 L 695.23 296.60 L 700.17 288.87 L 705.11 281.14 L 710.05 265.68 L 714.99 242.49 L 719.94 242.49 L 724.88 203.83 L 729.82 211.56 L 734.76 196.10 L 739.71 203.83 L 744.65 211.56 L 749.59 203.83 L 754.53 312.07 L 759.48 312.07 L 764.42 312.07 L 769.36 312.07 L 774.30 257.95 L 779.25 273.41 L 784.19 288.87 L 789.13 281.14 L 794.07 288.87 L 799.02 281.14 L 803.96 281.14 L 808.90 273.41 L 813.84 242.49 L 818.79 211.56 L 823.73 219.29 L 828.67 227.03 L 833.61 219.29 L 838.55 211.56 L 843.50 188.37 L 848.44 219.29 L 853.38 196.10" /><path class="forecast-svg-actual" d="M 858.32 196.10 L 863.27 211.56 L 868.21 227.03 L 873.15 250.22 L 878.09 257.95 L 883.04 265.68 L 887.98 273.41 L 892.92 265.68 L 897.86 273.41 L 902.81 281.14 L 907.75 288.87 L 912.69 281.14 L 917.63 281.14 L 922.58 288.87 L 927.52 273.41 L 932.46 257.95 L 937.40 227.03 L 942.35 234.76 L 947.29 227.03 L 952.23 219.29 L 957.17 211.56 L 962.12 227.03 L 967.06 211.56 L 972.00 227.03" /><path class="forecast-svg-band" fill="#8064a2" d="M 858.32 200.25 L 863.27 209.99 L 868.21 177.69 L 873.15 170.83 L 878.09 170.26 L 883.04 177.91 L 887.98 192.20 L 892.92 187.62 L 897.86 175.05 L 902.81 191.14 L 907.75 207.14 L 912.69 183.78 L 917.63 189.22 L 922.58 208.26 L 927.52 184.23 L 932.46 185.29 L 937.40 210.76 L 942.35 168.87 L 947.29 190.49 L 952.23 193.19 L 957.17 176.28 L 962.12 213.21 L 967.06 172.47 L 972.00 183.40 L 972.00 285.73 L 967.06 290.69 L 962.12 283.26 L 957.17 284.71 L 952.23 295.81 L 947.29 284.46 L 942.35 282.77 L 937.40 281.71 L 932.46 280.84 L 927.52 283.33 L 922.58 295.20 L 917.63 278.40 L 912.69 282.35 L 907.75 282.95 L 902.81 283.77 L 897.86 293.20 L 892.92 279.24 L 887.98 277.07 L 883.04 291.99 L 878.09 272.64 L 873.15 283.10 L 868.21 256.57 L 863.27 277.51 L 858.32 250.48 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 858.32 225.37 L 863.27 243.75 L 868.21 217.13 L 873.15 226.96 L 878.09 221.45 L 883.04 234.95 L 887.98 234.64 L 892.92 233.43 L 897.86 234.12 L 902.81 237.45 L 907.75 245.05 L 912.69 233.07 L 917.63 233.81 L 922.58 251.73 L 927.52 233.78 L 932.46 233.07 L 937.40 246.23 L 942.35 225.82 L 947.29 237.48 L 952.23 244.50 L 957.17 230.50 L 962.12 248.24 L 967.06 231.58 L 972.00 234.57" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="225.37" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 211.56 L 32.94 234.76 L 37.88 227.03 L 42.83 312.07 L 47.77 312.07 L 52.71 312.07 L 57.65 312.07 L 62.60 273.41 L 67.54 281.14 L 72.48 281.14 L 77.42 265.68 L 82.37 257.95 L 87.31 281.14 L 92.25 273.41 L 97.19 257.95 L 102.14 211.56 L 107.08 188.37 L 112.02 172.91 L 116.96 172.91 L 121.91 188.37 L 126.85 157.45 L 131.79 180.64 L 136.73 172.91 L 141.68 172.91 L 146.62 180.64 L 151.56 196.10 L 156.50 188.37 L 161.45 312.07 L 166.39 312.07 L 171.33 312.07 L 176.27 312.07 L 181.21 250.22 L 186.16 257.95 L 191.10 281.14 L 196.04 273.41 L 200.98 265.68 L 205.93 273.41 L 210.87 273.41 L 215.81 242.49 L 220.75 242.49 L 225.70 180.64 L 230.64 180.64 L 235.58 165.18 L 240.52 172.91 L 245.47 180.64 L 250.41 203.83 L 255.35 172.91 L 260.29 165.18 L 265.24 180.64 L 270.18 203.83 L 275.12 165.18 L 280.06 312.07 L 285.01 312.07 L 289.95 312.07 L 294.89 312.07 L 299.83 257.95 L 304.77 265.68 L 309.72 273.41 L 314.66 265.68 L 319.60 288.87 L 324.54 273.41 L 329.49 257.95 L 334.43 250.22 L 339.37 219.29 L 344.31 188.37 L 349.26 196.10 L 354.20 165.18 L 359.14 180.64 L 364.08 149.72 L 369.03 180.64 L 373.97 141.99 L 378.91 111.06 L 383.85 134.25 L 388.80 149.72 L 393.74 172.91 L 398.68 312.07 L 403.62 312.07 L 408.57 312.07 L 413.51 312.07 L 418.45 234.76 L 423.39 265.68 L 428.34 273.41 L 433.28 273.41 L 438.22 265.68 L 443.16 281.14 L 448.10 250.22 L 453.05 250.22 L 457.99 211.56 L 462.93 227.03 L 467.87 188.37 L 472.82 172.91 L 477.76 149.72 L 482.70 134.25 L 487.64 134.25 L 492.59 126.52 L 497.53 126.52 L 502.47 141.99 L 507.41 149.72 L 512.36 141.99 L 517.30 312.07 L 522.24 312.07 L 527.18 312.07 L 532.13 312.07 L 537.07 242.49 L 542.01 250.22 L 546.95 257.95 L 551.90 273.41 L 556.84 288.87 L 561.78 288.87 L 566.72 296.60 L 571.66 288.87 L 576.61 281.14 L 581.55 265.68 L 586.49 250.22 L 591.43 242.49 L 596.38 211.56 L 601.32 196.10 L 606.26 196.10 L 611.20 188.37 L 616.15 211.56 L 621.09 227.03 L 626.03 227.03 L 630.97 234.76 L 635.92 312.07 L 640.86 312.07 L 645.80 312.07 L 650.74 312.07 L 655.69 281.14 L 660.63 281.14 L 665.57 288.87 L 670.51 288.87 L 675.46 296.60 L 680.40 304.34 L 685.34 304.34 L 690.28 304.34 L 695.23 296.60 L 700.17 288.87 L 705.11 281.14 L 710.05 265.68 L 714.99 242.49 L 719.94 242.49 L 724.88 203.83 L 729.82 211.56 L 734.76 196.10 L 739.71 203.83 L 744.65 211.56 L 749.59 203.83 L 754.53 312.07 L 759.48 312.07 L 764.42 312.07 L 769.36 312.07 L 774.30 257.95 L 779.25 273.41 L 784.19 288.87 L 789.13 281.14 L 794.07 288.87 L 799.02 281.14 L 803.96 281.14 L 808.90 273.41 L 813.84 242.49 L 818.79 211.56 L 823.73 219.29 L 828.67 227.03 L 833.61 219.29 L 838.55 211.56 L 843.50 188.37 L 848.44 219.29 L 853.38 196.10" /><path class="forecast-svg-actual" d="M 858.32 196.10 L 863.27 211.56 L 868.21 227.03 L 873.15 250.22 L 878.09 257.95 L 883.04 265.68 L 887.98 273.41 L 892.92 265.68 L 897.86 273.41 L 902.81 281.14 L 907.75 288.87 L 912.69 281.14 L 917.63 281.14 L 922.58 288.87 L 927.52 273.41 L 932.46 257.95 L 937.40 227.03 L 942.35 234.76 L 947.29 227.03 L 952.23 219.29 L 957.17 211.56 L 962.12 227.03 L 967.06 211.56 L 972.00 227.03" /><path class="forecast-svg-band" fill="#668851" d="M 858.32 157.82 L 863.27 162.83 L 868.21 157.66 L 873.15 173.92 L 878.09 171.03 L 883.04 168.41 L 887.98 165.81 L 892.92 161.88 L 897.86 168.95 L 902.81 160.44 L 907.75 165.08 L 912.69 154.91 L 917.63 159.29 L 922.58 167.39 L 927.52 184.18 L 932.46 159.24 L 937.40 173.10 L 942.35 166.76 L 947.29 158.04 L 952.23 166.29 L 957.17 163.41 L 962.12 150.09 L 967.06 164.77 L 972.00 159.61 L 972.00 227.10 L 967.06 229.05 L 962.12 229.65 L 957.17 234.02 L 952.23 232.84 L 947.29 239.21 L 942.35 228.63 L 937.40 221.78 L 932.46 240.13 L 927.52 245.83 L 922.58 240.28 L 917.63 228.33 L 912.69 227.68 L 907.75 229.42 L 902.81 223.15 L 897.86 222.67 L 892.92 237.59 L 887.98 223.17 L 883.04 230.80 L 878.09 227.86 L 873.15 238.74 L 868.21 226.31 L 863.27 221.73 L 858.32 235.29 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 858.32 196.55 L 863.27 192.28 L 868.21 191.98 L 873.15 206.33 L 878.09 199.45 L 883.04 199.60 L 887.98 194.49 L 892.92 199.73 L 897.86 195.81 L 902.81 191.80 L 907.75 197.25 L 912.69 191.30 L 917.63 193.81 L 922.58 203.83 L 927.52 215.00 L 932.46 199.69 L 937.40 197.44 L 942.35 197.70 L 947.29 198.62 L 952.23 199.56 L 957.17 198.72 L 962.12 189.87 L 967.06 196.91 L 972.00 193.35" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="196.55" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 211.56 L 32.94 234.76 L 37.88 227.03 L 42.83 312.07 L 47.77 312.07 L 52.71 312.07 L 57.65 312.07 L 62.60 273.41 L 67.54 281.14 L 72.48 281.14 L 77.42 265.68 L 82.37 257.95 L 87.31 281.14 L 92.25 273.41 L 97.19 257.95 L 102.14 211.56 L 107.08 188.37 L 112.02 172.91 L 116.96 172.91 L 121.91 188.37 L 126.85 157.45 L 131.79 180.64 L 136.73 172.91 L 141.68 172.91 L 146.62 180.64 L 151.56 196.10 L 156.50 188.37 L 161.45 312.07 L 166.39 312.07 L 171.33 312.07 L 176.27 312.07 L 181.21 250.22 L 186.16 257.95 L 191.10 281.14 L 196.04 273.41 L 200.98 265.68 L 205.93 273.41 L 210.87 273.41 L 215.81 242.49 L 220.75 242.49 L 225.70 180.64 L 230.64 180.64 L 235.58 165.18 L 240.52 172.91 L 245.47 180.64 L 250.41 203.83 L 255.35 172.91 L 260.29 165.18 L 265.24 180.64 L 270.18 203.83 L 275.12 165.18 L 280.06 312.07 L 285.01 312.07 L 289.95 312.07 L 294.89 312.07 L 299.83 257.95 L 304.77 265.68 L 309.72 273.41 L 314.66 265.68 L 319.60 288.87 L 324.54 273.41 L 329.49 257.95 L 334.43 250.22 L 339.37 219.29 L 344.31 188.37 L 349.26 196.10 L 354.20 165.18 L 359.14 180.64 L 364.08 149.72 L 369.03 180.64 L 373.97 141.99 L 378.91 111.06 L 383.85 134.25 L 388.80 149.72 L 393.74 172.91 L 398.68 312.07 L 403.62 312.07 L 408.57 312.07 L 413.51 312.07 L 418.45 234.76 L 423.39 265.68 L 428.34 273.41 L 433.28 273.41 L 438.22 265.68 L 443.16 281.14 L 448.10 250.22 L 453.05 250.22 L 457.99 211.56 L 462.93 227.03 L 467.87 188.37 L 472.82 172.91 L 477.76 149.72 L 482.70 134.25 L 487.64 134.25 L 492.59 126.52 L 497.53 126.52 L 502.47 141.99 L 507.41 149.72 L 512.36 141.99 L 517.30 312.07 L 522.24 312.07 L 527.18 312.07 L 532.13 312.07 L 537.07 242.49 L 542.01 250.22 L 546.95 257.95 L 551.90 273.41 L 556.84 288.87 L 561.78 288.87 L 566.72 296.60 L 571.66 288.87 L 576.61 281.14 L 581.55 265.68 L 586.49 250.22 L 591.43 242.49 L 596.38 211.56 L 601.32 196.10 L 606.26 196.10 L 611.20 188.37 L 616.15 211.56 L 621.09 227.03 L 626.03 227.03 L 630.97 234.76 L 635.92 312.07 L 640.86 312.07 L 645.80 312.07 L 650.74 312.07 L 655.69 281.14 L 660.63 281.14 L 665.57 288.87 L 670.51 288.87 L 675.46 296.60 L 680.40 304.34 L 685.34 304.34 L 690.28 304.34 L 695.23 296.60 L 700.17 288.87 L 705.11 281.14 L 710.05 265.68 L 714.99 242.49 L 719.94 242.49 L 724.88 203.83 L 729.82 211.56 L 734.76 196.10 L 739.71 203.83 L 744.65 211.56 L 749.59 203.83 L 754.53 312.07 L 759.48 312.07 L 764.42 312.07 L 769.36 312.07 L 774.30 257.95 L 779.25 273.41 L 784.19 288.87 L 789.13 281.14 L 794.07 288.87 L 799.02 281.14 L 803.96 281.14 L 808.90 273.41 L 813.84 242.49 L 818.79 211.56 L 823.73 219.29 L 828.67 227.03 L 833.61 219.29 L 838.55 211.56 L 843.50 188.37 L 848.44 219.29 L 853.38 196.10" /><path class="forecast-svg-actual" d="M 858.32 196.10 L 863.27 211.56 L 868.21 227.03 L 873.15 250.22 L 878.09 257.95 L 883.04 265.68 L 887.98 273.41 L 892.92 265.68 L 897.86 273.41 L 902.81 281.14 L 907.75 288.87 L 912.69 281.14 L 917.63 281.14 L 922.58 288.87 L 927.52 273.41 L 932.46 257.95 L 937.40 227.03 L 942.35 234.76 L 947.29 227.03 L 952.23 219.29 L 957.17 211.56 L 962.12 227.03 L 967.06 211.56 L 972.00 227.03" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 858.32 164.88 L 863.27 155.79 L 868.21 154.12 L 873.15 143.93 L 878.09 134.33 L 883.04 128.99 L 887.98 123.55 L 892.92 115.98 L 897.86 116.83 L 902.81 115.72 L 907.75 111.58 L 912.69 106.18 L 917.63 98.54 L 922.58 90.85 L 927.52 75.38 L 932.46 62.29 L 937.40 67.73 L 942.35 65.74 L 947.29 59.03 L 952.23 51.52 L 957.17 49.77 L 962.12 43.79 L 967.06 55.02 L 972.00 51.68 L 972.00 308.36 L 967.06 308.12 L 962.12 310.07 L 957.17 309.65 L 952.23 312.86 L 947.29 310.91 L 942.35 314.09 L 937.40 303.44 L 932.46 311.98 L 927.52 316.21 L 922.58 309.39 L 917.63 314.07 L 912.69 312.00 L 907.75 310.31 L 902.81 297.51 L 897.86 298.26 L 892.92 300.96 L 887.98 285.97 L 883.04 279.91 L 878.09 270.86 L 873.15 266.21 L 868.21 234.99 L 863.27 232.70 L 858.32 212.48 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 858.32 188.68 L 863.27 194.25 L 868.21 194.56 L 873.15 205.07 L 878.09 202.60 L 883.04 204.45 L 887.98 204.76 L 892.92 208.47 L 897.86 207.54 L 902.81 206.62 L 907.75 210.95 L 912.69 209.09 L 917.63 206.31 L 922.58 200.12 L 927.52 195.79 L 932.46 187.13 L 937.40 185.59 L 942.35 189.92 L 947.29 184.97 L 952.23 182.19 L 957.17 179.71 L 962.12 176.93 L 967.06 181.57 L 972.00 180.02" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="858.32" cy="188.68" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 211.56 L 32.94 234.76 L 37.88 227.03 L 42.83 312.07 L 47.77 312.07 L 52.71 312.07 L 57.65 312.07 L 62.60 273.41 L 67.54 281.14 L 72.48 281.14 L 77.42 265.68 L 82.37 257.95 L 87.31 281.14 L 92.25 273.41 L 97.19 257.95 L 102.14 211.56 L 107.08 188.37 L 112.02 172.91 L 116.96 172.91 L 121.91 188.37 L 126.85 157.45 L 131.79 180.64 L 136.73 172.91 L 141.68 172.91 L 146.62 180.64 L 151.56 196.10 L 156.50 188.37 L 161.45 312.07 L 166.39 312.07 L 171.33 312.07 L 176.27 312.07 L 181.21 250.22 L 186.16 257.95 L 191.10 281.14 L 196.04 273.41 L 200.98 265.68 L 205.93 273.41 L 210.87 273.41 L 215.81 242.49 L 220.75 242.49 L 225.70 180.64 L 230.64 180.64 L 235.58 165.18 L 240.52 172.91 L 245.47 180.64 L 250.41 203.83 L 255.35 172.91 L 260.29 165.18 L 265.24 180.64 L 270.18 203.83 L 275.12 165.18 L 280.06 312.07 L 285.01 312.07 L 289.95 312.07 L 294.89 312.07 L 299.83 257.95 L 304.77 265.68 L 309.72 273.41 L 314.66 265.68 L 319.60 288.87 L 324.54 273.41 L 329.49 257.95 L 334.43 250.22 L 339.37 219.29 L 344.31 188.37 L 349.26 196.10 L 354.20 165.18 L 359.14 180.64 L 364.08 149.72 L 369.03 180.64 L 373.97 141.99 L 378.91 111.06 L 383.85 134.25 L 388.80 149.72 L 393.74 172.91 L 398.68 312.07 L 403.62 312.07 L 408.57 312.07 L 413.51 312.07 L 418.45 234.76 L 423.39 265.68 L 428.34 273.41 L 433.28 273.41 L 438.22 265.68 L 443.16 281.14 L 448.10 250.22 L 453.05 250.22 L 457.99 211.56 L 462.93 227.03 L 467.87 188.37 L 472.82 172.91 L 477.76 149.72 L 482.70 134.25 L 487.64 134.25 L 492.59 126.52 L 497.53 126.52 L 502.47 141.99 L 507.41 149.72 L 512.36 141.99 L 517.30 312.07 L 522.24 312.07 L 527.18 312.07 L 532.13 312.07 L 537.07 242.49 L 542.01 250.22 L 546.95 257.95 L 551.90 273.41 L 556.84 288.87 L 561.78 288.87 L 566.72 296.60 L 571.66 288.87 L 576.61 281.14 L 581.55 265.68 L 586.49 250.22 L 591.43 242.49 L 596.38 211.56 L 601.32 196.10 L 606.26 196.10 L 611.20 188.37 L 616.15 211.56 L 621.09 227.03 L 626.03 227.03 L 630.97 234.76 L 635.92 312.07 L 640.86 312.07 L 645.80 312.07 L 650.74 312.07 L 655.69 281.14 L 660.63 281.14 L 665.57 288.87 L 670.51 288.87 L 675.46 296.60 L 680.40 304.34 L 685.34 304.34 L 690.28 304.34 L 695.23 296.60 L 700.17 288.87 L 705.11 281.14 L 710.05 265.68 L 714.99 242.49 L 719.94 242.49 L 724.88 203.83 L 729.82 211.56 L 734.76 196.10 L 739.71 203.83 L 744.65 211.56 L 749.59 203.83 L 754.53 312.07 L 759.48 312.07 L 764.42 312.07 L 769.36 312.07 L 774.30 257.95 L 779.25 273.41 L 784.19 288.87 L 789.13 281.14 L 794.07 288.87 L 799.02 281.14 L 803.96 281.14 L 808.90 273.41 L 813.84 242.49 L 818.79 211.56 L 823.73 219.29 L 828.67 227.03 L 833.61 219.29 L 838.55 211.56 L 843.50 188.37 L 848.44 219.29 L 853.38 196.10" /><path class="forecast-svg-actual" d="M 858.32 196.10 L 863.27 211.56 L 868.21 227.03 L 873.15 250.22 L 878.09 257.95 L 883.04 265.68 L 887.98 273.41 L 892.92 265.68 L 897.86 273.41 L 902.81 281.14 L 907.75 288.87 L 912.69 281.14 L 917.63 281.14 L 922.58 288.87 L 927.52 273.41 L 932.46 257.95 L 937.40 227.03 L 942.35 234.76 L 947.29 227.03 L 952.23 219.29 L 957.17 211.56 L 962.12 227.03 L 967.06 211.56 L 972.00 227.03" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 858.32 155.53 L 863.27 178.61 L 868.21 174.51 L 873.15 175.68 L 878.09 175.02 L 883.04 166.27 L 887.98 157.39 L 892.92 159.89 L 897.86 173.79 L 902.81 160.96 L 907.75 161.31 L 912.69 158.12 L 917.63 165.69 L 922.58 173.49 L 927.52 164.59 L 932.46 183.82 L 937.40 161.99 L 942.35 173.69 L 947.29 149.52 L 952.23 164.76 L 957.17 168.10 L 962.12 156.68 L 967.06 173.14 L 972.00 162.86 L 972.00 222.94 L 967.06 240.92 L 962.12 233.85 L 957.17 229.74 L 952.23 232.84 L 947.29 235.45 L 942.35 240.62 L 937.40 234.31 L 932.46 234.68 L 927.52 245.62 L 922.58 226.59 L 917.63 237.71 L 912.69 218.77 L 907.75 227.82 L 902.81 224.91 L 897.86 229.92 L 892.92 227.83 L 887.98 214.94 L 883.04 227.86 L 878.09 248.77 L 873.15 244.73 L 868.21 237.72 L 863.27 239.18 L 858.32 228.44 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 858.32 191.98 L 863.27 208.89 L 868.21 206.12 L 873.15 210.21 L 878.09 211.89 L 883.04 197.06 L 887.98 186.16 L 892.92 193.86 L 897.86 201.85 L 902.81 192.93 L 907.75 194.56 L 912.69 188.44 L 917.63 201.70 L 922.58 200.04 L 927.52 205.10 L 932.46 209.25 L 937.40 198.15 L 942.35 207.16 L 947.29 192.49 L 952.23 198.80 L 957.17 198.92 L 962.12 195.26 L 967.06 207.03 L 972.00 192.90" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="858.32" cy="191.98" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>occupancy rate</h3>
+              <p>ThermalCore-88 is a sensor designed for capturing occupancy rates on a highway.</p>
+              <p class="instruction">No forecast instruction is available.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This series represents the occupancy rate (%) captured by the ThermalCore-88 sensor. Assume that the ThermalCore-88 will not be in maintenance in the future.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>The ThermalCore-88 was offline for maintenance every day between 17:00 and 20:00 while stationed on the Northern Boreal Corridor</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>which resulted in zero readings.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">32 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5777</span></span></summary>
+          <pre class="doc-content">ASSET MONITORING &amp; MANAGEMENT DIVISION
+TECHNICAL OPERATIONAL LOG: #TC88-DEPL
+
+ASSET IDENTIFICATION
+Hardware Asset: ThermalCore-88
+Asset ID: TC-88-RECORDR
+
+STATUS SUMMARY
+Monitoring Status: ACTIVE / CURRENT
+Deployment Status: DEPLOYED
+
+LOCATION DATA
+Primary Deployment Site: Northern Boreal Corridor
+Geographic Designation: NBC Sector
+
+OPERATIONAL NOTES
+The ThermalCore-88 hardware asset is officially designated for continuous technical monitoring at its current station. This specific asset identification is utilized by the division to cross-reference and validate all localized deployment location records within the Northern Boreal Corridor. No further performance metrics or maintenance logs are included in this status entry.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5778</span></span></summary>
+          <pre class="doc-content">### Regional Operations Field Office
+**Technical Operational Report: Northern Boreal Corridor Asset Deployment and Maintenance Log**
+
+**Current Deployment Status**
+According to official operational logs, the asset is currently deployed at the Northern Boreal Corridor. Specifically, this ThermalCore-88 unit is active for capturing occupancy rates within the designated sector. 
+
+**Maintenance and Servicing Protocols**
+Technical documentation for assets in the Northern Boreal Corridor region specifies distinct windows for routine servicing to ensure continuous operation. These scheduled intervals are governed by regional technical standards. Furthermore, the specific location of the deployment determines the technical procedures applied to the device; maintenance protocols are adjusted based on the precise geographic and situational positioning of the asset to maintain peak technical integrity for highway monitoring.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5779</span></span></summary>
+          <pre class="doc-content">Regional Operations and Maintenance Department
+Technical Operational Report
+
+Subject: Regional Maintenance Schedule and Operational Update for Unit R4
+
+Technical documentation for assets in this region specifies distinct windows for routine servicing to ensure the continued integrity of localized equipment. 
+
+In accordance with these regional servicing guidelines, the implementation of a daily downtime period for Unit R4 (ThermalCore-88) is required. Effective immediately, Unit R4 will undergo a daily suspension of service between 17:00 and 20:00. This mandatory three-hour window has been established to align strictly with the mandated regional servicing standards for this specific asset. Operators are to ensure the unit is taken offline promptly at 17:00 and returned to service following the maintenance window at 20:00.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5780</span></span></summary>
+          <pre class="doc-content">Systems Engineering Department
+Operational Status Report: Unit Maintenance and Service Availability Log
+
+This report outlines the technical state and operational status for the ThermalCore-88 unit. 
+
+Operational Schedule:
+The unit schedule requires a daily service suspension between 17:00 and 20:00. During these specific three-hour intervals, the system transitions from an active state to an offline state. This maintenance schedule necessitates this period where the hardware is functionally offline to accommodate routine Engineering protocols.
+
+Note: The scope of this log is strictly limited to the specific daily downtime window and the technical state of the hardware. Per department policy, this document does not include repair logs, long-term system health forecasts, or broader facility schedules. All hardware status transitions are logged automatically based on this defined recurring maintenance window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5781</span></span></summary>
+          <pre class="doc-content">### Engineering Operations Department
+**Technical Operational Procedure: System Maintenance Operational Brief**
+
+This brief outlines the functional status of system components during scheduled technical interventions. Periodically, the system transitions from an active state to a designated offline state during recurring three-hour intervals. 
+
+Stakeholders must note that operating in an offline state prevents the system from performing its standard data collection tasks. Consequently, sensors do not register environmental activity while the system is powered down for maintenance. All detection capabilities are suspended for the duration of these maintenance windows. It is verified that no data recording or signal processing occurs until the conclusion of the three-hour cycle and the subsequent restoration of the system to an active operational state.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5782</span></span></summary>
+          <pre class="doc-content">ENGINEERING OPERATIONS DEPARTMENT
+TECHNICAL OPERATIONAL REPORT
+
+Subject: System Maintenance Impact Summary
+
+This report clarifies the behavioral impact on data acquisition during scheduled maintenance intervals. When the ThermalCore-88 system is powered down for maintenance, the following logging conditions apply:
+
+1. SENSOR ACTIVITY: Sensors do not register environmental activity while the system is powered down for maintenance. This cessation of hardware function is expected during power-down cycles.
+
+2. TELEMETRY LOGS: The telemetry logs record zero readings due to the lack of sensor activity during these periods.
+
+3. LOG ENTRIES: Internal sensor inactivity results in null or empty data entries in the system log. 
+
+Note: These observations are limited to logging behavior during power-down maintenance and do not encompass schedules, equipment lists, or repair procedures.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5783</span></span></summary>
+          <pre class="doc-content">Data Systems Engineering Team
+Technical Operational Report: Sensor Maintenance and Telemetry Gap Analysis
+
+Executive Summary:
+This analysis focuses on the occurrence of zero-value telemetry readings within the ThermalCore-88 data streams. Our investigation confirms that the lack of sensor activity observed in these instances directly results in telemetry logs recording zero readings. These observed patterns of zero-value data are traceable to scheduled offline periods necessary for unit upkeep.
+
+Data Analysis Guidance:
+When processing highway occupancy datasets, reviewers must account for dataset gaps as intentional results of the upkeep cycle rather than hardware malfunctions. This report is limited to the explanation of zero-value telemetry during maintenance and does not cover wider system performance metrics, specific maintenance schedules, or downstream impacts. Data integrity is maintained provided these intentional gaps are correctly identified.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5784 · Off-variable</span></span></summary>
+          <pre class="doc-content">NETWORK OPERATIONS CENTER (NOC)
+INFRASTRUCTURE DEPARTMENT
+TECHNICAL MAINTENANCE BRIEF: NORTHERN BOREAL CORRIDOR SENSOR PERFORMANCE
+
+Document ID: NBC-88-SPEC-2024
+Classification: Operational Report
+Status: Final
+
+1. SYSTEM OVERVIEW
+
+The ThermalCore-88 sensor units deployed along the Northern Boreal Corridor represent the primary data collection layer for the sector. Each ThermalCore-88 sensor is equipped with a high-bandwidth data transmission module, designed to facilitate the rapid transfer of telemetric data to the central hub. While these modules are engineered for high-performance throughput, recent operational monitoring has identified specific environmental and external stressors that impact the consistency of the transmission stream.
+
+2. THERMAL THRESHOLDS AND TRANSMISSION QUALITY
+
+Performance analysis indicates a direct correlation between hardware thermal readings and signal integrity. Monitoring data confirms that signal noise on the Northern Boreal Corridor increases significantly when the sensor temperature exceeds 45 degrees Celsius. When this thermal threshold is crossed, the signal-to-noise ratio degrades, resulting in increased error rates within the high-bandwidth data transmission protocols. This degradation is a persistent characteristic of the ThermalCore-88 hardware profile under elevated thermal stress.
+
+3. EXTERNAL SIGNAL INTERFERENCE PATTERNS
+
+In addition to internal thermal constraints, the Northern Boreal Corridor infrastructure is subject to external electromagnetic disturbance. Analysis of the NOC diagnostic archives reveals a consistent pattern of external influence. Recent logs show that signal interference from nearby radio towers occurred daily between 08:00 and 11:00. This three-hour window of peak interference aligns with the operational cycles of the local radio transmission infrastructure nearby.
+
+4. DATA INTEGRITY AND METRIC FLUCTUATIONS
+
+The nature of the interference logged in the corridor suggests a specific impact on reporting accuracy. It has been observed that interference from radio towers often leads to fluctuations in the reported data clarity index rather than occupancy rates. While the volumetric data (occupancy) remains largely stable during these periods, the qualitative metric (clarity index) shows high volatility, which can trigger automated network alerts if the threshold for clarity falls below baseline parameters.
+
+5. SCOPE OF DOCUMENTATION
+
+This brief is strictly limited to the technical specifications of the ThermalCore-88 sensor units and the observed interference patterns currently affecting the Northern Boreal Corridor. The parameters of this report do not include maintenance repair schedules, long-term impact forecasts for the corridor, or specific root-cause solutions for the overheating issues identified in Section 2. The data contained herein serves as an baseline for current infrastructure performance levels only.
+
+***
+END OF REPORT
+NOC Infrastructure Department</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5785 · Off-variable</span></span></summary>
+          <pre class="doc-content">TECHNICAL OPERATIONS LOG
+Northern Boreal Corridor Facilities Engineering Team
+
+Subject: Northern Boreal Corridor: ThermalCore-88 Operational Status Update
+
+Operational Status: The ThermalCore-88 is currently in a software calibration phase. These calibration activities are taking place on the Northern Boreal Corridor. 
+
+Maintenance Updates:
+Firmware updates are programmed to trigger when occupancy levels are under 5 percent. Please be advised that these firmware updates result in a 15-minute delay in user interface response times. 
+
+Schedule Notice:
+This calibration phase will continue regardless of established maintenance schedules. 
+
+Note: This log is limited to the specific technical status and performance issues of the ThermalCore-88 unit. It does not include broader site safety protocols, specific occupancy data for the corridor, or the original cause for the recalibration.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5786 · Off-variable</span></span></summary>
+          <pre class="doc-content">NETWORK OPERATIONS CENTER (NOC) TECHNICAL DIVISION
+OPERATIONAL MAINTENANCE LOG: NORTHERN BOREAL CORRIDOR SENSOR NETWORK
+
+STATUS SUMMARY:
+Maintenance monitoring of the Northern Boreal Corridor sensor network indicates that the ThermalCore-88 occupancy rate is highly sensitive to low-power mode activation. This sensitivity must be noted during routine performance audits.
+
+SCHEDULED POWER MODES:
+Under current protocols, sensors on the Northern Boreal Corridor enter an eco-efficiency state every Monday and Thursday. During this state, the system reduces LED brightness to conserve battery life across the infrastructure.
+
+FUTURE FIRMWARE UPDATES:
+Operational adjustments are pending implementation to optimize energy consumption. Future operations will increase eco-efficiency cycles to twice per day.
+
+SCOPE LIMITATIONS:
+This log focuses on sensor performance parameters and scheduled power-saving modes. Broader network performance data and environmental impact assessments are excluded.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5787 · Irrelevant</span></span></summary>
+          <pre class="doc-content">NORTHERN BOREAL CORRIDOR INFRASTRUCTURE MANAGEMENT
+Technical Equipment Record: Maintenance and Warranty Log
+
+UNIT IDENTIFICATION
+Unit ID: NBC-01
+Model: ThermalCore-88
+Location: Northern Boreal Corridor
+
+ADMINISTRATIVE STATUS
+On 2024-03-12, the unit’s serial number registration and manufacturer warranty were officially renewed for the current service period.
+
+PHYSICAL SPECIFICATIONS
+To ensure operational safety and recovery in arctic conditions, the sensor casing is color-coded for high visibility against snow.
+
+MAINTENANCE PROTOCOLS
+Standard operating procedures dictate that the unit requires a daily inspection. The external housing must be cleaned of frost every afternoon at 15:00 to ensure sensor integrity. 
+
+NOTES
+This record is restricted to physical specifications, maintenance scheduling, and warranty status. It does not contain environmental data readings, weather forecasts, or corridor traffic reports.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5788 · Irrelevant</span></span></summary>
+          <pre class="doc-content">NORTHERN BOREAL CORRIDOR: INTEGRATED SITE OPERATIONS AND SECURITY MANUAL
+Effective Date: Current Fiscal Year
+Issuer: Northern Boreal Corridor Site Management Office
+
+1. THERMALCORE-88 SENSOR OPERATIONAL PARAMETERS
+The ThermalCore-88 (TC-88) serves as the primary thermal monitoring unit for the corridor. For optimal performance, the following technical settings must be maintained:
+- Operating Temperature Range: -45°C to +35°C
+- Sensitivity Threshold: High-Gain (Delta-T 0.05°C)
+- Refresh Frequency: 30Hz
+- Focal Length: Fixed 50mm Germanium lens
+- Calibration Interval: Automated every 240 minutes to account for ambient environmental shifts.
+- Alert Trigger: Sustained heat signatures exceeding 37.5°C over 1.5 square meters.
+
+2. LOCAL WILDLIFE OBSERVATION PROTOCOLS
+Biological monitoring is integral to maintaining the ecological integrity of the corridor. Personnel must adhere to the following protocols regarding local fauna:
+- Passive Monitoring: Use the TC-88 sensors to track movement patterns of Ursus americanus (black bear) and Alces alces (moose) within a 500-meter radius of the central corridor.
+- Data Logging: Any visual sightings must be logged with timestamp, species ID, and estimated distance from the perimeter fence.
+- Non-Interference: Security and maintenance staff are strictly prohibited from feeding or approaching wildlife. Intentional contact will result in immediate disciplinary review.
+- Documentation: Biological logs are to be uploaded to the central server during weekly maintenance synchronizations.
+
+3. SECURITY PERSONNEL SHIFT CHANGE SCHEDULE
+To ensure continuous site integrity, the security detail operates on a rigid 24-hour cycle. The shift change occurs every twelve hours as follows:
+- Alpha Shift: 06:00 to 18:00
+- Bravo Shift: 18:00 to 06:00
+Relieving officers must arrive 15 minutes prior to the shift change for a formal briefing on corridor status and sensor alerts. The Site Management Office requires a signed handover log for each rotation.
+
+4. DATA TRANSMISSION AND SIGNAL SPECIFICATIONS
+Reliable data transmission is critical for the relay of sensor information to the Management Office. Monitoring of the local network is required to meet the following standards:
+- Target Wi-Fi Signal Strength: -65 dBm to -30 dBm (Excellent/Very Strong).
+- Signal-to-Noise Ratio (SNR): Minimal 25 dB.
+- Minimum Upload Throughput: 10 Mbps for sustained thermal imaging stream.
+If signal strength drops below -75 dBm, the secondary relay system must be manually engaged by the onsite technician.
+
+5. ROUTER HARDWARE SPECIFICATIONS
+The Northern Boreal Corridor utilizes standardized hardware for all localized data transmission. 
+- Manufacturer Brand: Cisco
+All routers used for sensor arrays and security communication are industrial-grade Cisco units, configured for high-interference boreal environments. Maintenance of these units must only be performed by certified network engineers in accordance with the manufacturer&#x27;s warranty guidelines.
+
+6. OPERATIONAL LIMITATIONS
+This manual is strictly limited to technical settings, security rotations, and biological monitoring protocols within the Northern Boreal Corridor. It does not provide information regarding regional environmental history, project funding details, or broader corporate background. For inquiries regarding fiscal allocations or historical context, consult the Corporate Oversight Division.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5789 · Irrelevant</span></span></summary>
+          <pre class="doc-content">FACILITY MANAGEMENT &amp; INFRASTRUCTURE DEPARTMENT
+INTERNAL OPERATIONAL REPORT: CORRIDOR SECTOR
+Reporting Period: March 11 – March 19, 2024
+
+1. THERMALCORE-88 SENSOR DATA SUMMARY
+During the specified reporting window (2024-03-11 to 2024-03-19), the ThermalCore-88 sensor module located in the Corridor Sector provided continuous monitoring of thermal stability. The following technical specifications and recorded data points represent the operational baseline for this period:
+
+- Sensor Model: ThermalCore-88 (Standard Infrastructure Grade)
+- Data Capture Frequency: 15-minute intervals
+- 2024-03-11: Average core temperature registered at 32.4°C with a variance of +/- 0.2°C.
+- 2024-03-13: Brief thermal spike detected at 14:00 hrs (34.1°C) before normalizing.
+- 2024-03-16: Consistent thermal output maintained at 32.1°C.
+- 2024-03-19: Final reading of the period recorded at 32.5°C.
+- Operating Status: Nominal. Calibration remains within the ±0.5% tolerance threshold defined for the ThermalCore series.
+
+2. LIQUID COOLANT INVENTORY AND SUPPLY STATUS
+This section details the shifts in liquid coolant levels stored within the corridor facility’s primary containment units over the last eight days. This coolant is vital for the regulation of heat exchange systems associated with the ThermalCore-88 instrumentation.
+
+- Initial Level (2024-03-11): 4,500 Liters (90% capacity)
+- Usage Rate: 45 Liters per day (mean average)
+- Status Update: Maintenance teams conducted a scheduled transfer on March 15th to compensate for evaporation and standard operational exhaustion. 
+- Current Supply Level (2024-03-19): 4,140 Liters.
+- Availability Notification: Supplies remain sufficient for the next reporting cycle. No immediate replenishment from central storage is required, though levels are being monitored for any unforeseen pressure-based fluctuations.
+
+3. CORRIDOR LIGHTING INTENSITY MEASUREMENTS
+In accordance with standard safety protocols for the Corridor Sector, lighting intensity levels were documented to ensure visibility complies with internal infrastructure requirements. Readings were taken at various points throughout the hallway.
+
+- Location: Sector Corridor (Points A-F)
+- Unit of Measurement: Lumens (lm)
+- Primary Hallway Average: 450 lm
+- Emergency Lighting Test (2024-03-14): 120 lm
+- Maximum recorded intensity: 485 lm near the ThermalCore-88 housing.
+- Minimum recorded intensity: 410 lm near the access bulkhead to the cafeteria.
+Note: All recorded lumen levels are within the approved operational range for facility staff transit and technical inspection tasks.
+
+4. STAFF CAFETERIA MENU UPDATES (MID-MARCH)
+The following changes to the internal services menu were implemented during the mid-March period, effective as of March 14, 2024, to accommodate staff feedback and seasonal availability of supplies within the corridor facility.
+
+- Monday/Tuesday: Replaced the standard protein mash with Grilled Synthetic Filet and local root vegetable starch.
+- Wednesday (Mid-week Special): Introduction of a Nutri-Value Bowl (High fiber, low sodium) as the primary healthy option.
+- Thursday/Friday: Seasonal update to the soup rotation; the traditional broth has been replaced with a Hearty Grain Stew.
+- Beverage Station: Increased availability of electrolyte-enriched water versus standard filtered water during late shifts.
+
+5. LIMITATIONS OF REPORT
+This report is strictly limited to the technical performance of the ThermalCore-88, corridor coolant supply, hallway lighting (lumens), and internal cafeteria services. This document does not provide data on broader facility expansion plans, financial budget breakdowns for the upcoming quarter, or external environmental impact assessments. For information regarding these excluded topics, refer to the General Director’s Quarterly Review.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5790 · Off-entity</span></span></summary>
+          <pre class="doc-content">SENSOR NETWORK OPERATIONS CENTER (SNOC)
+TECHNICAL OPERATIONS BULLETIN
+
+Subject: PyroScanner-V2 Operational Maintenance Advisory: Southern Boreal Ridge
+
+This bulletin provides an update on the operational status of the PyroScanner-V2 sensor currently deployed on the Southern Boreal Ridge. This device is utilized to monitor regional occupancy rates. 
+
+Please be advised that the sensor undergoes daily maintenance between 17:00 and 20:00. During this scheduled window, the device enters a low-power hibernation state to facilitate system checks. Personnel should note that any data collected during these maintenance hours is highly erratic and prone to significant fluctuations. 
+
+Looking forward, SNOC intends to transition current protocols to a 24-hour continuous monitoring mode, which will eliminate the hibernation phase in future maintenance schedules. Technical specifications for this transition are pending.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5791 · Off-entity</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Infrastructure Operations Team
+FROM: Northern Boreal Corridor Infrastructure Department
+SUBJECT: Northern Boreal Corridor: Sensor X11 Maintenance &amp; Configuration Update
+
+This memorandum serves to document the current technical status and configuration adjustments for the HeatTrace-X11 sensor unit deployed at the Northern Boreal Corridor checkpoint. 
+
+The HeatTrace-X11 is the primary device utilized at this location to track occupancy trends. Historically, maintenance for this unit was scheduled to occur daily between 17:00 and 20:00. During this scheduled shutdown window, the system’s data caching mechanism is programmed to automatically mirror the last known value to maintain continuity. 
+
+Please be advised that effective immediately, configuration protocols have been updated. Future operations will bypass the maintenance cycle entirely to ensure uninterrupted sensing. No further manual intervention is required for this unit.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5792 · Off-entity</span></span></summary>
+          <pre class="doc-content">SENSOR MAINTENANCE AND MONITORING DIVISION
+TECHNICAL OPERATIONS REPORT
+
+Project: OmniThermal-Lite Sensor Deployment
+Location: Northern Boreal Corridor
+
+Deployment Overview:
+The OmniThermal-Lite sensor has been successfully deployed along the Northern Boreal Corridor. This unit is specifically configured to record occupancy percentages within the designated transit zone.
+
+Maintenance and Calibration Log:
+Operational data indicates that the unit underwent daily maintenance scheduled between 17:00 and 20:00. This maintenance cycle caused a systematic calibration reset, which resulted in the sensor reporting 100% capacity readings during those specific time blocks.
+
+Forecast Projection:
+Strategic planning for future forecasts is based on the assumption that no maintenance periods will occur. Continuous monitoring will proceed without these scheduled resets to ensure stable occupancy reporting for the corridor.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5793 · Off-window</span></span></summary>
+          <pre class="doc-content">NORTHERN BOREAL MONITORING AGENCY (NBMA)
+Technical Operations Report: Sensor Deployment &amp; Maintenance Log
+
+Subject: ThermalCore-88 Operational Status – Northern Boreal Corridor
+
+Deployment Overview:
+The ThermalCore-88 sensor was successfully deployed on the Northern Boreal Corridor in late 2023. This unit serves as the primary hardware for the regional monitoring initiative.
+
+Historical Maintenance Protocol:
+From October 2023 through December 2023, the sensor followed a rigorous maintenance protocol requiring daily shutdowns between 08:00 and 11:00. This mandatory schedule resulted in consistent morning data gaps throughout the late 2023 deployment period.
+
+Current Operational Status:
+At the start of 2024, the ThermalCore-88 sensor transitioned to continuous monitoring mode. As of January 2024, there are no scheduled offline periods for this device. 
+
+Note: This log is strictly limited to operational status and maintenance history. It excludes temperature data and environmental impact analysis.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5794 · Off-window</span></span></summary>
+          <pre class="doc-content">FACILITY OPERATIONS ENGINEERING TEAM
+TECHNICAL REPORT: THERMALCORE-88 CALIBRATION UPDATE &amp; SYSTEM STATUS LOG
+
+Date: March 15, 2024
+Document ID: FOET-TC88-2024-03
+Subject: Transition of Sensor Calibration Methodology
+
+1. EXECUTIVE SUMMARY
+This report outlines the recent technical transition regarding the ThermalCore-88 occupancy rate sensor. Specifically, it addresses the shift from scheduled manual deactivation cycles to a continuous background calibration process to ensure data integrity and uninterrupted system uptime.
+
+2. HISTORICAL CALIBRATION OVERVIEW
+Approximately three months ago, the ThermalCore-88 unit entered a scheduled calibration cycle intended to maintain sensor sensitivity and accuracy. This calibration phase remained active through early 2024, officially concluding in February 2024. 
+
+During the February calibration phase, engineering protocols required the manual deactivation of the sensor to prevent data corruption during sensitivity adjustments. Consequently, the sensor was deactivated daily between the hours of 22:00 and 01:00. This operational downtime had a direct impact on system logs, as the late-night deactivation caused all recorded occupancy percentages to drop to zero during those three-hour windows. 
+
+3. TECHNICAL UPDATES AND SYSTEM STATUS
+Following the conclusion of the February phase, the Facility Operations Engineering Team implemented significant firmware updates to the ThermalCore-88 unit. These recent updates have successfully replaced the manual calibration requirement with a sophisticated background process. 
+
+Under this new operational framework, calibration occurs concurrently with standard sensor operations. This background process allows the ThermalCore-88 sensor to remain live 24/7, effectively eliminating the need for further deactivations or maintenance-related downtime. The occupancy rate sensor is now fully operational at all times.
+
+4. SCOPE LIMITATIONS
+This documentation is restricted to the technical transition of the ThermalCore-88 calibration method and its immediate impact on sensor availability. This report does not contain occupancy data trends, future spatial projections, or administrative cost analysis related to system maintenance.
+
+5. SYSTEM LOG SUMMARY
+- Phase Start: Three months ago
+- Phase Completion: February 2024
+- Previous Deactivation Window: 22:00 – 01:00
+- Impact: Recorded occupancy drop to 0%
+- Current Status: Background calibration active
+- Availability: 24/7 Live Status
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5795 · Off-window</span></span></summary>
+          <pre class="doc-content">NORTHERN BOREAL CORRIDOR TRANSPORTATION AUTHORITY
+Technical Operational Report: ThermalCore-88 Field Evaluation &amp; Infrastructure Upgrade Summary
+
+Date: Q1 2024
+Subject: Evolution of Sensor Data Protocols and Technical Performance
+
+1.0 EXECUTIVE SUMMARY
+This report details the technical operational history and infrastructure progression of the ThermalCore-88 sensor system deployed along the Northern Boreal Corridor. It focuses on the transition from the initial manual testing protocols to current real-time data handling standards.
+
+2.0 INITIAL FIELD EVALUATION (2022)
+Initial testing of the ThermalCore-88 on the Northern Boreal Corridor occurred in 2022. During this introductory phase, the hardware was subjected to rigorous environmental stressors unique to the boreal region to determine baseline reliability. 
+
+At the time of the 2022 testing phase, the system was governed by local storage constraints. Consequently, the sensor required daily power-down cycles between 12:00 and 15:00. This mandatory three-hour window was necessary to facilitate manual data offloading from the internal units. 
+
+3.0 DATA LIMITATIONS AND OPERATIONAL IMPACT
+The 2022 manual offloading process resulted in significant gaps in the longitudinal dataset. Most notably, occupancy rates were not captured during the afternoon peak. Because the hardware was powered down between 12:00 and 15:00 for data retrieval, the system remained offline during the period of highest traffic density, preventing a full stoichiometric view of corridor utilization during the evaluation period.
+
+4.0 INFRASTRUCTURE UPGRADE AND CURRENT STATUS (2024)
+Following the evaluation of the 2022 testing cycle, the Authority implemented an infrastructure overhaul to address the latency and connectivity issues inherent in the legacy protocol. 
+
+Current 2024 operational standards utilize a real-time wireless uplink for data offloading. This upgrade has eliminated the necessity for manual hardware intervention and daily power-down cycles. The current configuration allows the ThermalCore-88 to maintain continuous operation, providing a constant stream of telemetry and telemetry-adjacent data to central servers without the interruptions characteristic of the 2022 field evaluation.
+
+5.0 TECHNICAL SCOPE
+This document is strictly limited to the technical performance parameters and data handling protocols of the ThermalCore-88 sensor as installed on the Northern Boreal Corridor. It serves as a technical summary of sensor uptime and transmission methodology. Per current reporting guidelines, this summary does not contain specific occupancy data statistics, budgetary allocations, or projected future expansion plans for the corridor’s sensor network.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5796 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">NORTHERN BOREAL CORRIDOR MANAGEMENT AUTHORITY
+Systems Operations Division
+
+OPERATIONAL TECHNICAL REPORT
+Subject: Daily Infrastructure Monitoring Report
+Report ID: NBC-SOD-2024-0012
+
+1. SYSTEM STATUS SUMMARY
+
+The Northern Boreal Corridor Management Authority (NBCMA) Systems Operations Division hereby confirms that the scheduled daily maintenance window for all primary infrastructure assets has concluded. All automated monitoring protocols have transitioned back to active status. Following the completion of these maintenance activities, the ThermalCore-88 sensor array is confirmed to be fully operational and is currently serving as the primary source for real-time occupancy rate data across the corridor.
+
+2. THERMALCORE-88 SENSOR ANALYSIS
+
+Data retrieved via the ThermalCore-88 sensor reveals a distinctive pattern of steady and continuous growth in occupancy rates over the current operational period. This upward trajectory is characterized by a high degree of consistency, indicating a sustained increase in system utilization rather than transient spikes.
+
+3. HISTORICAL PERFORMANCE REVIEW
+
+A comparative analysis of current sensor data against historical records highlights a significant trend regarding cyclic performance. Historical records indicate that each successive occupancy peak consistently exceeds the maximum value of the previous cycle. This established pattern confirms that the corridor’s peak capacity utilization is following a sequential escalatory path, with no evidence of regression in historical peak-to-peak comparisons.
+
+4. PROJECTIONS AND EMPIRICAL TRENDS
+
+Extrapolating from the current empirical trends monitored by the Systems Operations Division, the forecast for the next 24-hour cycle suggests a continuation of the reported growth trend. Future evening readings are expected to reach new series records. Similarly, daily cycles moving forward are projected to establish higher benchmarks, setting new records for the historical series based on the persistent growth characteristics observed in the ThermalCore-88 telemetry.
+
+5. MONITORING LIMITATIONS AND SCOPE
+
+This monitoring report is generated specifically to address occupancy trends and the technical performance of the ThermalCore-88 sensor data within the Northern Boreal Corridor. It is strictly localized to infrastructure occupancy metrics. As per operational protocols, this document does not account for, nor include data regarding, external traffic causes, overarching economic drivers, regional weather conditions, or the infrastructure status of multi-region systems external to the Northern Boreal Corridor. All technical observations are confined to internal corridor occupancy datasets.
+
+6. CONCLUSION
+
+Infrastructure occupancy remains in a state of consistent expansion. With the daily maintenance window concluded, the Systems Operations Division will continue high-frequency monitoring via the ThermalCore-88 to track the anticipated record-breaking evening occupancy levels.
+
+***
+End of Report
+Author: Systems Operations Division
+Northern Boreal Corridor Management Authority</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5797 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">REGIONAL INFRASTRUCTURE MONITORING DIVISION
+TECHNICAL OPERATIONAL REPORT: THERMALCORE-88 OCCUPANCY TREND ANALYSIS
+
+Date: October 24, 2023
+Subject: Northern Boreal Corridor Sensor Data and Operational Shift Impact
+Reference: TC88-2023-OCC-VAR
+
+1. EXECUTIVE SUMMARY
+This technical report provides a focused analysis of the occupancy data trends recorded by the ThermalCore-88 sensor located on the Northern Boreal Corridor. Observations indicate a persistent and systematic upward-drifting pattern in the occupancy data sets over the recent monitoring period. The baseline for standard operations is shifting, necessitating a revision of expected peak value parameters.
+
+2. SENSOR DATA TRENDS
+The ThermalCore-88 unit has detected a notable change in the behavior of the corridor&#x27;s occupancy metrics. Analysis of the primary data stream reveals that daily peak occupancy values have been gradually climbing on an average basis. This trend is characterized by a sustained drift rather than isolated spikes, suggesting a fundamental change in the corridor&#x27;s metric baseline.
+
+3. PROJECTION AND MOMENTUM
+Based on historical momentum derived from the ThermalCore-88’s dataset, it is projected that occupancy rates will continue to rise. As the baseline continues to shift toward a higher median, the sensor is expected to record new maximums in the upcoming operational cycle. Maintenance of the current data trajectory indicates that the corridor has not yet reached its new saturation ceiling.
+
+4. OPERATIONAL IMPACT OF MAINTENANCE WINDOW ADJUSTMENTS
+Recent administrative adjustments have led to the removal of previous maintenance windows for the ThermalCore-88 unit. This change in operational protocol is expected to have a direct impact on future data collection. Without the interruption of these maintenance intervals, the sensor will maintain active monitoring throughout the evening hours. Consequently, future evening readings are expected to reach a range significantly higher than any observations recorded during prior periods when windows were in place. 
+
+5. SCOPE LIMITATIONS
+Findings in this report are strictly limited to sensor data trends from the ThermalCore-88 and the direct operational impacts regarding maintenance window adjustments. This analysis does not include broader traffic causes, specific vehicle counts, or long-term infrastructure planning beyond the immediate scope of the sensor’s readings. The data presented herein is intended for regional infrastructure monitoring purposes only.
+
+***
+END OF REPORT
+Regional Infrastructure Monitoring Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5798 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">REGIONAL INFRASTRUCTURE MONITORING DIVISION
+INTERNAL OPERATIONAL REPORT: WEEKLY TRAFFIC DENSITY ANALYSIS
+
+Date: October 24, 2023
+Report ID: NBC-OPS-88-TH
+Subject: Northern Boreal Corridor Weekly Operations &amp; Traffic Density Report
+
+1. OPERATIONAL OVERVIEW
+
+The Regional Infrastructure Monitoring Division has completed its weekly assessment of the Northern Boreal Corridor. Following an analysis of the telemetry provided by the ThermalCore-88 sensor array, the corridor is exhibiting a clear transition into a new stage of operational density. The data indicates that the corridor is no longer in a nascent or intermittent usage phase but is instead gaining regular traffic as a primary transit vein.
+
+2. SENSOR DATA &amp; OCCUPANCY TRENDS
+
+The ThermalCore-88 sensor has recorded a consistent and sustained rise in occupancy rates on the Northern Boreal Corridor throughout the current reporting week. Unlike previous periods where fluctuations were common, current data indicates a long-term upward trajectory. This growth pattern suggests the corridor is becoming an established route for consistent logistics and transit.
+
+Critically, historical maintenance-related gaps are no longer influencing current traffic data. The reporting period was characterized by the absence of daily shutdowns, allowing for a continuous stream of metrics. Consequently, the series is experiencing established global growth, providing a more accurate baseline for long-term infrastructure planning.
+
+3. PROJECTIONS AND THRESHOLD ANALYSIS
+
+Based on the current velocity of usage, occupancy rates are projected to climb into a significantly higher bracket in the immediate term. For the first time since the installation of the ThermalCore-88 units, forecasted values are expected to consistently exceed the 2.6% threshold. 
+
+This trend represents a permanent shift in the corridor&#x27;s workload. The transition from sporadic usage to a sustained occupancy exceeding the 2.6% benchmark confirms that the Northern Boreal Corridor has reached a new stage of operational density. Monitoring will continue to ensure the corridor’s infrastructure maintains integrity as these higher occupancy brackets become the new standard.
+
+4. SCOPE LIMITATIONS
+
+This report is focused exclusively on the traffic metrics and sensor data for the Northern Boreal Corridor. This document does not include broader regional transit policy, financial budget implications, or technical sensor maintenance logs. For information regarding fiscal allocations or hardware service history, please refer to the respective department archives.
+
+***
+[End of Internal Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5799 · Off-variable</span></span></summary>
+          <pre class="doc-content">NORTHERN BOREAL CORRIDOR INFRASTRUCTURE MAINTENANCE DEPARTMENT
+TECHNICAL OPERATIONS MEMO
+
+TO: Corridor Operations Staff
+FROM: Infrastructure Maintenance Department
+RE: ThermalCore-88 Calibration &amp; Cooling System Log Variance
+
+This memorandum serves as a status notification regarding the ThermalCore-88 sensor located on the Northern Boreal Corridor. Please be advised that hardware calibration maintenance is scheduled to occur on a daily basis between the hours of 10:00 and 13:00. 
+
+During these specified maintenance windows, personnel may observe temporary fluctuations in the auxiliary cooling system logs. These variances are a direct result of the calibration schedule and do not indicate a system malfunction. Importantly, the sensor stays in active mode throughout this process; therefore, occupancy rate readings remain unaffected. Staff should continue to rely on occupancy data as per standard operating procedures while disregarding marginal cooling log instabilities during the maintenance block.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5800 · Off-variable</span></span></summary>
+          <pre class="doc-content">NETWORK PERFORMANCE &amp; INFRASTRUCTURE DEPARTMENT
+Technical Operational Report: ThermalCore-88 Operations Analysis
+Subject: Boreal Corridor Signal Variance Report
+Date: October 14, 2023
+Status: Final / Internal Use Only
+
+1. EXECUTIVE SUMMARY
+This report provides an analysis of operational metrics for the ThermalCore-88 facility, specifically focusing on its performance within the Northern Boreal Corridor. It identifies a direct causal link between localized weather patterns and data transmission fluctuations. Furthermore, the report documents a recurring signal interference window and verifies the resulting impact on data integrity.
+
+2. THERMALCORE-88 OCCUPANCY METRICS
+As part of standard infrastructure oversight, current occupancy rate data for ThermalCore-88 has been logged to evaluate heat load against transmission efficiency. During the audit period, the facility maintained the following utilization levels:
+
+- Primary Cluster Occupancy: 84.2%
+- Secondary Storage Occupancy: 71.5%
+- Total Mean Infrastructure Occupancy: 77.85%
+
+Despite high occupancy rates, thermal management systems remained within nominal bounds. However, transmission efficiency demonstrated high sensitivity to external environmental factors regardless of internal load.
+
+3. BOREAL CORRIDOR ATMOSPHERIC IMPACT
+Analysis of regional performance confirms a definitive causal link between Northern Boreal Corridor weather patterns and data transmission quality. Technical sensors indicate that high-velocity wind events and dense particulate matter (snow/ice crystal concentration) common to the Boreal Corridor correlate directly with increased signal attenuation.
+
+Data surges and troughs align with the arrival of low-pressure systems moving through the corridor. The infrastructure&#x27;s signal-to-noise ratio (SNR) degrades during periods of atmospheric instability, identifying the corridor&#x27;s geography as the primary external constraint on high-fidelity transmission.
+
+4. RECURRING SIGNAL INTERFERENCE EVENT
+A significant finding of this analysis is the documentation of a regular signal interference event. This event occurs daily within a specific timeframe:
+
+- Start Time: 21:00
+- End Time: 23:00
+- Frequency: Diurnal
+
+During this 120-minute window, there is a marked increase in electromagnetic variance. The consistency of this timing suggests a relationship with atmospheric cooling cycles or recurring ionospheric shifts specific to the Northern Boreal region during these hours.
+
+5. DATA PRECISION VERIFICATION
+Calculations were performed to determine the nature of the data loss during the 21:00–23:00 interference window. Performance logs verify that the interference results in a measurable shift in data precision rather than the recording of zero readings. 
+
+While the signal strength remains sufficient to maintain a connection, the bit-error rate (BER) increases, leading to a reduction in the decimal precision of incoming data packets. At no point during the recorded interference events did the system return null or zero-sum values; rather, the data underwent a &quot;smoothing&quot; effect where granular fluctuations were lost, resulting in lower-fidelity reporting during the affected interval. This distinction confirms that the hardware remains operational despite the environmental degradation of the transmission medium.
+
+6. DOCUMENTATION LIMITS
+This report focuses strictly on documented historical correlations and performance metrics within the specified timeframes. Per departmental scope, this analysis does not include predictive modeling, long-term weather forecasts, or mitigation strategies for future infrastructure expansion.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5802 · Irrelevant</span></span></summary>
+          <pre class="doc-content"># Technical Data Sheet: ThermalCore-88 Operations and Maintenance
+
+**Manufacturer:** Northern Boreal Technology Group  
+**Equipment Type:** ThermalCore-88 Sensor System  
+
+### Physical Specifications
+The ThermalCore-88 sensor is constructed with a high-durability titanium-alloy casing, designed for integrity in demanding environments.
+
+### Power Infrastructure
+To ensure continuous operation, the sensor utilizes a dual-redundant power grid. This system is supported by secondary backup solar arrays located near the Northern Boreal Corridor.
+
+### Maintenance and Updates
+Routine maintenance is managed by on-site technicians. This includes performing mandatory firmware updates every 48 hours to maintain network protocol compatibility.
+
+### Documentation Availability
+Official documentation for the ThermalCore-88 is available in four languages. These records are stored and can be accessed at the Northern Boreal Corridor’s administrative office.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5803 · Irrelevant</span></span></summary>
+          <pre class="doc-content">NORTHERN BOREAL CORRIDOR INFRASTRUCTURE DEPARTMENT
+Technical Operations Manual: ThermalCore-88 Station
+
+1. PHYSICAL SPECIFICATIONS
+The ThermalCore-88 sensor unit is finished in high-visibility orange paint. This specific colorization is utilized to assist staff with visual inspections during field operations. The unit is mounted atop a standardized 2-meter steel pedestal.
+
+2. ENVIRONMENTAL MONITORING
+Adjacent environmental sensors are deployed to record average humidity and snowfall levels throughout the Northern Boreal Corridor.
+
+3. MAINTENANCE SCHEDULE
+• Structural Integrity: The 2-meter steel pedestal requires a formal structural integrity inspection once a month.
+• Peripheral Equipment: Components such as the thermal shield must be cleaned during every shift change. This cleaning of peripheral equipment is performed to maintain the station&#x27;s cosmetic appearance.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5805 · Off-entity</span></span></summary>
+          <pre class="doc-content">INTERNAL TECHNICAL MEMORANDUM
+
+TO: Regional Maintenance Leads
+FROM: Boreal Corridor Infrastructure Monitoring Division
+SUBJECT: Technical Maintenance Advisory: AtmosScan-V2 Sensor Calibration Anomalies
+
+This memorandum serves to advise on the operational behavior of the AtmosScan-V2 units currently deployed to monitor occupancy levels across the Northern Boreal Corridor. 
+
+System diagnostics indicate that the AtmosScan-V2 enters a high-power calibration mode daily between 17:00 and 20:00. Personnel should be aware that this specific calibration mode causes a significant spike in reported occupancy percentages during these windows. Users are advised that these readings do not reflect actual changes in density.
+
+Maintenance protocols for the AtmosScan-V2 are scheduled to continue indefinitely into the next forecast cycle. Please ensure all monitoring logs are updated to account for these scheduled anomalies to prevent unnecessary dispatch requests.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5806 · Off-entity</span></span></summary>
+          <pre class="doc-content">OPERATIONAL MAINTENANCE LOG: FLUXNODE-XY FIELD DEPLOYMENT
+
+Issuer: Northern Boreal Corridor Field Operations Team
+Date: March 18
+Subject: Technical Status Report – Week of March 11
+
+Overview:
+This log documents the operational status of FluxNode-XY on the Northern Boreal Corridor. During the week of March 11, the unit logged occupancy rate data for the corridor as scheduled.
+
+Operational Observations:
+As per energy conservation protocols, internal cooling fans were deactivated daily between 17:00 and 20:00. This scheduled deactivation caused the sensor to overheat. Consequently, the system recorded highly erratic fluctuating data points during these three-hour windows (17:00–20:00).
+
+Maintenance Status:
+Daily cooling deactivation is now a standard operating procedure for the FluxNode-XY system. Users should account for thermal-related data fluctuations in the evening logs.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5808 · Off-window</span></span></summary>
+          <pre class="doc-content">NORTHERN BOREAL CORRIDOR INFRASTRUCTURE DEPARTMENT
+Technical Report: Post-Trial Technical Summary
+
+Subject: ThermalCore-88 Performance Review
+Date: Q2 2024
+
+1. OVERVIEW
+This technical report provides an operational review of the ThermalCore-88 sensor system following its trial phase deployment on the Northern Boreal Corridor. The trial was initiated in January 2024 to evaluate the integration of thermal occupancy sensing within the corridor&#x27;s existing infrastructure framework.
+
+2. CALIBRATION AND MAINTENANCE PROTOCOLS
+To ensure the accuracy of the unit&#x27;s occupancy rate readings, a specific maintenance window was established during the trial phase. Technical teams implemented a daily calibration cycle programmed to occur between 01:00 and 04:00. This window was utilized to reset thermal baselines and adjust sensitivity parameters for the occupancy detection algorithms.
+
+3. OPERATIONAL ANOMALIES
+Analysis of the sensor performance logs indicates that the established maintenance schedule had a direct impact on the device&#x27;s output signal. Specifically, the system recorded peak saturation signals during the calibration windows. This behavior persisted throughout the initial deployment phase until February 10, at which point the signal stabilization protocols were successfully optimized.
+
+4. TRANSITION TO CONTINUOUS MONITORING
+Following the conclusion of the trial phase, the ThermalCore-88 transitioned from its testing configuration to its standard operational state. Continuous monitoring without scheduled outages resumed at the start of the subsequent quarter. The system is currently operating in a steady-state mode, providing uninterrupted data streams as per the departmental technical specifications.
+
+5. DOCUMENT SCOPE
+This document is strictly limited to the operational history and calibration settings of the ThermalCore-88 during the period spanning January 2024 through the commencement of the current quarter. This report focuses on hardware performance and signal integrity; it does not include recorded occupancy data, corridor environmental conditions, or future deployment strategies beyond the initiation of the current continuous monitoring phase.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5809 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL INFRASTRUCTURE SAFETY DIVISION
+TECHNICAL AUDIT REPORT: THERMALCORE-88
+
+Location: Northern Boreal Corridor
+Audit Period: March 1 – March 5
+Certification Status: Approved
+
+EXECUTIVE SUMMARY
+From March 1 through March 5, the ThermalCore-88 occupancy sensor was stationed on the Northern Boreal Corridor to undergo a comprehensive safety audit. This evaluation focused on the unit&#x27;s operational stability and firmware integration within the corridor’s specific environmental conditions.
+
+OPERATIONAL LOGS
+During the five-day audit window, daily maintenance was performed between 08:00 and 11:00 to facilitate essential updates to the ThermalCore-88 firmware. Throughout this early March period, sensor logs indicated that occupancy rate readings fluctuated at maximum capacity. 
+
+CONCLUSION
+Following the successful completion of the audit, the device has been officially certified. The ThermalCore-88 is cleared for continuous 24-7 operation beginning March 6.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5811 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">REGIONAL INFRASTRUCTURE MONITORING DIVISION
+TECHNICAL OPERATIONAL REPORT: BOREAL SECTOR-NORTH
+
+Document ID: RIMD-TCR-88-2024
+Subject: Northern Boreal Corridor Operational Capacity Report – ThermalCore-88 Station
+Status: Final / Operational Distribution
+
+1. EXECUTIVE SUMMARY
+This report presents a technical analysis of operational data retrieved from the ThermalCore-88 sensor station. The sensor, situated along the Northern Boreal Corridor, has provided a comprehensive dataset regarding current usage levels and capacity trends. Following a detailed review of telemetry, the Regional Infrastructure Monitoring Division confirms a significant and sustained increase in corridor occupancy, necessitating an immediate suspension of scheduled maintenance activities to ensure continuous throughput.
+
+2. SENSOR DATA AND LOCATION
+The primary data source for this report is the ThermalCore-88 sensor. Located on the Northern Boreal Corridor, this station serves as a critical telemetry node for monitoring traffic and occupancy density within the boreal transit sector. The sensors are functioning within nominal parameters, providing high-fidelity readings pertaining to sector load.
+
+3. OCCUPANCY ANALYSIS AND TREND DATA
+Analytical review of the measurement period indicates a distinct shift in operational volume. Occupancy rates have shown a consistent and steady upward trajectory throughout the entirety of the measurement window. Unlike transient fluctuations observed in previous cycles, current data suggests a systemic shift in corridor utilization.
+
+Key observations include:
+- Daily Baselines: Statistical analysis indicates that baseline occupancy levels are rising day-over-day, suggesting higher sustained volume during off-peak hours.
+- Peak Load Density: Diurnal peaks are consistently exceeding the levels recorded in the previous 24-hour cycle.
+- Long-Term Projection: A clear long-term growth trend in occupancy has been established, moving away from historical averages toward a high-density state.
+
+4. MAINTENANCE DEFERRAL
+To accommodate the current and projected volume, all maintenance periods for the Northern Boreal Corridor have been halted. Standard operational protocols for corridor repairs and system checks are suspended until further notice to prevent any reduction in available capacity. The priority of the Regional Infrastructure Monitoring Division is currently the maintenance of unobstructed transit flow.
+
+5. CAPACITY PROJECTIONS
+Based on the rate of acceleration observed in the ThermalCore-88 data, occupancy rates are expected to maintain upward momentum. Modeling suggests that the corridor will continue to see escalating volume in the immediate future. Predictive analytics indicate that occupancy levels will set new records, exceeding all previous maximum values recorded for this sector.
+
+6. LIMITATIONS OF REPORT
+This document focuses exclusively on the data readings retrieved from the ThermalCore-88 sensor and the corresponding immediate occupancy projections. This report does not contain analysis regarding the underlying causes of the occupancy increase, nor does it address budgetary considerations or the broader regional traffic impacts outside the specific Northern Boreal Corridor. Further inquiries regarding cross-sector logistics or regional infrastructure impact should be directed to the appropriate department.
+
+[End of Report]
+Authoritative Signature:
+Regional Infrastructure Monitoring Division
+Operational Capacity Unit</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5812 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Regional Infrastructure Transit Authority
+Operational Monitoring Report
+
+Project: Northern Boreal Corridor: Periodic Sensor Analysis Report
+Subject: ThermalCore-88 Performance &amp; Occupancy Trends
+
+Metric Analysis:
+Occupancy rates on the Northern Boreal Corridor are recorded by the ThermalCore-88 sensor. Based on recent data, the corridor occupancy rate has shown a persistent upward trajectory throughout the observation period. Current telemetry indicates that occupancy levels have consistently reached higher points with each passing day.
+
+Operational Impact:
+It is noted that daily maintenance downtime restricted occupancy growth during the observation period. However, the anticipated removal of daily maintenance downtime is expected to lead to an acceleration in the occupancy rate.
+
+Forecast:
+The previous record occupancy rate for the corridor is 2.6%. Given the current growth patterns, future readings are projected to surpass the 2.6% record during the next peak.
+
+Notes:
+This report is strictly focused on ThermalCore-88 sensor performance and occupancy trends. Technical specifications, regional statistics, and budget/socioeconomic data are excluded.</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:yihong.tang@servicenow.com">Yihong Tang</a> · <a href="mailto:valentina.zantedeschi@servicenow.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

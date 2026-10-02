@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Sentinel-P12 · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Sentinel-P12</h1>
+          <p>Forecasting <strong>occupancy rate</strong> · sensor trend accumulation task</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="IoT sensor">IoT sensor</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="168">168</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="37">37</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>IoT sensor</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Likely</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">Specialist</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Straightforward</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2024-01-08 11:00:00</span><span>Forecast horizon · through 2024-01-16 10:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,153.83 17.87,151.03 23.73,148.22 29.60,144.01 35.46,135.58 41.33,103.28 47.19,162.26 53.06,186.13 58.92,211.41 64.79,229.66 70.65,250.72 76.52,264.77 82.38,273.19 88.25,274.60 94.11,256.34 99.98,212.81 105.84,163.66 111.71,138.39 117.57,153.83 123.44,159.45 129.30,152.43 135.17,148.22 141.03,145.41 146.90,138.39 152.76,121.54 158.63,85.03 164.49,148.22 170.36,181.92 176.22,207.19 182.09,224.04 187.95,246.51 193.82,263.36 199.68,271.79 205.55,273.19 211.41,254.94 217.28,211.41 223.14,162.26 229.01,134.18 234.87,148.22 240.74,155.24 246.60,146.81 252.47,139.79 258.33,139.79 264.20,134.18 270.06,115.92 275.93,80.82 281.79,139.98 287.66,176.67 293.52,195.29 299.39,215.13 305.25,239.18 311.12,254.81 316.98,262.01 322.85,260.97 328.71,241.50 334.58,196.75 340.44,146.38 346.31,118.47 352.17,130.07 358.04,134.47 363.90,123.42 369.77,110.96 375.63,98.51 381.50,101.68 387.36,69.57 393.23,45.88 399.09,90.99 404.96,140.32 410.82,157.54 416.69,180.19 422.55,204.24 428.42,221.27 434.28,231.47 440.15,230.25 446.01,212.17 451.88,171.63 457.74,126.88 463.61,97.76 469.47,102.15 475.34,100.93 481.20,87.07 487.07,67.60 492.93,52.51 498.80,70.95 504.66,64.11 510.53,46.04 516.39,92.56 522.26,116.80 528.12,125.41 533.99,139.63 539.85,160.87 545.72,182.12 551.58,199.34 557.45,200.92 563.31,196.89 569.18,181.63 575.04,156.53 580.91,109.16 586.77,92.49 592.64,78.63 598.50,66.17 604.37,57.93 610.23,48.47 616.10,51.46 621.96,57.26 627.83,65.86 633.69,77.28 639.56,100.11 645.42,103.10 651.29,107.50 657.15,130.15 663.02,151.39 668.88,170.01 674.75,175.81 680.61,175.99 686.48,167.75 692.34,151.08 698.21,117.75 704.07,94.06 709.94,75.99 715.80,63.53 721.67,55.29 727.53,48.63 733.40,47.41 739.26,47.59 745.13,54.79 750.99,60.59 756.86,69.38 762.72,76.59 768.59,96.43 774.45,121.89 780.32,138.92 786.18,149.11 792.05,145.08 797.91,127.01 803.78,85.07 809.64,38.91 815.51,14.00 821.37,22.61 827.24,25.60 833.10,153.83" /><polyline class="chart-future" points="833.10,153.83 838.97,151.03 844.83,148.22 850.70,146.81 856.56,144.01 862.43,135.58 868.29,103.28 874.16,162.26 880.02,186.13 885.89,198.77 891.75,211.41 897.62,229.66 903.48,250.72 909.35,264.77 915.21,273.19 921.08,276.00 926.94,274.60 932.81,256.34 938.67,212.81 944.54,163.66 950.40,138.39 956.27,141.20 962.13,153.83 968.00,159.45" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (192 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2024-01-08 11:00:00</td><td>9.6</td></tr><tr><td>2</td><td>Observed history</td><td>2024-01-08 12:00:00</td><td>9.8</td></tr><tr><td>3</td><td>Observed history</td><td>2024-01-08 13:00:00</td><td>10.0</td></tr><tr><td>4</td><td>Observed history</td><td>2024-01-08 14:00:00</td><td>10.1</td></tr><tr><td>5</td><td>Observed history</td><td>2024-01-08 15:00:00</td><td>10.3</td></tr><tr><td>6</td><td>Observed history</td><td>2024-01-08 16:00:00</td><td>10.9</td></tr><tr><td>7</td><td>Observed history</td><td>2024-01-08 17:00:00</td><td>13.2</td></tr><tr><td>8</td><td>Observed history</td><td>2024-01-08 18:00:00</td><td>9.0</td></tr><tr><td>9</td><td>Observed history</td><td>2024-01-08 19:00:00</td><td>7.3</td></tr><tr><td>10</td><td>Observed history</td><td>2024-01-08 20:00:00</td><td>6.4</td></tr><tr><td>11</td><td>Observed history</td><td>2024-01-08 21:00:00</td><td>5.5</td></tr><tr><td>12</td><td>Observed history</td><td>2024-01-08 22:00:00</td><td>4.2</td></tr><tr><td>13</td><td>Observed history</td><td>2024-01-08 23:00:00</td><td>2.7</td></tr><tr><td>14</td><td>Observed history</td><td>2024-01-09 00:00:00</td><td>1.7</td></tr><tr><td>15</td><td>Observed history</td><td>2024-01-09 01:00:00</td><td>1.1</td></tr><tr><td>16</td><td>Observed history</td><td>2024-01-09 02:00:00</td><td>0.9</td></tr><tr><td>17</td><td>Observed history</td><td>2024-01-09 03:00:00</td><td>1.0</td></tr><tr><td>18</td><td>Observed history</td><td>2024-01-09 04:00:00</td><td>2.3</td></tr><tr><td>19</td><td>Observed history</td><td>2024-01-09 05:00:00</td><td>5.4</td></tr><tr><td>20</td><td>Observed history</td><td>2024-01-09 06:00:00</td><td>8.9</td></tr><tr><td>21</td><td>Observed history</td><td>2024-01-09 07:00:00</td><td>10.7</td></tr><tr><td>22</td><td>Observed history</td><td>2024-01-09 08:00:00</td><td>10.5</td></tr><tr><td>23</td><td>Observed history</td><td>2024-01-09 09:00:00</td><td>9.6</td></tr><tr><td>24</td><td>Observed history</td><td>2024-01-09 10:00:00</td><td>9.2</td></tr><tr><td>25</td><td>Observed history</td><td>2024-01-09 11:00:00</td><td>9.7</td></tr><tr><td>26</td><td>Observed history</td><td>2024-01-09 12:00:00</td><td>10.0</td></tr><tr><td>27</td><td>Observed history</td><td>2024-01-09 13:00:00</td><td>10.2</td></tr><tr><td>28</td><td>Observed history</td><td>2024-01-09 14:00:00</td><td>10.5</td></tr><tr><td>29</td><td>Observed history</td><td>2024-01-09 15:00:00</td><td>10.7</td></tr><tr><td>30</td><td>Observed history</td><td>2024-01-09 16:00:00</td><td>11.9</td></tr><tr><td>31</td><td>Observed history</td><td>2024-01-09 17:00:00</td><td>14.5</td></tr><tr><td>32</td><td>Observed history</td><td>2024-01-09 18:00:00</td><td>10.0</td></tr><tr><td>33</td><td>Observed history</td><td>2024-01-09 19:00:00</td><td>7.6</td></tr><tr><td>34</td><td>Observed history</td><td>2024-01-09 20:00:00</td><td>6.7</td></tr><tr><td>35</td><td>Observed history</td><td>2024-01-09 21:00:00</td><td>5.8</td></tr><tr><td>36</td><td>Observed history</td><td>2024-01-09 22:00:00</td><td>4.6</td></tr><tr><td>37</td><td>Observed history</td><td>2024-01-09 23:00:00</td><td>3.0</td></tr><tr><td>38</td><td>Observed history</td><td>2024-01-10 00:00:00</td><td>1.8</td></tr><tr><td>39</td><td>Observed history</td><td>2024-01-10 01:00:00</td><td>1.2</td></tr><tr><td>40</td><td>Observed history</td><td>2024-01-10 02:00:00</td><td>1.0</td></tr><tr><td>41</td><td>Observed history</td><td>2024-01-10 03:00:00</td><td>1.1</td></tr><tr><td>42</td><td>Observed history</td><td>2024-01-10 04:00:00</td><td>2.4</td></tr><tr><td>43</td><td>Observed history</td><td>2024-01-10 05:00:00</td><td>5.5</td></tr><tr><td>44</td><td>Observed history</td><td>2024-01-10 06:00:00</td><td>9.0</td></tr><tr><td>45</td><td>Observed history</td><td>2024-01-10 07:00:00</td><td>11.0</td></tr><tr><td>46</td><td>Observed history</td><td>2024-01-10 08:00:00</td><td>10.7</td></tr><tr><td>47</td><td>Observed history</td><td>2024-01-10 09:00:00</td><td>10.0</td></tr><tr><td>48</td><td>Observed history</td><td>2024-01-10 10:00:00</td><td>9.5</td></tr><tr><td>49</td><td>Observed history</td><td>2024-01-10 11:00:00</td><td>10.1</td></tr><tr><td>50</td><td>Observed history</td><td>2024-01-10 12:00:00</td><td>10.6</td></tr><tr><td>51</td><td>Observed history</td><td>2024-01-10 13:00:00</td><td>10.6</td></tr><tr><td>52</td><td>Observed history</td><td>2024-01-10 14:00:00</td><td>10.9</td></tr><tr><td>53</td><td>Observed history</td><td>2024-01-10 15:00:00</td><td>11.0</td></tr><tr><td>54</td><td>Observed history</td><td>2024-01-10 16:00:00</td><td>12.3</td></tr><tr><td>55</td><td>Observed history</td><td>2024-01-10 17:00:00</td><td>14.8</td></tr><tr><td>56</td><td>Observed history</td><td>2024-01-10 18:00:00</td><td>10.5870121717</td></tr><tr><td>57</td><td>Observed history</td><td>2024-01-10 19:00:00</td><td>7.9740243435</td></tr><tr><td>58</td><td>Observed history</td><td>2024-01-10 20:00:00</td><td>7.3610365152</td></tr><tr><td>59</td><td>Observed history</td><td>2024-01-10 21:00:00</td><td>6.648048687</td></tr><tr><td>60</td><td>Observed history</td><td>2024-01-10 22:00:00</td><td>5.2350608587</td></tr><tr><td>61</td><td>Observed history</td><td>2024-01-10 23:00:00</td><td>3.5220730305</td></tr><tr><td>62</td><td>Observed history</td><td>2024-01-11 00:00:00</td><td>2.4090852022</td></tr><tr><td>63</td><td>Observed history</td><td>2024-01-11 01:00:00</td><td>1.896097374</td></tr><tr><td>64</td><td>Observed history</td><td>2024-01-11 02:00:00</td><td>1.7831095457</td></tr><tr><td>65</td><td>Observed history</td><td>2024-01-11 03:00:00</td><td>1.9701217175</td></tr><tr><td>66</td><td>Observed history</td><td>2024-01-11 04:00:00</td><td>3.3571338892</td></tr><tr><td>67</td><td>Observed history</td><td>2024-01-11 05:00:00</td><td>6.5441460609</td></tr><tr><td>68</td><td>Observed history</td><td>2024-01-11 06:00:00</td><td>10.1311582327</td></tr><tr><td>69</td><td>Observed history</td><td>2024-01-11 07:00:00</td><td>12.1181704044</td></tr><tr><td>70</td><td>Observed history</td><td>2024-01-11 08:00:00</td><td>12.0051825762</td></tr><tr><td>71</td><td>Observed history</td><td>2024-01-11 09:00:00</td><td>11.2921947479</td></tr><tr><td>72</td><td>Observed history</td><td>2024-01-11 10:00:00</td><td>10.9792069197</td></tr><tr><td>73</td><td>Observed history</td><td>2024-01-11 11:00:00</td><td>11.7662190914</td></tr><tr><td>74</td><td>Observed history</td><td>2024-01-11 12:00:00</td><td>12.6532312632</td></tr><tr><td>75</td><td>Observed history</td><td>2024-01-11 13:00:00</td><td>13.5402434349</td></tr><tr><td>76</td><td>Observed history</td><td>2024-01-11 14:00:00</td><td>13.1272556067</td></tr><tr><td>77</td><td>Observed history</td><td>2024-01-11 15:00:00</td><td>13.3142677784</td></tr><tr><td>78</td><td>Observed history</td><td>2024-01-11 16:00:00</td><td>15.6012798309</td></tr><tr><td>79</td><td>Observed history</td><td>2024-01-11 17:00:00</td><td>17.2882921219</td></tr><tr><td>80</td><td>Observed history</td><td>2024-01-11 18:00:00</td><td>14.0753041744</td></tr><tr><td>81</td><td>Observed history</td><td>2024-01-11 19:00:00</td><td>10.5623164654</td></tr><tr><td>82</td><td>Observed history</td><td>2024-01-11 20:00:00</td><td>9.9493285179</td></tr><tr><td>83</td><td>Observed history</td><td>2024-01-11 21:00:00</td><td>9.3363408089</td></tr><tr><td>84</td><td>Observed history</td><td>2024-01-11 22:00:00</td><td>7.7233528614</td></tr><tr><td>85</td><td>Observed history</td><td>2024-01-11 23:00:00</td><td>6.0103651524</td></tr><tr><td>86</td><td>Observed history</td><td>2024-01-12 00:00:00</td><td>4.7973772049</td></tr><tr><td>87</td><td>Observed history</td><td>2024-01-12 01:00:00</td><td>4.1843894958</td></tr><tr><td>88</td><td>Observed history</td><td>2024-01-12 02:00:00</td><td>4.0714015484</td></tr><tr><td>89</td><td>Observed history</td><td>2024-01-12 03:00:00</td><td>4.1584138393</td></tr><tr><td>90</td><td>Observed history</td><td>2024-01-12 04:00:00</td><td>5.4454258919</td></tr><tr><td>91</td><td>Observed history</td><td>2024-01-12 05:00:00</td><td>8.3324381828</td></tr><tr><td>92</td><td>Observed history</td><td>2024-01-12 06:00:00</td><td>11.5194502354</td></tr><tr><td>93</td><td>Observed history</td><td>2024-01-12 07:00:00</td><td>13.6064625263</td></tr><tr><td>94</td><td>Observed history</td><td>2024-01-12 08:00:00</td><td>13.5934745789</td></tr><tr><td>95</td><td>Observed history</td><td>2024-01-12 09:00:00</td><td>13.2804868698</td></tr><tr><td>96</td><td>Observed history</td><td>2024-01-12 10:00:00</td><td>13.3674989223</td></tr><tr><td>97</td><td>Observed history</td><td>2024-01-12 11:00:00</td><td>14.3545112133</td></tr><tr><td>98</td><td>Observed history</td><td>2024-01-12 12:00:00</td><td>15.7415232658</td></tr><tr><td>99</td><td>Observed history</td><td>2024-01-12 13:00:00</td><td>15.4285355568</td></tr><tr><td>100</td><td>Observed history</td><td>2024-01-12 14:00:00</td><td>16.8155476093</td></tr><tr><td>101</td><td>Observed history</td><td>2024-01-12 15:00:00</td><td>15.5025596619</td></tr><tr><td>102</td><td>Observed history</td><td>2024-01-12 16:00:00</td><td>15.9895719528</td></tr><tr><td>103</td><td>Observed history</td><td>2024-01-12 17:00:00</td><td>17.2765842438</td></tr><tr><td>104</td><td>Observed history</td><td>2024-01-12 18:00:00</td><td>13.9635965347</td></tr><tr><td>105</td><td>Observed history</td><td>2024-01-12 19:00:00</td><td>12.7506083488</td></tr><tr><td>106</td><td>Observed history</td><td>2024-01-12 20:00:00</td><td>12.2376206398</td></tr><tr><td>107</td><td>Observed history</td><td>2024-01-12 21:00:00</td><td>11.6246329308</td></tr><tr><td>108</td><td>Observed history</td><td>2024-01-12 22:00:00</td><td>10.6116452217</td></tr><tr><td>109</td><td>Observed history</td><td>2024-01-12 23:00:00</td><td>9.0986570358</td></tr><tr><td>110</td><td>Observed history</td><td>2024-01-13 00:00:00</td><td>7.5856693268</td></tr><tr><td>111</td><td>Observed history</td><td>2024-01-13 01:00:00</td><td>6.6726816177</td></tr><tr><td>112</td><td>Observed history</td><td>2024-01-13 02:00:00</td><td>6.3596939087</td></tr><tr><td>113</td><td>Observed history</td><td>2024-01-13 03:00:00</td><td>6.2467057228</td></tr><tr><td>114</td><td>Observed history</td><td>2024-01-13 04:00:00</td><td>6.5337180138</td></tr><tr><td>115</td><td>Observed history</td><td>2024-01-13 05:00:00</td><td>7.6207303047</td></tr><tr><td>116</td><td>Observed history</td><td>2024-01-13 06:00:00</td><td>9.4077425957</td></tr><tr><td>117</td><td>Observed history</td><td>2024-01-13 07:00:00</td><td>11.1947544098</td></tr><tr><td>118</td><td>Observed history</td><td>2024-01-13 08:00:00</td><td>12.7817667007</td></tr><tr><td>119</td><td>Observed history</td><td>2024-01-13 09:00:00</td><td>13.9687789917</td></tr><tr><td>120</td><td>Observed history</td><td>2024-01-13 10:00:00</td><td>14.9557912827</td></tr><tr><td>121</td><td>Observed history</td><td>2024-01-13 11:00:00</td><td>15.8428030968</td></tr><tr><td>122</td><td>Observed history</td><td>2024-01-13 12:00:00</td><td>16.4298153877</td></tr><tr><td>123</td><td>Observed history</td><td>2024-01-13 13:00:00</td><td>17.0168276787</td></tr><tr><td>124</td><td>Observed history</td><td>2024-01-13 14:00:00</td><td>17.1038399696</td></tr><tr><td>125</td><td>Observed history</td><td>2024-01-13 15:00:00</td><td>16.8908517838</td></tr><tr><td>126</td><td>Observed history</td><td>2024-01-13 16:00:00</td><td>16.4778640747</td></tr><tr><td>127</td><td>Observed history</td><td>2024-01-13 17:00:00</td><td>15.8648763657</td></tr><tr><td>128</td><td>Observed history</td><td>2024-01-13 18:00:00</td><td>15.0518886566</td></tr><tr><td>129</td><td>Observed history</td><td>2024-01-13 19:00:00</td><td>14.1389004707</td></tr><tr><td>130</td><td>Observed history</td><td>2024-01-13 20:00:00</td><td>13.4259127617</td></tr><tr><td>131</td><td>Observed history</td><td>2024-01-13 21:00:00</td><td>13.2129250526</td></tr><tr><td>132</td><td>Observed history</td><td>2024-01-13 22:00:00</td><td>12.8999373436</td></tr><tr><td>133</td><td>Observed history</td><td>2024-01-13 23:00:00</td><td>11.2869491577</td></tr><tr><td>134</td><td>Observed history</td><td>2024-01-14 00:00:00</td><td>9.7739614487</td></tr><tr><td>135</td><td>Observed history</td><td>2024-01-14 01:00:00</td><td>8.7609737396</td></tr><tr><td>136</td><td>Observed history</td><td>2024-01-14 02:00:00</td><td>8.4479860306</td></tr><tr><td>137</td><td>Observed history</td><td>2024-01-14 03:00:00</td><td>8.0349978447</td></tr><tr><td>138</td><td>Observed history</td><td>2024-01-14 04:00:00</td><td>8.0220101357</td></tr><tr><td>139</td><td>Observed history</td><td>2024-01-14 05:00:00</td><td>8.6090224266</td></tr><tr><td>140</td><td>Observed history</td><td>2024-01-14 06:00:00</td><td>9.7960347176</td></tr><tr><td>141</td><td>Observed history</td><td>2024-01-14 07:00:00</td><td>10.9830465317</td></tr><tr><td>142</td><td>Observed history</td><td>2024-01-14 08:00:00</td><td>12.1700588226</td></tr><tr><td>143</td><td>Observed history</td><td>2024-01-14 09:00:00</td><td>13.8570711136</td></tr><tr><td>144</td><td>Observed history</td><td>2024-01-14 10:00:00</td><td>15.1440829277</td></tr><tr><td>145</td><td>Observed history</td><td>2024-01-14 11:00:00</td><td>16.0310952187</td></tr><tr><td>146</td><td>Observed history</td><td>2024-01-14 12:00:00</td><td>16.6181075096</td></tr><tr><td>147</td><td>Observed history</td><td>2024-01-14 13:00:00</td><td>17.0051193237</td></tr><tr><td>148</td><td>Observed history</td><td>2024-01-14 14:00:00</td><td>17.0921316147</td></tr><tr><td>149</td><td>Observed history</td><td>2024-01-14 15:00:00</td><td>17.1791439056</td></tr><tr><td>150</td><td>Observed history</td><td>2024-01-14 16:00:00</td><td>17.1661561966</td></tr><tr><td>151</td><td>Observed history</td><td>2024-01-14 17:00:00</td><td>16.6531684875</td></tr><tr><td>152</td><td>Observed history</td><td>2024-01-14 18:00:00</td><td>16.2401807785</td></tr><tr><td>153</td><td>Observed history</td><td>2024-01-14 19:00:00</td><td>15.8271930695</td></tr><tr><td>154</td><td>Observed history</td><td>2024-01-14 20:00:00</td><td>15.6142044067</td></tr><tr><td>155</td><td>Observed history</td><td>2024-01-14 21:00:00</td><td>15.1012166977</td></tr><tr><td>156</td><td>Observed history</td><td>2024-01-14 22:00:00</td><td>13.6882289886</td></tr><tr><td>157</td><td>Observed history</td><td>2024-01-14 23:00:00</td><td>11.8752412796</td></tr><tr><td>158</td><td>Observed history</td><td>2024-01-15 00:00:00</td><td>10.6622535706</td></tr><tr><td>159</td><td>Observed history</td><td>2024-01-15 01:00:00</td><td>10.0492658615</td></tr><tr><td>160</td><td>Observed history</td><td>2024-01-15 02:00:00</td><td>9.9362781525</td></tr><tr><td>161</td><td>Observed history</td><td>2024-01-15 03:00:00</td><td>10.2232904434</td></tr><tr><td>162</td><td>Observed history</td><td>2024-01-15 04:00:00</td><td>11.5103017807</td></tr><tr><td>163</td><td>Observed history</td><td>2024-01-15 05:00:00</td><td>14.4973140717</td></tr><tr><td>164</td><td>Observed history</td><td>2024-01-15 06:00:00</td><td>17.7843263626</td></tr><tr><td>165</td><td>Observed history</td><td>2024-01-15 07:00:00</td><td>19.7713386536</td></tr><tr><td>166</td><td>Observed history</td><td>2024-01-15 08:00:00</td><td>19.5583509445</td></tr><tr><td>167</td><td>Observed history</td><td>2024-01-15 09:00:00</td><td>18.9453632355</td></tr><tr><td>168</td><td>Observed history</td><td>2024-01-15 10:00:00</td><td>18.7323755264</td></tr><tr class="future"><td>169</td><td>Forecast horizon</td><td>2024-01-15 11:00:00</td><td>9.6</td></tr><tr class="future"><td>170</td><td>Forecast horizon</td><td>2024-01-15 12:00:00</td><td>9.8</td></tr><tr class="future"><td>171</td><td>Forecast horizon</td><td>2024-01-15 13:00:00</td><td>10.0</td></tr><tr class="future"><td>172</td><td>Forecast horizon</td><td>2024-01-15 14:00:00</td><td>10.1</td></tr><tr class="future"><td>173</td><td>Forecast horizon</td><td>2024-01-15 15:00:00</td><td>10.3</td></tr><tr class="future"><td>174</td><td>Forecast horizon</td><td>2024-01-15 16:00:00</td><td>10.9</td></tr><tr class="future"><td>175</td><td>Forecast horizon</td><td>2024-01-15 17:00:00</td><td>13.2</td></tr><tr class="future"><td>176</td><td>Forecast horizon</td><td>2024-01-15 18:00:00</td><td>9.0</td></tr><tr class="future"><td>177</td><td>Forecast horizon</td><td>2024-01-15 19:00:00</td><td>7.3</td></tr><tr class="future"><td>178</td><td>Forecast horizon</td><td>2024-01-15 20:00:00</td><td>6.4</td></tr><tr class="future"><td>179</td><td>Forecast horizon</td><td>2024-01-15 21:00:00</td><td>5.5</td></tr><tr class="future"><td>180</td><td>Forecast horizon</td><td>2024-01-15 22:00:00</td><td>4.2</td></tr><tr class="future"><td>181</td><td>Forecast horizon</td><td>2024-01-15 23:00:00</td><td>2.7</td></tr><tr class="future"><td>182</td><td>Forecast horizon</td><td>2024-01-16 00:00:00</td><td>1.7</td></tr><tr class="future"><td>183</td><td>Forecast horizon</td><td>2024-01-16 01:00:00</td><td>1.1</td></tr><tr class="future"><td>184</td><td>Forecast horizon</td><td>2024-01-16 02:00:00</td><td>0.9</td></tr><tr class="future"><td>185</td><td>Forecast horizon</td><td>2024-01-16 03:00:00</td><td>1.0</td></tr><tr class="future"><td>186</td><td>Forecast horizon</td><td>2024-01-16 04:00:00</td><td>2.3</td></tr><tr class="future"><td>187</td><td>Forecast horizon</td><td>2024-01-16 05:00:00</td><td>5.4</td></tr><tr class="future"><td>188</td><td>Forecast horizon</td><td>2024-01-16 06:00:00</td><td>8.9</td></tr><tr class="future"><td>189</td><td>Forecast horizon</td><td>2024-01-16 07:00:00</td><td>10.7</td></tr><tr class="future"><td>190</td><td>Forecast horizon</td><td>2024-01-16 08:00:00</td><td>10.5</td></tr><tr class="future"><td>191</td><td>Forecast horizon</td><td>2024-01-16 09:00:00</td><td>9.6</td></tr><tr class="future"><td>192</td><td>Forecast horizon</td><td>2024-01-16 10:00:00</td><td>9.2</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-151-context" id="forecast-task-151-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-151-context" id="forecast-task-151-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-151-context" id="forecast-task-151-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-151-view" id="forecast-task-151-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-151-view" id="forecast-task-151-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-151-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-151-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-151-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-151-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-151-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 198.82 L 32.94 196.16 L 37.88 193.50 L 42.83 192.17 L 47.77 189.51 L 52.71 181.53 L 57.65 150.93 L 62.60 206.80 L 67.54 229.42 L 72.48 241.39 L 77.42 253.36 L 82.37 270.66 L 87.31 290.61 L 92.25 303.92 L 97.19 311.90 L 102.14 314.56 L 107.08 313.23 L 112.02 295.93 L 116.96 254.70 L 121.91 208.13 L 126.85 184.19 L 131.79 186.85 L 136.73 198.82 L 141.68 204.14 L 146.62 197.49 L 151.56 193.50 L 156.50 190.84 L 161.45 186.85 L 166.39 184.19 L 171.33 168.22 L 176.27 133.64 L 181.21 193.50 L 186.16 225.43 L 191.10 237.40 L 196.04 249.37 L 200.98 265.34 L 205.93 286.62 L 210.87 302.59 L 215.81 310.57 L 220.75 313.23 L 225.70 311.90 L 230.64 294.60 L 235.58 253.36 L 240.52 206.80 L 245.47 180.20 L 250.41 184.19 L 255.35 193.50 L 260.29 200.15 L 265.24 192.17 L 270.18 185.52 L 275.12 185.52 L 280.06 181.53 L 285.01 180.20 L 289.95 162.90 L 294.89 129.65 L 299.83 185.69 L 304.77 220.45 L 309.72 228.61 L 314.66 238.09 L 319.60 256.89 L 324.54 279.68 L 329.49 294.48 L 334.43 301.31 L 339.37 302.81 L 344.31 300.32 L 349.26 281.87 L 354.20 239.47 L 359.14 191.76 L 364.08 165.32 L 369.03 166.83 L 373.97 176.31 L 378.91 180.47 L 383.85 170.00 L 388.80 158.20 L 393.74 146.40 L 398.68 151.90 L 403.62 149.41 L 408.57 118.99 L 413.51 96.54 L 418.45 139.29 L 423.39 186.02 L 428.34 194.17 L 433.28 202.33 L 438.22 223.79 L 443.16 246.58 L 448.10 262.71 L 453.05 270.87 L 457.99 272.37 L 462.93 271.21 L 467.87 254.09 L 472.82 215.68 L 477.76 173.29 L 482.70 145.52 L 487.64 145.70 L 492.59 149.86 L 497.53 148.70 L 502.47 135.57 L 507.41 117.12 L 512.36 121.28 L 517.30 102.83 L 522.24 120.30 L 527.18 113.82 L 532.13 96.70 L 537.07 140.77 L 542.01 156.91 L 546.95 163.73 L 551.90 171.89 L 556.84 185.36 L 561.78 205.49 L 566.72 225.62 L 571.66 237.76 L 576.61 241.93 L 581.55 243.43 L 586.49 239.61 L 591.43 225.15 L 596.38 201.38 L 601.32 177.61 L 606.26 156.49 L 611.20 140.70 L 616.15 127.57 L 621.09 115.77 L 626.03 107.96 L 630.97 100.16 L 635.92 99.00 L 640.86 101.83 L 645.80 107.33 L 650.74 115.48 L 655.69 126.30 L 660.63 138.44 L 665.57 147.93 L 670.51 150.76 L 675.46 154.92 L 680.40 176.38 L 685.34 196.51 L 690.28 209.98 L 695.23 214.15 L 700.17 219.64 L 705.11 219.81 L 710.05 212.01 L 714.99 196.21 L 719.94 180.42 L 724.88 164.63 L 729.82 142.19 L 734.76 125.07 L 739.71 113.27 L 744.65 105.46 L 749.59 100.31 L 754.53 99.15 L 759.48 98.00 L 764.42 98.17 L 769.36 104.99 L 774.30 110.49 L 779.25 115.98 L 784.19 118.81 L 789.13 125.64 L 794.07 144.44 L 799.02 168.55 L 803.96 184.69 L 808.90 192.85 L 813.84 194.35 L 818.79 190.53 L 823.73 173.41 L 828.67 133.67 L 833.61 89.95 L 838.55 63.51 L 843.50 66.35 L 848.44 74.50 L 853.38 77.33" /><path class="forecast-svg-actual" d="M 858.32 198.82 L 863.27 196.16 L 868.21 193.50 L 873.15 192.17 L 878.09 189.51 L 883.04 181.53 L 887.98 150.93 L 892.92 206.80 L 897.86 229.42 L 902.81 241.39 L 907.75 253.36 L 912.69 270.66 L 917.63 290.61 L 922.58 303.92 L 927.52 311.90 L 932.46 314.56 L 937.40 313.23 L 942.35 295.93 L 947.29 254.70 L 952.23 208.13 L 957.17 184.19 L 962.12 186.85 L 967.06 198.82 L 972.00 204.14" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 84.31 L 863.27 74.31 L 868.21 82.58 L 873.15 71.37 L 878.09 49.49 L 883.04 66.51 L 887.98 55.71 L 892.92 86.17 L 897.86 106.45 L 902.81 112.65 L 907.75 112.37 L 912.69 141.96 L 917.63 157.43 L 922.58 173.12 L 927.52 181.51 L 932.46 174.99 L 937.40 175.93 L 942.35 158.27 L 947.29 118.56 L 952.23 105.45 L 957.17 48.93 L 962.12 72.39 L 967.06 43.79 L 972.00 67.39 L 972.00 153.00 L 967.06 148.92 L 962.12 147.04 L 957.17 160.66 L 952.23 181.13 L 947.29 197.28 L 942.35 214.31 L 937.40 221.45 L 932.46 223.68 L 927.52 225.46 L 922.58 220.51 L 917.63 208.53 L 912.69 192.35 L 907.75 179.40 L 902.81 160.40 L 897.86 149.46 L 892.92 141.57 L 887.98 124.28 L 883.04 139.46 L 878.09 145.33 L 873.15 136.23 L 868.21 154.10 L 863.27 150.88 L 858.32 136.55 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 110.43 L 863.27 112.60 L 868.21 118.34 L 873.15 103.80 L 878.09 97.41 L 883.04 102.98 L 887.98 90.00 L 892.92 113.87 L 897.86 127.95 L 902.81 136.53 L 907.75 145.89 L 912.69 167.16 L 917.63 182.98 L 922.58 196.82 L 927.52 203.48 L 932.46 199.33 L 937.40 198.69 L 942.35 186.29 L 947.29 157.92 L 952.23 143.29 L 957.17 104.80 L 962.12 109.72 L 967.06 96.35 L 972.00 110.20" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="110.43" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 858.32 194.81 L 863.27 188.79 L 868.21 186.82 L 873.15 182.88 L 878.09 180.65 L 883.04 163.99 L 887.98 129.83 L 892.92 189.64 L 897.86 222.58 L 902.81 234.08 L 907.75 245.84 L 912.69 262.28 L 917.63 283.62 L 922.58 299.37 L 927.52 307.30 L 932.46 309.96 L 937.40 308.57 L 942.35 291.17 L 947.29 249.83 L 952.23 203.11 L 957.17 177.08 L 962.12 180.54 L 967.06 190.49 L 972.00 196.56" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="194.81" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 191.81 L 863.27 197.31 L 868.21 196.45 L 873.15 198.14 L 878.09 197.53 L 883.04 193.36 L 887.98 189.91 L 892.92 207.85 L 897.86 217.42 L 902.81 223.58 L 907.75 233.50 L 912.69 234.16 L 917.63 232.40 L 922.58 230.19 L 927.52 231.18 L 932.46 230.61 L 937.40 229.99 L 942.35 227.07 L 947.29 215.60 L 952.23 202.64 L 957.17 193.52 L 962.12 190.85 L 967.06 186.86 L 972.00 178.69" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="191.81" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 198.82 L 32.94 196.16 L 37.88 193.50 L 42.83 192.17 L 47.77 189.51 L 52.71 181.53 L 57.65 150.93 L 62.60 206.80 L 67.54 229.42 L 72.48 241.39 L 77.42 253.36 L 82.37 270.66 L 87.31 290.61 L 92.25 303.92 L 97.19 311.90 L 102.14 314.56 L 107.08 313.23 L 112.02 295.93 L 116.96 254.70 L 121.91 208.13 L 126.85 184.19 L 131.79 186.85 L 136.73 198.82 L 141.68 204.14 L 146.62 197.49 L 151.56 193.50 L 156.50 190.84 L 161.45 186.85 L 166.39 184.19 L 171.33 168.22 L 176.27 133.64 L 181.21 193.50 L 186.16 225.43 L 191.10 237.40 L 196.04 249.37 L 200.98 265.34 L 205.93 286.62 L 210.87 302.59 L 215.81 310.57 L 220.75 313.23 L 225.70 311.90 L 230.64 294.60 L 235.58 253.36 L 240.52 206.80 L 245.47 180.20 L 250.41 184.19 L 255.35 193.50 L 260.29 200.15 L 265.24 192.17 L 270.18 185.52 L 275.12 185.52 L 280.06 181.53 L 285.01 180.20 L 289.95 162.90 L 294.89 129.65 L 299.83 185.69 L 304.77 220.45 L 309.72 228.61 L 314.66 238.09 L 319.60 256.89 L 324.54 279.68 L 329.49 294.48 L 334.43 301.31 L 339.37 302.81 L 344.31 300.32 L 349.26 281.87 L 354.20 239.47 L 359.14 191.76 L 364.08 165.32 L 369.03 166.83 L 373.97 176.31 L 378.91 180.47 L 383.85 170.00 L 388.80 158.20 L 393.74 146.40 L 398.68 151.90 L 403.62 149.41 L 408.57 118.99 L 413.51 96.54 L 418.45 139.29 L 423.39 186.02 L 428.34 194.17 L 433.28 202.33 L 438.22 223.79 L 443.16 246.58 L 448.10 262.71 L 453.05 270.87 L 457.99 272.37 L 462.93 271.21 L 467.87 254.09 L 472.82 215.68 L 477.76 173.29 L 482.70 145.52 L 487.64 145.70 L 492.59 149.86 L 497.53 148.70 L 502.47 135.57 L 507.41 117.12 L 512.36 121.28 L 517.30 102.83 L 522.24 120.30 L 527.18 113.82 L 532.13 96.70 L 537.07 140.77 L 542.01 156.91 L 546.95 163.73 L 551.90 171.89 L 556.84 185.36 L 561.78 205.49 L 566.72 225.62 L 571.66 237.76 L 576.61 241.93 L 581.55 243.43 L 586.49 239.61 L 591.43 225.15 L 596.38 201.38 L 601.32 177.61 L 606.26 156.49 L 611.20 140.70 L 616.15 127.57 L 621.09 115.77 L 626.03 107.96 L 630.97 100.16 L 635.92 99.00 L 640.86 101.83 L 645.80 107.33 L 650.74 115.48 L 655.69 126.30 L 660.63 138.44 L 665.57 147.93 L 670.51 150.76 L 675.46 154.92 L 680.40 176.38 L 685.34 196.51 L 690.28 209.98 L 695.23 214.15 L 700.17 219.64 L 705.11 219.81 L 710.05 212.01 L 714.99 196.21 L 719.94 180.42 L 724.88 164.63 L 729.82 142.19 L 734.76 125.07 L 739.71 113.27 L 744.65 105.46 L 749.59 100.31 L 754.53 99.15 L 759.48 98.00 L 764.42 98.17 L 769.36 104.99 L 774.30 110.49 L 779.25 115.98 L 784.19 118.81 L 789.13 125.64 L 794.07 144.44 L 799.02 168.55 L 803.96 184.69 L 808.90 192.85 L 813.84 194.35 L 818.79 190.53 L 823.73 173.41 L 828.67 133.67 L 833.61 89.95 L 838.55 63.51 L 843.50 66.35 L 848.44 74.50 L 853.38 77.33" /><path class="forecast-svg-actual" d="M 858.32 198.82 L 863.27 196.16 L 868.21 193.50 L 873.15 192.17 L 878.09 189.51 L 883.04 181.53 L 887.98 150.93 L 892.92 206.80 L 897.86 229.42 L 902.81 241.39 L 907.75 253.36 L 912.69 270.66 L 917.63 290.61 L 922.58 303.92 L 927.52 311.90 L 932.46 314.56 L 937.40 313.23 L 942.35 295.93 L 947.29 254.70 L 952.23 208.13 L 957.17 184.19 L 962.12 186.85 L 967.06 198.82 L 972.00 204.14" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 84.31 L 863.27 74.31 L 868.21 82.58 L 873.15 71.37 L 878.09 49.49 L 883.04 66.51 L 887.98 55.71 L 892.92 86.17 L 897.86 106.45 L 902.81 112.65 L 907.75 112.37 L 912.69 141.96 L 917.63 157.43 L 922.58 173.12 L 927.52 181.51 L 932.46 174.99 L 937.40 175.93 L 942.35 158.27 L 947.29 118.56 L 952.23 105.45 L 957.17 48.93 L 962.12 72.39 L 967.06 43.79 L 972.00 67.39 L 972.00 153.00 L 967.06 148.92 L 962.12 147.04 L 957.17 160.66 L 952.23 181.13 L 947.29 197.28 L 942.35 214.31 L 937.40 221.45 L 932.46 223.68 L 927.52 225.46 L 922.58 220.51 L 917.63 208.53 L 912.69 192.35 L 907.75 179.40 L 902.81 160.40 L 897.86 149.46 L 892.92 141.57 L 887.98 124.28 L 883.04 139.46 L 878.09 145.33 L 873.15 136.23 L 868.21 154.10 L 863.27 150.88 L 858.32 136.55 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 110.43 L 863.27 112.60 L 868.21 118.34 L 873.15 103.80 L 878.09 97.41 L 883.04 102.98 L 887.98 90.00 L 892.92 113.87 L 897.86 127.95 L 902.81 136.53 L 907.75 145.89 L 912.69 167.16 L 917.63 182.98 L 922.58 196.82 L 927.52 203.48 L 932.46 199.33 L 937.40 198.69 L 942.35 186.29 L 947.29 157.92 L 952.23 143.29 L 957.17 104.80 L 962.12 109.72 L 967.06 96.35 L 972.00 110.20" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="110.43" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 198.82 L 32.94 196.16 L 37.88 193.50 L 42.83 192.17 L 47.77 189.51 L 52.71 181.53 L 57.65 150.93 L 62.60 206.80 L 67.54 229.42 L 72.48 241.39 L 77.42 253.36 L 82.37 270.66 L 87.31 290.61 L 92.25 303.92 L 97.19 311.90 L 102.14 314.56 L 107.08 313.23 L 112.02 295.93 L 116.96 254.70 L 121.91 208.13 L 126.85 184.19 L 131.79 186.85 L 136.73 198.82 L 141.68 204.14 L 146.62 197.49 L 151.56 193.50 L 156.50 190.84 L 161.45 186.85 L 166.39 184.19 L 171.33 168.22 L 176.27 133.64 L 181.21 193.50 L 186.16 225.43 L 191.10 237.40 L 196.04 249.37 L 200.98 265.34 L 205.93 286.62 L 210.87 302.59 L 215.81 310.57 L 220.75 313.23 L 225.70 311.90 L 230.64 294.60 L 235.58 253.36 L 240.52 206.80 L 245.47 180.20 L 250.41 184.19 L 255.35 193.50 L 260.29 200.15 L 265.24 192.17 L 270.18 185.52 L 275.12 185.52 L 280.06 181.53 L 285.01 180.20 L 289.95 162.90 L 294.89 129.65 L 299.83 185.69 L 304.77 220.45 L 309.72 228.61 L 314.66 238.09 L 319.60 256.89 L 324.54 279.68 L 329.49 294.48 L 334.43 301.31 L 339.37 302.81 L 344.31 300.32 L 349.26 281.87 L 354.20 239.47 L 359.14 191.76 L 364.08 165.32 L 369.03 166.83 L 373.97 176.31 L 378.91 180.47 L 383.85 170.00 L 388.80 158.20 L 393.74 146.40 L 398.68 151.90 L 403.62 149.41 L 408.57 118.99 L 413.51 96.54 L 418.45 139.29 L 423.39 186.02 L 428.34 194.17 L 433.28 202.33 L 438.22 223.79 L 443.16 246.58 L 448.10 262.71 L 453.05 270.87 L 457.99 272.37 L 462.93 271.21 L 467.87 254.09 L 472.82 215.68 L 477.76 173.29 L 482.70 145.52 L 487.64 145.70 L 492.59 149.86 L 497.53 148.70 L 502.47 135.57 L 507.41 117.12 L 512.36 121.28 L 517.30 102.83 L 522.24 120.30 L 527.18 113.82 L 532.13 96.70 L 537.07 140.77 L 542.01 156.91 L 546.95 163.73 L 551.90 171.89 L 556.84 185.36 L 561.78 205.49 L 566.72 225.62 L 571.66 237.76 L 576.61 241.93 L 581.55 243.43 L 586.49 239.61 L 591.43 225.15 L 596.38 201.38 L 601.32 177.61 L 606.26 156.49 L 611.20 140.70 L 616.15 127.57 L 621.09 115.77 L 626.03 107.96 L 630.97 100.16 L 635.92 99.00 L 640.86 101.83 L 645.80 107.33 L 650.74 115.48 L 655.69 126.30 L 660.63 138.44 L 665.57 147.93 L 670.51 150.76 L 675.46 154.92 L 680.40 176.38 L 685.34 196.51 L 690.28 209.98 L 695.23 214.15 L 700.17 219.64 L 705.11 219.81 L 710.05 212.01 L 714.99 196.21 L 719.94 180.42 L 724.88 164.63 L 729.82 142.19 L 734.76 125.07 L 739.71 113.27 L 744.65 105.46 L 749.59 100.31 L 754.53 99.15 L 759.48 98.00 L 764.42 98.17 L 769.36 104.99 L 774.30 110.49 L 779.25 115.98 L 784.19 118.81 L 789.13 125.64 L 794.07 144.44 L 799.02 168.55 L 803.96 184.69 L 808.90 192.85 L 813.84 194.35 L 818.79 190.53 L 823.73 173.41 L 828.67 133.67 L 833.61 89.95 L 838.55 63.51 L 843.50 66.35 L 848.44 74.50 L 853.38 77.33" /><path class="forecast-svg-actual" d="M 858.32 198.82 L 863.27 196.16 L 868.21 193.50 L 873.15 192.17 L 878.09 189.51 L 883.04 181.53 L 887.98 150.93 L 892.92 206.80 L 897.86 229.42 L 902.81 241.39 L 907.75 253.36 L 912.69 270.66 L 917.63 290.61 L 922.58 303.92 L 927.52 311.90 L 932.46 314.56 L 937.40 313.23 L 942.35 295.93 L 947.29 254.70 L 952.23 208.13 L 957.17 184.19 L 962.12 186.85 L 967.06 198.82 L 972.00 204.14" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 191.39 L 863.27 183.98 L 868.21 181.72 L 873.15 177.96 L 878.09 175.93 L 883.04 158.13 L 887.98 123.91 L 892.92 183.36 L 897.86 216.36 L 902.81 227.67 L 907.75 239.24 L 912.69 256.06 L 917.63 277.35 L 922.58 293.31 L 927.52 301.19 L 932.46 303.71 L 937.40 302.27 L 942.35 284.73 L 947.29 243.24 L 952.23 196.32 L 957.17 170.66 L 962.12 173.51 L 967.06 183.80 L 972.00 189.36 L 972.00 203.76 L 967.06 197.19 L 962.12 187.58 L 957.17 183.51 L 952.23 209.89 L 947.29 256.42 L 942.35 297.61 L 937.40 314.88 L 932.46 316.21 L 927.52 313.40 L 922.58 305.42 L 917.63 289.88 L 912.69 268.50 L 907.75 252.44 L 902.81 240.48 L 897.86 228.80 L 892.92 195.92 L 887.98 135.76 L 883.04 169.86 L 878.09 185.37 L 873.15 187.81 L 868.21 191.92 L 863.27 193.60 L 858.32 198.23 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 194.81 L 863.27 188.79 L 868.21 186.82 L 873.15 182.88 L 878.09 180.65 L 883.04 163.99 L 887.98 129.83 L 892.92 189.64 L 897.86 222.58 L 902.81 234.08 L 907.75 245.84 L 912.69 262.28 L 917.63 283.62 L 922.58 299.37 L 927.52 307.30 L 932.46 309.96 L 937.40 308.57 L 942.35 291.17 L 947.29 249.83 L 952.23 203.11 L 957.17 177.08 L 962.12 180.54 L 967.06 190.49 L 972.00 196.56" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="194.81" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 198.82 L 32.94 196.16 L 37.88 193.50 L 42.83 192.17 L 47.77 189.51 L 52.71 181.53 L 57.65 150.93 L 62.60 206.80 L 67.54 229.42 L 72.48 241.39 L 77.42 253.36 L 82.37 270.66 L 87.31 290.61 L 92.25 303.92 L 97.19 311.90 L 102.14 314.56 L 107.08 313.23 L 112.02 295.93 L 116.96 254.70 L 121.91 208.13 L 126.85 184.19 L 131.79 186.85 L 136.73 198.82 L 141.68 204.14 L 146.62 197.49 L 151.56 193.50 L 156.50 190.84 L 161.45 186.85 L 166.39 184.19 L 171.33 168.22 L 176.27 133.64 L 181.21 193.50 L 186.16 225.43 L 191.10 237.40 L 196.04 249.37 L 200.98 265.34 L 205.93 286.62 L 210.87 302.59 L 215.81 310.57 L 220.75 313.23 L 225.70 311.90 L 230.64 294.60 L 235.58 253.36 L 240.52 206.80 L 245.47 180.20 L 250.41 184.19 L 255.35 193.50 L 260.29 200.15 L 265.24 192.17 L 270.18 185.52 L 275.12 185.52 L 280.06 181.53 L 285.01 180.20 L 289.95 162.90 L 294.89 129.65 L 299.83 185.69 L 304.77 220.45 L 309.72 228.61 L 314.66 238.09 L 319.60 256.89 L 324.54 279.68 L 329.49 294.48 L 334.43 301.31 L 339.37 302.81 L 344.31 300.32 L 349.26 281.87 L 354.20 239.47 L 359.14 191.76 L 364.08 165.32 L 369.03 166.83 L 373.97 176.31 L 378.91 180.47 L 383.85 170.00 L 388.80 158.20 L 393.74 146.40 L 398.68 151.90 L 403.62 149.41 L 408.57 118.99 L 413.51 96.54 L 418.45 139.29 L 423.39 186.02 L 428.34 194.17 L 433.28 202.33 L 438.22 223.79 L 443.16 246.58 L 448.10 262.71 L 453.05 270.87 L 457.99 272.37 L 462.93 271.21 L 467.87 254.09 L 472.82 215.68 L 477.76 173.29 L 482.70 145.52 L 487.64 145.70 L 492.59 149.86 L 497.53 148.70 L 502.47 135.57 L 507.41 117.12 L 512.36 121.28 L 517.30 102.83 L 522.24 120.30 L 527.18 113.82 L 532.13 96.70 L 537.07 140.77 L 542.01 156.91 L 546.95 163.73 L 551.90 171.89 L 556.84 185.36 L 561.78 205.49 L 566.72 225.62 L 571.66 237.76 L 576.61 241.93 L 581.55 243.43 L 586.49 239.61 L 591.43 225.15 L 596.38 201.38 L 601.32 177.61 L 606.26 156.49 L 611.20 140.70 L 616.15 127.57 L 621.09 115.77 L 626.03 107.96 L 630.97 100.16 L 635.92 99.00 L 640.86 101.83 L 645.80 107.33 L 650.74 115.48 L 655.69 126.30 L 660.63 138.44 L 665.57 147.93 L 670.51 150.76 L 675.46 154.92 L 680.40 176.38 L 685.34 196.51 L 690.28 209.98 L 695.23 214.15 L 700.17 219.64 L 705.11 219.81 L 710.05 212.01 L 714.99 196.21 L 719.94 180.42 L 724.88 164.63 L 729.82 142.19 L 734.76 125.07 L 739.71 113.27 L 744.65 105.46 L 749.59 100.31 L 754.53 99.15 L 759.48 98.00 L 764.42 98.17 L 769.36 104.99 L 774.30 110.49 L 779.25 115.98 L 784.19 118.81 L 789.13 125.64 L 794.07 144.44 L 799.02 168.55 L 803.96 184.69 L 808.90 192.85 L 813.84 194.35 L 818.79 190.53 L 823.73 173.41 L 828.67 133.67 L 833.61 89.95 L 838.55 63.51 L 843.50 66.35 L 848.44 74.50 L 853.38 77.33" /><path class="forecast-svg-actual" d="M 858.32 198.82 L 863.27 196.16 L 868.21 193.50 L 873.15 192.17 L 878.09 189.51 L 883.04 181.53 L 887.98 150.93 L 892.92 206.80 L 897.86 229.42 L 902.81 241.39 L 907.75 253.36 L 912.69 270.66 L 917.63 290.61 L 922.58 303.92 L 927.52 311.90 L 932.46 314.56 L 937.40 313.23 L 942.35 295.93 L 947.29 254.70 L 952.23 208.13 L 957.17 184.19 L 962.12 186.85 L 967.06 198.82 L 972.00 204.14" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 156.94 L 863.27 161.67 L 868.21 154.82 L 873.15 154.70 L 878.09 148.61 L 883.04 132.62 L 887.98 117.77 L 892.92 137.22 L 897.86 143.53 L 902.81 148.68 L 907.75 167.77 L 912.69 172.90 L 917.63 169.61 L 922.58 162.63 L 927.52 162.75 L 932.46 161.59 L 937.40 163.86 L 942.35 168.64 L 947.29 167.51 L 952.23 160.13 L 957.17 152.72 L 962.12 150.71 L 967.06 141.54 L 972.00 125.07 L 972.00 232.32 L 967.06 232.17 L 962.12 231.00 L 957.17 234.31 L 952.23 245.14 L 947.29 263.69 L 942.35 285.50 L 937.40 296.12 L 932.46 299.64 L 927.52 299.62 L 922.58 297.76 L 917.63 295.20 L 912.69 295.42 L 907.75 299.24 L 902.81 298.47 L 897.86 291.30 L 892.92 278.48 L 887.98 262.04 L 883.04 254.09 L 878.09 246.44 L 873.15 241.58 L 868.21 238.07 L 863.27 232.94 L 858.32 226.68 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 191.81 L 863.27 197.31 L 868.21 196.45 L 873.15 198.14 L 878.09 197.53 L 883.04 193.36 L 887.98 189.91 L 892.92 207.85 L 897.86 217.42 L 902.81 223.58 L 907.75 233.50 L 912.69 234.16 L 917.63 232.40 L 922.58 230.19 L 927.52 231.18 L 932.46 230.61 L 937.40 229.99 L 942.35 227.07 L 947.29 215.60 L 952.23 202.64 L 957.17 193.52 L 962.12 190.85 L 967.06 186.86 L 972.00 178.69" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="191.81" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 177.20 L 32.94 174.58 L 37.88 171.95 L 42.83 170.64 L 47.77 168.02 L 52.71 160.15 L 57.65 129.98 L 62.60 185.07 L 67.54 207.37 L 72.48 219.17 L 77.42 230.97 L 82.37 248.03 L 87.31 267.70 L 92.25 280.82 L 97.19 288.68 L 102.14 291.31 L 107.08 290.00 L 112.02 272.95 L 116.96 232.29 L 121.91 186.38 L 126.85 162.77 L 131.79 165.40 L 136.73 177.20 L 141.68 182.45 L 146.62 175.89 L 151.56 171.95 L 156.50 169.33 L 161.45 165.40 L 166.39 162.77 L 171.33 147.03 L 176.27 112.93 L 181.21 171.95 L 186.16 203.43 L 191.10 215.24 L 196.04 227.04 L 200.98 242.78 L 205.93 263.76 L 210.87 279.50 L 215.81 287.37 L 220.75 290.00 L 225.70 288.68 L 230.64 271.63 L 235.58 230.97 L 240.52 185.07 L 245.47 158.84 L 250.41 162.77 L 255.35 171.95 L 260.29 178.51 L 265.24 170.64 L 270.18 164.08 L 275.12 164.08 L 280.06 160.15 L 285.01 158.84 L 289.95 141.79 L 294.89 109.00 L 299.83 164.25 L 304.77 198.53 L 309.72 206.57 L 314.66 215.92 L 319.60 234.45 L 324.54 256.92 L 329.49 271.51 L 334.43 278.24 L 339.37 279.73 L 344.31 277.27 L 349.26 259.08 L 354.20 217.28 L 359.14 170.23 L 364.08 144.17 L 369.03 145.65 L 373.97 155.00 L 378.91 159.11 L 383.85 148.79 L 388.80 137.15 L 393.74 125.52 L 398.68 130.94 L 403.62 128.48 L 408.57 98.49 L 413.51 76.36 L 418.45 118.50 L 423.39 164.58 L 428.34 172.62 L 433.28 180.66 L 438.22 201.81 L 443.16 224.28 L 448.10 240.19 L 453.05 248.23 L 457.99 249.71 L 462.93 248.57 L 467.87 231.69 L 472.82 193.82 L 477.76 152.02 L 482.70 124.65 L 487.64 124.82 L 492.59 128.93 L 497.53 127.79 L 502.47 114.84 L 507.41 96.65 L 512.36 100.75 L 517.30 82.56 L 522.24 99.78 L 527.18 93.39 L 532.13 76.51 L 537.07 119.97 L 542.01 135.88 L 546.95 142.60 L 551.90 150.64 L 556.84 163.93 L 561.78 183.78 L 566.72 203.62 L 571.66 215.59 L 576.61 219.70 L 581.55 221.18 L 586.49 217.42 L 591.43 203.16 L 596.38 179.72 L 601.32 156.28 L 606.26 135.47 L 611.20 119.90 L 616.15 106.95 L 621.09 95.32 L 626.03 87.62 L 630.97 79.92 L 635.92 78.78 L 640.86 81.57 L 645.80 86.99 L 650.74 95.03 L 655.69 105.69 L 660.63 117.67 L 665.57 127.02 L 670.51 129.81 L 675.46 133.92 L 680.40 155.07 L 685.34 174.92 L 690.28 188.20 L 695.23 192.31 L 700.17 197.73 L 705.11 197.90 L 710.05 190.20 L 714.99 174.63 L 719.94 159.06 L 724.88 143.49 L 729.82 121.36 L 734.76 104.48 L 739.71 92.85 L 744.65 85.15 L 749.59 80.07 L 754.53 78.93 L 759.48 77.79 L 764.42 77.96 L 769.36 84.69 L 774.30 90.11 L 779.25 95.52 L 784.19 98.32 L 789.13 105.05 L 794.07 123.58 L 799.02 147.36 L 803.96 163.27 L 808.90 171.31 L 813.84 172.79 L 818.79 169.02 L 823.73 152.14 L 828.67 112.97 L 833.61 69.85 L 838.55 43.79 L 843.50 46.59 L 848.44 54.63 L 853.38 57.42" /><path class="forecast-svg-actual" d="M 858.32 177.20 L 863.27 174.58 L 868.21 171.95 L 873.15 170.64 L 878.09 168.02 L 883.04 160.15 L 887.98 129.98 L 892.92 185.07 L 897.86 207.37 L 902.81 219.17 L 907.75 230.97 L 912.69 248.03 L 917.63 267.70 L 922.58 280.82 L 927.52 288.68 L 932.46 291.31 L 937.40 290.00 L 942.35 272.95 L 947.29 232.29 L 952.23 186.38 L 957.17 162.77 L 962.12 165.40 L 967.06 177.20 L 972.00 182.45" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 114.45 L 863.27 101.72 L 868.21 102.81 L 873.15 92.44 L 878.09 101.23 L 883.04 91.44 L 887.98 66.40 L 892.92 119.10 L 897.86 143.65 L 902.81 153.18 L 907.75 163.01 L 912.69 178.50 L 917.63 198.75 L 922.58 215.27 L 927.52 225.15 L 932.46 228.32 L 937.40 228.49 L 942.35 216.13 L 947.29 184.42 L 952.23 145.83 L 957.17 121.10 L 962.12 116.73 L 967.06 118.40 L 972.00 117.18 L 972.00 187.37 L 967.06 178.89 L 962.12 165.63 L 957.17 159.97 L 952.23 185.78 L 947.29 234.45 L 942.35 278.47 L 937.40 297.13 L 932.46 299.16 L 927.52 297.15 L 922.58 290.32 L 917.63 276.16 L 912.69 254.62 L 907.75 237.97 L 902.81 226.89 L 897.86 216.26 L 892.92 186.52 L 887.98 132.72 L 883.04 160.30 L 878.09 174.81 L 873.15 176.20 L 868.21 180.61 L 863.27 182.62 L 858.32 191.19 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 152.82 L 863.27 142.17 L 868.21 141.71 L 873.15 134.32 L 878.09 138.02 L 883.04 125.87 L 887.98 99.56 L 892.92 152.81 L 897.86 179.96 L 902.81 190.04 L 907.75 200.49 L 912.69 216.56 L 917.63 237.45 L 922.58 252.79 L 927.52 261.15 L 932.46 263.74 L 937.40 262.81 L 942.35 247.30 L 947.29 209.44 L 952.23 165.80 L 957.17 140.54 L 962.12 141.18 L 967.06 148.64 L 972.00 152.28" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="152.82" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 176.10 L 863.27 182.24 L 868.21 185.42 L 873.15 189.03 L 878.09 192.74 L 883.04 189.02 L 887.98 182.34 L 892.92 206.94 L 897.86 222.99 L 902.81 228.15 L 907.75 230.05 L 912.69 229.49 L 917.63 228.31 L 922.58 228.41 L 927.52 230.90 L 932.46 232.98 L 937.40 231.96 L 942.35 223.64 L 947.29 203.07 L 952.23 179.31 L 957.17 166.23 L 962.12 170.89 L 967.06 174.80 L 972.00 168.75" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="176.10" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 177.20 L 32.94 174.58 L 37.88 171.95 L 42.83 170.64 L 47.77 168.02 L 52.71 160.15 L 57.65 129.98 L 62.60 185.07 L 67.54 207.37 L 72.48 219.17 L 77.42 230.97 L 82.37 248.03 L 87.31 267.70 L 92.25 280.82 L 97.19 288.68 L 102.14 291.31 L 107.08 290.00 L 112.02 272.95 L 116.96 232.29 L 121.91 186.38 L 126.85 162.77 L 131.79 165.40 L 136.73 177.20 L 141.68 182.45 L 146.62 175.89 L 151.56 171.95 L 156.50 169.33 L 161.45 165.40 L 166.39 162.77 L 171.33 147.03 L 176.27 112.93 L 181.21 171.95 L 186.16 203.43 L 191.10 215.24 L 196.04 227.04 L 200.98 242.78 L 205.93 263.76 L 210.87 279.50 L 215.81 287.37 L 220.75 290.00 L 225.70 288.68 L 230.64 271.63 L 235.58 230.97 L 240.52 185.07 L 245.47 158.84 L 250.41 162.77 L 255.35 171.95 L 260.29 178.51 L 265.24 170.64 L 270.18 164.08 L 275.12 164.08 L 280.06 160.15 L 285.01 158.84 L 289.95 141.79 L 294.89 109.00 L 299.83 164.25 L 304.77 198.53 L 309.72 206.57 L 314.66 215.92 L 319.60 234.45 L 324.54 256.92 L 329.49 271.51 L 334.43 278.24 L 339.37 279.73 L 344.31 277.27 L 349.26 259.08 L 354.20 217.28 L 359.14 170.23 L 364.08 144.17 L 369.03 145.65 L 373.97 155.00 L 378.91 159.11 L 383.85 148.79 L 388.80 137.15 L 393.74 125.52 L 398.68 130.94 L 403.62 128.48 L 408.57 98.49 L 413.51 76.36 L 418.45 118.50 L 423.39 164.58 L 428.34 172.62 L 433.28 180.66 L 438.22 201.81 L 443.16 224.28 L 448.10 240.19 L 453.05 248.23 L 457.99 249.71 L 462.93 248.57 L 467.87 231.69 L 472.82 193.82 L 477.76 152.02 L 482.70 124.65 L 487.64 124.82 L 492.59 128.93 L 497.53 127.79 L 502.47 114.84 L 507.41 96.65 L 512.36 100.75 L 517.30 82.56 L 522.24 99.78 L 527.18 93.39 L 532.13 76.51 L 537.07 119.97 L 542.01 135.88 L 546.95 142.60 L 551.90 150.64 L 556.84 163.93 L 561.78 183.78 L 566.72 203.62 L 571.66 215.59 L 576.61 219.70 L 581.55 221.18 L 586.49 217.42 L 591.43 203.16 L 596.38 179.72 L 601.32 156.28 L 606.26 135.47 L 611.20 119.90 L 616.15 106.95 L 621.09 95.32 L 626.03 87.62 L 630.97 79.92 L 635.92 78.78 L 640.86 81.57 L 645.80 86.99 L 650.74 95.03 L 655.69 105.69 L 660.63 117.67 L 665.57 127.02 L 670.51 129.81 L 675.46 133.92 L 680.40 155.07 L 685.34 174.92 L 690.28 188.20 L 695.23 192.31 L 700.17 197.73 L 705.11 197.90 L 710.05 190.20 L 714.99 174.63 L 719.94 159.06 L 724.88 143.49 L 729.82 121.36 L 734.76 104.48 L 739.71 92.85 L 744.65 85.15 L 749.59 80.07 L 754.53 78.93 L 759.48 77.79 L 764.42 77.96 L 769.36 84.69 L 774.30 90.11 L 779.25 95.52 L 784.19 98.32 L 789.13 105.05 L 794.07 123.58 L 799.02 147.36 L 803.96 163.27 L 808.90 171.31 L 813.84 172.79 L 818.79 169.02 L 823.73 152.14 L 828.67 112.97 L 833.61 69.85 L 838.55 43.79 L 843.50 46.59 L 848.44 54.63 L 853.38 57.42" /><path class="forecast-svg-actual" d="M 858.32 177.20 L 863.27 174.58 L 868.21 171.95 L 873.15 170.64 L 878.09 168.02 L 883.04 160.15 L 887.98 129.98 L 892.92 185.07 L 897.86 207.37 L 902.81 219.17 L 907.75 230.97 L 912.69 248.03 L 917.63 267.70 L 922.58 280.82 L 927.52 288.68 L 932.46 291.31 L 937.40 290.00 L 942.35 272.95 L 947.29 232.29 L 952.23 186.38 L 957.17 162.77 L 962.12 165.40 L 967.06 177.20 L 972.00 182.45" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 114.45 L 863.27 101.72 L 868.21 102.81 L 873.15 92.44 L 878.09 101.23 L 883.04 91.44 L 887.98 66.40 L 892.92 119.10 L 897.86 143.65 L 902.81 153.18 L 907.75 163.01 L 912.69 178.50 L 917.63 198.75 L 922.58 215.27 L 927.52 225.15 L 932.46 228.32 L 937.40 228.49 L 942.35 216.13 L 947.29 184.42 L 952.23 145.83 L 957.17 121.10 L 962.12 116.73 L 967.06 118.40 L 972.00 117.18 L 972.00 187.37 L 967.06 178.89 L 962.12 165.63 L 957.17 159.97 L 952.23 185.78 L 947.29 234.45 L 942.35 278.47 L 937.40 297.13 L 932.46 299.16 L 927.52 297.15 L 922.58 290.32 L 917.63 276.16 L 912.69 254.62 L 907.75 237.97 L 902.81 226.89 L 897.86 216.26 L 892.92 186.52 L 887.98 132.72 L 883.04 160.30 L 878.09 174.81 L 873.15 176.20 L 868.21 180.61 L 863.27 182.62 L 858.32 191.19 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 152.82 L 863.27 142.17 L 868.21 141.71 L 873.15 134.32 L 878.09 138.02 L 883.04 125.87 L 887.98 99.56 L 892.92 152.81 L 897.86 179.96 L 902.81 190.04 L 907.75 200.49 L 912.69 216.56 L 917.63 237.45 L 922.58 252.79 L 927.52 261.15 L 932.46 263.74 L 937.40 262.81 L 942.35 247.30 L 947.29 209.44 L 952.23 165.80 L 957.17 140.54 L 962.12 141.18 L 967.06 148.64 L 972.00 152.28" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="152.82" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 177.20 L 32.94 174.58 L 37.88 171.95 L 42.83 170.64 L 47.77 168.02 L 52.71 160.15 L 57.65 129.98 L 62.60 185.07 L 67.54 207.37 L 72.48 219.17 L 77.42 230.97 L 82.37 248.03 L 87.31 267.70 L 92.25 280.82 L 97.19 288.68 L 102.14 291.31 L 107.08 290.00 L 112.02 272.95 L 116.96 232.29 L 121.91 186.38 L 126.85 162.77 L 131.79 165.40 L 136.73 177.20 L 141.68 182.45 L 146.62 175.89 L 151.56 171.95 L 156.50 169.33 L 161.45 165.40 L 166.39 162.77 L 171.33 147.03 L 176.27 112.93 L 181.21 171.95 L 186.16 203.43 L 191.10 215.24 L 196.04 227.04 L 200.98 242.78 L 205.93 263.76 L 210.87 279.50 L 215.81 287.37 L 220.75 290.00 L 225.70 288.68 L 230.64 271.63 L 235.58 230.97 L 240.52 185.07 L 245.47 158.84 L 250.41 162.77 L 255.35 171.95 L 260.29 178.51 L 265.24 170.64 L 270.18 164.08 L 275.12 164.08 L 280.06 160.15 L 285.01 158.84 L 289.95 141.79 L 294.89 109.00 L 299.83 164.25 L 304.77 198.53 L 309.72 206.57 L 314.66 215.92 L 319.60 234.45 L 324.54 256.92 L 329.49 271.51 L 334.43 278.24 L 339.37 279.73 L 344.31 277.27 L 349.26 259.08 L 354.20 217.28 L 359.14 170.23 L 364.08 144.17 L 369.03 145.65 L 373.97 155.00 L 378.91 159.11 L 383.85 148.79 L 388.80 137.15 L 393.74 125.52 L 398.68 130.94 L 403.62 128.48 L 408.57 98.49 L 413.51 76.36 L 418.45 118.50 L 423.39 164.58 L 428.34 172.62 L 433.28 180.66 L 438.22 201.81 L 443.16 224.28 L 448.10 240.19 L 453.05 248.23 L 457.99 249.71 L 462.93 248.57 L 467.87 231.69 L 472.82 193.82 L 477.76 152.02 L 482.70 124.65 L 487.64 124.82 L 492.59 128.93 L 497.53 127.79 L 502.47 114.84 L 507.41 96.65 L 512.36 100.75 L 517.30 82.56 L 522.24 99.78 L 527.18 93.39 L 532.13 76.51 L 537.07 119.97 L 542.01 135.88 L 546.95 142.60 L 551.90 150.64 L 556.84 163.93 L 561.78 183.78 L 566.72 203.62 L 571.66 215.59 L 576.61 219.70 L 581.55 221.18 L 586.49 217.42 L 591.43 203.16 L 596.38 179.72 L 601.32 156.28 L 606.26 135.47 L 611.20 119.90 L 616.15 106.95 L 621.09 95.32 L 626.03 87.62 L 630.97 79.92 L 635.92 78.78 L 640.86 81.57 L 645.80 86.99 L 650.74 95.03 L 655.69 105.69 L 660.63 117.67 L 665.57 127.02 L 670.51 129.81 L 675.46 133.92 L 680.40 155.07 L 685.34 174.92 L 690.28 188.20 L 695.23 192.31 L 700.17 197.73 L 705.11 197.90 L 710.05 190.20 L 714.99 174.63 L 719.94 159.06 L 724.88 143.49 L 729.82 121.36 L 734.76 104.48 L 739.71 92.85 L 744.65 85.15 L 749.59 80.07 L 754.53 78.93 L 759.48 77.79 L 764.42 77.96 L 769.36 84.69 L 774.30 90.11 L 779.25 95.52 L 784.19 98.32 L 789.13 105.05 L 794.07 123.58 L 799.02 147.36 L 803.96 163.27 L 808.90 171.31 L 813.84 172.79 L 818.79 169.02 L 823.73 152.14 L 828.67 112.97 L 833.61 69.85 L 838.55 43.79 L 843.50 46.59 L 848.44 54.63 L 853.38 57.42" /><path class="forecast-svg-actual" d="M 858.32 177.20 L 863.27 174.58 L 868.21 171.95 L 873.15 170.64 L 878.09 168.02 L 883.04 160.15 L 887.98 129.98 L 892.92 185.07 L 897.86 207.37 L 902.81 219.17 L 907.75 230.97 L 912.69 248.03 L 917.63 267.70 L 922.58 280.82 L 927.52 288.68 L 932.46 291.31 L 937.40 290.00 L 942.35 272.95 L 947.29 232.29 L 952.23 186.38 L 957.17 162.77 L 962.12 165.40 L 967.06 177.20 L 972.00 182.45" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 120.73 L 863.27 123.71 L 868.21 122.61 L 873.15 121.82 L 878.09 119.62 L 883.04 105.81 L 887.98 88.06 L 892.92 120.25 L 897.86 139.90 L 902.81 147.03 L 907.75 152.73 L 912.69 157.31 L 917.63 154.11 L 922.58 148.57 L 927.52 148.10 L 932.46 149.75 L 937.40 150.07 L 942.35 147.85 L 947.29 138.68 L 952.23 120.88 L 957.17 108.02 L 962.12 113.00 L 967.06 114.93 L 972.00 106.55 L 972.00 230.94 L 967.06 234.67 L 962.12 228.78 L 957.17 224.44 L 952.23 237.74 L 947.29 267.46 L 942.35 299.43 L 937.40 313.84 L 932.46 316.21 L 927.52 313.71 L 922.58 308.26 L 917.63 302.51 L 912.69 301.67 L 907.75 307.38 L 902.81 309.28 L 897.86 306.08 L 892.92 293.62 L 887.98 276.62 L 883.04 272.23 L 878.09 265.85 L 873.15 256.24 L 868.21 248.23 L 863.27 240.77 L 858.32 231.47 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 176.10 L 863.27 182.24 L 868.21 185.42 L 873.15 189.03 L 878.09 192.74 L 883.04 189.02 L 887.98 182.34 L 892.92 206.94 L 897.86 222.99 L 902.81 228.15 L 907.75 230.05 L 912.69 229.49 L 917.63 228.31 L 922.58 228.41 L 927.52 230.90 L 932.46 232.98 L 937.40 231.96 L 942.35 223.64 L 947.29 203.07 L 952.23 179.31 L 957.17 166.23 L 962.12 170.89 L 967.06 174.80 L 972.00 168.75" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="176.10" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 216.72 L 32.94 214.43 L 37.88 212.14 L 42.83 211.00 L 47.77 208.71 L 52.71 201.85 L 57.65 175.55 L 62.60 223.58 L 67.54 243.02 L 72.48 253.31 L 77.42 263.60 L 82.37 278.47 L 87.31 295.62 L 92.25 307.06 L 97.19 313.92 L 102.14 316.21 L 107.08 315.06 L 112.02 300.20 L 116.96 264.75 L 121.91 224.72 L 126.85 204.14 L 131.79 206.42 L 136.73 216.72 L 141.68 221.29 L 146.62 215.57 L 151.56 212.14 L 156.50 209.86 L 161.45 206.42 L 166.39 204.14 L 171.33 190.41 L 176.27 160.68 L 181.21 212.14 L 186.16 239.59 L 191.10 249.88 L 196.04 260.17 L 200.98 273.89 L 205.93 292.19 L 210.87 305.91 L 215.81 312.78 L 220.75 315.06 L 225.70 313.92 L 230.64 299.05 L 235.58 263.60 L 240.52 223.58 L 245.47 200.71 L 250.41 204.14 L 255.35 212.14 L 260.29 217.86 L 265.24 211.00 L 270.18 205.28 L 275.12 205.28 L 280.06 201.85 L 285.01 200.71 L 289.95 185.84 L 294.89 157.25 L 299.83 205.43 L 304.77 235.31 L 309.72 242.32 L 314.66 250.47 L 319.60 266.63 L 324.54 286.22 L 329.49 298.95 L 334.43 304.82 L 339.37 306.11 L 344.31 303.97 L 349.26 288.11 L 354.20 251.66 L 359.14 210.64 L 364.08 187.92 L 369.03 189.21 L 373.97 197.37 L 378.91 200.94 L 383.85 191.94 L 388.80 181.80 L 393.74 171.66 L 398.68 176.38 L 403.62 174.24 L 408.57 148.09 L 413.51 128.80 L 418.45 165.54 L 423.39 205.71 L 428.34 212.72 L 433.28 219.73 L 438.22 238.18 L 443.16 257.77 L 448.10 271.64 L 453.05 278.65 L 457.99 279.94 L 462.93 278.94 L 467.87 264.23 L 472.82 231.21 L 477.76 194.77 L 482.70 170.90 L 487.64 171.05 L 492.59 174.63 L 497.53 173.63 L 502.47 162.35 L 507.41 146.48 L 512.36 150.06 L 517.30 134.20 L 522.24 149.22 L 527.18 143.65 L 532.13 128.93 L 537.07 166.82 L 542.01 180.69 L 546.95 186.55 L 551.90 193.56 L 556.84 205.15 L 561.78 222.45 L 566.72 239.75 L 571.66 250.19 L 576.61 253.77 L 581.55 255.06 L 586.49 251.78 L 591.43 239.35 L 596.38 218.92 L 601.32 198.48 L 606.26 180.33 L 611.20 166.76 L 616.15 155.47 L 621.09 145.33 L 626.03 138.61 L 630.97 131.90 L 635.92 130.91 L 640.86 133.34 L 645.80 138.06 L 650.74 145.07 L 655.69 154.37 L 660.63 164.81 L 665.57 172.96 L 670.51 175.40 L 675.46 178.98 L 680.40 197.43 L 685.34 214.73 L 690.28 226.31 L 695.23 229.89 L 700.17 234.61 L 705.11 234.76 L 710.05 228.05 L 714.99 214.47 L 719.94 200.90 L 724.88 187.33 L 729.82 168.03 L 734.76 153.32 L 739.71 143.17 L 744.65 136.46 L 749.59 132.03 L 754.53 131.04 L 759.48 130.04 L 764.42 130.19 L 769.36 136.06 L 774.30 140.78 L 779.25 145.50 L 784.19 147.94 L 789.13 153.81 L 794.07 169.96 L 799.02 190.70 L 803.96 204.57 L 808.90 211.58 L 813.84 212.87 L 818.79 209.59 L 823.73 194.87 L 828.67 160.71 L 833.61 123.12 L 838.55 100.40 L 843.50 102.84 L 848.44 109.85 L 853.38 112.28" /><path class="forecast-svg-actual" d="M 858.32 216.72 L 863.27 214.43 L 868.21 212.14 L 873.15 211.00 L 878.09 208.71 L 883.04 201.85 L 887.98 175.55 L 892.92 223.58 L 897.86 243.02 L 902.81 253.31 L 907.75 263.60 L 912.69 278.47 L 917.63 295.62 L 922.58 307.06 L 927.52 313.92 L 932.46 316.21 L 937.40 315.06 L 942.35 300.20 L 947.29 264.75 L 952.23 224.72 L 957.17 204.14 L 962.12 206.42 L 967.06 216.72 L 972.00 221.29" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 103.70 L 863.27 95.33 L 868.21 92.18 L 873.15 89.22 L 878.09 86.25 L 883.04 72.45 L 887.98 43.79 L 892.92 84.18 L 897.86 112.38 L 902.81 121.51 L 907.75 131.35 L 912.69 148.60 L 917.63 167.41 L 922.58 180.55 L 927.52 185.56 L 932.46 186.45 L 937.40 183.01 L 942.35 168.11 L 947.29 133.88 L 952.23 96.33 L 957.17 73.99 L 962.12 76.77 L 967.06 85.68 L 972.00 88.83 L 972.00 155.87 L 967.06 152.42 L 962.12 143.71 L 957.17 141.08 L 952.23 156.86 L 947.29 190.75 L 942.35 222.70 L 937.40 234.19 L 932.46 232.50 L 927.52 228.69 L 922.58 220.08 L 917.63 204.03 L 912.69 183.53 L 907.75 167.59 L 902.81 158.14 L 897.86 146.70 L 892.92 120.80 L 887.98 82.65 L 883.04 101.71 L 878.09 115.21 L 873.15 116.52 L 868.21 115.39 L 863.27 110.48 L 858.32 111.80 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 107.75 L 863.27 102.91 L 868.21 103.79 L 873.15 102.87 L 878.09 100.73 L 883.04 87.08 L 887.98 63.22 L 892.92 102.49 L 897.86 129.54 L 902.81 139.82 L 907.75 149.47 L 912.69 166.07 L 917.63 185.72 L 922.58 200.32 L 927.52 207.12 L 932.46 209.48 L 937.40 208.60 L 942.35 195.40 L 947.29 162.31 L 952.23 126.59 L 957.17 107.54 L 962.12 110.24 L 967.06 119.05 L 972.00 122.35" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="107.75" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 858.32 118.10 L 863.27 130.44 L 868.21 132.73 L 873.15 155.20 L 878.09 163.48 L 883.04 158.37 L 887.98 170.53 L 892.92 172.93 L 897.86 168.35 L 902.81 174.35 L 907.75 164.22 L 912.69 153.12 L 917.63 155.80 L 922.58 163.33 L 927.52 141.72 L 932.46 142.97 L 937.40 129.71 L 942.35 117.98 L 947.29 115.21 L 952.23 118.06 L 957.17 124.84 L 962.12 108.91 L 967.06 118.93 L 972.00 128.42" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="118.10" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 858.32 115.33 L 863.27 114.66 L 868.21 118.93 L 873.15 119.86 L 878.09 126.86 L 883.04 132.37 L 887.98 127.94 L 892.92 132.34 L 897.86 140.56 L 902.81 137.20 L 907.75 144.50 L 912.69 136.22 L 917.63 146.93 L 922.58 152.66 L 927.52 153.83 L 932.46 153.60 L 937.40 154.37 L 942.35 155.63 L 947.29 156.66 L 952.23 162.34 L 957.17 164.41 L 962.12 168.33 L 967.06 166.96 L 972.00 177.27" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="115.33" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 225.58 L 32.94 223.50 L 37.88 221.41 L 42.83 220.37 L 47.77 218.29 L 52.71 212.04 L 57.65 188.08 L 62.60 231.83 L 67.54 249.54 L 72.48 258.91 L 77.42 268.29 L 82.37 281.83 L 87.31 297.46 L 92.25 307.87 L 97.19 314.12 L 102.14 316.21 L 107.08 315.17 L 112.02 301.62 L 116.96 269.33 L 121.91 232.87 L 126.85 214.12 L 131.79 216.21 L 136.73 225.58 L 141.68 229.75 L 146.62 224.54 L 151.56 221.41 L 156.50 219.33 L 161.45 216.21 L 166.39 214.12 L 171.33 201.62 L 176.27 174.54 L 181.21 221.41 L 186.16 246.41 L 191.10 255.79 L 196.04 265.16 L 200.98 277.66 L 205.93 294.33 L 210.87 306.83 L 215.81 313.08 L 220.75 315.17 L 225.70 314.12 L 230.64 300.58 L 235.58 268.29 L 240.52 231.83 L 245.47 211.00 L 250.41 214.12 L 255.35 221.41 L 260.29 226.62 L 265.24 220.37 L 270.18 215.16 L 275.12 215.16 L 280.06 212.04 L 285.01 211.00 L 289.95 197.45 L 294.89 171.41 L 299.83 215.30 L 304.77 242.52 L 309.72 248.90 L 314.66 256.33 L 319.60 271.05 L 324.54 288.89 L 329.49 300.49 L 334.43 305.83 L 339.37 307.01 L 344.31 305.06 L 349.26 290.61 L 354.20 257.41 L 359.14 220.05 L 364.08 199.35 L 369.03 200.53 L 373.97 207.95 L 378.91 211.21 L 383.85 203.02 L 388.80 193.78 L 393.74 184.54 L 398.68 188.84 L 403.62 186.89 L 408.57 163.07 L 413.51 145.49 L 418.45 178.96 L 423.39 215.56 L 428.34 221.94 L 433.28 228.33 L 438.22 245.13 L 443.16 262.97 L 448.10 275.61 L 453.05 281.99 L 457.99 283.17 L 462.93 282.26 L 467.87 268.86 L 472.82 238.78 L 477.76 205.59 L 482.70 183.85 L 487.64 183.98 L 492.59 187.24 L 497.53 186.34 L 502.47 176.05 L 507.41 161.61 L 512.36 164.87 L 517.30 150.42 L 522.24 164.09 L 527.18 159.02 L 532.13 145.61 L 537.07 180.13 L 542.01 192.76 L 546.95 198.10 L 551.90 204.49 L 556.84 215.04 L 561.78 230.80 L 566.72 246.56 L 571.66 256.07 L 576.61 259.33 L 581.55 260.51 L 586.49 257.52 L 591.43 246.20 L 596.38 227.58 L 601.32 208.97 L 606.26 192.44 L 611.20 180.07 L 616.15 169.79 L 621.09 160.55 L 626.03 154.44 L 630.97 148.32 L 635.92 147.41 L 640.86 149.63 L 645.80 153.93 L 650.74 160.32 L 655.69 168.79 L 660.63 178.30 L 665.57 185.73 L 670.51 187.95 L 675.46 191.21 L 680.40 208.01 L 685.34 223.77 L 690.28 234.32 L 695.23 237.58 L 700.17 241.88 L 705.11 242.02 L 710.05 235.90 L 714.99 223.54 L 719.94 211.17 L 724.88 198.81 L 729.82 181.24 L 734.76 167.83 L 739.71 158.59 L 744.65 152.47 L 749.59 148.44 L 754.53 147.54 L 759.48 146.63 L 764.42 146.77 L 769.36 152.11 L 774.30 156.41 L 779.25 160.71 L 784.19 162.93 L 789.13 168.28 L 794.07 182.99 L 799.02 201.88 L 803.96 214.52 L 808.90 220.90 L 813.84 222.08 L 818.79 219.09 L 823.73 205.68 L 828.67 174.57 L 833.61 140.33 L 838.55 119.63 L 843.50 121.85 L 848.44 128.23 L 853.38 130.45" /><path class="forecast-svg-actual" d="M 858.32 225.58 L 863.27 223.50 L 868.21 221.41 L 873.15 220.37 L 878.09 218.29 L 883.04 212.04 L 887.98 188.08 L 892.92 231.83 L 897.86 249.54 L 902.81 258.91 L 907.75 268.29 L 912.69 281.83 L 917.63 297.46 L 922.58 307.87 L 927.52 314.12 L 932.46 316.21 L 937.40 315.17 L 942.35 301.62 L 947.29 269.33 L 952.23 232.87 L 957.17 214.12 L 962.12 216.21 L 967.06 225.58 L 972.00 229.75" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 122.63 L 863.27 115.01 L 868.21 112.14 L 873.15 109.44 L 878.09 106.74 L 883.04 94.17 L 887.98 68.06 L 892.92 104.85 L 897.86 130.54 L 902.81 138.85 L 907.75 147.82 L 912.69 163.54 L 917.63 180.67 L 922.58 192.64 L 927.52 197.20 L 932.46 198.01 L 937.40 194.87 L 942.35 181.31 L 947.29 150.13 L 952.23 115.92 L 957.17 95.57 L 962.12 98.10 L 967.06 106.22 L 972.00 109.08 L 972.00 170.15 L 967.06 167.01 L 962.12 159.08 L 957.17 156.69 L 952.23 171.05 L 947.29 201.92 L 942.35 231.03 L 937.40 241.50 L 932.46 239.96 L 927.52 236.48 L 922.58 228.64 L 917.63 214.02 L 912.69 195.35 L 907.75 180.83 L 902.81 172.22 L 897.86 161.81 L 892.92 138.21 L 887.98 103.46 L 883.04 120.82 L 878.09 133.12 L 873.15 134.31 L 868.21 133.29 L 863.27 128.81 L 858.32 130.01 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 126.32 L 863.27 121.91 L 868.21 122.71 L 873.15 121.88 L 878.09 119.93 L 883.04 107.50 L 887.98 85.76 L 892.92 121.53 L 897.86 146.17 L 902.81 155.54 L 907.75 164.33 L 912.69 179.45 L 917.63 197.34 L 922.58 210.64 L 927.52 216.84 L 932.46 218.98 L 937.40 218.19 L 942.35 206.17 L 947.29 176.03 L 952.23 143.49 L 957.17 126.13 L 962.12 128.59 L 967.06 136.61 L 972.00 139.62" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="126.32" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 225.58 L 32.94 223.50 L 37.88 221.41 L 42.83 220.37 L 47.77 218.29 L 52.71 212.04 L 57.65 188.08 L 62.60 231.83 L 67.54 249.54 L 72.48 258.91 L 77.42 268.29 L 82.37 281.83 L 87.31 297.46 L 92.25 307.87 L 97.19 314.12 L 102.14 316.21 L 107.08 315.17 L 112.02 301.62 L 116.96 269.33 L 121.91 232.87 L 126.85 214.12 L 131.79 216.21 L 136.73 225.58 L 141.68 229.75 L 146.62 224.54 L 151.56 221.41 L 156.50 219.33 L 161.45 216.21 L 166.39 214.12 L 171.33 201.62 L 176.27 174.54 L 181.21 221.41 L 186.16 246.41 L 191.10 255.79 L 196.04 265.16 L 200.98 277.66 L 205.93 294.33 L 210.87 306.83 L 215.81 313.08 L 220.75 315.17 L 225.70 314.12 L 230.64 300.58 L 235.58 268.29 L 240.52 231.83 L 245.47 211.00 L 250.41 214.12 L 255.35 221.41 L 260.29 226.62 L 265.24 220.37 L 270.18 215.16 L 275.12 215.16 L 280.06 212.04 L 285.01 211.00 L 289.95 197.45 L 294.89 171.41 L 299.83 215.30 L 304.77 242.52 L 309.72 248.90 L 314.66 256.33 L 319.60 271.05 L 324.54 288.89 L 329.49 300.49 L 334.43 305.83 L 339.37 307.01 L 344.31 305.06 L 349.26 290.61 L 354.20 257.41 L 359.14 220.05 L 364.08 199.35 L 369.03 200.53 L 373.97 207.95 L 378.91 211.21 L 383.85 203.02 L 388.80 193.78 L 393.74 184.54 L 398.68 188.84 L 403.62 186.89 L 408.57 163.07 L 413.51 145.49 L 418.45 178.96 L 423.39 215.56 L 428.34 221.94 L 433.28 228.33 L 438.22 245.13 L 443.16 262.97 L 448.10 275.61 L 453.05 281.99 L 457.99 283.17 L 462.93 282.26 L 467.87 268.86 L 472.82 238.78 L 477.76 205.59 L 482.70 183.85 L 487.64 183.98 L 492.59 187.24 L 497.53 186.34 L 502.47 176.05 L 507.41 161.61 L 512.36 164.87 L 517.30 150.42 L 522.24 164.09 L 527.18 159.02 L 532.13 145.61 L 537.07 180.13 L 542.01 192.76 L 546.95 198.10 L 551.90 204.49 L 556.84 215.04 L 561.78 230.80 L 566.72 246.56 L 571.66 256.07 L 576.61 259.33 L 581.55 260.51 L 586.49 257.52 L 591.43 246.20 L 596.38 227.58 L 601.32 208.97 L 606.26 192.44 L 611.20 180.07 L 616.15 169.79 L 621.09 160.55 L 626.03 154.44 L 630.97 148.32 L 635.92 147.41 L 640.86 149.63 L 645.80 153.93 L 650.74 160.32 L 655.69 168.79 L 660.63 178.30 L 665.57 185.73 L 670.51 187.95 L 675.46 191.21 L 680.40 208.01 L 685.34 223.77 L 690.28 234.32 L 695.23 237.58 L 700.17 241.88 L 705.11 242.02 L 710.05 235.90 L 714.99 223.54 L 719.94 211.17 L 724.88 198.81 L 729.82 181.24 L 734.76 167.83 L 739.71 158.59 L 744.65 152.47 L 749.59 148.44 L 754.53 147.54 L 759.48 146.63 L 764.42 146.77 L 769.36 152.11 L 774.30 156.41 L 779.25 160.71 L 784.19 162.93 L 789.13 168.28 L 794.07 182.99 L 799.02 201.88 L 803.96 214.52 L 808.90 220.90 L 813.84 222.08 L 818.79 219.09 L 823.73 205.68 L 828.67 174.57 L 833.61 140.33 L 838.55 119.63 L 843.50 121.85 L 848.44 128.23 L 853.38 130.45" /><path class="forecast-svg-actual" d="M 858.32 225.58 L 863.27 223.50 L 868.21 221.41 L 873.15 220.37 L 878.09 218.29 L 883.04 212.04 L 887.98 188.08 L 892.92 231.83 L 897.86 249.54 L 902.81 258.91 L 907.75 268.29 L 912.69 281.83 L 917.63 297.46 L 922.58 307.87 L 927.52 314.12 L 932.46 316.21 L 937.40 315.17 L 942.35 301.62 L 947.29 269.33 L 952.23 232.87 L 957.17 214.12 L 962.12 216.21 L 967.06 225.58 L 972.00 229.75" /><path class="forecast-svg-band" fill="#8064a2" d="M 858.32 126.84 L 863.27 130.82 L 868.21 121.36 L 873.15 147.06 L 878.09 156.19 L 883.04 148.75 L 887.98 160.56 L 892.92 164.46 L 897.86 152.04 L 902.81 156.73 L 907.75 155.07 L 912.69 137.99 L 917.63 143.94 L 922.58 154.83 L 927.52 130.51 L 932.46 131.18 L 937.40 118.84 L 942.35 104.87 L 947.29 105.56 L 952.23 110.33 L 957.17 109.83 L 962.12 95.63 L 967.06 99.46 L 972.00 104.50 L 972.00 185.80 L 967.06 173.55 L 962.12 159.14 L 957.17 173.95 L 952.23 161.10 L 947.29 160.68 L 942.35 166.40 L 937.40 173.80 L 932.46 185.62 L 927.52 184.01 L 922.58 199.07 L 917.63 196.24 L 912.69 197.32 L 907.75 200.45 L 902.81 217.24 L 897.86 211.00 L 892.92 206.92 L 887.98 206.45 L 883.04 196.11 L 878.09 197.99 L 873.15 192.02 L 868.21 176.79 L 863.27 163.16 L 858.32 144.66 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 858.32 135.75 L 863.27 146.99 L 868.21 149.08 L 873.15 169.54 L 878.09 177.09 L 883.04 172.43 L 887.98 183.51 L 892.92 185.69 L 897.86 181.52 L 902.81 186.99 L 907.75 177.76 L 912.69 167.65 L 917.63 170.09 L 922.58 176.95 L 927.52 157.26 L 932.46 158.40 L 937.40 146.32 L 942.35 135.64 L 947.29 133.12 L 952.23 135.72 L 957.17 141.89 L 962.12 127.38 L 967.06 136.50 L 972.00 145.15" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="135.75" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 225.58 L 32.94 223.50 L 37.88 221.41 L 42.83 220.37 L 47.77 218.29 L 52.71 212.04 L 57.65 188.08 L 62.60 231.83 L 67.54 249.54 L 72.48 258.91 L 77.42 268.29 L 82.37 281.83 L 87.31 297.46 L 92.25 307.87 L 97.19 314.12 L 102.14 316.21 L 107.08 315.17 L 112.02 301.62 L 116.96 269.33 L 121.91 232.87 L 126.85 214.12 L 131.79 216.21 L 136.73 225.58 L 141.68 229.75 L 146.62 224.54 L 151.56 221.41 L 156.50 219.33 L 161.45 216.21 L 166.39 214.12 L 171.33 201.62 L 176.27 174.54 L 181.21 221.41 L 186.16 246.41 L 191.10 255.79 L 196.04 265.16 L 200.98 277.66 L 205.93 294.33 L 210.87 306.83 L 215.81 313.08 L 220.75 315.17 L 225.70 314.12 L 230.64 300.58 L 235.58 268.29 L 240.52 231.83 L 245.47 211.00 L 250.41 214.12 L 255.35 221.41 L 260.29 226.62 L 265.24 220.37 L 270.18 215.16 L 275.12 215.16 L 280.06 212.04 L 285.01 211.00 L 289.95 197.45 L 294.89 171.41 L 299.83 215.30 L 304.77 242.52 L 309.72 248.90 L 314.66 256.33 L 319.60 271.05 L 324.54 288.89 L 329.49 300.49 L 334.43 305.83 L 339.37 307.01 L 344.31 305.06 L 349.26 290.61 L 354.20 257.41 L 359.14 220.05 L 364.08 199.35 L 369.03 200.53 L 373.97 207.95 L 378.91 211.21 L 383.85 203.02 L 388.80 193.78 L 393.74 184.54 L 398.68 188.84 L 403.62 186.89 L 408.57 163.07 L 413.51 145.49 L 418.45 178.96 L 423.39 215.56 L 428.34 221.94 L 433.28 228.33 L 438.22 245.13 L 443.16 262.97 L 448.10 275.61 L 453.05 281.99 L 457.99 283.17 L 462.93 282.26 L 467.87 268.86 L 472.82 238.78 L 477.76 205.59 L 482.70 183.85 L 487.64 183.98 L 492.59 187.24 L 497.53 186.34 L 502.47 176.05 L 507.41 161.61 L 512.36 164.87 L 517.30 150.42 L 522.24 164.09 L 527.18 159.02 L 532.13 145.61 L 537.07 180.13 L 542.01 192.76 L 546.95 198.10 L 551.90 204.49 L 556.84 215.04 L 561.78 230.80 L 566.72 246.56 L 571.66 256.07 L 576.61 259.33 L 581.55 260.51 L 586.49 257.52 L 591.43 246.20 L 596.38 227.58 L 601.32 208.97 L 606.26 192.44 L 611.20 180.07 L 616.15 169.79 L 621.09 160.55 L 626.03 154.44 L 630.97 148.32 L 635.92 147.41 L 640.86 149.63 L 645.80 153.93 L 650.74 160.32 L 655.69 168.79 L 660.63 178.30 L 665.57 185.73 L 670.51 187.95 L 675.46 191.21 L 680.40 208.01 L 685.34 223.77 L 690.28 234.32 L 695.23 237.58 L 700.17 241.88 L 705.11 242.02 L 710.05 235.90 L 714.99 223.54 L 719.94 211.17 L 724.88 198.81 L 729.82 181.24 L 734.76 167.83 L 739.71 158.59 L 744.65 152.47 L 749.59 148.44 L 754.53 147.54 L 759.48 146.63 L 764.42 146.77 L 769.36 152.11 L 774.30 156.41 L 779.25 160.71 L 784.19 162.93 L 789.13 168.28 L 794.07 182.99 L 799.02 201.88 L 803.96 214.52 L 808.90 220.90 L 813.84 222.08 L 818.79 219.09 L 823.73 205.68 L 828.67 174.57 L 833.61 140.33 L 838.55 119.63 L 843.50 121.85 L 848.44 128.23 L 853.38 130.45" /><path class="forecast-svg-actual" d="M 858.32 225.58 L 863.27 223.50 L 868.21 221.41 L 873.15 220.37 L 878.09 218.29 L 883.04 212.04 L 887.98 188.08 L 892.92 231.83 L 897.86 249.54 L 902.81 258.91 L 907.75 268.29 L 912.69 281.83 L 917.63 297.46 L 922.58 307.87 L 927.52 314.12 L 932.46 316.21 L 937.40 315.17 L 942.35 301.62 L 947.29 269.33 L 952.23 232.87 L 957.17 214.12 L 962.12 216.21 L 967.06 225.58 L 972.00 229.75" /><path class="forecast-svg-band" fill="#668851" d="M 858.32 121.52 L 863.27 117.02 L 868.21 124.24 L 873.15 123.54 L 878.09 129.22 L 883.04 135.29 L 887.98 134.72 L 892.92 135.07 L 897.86 138.53 L 902.81 140.95 L 907.75 142.09 L 912.69 139.80 L 917.63 147.16 L 922.58 154.89 L 927.52 148.92 L 932.46 153.04 L 937.40 154.58 L 942.35 155.77 L 947.29 155.62 L 952.23 163.02 L 957.17 163.70 L 962.12 164.45 L 967.06 168.37 L 972.00 173.65 L 972.00 205.65 L 967.06 192.15 L 962.12 198.56 L 957.17 192.16 L 952.23 189.07 L 947.29 186.12 L 942.35 184.12 L 937.40 183.00 L 932.46 183.13 L 927.52 187.67 L 922.58 179.57 L 917.63 176.86 L 912.69 164.72 L 907.75 177.50 L 902.81 165.36 L 897.86 173.90 L 892.92 162.37 L 887.98 154.70 L 883.04 162.20 L 878.09 158.25 L 873.15 151.16 L 868.21 148.78 L 863.27 148.22 L 858.32 144.93 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 858.32 133.23 L 863.27 132.62 L 868.21 136.51 L 873.15 137.35 L 878.09 143.73 L 883.04 148.74 L 887.98 144.71 L 892.92 148.72 L 897.86 156.21 L 902.81 153.15 L 907.75 159.79 L 912.69 152.26 L 917.63 162.01 L 922.58 167.23 L 927.52 168.30 L 932.46 168.09 L 937.40 168.79 L 942.35 169.94 L 947.29 170.87 L 952.23 176.04 L 957.17 177.93 L 962.12 181.50 L 967.06 180.26 L 972.00 189.65" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="133.23" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 225.58 L 32.94 223.50 L 37.88 221.41 L 42.83 220.37 L 47.77 218.29 L 52.71 212.04 L 57.65 188.08 L 62.60 231.83 L 67.54 249.54 L 72.48 258.91 L 77.42 268.29 L 82.37 281.83 L 87.31 297.46 L 92.25 307.87 L 97.19 314.12 L 102.14 316.21 L 107.08 315.17 L 112.02 301.62 L 116.96 269.33 L 121.91 232.87 L 126.85 214.12 L 131.79 216.21 L 136.73 225.58 L 141.68 229.75 L 146.62 224.54 L 151.56 221.41 L 156.50 219.33 L 161.45 216.21 L 166.39 214.12 L 171.33 201.62 L 176.27 174.54 L 181.21 221.41 L 186.16 246.41 L 191.10 255.79 L 196.04 265.16 L 200.98 277.66 L 205.93 294.33 L 210.87 306.83 L 215.81 313.08 L 220.75 315.17 L 225.70 314.12 L 230.64 300.58 L 235.58 268.29 L 240.52 231.83 L 245.47 211.00 L 250.41 214.12 L 255.35 221.41 L 260.29 226.62 L 265.24 220.37 L 270.18 215.16 L 275.12 215.16 L 280.06 212.04 L 285.01 211.00 L 289.95 197.45 L 294.89 171.41 L 299.83 215.30 L 304.77 242.52 L 309.72 248.90 L 314.66 256.33 L 319.60 271.05 L 324.54 288.89 L 329.49 300.49 L 334.43 305.83 L 339.37 307.01 L 344.31 305.06 L 349.26 290.61 L 354.20 257.41 L 359.14 220.05 L 364.08 199.35 L 369.03 200.53 L 373.97 207.95 L 378.91 211.21 L 383.85 203.02 L 388.80 193.78 L 393.74 184.54 L 398.68 188.84 L 403.62 186.89 L 408.57 163.07 L 413.51 145.49 L 418.45 178.96 L 423.39 215.56 L 428.34 221.94 L 433.28 228.33 L 438.22 245.13 L 443.16 262.97 L 448.10 275.61 L 453.05 281.99 L 457.99 283.17 L 462.93 282.26 L 467.87 268.86 L 472.82 238.78 L 477.76 205.59 L 482.70 183.85 L 487.64 183.98 L 492.59 187.24 L 497.53 186.34 L 502.47 176.05 L 507.41 161.61 L 512.36 164.87 L 517.30 150.42 L 522.24 164.09 L 527.18 159.02 L 532.13 145.61 L 537.07 180.13 L 542.01 192.76 L 546.95 198.10 L 551.90 204.49 L 556.84 215.04 L 561.78 230.80 L 566.72 246.56 L 571.66 256.07 L 576.61 259.33 L 581.55 260.51 L 586.49 257.52 L 591.43 246.20 L 596.38 227.58 L 601.32 208.97 L 606.26 192.44 L 611.20 180.07 L 616.15 169.79 L 621.09 160.55 L 626.03 154.44 L 630.97 148.32 L 635.92 147.41 L 640.86 149.63 L 645.80 153.93 L 650.74 160.32 L 655.69 168.79 L 660.63 178.30 L 665.57 185.73 L 670.51 187.95 L 675.46 191.21 L 680.40 208.01 L 685.34 223.77 L 690.28 234.32 L 695.23 237.58 L 700.17 241.88 L 705.11 242.02 L 710.05 235.90 L 714.99 223.54 L 719.94 211.17 L 724.88 198.81 L 729.82 181.24 L 734.76 167.83 L 739.71 158.59 L 744.65 152.47 L 749.59 148.44 L 754.53 147.54 L 759.48 146.63 L 764.42 146.77 L 769.36 152.11 L 774.30 156.41 L 779.25 160.71 L 784.19 162.93 L 789.13 168.28 L 794.07 182.99 L 799.02 201.88 L 803.96 214.52 L 808.90 220.90 L 813.84 222.08 L 818.79 219.09 L 823.73 205.68 L 828.67 174.57 L 833.61 140.33 L 838.55 119.63 L 843.50 121.85 L 848.44 128.23 L 853.38 130.45" /><path class="forecast-svg-actual" d="M 858.32 225.58 L 863.27 223.50 L 868.21 221.41 L 873.15 220.37 L 878.09 218.29 L 883.04 212.04 L 887.98 188.08 L 892.92 231.83 L 897.86 249.54 L 902.81 258.91 L 907.75 268.29 L 912.69 281.83 L 917.63 297.46 L 922.58 307.87 L 927.52 314.12 L 932.46 316.21 L 937.40 315.17 L 942.35 301.62 L 947.29 269.33 L 952.23 232.87 L 957.17 214.12 L 962.12 216.21 L 967.06 225.58 L 972.00 229.75" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 858.32 110.95 L 863.27 107.81 L 868.21 108.35 L 873.15 110.60 L 878.09 112.92 L 883.04 113.15 L 887.98 108.11 L 892.92 105.17 L 897.86 98.64 L 902.81 93.27 L 907.75 91.37 L 912.69 82.49 L 917.63 73.11 L 922.58 74.21 L 927.52 67.01 L 932.46 64.20 L 937.40 60.12 L 942.35 58.28 L 947.29 56.16 L 952.23 57.21 L 957.17 56.78 L 962.12 55.73 L 967.06 48.78 L 972.00 43.79 L 972.00 198.49 L 967.06 197.22 L 962.12 198.66 L 957.17 195.80 L 952.23 192.36 L 947.29 183.55 L 942.35 185.67 L 937.40 191.84 L 932.46 193.75 L 927.52 191.62 L 922.58 188.15 L 917.63 184.81 L 912.69 185.87 L 907.75 182.84 L 902.81 174.73 L 897.86 165.52 L 892.92 165.08 L 887.98 170.77 L 883.04 168.03 L 878.09 161.41 L 873.15 159.04 L 868.21 152.93 L 863.27 146.48 L 858.32 144.96 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 858.32 127.95 L 863.27 127.14 L 868.21 130.64 L 873.15 134.82 L 878.09 137.17 L 883.04 140.59 L 887.98 139.44 L 892.92 135.12 L 897.86 132.08 L 902.81 134.00 L 907.75 137.10 L 912.69 134.18 L 917.63 128.96 L 922.58 131.18 L 927.52 129.32 L 932.46 128.98 L 937.40 125.98 L 942.35 121.98 L 947.29 119.86 L 952.23 124.79 L 957.17 126.29 L 962.12 127.19 L 967.06 123.00 L 972.00 121.14" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="858.32" cy="127.95" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 225.58 L 32.94 223.50 L 37.88 221.41 L 42.83 220.37 L 47.77 218.29 L 52.71 212.04 L 57.65 188.08 L 62.60 231.83 L 67.54 249.54 L 72.48 258.91 L 77.42 268.29 L 82.37 281.83 L 87.31 297.46 L 92.25 307.87 L 97.19 314.12 L 102.14 316.21 L 107.08 315.17 L 112.02 301.62 L 116.96 269.33 L 121.91 232.87 L 126.85 214.12 L 131.79 216.21 L 136.73 225.58 L 141.68 229.75 L 146.62 224.54 L 151.56 221.41 L 156.50 219.33 L 161.45 216.21 L 166.39 214.12 L 171.33 201.62 L 176.27 174.54 L 181.21 221.41 L 186.16 246.41 L 191.10 255.79 L 196.04 265.16 L 200.98 277.66 L 205.93 294.33 L 210.87 306.83 L 215.81 313.08 L 220.75 315.17 L 225.70 314.12 L 230.64 300.58 L 235.58 268.29 L 240.52 231.83 L 245.47 211.00 L 250.41 214.12 L 255.35 221.41 L 260.29 226.62 L 265.24 220.37 L 270.18 215.16 L 275.12 215.16 L 280.06 212.04 L 285.01 211.00 L 289.95 197.45 L 294.89 171.41 L 299.83 215.30 L 304.77 242.52 L 309.72 248.90 L 314.66 256.33 L 319.60 271.05 L 324.54 288.89 L 329.49 300.49 L 334.43 305.83 L 339.37 307.01 L 344.31 305.06 L 349.26 290.61 L 354.20 257.41 L 359.14 220.05 L 364.08 199.35 L 369.03 200.53 L 373.97 207.95 L 378.91 211.21 L 383.85 203.02 L 388.80 193.78 L 393.74 184.54 L 398.68 188.84 L 403.62 186.89 L 408.57 163.07 L 413.51 145.49 L 418.45 178.96 L 423.39 215.56 L 428.34 221.94 L 433.28 228.33 L 438.22 245.13 L 443.16 262.97 L 448.10 275.61 L 453.05 281.99 L 457.99 283.17 L 462.93 282.26 L 467.87 268.86 L 472.82 238.78 L 477.76 205.59 L 482.70 183.85 L 487.64 183.98 L 492.59 187.24 L 497.53 186.34 L 502.47 176.05 L 507.41 161.61 L 512.36 164.87 L 517.30 150.42 L 522.24 164.09 L 527.18 159.02 L 532.13 145.61 L 537.07 180.13 L 542.01 192.76 L 546.95 198.10 L 551.90 204.49 L 556.84 215.04 L 561.78 230.80 L 566.72 246.56 L 571.66 256.07 L 576.61 259.33 L 581.55 260.51 L 586.49 257.52 L 591.43 246.20 L 596.38 227.58 L 601.32 208.97 L 606.26 192.44 L 611.20 180.07 L 616.15 169.79 L 621.09 160.55 L 626.03 154.44 L 630.97 148.32 L 635.92 147.41 L 640.86 149.63 L 645.80 153.93 L 650.74 160.32 L 655.69 168.79 L 660.63 178.30 L 665.57 185.73 L 670.51 187.95 L 675.46 191.21 L 680.40 208.01 L 685.34 223.77 L 690.28 234.32 L 695.23 237.58 L 700.17 241.88 L 705.11 242.02 L 710.05 235.90 L 714.99 223.54 L 719.94 211.17 L 724.88 198.81 L 729.82 181.24 L 734.76 167.83 L 739.71 158.59 L 744.65 152.47 L 749.59 148.44 L 754.53 147.54 L 759.48 146.63 L 764.42 146.77 L 769.36 152.11 L 774.30 156.41 L 779.25 160.71 L 784.19 162.93 L 789.13 168.28 L 794.07 182.99 L 799.02 201.88 L 803.96 214.52 L 808.90 220.90 L 813.84 222.08 L 818.79 219.09 L 823.73 205.68 L 828.67 174.57 L 833.61 140.33 L 838.55 119.63 L 843.50 121.85 L 848.44 128.23 L 853.38 130.45" /><path class="forecast-svg-actual" d="M 858.32 225.58 L 863.27 223.50 L 868.21 221.41 L 873.15 220.37 L 878.09 218.29 L 883.04 212.04 L 887.98 188.08 L 892.92 231.83 L 897.86 249.54 L 902.81 258.91 L 907.75 268.29 L 912.69 281.83 L 917.63 297.46 L 922.58 307.87 L 927.52 314.12 L 932.46 316.21 L 937.40 315.17 L 942.35 301.62 L 947.29 269.33 L 952.23 232.87 L 957.17 214.12 L 962.12 216.21 L 967.06 225.58 L 972.00 229.75" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 858.32 111.44 L 863.27 124.83 L 868.21 112.98 L 873.15 112.26 L 878.09 112.13 L 883.04 111.70 L 887.98 121.08 L 892.92 113.32 L 897.86 115.19 L 902.81 124.47 L 907.75 115.28 L 912.69 121.98 L 917.63 115.18 L 922.58 113.82 L 927.52 110.62 L 932.46 110.97 L 937.40 116.47 L 942.35 120.17 L 947.29 112.75 L 952.23 115.94 L 957.17 110.49 L 962.12 120.26 L 967.06 110.38 L 972.00 115.04 L 972.00 144.95 L 967.06 144.92 L 962.12 149.77 L 957.17 141.46 L 952.23 145.01 L 947.29 140.40 L 942.35 144.37 L 937.40 146.33 L 932.46 141.06 L 927.52 144.15 L 922.58 139.16 L 917.63 146.21 L 912.69 147.61 L 907.75 143.17 L 902.81 143.82 L 897.86 140.66 L 892.92 149.29 L 887.98 149.60 L 883.04 148.27 L 878.09 148.43 L 873.15 149.33 L 868.21 148.71 L 863.27 151.06 L 858.32 146.21 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 858.32 128.83 L 863.27 137.94 L 868.21 130.85 L 873.15 130.80 L 878.09 130.28 L 883.04 129.99 L 887.98 135.34 L 892.92 131.30 L 897.86 127.93 L 902.81 134.14 L 907.75 129.22 L 912.69 134.80 L 917.63 130.69 L 922.58 126.49 L 927.52 127.39 L 932.46 126.02 L 937.40 131.40 L 942.35 132.27 L 947.29 126.58 L 952.23 130.47 L 957.17 125.97 L 962.12 135.02 L 967.06 127.65 L 972.00 129.99" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="858.32" cy="128.83" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>occupancy rate</h3>
+              <p>The Sentinel-P12 is a sensor used to capture occupancy rate (%) data on transportation infrastructure.</p>
+              <p class="instruction">No forecast instruction is available.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This series represents the occupancy rate (%) captured by the Sentinel-P12 sensor.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>The sensor had a calibration problem starting from 2024-01-10 18:00:00 on the Industrial Loop Bypass</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>resulted in an additive trend in the series that increases by 0.0870 at every hour.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E4</span></div>
+          <p>At timestep 2024-01-15 11:00:00, Sentinel-P12 was repaired</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E5</span></div>
+          <p>and this additive trend will disappear.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">37 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6230</span></span></summary>
+          <pre class="doc-content">FACILITY MAINTENANCE AND MONITORING DEPARTMENT
+Technical Incident Log
+
+Log Name: Industrial Loop Bypass Equipment Status Log - January 10, 2024
+
+Incident Detail:
+A Sentinel-P12 measurement device is currently deployed at the Industrial Loop Bypass location. On January 10, 2024, at 18:00:00, this measurement device began operating outside of its nominal parameters. This discrete temporal point marks when the hardware instability at this location was first realized. The device was recorded as entering a state of operational deviation at this precise timestamp. 
+
+Status: Hardware instability confirmed.
+Location: Industrial Loop Bypass
+Timestamp: 18:00:00 [2024-01-10]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6231</span></span></summary>
+          <pre class="doc-content">INCIDENT LOG ENTRY: OPERATIONAL DEVIATION R2-R3
+
+ISSUING DEPARTMENT: Systems Engineering Operations Department
+REPORT TYPE: Technical Incident Report
+STATUS: Documented
+
+INCIDENT SUMMARY:
+An operational deviation was recorded at 18:00:00 on January 10, 2024. The technical issue involved a loss of proper sensor calibration during active data collection for the Sentinel-P12 system. 
+
+TIMELINE AND INTEGRITY:
+The 18:00:00 timestamp marks the transition from functional integrity to a documented calibration deficiency. Observations confirmed that data captured following this event does not meet the necessary calibration standards required for operational accuracy. 
+
+NOTES:
+This log entry is restricted to the timing and technical nature of the calibration failure.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6232</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING DEPARTMENT
+TECHNICAL OPERATIONAL REPORT
+
+Subject: Sensor Calibration Discrepancy Report
+
+Scope:
+This report documents a technical issue identified regarding the Sentinel-P12 sensors. During active data collection, it was observed that the system experienced a loss of proper sensor calibration. 
+
+Operational Impact:
+The lack of calibration prevented the system from maintaining a consistent zero-point for telemetry values. This miscalibration directly disrupts the stability of the measurement frame of reference. This failure resulted in the inability to verify the accuracy of the occupancy rate (%) data recorded during the affected period.
+
+Technical Summary:
+Type: Technical Operational Report
+Status: Finalised
+Key Issue: Loss of sensor calibration
+System Effect: Telemetry zero-point drift; instability of measurement frame of reference.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6233</span></span></summary>
+          <pre class="doc-content">TECHNICAL REPORT: TELEMETRY CALIBRATION AND DATA DRIFT ANALYSIS
+ISSUER: SYSTEMS ENGINEERING DEPARTMENT
+
+Subject: Analysis of Persistent Numerical Variances in Sentinel-P12 Telemetry
+
+Summary of Technical Findings:
+
+A lack of calibration prevented the system from maintaining a consistent zero-point for telemetry values. This absence of a standardized baseline directly resulted in an unstable reference frame, which led to the accumulation of systemic errors in the recorded series over time.
+
+Evaluation of the numerical stream confirms that the data exhibited a persistent and additive trend relative to actual conditions. The observation of this mounting variance is identified as a direct consequence of the aforementioned calibration issues. This report serves as a formal record of the technical relationship between hardware calibration failure, reference frame instability, and the resulting inaccuracy of output data.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6234</span></span></summary>
+          <pre class="doc-content">SYSTEMS INTEGRATION AND QUALITY ASSURANCE TEAM
+TECHNICAL AUDIT REPORT: NUMERICAL SEQUENCE DIVERGENCE ANALYSIS
+
+Subject: Mathematical Characterization of Stream Error
+
+This technical audit provides a formal assessment regarding the numerical stream generated by the Sentinel-P12 system. Analysis of current data outputs confirms that the stream exhibits a persistent and additive trend relative to actual conditions. 
+
+Based on longitudinal observations, the mathematical nature of this additive trend dictates a specific hourly rate of divergence. Specifically, the error magnitude within the sequence grows by exactly 0.0870 units with every sixty-minute increment. This linear escalation remains constant across the monitored duration. This report focuses exclusively on the mathematical characterization of the stream error and its rate of growth; it does not address root causes or corrective actions.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6235</span></span></summary>
+          <pre class="doc-content">DATA INTEGRITY UNIT: TECHNICAL ANOMALY ASSESSMENT REPORT
+
+Subject: January 15 Technical Anomaly Assessment
+Sector: Sentinel-P12 Sensor Array Data Stream
+
+Analysis Summary:
+Following a review of the occupancy rate (%) data integrity, the Data Integrity Unit has quantified the bias progression observed within the sequence. The assessment confirms that the error magnitude in the sequence grows by exactly 0.0870 units with every sixty-minute increment. 
+
+Logging records indicate that this hourly data drift progression continued uninterrupted until 11:00:00 on January 15, 2024. Per unit standards, the continuous hourly growth of the bias defines the total duration of the recorded anomaly. This report is strictly focused on the quantitative growth rate and the specific termination timestamp of the drift event.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6236</span></span></summary>
+          <pre class="doc-content">MAINTENANCE DEPARTMENT TECHNICAL ENGINEERING TEAM
+HARDWARE MAINTENANCE COMPLETION REPORT
+
+REPORT ID: HMCR-SENTINEL-P12-011524
+SUBJECT: Mechanical Integrity Intervention
+EQUIPMENT ID: Sentinel-P12
+
+Summary of Activities:
+On 2024-01-15 at 11:00:00, a critical hardware intervention was completed on the Sentinel-P12 unit. The scope of this maintenance operation focused specifically on the mechanical integrity of the device to ensure structural and operational stability. 
+
+Technician Actions:
+The assigned engineering team performed a comprehensive restoration of standard operating parameters for unit Sentinel-P12. These scheduled technician actions, executed at the recorded timestamp, were the direct cause of the unit’s successful restoration to full operational status. 
+
+Operational Status: Standard Operating Parameters Restored
+Timestamp of Completion: 2024-01-15 11:00:00
+Issuer: Maintenance Department Technical Engineering Team
+
+Note: This report is restricted to the technical status of Sentinel-P12 at the time of intervention and does not account for broader fleet data or external scheduling.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6237</span></span></summary>
+          <pre class="doc-content">Hardware Engineering Department
+Technical Maintenance Report: Post-Maintenance Completion
+
+Subject: Unit Sentinel-P12 Restoration
+
+This report confirms the formal completion of technical remediation for unit Sentinel-P12. Following the scheduled maintenance window, the intervention successfully involved the comprehensive restoration of the standard operating parameters for unit Sentinel-P12.
+
+Technicians identified and addressed the root cause of recent operational interference. The successful remediation of physical defects in the hardware directly addresses the source of these issues. Specifically, the successful restoration of the hardware components eliminates the mechanical friction that previously generated signal anomalies.
+
+Testing confirms that Sentinel-P12 is now functioning within established internal specifications. No further physical adjustments are required at this time.
+
+Status: Complete
+Issued by: Hardware Engineering Department</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6238</span></span></summary>
+          <pre class="doc-content">Hardware Engineering Department
+Maintenance Log: Unit R3-R4
+Report Type: Technical Maintenance Report
+
+Summary of Findings:
+Following the scheduled maintenance of the hardware unit, successful restoration of the hardware components eliminates the mechanical friction that previously generated signal anomalies. This mechanical correction ensures that the physical movement within the assembly no longer interferes with the fidelity of the primary output.
+
+Calibration Results:
+The stabilization of internal sensor readings prevents the further injection of systematic bias into the data stream, ensuring the integrity of the captured Sentinel-P12 occupancy data. Furthermore, the removal of physical interference causes the resulting output signal to stabilize. 
+
+Notes:
+This log pertains strictly to the direct mechanical repair of components and the immediate stabilization of sensor data. It does not address external environmental factors or long-term trends.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6239</span></span></summary>
+          <pre class="doc-content">PLATFORM SYSTEMS ENGINEERING DIVISION
+INTERNAL TECHNICAL REPORT
+
+SUBJECT: Engineering Status Update: Sensor Stabilization and Error Margin Analysis
+
+Summary:
+Current analysis confirms the successful stabilization of internal sensor readings across the platform. This stabilization is critical as it prevents the further injection of systematic bias into the operational data stream. 
+
+Technical Assessment:
+With the outputs now stabilized, the engineering team verified that no new variables are being introduced to the existing error calculation protocols. As a result, the previously observed pattern of steady, incremental growth in error margins has ceased to be driven by the platform itself. Without the continuous influence of systematic bias, the margin analysis indicates that further platform-driven degradation of data accuracy has been halted. This report focuses specifically on the cessation of these error trends through stabilization.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6240</span></span></summary>
+          <pre class="doc-content">SYSTEMS ANALYTICS DIVISION
+TECHNICAL REPORT
+Ref ID: SAD-2024-ERR-09
+
+TITLE: Audit of Platform Error Margin Trends and Projection Analysis
+
+EXECUTIVE SUMMARY
+This technical audit, conducted by the Systems Analytics Division, evaluates the current state of error margin growth within the platform’s data processing architecture. The analysis specifically focuses on the relationship between systematic bias and signal accumulation trajectories.
+
+I. ASSESSMENT OF SYSTEMATIC BIAS
+Following a comprehensive review of the current processing metrics, the Systems Analytics Division has determined that the historical pattern of steady, incremental growth in error margins is no longer driven by the platform. This shift is characterized by the absence of a continuous systematic bias that previously influenced performance indicators. Without that underlying systematic bias as a constant variable, the platform’s internal architecture has ceased to be the primary driver of persistent error margin expansion.
+
+II. SIGNAL ACCUMULATION MODELS
+Analytical models have been applied to the current data stream to forecast the long-term behavior of signal accumulation. Based on current observations, these models project that the linear accumulation of the signal will undergo a full cessation. This expected termination of signal build-up represents a significant departure from previous trends where growth was treated as a semi-permanent function of the data lifecycle. The transition from linear growth to total cessation is a direct outcome of the eliminated platform-driven bias identified in Section I.
+
+III. DATA TRAJECTORY AND CUMULATIVE ERROR
+The cumulative error model is highly sensitive to new inputs. Our audit indicates a distinct lack of new input to the cumulative error model, which has fundamentally altered the mathematical forecast for the system. This absence of new input results in a change to the projected trajectory of the data, shifting it away from historical upward trends toward a static or neutral baseline.
+
+IV. SCOPE AND LIMITATIONS
+Observers should note that this report is focused exclusively on the internal relationship between platform bias, error margin growth, and signal accumulation projections. This documentation does not address external data sources, specific software versioning, or technical mitigation strategies. The findings herein are confined to the impacts resulting from the cessation of systematic bias and the consequent changes to data trajectories. 
+
+V. CONCLUSION
+The data indicate that the platform no longer contributes to the incremental expansion of error margins. As new inputs to the cumulative error model have diminished, analytical projections confirm a forthcoming cessation of linear signal accumulation and a definitive shift in the expected trajectory of the platform&#x27;s analytical output.
+
+--------------------------------------------------
+End of Technical Report
+Systems Analytics Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6241</span></span></summary>
+          <pre class="doc-content">Systems Engineering Data Analytics Team
+Telemetry Analysis Report: Signal Accumulation Projections
+
+Executive Summary
+This technical report details the findings of our analytical models regarding the telemetry data from Sentinel-P12 sensors. 
+
+Analysis and Projections
+Recent data modeling indicates a significant shift in signal behavior. Specifically, the analytical models project a full cessation of linear accumulation in the signal. Based on these projections, the observed cumulative drift pattern in telemetry is expected to vanish completely.
+
+Conclusion
+Evaluations of the data trends confirm that a cessation in linear accumulation leads directly to the termination of the identified signal drift. This analysis is restricted to the relationship between signal accumulation and drift termination; it does not address underlying causes, hardware identifiers, or specific operational timelines.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6242 · Off-variable</span></span></summary>
+          <pre class="doc-content">TECHNICAL INCIDENT REPORT
+ISSUER: Systems Engineering Department
+SUBJECT: Industrial Loop Bypass Sentinel-P12 Telemetry Lag
+
+Incident Overview:
+Following the application of the recent software update to the Sentinel-P12 sensor located on the Industrial Loop Bypass, a discrepancy in real-time monitoring was noted. 
+
+Technical Analysis:
+Systems Engineering has investigated the discrepancy and determined that the issue is caused by a data transmission delay rather than a shift in actual value trends. Current telemetry indicates that data packets are arriving with a consistent 12-second latency.
+
+Incident Timestamps:
+The identified delay incident occurred during the following window, which overlaps with the original reported problem period:
+- Start: 08:14:22 UTC
+- End: 09:45:10 UTC
+
+Conclusion:
+The Sentinel-P12 is recording accurate measurements; however, the software update has introduced a transmission lag affecting telemetry arrival times.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6243 · Off-variable</span></span></summary>
+          <pre class="doc-content">Department of Industrial Infrastructure Maintenance
+Technical Incident Report: Sentinel-P12 Sensor Interference (Bypass Section)
+
+Document ID: DIIM-2024-782-SENTINEL
+Report Type: Operational Technical Report
+Subject: Environmental interference affecting Sentinel-P12 operations
+Location: Industrial Loop Bypass
+
+1. EXECUTIVE SUMMARY
+This operational report details technical interference issues identified in the Sentinel-P12 unit situated on the Industrial Loop Bypass. Environmental factors resulting from upcoming civil works have been identified as the primary catalyst for irregular sensor behavior. While the integrity of core data metrics remains intact, secondary impacts on internal power management systems have been registered and require monitoring.
+
+2. PLANNED INFRASTRUCTURE WORKS
+Scheduled road resurfacing work is set to commence at 2024-01-10 18:00:00. These maintenance activities involve the use of heavy machinery for pavement stripping and thermal application. The work area is directly adjacent to the installation point of the Sentinel-P12 hardware, ensuring that the sensor will be subject to consistent environmental stress for the duration of the resurfacing project.
+
+3. TECHNICAL ANALYSIS OF INTERFERENCE
+3.1 Vibration-Induced Voltage Spikes
+Data analysis confirms that seismic-grade vibration from machinery used in the resurfacing creates temporary spikes in the sensor&#x27;s voltage. These fluctuations occur as a direct result of the kinetic energy transferred through the mounting infrastructure to the unit’s internal electrical components. These spikes are intermittent and correspond precisely with the operational cycles of the heavy equipment on the Industrial Loop Bypass.
+
+3.2 Battery Life Impact
+The detected voltage changes impact the sensor&#x27;s battery life. The internal power regulation circuit is forced to compensate for the irregular surges, leading to an increased rate of discharge. Consequently, current projections for the unit&#x27;s operational lifespan have been adjusted downward. Maintenance teams should prepare for accelerated battery depletion cycles if the interference persists beyond the initial resurfacing schedule.
+
+4. DATA INTEGRITY AND OCCUPANCY METRICS
+It is important to note that despite the electrical instability caused by external vibrations, the core functional output of the device reflects high reliability. The voltage changes do not affect the sensor&#x27;s occupancy rate data. All logs regarding vehicle occupancy and lane utilization remain accurate and have not been corrupted by the interference. The Sentinel-P12 continues to fulfill its primary objective of providing real-time data for the Industrial Loop Bypass without loss of signal fidelity.
+
+5. MITIGATION AND MONITORING
+The Department of Industrial Infrastructure Maintenance will continue to monitor the voltage logs via remote telemetry. No immediate hardware bypass is required at this time, provided that the occupancy rate data remains consistent. Post-resurfacing voltage audits will be conducted following the conclusion of the works starting 2024-01-10 18:00:00 to ensure the sensor returns to a baseline electrical state.
+
+6. REPORT LIMITATIONS
+This report focuses strictly on the technical interference and scheduled works for the Sentinel-P12; it does not include broader traffic forecasts, city-wide infrastructure plans, or long-term hardware replacement strategies. Further inquiries regarding the general bypass traffic flow should be directed to the regional planning office.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6244 · Off-variable</span></span></summary>
+          <pre class="doc-content">INDUSTRIAL SYSTEMS DATA MANAGEMENT DEPARTMENT
+INTERNAL MAINTENANCE LOG: SENTINEL-P12 CORRECTION REPORT
+
+Document Type: Technical maintenance record
+Status: Finalized
+
+Summary:
+This log serves to record the rectification of an administrative logging error associated with the Sentinel-P12 unit. 
+
+Issue Description:
+Starting on 2024-01-10, Industrial Loop Bypass data generated by the unit was accidentally tagged with the incorrect location ID. This misclassification persisted across the telemetry stream for a five-day period.
+
+Corrective Action:
+The location ID error was officially corrected on 2024-01-15 at 11:00:00. Following this administrative adjustment, the database now correctly displays &#x27;Loop-A&#x27; for all Sentinel-P12 entries during the affected interval, replacing the erroneous &#x27;Loop-B&#x27; designation.
+
+Note: This record is limited strictly to the Sentinel-P12 logging correction. It does not include broader system health reports, root cause analysis, or performance forecasts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6245 · Irrelevant</span></span></summary>
+          <pre class="doc-content">FACILITY ENGINEERING DEPARTMENT / MAINTENANCE OPERATIONS
+TECHNICAL OPERATIONS &amp; MAINTENANCE REPORT
+
+Report Name: Sentinel-P12 Thermal Enclosure Maintenance and Inspection Report - Jan 2024
+Report ID: FED-O&amp;M-2024-SP12-001
+Date of Report: January 16, 2024
+
+1. SYSTEM DESCRIPTION AND TECHNICAL SPECIFICATIONS
+The Sentinel-P12 Thermal Enclosure is designed to provide high-precision environmental stabilization for sensitive equipment. The integrated cooling system utilizes a closed-loop liquid thermal exchange mechanism. 
+
+Key Technical Specifications:
+- Enclosure Model: Sentinel-P12
+- Cooling Method: Active Liquid Circulant
+- Operational Temperature Range: -10°C to +45°C
+- Standard Operating Pressure: 45-60 PSI
+- Coolant Type: Industrial Grade Thermofluid-7
+- Filter Requirement: High-Efficiency Particulate Air/Fluid Micron Filter
+
+2. ROUTINE MAINTENANCE SCHEDULE: COOLANT FLUID PRESSURE CHECS
+Per Departmental Protocol P12-MAINT-04, the coolant fluid pressure must be verified according to the following schedule to ensure system integrity and prevent thermal runaway:
+- Daily: Visual gauge inspection for immediate deviations.
+- Weekly: Static pressure measurement during non-operational cycles.
+- Monthly (Required): Logged pressure differential check across the primary pump and return lines.
+- Quarterly: Recalibration of digital pressure transducers.
+Note: Any drop exceeding 5 PSI over a 24-hour period requires immediate shutdown and leak detection procedures.
+
+3. INSPECTION LOG
+Date of Inspection: 2024-01-15
+Technician Name: Marcus Thorne
+Technician ID: MT-8824
+Department: Maintenance Operations - Thermal Systems Division 
+Access Level: Level 2 Engineering Clearance
+
+4. MAINTENANCE ACTIONS PERFORMED
+On 2024-01-15, Technician Marcus Thorne performed the scheduled monthly inspection of the Sentinel-P12 unit. The inspection included a comprehensive review of the thermal enclosure&#x27;s cooling loop and fluid levels.
+
+Bypass Walk-through Summary:
+During the bypass walk-through of the secondary cooling manifold, the primary fluid filter was identified as reaching its terminal lifecycle saturation point. As a preemptive measure to maintain flow rate stability, the technician executed a hot-swap bypass of the filtration assembly.
+
+Component Replacement Details:
+- Part Type: Replacement Fluid Micron Filter
+- Serial Number: SN-P12-FLT-009942-X
+- Installation Date: 2024-01-15
+- Installation Time: 14:22 EST
+
+5. SYSTEM STATUS POST-INSPECTION
+Following the installation of filter SN-P12-FLT-009942-X, the system pressure stabilized at 52 PSI. The thermal enclosure&#x27;s cooling system is currently in nominal operating condition. No leaks were detected in the bypass valves or the primary pump housing.
+
+6. OPERATIONAL LIMITATIONS
+This report is strictly limited to the operational and maintenance records of the Sentinel-P12 unit for the January 2024 period. It does not encompass wider facility infrastructure records, secondary system histories (such as general HVAC or electrical grid logs), or long-term performance forecasts for the equipment. All data contained herein reflects the status of the specific Sentinel-P12 unit as of the inspection date of 2024-01-15.
+
+[End of Report]
+
+Certified by: 
+Facility Engineering Department
+Maintenance Operations Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6246 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Industrial Systems Engineering Group - IT Infrastructure Division
+Technical Audit Report: Sentinel-P12 Network Performance and Security Audit
+
+1. Protocol Specifications
+The Sentinel-P12 sensor array utilizes a specialized data transmission protocol designed for low-overhead telemetry. The protocol operates over an asynchronous transport layer, utilizing fixed-width 128-byte packets. Each packet contains a 16-byte header for device identification, followed by a 96-byte payload for environmental sensor data, and a 16-byte footer containing a CRC-32 checksum for integrity verification. The transmission frequency is set to a 50ms polling interval to ensure high-fidelity monitoring within the industrial environment.
+
+2. Network Latency Measurements
+Extensive testing was conducted to measure point-to-point latency between individual Sentinel-P12 sensor units and the central processing server. Measurements were taken over a 24-hour period to account for varying load conditions.
+
+- Minimum Latency: 4.2 ms
+- Maximum Latency: 18.7 ms
+- Average Latency: 6.4 ms
+- Standard Deviation: 1.1 ms
+Jitter was recorded at a mean of 0.8 ms, indicating a highly stable connection under standard operating conditions.
+
+3. Encryption Standards
+For the Industrial Loop Bypass data relay, a robust security framework has been implemented to protect data in transit. The relay utilizes AES-256 (Advanced Encryption Standard) in Galois/Counter Mode (GCM), providing both confidentiality and authenticity. Keys are managed via a localized Hardware Security Module (HSM) using a 4096-bit RSA implementation for the initial key exchange. The relay employs a rotating session key strategy, with re-keying occurring every 3,600 seconds to minimize exposure risks.
+
+4. Handshake Log Entries (Peak Traffic Analysis)
+The following log captures unsuccessful handshake attempts recorded during the identified peak traffic window (14:00 - 15:30). These failures are attributed to buffer saturation and timed-out synchronization requests during high-density data bursts.
+
+[2023-10-12 14:02:11] WARN: Handshake_Timeout - Unit_ID: P12-8842 - Status: SYN_SENT - Result: NO_ACK
+[2023-10-12 14:15:44] FAIL: Security_Mismatch - Unit_ID: P12-7710 - Status: KEY_EXCHANGE - Result: INVALID_MAC
+[2023-10-12 14:28:03] WARN: Handshake_Timeout - Unit_ID: P12-8842 - Status: SYN_SENT - Result: NO_ACK
+[2023-10-12 14:44:19] FAIL: Protocol_Violation - Unit_ID: P12-9001 - Status: INIT - Result: MALFORMED_HEADER
+[2023-10-12 15:02:55] WARN: Handshake_Timeout - Unit_ID: P12-8115 - Status: SYN_SENT - Result: NO_ACK
+[2023-10-12 15:18:22] WARN: Handshake_Timeout - Unit_ID: P12-8842 - Status: SYN_SENT - Result: NO_ACK
+[2023-10-12 15:22:11] FAIL: Security_Mismatch - Unit_ID: P12-7993 - Status: KEY_EXCHANGE - Result: TIMED_OUT
+
+5. Technical Summary
+The communication layer of the Sentinel-P12 demonstrates high efficiency with the proprietary 128-byte protocol. While average latency remains within acceptable parameters (&lt;10ms), the handshake failures observed during peak periods suggest a correlation between network congestion and synchronization timing. All data relayed through the Industrial Loop Bypass remains fully encrypted according to the documented AES-256 GCM standards, ensuring the integrity of the communication layer against unauthorized interception.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6247 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Sentinel-P12 Peripheral Unit Maintenance and Calibration Report: Industrial Loop Bypass
+
+Date: October 14, 2023
+Issuer: Industrial Loop Infrastructure Management Team
+Subject: Technical/Environmental Analysis of Sentinel-P12 Peripheral Unit
+Reference ID: IL-B-8839-P12
+
+1. SCOPE AND OVERVIEW
+This report provides a comprehensive overview of the maintenance and calibration parameters for the Sentinel-P12 Peripheral Unit, situated at the Industrial Loop Bypass. This document focuses exclusively on the site-specific environmental history and technical specifications of the unit. Broad infrastructure status updates and data regarding neighboring units are excluded from this report.
+
+2. ENVIRONMENTAL CONDITIONS: INDUSTRIAL LOOP BYPASS
+The area surrounding the Industrial Loop Bypass is characterized by a high-intensity industrial microclimate. The immediate environment of the Sentinel-P12 unit is defined by high thermal output from adjacent heavy machinery and significant particulate presence resulting from the bypass transit operations. The localized topography creates a pocket of stagnant air, which centralizes industrial pollutants around the unit’s mounting bracket.
+
+3. HISTORICAL WEATHER PATTERNS and CLIMATIC DATA
+Recorded weather patterns in the vicinity of the Sentinel-P12 have shown a trend of seasonal extremes. Historical data indicates that the unit is subject to erratic wind gusts exceeding 45 knots during transitional months, which impacts the structural vibration sensors. Temperature fluctuations at the Industrial Loop Bypass site frequently oscillation between 15°C and 42°C within a single 24-hour cycle. Precipitation is historically infrequent but intense, often occurring as flash-deluge events that subject the housing to rapid cooling cycles.
+
+4. HISTORICAL HUMIDITY LEVELS
+Humidity levels near the Sentinel-P12 unit have been recorded consistently over the preceding maintenance cycle. Historical logs indicate a baseline humidity of 65%, with peaks reaching 92% during evening hours when low-lying condensation settles within the bypass corridor. These sustained humidity levels have been a primary factor in the unit’s oxidation monitoring schedule, as the moisture interacts with industrial exhaust to create a mildly corrosive surface film on external casing components.
+
+5. POWER SYSTEMS: SOLAR PANEL EFFICIENCY AND PERFORMANCE
+The Sentinel-P12 is powered by a localized solar array. The current efficiency rating for these panels is established at 18.4%. Performance monitoring indicates that peak solar charging is achieved between 1100 and 1430 hours local time. Performance is currently hindered by the buildup of industrial particulate on the panel surfaces, though the bypass-specific energy storage remains sufficient to maintain the unit’s operational uptime during nocturnal phases. Recent energy conversion logs show a minor degradation in performance compared to initial deployment, consistent with the high-particulate nature of the Industrial Loop.
+
+6. SENSOR CALIBRATION: LIGHT-SENSITIVE COATING
+The primary optical sensor of the Sentinel-P12 utilizes a specialized light-sensitive coating applied directly to the lens assembly. This technical coating is engineered to filter high-intensity industrial glare and UV radiation, ensuring the sensor&#x27;s internal light-gathering components are not oversaturated during peak exposure. The coating consists of a multi-layered vapor-deposited film with a refractive index optimized for the specific light wavelengths encountered in the bypass area. Technical inspection of the coating shows it remains intact, though it requires periodic cleaning to maintain its spectral sensitivity and prevent light diffusion through technical buildup.
+
+7. NOTES AND LIMITATIONS
+This documentation is restricted to the technical specifications and environmental history of the Sentinel-P12 unit at this specific location. No performance forecasts or broad network-wide infrastructure assessments are contained herein.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6248 · Off-entity</span></span></summary>
+          <pre class="doc-content">Department of Transportation Operations Center
+Technical Maintenance Log
+
+Incident ID: Guardian-V5-20240110-01
+Location: Industrial Loop Bypass
+Equipment ID: Sensor Guardian-V5
+
+[INCIDENT SUMMARY]
+On January 10, 2024, at 18:00:00, a calibration failure was detected in sensor Guardian-V5. The malfunction resulted in erratic data reporting at the Industrial Loop Bypass; specifically, occupancy rates began fluctuating randomly by 5% every hour instead of following established traffic trends.
+
+[MAINTENANCE RECORD]
+Service Date/Time: 2024-01-15 11:00:00
+Action Taken: Sensor recalibration and repair conducted as scheduled.
+
+[OBSERVATIONS]
+Continuous monitoring following the repair indicates a permanent 10% step decrease in recorded occupancy rates compared to historical averages for this unit. Post-repair data confirms that random fluctuations have ceased, though the permanent shift in baseline occupancy values remains present across all subsequent logs.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6249 · Off-entity</span></span></summary>
+          <pre class="doc-content">Industrial Loop Bypass Operations Department
+Technical Maintenance Log
+
+Incident Resolution Report: Apex-T8 Sensor Synchronization and Firmware Update
+
+Site Location: Industrial Loop Bypass
+Primary Hardware: Apex-T8 Sensor
+
+Maintenance Timeline and Observations:
+
+Beginning at 2024-01-10 18:00:00, a synchronization delay was reported regarding the Apex-T8 sensor unit. During this period, diagnostic monitoring showed that the occupancy rate series stagnated at a fixed value of 45.0%. This lack of variance continued until manual intervention was initiated.
+
+Resolution Action:
+A firmware update was successfully deployed to the unit on 2024-01-15 11:00:00. Following the update, the sensor resumed active reporting, demonstrating the introduction of a multiplicative growth pattern of 1.2x per hour. 
+
+Note: This report covers only the specific operational timeline and data behavior observed. This document does not include root cause analysis or long-term occupancy forecasts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6250 · Off-entity</span></span></summary>
+          <pre class="doc-content">Industrial Systems Operations Department
+Incident Resolution Report: Flow-M90 Sensor Failure
+
+Status: Resolved
+Subject: Timeline and Data Pattern Analysis of Industrial Loop Bypass Monitoring
+
+Incident Overview:
+Sensor Flow-M90, responsible for monitoring the Industrial Loop Bypass, experienced a critical failure sequence in early January.
+
+Event Timeline:
+- 2024-01-10 18:00:00: Initiation of overheating issue. Following the onset of the heat event, recorded occupancy rate values began an exponential decay toward zero.
+- 2024-01-15 11:00:00: On-site maintenance performed on the Flow-M90 unit.
+
+Observed Data Patterns:
+Analysis of telemetry shows distinct signal shifts surrounding the intervention. Pre-maintenance logs are characterized by the aforementioned exponential decay. Conversely, post-maintenance data exhibits a cyclical sine-wave pattern. 
+
+Note: This report is limited to the timeline and observed data patterns; it excludes root cause analysis, systemic impacts, or predictive modeling.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6251 · Off-window</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING OPERATIONS DEPARTMENT
+INTERNAL TECHNICAL REPORT: SENSOR ARRAY DELTA-9 CALIBRATION ADJUSTMENTS
+
+Date: November 18, 2023
+Report ID: SE-LOG-2023-11-D9
+Subject: Technical resolution of historical calibration discrepancy
+
+1. OVERVIEW
+This report documents the corrective actions taken regarding a historical calibration problem identified in November 2023 within the Sensor Array Delta-9. The discrepancy was isolated to the signal processing unit, necessitating a manual override and a subsequent firmware deployment to restore data integrity across the array.
+
+2. CALIBRATION ADJUSTMENTS
+Upon identification of the error, technicians performed a hardware-level recalibration. To compensate for the variance detected during the audit, a specific fixed offset magnitude of +14.25 mHz was applied across the primary telemetry channels. This adjustment ensures that the analog-to-digital conversion pathway aligns with the baseline reference standards established for Delta-9 operations. This fixed offset is now hardcoded into the localized controller to prevent recurrence of the identified deviation.
+
+3. FIRMWARE SPECIFICATIONS
+As part of the remediation process, the array was updated to Firmware Version 4.0. 
+
+Technical Specifications for v4.0:
+- Enhanced packet verification protocols for high-frequency sampling.
+- Optimized buffer allocation for the Delta-9 signal processor.
+- Integration of the +14.25 mHz manual offset into the permanent configuration file.
+- Improved thermal throttling response times for the onboard logic gates.
+
+4. MAINTENANCE RECORD
+The maintenance cycle, including the manual recalibration, hardware verification, and the deployment of Firmware Version 4.0, was officially finalized on site. 
+
+Exact Maintenance Completion Timestamp: 2023-11-17 T21:42:08 UTC
+
+5. SCOPE LIMITATIONS
+This documentation is restricted to the technical resolution of the November 2023 calibration error and the associated firmware deployment protocols. This log does not include root cause analysis regarding the initial drift mechanisms, nor does it provide long-term performance forecasts or financial impact assessments related to the maintenance window.
+
+Status: Finalized
+Authorized by: Systems Engineering Operations Department</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6252 · Off-window</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Systems Integration Stakeholders
+FROM: Systems Engineering Data Integrity Team
+DATE: February 5, 2024
+SUBJECT: Post-Correction Systems Engineering Memo: Q1 Sensor Calibration Update
+
+1. PURPOSE
+This memorandum serves as the formal technical documentation regarding the rectification of data noise and the subsequent recalibration of the Q1 sensor array. This report is strictly focused on the technical parameters of the correction process and the verification of data integrity for the current period.
+
+2. NOISE INJECTION PARAMETERS
+In December 2023, the system underwent a period of stochastic noise injection. This technical procedure involved introducing controlled, non-deterministic variance into the sensor signaling pathways. These injections were performed to test the edge-case resilience of the processing units under high-entropy conditions. Technical logs confirm that these noise profiles were active across all primary sensor modules during the final month of the preceding year.
+
+3. DRIFT DETECTION AND MONITORING
+Following the injection phase, the Data Integrity Team initiated a documentation period for drift detection. Throughout this timeframe, sensors were monitored for deviations from nominal performance standards. Detailed logging of signal-to-noise ratios (SNR) was maintained to identify the precise threshold of mechanical and digital drift resulting from the December injection cycles. This monitoring ensured that any residual variance was mapped prior to system reset.
+
+4. RESTORATION OF BASELINE SENSITIVITY
+Technical rectification was completed with the restoration of baseline sensitivity. The specific date for this restoration was January 1, 2024. On this date, all stochastic modifiers were purged from the system, and sensor gains were reverted to factory-standard sensitivity levels. This action successfully neutralized the drift identified in the previous month.
+
+5. DATA VERIFICATION
+The Systems Engineering Data Integrity Team has completed a comprehensive audit of all telemetry and sensor outputs generated following the restoration. We hereby provide confirmation that data collected in January is verified as clean. All outputs currently align with the established baseline, and the integrity of the data stream is confirmed for all Q1 reporting requirements.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6253 · Off-window</span></span></summary>
+          <pre class="doc-content">Systems Monitoring and Diagnostics Team
+Technical Calibration Log: 2024-Q1 Initial Phase
+
+Ref: LOG-2024-Q1-001
+Status: Post-Reset Verification
+
+Summary of Observations:
+During the first week of January, internal monitoring detected a significant multiplicative scaling event. Following this observation, a full system reset was initialized to restore baseline operational parameters. 
+
+Log Details:
+- System Reset Timestamp: 2024-01-05 08:00:00 UTC
+- Post-Reset State: Verified zero-bias state
+- Sensor Status: The sensor array is currently clear of trends and drifting patterns.
+
+Calibration Note:
+This entry confirms the immediate post-reset status and current calibration values. The system remains in a nominal state following the localized scaling event. Technical analysis is restricted to current telemetry; downstream data impact and long-term performance forecasts are not included in this log.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6254 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">MUNICIPAL DEPARTMENT OF TRANSPORTATION
+TRAFFIC ENGINEERING DIVISION
+TECHNICAL OPERATIONAL REPORT: INDUSTRIAL LOOP TRAFFIC ANALYSIS
+
+Subject: Diagnostic Report for Sensor Sentinel-P12
+Date: October 24, 2023
+Report ID: DOT-TED-2023-SP12-DIAG
+
+1. EXECUTIVE SUMMARY
+This Technical Operational Report provides a diagnostic assessment of sensor Sentinel-P12, situated on the Industrial Loop Bypass. The primary focus of this analysis is to evaluate current occupancy data, distinguish between technical sensor variances and actual usage trends, and establish the new operational baseline for the segment. The findings confirm that the Industrial Loop Bypass is experiencing a significant and sustained increase in traffic volume.
+
+2. SENSOR PERFORMANCE AND CALIBRATION ANALYSIS
+Sensor Sentinel-P12 has recently undergone a comprehensive diagnostic review to address concerns regarding data volatility. Technical analysis confirms that while some temporary sensor calibration drifts have been observed, the underlying data indicates structural growth in usage. It is critical to note that the upward trend identified in core occupancy is independent of these temporary calibration drifts. The internal system logic has successfully isolated these electrical variances from the primary traffic data stream, ensuring that the reported growth reflects actual vehicle presence on the bypass.
+
+3. OCCUPANCY TRENDS AND BASELINE PROJECTIONS
+Data analysis from the preceding seven days reveals a consistent rise in the core occupancy metrics. While current readings include some temporary additive fluctuations—likely stemming from transient environmental factors affecting the sensor’s periphery—these are non-structural. 
+
+Occupancy rates are expected to settle at a new, higher baseline once these temporary additive fluctuations are removed. This projected baseline is not an anomaly but rather a reflection of accumulated natural traffic growth that has manifested over the past week. By filtering out the noise associated with temporary sensor instability, the Traffic Engineering Division has determined that the underlying volume of vehicles utilizing the Industrial Loop Bypass has reached a new plateau.
+
+4. COMPARATIVE HISTORICAL DATA
+A longitudinal comparison of the Sentinel-P12 data sets indicates a stark contrast between current metrics and historical norms for the month. Current and projected occupancy levels are significantly higher than those recorded at the beginning of the month. This suggests that the growth observed is not a daily spike but a fundamental shift in the bypass’s occupancy profile since the start of the current reporting period.
+
+5. TECHNICAL SCOPE AND LIMITATIONS
+The scope of this report is strictly limited to the technical performance and data trends generated by sensor Sentinel-P12 and the immediate traffic volume changes on the Industrial Loop Bypass. This report does not include, nor should it be used to infer, broader city-wide traffic data or the performance of other sensors within the municipal grid. Furthermore, this document provides no information or speculation regarding the specific causes for the growth—such as local construction projects or regional events—and does not offer recommendations for long-term infrastructure planning. The focus remains solely on the validation of the Sentinel-P12 diagnostic data and the identification of the new occupancy baseline.
+
+6. CONCLUSION
+In summary, the diagnostic data from Sentinel-P12 confirms a structural increase in traffic on the Industrial Loop Bypass. Despite minor calibration drifts, the growth trend remains valid. The Municipal Department of Transportation will continue to monitor the sensor as it stabilizes at its new, elevated baseline. 
+
+*** END OF REPORT ***</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6255 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Traffic Infrastructure Monitoring Department
+Technical Maintenance Report
+
+Subject: Industrial Loop Bypass Sensor Diagnosis Report: Sentinel-P12 Calibration Status
+
+Diagnostic Summary:
+Occupancy rate data from the Sentinel-P12 sensor situated on the Industrial Loop Bypass currently exhibits a stationary step-up calibration error. Recent data readings indicate a transitioned higher baseline that has already stabilized, with daily cycles now repeating at a consistent and level elevated range.
+
+Technical Assessment:
+The observed data behavior indicates a fixed displacement in the sensor&#x27;s output rather than a continuing progression or escalating trend. Following the required repair, occupancy rates are expected to continue following this high-magnitude cycle, as the current range represents the new established baseline for the unit.
+
+Note: This report is restricted to the technical behavior and calibration status of Sentinel-P12.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6256 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">INDUSTRIAL LOOP TRAFFIC MANAGEMENT DEPARTMENT
+Technical Operational Report: Sentinel-P12 Sensor Calibration and Performance Brief
+Ref ID: IL-TECH-2024-08
+
+1. EXECUTIVE SUMMARY
+This technical brief outlines the operational benchmarks and calibration profiles for the Sentinel-P12 sensor unit currently deployed on the Industrial Loop Bypass. The focus of this assessment is to define baseline occupancy behaviors during high-volume periods to ensure data integrity for automated traffic management systems.
+
+2. SENSOR PERFORMANCE CHARACTERISTICS
+2.1 Afternoon Peak Windows
+The Sentinel-P12 sensor on the Industrial Loop Bypass shows an empirical tendency to reach a steady plateau near 10% occupancy during peak afternoon hours. Diagnostic analysis indicates that this plateau is a consistent technical artifact of the sensor’s interaction with current lane geometry and vehicle flow dynamics during these specific timeframes.
+
+2.2 Historical Norms and Baseline Data
+Long-term performance monitoring indicates that normal operating conditions for the Industrial Loop Bypass result in a 10% occupancy level during high-traffic afternoon windows. This value serves as the standard baseline for characterizing &#x27;congested-flow&#x27; states without the presence of external anomalies. This 10% figure has been validated across multiple reporting cycles as the standard operational ceiling for the bypass under typical heavy use.
+
+3. CALIBRATION AND PROJECTION MODELS
+3.1 Bias Assessment
+Ensuring the accuracy of traffic density reports requires the monitoring of additive bias within the raw data stream. Performance models indicate that when sensor data lacks additive bias, occupancy levels are projected to stabilize at the historical 10% plateau. Deviations above this stabilized plateau are generally indicative of sensor drift or miscalibration rather than changes in the physical traffic environment, provided no external incidents are reported.
+
+4. LIMITATIONS OF SCOPE
+This brief is strictly limited to the technical performance and historical norms of the Sentinel-P12 sensor. This documentation does not include broader traffic congestion causes, regional infrastructure plans, or specific incident logs. It is intended for use by system engineers and traffic analysts for the purpose of sensor monitoring and data validation only.
+
+5. TECHNICAL SPECIFICATIONS
+Unit Type: Sentinel-P12
+Deployment Site: Industrial Loop Bypass
+Primary Metric: Lane Occupancy Percentage
+Calibration Status: Verified for 10% Stabilization
+
+[End of Document]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6257 · Off-variable</span></span></summary>
+          <pre class="doc-content">INDUSTRIAL LOOP INFRASTRUCTURE ENGINEERING TEAM
+TECHNICAL MAINTENANCE REPORT
+
+NAME: Network Performance Post-Maintenance Summary: Sentinel-P12
+DATE: 2024-01-15
+
+1. MAINTENANCE EXECUTION
+On 2024-01-12 at 09:00:00, the engineering team executed a firmware update for the Sentinel-P12 sensor located on the Industrial Loop Bypass. The primary objective of this update was to adjust internal clock synchronization across the network.
+
+2. PERFORMANCE MONITORING
+Following the update, a post-update latency shift of 0.042 seconds was recorded in the data transmission log. Continuous signal monitoring was conducted through 2024-01-15 11:00:00 to verify compliance with operational thresholds.
+
+3. SCOPE LIMITATIONS
+This summary is limited to the specific maintenance event and the immediate 74-hour monitoring window. It does not include wider network performance data, root cause analysis of the latency shift, or future maintenance schedules.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6258 · Off-variable</span></span></summary>
+          <pre class="doc-content">Department of Industrial Infrastructure - Network Maintenance Division
+Incident Resolution Report: Sentinel-P12 Signal Degradation
+
+Date: January 15, 2024
+Subject: Technical Resolution of Wireless Transceiver Interference
+
+Summary:
+This report documents the identification and resolution of localized signal degradation affecting the Sentinel-P12 sensor located on the Industrial Loop Bypass. 
+
+Investigation Findings:
+Technical monitoring identified that a heavy maintenance vehicle was parked in close proximity to the Sentinel-P12 sensor starting 2024-01-10 18:00:00. The presence of this vehicle caused localized electromagnetic interference within the sensor’s wireless transceiver. Data analysis indicates that signal interference spiked specifically during daily peak traffic hours between 07:00 and 09:00 throughout the duration of the incident.
+
+Resolution:
+The vehicle was removed from the site on 2024-01-15 11:00:00. Following the removal, signal strength returned to 100%. 
+
+Note: This report is limited to the technical cause and resolution of signal interference; it does not include traffic data, non-signal sensor readings, or future maintenance schedules.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6260 · Irrelevant</span></span></summary>
+          <pre class="doc-content">INTERNAL TECHNICAL MEMORANDUM
+
+TO: Operations Personnel / Field Technicians
+FROM: Sentinel Systems Engineering Department
+DATE: October 14, 2023
+RE: Operations Update: Sentinel-P12 Firmware v4.2 Release Notes
+
+This memorandum serves as official documentation for the routine software update for the Sentinel-P12 unit, scheduled for deployment across active hardware sectors. This v4.2 update is focused on operational stability and user interaction enhancements.
+
+### 1. Firmware Overview
+Sentinel-P12 Firmware v4.2 is a scheduled maintenance release. This update optimizes background processes and ensures continuity in automated sensor logging. Technicians should prepare for a standard reboot cycle during the installation process.
+
+### 2. User Interface Enhancements
+The occupancy monitoring dashboard has undergone a significant interface refresh. Changes include:
+- Reconfiguration of the real-time heat map overlay for improved clarity.
+- Updated iconography for zone status indicators.
+- Streamlined navigation menus for faster access to historical occupancy data logs.
+- Consolidation of the sensor health panel to the primary viewing pane.
+
+### 3. Revised Security and Authentication
+New login protocols are now in effect for all technicians accessing the unit’s local maintenance console and remote management interface. 
+- Unified Multi-Factor Authentication (MFA) is now required for administrative overrides.
+- Session timeouts have been recalibrated to enhance endpoint security.
+- Technicians must utilize the updated credentialing sequence as specified in the Security Protocol Supplement 4.2-A.
+
+### 4. Site-Specific Testing: Industrial Loop Bypass
+The Industrial Loop Bypass has been designated as the primary testing site for the interface refresh. All UI features described in this update were validated under live conditions at this location to ensure the dashboard accurately reflects complex pedestrian and equipment traffic patterns common to the bypass infrastructure. 
+
+### 5. Technical Deployment Schedule
+Deployment will be phased across the network starting at 0200 hours. This update strictly concerns the technical deployment and testing of the P12 system. Please note that this memorandum does not contain information regarding facility status, financial impacts, or long-term infrastructure forecasting.
+
+Questions regarding the update process should be directed to the Engineering Help Desk.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6261 · Irrelevant</span></span></summary>
+          <pre class="doc-content">FACILITY MAINTENANCE ENGINEERING DEPARTMENT
+TECHNICAL FIELD REPORT: INDUSTRIAL LOOP BYPASS
+
+REPORT ID: TECH-LOG-BPR-JAN
+SUBJECT: Technical Inspection and Maintenance Log (Jan 10–15)
+
+I. SITE VISIT OVERVIEW
+This report serves as the formal documentation of the field inspection and maintenance activities conducted at the Industrial Loop Bypass. The objective of this site visit was to assess the physical condition of the bypass infrastructure and perform necessary sensor maintenance within the designated five-day operational window.
+
+II. OBSERVED WEATHER CONDITIONS
+Weather data recorded during the inspection period at the bypass site:
+- January 10: Clear, 42°F, Humidity 35%
+- January 11: Overcast, 39°F, Wind 12mph NW
+- January 12: Light precipitation, 37°F, High humidity
+- January 13: Clear/Cold, 34°F, Humidity 28%
+- January 14: Partly Cloudy, 40°F, Intermittent gusts
+- January 15: Overcast, 38°F, Periodic light rain
+
+III. MAINTENANCE LOG &amp; SENSOR CLEANING
+Chronological activity log for the Sentinel-P12 unit and bypass assembly:
+
+[Jan 10, 09:15] Initial site arrival. Visual inspection of the Industrial Loop Bypass external casing. Surface oxidation check performed.
+
+[Jan 11, 13:40] Inspection of the bypass flange seals and valve mounting hardware. No physical deformities noted on the primary bypass line.
+
+[Jan 12, 10:00] Physical cleaning of the Sentinel-P12 sensor housing initiated. Technicians manually removed environmental debris and buildup from the external casing and lens aperture using standard non-abrasive solution.
+
+[Jan 13, 11:20] Review of the Sentinel-P12 housing bracket stability. Re-tensioned mounting bolts following the cleaning process to ensure alignment.
+
+[Jan 14, 14:00] Final inspection of the bypass interior access points. Secondary physical debris sweep of the surrounding sensor platform.
+
+[Jan 15, 15:30] Concluding site walkthrough. The Sentinel-P12 sensor housing is confirmed clear of obstruction. Log finalized for the five-day window.
+
+IV. SCOPE LIMITATIONS
+This documentation is restricted to the physical condition logs and the maintenance of the Sentinel-P12 sensor. Per departmental protocol, this report does not encompass performance data analysis, future maintenance scheduling, or broader facility impact assessments.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6263 · Off-entity</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING &amp; CALIBRATION DEPARTMENT
+TECHNICAL MAINTENANCE REPORT
+
+REPORT ID: #882-G4
+SUBJECT: Post-Maintenance System Integration Log
+
+Summary of Findings:
+During the scheduled maintenance window, the Guardian-V4 sensor profile was closely monitored for integration stability. Initial diagnostics confirmed that the sensor profile exhibited a static percentage reduction effect throughout the primary operational cycle. 
+
+Chronology of Incident:
+- Phase 1: Integration monitoring identified a persistent static offset impacting Guardian-V4 output values.
+- Phase 2: A system reboot event occurred during the operational cycle. 
+- Phase 3: Following the system reboot, the sensor profile was recalibrated. The reboot event resulted in the removal of the static offset previously observed. 
+
+Note: This log is limited to the technical behavior of the Guardian-V4 sensor during this specific window. It does not address root causes or future performance projections.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6264 · Off-entity</span></span></summary>
+          <pre class="doc-content">PRECISION OPTICAL SYSTEMS ENGINEERING DEPARTMENT
+INTERNAL OPERATIONAL LOG: APEX-T8 DIAGNOSTIC MAINTENANCE
+
+LOG ID: SENSOR PROFILE #442
+STATUS: COMPLETE
+
+[08:00] INITIAL OBSERVATION:
+Full diagnostic review of Apex-T8 sensor profile initiated. System monitoring indicates baseline operational variance.
+
+[08:45] ISSUE DETECTION:
+Real-time analysis has detected a persistent high-frequency noise effect affecting data stream integrity. Signal-to-noise ratio is currently outside optimal engineering parameters.
+
+[09:12] MAINTENANCE ACTION:
+Notification of a scheduled lens cleaning event. Automated abrasive-reduction protocols engaged. Manual lens purification performed by department technicians.
+
+[10:05] POST-MAINTENANCE EVALUATION:
+Following the cleaning event, a significant post-cleaning reduction in volatility was recorded. High-frequency noise has been mitigated. Sensor profile #442 has returned to stable operational status. Technical records archived.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6266 · Off-window</span></span></summary>
+          <pre class="doc-content">FACILITY ENGINEERING &amp; INSTRUMENTATION DEPARTMENT
+MAINTENANCE CLOSE-OUT REPORT
+
+Ref: Sentinel-P12 Sensor Recalibration
+Location: Industrial Loop Bypass
+
+Subject: Technical Operation Summary
+
+This report serves as the formal close-out for the maintenance performed on the Sentinel-P12 occupancy sensor situated on the Industrial Loop Bypass. 
+
+System diagnostics identified a significant additive drift error of 0.1250 per hour. Instrumentation logs indicate the specific start time of this calibration error was 2023-11-05 06:00:00. Following technical intervention, the repair was successfully finalized. The completion time of the repair is recorded as 2023-11-20 09:00:00.
+
+Post-repair validation has confirmed system integrity. Performance verification checks conducted throughout the early 2024 monitoring period confirm that sensor data remained stable with no further deviations recorded. All parameters now meet baseline operational standards.
+
+Status: Closed
+Validation: Verified</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6267 · Off-window</span></span></summary>
+          <pre class="doc-content">INDUSTRIAL LOOP BYPASS INFRASTRUCTURE OPERATIONS CENTER
+POST-INCIDENT MAINTENANCE CLOSURE REPORT: ILB-SENTINEL-P12
+
+REPORT SUMMARY:
+This document serves as the formal maintenance log for the Sentinel-P12 unit following the 2024 New Year period performance degradation. 
+
+INCIDENT LOGGING:
+- Initial Incident: A calibration shift was detected on the Sentinel-P12 unit at 2024-01-01 00:00:00.
+- Operational Impact: Unit performance was impacted by a fixed sensitivity reduction of 0.0500 per hour throughout the duration of the incident.
+
+MAINTENANCE ACTIONS:
+- Resolution: A system-wide reset and full repair of the unit was finalized on 2024-01-07 23:00:00.
+
+LIMITATION OF SCOPE:
+This report is limited to the technical performance logs and repair timeline of the Sentinel-P12 unit; it does not include root cause analysis or the resulting impact on the broader industrial loop.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6269 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION
+MAINTENANCE &amp; DATA ANALYTICS DIVISION
+
+TECHNICAL OPERATIONAL REPORT: SENTINEL-P12 BASELINE EVALUATION
+Location: Industrial Loop Bypass
+Subject: Analysis of Baseline Occupancy Drift and Cycle Trajectories
+
+EXECUTIVE SUMMARY
+This technical evaluation focuses on the data integrity and baseline patterns of the Sentinel-P12 sensor situated on the Industrial Loop Bypass. Recent analysis of the sensor’s historical output indicates a persistent and measurable shift in background occupancy levels. This report outlines the observed trend characteristics and the projected trajectory for the unit’s operational data.
+
+DATA ANALYSIS &amp; BASELINE OBSERVATIONS
+The primary finding of this evaluation is that the Sentinel-P12 sensor has shown a gradual ascent in baseline occupancy cycles. Over the designated observation period, the periodic oscillations inherent to the traffic flow data have maintained their frequency, yet their foundational values have shifted upward. 
+
+Detailed inspection of the cyclical patterns reveals that each subsequent cycle’s trough settles at a slightly elevated level compared to the preceding cycle. This phenomenon suggests that the sensor is not returning to a true zero or a consistent minimum during periods of low activity. Instead, there is a clear incremental rise in the floor of the data set. The data confirms that the sensor exhibits a persistent underlying growth in baseline occupancy, distinguished from temporary spikes or periodic traffic surges.
+
+TREND ADJUSTMENT AND RESIDUAL ANALYSIS
+To isolate the nature of this drift, the Maintenance &amp; Data Analytics Division applied a trend removal protocol to the raw data. By removing the specific additive trend from the sensor results, analysts were able to scrutinize the residual baseline behavior. 
+
+The result of this isolated analysis confirms a significant shift: even when accounting for external variables, the nightly occupancy minimums are notably higher than early records. This indicates that the drift is not a fluctuation but a steady accumulation within the baseline reporting mechanism itself.
+
+PROJECTIONS
+Based on the current slope of the baseline ascent, future behavior is expected to reflect a continuation of the underlying growth rate in baseline levels. Without intervention or adjustment to the processing algorithm, the reported occupancy values will continue to deviate from historical minimums at a consistent rate.
+
+TECHNICAL NOTES
+This evaluation is restricted to the historical and projected occupancy data patterns derived from the Sentinel-P12 hardware. This report does not account for external traffic causes, demographic shifts, or specific maintenance logs. Furthermore, hardware calibration details have not been included beyond the specific trend removal procedures mentioned in the analysis section.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6270 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">METROPOLITAN DEPARTMENT OF TRANSPORTATION
+TRAFFIC MONITORING DIVISION
+TECHNICAL OPERATIONS REPORT
+
+REPORT ID: DOT-TMD-SENTINEL-P12-8802
+SUBJECT: Sentinel-P12 Sensor Performance and Traffic Flow Analysis Report
+LOCATION: Industrial Loop Bypass (Station ID: ILB-04)
+
+1. EXECUTIVE SUMMARY
+This technical report details the recent performance shifts observed in the Sentinel-P12 sensor located on the Industrial Loop Bypass. Analysis of the current reporting period indicates a fundamental departure from historical data patterns, characterized by a transition from cyclic traffic behavior to a sustained, non-periodic accumulation. Personnel should take note of the data smoothing currently affecting regional flow metrics.
+
+2. SENSOR DATA CHARACTERIZATION
+Historically, the Industrial Loop Bypass has been characterized by well-defined daily fluctuations. However, sensor P12 has recently recorded a shift in which these typical fluctuations have been smoothed into a stable, high-volume plateau. The telemetry indicates that the occupancy rate has transitioned into a state of sustained accumulation that lacks the standard periodic reversals typical of commute-driven data.
+
+The current traffic regime is now dominated by constant, elevated volume rather than the intermittent periodic behavior observed in previous quarters. This plateau suggests a saturation point that is consistently maintained over the 24-hour monitoring cycle, effectively masking the traditional peak and off-peak interval signatures.
+
+3. PROJECTION AND BASELINE ADJUSTMENT
+Based on current flow modeling, the Department’s analytical tools have evaluated the underlying data structure of the bypass. Internal modeling suggests that occupancy levels are expected to drop to a lower baseline and remain constant once the current accumulation trend is removed from the active data stream. 
+
+Looking forward, the predictive modeling for this specific sensor point has been updated. Future time series are expected to maintain a flat trajectory due to the lack of observed periodicity. This lack of fluctuation is expected to persist, resulting in a linear data output for the foreseeable duration of the current technical regime.
+
+4. SCOPE AND LIMITATIONS
+This report is strictly limited to the technical observation of traffic flow data from the Sentinel-P12 sensor on the Industrial Loop Bypass. The findings contained herein address data characteristics and sensor output only. This report does not include the root cause of the traffic change, external environmental factors, or regional transportation policy changes.
+
+5. DISTRIBUTION
+- Traffic Monitoring Division Repository
+- Regional Infrastructure Modeling Group
+- Data Systems Maintenance Branch</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:yihong.tang@servicenow.com">Yihong Tang</a> · <a href="mailto:valentina.zantedeschi@servicenow.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

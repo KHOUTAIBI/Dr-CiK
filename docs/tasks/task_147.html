@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Echo-Guard Unit 7 · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Echo-Guard Unit 7</h1>
+          <p>Forecasting <strong>occupancy rate</strong> · sensor spike task</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="IoT sensor">IoT sensor</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="168">168</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="37">37</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>IoT sensor</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Certain</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">Specialist</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Straightforward</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2024-04-04 04:00:00</span><span>Forecast horizon · through 2024-04-12 03:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,266.91 17.87,253.54 23.73,240.18 29.60,238.57 35.46,242.85 41.33,244.45 47.19,242.85 53.06,239.11 58.92,220.39 64.79,192.05 70.65,14.00 76.52,14.00 82.38,241.78 88.25,255.15 94.11,259.42 99.98,264.77 105.84,267.98 111.71,271.72 117.57,273.33 123.44,270.65 129.30,266.91 135.17,254.61 141.03,243.38 146.90,239.64 152.76,239.11 158.63,237.50 164.49,236.97 170.36,234.29 176.22,154.09 182.09,163.18 187.95,150.35 193.82,149.28 199.68,215.04 205.55,250.87 211.41,255.68 217.28,260.49 223.14,267.44 229.01,271.19 234.87,273.33 240.74,273.33 246.60,271.72 252.47,265.31 258.33,261.56 264.20,246.06 270.06,242.85 275.93,239.64 281.79,235.90 287.66,237.50 293.52,228.95 299.39,230.55 305.25,228.41 311.12,238.04 316.98,243.38 322.85,250.33 328.71,251.40 334.58,256.22 340.44,265.84 346.31,269.58 352.17,273.86 358.04,276.00 363.90,275.47 369.77,270.65 375.63,268.51 381.50,258.89 387.36,251.94 393.23,249.80 399.09,243.92 404.96,238.57 410.82,232.69 416.69,228.95 422.55,223.07 428.42,232.69 434.28,239.11 440.15,246.06 446.01,253.54 451.88,261.56 457.74,267.98 463.61,273.86 469.47,271.72 475.34,267.44 481.20,262.63 487.07,249.80 492.93,224.13 498.80,241.24 504.66,238.04 510.53,246.06 516.39,246.59 522.26,240.71 528.12,236.97 533.99,227.88 539.85,224.67 545.72,228.41 551.58,254.61 557.45,256.75 563.31,260.49 569.18,267.98 575.04,271.72 580.91,274.40 586.77,273.86 592.64,271.19 598.50,266.38 604.37,251.40 610.23,224.67 616.10,238.04 621.96,244.45 627.83,246.59 633.69,243.92 639.56,240.18 645.42,235.90 651.29,229.48 657.15,224.67 663.02,228.95 668.88,255.68 674.75,256.75 680.61,260.49 686.48,264.77 692.34,271.19 698.21,273.33 704.07,273.33 709.94,271.19 715.80,266.38 721.67,253.01 727.53,187.78 733.40,228.95 739.26,242.85 745.13,246.59 750.99,245.52 756.86,239.64 762.72,234.29 768.59,229.48 774.45,193.12 780.32,225.74 786.18,254.61 792.05,256.22 797.91,258.36 803.78,265.84 809.64,271.19 815.51,273.86 821.37,273.86 827.24,271.72 833.10,266.38" /><polyline class="chart-future" points="833.10,266.38 838.97,253.01 844.83,235.90 850.70,223.60 856.56,240.18 862.43,240.71 868.29,242.31 874.16,241.24 880.02,240.18 885.89,235.90 891.75,231.09 897.62,227.34 903.48,216.11 909.35,194.19 915.21,246.06 921.08,253.01 926.94,255.15 932.81,257.82 938.67,264.77 944.54,269.58 950.40,257.29 956.27,254.61 962.13,247.13 968.00,241.78" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (192 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2024-04-04 04:00:00</td><td>2.7</td></tr><tr><td>2</td><td>Observed history</td><td>2024-04-04 05:00:00</td><td>5.2</td></tr><tr><td>3</td><td>Observed history</td><td>2024-04-04 06:00:00</td><td>7.7</td></tr><tr><td>4</td><td>Observed history</td><td>2024-04-04 07:00:00</td><td>14.4</td></tr><tr><td>5</td><td>Observed history</td><td>2024-04-04 08:00:00</td><td>8.0</td></tr><tr><td>6</td><td>Observed history</td><td>2024-04-04 09:00:00</td><td>7.2</td></tr><tr><td>7</td><td>Observed history</td><td>2024-04-04 10:00:00</td><td>6.9</td></tr><tr><td>8</td><td>Observed history</td><td>2024-04-04 11:00:00</td><td>7.2</td></tr><tr><td>9</td><td>Observed history</td><td>2024-04-04 12:00:00</td><td>7.9</td></tr><tr><td>10</td><td>Observed history</td><td>2024-04-04 13:00:00</td><td>9.0</td></tr><tr><td>11</td><td>Observed history</td><td>2024-04-04 14:00:00</td><td>11.4</td></tr><tr><td>12</td><td>Observed history</td><td>2024-04-04 15:00:00</td><td>16.7</td></tr><tr><td>13</td><td>Observed history</td><td>2024-04-04 16:00:00</td><td>50.0</td></tr><tr><td>14</td><td>Observed history</td><td>2024-04-04 17:00:00</td><td>50.0</td></tr><tr><td>15</td><td>Observed history</td><td>2024-04-04 18:00:00</td><td>7.4</td></tr><tr><td>16</td><td>Observed history</td><td>2024-04-04 19:00:00</td><td>5.3</td></tr><tr><td>17</td><td>Observed history</td><td>2024-04-04 20:00:00</td><td>4.9</td></tr><tr><td>18</td><td>Observed history</td><td>2024-04-04 21:00:00</td><td>4.1</td></tr><tr><td>19</td><td>Observed history</td><td>2024-04-04 22:00:00</td><td>3.1</td></tr><tr><td>20</td><td>Observed history</td><td>2024-04-04 23:00:00</td><td>2.5</td></tr><tr><td>21</td><td>Observed history</td><td>2024-04-05 00:00:00</td><td>1.8</td></tr><tr><td>22</td><td>Observed history</td><td>2024-04-05 01:00:00</td><td>1.6</td></tr><tr><td>23</td><td>Observed history</td><td>2024-04-05 02:00:00</td><td>1.5</td></tr><tr><td>24</td><td>Observed history</td><td>2024-04-05 03:00:00</td><td>2.0</td></tr><tr><td>25</td><td>Observed history</td><td>2024-04-05 04:00:00</td><td>2.7</td></tr><tr><td>26</td><td>Observed history</td><td>2024-04-05 05:00:00</td><td>5.0</td></tr><tr><td>27</td><td>Observed history</td><td>2024-04-05 06:00:00</td><td>7.1</td></tr><tr><td>28</td><td>Observed history</td><td>2024-04-05 07:00:00</td><td>10.0</td></tr><tr><td>29</td><td>Observed history</td><td>2024-04-05 08:00:00</td><td>7.8</td></tr><tr><td>30</td><td>Observed history</td><td>2024-04-05 09:00:00</td><td>7.9</td></tr><tr><td>31</td><td>Observed history</td><td>2024-04-05 10:00:00</td><td>8.2</td></tr><tr><td>32</td><td>Observed history</td><td>2024-04-05 11:00:00</td><td>8.3</td></tr><tr><td>33</td><td>Observed history</td><td>2024-04-05 12:00:00</td><td>8.8</td></tr><tr><td>34</td><td>Observed history</td><td>2024-04-05 13:00:00</td><td>10.5</td></tr><tr><td>35</td><td>Observed history</td><td>2024-04-05 14:00:00</td><td>23.8</td></tr><tr><td>36</td><td>Observed history</td><td>2024-04-05 15:00:00</td><td>22.1</td></tr><tr><td>37</td><td>Observed history</td><td>2024-04-05 16:00:00</td><td>24.5</td></tr><tr><td>38</td><td>Observed history</td><td>2024-04-05 17:00:00</td><td>24.7</td></tr><tr><td>39</td><td>Observed history</td><td>2024-04-05 18:00:00</td><td>12.4</td></tr><tr><td>40</td><td>Observed history</td><td>2024-04-05 19:00:00</td><td>6.8</td></tr><tr><td>41</td><td>Observed history</td><td>2024-04-05 20:00:00</td><td>5.7</td></tr><tr><td>42</td><td>Observed history</td><td>2024-04-05 21:00:00</td><td>4.8</td></tr><tr><td>43</td><td>Observed history</td><td>2024-04-05 22:00:00</td><td>3.9</td></tr><tr><td>44</td><td>Observed history</td><td>2024-04-05 23:00:00</td><td>2.6</td></tr><tr><td>45</td><td>Observed history</td><td>2024-04-06 00:00:00</td><td>1.9</td></tr><tr><td>46</td><td>Observed history</td><td>2024-04-06 01:00:00</td><td>1.5</td></tr><tr><td>47</td><td>Observed history</td><td>2024-04-06 02:00:00</td><td>1.5</td></tr><tr><td>48</td><td>Observed history</td><td>2024-04-06 03:00:00</td><td>1.5</td></tr><tr><td>49</td><td>Observed history</td><td>2024-04-06 04:00:00</td><td>1.8</td></tr><tr><td>50</td><td>Observed history</td><td>2024-04-06 05:00:00</td><td>3.0</td></tr><tr><td>51</td><td>Observed history</td><td>2024-04-06 06:00:00</td><td>3.7</td></tr><tr><td>52</td><td>Observed history</td><td>2024-04-06 07:00:00</td><td>5.1</td></tr><tr><td>53</td><td>Observed history</td><td>2024-04-06 08:00:00</td><td>6.6</td></tr><tr><td>54</td><td>Observed history</td><td>2024-04-06 09:00:00</td><td>7.2</td></tr><tr><td>55</td><td>Observed history</td><td>2024-04-06 10:00:00</td><td>7.8</td></tr><tr><td>56</td><td>Observed history</td><td>2024-04-06 11:00:00</td><td>8.5</td></tr><tr><td>57</td><td>Observed history</td><td>2024-04-06 12:00:00</td><td>8.2</td></tr><tr><td>58</td><td>Observed history</td><td>2024-04-06 13:00:00</td><td>9.5</td></tr><tr><td>59</td><td>Observed history</td><td>2024-04-06 14:00:00</td><td>9.8</td></tr><tr><td>60</td><td>Observed history</td><td>2024-04-06 15:00:00</td><td>9.5</td></tr><tr><td>61</td><td>Observed history</td><td>2024-04-06 16:00:00</td><td>9.9</td></tr><tr><td>62</td><td>Observed history</td><td>2024-04-06 17:00:00</td><td>8.1</td></tr><tr><td>63</td><td>Observed history</td><td>2024-04-06 18:00:00</td><td>7.1</td></tr><tr><td>64</td><td>Observed history</td><td>2024-04-06 19:00:00</td><td>6.6</td></tr><tr><td>65</td><td>Observed history</td><td>2024-04-06 20:00:00</td><td>5.8</td></tr><tr><td>66</td><td>Observed history</td><td>2024-04-06 21:00:00</td><td>5.6</td></tr><tr><td>67</td><td>Observed history</td><td>2024-04-06 22:00:00</td><td>4.7</td></tr><tr><td>68</td><td>Observed history</td><td>2024-04-06 23:00:00</td><td>2.9</td></tr><tr><td>69</td><td>Observed history</td><td>2024-04-07 00:00:00</td><td>2.2</td></tr><tr><td>70</td><td>Observed history</td><td>2024-04-07 01:00:00</td><td>1.8</td></tr><tr><td>71</td><td>Observed history</td><td>2024-04-07 02:00:00</td><td>1.4</td></tr><tr><td>72</td><td>Observed history</td><td>2024-04-07 03:00:00</td><td>1.0</td></tr><tr><td>73</td><td>Observed history</td><td>2024-04-07 04:00:00</td><td>1.1</td></tr><tr><td>74</td><td>Observed history</td><td>2024-04-07 05:00:00</td><td>2.0</td></tr><tr><td>75</td><td>Observed history</td><td>2024-04-07 06:00:00</td><td>2.4</td></tr><tr><td>76</td><td>Observed history</td><td>2024-04-07 07:00:00</td><td>3.4</td></tr><tr><td>77</td><td>Observed history</td><td>2024-04-07 08:00:00</td><td>4.2</td></tr><tr><td>78</td><td>Observed history</td><td>2024-04-07 09:00:00</td><td>5.5</td></tr><tr><td>79</td><td>Observed history</td><td>2024-04-07 10:00:00</td><td>5.9</td></tr><tr><td>80</td><td>Observed history</td><td>2024-04-07 11:00:00</td><td>7.0</td></tr><tr><td>81</td><td>Observed history</td><td>2024-04-07 12:00:00</td><td>8.0</td></tr><tr><td>82</td><td>Observed history</td><td>2024-04-07 13:00:00</td><td>8.7</td></tr><tr><td>83</td><td>Observed history</td><td>2024-04-07 14:00:00</td><td>9.1</td></tr><tr><td>84</td><td>Observed history</td><td>2024-04-07 15:00:00</td><td>9.8</td></tr><tr><td>85</td><td>Observed history</td><td>2024-04-07 16:00:00</td><td>10.9</td></tr><tr><td>86</td><td>Observed history</td><td>2024-04-07 17:00:00</td><td>9.1</td></tr><tr><td>87</td><td>Observed history</td><td>2024-04-07 18:00:00</td><td>8.7</td></tr><tr><td>88</td><td>Observed history</td><td>2024-04-07 19:00:00</td><td>7.9</td></tr><tr><td>89</td><td>Observed history</td><td>2024-04-07 20:00:00</td><td>6.6</td></tr><tr><td>90</td><td>Observed history</td><td>2024-04-07 21:00:00</td><td>5.2</td></tr><tr><td>91</td><td>Observed history</td><td>2024-04-07 22:00:00</td><td>3.7</td></tr><tr><td>92</td><td>Observed history</td><td>2024-04-07 23:00:00</td><td>2.5</td></tr><tr><td>93</td><td>Observed history</td><td>2024-04-08 00:00:00</td><td>1.7</td></tr><tr><td>94</td><td>Observed history</td><td>2024-04-08 01:00:00</td><td>1.4</td></tr><tr><td>95</td><td>Observed history</td><td>2024-04-08 02:00:00</td><td>1.8</td></tr><tr><td>96</td><td>Observed history</td><td>2024-04-08 03:00:00</td><td>2.6</td></tr><tr><td>97</td><td>Observed history</td><td>2024-04-08 04:00:00</td><td>3.5</td></tr><tr><td>98</td><td>Observed history</td><td>2024-04-08 05:00:00</td><td>5.9</td></tr><tr><td>99</td><td>Observed history</td><td>2024-04-08 06:00:00</td><td>8.6</td></tr><tr><td>100</td><td>Observed history</td><td>2024-04-08 07:00:00</td><td>10.7</td></tr><tr><td>101</td><td>Observed history</td><td>2024-04-08 08:00:00</td><td>7.5</td></tr><tr><td>102</td><td>Observed history</td><td>2024-04-08 09:00:00</td><td>8.1</td></tr><tr><td>103</td><td>Observed history</td><td>2024-04-08 10:00:00</td><td>6.6</td></tr><tr><td>104</td><td>Observed history</td><td>2024-04-08 11:00:00</td><td>6.5</td></tr><tr><td>105</td><td>Observed history</td><td>2024-04-08 12:00:00</td><td>7.1</td></tr><tr><td>106</td><td>Observed history</td><td>2024-04-08 13:00:00</td><td>7.6</td></tr><tr><td>107</td><td>Observed history</td><td>2024-04-08 14:00:00</td><td>8.3</td></tr><tr><td>108</td><td>Observed history</td><td>2024-04-08 15:00:00</td><td>10.0</td></tr><tr><td>109</td><td>Observed history</td><td>2024-04-08 16:00:00</td><td>10.6</td></tr><tr><td>110</td><td>Observed history</td><td>2024-04-08 17:00:00</td><td>9.9</td></tr><tr><td>111</td><td>Observed history</td><td>2024-04-08 18:00:00</td><td>6.9</td></tr><tr><td>112</td><td>Observed history</td><td>2024-04-08 19:00:00</td><td>5.0</td></tr><tr><td>113</td><td>Observed history</td><td>2024-04-08 20:00:00</td><td>4.6</td></tr><tr><td>114</td><td>Observed history</td><td>2024-04-08 21:00:00</td><td>3.9</td></tr><tr><td>115</td><td>Observed history</td><td>2024-04-08 22:00:00</td><td>2.5</td></tr><tr><td>116</td><td>Observed history</td><td>2024-04-08 23:00:00</td><td>1.8</td></tr><tr><td>117</td><td>Observed history</td><td>2024-04-09 00:00:00</td><td>1.6</td></tr><tr><td>118</td><td>Observed history</td><td>2024-04-09 01:00:00</td><td>1.3</td></tr><tr><td>119</td><td>Observed history</td><td>2024-04-09 02:00:00</td><td>1.4</td></tr><tr><td>120</td><td>Observed history</td><td>2024-04-09 03:00:00</td><td>1.9</td></tr><tr><td>121</td><td>Observed history</td><td>2024-04-09 04:00:00</td><td>2.8</td></tr><tr><td>122</td><td>Observed history</td><td>2024-04-09 05:00:00</td><td>5.6</td></tr><tr><td>123</td><td>Observed history</td><td>2024-04-09 06:00:00</td><td>8.5</td></tr><tr><td>124</td><td>Observed history</td><td>2024-04-09 07:00:00</td><td>10.6</td></tr><tr><td>125</td><td>Observed history</td><td>2024-04-09 08:00:00</td><td>8.1</td></tr><tr><td>126</td><td>Observed history</td><td>2024-04-09 09:00:00</td><td>6.9</td></tr><tr><td>127</td><td>Observed history</td><td>2024-04-09 10:00:00</td><td>6.5</td></tr><tr><td>128</td><td>Observed history</td><td>2024-04-09 11:00:00</td><td>7.0</td></tr><tr><td>129</td><td>Observed history</td><td>2024-04-09 12:00:00</td><td>7.4</td></tr><tr><td>130</td><td>Observed history</td><td>2024-04-09 13:00:00</td><td>7.7</td></tr><tr><td>131</td><td>Observed history</td><td>2024-04-09 14:00:00</td><td>8.5</td></tr><tr><td>132</td><td>Observed history</td><td>2024-04-09 15:00:00</td><td>9.7</td></tr><tr><td>133</td><td>Observed history</td><td>2024-04-09 16:00:00</td><td>10.6</td></tr><tr><td>134</td><td>Observed history</td><td>2024-04-09 17:00:00</td><td>9.8</td></tr><tr><td>135</td><td>Observed history</td><td>2024-04-09 18:00:00</td><td>6.9</td></tr><tr><td>136</td><td>Observed history</td><td>2024-04-09 19:00:00</td><td>4.8</td></tr><tr><td>137</td><td>Observed history</td><td>2024-04-09 20:00:00</td><td>4.6</td></tr><tr><td>138</td><td>Observed history</td><td>2024-04-09 21:00:00</td><td>3.9</td></tr><tr><td>139</td><td>Observed history</td><td>2024-04-09 22:00:00</td><td>3.1</td></tr><tr><td>140</td><td>Observed history</td><td>2024-04-09 23:00:00</td><td>1.9</td></tr><tr><td>141</td><td>Observed history</td><td>2024-04-10 00:00:00</td><td>1.4</td></tr><tr><td>142</td><td>Observed history</td><td>2024-04-10 01:00:00</td><td>1.5</td></tr><tr><td>143</td><td>Observed history</td><td>2024-04-10 02:00:00</td><td>1.5</td></tr><tr><td>144</td><td>Observed history</td><td>2024-04-10 03:00:00</td><td>1.9</td></tr><tr><td>145</td><td>Observed history</td><td>2024-04-10 04:00:00</td><td>2.8</td></tr><tr><td>146</td><td>Observed history</td><td>2024-04-10 05:00:00</td><td>5.3</td></tr><tr><td>147</td><td>Observed history</td><td>2024-04-10 06:00:00</td><td>8.3</td></tr><tr><td>148</td><td>Observed history</td><td>2024-04-10 07:00:00</td><td>17.5</td></tr><tr><td>149</td><td>Observed history</td><td>2024-04-10 08:00:00</td><td>9.8</td></tr><tr><td>150</td><td>Observed history</td><td>2024-04-10 09:00:00</td><td>7.2</td></tr><tr><td>151</td><td>Observed history</td><td>2024-04-10 10:00:00</td><td>6.5</td></tr><tr><td>152</td><td>Observed history</td><td>2024-04-10 11:00:00</td><td>6.7</td></tr><tr><td>153</td><td>Observed history</td><td>2024-04-10 12:00:00</td><td>7.6</td></tr><tr><td>154</td><td>Observed history</td><td>2024-04-10 13:00:00</td><td>7.8</td></tr><tr><td>155</td><td>Observed history</td><td>2024-04-10 14:00:00</td><td>8.8</td></tr><tr><td>156</td><td>Observed history</td><td>2024-04-10 15:00:00</td><td>9.7</td></tr><tr><td>157</td><td>Observed history</td><td>2024-04-10 16:00:00</td><td>16.5</td></tr><tr><td>158</td><td>Observed history</td><td>2024-04-10 17:00:00</td><td>10.4</td></tr><tr><td>159</td><td>Observed history</td><td>2024-04-10 18:00:00</td><td>6.7</td></tr><tr><td>160</td><td>Observed history</td><td>2024-04-10 19:00:00</td><td>5.0</td></tr><tr><td>161</td><td>Observed history</td><td>2024-04-10 20:00:00</td><td>4.7</td></tr><tr><td>162</td><td>Observed history</td><td>2024-04-10 21:00:00</td><td>4.3</td></tr><tr><td>163</td><td>Observed history</td><td>2024-04-10 22:00:00</td><td>2.9</td></tr><tr><td>164</td><td>Observed history</td><td>2024-04-10 23:00:00</td><td>1.9</td></tr><tr><td>165</td><td>Observed history</td><td>2024-04-11 00:00:00</td><td>1.6</td></tr><tr><td>166</td><td>Observed history</td><td>2024-04-11 01:00:00</td><td>1.4</td></tr><tr><td>167</td><td>Observed history</td><td>2024-04-11 02:00:00</td><td>1.4</td></tr><tr><td>168</td><td>Observed history</td><td>2024-04-11 03:00:00</td><td>1.8</td></tr><tr class="future"><td>169</td><td>Forecast horizon</td><td>2024-04-11 04:00:00</td><td>2.8</td></tr><tr class="future"><td>170</td><td>Forecast horizon</td><td>2024-04-11 05:00:00</td><td>5.3</td></tr><tr class="future"><td>171</td><td>Forecast horizon</td><td>2024-04-11 06:00:00</td><td>8.5</td></tr><tr class="future"><td>172</td><td>Forecast horizon</td><td>2024-04-11 07:00:00</td><td>10.8</td></tr><tr class="future"><td>173</td><td>Forecast horizon</td><td>2024-04-11 08:00:00</td><td>7.7</td></tr><tr class="future"><td>174</td><td>Forecast horizon</td><td>2024-04-11 09:00:00</td><td>7.6</td></tr><tr class="future"><td>175</td><td>Forecast horizon</td><td>2024-04-11 10:00:00</td><td>7.3</td></tr><tr class="future"><td>176</td><td>Forecast horizon</td><td>2024-04-11 11:00:00</td><td>7.5</td></tr><tr class="future"><td>177</td><td>Forecast horizon</td><td>2024-04-11 12:00:00</td><td>7.7</td></tr><tr class="future"><td>178</td><td>Forecast horizon</td><td>2024-04-11 13:00:00</td><td>8.5</td></tr><tr class="future"><td>179</td><td>Forecast horizon</td><td>2024-04-11 14:00:00</td><td>9.4</td></tr><tr class="future"><td>180</td><td>Forecast horizon</td><td>2024-04-11 15:00:00</td><td>10.1</td></tr><tr class="future"><td>181</td><td>Forecast horizon</td><td>2024-04-11 16:00:00</td><td>12.2</td></tr><tr class="future"><td>182</td><td>Forecast horizon</td><td>2024-04-11 17:00:00</td><td>16.3</td></tr><tr class="future"><td>183</td><td>Forecast horizon</td><td>2024-04-11 18:00:00</td><td>6.6</td></tr><tr class="future"><td>184</td><td>Forecast horizon</td><td>2024-04-11 19:00:00</td><td>5.3</td></tr><tr class="future"><td>185</td><td>Forecast horizon</td><td>2024-04-11 20:00:00</td><td>4.9</td></tr><tr class="future"><td>186</td><td>Forecast horizon</td><td>2024-04-11 21:00:00</td><td>4.4</td></tr><tr class="future"><td>187</td><td>Forecast horizon</td><td>2024-04-11 22:00:00</td><td>3.1</td></tr><tr class="future"><td>188</td><td>Forecast horizon</td><td>2024-04-11 23:00:00</td><td>2.2</td></tr><tr class="future"><td>189</td><td>Forecast horizon</td><td>2024-04-12 00:00:00</td><td>4.5</td></tr><tr class="future"><td>190</td><td>Forecast horizon</td><td>2024-04-12 01:00:00</td><td>5.0</td></tr><tr class="future"><td>191</td><td>Forecast horizon</td><td>2024-04-12 02:00:00</td><td>6.4</td></tr><tr class="future"><td>192</td><td>Forecast horizon</td><td>2024-04-12 03:00:00</td><td>7.4</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-147-context" id="forecast-task-147-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-147-context" id="forecast-task-147-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-147-context" id="forecast-task-147-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-147-view" id="forecast-task-147-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-147-view" id="forecast-task-147-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-147-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-147-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-147-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-147-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-147-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 306.76 L 32.94 292.86 L 37.88 278.96 L 42.83 241.71 L 47.77 277.29 L 52.71 281.74 L 57.65 283.41 L 62.60 281.74 L 67.54 277.85 L 72.48 271.73 L 77.42 258.39 L 82.37 228.92 L 87.31 43.79 L 92.25 43.79 L 97.19 280.63 L 102.14 292.30 L 107.08 294.52 L 112.02 298.97 L 116.96 304.53 L 121.91 307.87 L 126.85 311.76 L 131.79 312.87 L 136.73 313.43 L 141.68 310.65 L 146.62 306.76 L 151.56 293.97 L 156.50 282.29 L 161.45 266.17 L 166.39 278.40 L 171.33 277.85 L 176.27 276.18 L 181.21 275.62 L 186.16 272.84 L 191.10 263.39 L 196.04 189.45 L 200.98 198.90 L 205.93 185.56 L 210.87 184.45 L 215.81 252.83 L 220.75 283.96 L 225.70 290.08 L 230.64 295.08 L 235.58 300.08 L 240.52 307.31 L 245.47 311.20 L 250.41 313.43 L 255.35 313.43 L 260.29 313.43 L 265.24 311.76 L 270.18 305.09 L 275.12 301.20 L 280.06 293.41 L 285.01 285.07 L 289.95 281.74 L 294.89 278.40 L 299.83 274.51 L 304.77 276.18 L 309.72 268.95 L 314.66 267.28 L 319.60 268.95 L 324.54 266.73 L 329.49 276.73 L 334.43 282.29 L 339.37 285.07 L 344.31 289.52 L 349.26 290.63 L 354.20 295.64 L 359.14 305.64 L 364.08 309.54 L 369.03 311.76 L 373.97 313.98 L 378.91 316.21 L 383.85 315.65 L 388.80 310.65 L 393.74 308.42 L 398.68 302.86 L 403.62 298.42 L 408.57 291.19 L 413.51 288.97 L 418.45 282.85 L 423.39 277.29 L 428.34 273.40 L 433.28 271.18 L 438.22 267.28 L 443.16 261.17 L 448.10 271.18 L 453.05 273.40 L 457.99 277.85 L 462.93 285.07 L 467.87 292.86 L 472.82 301.20 L 477.76 307.87 L 482.70 312.32 L 487.64 313.98 L 492.59 311.76 L 497.53 307.31 L 502.47 302.31 L 507.41 288.97 L 512.36 273.95 L 517.30 262.28 L 522.24 280.07 L 527.18 276.73 L 532.13 285.07 L 537.07 285.63 L 542.01 282.29 L 546.95 279.51 L 551.90 275.62 L 556.84 266.17 L 561.78 262.84 L 566.72 266.73 L 571.66 283.41 L 576.61 293.97 L 581.55 296.19 L 586.49 300.08 L 591.43 307.87 L 596.38 311.76 L 601.32 312.87 L 606.26 314.54 L 611.20 313.98 L 616.15 311.20 L 621.09 306.20 L 626.03 290.63 L 630.97 274.51 L 635.92 262.84 L 640.86 276.73 L 645.80 283.41 L 650.74 285.63 L 655.69 282.85 L 660.63 280.63 L 665.57 278.96 L 670.51 274.51 L 675.46 267.84 L 680.40 262.84 L 685.34 267.28 L 690.28 283.41 L 695.23 295.08 L 700.17 296.19 L 705.11 300.08 L 710.05 304.53 L 714.99 311.20 L 719.94 313.98 L 724.88 313.43 L 729.82 313.43 L 734.76 311.20 L 739.71 306.20 L 744.65 292.30 L 749.59 275.62 L 754.53 224.48 L 759.48 267.28 L 764.42 281.74 L 769.36 285.63 L 774.30 284.52 L 779.25 279.51 L 784.19 278.40 L 789.13 272.84 L 794.07 267.84 L 799.02 230.04 L 803.96 263.95 L 808.90 284.52 L 813.84 293.97 L 818.79 295.64 L 823.73 297.86 L 828.67 305.64 L 833.61 311.20 L 838.55 312.87 L 843.50 313.98 L 848.44 313.98 L 853.38 311.76" /><path class="forecast-svg-actual" d="M 858.32 306.20 L 863.27 292.30 L 868.21 274.51 L 873.15 261.72 L 878.09 278.96 L 883.04 279.51 L 887.98 281.18 L 892.92 280.07 L 897.86 278.96 L 902.81 274.51 L 907.75 269.51 L 912.69 265.62 L 917.63 253.94 L 922.58 231.15 L 927.52 285.07 L 932.46 292.30 L 937.40 294.52 L 942.35 297.30 L 947.29 304.53 L 952.23 309.54 L 957.17 296.75 L 962.12 293.97 L 967.06 286.19 L 972.00 280.63" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 301.06 L 863.27 289.95 L 868.21 265.96 L 873.15 238.54 L 878.09 263.09 L 883.04 268.08 L 887.98 268.50 L 892.92 262.68 L 897.86 265.07 L 902.81 255.49 L 907.75 235.58 L 912.69 236.51 L 917.63 207.99 L 922.58 234.15 L 927.52 269.38 L 932.46 285.26 L 937.40 291.35 L 942.35 295.62 L 947.29 300.54 L 952.23 305.02 L 957.17 307.93 L 962.12 307.82 L 967.06 307.97 L 972.00 306.91 L 972.00 313.59 L 967.06 313.95 L 962.12 314.28 L 957.17 312.68 L 952.23 311.20 L 947.29 306.73 L 942.35 301.23 L 937.40 299.05 L 932.46 293.11 L 927.52 280.99 L 922.58 266.65 L 917.63 259.11 L 912.69 276.15 L 907.75 280.81 L 902.81 284.24 L 897.86 286.47 L 892.92 293.32 L 887.98 294.84 L 883.04 298.66 L 878.09 290.70 L 873.15 286.98 L 868.21 293.28 L 863.27 301.52 L 858.32 309.07 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 305.07 L 863.27 295.73 L 868.21 279.62 L 873.15 262.76 L 878.09 276.90 L 883.04 283.37 L 887.98 281.67 L 892.92 278.00 L 897.86 275.77 L 902.81 269.86 L 907.75 258.20 L 912.69 256.33 L 917.63 233.55 L 922.58 250.40 L 927.52 275.19 L 932.46 289.19 L 937.40 295.20 L 942.35 298.42 L 947.29 303.63 L 952.23 308.11 L 957.17 310.31 L 962.12 311.05 L 967.06 310.96 L 972.00 310.25" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="305.07" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 858.32 307.42 L 863.27 293.92 L 868.21 277.42 L 873.15 266.86 L 878.09 279.20 L 883.04 284.74 L 887.98 286.90 L 892.92 285.03 L 897.86 282.36 L 902.81 280.36 L 907.75 276.42 L 912.69 270.80 L 917.63 267.06 L 922.58 270.51 L 927.52 285.36 L 932.46 296.13 L 937.40 297.73 L 942.35 300.95 L 947.29 306.53 L 952.23 311.83 L 957.17 313.81 L 962.12 314.61 L 967.06 314.52 L 972.00 312.40" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="307.42" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 305.66 L 863.27 293.03 L 868.21 276.73 L 873.15 258.79 L 878.09 275.30 L 883.04 281.24 L 887.98 283.20 L 892.92 281.53 L 897.86 278.89 L 902.81 276.90 L 907.75 272.08 L 912.69 264.90 L 917.63 252.70 L 922.58 260.18 L 927.52 279.89 L 932.46 290.25 L 937.40 293.26 L 942.35 297.28 L 947.29 303.38 L 952.23 309.04 L 957.17 311.43 L 962.12 312.04 L 967.06 311.80 L 972.00 310.47" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="305.66" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 306.76 L 32.94 292.86 L 37.88 278.96 L 42.83 241.71 L 47.77 277.29 L 52.71 281.74 L 57.65 283.41 L 62.60 281.74 L 67.54 277.85 L 72.48 271.73 L 77.42 258.39 L 82.37 228.92 L 87.31 43.79 L 92.25 43.79 L 97.19 280.63 L 102.14 292.30 L 107.08 294.52 L 112.02 298.97 L 116.96 304.53 L 121.91 307.87 L 126.85 311.76 L 131.79 312.87 L 136.73 313.43 L 141.68 310.65 L 146.62 306.76 L 151.56 293.97 L 156.50 282.29 L 161.45 266.17 L 166.39 278.40 L 171.33 277.85 L 176.27 276.18 L 181.21 275.62 L 186.16 272.84 L 191.10 263.39 L 196.04 189.45 L 200.98 198.90 L 205.93 185.56 L 210.87 184.45 L 215.81 252.83 L 220.75 283.96 L 225.70 290.08 L 230.64 295.08 L 235.58 300.08 L 240.52 307.31 L 245.47 311.20 L 250.41 313.43 L 255.35 313.43 L 260.29 313.43 L 265.24 311.76 L 270.18 305.09 L 275.12 301.20 L 280.06 293.41 L 285.01 285.07 L 289.95 281.74 L 294.89 278.40 L 299.83 274.51 L 304.77 276.18 L 309.72 268.95 L 314.66 267.28 L 319.60 268.95 L 324.54 266.73 L 329.49 276.73 L 334.43 282.29 L 339.37 285.07 L 344.31 289.52 L 349.26 290.63 L 354.20 295.64 L 359.14 305.64 L 364.08 309.54 L 369.03 311.76 L 373.97 313.98 L 378.91 316.21 L 383.85 315.65 L 388.80 310.65 L 393.74 308.42 L 398.68 302.86 L 403.62 298.42 L 408.57 291.19 L 413.51 288.97 L 418.45 282.85 L 423.39 277.29 L 428.34 273.40 L 433.28 271.18 L 438.22 267.28 L 443.16 261.17 L 448.10 271.18 L 453.05 273.40 L 457.99 277.85 L 462.93 285.07 L 467.87 292.86 L 472.82 301.20 L 477.76 307.87 L 482.70 312.32 L 487.64 313.98 L 492.59 311.76 L 497.53 307.31 L 502.47 302.31 L 507.41 288.97 L 512.36 273.95 L 517.30 262.28 L 522.24 280.07 L 527.18 276.73 L 532.13 285.07 L 537.07 285.63 L 542.01 282.29 L 546.95 279.51 L 551.90 275.62 L 556.84 266.17 L 561.78 262.84 L 566.72 266.73 L 571.66 283.41 L 576.61 293.97 L 581.55 296.19 L 586.49 300.08 L 591.43 307.87 L 596.38 311.76 L 601.32 312.87 L 606.26 314.54 L 611.20 313.98 L 616.15 311.20 L 621.09 306.20 L 626.03 290.63 L 630.97 274.51 L 635.92 262.84 L 640.86 276.73 L 645.80 283.41 L 650.74 285.63 L 655.69 282.85 L 660.63 280.63 L 665.57 278.96 L 670.51 274.51 L 675.46 267.84 L 680.40 262.84 L 685.34 267.28 L 690.28 283.41 L 695.23 295.08 L 700.17 296.19 L 705.11 300.08 L 710.05 304.53 L 714.99 311.20 L 719.94 313.98 L 724.88 313.43 L 729.82 313.43 L 734.76 311.20 L 739.71 306.20 L 744.65 292.30 L 749.59 275.62 L 754.53 224.48 L 759.48 267.28 L 764.42 281.74 L 769.36 285.63 L 774.30 284.52 L 779.25 279.51 L 784.19 278.40 L 789.13 272.84 L 794.07 267.84 L 799.02 230.04 L 803.96 263.95 L 808.90 284.52 L 813.84 293.97 L 818.79 295.64 L 823.73 297.86 L 828.67 305.64 L 833.61 311.20 L 838.55 312.87 L 843.50 313.98 L 848.44 313.98 L 853.38 311.76" /><path class="forecast-svg-actual" d="M 858.32 306.20 L 863.27 292.30 L 868.21 274.51 L 873.15 261.72 L 878.09 278.96 L 883.04 279.51 L 887.98 281.18 L 892.92 280.07 L 897.86 278.96 L 902.81 274.51 L 907.75 269.51 L 912.69 265.62 L 917.63 253.94 L 922.58 231.15 L 927.52 285.07 L 932.46 292.30 L 937.40 294.52 L 942.35 297.30 L 947.29 304.53 L 952.23 309.54 L 957.17 296.75 L 962.12 293.97 L 967.06 286.19 L 972.00 280.63" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 301.06 L 863.27 289.95 L 868.21 265.96 L 873.15 238.54 L 878.09 263.09 L 883.04 268.08 L 887.98 268.50 L 892.92 262.68 L 897.86 265.07 L 902.81 255.49 L 907.75 235.58 L 912.69 236.51 L 917.63 207.99 L 922.58 234.15 L 927.52 269.38 L 932.46 285.26 L 937.40 291.35 L 942.35 295.62 L 947.29 300.54 L 952.23 305.02 L 957.17 307.93 L 962.12 307.82 L 967.06 307.97 L 972.00 306.91 L 972.00 313.59 L 967.06 313.95 L 962.12 314.28 L 957.17 312.68 L 952.23 311.20 L 947.29 306.73 L 942.35 301.23 L 937.40 299.05 L 932.46 293.11 L 927.52 280.99 L 922.58 266.65 L 917.63 259.11 L 912.69 276.15 L 907.75 280.81 L 902.81 284.24 L 897.86 286.47 L 892.92 293.32 L 887.98 294.84 L 883.04 298.66 L 878.09 290.70 L 873.15 286.98 L 868.21 293.28 L 863.27 301.52 L 858.32 309.07 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 305.07 L 863.27 295.73 L 868.21 279.62 L 873.15 262.76 L 878.09 276.90 L 883.04 283.37 L 887.98 281.67 L 892.92 278.00 L 897.86 275.77 L 902.81 269.86 L 907.75 258.20 L 912.69 256.33 L 917.63 233.55 L 922.58 250.40 L 927.52 275.19 L 932.46 289.19 L 937.40 295.20 L 942.35 298.42 L 947.29 303.63 L 952.23 308.11 L 957.17 310.31 L 962.12 311.05 L 967.06 310.96 L 972.00 310.25" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="305.07" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 306.76 L 32.94 292.86 L 37.88 278.96 L 42.83 241.71 L 47.77 277.29 L 52.71 281.74 L 57.65 283.41 L 62.60 281.74 L 67.54 277.85 L 72.48 271.73 L 77.42 258.39 L 82.37 228.92 L 87.31 43.79 L 92.25 43.79 L 97.19 280.63 L 102.14 292.30 L 107.08 294.52 L 112.02 298.97 L 116.96 304.53 L 121.91 307.87 L 126.85 311.76 L 131.79 312.87 L 136.73 313.43 L 141.68 310.65 L 146.62 306.76 L 151.56 293.97 L 156.50 282.29 L 161.45 266.17 L 166.39 278.40 L 171.33 277.85 L 176.27 276.18 L 181.21 275.62 L 186.16 272.84 L 191.10 263.39 L 196.04 189.45 L 200.98 198.90 L 205.93 185.56 L 210.87 184.45 L 215.81 252.83 L 220.75 283.96 L 225.70 290.08 L 230.64 295.08 L 235.58 300.08 L 240.52 307.31 L 245.47 311.20 L 250.41 313.43 L 255.35 313.43 L 260.29 313.43 L 265.24 311.76 L 270.18 305.09 L 275.12 301.20 L 280.06 293.41 L 285.01 285.07 L 289.95 281.74 L 294.89 278.40 L 299.83 274.51 L 304.77 276.18 L 309.72 268.95 L 314.66 267.28 L 319.60 268.95 L 324.54 266.73 L 329.49 276.73 L 334.43 282.29 L 339.37 285.07 L 344.31 289.52 L 349.26 290.63 L 354.20 295.64 L 359.14 305.64 L 364.08 309.54 L 369.03 311.76 L 373.97 313.98 L 378.91 316.21 L 383.85 315.65 L 388.80 310.65 L 393.74 308.42 L 398.68 302.86 L 403.62 298.42 L 408.57 291.19 L 413.51 288.97 L 418.45 282.85 L 423.39 277.29 L 428.34 273.40 L 433.28 271.18 L 438.22 267.28 L 443.16 261.17 L 448.10 271.18 L 453.05 273.40 L 457.99 277.85 L 462.93 285.07 L 467.87 292.86 L 472.82 301.20 L 477.76 307.87 L 482.70 312.32 L 487.64 313.98 L 492.59 311.76 L 497.53 307.31 L 502.47 302.31 L 507.41 288.97 L 512.36 273.95 L 517.30 262.28 L 522.24 280.07 L 527.18 276.73 L 532.13 285.07 L 537.07 285.63 L 542.01 282.29 L 546.95 279.51 L 551.90 275.62 L 556.84 266.17 L 561.78 262.84 L 566.72 266.73 L 571.66 283.41 L 576.61 293.97 L 581.55 296.19 L 586.49 300.08 L 591.43 307.87 L 596.38 311.76 L 601.32 312.87 L 606.26 314.54 L 611.20 313.98 L 616.15 311.20 L 621.09 306.20 L 626.03 290.63 L 630.97 274.51 L 635.92 262.84 L 640.86 276.73 L 645.80 283.41 L 650.74 285.63 L 655.69 282.85 L 660.63 280.63 L 665.57 278.96 L 670.51 274.51 L 675.46 267.84 L 680.40 262.84 L 685.34 267.28 L 690.28 283.41 L 695.23 295.08 L 700.17 296.19 L 705.11 300.08 L 710.05 304.53 L 714.99 311.20 L 719.94 313.98 L 724.88 313.43 L 729.82 313.43 L 734.76 311.20 L 739.71 306.20 L 744.65 292.30 L 749.59 275.62 L 754.53 224.48 L 759.48 267.28 L 764.42 281.74 L 769.36 285.63 L 774.30 284.52 L 779.25 279.51 L 784.19 278.40 L 789.13 272.84 L 794.07 267.84 L 799.02 230.04 L 803.96 263.95 L 808.90 284.52 L 813.84 293.97 L 818.79 295.64 L 823.73 297.86 L 828.67 305.64 L 833.61 311.20 L 838.55 312.87 L 843.50 313.98 L 848.44 313.98 L 853.38 311.76" /><path class="forecast-svg-actual" d="M 858.32 306.20 L 863.27 292.30 L 868.21 274.51 L 873.15 261.72 L 878.09 278.96 L 883.04 279.51 L 887.98 281.18 L 892.92 280.07 L 897.86 278.96 L 902.81 274.51 L 907.75 269.51 L 912.69 265.62 L 917.63 253.94 L 922.58 231.15 L 927.52 285.07 L 932.46 292.30 L 937.40 294.52 L 942.35 297.30 L 947.29 304.53 L 952.23 309.54 L 957.17 296.75 L 962.12 293.97 L 967.06 286.19 L 972.00 280.63" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 307.07 L 863.27 293.36 L 868.21 276.45 L 873.15 265.06 L 878.09 278.21 L 883.04 284.04 L 887.98 286.13 L 892.92 284.04 L 897.86 281.55 L 902.81 279.69 L 907.75 275.51 L 912.69 269.44 L 917.63 265.23 L 922.58 269.18 L 927.52 284.89 L 932.46 295.55 L 937.40 296.88 L 942.35 300.38 L 947.29 305.75 L 952.23 311.65 L 957.17 313.40 L 962.12 314.21 L 967.06 314.27 L 972.00 312.03 L 972.00 312.78 L 967.06 314.76 L 962.12 315.00 L 957.17 314.21 L 952.23 312.01 L 947.29 307.32 L 942.35 301.52 L 937.40 298.58 L 932.46 296.70 L 927.52 285.84 L 922.58 271.83 L 917.63 268.89 L 912.69 272.16 L 907.75 277.34 L 902.81 281.03 L 897.86 283.17 L 892.92 286.02 L 887.98 287.66 L 883.04 285.44 L 878.09 280.20 L 873.15 268.66 L 868.21 278.40 L 863.27 294.49 L 858.32 307.77 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 307.42 L 863.27 293.92 L 868.21 277.42 L 873.15 266.86 L 878.09 279.20 L 883.04 284.74 L 887.98 286.90 L 892.92 285.03 L 897.86 282.36 L 902.81 280.36 L 907.75 276.42 L 912.69 270.80 L 917.63 267.06 L 922.58 270.51 L 927.52 285.36 L 932.46 296.13 L 937.40 297.73 L 942.35 300.95 L 947.29 306.53 L 952.23 311.83 L 957.17 313.81 L 962.12 314.61 L 967.06 314.52 L 972.00 312.40" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="307.42" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 306.76 L 32.94 292.86 L 37.88 278.96 L 42.83 241.71 L 47.77 277.29 L 52.71 281.74 L 57.65 283.41 L 62.60 281.74 L 67.54 277.85 L 72.48 271.73 L 77.42 258.39 L 82.37 228.92 L 87.31 43.79 L 92.25 43.79 L 97.19 280.63 L 102.14 292.30 L 107.08 294.52 L 112.02 298.97 L 116.96 304.53 L 121.91 307.87 L 126.85 311.76 L 131.79 312.87 L 136.73 313.43 L 141.68 310.65 L 146.62 306.76 L 151.56 293.97 L 156.50 282.29 L 161.45 266.17 L 166.39 278.40 L 171.33 277.85 L 176.27 276.18 L 181.21 275.62 L 186.16 272.84 L 191.10 263.39 L 196.04 189.45 L 200.98 198.90 L 205.93 185.56 L 210.87 184.45 L 215.81 252.83 L 220.75 283.96 L 225.70 290.08 L 230.64 295.08 L 235.58 300.08 L 240.52 307.31 L 245.47 311.20 L 250.41 313.43 L 255.35 313.43 L 260.29 313.43 L 265.24 311.76 L 270.18 305.09 L 275.12 301.20 L 280.06 293.41 L 285.01 285.07 L 289.95 281.74 L 294.89 278.40 L 299.83 274.51 L 304.77 276.18 L 309.72 268.95 L 314.66 267.28 L 319.60 268.95 L 324.54 266.73 L 329.49 276.73 L 334.43 282.29 L 339.37 285.07 L 344.31 289.52 L 349.26 290.63 L 354.20 295.64 L 359.14 305.64 L 364.08 309.54 L 369.03 311.76 L 373.97 313.98 L 378.91 316.21 L 383.85 315.65 L 388.80 310.65 L 393.74 308.42 L 398.68 302.86 L 403.62 298.42 L 408.57 291.19 L 413.51 288.97 L 418.45 282.85 L 423.39 277.29 L 428.34 273.40 L 433.28 271.18 L 438.22 267.28 L 443.16 261.17 L 448.10 271.18 L 453.05 273.40 L 457.99 277.85 L 462.93 285.07 L 467.87 292.86 L 472.82 301.20 L 477.76 307.87 L 482.70 312.32 L 487.64 313.98 L 492.59 311.76 L 497.53 307.31 L 502.47 302.31 L 507.41 288.97 L 512.36 273.95 L 517.30 262.28 L 522.24 280.07 L 527.18 276.73 L 532.13 285.07 L 537.07 285.63 L 542.01 282.29 L 546.95 279.51 L 551.90 275.62 L 556.84 266.17 L 561.78 262.84 L 566.72 266.73 L 571.66 283.41 L 576.61 293.97 L 581.55 296.19 L 586.49 300.08 L 591.43 307.87 L 596.38 311.76 L 601.32 312.87 L 606.26 314.54 L 611.20 313.98 L 616.15 311.20 L 621.09 306.20 L 626.03 290.63 L 630.97 274.51 L 635.92 262.84 L 640.86 276.73 L 645.80 283.41 L 650.74 285.63 L 655.69 282.85 L 660.63 280.63 L 665.57 278.96 L 670.51 274.51 L 675.46 267.84 L 680.40 262.84 L 685.34 267.28 L 690.28 283.41 L 695.23 295.08 L 700.17 296.19 L 705.11 300.08 L 710.05 304.53 L 714.99 311.20 L 719.94 313.98 L 724.88 313.43 L 729.82 313.43 L 734.76 311.20 L 739.71 306.20 L 744.65 292.30 L 749.59 275.62 L 754.53 224.48 L 759.48 267.28 L 764.42 281.74 L 769.36 285.63 L 774.30 284.52 L 779.25 279.51 L 784.19 278.40 L 789.13 272.84 L 794.07 267.84 L 799.02 230.04 L 803.96 263.95 L 808.90 284.52 L 813.84 293.97 L 818.79 295.64 L 823.73 297.86 L 828.67 305.64 L 833.61 311.20 L 838.55 312.87 L 843.50 313.98 L 848.44 313.98 L 853.38 311.76" /><path class="forecast-svg-actual" d="M 858.32 306.20 L 863.27 292.30 L 868.21 274.51 L 873.15 261.72 L 878.09 278.96 L 883.04 279.51 L 887.98 281.18 L 892.92 280.07 L 897.86 278.96 L 902.81 274.51 L 907.75 269.51 L 912.69 265.62 L 917.63 253.94 L 922.58 231.15 L 927.52 285.07 L 932.46 292.30 L 937.40 294.52 L 942.35 297.30 L 947.29 304.53 L 952.23 309.54 L 957.17 296.75 L 962.12 293.97 L 967.06 286.19 L 972.00 280.63" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 304.94 L 863.27 290.32 L 868.21 273.13 L 873.15 254.33 L 878.09 273.48 L 883.04 280.53 L 887.98 282.70 L 892.92 280.76 L 897.86 277.90 L 902.81 275.86 L 907.75 270.49 L 912.69 262.49 L 917.63 247.77 L 922.58 256.83 L 927.52 277.70 L 932.46 289.03 L 937.40 292.53 L 942.35 296.79 L 947.29 302.71 L 952.23 308.39 L 957.17 311.06 L 962.12 311.75 L 967.06 311.42 L 972.00 309.82 L 972.00 311.12 L 967.06 312.18 L 962.12 312.33 L 957.17 311.81 L 952.23 309.70 L 947.29 304.05 L 942.35 297.78 L 937.40 293.98 L 932.46 291.47 L 927.52 282.08 L 922.58 263.53 L 917.63 257.62 L 912.69 267.31 L 907.75 273.67 L 902.81 277.94 L 897.86 279.88 L 892.92 282.30 L 887.98 283.71 L 883.04 281.94 L 878.09 277.12 L 873.15 263.26 L 868.21 280.34 L 863.27 295.73 L 858.32 306.38 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 305.66 L 863.27 293.03 L 868.21 276.73 L 873.15 258.79 L 878.09 275.30 L 883.04 281.24 L 887.98 283.20 L 892.92 281.53 L 897.86 278.89 L 902.81 276.90 L 907.75 272.08 L 912.69 264.90 L 917.63 252.70 L 922.58 260.18 L 927.52 279.89 L 932.46 290.25 L 937.40 293.26 L 942.35 297.28 L 947.29 303.38 L 952.23 309.04 L 957.17 311.43 L 962.12 312.04 L 967.06 311.80 L 972.00 310.47" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="305.66" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 306.76 L 32.94 292.86 L 37.88 278.96 L 42.83 241.71 L 47.77 277.29 L 52.71 281.74 L 57.65 283.41 L 62.60 281.74 L 67.54 277.85 L 72.48 271.73 L 77.42 258.39 L 82.37 228.92 L 87.31 43.79 L 92.25 43.79 L 97.19 280.63 L 102.14 292.30 L 107.08 294.52 L 112.02 298.97 L 116.96 304.53 L 121.91 307.87 L 126.85 311.76 L 131.79 312.87 L 136.73 313.43 L 141.68 310.65 L 146.62 306.76 L 151.56 293.97 L 156.50 282.29 L 161.45 266.17 L 166.39 278.40 L 171.33 277.85 L 176.27 276.18 L 181.21 275.62 L 186.16 272.84 L 191.10 263.39 L 196.04 189.45 L 200.98 198.90 L 205.93 185.56 L 210.87 184.45 L 215.81 252.83 L 220.75 283.96 L 225.70 290.08 L 230.64 295.08 L 235.58 300.08 L 240.52 307.31 L 245.47 311.20 L 250.41 313.43 L 255.35 313.43 L 260.29 313.43 L 265.24 311.76 L 270.18 305.09 L 275.12 301.20 L 280.06 293.41 L 285.01 285.07 L 289.95 281.74 L 294.89 278.40 L 299.83 274.51 L 304.77 276.18 L 309.72 268.95 L 314.66 267.28 L 319.60 268.95 L 324.54 266.73 L 329.49 276.73 L 334.43 282.29 L 339.37 285.07 L 344.31 289.52 L 349.26 290.63 L 354.20 295.64 L 359.14 305.64 L 364.08 309.54 L 369.03 311.76 L 373.97 313.98 L 378.91 316.21 L 383.85 315.65 L 388.80 310.65 L 393.74 308.42 L 398.68 302.86 L 403.62 298.42 L 408.57 291.19 L 413.51 288.97 L 418.45 282.85 L 423.39 277.29 L 428.34 273.40 L 433.28 271.18 L 438.22 267.28 L 443.16 261.17 L 448.10 271.18 L 453.05 273.40 L 457.99 277.85 L 462.93 285.07 L 467.87 292.86 L 472.82 301.20 L 477.76 307.87 L 482.70 312.32 L 487.64 313.98 L 492.59 311.76 L 497.53 307.31 L 502.47 302.31 L 507.41 288.97 L 512.36 273.95 L 517.30 262.28 L 522.24 280.07 L 527.18 276.73 L 532.13 285.07 L 537.07 285.63 L 542.01 282.29 L 546.95 279.51 L 551.90 275.62 L 556.84 266.17 L 561.78 262.84 L 566.72 266.73 L 571.66 283.41 L 576.61 293.97 L 581.55 296.19 L 586.49 300.08 L 591.43 307.87 L 596.38 311.76 L 601.32 312.87 L 606.26 314.54 L 611.20 313.98 L 616.15 311.20 L 621.09 306.20 L 626.03 290.63 L 630.97 274.51 L 635.92 262.84 L 640.86 276.73 L 645.80 283.41 L 650.74 285.63 L 655.69 282.85 L 660.63 280.63 L 665.57 278.96 L 670.51 274.51 L 675.46 267.84 L 680.40 262.84 L 685.34 267.28 L 690.28 283.41 L 695.23 295.08 L 700.17 296.19 L 705.11 300.08 L 710.05 304.53 L 714.99 311.20 L 719.94 313.98 L 724.88 313.43 L 729.82 313.43 L 734.76 311.20 L 739.71 306.20 L 744.65 292.30 L 749.59 275.62 L 754.53 224.48 L 759.48 267.28 L 764.42 281.74 L 769.36 285.63 L 774.30 284.52 L 779.25 279.51 L 784.19 278.40 L 789.13 272.84 L 794.07 267.84 L 799.02 230.04 L 803.96 263.95 L 808.90 284.52 L 813.84 293.97 L 818.79 295.64 L 823.73 297.86 L 828.67 305.64 L 833.61 311.20 L 838.55 312.87 L 843.50 313.98 L 848.44 313.98 L 853.38 311.76" /><path class="forecast-svg-actual" d="M 858.32 306.20 L 863.27 292.30 L 868.21 274.51 L 873.15 261.72 L 878.09 278.96 L 883.04 279.51 L 887.98 281.18 L 892.92 280.07 L 897.86 278.96 L 902.81 274.51 L 907.75 269.51 L 912.69 265.62 L 917.63 253.94 L 922.58 231.15 L 927.52 285.07 L 932.46 292.30 L 937.40 294.52 L 942.35 297.30 L 947.29 304.53 L 952.23 309.54 L 957.17 296.75 L 962.12 293.97 L 967.06 286.19 L 972.00 280.63" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 306.62 L 863.27 291.37 L 868.21 274.98 L 873.15 260.36 L 878.09 275.85 L 883.04 281.30 L 887.98 284.41 L 892.92 282.77 L 897.86 279.86 L 902.81 277.22 L 907.75 272.91 L 912.69 267.17 L 917.63 262.73 L 922.58 266.60 L 927.52 283.14 L 932.46 293.88 L 937.40 295.89 L 942.35 299.52 L 947.29 304.79 L 952.23 310.83 L 957.17 313.09 L 962.12 313.74 L 967.06 313.55 L 972.00 311.39 L 972.00 311.86 L 967.06 314.06 L 962.12 314.10 L 957.17 313.54 L 952.23 311.31 L 947.29 305.52 L 942.35 300.07 L 937.40 296.37 L 932.46 294.59 L 927.52 283.76 L 922.58 268.54 L 917.63 263.57 L 912.69 267.62 L 907.75 274.07 L 902.81 278.48 L 897.86 280.46 L 892.92 283.55 L 887.98 284.71 L 883.04 282.67 L 878.09 277.75 L 873.15 263.66 L 868.21 275.20 L 863.27 291.85 L 858.32 306.84 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 306.73 L 863.27 291.61 L 868.21 275.09 L 873.15 262.01 L 878.09 276.80 L 883.04 281.98 L 887.98 284.56 L 892.92 283.16 L 897.86 280.16 L 902.81 277.85 L 907.75 273.49 L 912.69 267.39 L 917.63 263.15 L 922.58 267.57 L 927.52 283.45 L 932.46 294.24 L 937.40 296.13 L 942.35 299.80 L 947.29 305.15 L 952.23 311.07 L 957.17 313.32 L 962.12 313.92 L 967.06 313.81 L 972.00 311.63" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="306.73" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 305.34 L 863.27 292.17 L 868.21 275.60 L 873.15 258.01 L 878.09 275.46 L 883.04 281.16 L 887.98 283.11 L 892.92 281.32 L 897.86 278.77 L 902.81 276.53 L 907.75 271.07 L 912.69 263.51 L 917.63 253.22 L 922.58 260.82 L 927.52 280.26 L 932.46 290.36 L 937.40 293.34 L 942.35 297.41 L 947.29 303.51 L 952.23 309.06 L 957.17 311.55 L 962.12 312.18 L 967.06 311.93 L 972.00 310.44" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="305.34" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 306.76 L 32.94 292.86 L 37.88 278.96 L 42.83 241.71 L 47.77 277.29 L 52.71 281.74 L 57.65 283.41 L 62.60 281.74 L 67.54 277.85 L 72.48 271.73 L 77.42 258.39 L 82.37 228.92 L 87.31 43.79 L 92.25 43.79 L 97.19 280.63 L 102.14 292.30 L 107.08 294.52 L 112.02 298.97 L 116.96 304.53 L 121.91 307.87 L 126.85 311.76 L 131.79 312.87 L 136.73 313.43 L 141.68 310.65 L 146.62 306.76 L 151.56 293.97 L 156.50 282.29 L 161.45 266.17 L 166.39 278.40 L 171.33 277.85 L 176.27 276.18 L 181.21 275.62 L 186.16 272.84 L 191.10 263.39 L 196.04 189.45 L 200.98 198.90 L 205.93 185.56 L 210.87 184.45 L 215.81 252.83 L 220.75 283.96 L 225.70 290.08 L 230.64 295.08 L 235.58 300.08 L 240.52 307.31 L 245.47 311.20 L 250.41 313.43 L 255.35 313.43 L 260.29 313.43 L 265.24 311.76 L 270.18 305.09 L 275.12 301.20 L 280.06 293.41 L 285.01 285.07 L 289.95 281.74 L 294.89 278.40 L 299.83 274.51 L 304.77 276.18 L 309.72 268.95 L 314.66 267.28 L 319.60 268.95 L 324.54 266.73 L 329.49 276.73 L 334.43 282.29 L 339.37 285.07 L 344.31 289.52 L 349.26 290.63 L 354.20 295.64 L 359.14 305.64 L 364.08 309.54 L 369.03 311.76 L 373.97 313.98 L 378.91 316.21 L 383.85 315.65 L 388.80 310.65 L 393.74 308.42 L 398.68 302.86 L 403.62 298.42 L 408.57 291.19 L 413.51 288.97 L 418.45 282.85 L 423.39 277.29 L 428.34 273.40 L 433.28 271.18 L 438.22 267.28 L 443.16 261.17 L 448.10 271.18 L 453.05 273.40 L 457.99 277.85 L 462.93 285.07 L 467.87 292.86 L 472.82 301.20 L 477.76 307.87 L 482.70 312.32 L 487.64 313.98 L 492.59 311.76 L 497.53 307.31 L 502.47 302.31 L 507.41 288.97 L 512.36 273.95 L 517.30 262.28 L 522.24 280.07 L 527.18 276.73 L 532.13 285.07 L 537.07 285.63 L 542.01 282.29 L 546.95 279.51 L 551.90 275.62 L 556.84 266.17 L 561.78 262.84 L 566.72 266.73 L 571.66 283.41 L 576.61 293.97 L 581.55 296.19 L 586.49 300.08 L 591.43 307.87 L 596.38 311.76 L 601.32 312.87 L 606.26 314.54 L 611.20 313.98 L 616.15 311.20 L 621.09 306.20 L 626.03 290.63 L 630.97 274.51 L 635.92 262.84 L 640.86 276.73 L 645.80 283.41 L 650.74 285.63 L 655.69 282.85 L 660.63 280.63 L 665.57 278.96 L 670.51 274.51 L 675.46 267.84 L 680.40 262.84 L 685.34 267.28 L 690.28 283.41 L 695.23 295.08 L 700.17 296.19 L 705.11 300.08 L 710.05 304.53 L 714.99 311.20 L 719.94 313.98 L 724.88 313.43 L 729.82 313.43 L 734.76 311.20 L 739.71 306.20 L 744.65 292.30 L 749.59 275.62 L 754.53 224.48 L 759.48 267.28 L 764.42 281.74 L 769.36 285.63 L 774.30 284.52 L 779.25 279.51 L 784.19 278.40 L 789.13 272.84 L 794.07 267.84 L 799.02 230.04 L 803.96 263.95 L 808.90 284.52 L 813.84 293.97 L 818.79 295.64 L 823.73 297.86 L 828.67 305.64 L 833.61 311.20 L 838.55 312.87 L 843.50 313.98 L 848.44 313.98 L 853.38 311.76" /><path class="forecast-svg-actual" d="M 858.32 306.20 L 863.27 292.30 L 868.21 274.51 L 873.15 261.72 L 878.09 278.96 L 883.04 279.51 L 887.98 281.18 L 892.92 280.07 L 897.86 278.96 L 902.81 274.51 L 907.75 269.51 L 912.69 265.62 L 917.63 253.94 L 922.58 231.15 L 927.52 285.07 L 932.46 292.30 L 937.40 294.52 L 942.35 297.30 L 947.29 304.53 L 952.23 309.54 L 957.17 296.75 L 962.12 293.97 L 967.06 286.19 L 972.00 280.63" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 306.62 L 863.27 291.37 L 868.21 274.98 L 873.15 260.36 L 878.09 275.85 L 883.04 281.30 L 887.98 284.41 L 892.92 282.77 L 897.86 279.86 L 902.81 277.22 L 907.75 272.91 L 912.69 267.17 L 917.63 262.73 L 922.58 266.60 L 927.52 283.14 L 932.46 293.88 L 937.40 295.89 L 942.35 299.52 L 947.29 304.79 L 952.23 310.83 L 957.17 313.09 L 962.12 313.74 L 967.06 313.55 L 972.00 311.39 L 972.00 311.86 L 967.06 314.06 L 962.12 314.10 L 957.17 313.54 L 952.23 311.31 L 947.29 305.52 L 942.35 300.07 L 937.40 296.37 L 932.46 294.59 L 927.52 283.76 L 922.58 268.54 L 917.63 263.57 L 912.69 267.62 L 907.75 274.07 L 902.81 278.48 L 897.86 280.46 L 892.92 283.55 L 887.98 284.71 L 883.04 282.67 L 878.09 277.75 L 873.15 263.66 L 868.21 275.20 L 863.27 291.85 L 858.32 306.84 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 306.73 L 863.27 291.61 L 868.21 275.09 L 873.15 262.01 L 878.09 276.80 L 883.04 281.98 L 887.98 284.56 L 892.92 283.16 L 897.86 280.16 L 902.81 277.85 L 907.75 273.49 L 912.69 267.39 L 917.63 263.15 L 922.58 267.57 L 927.52 283.45 L 932.46 294.24 L 937.40 296.13 L 942.35 299.80 L 947.29 305.15 L 952.23 311.07 L 957.17 313.32 L 962.12 313.92 L 967.06 313.81 L 972.00 311.63" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="306.73" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 306.76 L 32.94 292.86 L 37.88 278.96 L 42.83 241.71 L 47.77 277.29 L 52.71 281.74 L 57.65 283.41 L 62.60 281.74 L 67.54 277.85 L 72.48 271.73 L 77.42 258.39 L 82.37 228.92 L 87.31 43.79 L 92.25 43.79 L 97.19 280.63 L 102.14 292.30 L 107.08 294.52 L 112.02 298.97 L 116.96 304.53 L 121.91 307.87 L 126.85 311.76 L 131.79 312.87 L 136.73 313.43 L 141.68 310.65 L 146.62 306.76 L 151.56 293.97 L 156.50 282.29 L 161.45 266.17 L 166.39 278.40 L 171.33 277.85 L 176.27 276.18 L 181.21 275.62 L 186.16 272.84 L 191.10 263.39 L 196.04 189.45 L 200.98 198.90 L 205.93 185.56 L 210.87 184.45 L 215.81 252.83 L 220.75 283.96 L 225.70 290.08 L 230.64 295.08 L 235.58 300.08 L 240.52 307.31 L 245.47 311.20 L 250.41 313.43 L 255.35 313.43 L 260.29 313.43 L 265.24 311.76 L 270.18 305.09 L 275.12 301.20 L 280.06 293.41 L 285.01 285.07 L 289.95 281.74 L 294.89 278.40 L 299.83 274.51 L 304.77 276.18 L 309.72 268.95 L 314.66 267.28 L 319.60 268.95 L 324.54 266.73 L 329.49 276.73 L 334.43 282.29 L 339.37 285.07 L 344.31 289.52 L 349.26 290.63 L 354.20 295.64 L 359.14 305.64 L 364.08 309.54 L 369.03 311.76 L 373.97 313.98 L 378.91 316.21 L 383.85 315.65 L 388.80 310.65 L 393.74 308.42 L 398.68 302.86 L 403.62 298.42 L 408.57 291.19 L 413.51 288.97 L 418.45 282.85 L 423.39 277.29 L 428.34 273.40 L 433.28 271.18 L 438.22 267.28 L 443.16 261.17 L 448.10 271.18 L 453.05 273.40 L 457.99 277.85 L 462.93 285.07 L 467.87 292.86 L 472.82 301.20 L 477.76 307.87 L 482.70 312.32 L 487.64 313.98 L 492.59 311.76 L 497.53 307.31 L 502.47 302.31 L 507.41 288.97 L 512.36 273.95 L 517.30 262.28 L 522.24 280.07 L 527.18 276.73 L 532.13 285.07 L 537.07 285.63 L 542.01 282.29 L 546.95 279.51 L 551.90 275.62 L 556.84 266.17 L 561.78 262.84 L 566.72 266.73 L 571.66 283.41 L 576.61 293.97 L 581.55 296.19 L 586.49 300.08 L 591.43 307.87 L 596.38 311.76 L 601.32 312.87 L 606.26 314.54 L 611.20 313.98 L 616.15 311.20 L 621.09 306.20 L 626.03 290.63 L 630.97 274.51 L 635.92 262.84 L 640.86 276.73 L 645.80 283.41 L 650.74 285.63 L 655.69 282.85 L 660.63 280.63 L 665.57 278.96 L 670.51 274.51 L 675.46 267.84 L 680.40 262.84 L 685.34 267.28 L 690.28 283.41 L 695.23 295.08 L 700.17 296.19 L 705.11 300.08 L 710.05 304.53 L 714.99 311.20 L 719.94 313.98 L 724.88 313.43 L 729.82 313.43 L 734.76 311.20 L 739.71 306.20 L 744.65 292.30 L 749.59 275.62 L 754.53 224.48 L 759.48 267.28 L 764.42 281.74 L 769.36 285.63 L 774.30 284.52 L 779.25 279.51 L 784.19 278.40 L 789.13 272.84 L 794.07 267.84 L 799.02 230.04 L 803.96 263.95 L 808.90 284.52 L 813.84 293.97 L 818.79 295.64 L 823.73 297.86 L 828.67 305.64 L 833.61 311.20 L 838.55 312.87 L 843.50 313.98 L 848.44 313.98 L 853.38 311.76" /><path class="forecast-svg-actual" d="M 858.32 306.20 L 863.27 292.30 L 868.21 274.51 L 873.15 261.72 L 878.09 278.96 L 883.04 279.51 L 887.98 281.18 L 892.92 280.07 L 897.86 278.96 L 902.81 274.51 L 907.75 269.51 L 912.69 265.62 L 917.63 253.94 L 922.58 231.15 L 927.52 285.07 L 932.46 292.30 L 937.40 294.52 L 942.35 297.30 L 947.29 304.53 L 952.23 309.54 L 957.17 296.75 L 962.12 293.97 L 967.06 286.19 L 972.00 280.63" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 305.12 L 863.27 291.90 L 868.21 275.12 L 873.15 256.38 L 878.09 275.33 L 883.04 280.94 L 887.98 282.70 L 892.92 280.87 L 897.86 278.00 L 902.81 275.43 L 907.75 269.36 L 912.69 261.27 L 917.63 249.33 L 922.58 258.01 L 927.52 279.43 L 932.46 289.53 L 937.40 292.89 L 942.35 297.10 L 947.29 303.40 L 952.23 308.97 L 957.17 311.37 L 962.12 311.71 L 967.06 311.37 L 972.00 309.79 L 972.00 311.10 L 967.06 312.48 L 962.12 312.64 L 957.17 311.74 L 952.23 309.14 L 947.29 303.62 L 942.35 297.73 L 937.40 293.78 L 932.46 291.18 L 927.52 281.08 L 922.58 263.64 L 917.63 257.12 L 912.69 265.74 L 907.75 272.77 L 902.81 277.63 L 897.86 279.55 L 892.92 281.78 L 887.98 283.52 L 883.04 281.39 L 878.09 275.59 L 873.15 259.64 L 868.21 276.07 L 863.27 292.44 L 858.32 305.56 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 305.34 L 863.27 292.17 L 868.21 275.60 L 873.15 258.01 L 878.09 275.46 L 883.04 281.16 L 887.98 283.11 L 892.92 281.32 L 897.86 278.77 L 902.81 276.53 L 907.75 271.07 L 912.69 263.51 L 917.63 253.22 L 922.58 260.82 L 927.52 280.26 L 932.46 290.36 L 937.40 293.34 L 942.35 297.41 L 947.29 303.51 L 952.23 309.06 L 957.17 311.55 L 962.12 312.18 L 967.06 311.93 L 972.00 310.44" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="305.34" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 294.32 L 32.94 281.08 L 37.88 267.83 L 42.83 232.35 L 47.77 266.25 L 52.71 270.48 L 57.65 272.07 L 62.60 270.48 L 67.54 266.77 L 72.48 260.95 L 77.42 248.24 L 82.37 220.17 L 87.31 43.79 L 92.25 43.79 L 97.19 269.42 L 102.14 280.55 L 107.08 282.66 L 112.02 286.90 L 116.96 292.20 L 121.91 295.38 L 126.85 299.08 L 131.79 300.14 L 136.73 300.67 L 141.68 298.02 L 146.62 294.32 L 151.56 282.13 L 156.50 271.01 L 161.45 255.65 L 166.39 267.30 L 171.33 266.77 L 176.27 265.19 L 181.21 264.66 L 186.16 262.01 L 191.10 253.00 L 196.04 182.56 L 200.98 191.56 L 205.93 178.85 L 210.87 177.79 L 215.81 242.94 L 220.75 272.60 L 225.70 278.43 L 230.64 283.19 L 235.58 287.96 L 240.52 294.85 L 245.47 298.55 L 250.41 300.67 L 255.35 300.67 L 260.29 300.67 L 265.24 299.08 L 270.18 292.73 L 275.12 289.02 L 280.06 281.61 L 285.01 273.66 L 289.95 270.48 L 294.89 267.30 L 299.83 263.60 L 304.77 265.19 L 309.72 258.30 L 314.66 256.71 L 319.60 258.30 L 324.54 256.18 L 329.49 265.72 L 334.43 271.01 L 339.37 273.66 L 344.31 277.90 L 349.26 278.96 L 354.20 283.72 L 359.14 293.26 L 364.08 296.96 L 369.03 299.08 L 373.97 301.20 L 378.91 303.32 L 383.85 302.79 L 388.80 298.02 L 393.74 295.91 L 398.68 290.61 L 403.62 286.37 L 408.57 279.49 L 413.51 277.37 L 418.45 271.54 L 423.39 266.25 L 428.34 262.54 L 433.28 260.42 L 438.22 256.71 L 443.16 250.89 L 448.10 260.42 L 453.05 262.54 L 457.99 266.77 L 462.93 273.66 L 467.87 281.08 L 472.82 289.02 L 477.76 295.38 L 482.70 299.61 L 487.64 301.20 L 492.59 299.08 L 497.53 294.85 L 502.47 290.08 L 507.41 277.37 L 512.36 263.07 L 517.30 251.94 L 522.24 268.89 L 527.18 265.72 L 532.13 273.66 L 537.07 274.19 L 542.01 271.01 L 546.95 268.36 L 551.90 264.66 L 556.84 255.65 L 561.78 252.47 L 566.72 256.18 L 571.66 272.07 L 576.61 282.13 L 581.55 284.25 L 586.49 287.96 L 591.43 295.38 L 596.38 299.08 L 601.32 300.14 L 606.26 301.73 L 611.20 301.20 L 616.15 298.55 L 621.09 293.79 L 626.03 278.96 L 630.97 263.60 L 635.92 252.47 L 640.86 265.72 L 645.80 272.07 L 650.74 274.19 L 655.69 271.54 L 660.63 269.42 L 665.57 267.83 L 670.51 263.60 L 675.46 257.24 L 680.40 252.47 L 685.34 256.71 L 690.28 272.07 L 695.23 283.19 L 700.17 284.25 L 705.11 287.96 L 710.05 292.20 L 714.99 298.55 L 719.94 301.20 L 724.88 300.67 L 729.82 300.67 L 734.76 298.55 L 739.71 293.79 L 744.65 280.55 L 749.59 264.66 L 754.53 215.93 L 759.48 256.71 L 764.42 270.48 L 769.36 274.19 L 774.30 273.13 L 779.25 268.36 L 784.19 267.30 L 789.13 262.01 L 794.07 257.24 L 799.02 221.23 L 803.96 253.53 L 808.90 273.13 L 813.84 282.13 L 818.79 283.72 L 823.73 285.84 L 828.67 293.26 L 833.61 298.55 L 838.55 300.14 L 843.50 301.20 L 848.44 301.20 L 853.38 299.08" /><path class="forecast-svg-actual" d="M 858.32 293.79 L 863.27 280.55 L 868.21 263.60 L 873.15 251.42 L 878.09 267.83 L 883.04 268.36 L 887.98 269.95 L 892.92 268.89 L 897.86 267.83 L 902.81 263.60 L 907.75 258.83 L 912.69 255.12 L 917.63 244.00 L 922.58 222.28 L 927.52 273.66 L 932.46 280.55 L 937.40 282.66 L 942.35 285.31 L 947.29 292.20 L 952.23 296.96 L 957.17 284.78 L 962.12 282.13 L 967.06 274.72 L 972.00 269.42" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 293.57 L 863.27 280.32 L 868.21 263.55 L 873.15 245.67 L 878.09 262.62 L 883.04 269.15 L 887.98 270.51 L 892.92 267.55 L 897.86 265.58 L 902.81 259.86 L 907.75 251.66 L 912.69 230.96 L 917.63 197.07 L 922.58 205.73 L 927.52 267.62 L 932.46 277.73 L 937.40 280.21 L 942.35 282.89 L 947.29 290.04 L 952.23 295.52 L 957.17 298.49 L 962.12 298.90 L 967.06 299.27 L 972.00 296.71 L 972.00 299.25 L 967.06 301.29 L 962.12 301.29 L 957.17 300.20 L 952.23 297.88 L 947.29 294.08 L 942.35 287.94 L 937.40 284.19 L 932.46 281.93 L 927.52 274.68 L 922.58 266.24 L 917.63 257.23 L 912.69 257.40 L 907.75 261.11 L 902.81 266.80 L 897.86 271.54 L 892.92 273.30 L 887.98 274.80 L 883.04 274.20 L 878.09 268.97 L 873.15 257.03 L 868.21 267.95 L 863.27 282.69 L 858.32 295.65 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 294.61 L 863.27 281.50 L 868.21 265.75 L 873.15 251.35 L 878.09 265.79 L 883.04 271.68 L 887.98 272.65 L 892.92 270.42 L 897.86 268.56 L 902.81 263.33 L 907.75 256.39 L 912.69 244.18 L 917.63 227.15 L 922.58 235.98 L 927.52 271.15 L 932.46 279.83 L 937.40 282.20 L 942.35 285.42 L 947.29 292.06 L 952.23 296.70 L 957.17 299.35 L 962.12 300.10 L 967.06 300.28 L 972.00 297.98" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="294.61" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 858.32 279.99 L 863.27 273.58 L 868.21 270.98 L 873.15 265.66 L 878.09 251.30 L 883.04 253.73 L 887.98 250.59 L 892.92 246.52 L 897.86 245.17 L 902.81 258.35 L 907.75 255.39 L 912.69 262.83 L 917.63 255.14 L 922.58 269.54 L 927.52 257.99 L 932.46 267.89 L 937.40 278.39 L 942.35 283.83 L 947.29 289.65 L 952.23 287.02 L 957.17 286.17 L 962.12 287.81 L 967.06 282.01 L 972.00 290.65" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="279.99" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 858.32 295.81 L 863.27 293.87 L 868.21 292.73 L 873.15 291.31 L 878.09 293.02 L 883.04 292.64 L 887.98 298.37 L 892.92 297.31 L 897.86 290.53 L 902.81 294.62 L 907.75 296.92 L 912.69 297.36 L 917.63 292.95 L 922.58 298.40 L 927.52 299.41 L 932.46 291.01 L 937.40 295.13 L 942.35 294.02 L 947.29 290.33 L 952.23 298.13 L 957.17 298.76 L 962.12 295.72 L 967.06 296.90 L 972.00 296.90" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="295.81" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 282.68 L 32.94 270.05 L 37.88 257.42 L 42.83 223.59 L 47.77 255.91 L 52.71 259.95 L 57.65 261.47 L 62.60 259.95 L 67.54 256.41 L 72.48 250.86 L 77.42 238.74 L 82.37 211.97 L 87.31 43.79 L 92.25 43.79 L 97.19 258.94 L 102.14 269.55 L 107.08 271.57 L 112.02 275.61 L 116.96 280.66 L 121.91 283.69 L 126.85 287.22 L 131.79 288.23 L 136.73 288.74 L 141.68 286.21 L 146.62 282.68 L 151.56 271.06 L 156.50 260.46 L 161.45 245.81 L 166.39 256.92 L 171.33 256.41 L 176.27 254.90 L 181.21 254.39 L 186.16 251.87 L 191.10 243.28 L 196.04 176.11 L 200.98 184.70 L 205.93 172.58 L 210.87 171.57 L 215.81 233.69 L 220.75 261.97 L 225.70 267.53 L 230.64 272.07 L 235.58 276.62 L 240.52 283.18 L 245.47 286.72 L 250.41 288.74 L 255.35 288.74 L 260.29 288.74 L 265.24 287.22 L 270.18 281.16 L 275.12 277.63 L 280.06 270.56 L 285.01 262.98 L 289.95 259.95 L 294.89 256.92 L 299.83 253.38 L 304.77 254.90 L 309.72 248.33 L 314.66 246.82 L 319.60 248.33 L 324.54 246.31 L 329.49 255.40 L 334.43 260.46 L 339.37 262.98 L 344.31 267.02 L 349.26 268.03 L 354.20 272.58 L 359.14 281.67 L 364.08 285.20 L 369.03 287.22 L 373.97 289.24 L 378.91 291.26 L 383.85 290.76 L 388.80 286.21 L 393.74 284.19 L 398.68 279.14 L 403.62 275.10 L 408.57 268.54 L 413.51 266.52 L 418.45 260.96 L 423.39 255.91 L 428.34 252.37 L 433.28 250.35 L 438.22 246.82 L 443.16 241.26 L 448.10 250.35 L 453.05 252.37 L 457.99 256.41 L 462.93 262.98 L 467.87 270.05 L 472.82 277.63 L 477.76 283.69 L 482.70 287.73 L 487.64 289.24 L 492.59 287.22 L 497.53 283.18 L 502.47 278.64 L 507.41 266.52 L 512.36 252.88 L 517.30 242.27 L 522.24 258.43 L 527.18 255.40 L 532.13 262.98 L 537.07 263.49 L 542.01 260.46 L 546.95 257.93 L 551.90 254.39 L 556.84 245.81 L 561.78 242.78 L 566.72 246.31 L 571.66 261.47 L 576.61 271.06 L 581.55 273.08 L 586.49 276.62 L 591.43 283.69 L 596.38 287.22 L 601.32 288.23 L 606.26 289.75 L 611.20 289.24 L 616.15 286.72 L 621.09 282.17 L 626.03 268.03 L 630.97 253.38 L 635.92 242.78 L 640.86 255.40 L 645.80 261.47 L 650.74 263.49 L 655.69 260.96 L 660.63 258.94 L 665.57 257.42 L 670.51 253.38 L 675.46 247.32 L 680.40 242.78 L 685.34 246.82 L 690.28 261.47 L 695.23 272.07 L 700.17 273.08 L 705.11 276.62 L 710.05 280.66 L 714.99 286.72 L 719.94 289.24 L 724.88 288.74 L 729.82 288.74 L 734.76 286.72 L 739.71 282.17 L 744.65 269.55 L 749.59 254.39 L 754.53 207.93 L 759.48 246.82 L 764.42 259.95 L 769.36 263.49 L 774.30 262.48 L 779.25 257.93 L 784.19 256.92 L 789.13 251.87 L 794.07 247.32 L 799.02 212.98 L 803.96 243.79 L 808.90 262.48 L 813.84 271.06 L 818.79 272.58 L 823.73 274.60 L 828.67 281.67 L 833.61 286.72 L 838.55 288.23 L 843.50 289.24 L 848.44 289.24 L 853.38 287.22" /><path class="forecast-svg-actual" d="M 858.32 282.17 L 863.27 269.55 L 868.21 253.38 L 873.15 241.77 L 878.09 257.42 L 883.04 257.93 L 887.98 259.45 L 892.92 258.43 L 897.86 257.42 L 902.81 253.38 L 907.75 248.84 L 912.69 245.30 L 917.63 234.70 L 922.58 213.99 L 927.52 262.98 L 932.46 269.55 L 937.40 271.57 L 942.35 274.09 L 947.29 280.66 L 952.23 285.20 L 957.17 273.59 L 962.12 271.06 L 967.06 263.99 L 972.00 258.94" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 281.97 L 863.27 269.33 L 868.21 253.34 L 873.15 236.29 L 878.09 252.45 L 883.04 258.68 L 887.98 259.97 L 892.92 257.15 L 897.86 255.27 L 902.81 249.82 L 907.75 242.00 L 912.69 222.27 L 917.63 189.95 L 922.58 198.20 L 927.52 257.22 L 932.46 266.86 L 937.40 269.22 L 942.35 271.78 L 947.29 278.60 L 952.23 283.83 L 957.17 286.66 L 962.12 287.05 L 967.06 287.40 L 972.00 284.96 L 972.00 287.38 L 967.06 289.32 L 962.12 289.33 L 957.17 288.29 L 952.23 286.07 L 947.29 282.45 L 942.35 276.60 L 937.40 273.03 L 932.46 270.87 L 927.52 263.96 L 922.58 255.90 L 917.63 247.32 L 912.69 247.47 L 907.75 251.02 L 902.81 256.44 L 897.86 260.96 L 892.92 262.64 L 887.98 264.07 L 883.04 263.50 L 878.09 258.51 L 873.15 247.12 L 868.21 257.54 L 863.27 271.59 L 858.32 283.95 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 282.96 L 863.27 270.46 L 868.21 255.44 L 873.15 241.71 L 878.09 255.48 L 883.04 261.09 L 887.98 262.02 L 892.92 259.89 L 897.86 258.12 L 902.81 253.13 L 907.75 246.51 L 912.69 234.87 L 917.63 218.63 L 922.58 227.05 L 927.52 260.59 L 932.46 268.87 L 937.40 271.12 L 942.35 274.19 L 947.29 280.53 L 952.23 284.95 L 957.17 287.47 L 962.12 288.19 L 967.06 288.36 L 972.00 286.17" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="282.96" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 282.68 L 32.94 270.05 L 37.88 257.42 L 42.83 223.59 L 47.77 255.91 L 52.71 259.95 L 57.65 261.47 L 62.60 259.95 L 67.54 256.41 L 72.48 250.86 L 77.42 238.74 L 82.37 211.97 L 87.31 43.79 L 92.25 43.79 L 97.19 258.94 L 102.14 269.55 L 107.08 271.57 L 112.02 275.61 L 116.96 280.66 L 121.91 283.69 L 126.85 287.22 L 131.79 288.23 L 136.73 288.74 L 141.68 286.21 L 146.62 282.68 L 151.56 271.06 L 156.50 260.46 L 161.45 245.81 L 166.39 256.92 L 171.33 256.41 L 176.27 254.90 L 181.21 254.39 L 186.16 251.87 L 191.10 243.28 L 196.04 176.11 L 200.98 184.70 L 205.93 172.58 L 210.87 171.57 L 215.81 233.69 L 220.75 261.97 L 225.70 267.53 L 230.64 272.07 L 235.58 276.62 L 240.52 283.18 L 245.47 286.72 L 250.41 288.74 L 255.35 288.74 L 260.29 288.74 L 265.24 287.22 L 270.18 281.16 L 275.12 277.63 L 280.06 270.56 L 285.01 262.98 L 289.95 259.95 L 294.89 256.92 L 299.83 253.38 L 304.77 254.90 L 309.72 248.33 L 314.66 246.82 L 319.60 248.33 L 324.54 246.31 L 329.49 255.40 L 334.43 260.46 L 339.37 262.98 L 344.31 267.02 L 349.26 268.03 L 354.20 272.58 L 359.14 281.67 L 364.08 285.20 L 369.03 287.22 L 373.97 289.24 L 378.91 291.26 L 383.85 290.76 L 388.80 286.21 L 393.74 284.19 L 398.68 279.14 L 403.62 275.10 L 408.57 268.54 L 413.51 266.52 L 418.45 260.96 L 423.39 255.91 L 428.34 252.37 L 433.28 250.35 L 438.22 246.82 L 443.16 241.26 L 448.10 250.35 L 453.05 252.37 L 457.99 256.41 L 462.93 262.98 L 467.87 270.05 L 472.82 277.63 L 477.76 283.69 L 482.70 287.73 L 487.64 289.24 L 492.59 287.22 L 497.53 283.18 L 502.47 278.64 L 507.41 266.52 L 512.36 252.88 L 517.30 242.27 L 522.24 258.43 L 527.18 255.40 L 532.13 262.98 L 537.07 263.49 L 542.01 260.46 L 546.95 257.93 L 551.90 254.39 L 556.84 245.81 L 561.78 242.78 L 566.72 246.31 L 571.66 261.47 L 576.61 271.06 L 581.55 273.08 L 586.49 276.62 L 591.43 283.69 L 596.38 287.22 L 601.32 288.23 L 606.26 289.75 L 611.20 289.24 L 616.15 286.72 L 621.09 282.17 L 626.03 268.03 L 630.97 253.38 L 635.92 242.78 L 640.86 255.40 L 645.80 261.47 L 650.74 263.49 L 655.69 260.96 L 660.63 258.94 L 665.57 257.42 L 670.51 253.38 L 675.46 247.32 L 680.40 242.78 L 685.34 246.82 L 690.28 261.47 L 695.23 272.07 L 700.17 273.08 L 705.11 276.62 L 710.05 280.66 L 714.99 286.72 L 719.94 289.24 L 724.88 288.74 L 729.82 288.74 L 734.76 286.72 L 739.71 282.17 L 744.65 269.55 L 749.59 254.39 L 754.53 207.93 L 759.48 246.82 L 764.42 259.95 L 769.36 263.49 L 774.30 262.48 L 779.25 257.93 L 784.19 256.92 L 789.13 251.87 L 794.07 247.32 L 799.02 212.98 L 803.96 243.79 L 808.90 262.48 L 813.84 271.06 L 818.79 272.58 L 823.73 274.60 L 828.67 281.67 L 833.61 286.72 L 838.55 288.23 L 843.50 289.24 L 848.44 289.24 L 853.38 287.22" /><path class="forecast-svg-actual" d="M 858.32 282.17 L 863.27 269.55 L 868.21 253.38 L 873.15 241.77 L 878.09 257.42 L 883.04 257.93 L 887.98 259.45 L 892.92 258.43 L 897.86 257.42 L 902.81 253.38 L 907.75 248.84 L 912.69 245.30 L 917.63 234.70 L 922.58 213.99 L 927.52 262.98 L 932.46 269.55 L 937.40 271.57 L 942.35 274.09 L 947.29 280.66 L 952.23 285.20 L 957.17 273.59 L 962.12 271.06 L 967.06 263.99 L 972.00 258.94" /><path class="forecast-svg-band" fill="#8064a2" d="M 858.32 253.28 L 863.27 239.39 L 868.21 240.56 L 873.15 234.35 L 878.09 213.31 L 883.04 223.78 L 887.98 214.80 L 892.92 208.70 L 897.86 201.89 L 902.81 231.01 L 907.75 220.51 L 912.69 223.99 L 917.63 219.33 L 922.58 231.47 L 927.52 224.75 L 932.46 235.26 L 937.40 240.86 L 942.35 250.83 L 947.29 262.93 L 952.23 258.59 L 957.17 257.26 L 962.12 260.60 L 967.06 249.22 L 972.00 258.98 L 972.00 299.38 L 967.06 292.66 L 962.12 292.35 L 957.17 292.57 L 952.23 292.85 L 947.29 293.52 L 942.35 294.53 L 937.40 294.11 L 932.46 279.69 L 927.52 271.33 L 922.58 286.64 L 917.63 271.32 L 912.69 281.31 L 907.75 270.61 L 902.81 265.74 L 897.86 269.74 L 892.92 265.49 L 887.98 267.15 L 883.04 264.18 L 878.09 270.01 L 873.15 276.34 L 868.21 280.28 L 863.27 286.41 L 858.32 284.75 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 858.32 269.01 L 863.27 262.90 L 868.21 260.42 L 873.15 255.35 L 878.09 241.66 L 883.04 243.98 L 887.98 240.98 L 892.92 237.10 L 897.86 235.82 L 902.81 248.38 L 907.75 245.56 L 912.69 252.65 L 917.63 245.32 L 922.58 259.06 L 927.52 248.04 L 932.46 257.47 L 937.40 267.49 L 942.35 272.68 L 947.29 278.22 L 952.23 275.72 L 957.17 274.91 L 962.12 276.47 L 967.06 270.94 L 972.00 279.18" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="269.01" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 282.68 L 32.94 270.05 L 37.88 257.42 L 42.83 223.59 L 47.77 255.91 L 52.71 259.95 L 57.65 261.47 L 62.60 259.95 L 67.54 256.41 L 72.48 250.86 L 77.42 238.74 L 82.37 211.97 L 87.31 43.79 L 92.25 43.79 L 97.19 258.94 L 102.14 269.55 L 107.08 271.57 L 112.02 275.61 L 116.96 280.66 L 121.91 283.69 L 126.85 287.22 L 131.79 288.23 L 136.73 288.74 L 141.68 286.21 L 146.62 282.68 L 151.56 271.06 L 156.50 260.46 L 161.45 245.81 L 166.39 256.92 L 171.33 256.41 L 176.27 254.90 L 181.21 254.39 L 186.16 251.87 L 191.10 243.28 L 196.04 176.11 L 200.98 184.70 L 205.93 172.58 L 210.87 171.57 L 215.81 233.69 L 220.75 261.97 L 225.70 267.53 L 230.64 272.07 L 235.58 276.62 L 240.52 283.18 L 245.47 286.72 L 250.41 288.74 L 255.35 288.74 L 260.29 288.74 L 265.24 287.22 L 270.18 281.16 L 275.12 277.63 L 280.06 270.56 L 285.01 262.98 L 289.95 259.95 L 294.89 256.92 L 299.83 253.38 L 304.77 254.90 L 309.72 248.33 L 314.66 246.82 L 319.60 248.33 L 324.54 246.31 L 329.49 255.40 L 334.43 260.46 L 339.37 262.98 L 344.31 267.02 L 349.26 268.03 L 354.20 272.58 L 359.14 281.67 L 364.08 285.20 L 369.03 287.22 L 373.97 289.24 L 378.91 291.26 L 383.85 290.76 L 388.80 286.21 L 393.74 284.19 L 398.68 279.14 L 403.62 275.10 L 408.57 268.54 L 413.51 266.52 L 418.45 260.96 L 423.39 255.91 L 428.34 252.37 L 433.28 250.35 L 438.22 246.82 L 443.16 241.26 L 448.10 250.35 L 453.05 252.37 L 457.99 256.41 L 462.93 262.98 L 467.87 270.05 L 472.82 277.63 L 477.76 283.69 L 482.70 287.73 L 487.64 289.24 L 492.59 287.22 L 497.53 283.18 L 502.47 278.64 L 507.41 266.52 L 512.36 252.88 L 517.30 242.27 L 522.24 258.43 L 527.18 255.40 L 532.13 262.98 L 537.07 263.49 L 542.01 260.46 L 546.95 257.93 L 551.90 254.39 L 556.84 245.81 L 561.78 242.78 L 566.72 246.31 L 571.66 261.47 L 576.61 271.06 L 581.55 273.08 L 586.49 276.62 L 591.43 283.69 L 596.38 287.22 L 601.32 288.23 L 606.26 289.75 L 611.20 289.24 L 616.15 286.72 L 621.09 282.17 L 626.03 268.03 L 630.97 253.38 L 635.92 242.78 L 640.86 255.40 L 645.80 261.47 L 650.74 263.49 L 655.69 260.96 L 660.63 258.94 L 665.57 257.42 L 670.51 253.38 L 675.46 247.32 L 680.40 242.78 L 685.34 246.82 L 690.28 261.47 L 695.23 272.07 L 700.17 273.08 L 705.11 276.62 L 710.05 280.66 L 714.99 286.72 L 719.94 289.24 L 724.88 288.74 L 729.82 288.74 L 734.76 286.72 L 739.71 282.17 L 744.65 269.55 L 749.59 254.39 L 754.53 207.93 L 759.48 246.82 L 764.42 259.95 L 769.36 263.49 L 774.30 262.48 L 779.25 257.93 L 784.19 256.92 L 789.13 251.87 L 794.07 247.32 L 799.02 212.98 L 803.96 243.79 L 808.90 262.48 L 813.84 271.06 L 818.79 272.58 L 823.73 274.60 L 828.67 281.67 L 833.61 286.72 L 838.55 288.23 L 843.50 289.24 L 848.44 289.24 L 853.38 287.22" /><path class="forecast-svg-actual" d="M 858.32 282.17 L 863.27 269.55 L 868.21 253.38 L 873.15 241.77 L 878.09 257.42 L 883.04 257.93 L 887.98 259.45 L 892.92 258.43 L 897.86 257.42 L 902.81 253.38 L 907.75 248.84 L 912.69 245.30 L 917.63 234.70 L 922.58 213.99 L 927.52 262.98 L 932.46 269.55 L 937.40 271.57 L 942.35 274.09 L 947.29 280.66 L 952.23 285.20 L 957.17 273.59 L 962.12 271.06 L 967.06 263.99 L 972.00 258.94" /><path class="forecast-svg-band" fill="#668851" d="M 858.32 266.66 L 863.27 265.32 L 868.21 263.74 L 873.15 266.56 L 878.09 267.07 L 883.04 263.56 L 887.98 274.22 L 892.92 272.38 L 897.86 262.85 L 902.81 268.82 L 907.75 273.24 L 912.69 275.22 L 917.63 265.61 L 922.58 274.83 L 927.52 276.59 L 932.46 255.49 L 937.40 270.34 L 942.35 266.48 L 947.29 259.07 L 952.23 273.83 L 957.17 274.86 L 962.12 267.91 L 967.06 271.65 L 972.00 272.26 L 972.00 298.02 L 967.06 298.63 L 962.12 300.12 L 957.17 298.97 L 952.23 298.79 L 947.29 298.69 L 942.35 298.31 L 937.40 296.56 L 932.46 303.55 L 927.52 298.48 L 922.58 298.31 L 917.63 297.14 L 912.69 295.93 L 907.75 297.07 L 902.81 297.12 L 897.86 295.28 L 892.92 298.69 L 887.98 298.87 L 883.04 298.60 L 878.09 295.81 L 873.15 293.07 L 868.21 298.59 L 863.27 299.19 L 858.32 301.55 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 858.32 284.10 L 863.27 282.26 L 868.21 281.17 L 873.15 279.81 L 878.09 281.44 L 883.04 281.08 L 887.98 286.55 L 892.92 285.53 L 897.86 279.06 L 902.81 282.97 L 907.75 285.16 L 912.69 285.58 L 917.63 281.38 L 922.58 286.57 L 927.52 287.54 L 932.46 279.52 L 937.40 283.45 L 942.35 282.40 L 947.29 278.88 L 952.23 286.31 L 957.17 286.91 L 962.12 284.01 L 967.06 285.14 L 972.00 285.14" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="284.10" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 282.68 L 32.94 270.05 L 37.88 257.42 L 42.83 223.59 L 47.77 255.91 L 52.71 259.95 L 57.65 261.47 L 62.60 259.95 L 67.54 256.41 L 72.48 250.86 L 77.42 238.74 L 82.37 211.97 L 87.31 43.79 L 92.25 43.79 L 97.19 258.94 L 102.14 269.55 L 107.08 271.57 L 112.02 275.61 L 116.96 280.66 L 121.91 283.69 L 126.85 287.22 L 131.79 288.23 L 136.73 288.74 L 141.68 286.21 L 146.62 282.68 L 151.56 271.06 L 156.50 260.46 L 161.45 245.81 L 166.39 256.92 L 171.33 256.41 L 176.27 254.90 L 181.21 254.39 L 186.16 251.87 L 191.10 243.28 L 196.04 176.11 L 200.98 184.70 L 205.93 172.58 L 210.87 171.57 L 215.81 233.69 L 220.75 261.97 L 225.70 267.53 L 230.64 272.07 L 235.58 276.62 L 240.52 283.18 L 245.47 286.72 L 250.41 288.74 L 255.35 288.74 L 260.29 288.74 L 265.24 287.22 L 270.18 281.16 L 275.12 277.63 L 280.06 270.56 L 285.01 262.98 L 289.95 259.95 L 294.89 256.92 L 299.83 253.38 L 304.77 254.90 L 309.72 248.33 L 314.66 246.82 L 319.60 248.33 L 324.54 246.31 L 329.49 255.40 L 334.43 260.46 L 339.37 262.98 L 344.31 267.02 L 349.26 268.03 L 354.20 272.58 L 359.14 281.67 L 364.08 285.20 L 369.03 287.22 L 373.97 289.24 L 378.91 291.26 L 383.85 290.76 L 388.80 286.21 L 393.74 284.19 L 398.68 279.14 L 403.62 275.10 L 408.57 268.54 L 413.51 266.52 L 418.45 260.96 L 423.39 255.91 L 428.34 252.37 L 433.28 250.35 L 438.22 246.82 L 443.16 241.26 L 448.10 250.35 L 453.05 252.37 L 457.99 256.41 L 462.93 262.98 L 467.87 270.05 L 472.82 277.63 L 477.76 283.69 L 482.70 287.73 L 487.64 289.24 L 492.59 287.22 L 497.53 283.18 L 502.47 278.64 L 507.41 266.52 L 512.36 252.88 L 517.30 242.27 L 522.24 258.43 L 527.18 255.40 L 532.13 262.98 L 537.07 263.49 L 542.01 260.46 L 546.95 257.93 L 551.90 254.39 L 556.84 245.81 L 561.78 242.78 L 566.72 246.31 L 571.66 261.47 L 576.61 271.06 L 581.55 273.08 L 586.49 276.62 L 591.43 283.69 L 596.38 287.22 L 601.32 288.23 L 606.26 289.75 L 611.20 289.24 L 616.15 286.72 L 621.09 282.17 L 626.03 268.03 L 630.97 253.38 L 635.92 242.78 L 640.86 255.40 L 645.80 261.47 L 650.74 263.49 L 655.69 260.96 L 660.63 258.94 L 665.57 257.42 L 670.51 253.38 L 675.46 247.32 L 680.40 242.78 L 685.34 246.82 L 690.28 261.47 L 695.23 272.07 L 700.17 273.08 L 705.11 276.62 L 710.05 280.66 L 714.99 286.72 L 719.94 289.24 L 724.88 288.74 L 729.82 288.74 L 734.76 286.72 L 739.71 282.17 L 744.65 269.55 L 749.59 254.39 L 754.53 207.93 L 759.48 246.82 L 764.42 259.95 L 769.36 263.49 L 774.30 262.48 L 779.25 257.93 L 784.19 256.92 L 789.13 251.87 L 794.07 247.32 L 799.02 212.98 L 803.96 243.79 L 808.90 262.48 L 813.84 271.06 L 818.79 272.58 L 823.73 274.60 L 828.67 281.67 L 833.61 286.72 L 838.55 288.23 L 843.50 289.24 L 848.44 289.24 L 853.38 287.22" /><path class="forecast-svg-actual" d="M 858.32 282.17 L 863.27 269.55 L 868.21 253.38 L 873.15 241.77 L 878.09 257.42 L 883.04 257.93 L 887.98 259.45 L 892.92 258.43 L 897.86 257.42 L 902.81 253.38 L 907.75 248.84 L 912.69 245.30 L 917.63 234.70 L 922.58 213.99 L 927.52 262.98 L 932.46 269.55 L 937.40 271.57 L 942.35 274.09 L 947.29 280.66 L 952.23 285.20 L 957.17 273.59 L 962.12 271.06 L 967.06 263.99 L 972.00 258.94" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 858.32 243.61 L 863.27 236.25 L 868.21 229.01 L 873.15 229.16 L 878.09 221.56 L 883.04 219.03 L 887.98 217.27 L 892.92 212.29 L 897.86 210.97 L 902.81 204.56 L 907.75 192.20 L 912.69 192.74 L 917.63 193.58 L 922.58 193.14 L 927.52 194.50 L 932.46 190.93 L 937.40 190.73 L 942.35 191.26 L 947.29 194.38 L 952.23 185.69 L 957.17 184.61 L 962.12 179.42 L 967.06 169.98 L 972.00 167.56 L 972.00 315.49 L 967.06 314.44 L 962.12 310.79 L 957.17 309.71 L 952.23 309.97 L 947.29 311.05 L 942.35 310.01 L 937.40 309.77 L 932.46 308.28 L 927.52 309.00 L 922.58 308.86 L 917.63 311.29 L 912.69 311.08 L 907.75 312.75 L 902.81 313.48 L 897.86 316.21 L 892.92 314.64 L 887.98 313.38 L 883.04 312.83 L 878.09 310.38 L 873.15 310.70 L 868.21 311.09 L 863.27 309.22 L 858.32 310.75 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 858.32 277.18 L 863.27 272.74 L 868.21 270.05 L 873.15 269.93 L 878.09 265.97 L 883.04 265.93 L 887.98 265.32 L 892.92 263.47 L 897.86 263.59 L 902.81 259.02 L 907.75 252.48 L 912.69 251.91 L 917.63 252.44 L 922.58 251.00 L 927.52 251.75 L 932.46 249.61 L 937.40 250.25 L 942.35 250.64 L 947.29 252.72 L 952.23 247.83 L 957.17 247.16 L 962.12 245.10 L 967.06 242.21 L 972.00 241.53" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="858.32" cy="277.18" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 282.68 L 32.94 270.05 L 37.88 257.42 L 42.83 223.59 L 47.77 255.91 L 52.71 259.95 L 57.65 261.47 L 62.60 259.95 L 67.54 256.41 L 72.48 250.86 L 77.42 238.74 L 82.37 211.97 L 87.31 43.79 L 92.25 43.79 L 97.19 258.94 L 102.14 269.55 L 107.08 271.57 L 112.02 275.61 L 116.96 280.66 L 121.91 283.69 L 126.85 287.22 L 131.79 288.23 L 136.73 288.74 L 141.68 286.21 L 146.62 282.68 L 151.56 271.06 L 156.50 260.46 L 161.45 245.81 L 166.39 256.92 L 171.33 256.41 L 176.27 254.90 L 181.21 254.39 L 186.16 251.87 L 191.10 243.28 L 196.04 176.11 L 200.98 184.70 L 205.93 172.58 L 210.87 171.57 L 215.81 233.69 L 220.75 261.97 L 225.70 267.53 L 230.64 272.07 L 235.58 276.62 L 240.52 283.18 L 245.47 286.72 L 250.41 288.74 L 255.35 288.74 L 260.29 288.74 L 265.24 287.22 L 270.18 281.16 L 275.12 277.63 L 280.06 270.56 L 285.01 262.98 L 289.95 259.95 L 294.89 256.92 L 299.83 253.38 L 304.77 254.90 L 309.72 248.33 L 314.66 246.82 L 319.60 248.33 L 324.54 246.31 L 329.49 255.40 L 334.43 260.46 L 339.37 262.98 L 344.31 267.02 L 349.26 268.03 L 354.20 272.58 L 359.14 281.67 L 364.08 285.20 L 369.03 287.22 L 373.97 289.24 L 378.91 291.26 L 383.85 290.76 L 388.80 286.21 L 393.74 284.19 L 398.68 279.14 L 403.62 275.10 L 408.57 268.54 L 413.51 266.52 L 418.45 260.96 L 423.39 255.91 L 428.34 252.37 L 433.28 250.35 L 438.22 246.82 L 443.16 241.26 L 448.10 250.35 L 453.05 252.37 L 457.99 256.41 L 462.93 262.98 L 467.87 270.05 L 472.82 277.63 L 477.76 283.69 L 482.70 287.73 L 487.64 289.24 L 492.59 287.22 L 497.53 283.18 L 502.47 278.64 L 507.41 266.52 L 512.36 252.88 L 517.30 242.27 L 522.24 258.43 L 527.18 255.40 L 532.13 262.98 L 537.07 263.49 L 542.01 260.46 L 546.95 257.93 L 551.90 254.39 L 556.84 245.81 L 561.78 242.78 L 566.72 246.31 L 571.66 261.47 L 576.61 271.06 L 581.55 273.08 L 586.49 276.62 L 591.43 283.69 L 596.38 287.22 L 601.32 288.23 L 606.26 289.75 L 611.20 289.24 L 616.15 286.72 L 621.09 282.17 L 626.03 268.03 L 630.97 253.38 L 635.92 242.78 L 640.86 255.40 L 645.80 261.47 L 650.74 263.49 L 655.69 260.96 L 660.63 258.94 L 665.57 257.42 L 670.51 253.38 L 675.46 247.32 L 680.40 242.78 L 685.34 246.82 L 690.28 261.47 L 695.23 272.07 L 700.17 273.08 L 705.11 276.62 L 710.05 280.66 L 714.99 286.72 L 719.94 289.24 L 724.88 288.74 L 729.82 288.74 L 734.76 286.72 L 739.71 282.17 L 744.65 269.55 L 749.59 254.39 L 754.53 207.93 L 759.48 246.82 L 764.42 259.95 L 769.36 263.49 L 774.30 262.48 L 779.25 257.93 L 784.19 256.92 L 789.13 251.87 L 794.07 247.32 L 799.02 212.98 L 803.96 243.79 L 808.90 262.48 L 813.84 271.06 L 818.79 272.58 L 823.73 274.60 L 828.67 281.67 L 833.61 286.72 L 838.55 288.23 L 843.50 289.24 L 848.44 289.24 L 853.38 287.22" /><path class="forecast-svg-actual" d="M 858.32 282.17 L 863.27 269.55 L 868.21 253.38 L 873.15 241.77 L 878.09 257.42 L 883.04 257.93 L 887.98 259.45 L 892.92 258.43 L 897.86 257.42 L 902.81 253.38 L 907.75 248.84 L 912.69 245.30 L 917.63 234.70 L 922.58 213.99 L 927.52 262.98 L 932.46 269.55 L 937.40 271.57 L 942.35 274.09 L 947.29 280.66 L 952.23 285.20 L 957.17 273.59 L 962.12 271.06 L 967.06 263.99 L 972.00 258.94" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 858.32 269.95 L 863.27 259.99 L 868.21 264.21 L 873.15 261.30 L 878.09 264.68 L 883.04 272.49 L 887.98 268.93 L 892.92 262.46 L 897.86 266.63 L 902.81 265.29 L 907.75 267.24 L 912.69 258.91 L 917.63 257.47 L 922.58 259.76 L 927.52 266.95 L 932.46 267.29 L 937.40 262.21 L 942.35 257.89 L 947.29 264.28 L 952.23 255.91 L 957.17 269.91 L 962.12 254.42 L 967.06 263.47 L 972.00 267.06 L 972.00 298.07 L 967.06 298.03 L 962.12 291.56 L 957.17 298.91 L 952.23 296.70 L 947.29 296.96 L 942.35 304.71 L 937.40 295.48 L 932.46 297.53 L 927.52 295.36 L 922.58 296.91 L 917.63 296.51 L 912.69 299.05 L 907.75 297.48 L 902.81 296.48 L 897.86 299.24 L 892.92 298.34 L 887.98 298.46 L 883.04 300.07 L 878.09 297.37 L 873.15 297.66 L 868.21 295.41 L 863.27 297.55 L 858.32 298.45 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 858.32 284.20 L 863.27 278.77 L 868.21 279.81 L 873.15 279.48 L 878.09 281.02 L 883.04 286.28 L 887.98 283.70 L 892.92 280.40 L 897.86 282.93 L 902.81 280.88 L 907.75 282.36 L 912.69 278.98 L 917.63 276.99 L 922.58 278.34 L 927.52 281.16 L 932.46 282.41 L 937.40 278.84 L 942.35 281.30 L 947.29 280.62 L 952.23 276.30 L 957.17 284.41 L 962.12 272.99 L 967.06 280.75 L 972.00 282.56" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="858.32" cy="284.20" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>occupancy rate</h3>
+              <p>Echo-Guard Unit 7 is a highway sensor installed on the Plateau Ridge Thoroughfare.</p>
+              <p class="instruction">No forecast instruction is available.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This series represents the occupancy rate (%) captured by an Echo-Guard Unit 7. This sensor on the Plateau Ridge Thoroughfare experienced an unexpected glitch</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>resulting in a spike starting from 2024-04-04 16:00:00 for 2 hours.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>Assume that Echo-Guard Unit 7 will not have this glitch in the future.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">37 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6060</span></span></summary>
+          <pre class="doc-content">INCIDENT DETAIL REPORT: APRIL 4 DATA THROUGHPUT ANOMALY
+
+ISSUER: IT Infrastructure Monitoring Team
+REPORT TYPE: Technical Incident Report
+
+MONITORING LOG SUMMARY:
+Review of system monitoring logs for early April confirms a period of consistent baseline activity prior to the event. Following this stable baseline period, a sudden, sharp deviation in data throughput was observed on Echo-Guard Unit 7 (Plateau Ridge Thoroughfare).
+
+INCIDENT DATA:
+- Detection: An anomalous surge in volume, manifesting as a localized peak, was identified via the system dashboard.
+- Timestamp: The anomaly was recorded at exactly 4:00 PM on April 4, 2024.
+- Observations: The sharp throughput deviation manifests as a measurable anomaly at this specific calendar and clock time.
+
+Note: This document is limited to the detection and timing of the throughput anomaly.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6061</span></span></summary>
+          <pre class="doc-content">**NETWORK OPERATIONS CENTER (NOC) MONITORING TEAM**
+**TECHNICAL INCIDENT REPORT**
+
+**Incident Name:** Infrastructure Peak Incident Report: April 4, 2024
+**Date of Incident:** April 4, 2024
+**Status:** Documented
+
+**Incident Overview:**
+At 16:00 on April 4, 2024, an anomalous surge in volume—appearing as a localized peak—was visible on the NOC monitoring dashboard. Upon the detection of this surge, an immediate need for responsive resource management was identified to maintain stability for Echo-Guard Unit 7 on the Plateau Ridge Thoroughfare. 
+
+**System Response:**
+Infrastructure maintainers observed that the increased load successfully triggered the system&#x27;s automated scaling protocols. Despite the intervention of these protocols, traffic levels remained high following the initial surge. 
+
+**Scope Note:**
+This report is limited to the specific volume surge on April 4 and the immediate automated system response. This documentation does not include root cause analysis of the traffic, overall system health metrics outside this specific window, or long-term capacity planning forecasts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6062</span></span></summary>
+          <pre class="doc-content">INTERNAL OPERATIONAL REPORT
+ISSUER: Systems Infrastructure Engineering Team
+SUBJECT: Infrastructure Scaling Incident Report: Traffic Peak Analysis
+
+OBSERVATION SUMMARY:
+Infrastructure maintainers observed that the increased load on Echo-Guard Unit 7 at Plateau Ridge Thoroughfare triggered automated scaling protocols as traffic levels remained high. These protocols were active throughout the peak interval to manage system throughput.
+
+METRIC TRACKING:
+Analytical tracking confirms that the elevated state of the metrics persisted without interruption for 120 minutes. This sustained state was recorded from 16:00:00 through 18:00:00, at which point metrics returned to baseline.
+
+CONCLUSION:
+The extended period of high traffic requires a quantified review of the duration of the scaling activity. This analysis is focused strictly on the automated triggers and the verified 120-minute duration of elevated metrics registered during the April 4 incident window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6063</span></span></summary>
+          <pre class="doc-content">INCIDENT RESPONSE LOG: METRICS SURGE ANALYSIS
+ISSUER: Engineering Operations Department
+LOCATION: Echo-Guard Unit 7 (Plateau Ridge Thoroughfare)
+
+[INCIDENT SUMMARY]
+Analytical tracking confirms that metrics remained elevated for a total duration of one hundred and twenty minutes, specifically from 16:00:00 through 18:00:00. This sustained surge indicates a consistent high-load event within this two-hour window.
+
+[RESPONSE ACTIONS]
+Following the conclusion of the elevated period at 18:00:00, diagnostic tools were readied for deployment to investigate potential systemic exhaustion. The investigation focuses on the immediate impacts if the observed trend were to persist beyond the two-hour mark.
+
+[TECHNICAL ASSESSMENT]
+Determining the exact total elapsed time of the surge assists in predicting hardware limits. Immediate post-incident focus is on hardware limit testing and establishing long-term durability thresholds based on the 120-minute surge observation.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6064</span></span></summary>
+          <pre class="doc-content">Post-Incident Technical Summary: Network Transmission Parity Event
+Issuer: Network Operations Center (NOC) Engineering Team
+
+This summary covers the final monitoring phase of the transmission disparity involving Echo-Guard Unit 7 on the Plateau Ridge Thoroughfare. As the trend approached the two-hour mark, diagnostic tools were prepared for deployment to investigate potential systemic exhaustion if the disparity exceeded the 120-minute threshold. 
+
+Transmission rates returned to parity at 2024-04-04 18:00:00. The incident concluded upon the metrics reaching this terminal timestamp. The monitoring phase ended abruptly as transmission rates stabilized at 18:00:00. This report is limited to the resolution timing and the final phase of monitoring; it excludes the root cause, specific diagnostic tool specifications, or events preceding the second hour of the trend.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6065</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING DEPARTMENT
+TECHNICAL OPERATIONAL REPORT
+
+SUBJECT: Incident Resolution and Verification Summary: Transmission Parity Event
+
+I. INCIDENT CONCLUSION
+Transmission rates for Echo-Guard Unit 7 on the Plateau Ridge Thoroughfare returned to parity at 2024-04-04 18:00:00. This timestamp marks the conclusion of the incident and the end of the disturbance window.
+
+II. POST-EVENT TRANSITION
+The conclusion of the disturbance window triggered an immediate transition to a formal verification process. This shift ensures the integrity of operations following the restoration of transmission parity.
+
+III. DATABASE COMMITMENT VERIFICATION
+Post-event verification was conducted to confirm that all data processed during the event window (ending at 18:00:00) was successfully committed to the primary database. This check confirms that no data loss occurred during the transition back to normal operating status.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6066</span></span></summary>
+          <pre class="doc-content">RESONANCE PROTECTION DIVISION
+SENTINEL OVERSIGHT DEPARTMENT
+
+OPERATIONAL LOG ENTRY: R7P-001
+TIMESTAMP: 2024-04-04 18:00:01
+
+[IDENTIFICATION]
+Unit: Echo-Guard Unit 7
+Location: Plateau Ridge Thoroughfare
+Series: Seventh Resonance-Protection Series
+
+[LOG SUMMARY]
+An operational assessment was logged for a robotic sentinel within the seventh resonance-protection series. This assessment was triggered as a post-incident verification following the conclusion of the 16:00:00 to 18:00:00 event window. This entry is limited to the metadata and identification of the unit&#x27;s assessment log. It does not include the results of the assessment, technical specifications of the sentinel, or broader maintenance history.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6067</span></span></summary>
+          <pre class="doc-content">SYSTEMS MONITORING DIVISION
+UNIT PERFORMANCE ASSESSMENT LOG
+
+TIMESTAMP: 18:00:01 | April 4, 2024
+PROJECT: Plateau Ridge Thoroughfare Infrastructure
+SUBJECT: Echo-Guard Unit 7 Performance Review
+
+ENTRY DETAILS:
+This log entry serves as the formal context for documenting a specific technical anomaly. Initiated immediately following the conclusion of the 16:00:00 to 18:00:00 operational window, this assessment focused on the unit&#x27;s recent performance history. 
+
+During this evaluation, the Systems Monitoring Division documented a previously observed technical anomaly that occurred within the aforementioned timeframe. This entry provides the official record of the unit’s performance history and serves as the primary documentation of the anomaly&#x27;s presence. The scope of this assessment is strictly limited to the performance metrics and anomalies recorded as of the 18:00:01 timestamp.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6068</span></span></summary>
+          <pre class="doc-content">ENGINEERING ANALYSIS DIVISION
+TECHNICAL OPERATIONAL REPORT: UNIT PERFORMANCE ASSESSMENT AND RELIABILITY REVIEW
+
+DATE: April 10, 2024
+SUBJECT: Reliability Assessment of Echo-Guard Unit 7 (Plateau Ridge Thoroughfare)
+
+1. EXECUTIVE SUMMARY
+
+This Technical Operational Report was compiled by the Engineering Analysis Division to present an assessment conducted on the unit’s recent performance history, specifically regarding the data recorded on April 4, 2024. The primary objective of this review is to address the technical anomaly previously observed during the unit’s performance cycles—specifically the occupancy-rate spike window identified between 16:00 and 18:00—and to evaluate the statistical implications regarding future operational integrity. This document is strictly limited to the relationship between the observed anomaly and its future recurrence probability; it does not include repair logs, external environmental factors, or long-term mitigation strategies.
+
+2. PERFORMANCE HISTORY ASSESSMENT
+
+An assessment was conducted on the unit’s recent performance history, focusing on the operational data gathered from Echo-Guard Unit 7 located at the Plateau Ridge Thoroughfare. The performance history indicates a consistent operational baseline punctuated by a singular period of irregular telemetry. This divergence occurred during the April 4 occupancy-rate spike interval (16:00–18:00), where the unit recorded values inconsistent with standard traffic flow patterns for the Plateau Ridge Thoroughfare.
+
+3. ANOMALY IDENTIFICATION AND ACKNOWLEDGMENT
+
+A technical anomaly was previously observed during the unit’s performance. This anomaly manifested as a deviation from expected output patterns within the 16:00–18:00 timeframe and was flagged during the standard monitoring phase. The Engineering Analysis Division has formally acknowledged this anomaly as an isolated event. The acknowledgment of the anomaly led to an evaluation of its recurrence potential, shifting the focus from the April 4 incident data to predictive reliability modeling for subsequent cycles.
+
+4. PROBABILITY ANALYSIS RECURRENCE
+
+Following the identification of the April 4 event, analysts reviewed the statistical probability of this specific malfunction appearing in subsequent operational cycles. This review utilized the existing data points associated with the 16:00–18:00 spike window to determine if the failure mode represents a persistent degradation or a stochastic outlier. 
+
+The probability analysis focused on the following metrics:
+- Frequency of occurrence within the specific April 4 performance window.
+- Correlation between system state and the triggering of the technical anomaly.
+- Mathematical projection of the malfunction appearing in future cycles based on current unit status.
+
+Based on the analysis of the April 4, 2024 spike window, the Engineering Analysis Division has reviewed the likelihood of the malfunction repeating. The findings derived from this statistical review support the premise that the occurrence was a non-repeating event. Consequently, the recurrence probability for this specific malfunction is excluded from future deployment projections per current directive.
+
+5. RELIABILITY REVIEW CONCLUSION
+
+The evaluation of the recurrence potential of the observed anomaly constitutes the final phase of this reliability review. By correlating the acknowledgment of the April 4 anomaly with the statistical data regarding its appearance in subsequent cycles, analysts have established that the event does not indicate an ongoing system failure. As per the scope of this report, this assessment is confined to the specific 16:00–18:00 malfunction and its probability of recurrence. It is noted that long-term mitigation strategies and physical repair logs are outside the parameters of this specific technical review.
+
+6. DOCUMENT STATUS
+
+This report is classified as a Technical Operational Report. The data contained herein is restricted to recurrence probability and technical performance assessment regarding the April 4 incident on the Plateau Ridge Thoroughfare.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6069</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING AND ANALYSIS DIVISION
+TECHNICAL MEMORANDUM
+
+TO: Strategic Planning Directorate
+FROM: Systems Engineering and Analysis Division (SEAD)
+SUBJECT: Operational Reliability and Strategic Modeling Update: Unit Performance Analysis
+
+1. OVERVIEW
+This memorandum summarizes the connection between the analysis of the April 4 occupancy-rate spike and the resulting adjustments to our long-term forecasting protocols for hardware deployed on the Plateau Ridge Thoroughfare. Specifically, analysts reviewed the statistical probability of a specific malfunction appearing in subsequent operational cycles following the data anomaly observed between 16:00 and 18:00 on April 4.
+
+2. RELIABILITY ASSESSMENT
+The evaluation of malfunction recurrence necessitates the selection of a specific projection constraint for future modeling. Upon reviewing the technical signature of the April 4 event, the division has concluded that the occurrence was isolated. Consequently, for the purposes of historical normalization and future reliability forecasting, the recurrence probability for this specific failure mode has been set to zero.
+
+3. MODELING CONSTRAINTS
+A specific constraint is applied to the unit&#x27;s projected performance trajectory for long-term strategic modeling. This constraint explicitly excludes the April 4 (16:00–18:00) interval from future frequency-of-failure deployments. By applying this specific constraint, Echo-Guard Unit 7&#x27;s performance trajectory is modeled under the premise that the malfunction will not recur during the remaining lifecycle of the sensor.
+
+4. SCOPE LIMITATIONS
+This documentation is restricted to the link between the malfunction&#x27;s probability analysis and the resulting modeling constraints. Consistent with SEAD reporting standards, this memorandum does not provide specific unit identifiers, the underlying technical nature of the malfunction, or the final results of the strategic modeling projections.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6070</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Strategic Planning Division
+FROM: Strategic Planning Division
+DATE: April 5, 2024
+SUBJECT: Strategic Unit Performance Modeling Directive
+
+This directive establishes the modeling parameters for the long-term strategic trajectory of Echo-Guard Unit 7 on Plateau Ridge Thoroughfare. Specifically, regarding the performance spike observed on April 4, 2024, between 16:00 and 18:00, a specific constraint is applied to the unit&#x27;s projected performance trajectory.
+
+The selection of this modeling constraint directly leads to the assumption regarding the glitch&#x27;s future absence. Therefore, the modeling constraint adopts the premise that the previously seen malfunction is entirely absent from all upcoming deployments. This assumption of a zero-recurrence probability for the April 4 window must be reflected in all future strategic modeling. This directive is limited to modeling parameters and the glitch&#x27;s future absence; it provides no technical data or performance results.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6071</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING DEPARTMENT
+TECHNICAL REPORT: SENTINEL RELIABILITY MODELING PARAMETERS AND ASSUMPTIONS
+
+1.0 INTRODUCTION
+This technical report outlines the underlying parameters and core assumptions utilized by the Systems Engineering Department in the development of reliability models for the Echo-Guard Unit 7 sentinel located on the Plateau Ridge Thoroughfare. The purpose of this document is to establish the theoretical framework required to standardize all future reliability projections for this unit following the operational data gathered on April 4.
+
+2.0 MODELING SCOPE AND CONSTRAINTS
+The reliability modeling process for this sentinel is governed by specific internal constraints designed to isolate systemic performance from historical anomalies recorded during the 16:00–18:00 window on April 4. These constraints are essential for providing a uniform baseline for long-term operational analysis.
+
+3.0 CORE MODELING ASSUMPTIONS
+3.1 Elimination of Identified Malfunctions
+Under the specific modeling constraint governing this analysis, a fundamental premise has been adopted regarding the system’s upcoming operational cycle. Specifically, the model is constructed on the premise that the previously identified malfunction, observed during the April 4 16:00–18:00 interval, is entirely absent from all upcoming deployments of the sentinel.
+
+3.2 Foundational Status of the Premise
+This specific premise—the total exclusion of the aforementioned malfunction recorded during the April 4 spike window—serves as the foundational assumption for all subsequent reliability forecasts for the sentinel. By removing the impact of this specific anomaly from the predictive data set, the department can project performance based on a stabilized configuration.
+
+3.3 Impact on Finalized Forecasts
+The establishment of this glitch-free operation assumption regarding the April 4 incident is the critical factor that enables the finalization of the sentinel&#x27;s reliability forecast. This assumption ensures that recurrence probability is effectively excluded from future deployment projections.
+
+4.0 CONCLUSION
+The parameters defined herein are strictly limited to internal modeling assumptions. As such, this report does not detail the technical specifications of the sentinel, the specific nature of the malfunction in question, nor the numerical results of the finalized reliability forecasts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6072 · Off-variable</span></span></summary>
+          <pre class="doc-content">PLATEAU RIDGE INFRASTRUCTURE MAINTENANCE DEPARTMENT
+OPERATIONAL LOG ENTRY: ECHO-GUARD UNIT 7
+
+DATE: 2024-04-04
+SUBJECT: UNIT STATUS AND MAINTENANCE SUMMARY
+
+08:00:00 - Routine maintenance cycle initiated for Echo-Guard Unit 7 on Plateau Ridge Thoroughfare.
+09:30:00 - Occupancy rate data successfully retrieved for the designated sector.
+16:00:00 - System software update transmitted to Plateau Ridge sensors.
+
+ADVISORY: During the update process, the unit experienced a temporary reporting frequency drop lasting approximately 2 hours. This was a planned interruption to facilitate system-wide synchronization.
+
+18:00:00 - Software update installation concluded. Unit communication has returned to normalized levels.
+
+NOTES: This log is strictly pertains to Echo-Guard Unit 7 operational status for 2024-04-04. Traffic volume statistics and long-term performance forecasts are excluded from this record.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6073 · Off-variable</span></span></summary>
+          <pre class="doc-content">SITE MONITORING OPERATIONS CENTER
+TECHNICAL MAINTENANCE LOG: INSTRUMENT STATUS REPORT
+
+ID: Plateau Ridge Thoroughfare - Echo-Guard Unit 7
+Date: 2024-04-04
+
+EVENT SUMMARY:
+At 16:00:00, Echo-Guard Unit 7, situated at the Plateau Ridge Thoroughfare, experienced significant localized humidity interference. Diagnostic analysis confirmed moisture accumulation was localized specifically to the primary lens of the device.
+
+IMPACT ASSESSMENT:
+During the event, the presence of moisture on the lens caused the following operational degradations:
+- Impacted infrared sensitivity
+- Impacted peripheral detection range
+
+RESOLUTION:
+The environmental interference persisted for a period of two hours. As of 18:00:00, the moisture had dissipated, and the localized interference was resolved. Unit hardware has returned to standard performance parameters. No broader security implications or long-term maintenance schedules are addressed in this log.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6074 · Off-variable</span></span></summary>
+          <pre class="doc-content">ECHO-GUARD NETWORK OPERATIONS CENTER (NOC)
+SYSTEM PERFORMANCE LOG: UNIT 7
+DATE: 2024-04-04
+
+[16:00:00] SYSTEM EVENT: INITIATING BATTERY OPTIMIZATION PROTOCOL
+LOCATION: PLATEAU RIDGE THOROUGHFARE
+
+STATUS UPDATE: Internal power-save mode activated. This mode remained active for a 2-hour window during the afternoon of 2024-04-04. During this power-save period, the sampling rate for internal diagnostics was reduced. 
+
+OPERATIONAL IMPACT: Power-save mode caused an impact on data transmission latency across the network. System performance monitoring confirmed increased response times during this interval.
+
+[18:00:00] SYSTEM EVENT: POWER-SAVE TERMINATED
+Standard power profiles have been automatically restored. Unit 7 has resumed full operational sampling rates and standard transmission protocols.
+
+***
+Note: This log tracks hardware power states and performance metrics only. It excludes external environmental conditions, maintenance schedules, or long-term battery health forecasts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6075 · Irrelevant</span></span></summary>
+          <pre class="doc-content"># Plateau Ridge Infrastructure &amp; Security Department
+## Technical and Operational Manual: Echo-Guard Unit 7
+
+**Document Ref:** PR-ISD-EGU7-OPS  
+**Sector:** Plateau Ridge Thoroughfare  
+**Status:** Official Operational Guide  
+
+---
+
+### 1. Hardware Specifications and Housing Materials
+
+The Echo-Guard Unit 7 is housed in a high-durability assembly designed specifically for the environmental stressors of the Plateau Ridge Sector. All physical housing components must meet the following material specifications to ensure hardware integrity:
+
+*   **Outer Casing:** Reinforced brushed aluminum-titanium alloy with a corrosion-resistant powder coating.
+*   **Sensor Lens Cover:** High-impact tempered borosilicate glass with anti-reflective and hydrophobic coating.
+*   **Mounting Brackets:** Galvanized steel with vibration-dampening polymer gaskets.
+*   **Seals:** Industrial-grade silicone O-rings (IP67-rated moisture and dust protection).
+
+### 2. Plateau Ridge Thoroughfare Maintenance Schedule
+
+To ensure the Echo-Guard Unit 7 remains functional within its operational environment, the surrounding Plateau Ridge Thoroughfare must be maintained according to the following intervals:
+
+*   **Bi-Weekly:** Visual inspection of the mounting structures for stress fractures or seismic shifting.
+*   **Monthly:** Vegetative clearance; all flora within a 3-meter radius of the Unit 7 pylon must be trimmed to prevent sensor occlusion.
+*   **Quarterly:** Structural integrity assessment of the thoroughfare pavement and retaining walls adjacent to the unit installation.
+*   **Annual:** Full calibration check of the unit’s alignment relative to the thoroughfare’s central axis.
+
+### 3. Routine Cleaning Procedures
+
+Maintenance personnel must adhere to the following cleaning protocol for Echo-Guard Unit 7 to prevent hardware degradation:
+
+1.  **Chassis Cleaning:** Wipe down the outer aluminum-titanium casing using a soft, lint-free cloth dampened with a mild pH-neutral detergent. Avoid abrasive scouring pads.
+2.  **Optics Maintenance:** Clean the borosilicate glass lens using an optical-grade cleaning solution and a microfiber cloth. Do not apply circular pressure; use straight, outward strokes.
+3.  **Debris Removal:** Clear any dust, spider webs, or environmental grit from the cooling vents located on the underside of the housing using compressed air at low pressure.
+4.  **Inspection:** Check seals for cracking. If seals appear dry, apply a minimal layer of silicone-based lubricant.
+
+### 4. Administrative Logging and Tracking
+
+Per departmental regulations, all hardware components must be meticulously recorded in the Sector Property Register. Administrative staff are required to log the following information for every deployment or replacement cycle:
+
+*   **Main Housing Serial Number:** Located on the rear nameplate.
+*   **Primary Sensor Array Serial Number:** Accessible via the internal diagnostic port or the secondary side-panel stamping.
+*   **Processor Module ID:** Required for all firmware associations.
+*   **Installation Timestamp:** Precise date and time of hardware mounting at the Plateau Ridge site.
+
+All logs must be signed by the attending technician and filed with the Plateau Ridge Infrastructure &amp; Security Department within 24 hours of any hardware interaction. Failure to maintain accurate serial number logs will result in a suspension of maintenance clearance for the individual assigned to the unit.
+
+---
+**Note:** This document is strictly limited to the maintenance, specifications, and administrative tracking of Echo-Guard Unit 7 and its specific installation site. It does not contain regional infrastructure plans, sensor data output, or financial budgets.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6076 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Plateau Ridge Infrastructure Management Team
+TECHNICAL MAINTENANCE AND SITE STATUS REPORT: ECHO-GUARD UNIT 7
+Date: October 14, 2023
+Report ID: OTR-PR-007-EG
+Classification: Operational Technical
+
+1. SCOPE AND LIMITATIONS
+This report is strictly limited to the technical performance and hardware/software status of Echo-Guard Unit 7 at the Plateau Ridge location. Information regarding broader regional transit data, financial impact assessments of maintenance, or predictive failure modeling is excluded from this documentation.
+
+2. UNIT SPECIFICATIONS AND FIRMWARE
+Echo-Guard Unit 7 is currently operating on the following software architecture:
+• Current Firmware Version: v4.2.1-Build.09
+• Last Update Applied: September 28, 2023
+• Status: Stable
+• Update Notes: Patch addressed logic controller synchronization and sensor sensitivity calibration.
+
+3. AMBIENT TEMPERATURE MONITORING DATA
+The following data was collected from the Plateau Ridge Thoroughfare ambient sensor arrays over the last 24-hour cycle. Consistent monitoring at this site ensures internal thermal thresholds are not breached.
+
+Time (PST) | Site Location | Temperature (°C)
+-------------------------------------------
+00:00 | Plateau Ridge Thoroughfare | 14.2
+04:00 | Plateau Ridge Thoroughfare | 12.8
+08:00 | Plateau Ridge Thoroughfare | 15.5
+12:00 | Plateau Ridge Thoroughfare | 21.3
+16:00 | Plateau Ridge Thoroughfare | 22.1
+20:00 | Plateau Ridge Thoroughfare | 18.4
+Mean Temperature: 17.4°C
+
+4. POWER SUPPLY AND ELECTRICAL HISTORY
+Historical power supply logs for Echo-Guard Unit 7 indicate a consistent draw from the primary grid with localized fluctuations managed by the internal transformer.
+
+Historical Performance Summary:
+• Average Input Voltage: 220V - 240V AC
+• Uptime (Last 30 Days): 99.98%
+• Power Surges Logged: 0
+• Brownouts/Dropouts: 1 (Detected on Oct 02; recovery was instantaneous via internal switching).
+
+5. BATTERY BACKUP SPECIFICATIONS
+In the event of a primary power failure at Plateau Ridge, Echo-Guard Unit 7 is equipped with an integrated high-capacity backup system to maintain core functions.
+
+Backup Hardware Details:
+• Battery Type: Industrial Lithium-Iron Phosphate (LiFePO4)
+• Capacity: 48V / 100Ah
+• Max Discharge Duration: 12 Hours (Standard load)
+• Charge Cycles: 1,450 / 5,000 (Remaining lifespan: 71%)
+• Recharge Rate: 0.5C (Approximately 2 hours to full capacity from 20% state of charge).
+• Self-Diagnostic Health: Passed
+
+6. SITE STATUS SUMMARY
+The Plateau Ridge Thoroughfare remains compatible with Unit 7’s current hardware configuration. No physical anomalies were reported regarding the unit housing or the surrounding external infrastructure. Firmware v4.2.1-Build.09 has eliminated the minor interface lag identified in previous periods.
+
+7. AUTHORIZATION
+Issued by: Plateau Ridge Infrastructure Management Team
+Status: Finalized</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6077 · Irrelevant</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF CIVIL ENGINEERING AND LAND MANAGEMENT
+OPERATIONAL BRIEFING DOCUMENT: 44-7B
+
+SUBJECT: PLATEAU RIDGE INFRASTRUCTURE AND VEGETATION MAINTENANCE DIRECTIVE
+
+I. ADMINISTRATIVE JURISDICTION
+The Plateau Ridge area, encompassing the main thoroughfare and the technical perimeter of Echo-Guard Unit 7, falls under the dual administrative jurisdiction of the Regional Department of Civil Engineering (RDCE) and the Bureau of Land Management (BLM). The RDCE maintains primary authority over the structural integrity of the thoroughfare, while the BLM oversees environmental compliance and vegetation control. All maintenance activities conducted within this zone must be cross-referenced with the jurisdictional boundary maps archived at the Metropolitan Records Office.
+
+II. PLANNED LANDSCAPE CHANGES: PLATEAU RIDGE THOROUGHFARE
+To ensure the long-term stabilization of the Plateau Ridge Thoroughfare, the following landscape changes are scheduled for implementation:
+- Grading and reinforcement of the eastern embankments to prevent runoff accumulation.
+- Systematic thinning of non-native shrubs within a fifteen-meter radius of the primary roadway.
+- Introduction of low-growth ground cover to replace high-canopy flora that obstructs driver sightlines at critical junctions.
+- Modification of drainage swales to facilitate consistent hydrological flow away from the asphalt infrastructure.
+
+III. VEGETATION MANAGEMENT GUIDELINES (ECHO-GUARD UNIT 7)
+Maintenance around the Echo-Guard Unit 7 facility is subject to heightened regulation to ensure operational clearance. Staff must adhere to the following:
+- Horizontal Clearance: A strictly enforced five-meter buffer zone must be maintained around the exterior housing of Unit 7, free of all woody vegetation.
+- Vertical Clearance: Overhanging branches from nearby timber must be pruned to a minimum height of six meters to prevent interference with overhead sensors and antennae.
+- Growth Suppression: Bio-compliant growth inhibitors are to be applied semi-annually to prevent the encroachment of invasive vines on the facility’s structural base.
+- Debris Removal: Organic litter, including fallen leaves and branches, must be cleared weekly to mitigate secondary risks to equipment ventilation.
+
+IV. FORMAL DEFINITION: OCCUPANCY RATE
+For the purposes of regional facility monitoring and resource allocation, &#x27;Occupancy Rate&#x27; is defined as the ratio of active technical personnel present within a designated facility relative to its maximum architectural capacity, calculated over a twenty-four-hour rolling average. This metric is utilized to determine the scale of necessary local infrastructure support and utility load requirements for the Plateau Ridge sector.
+
+V. OPERATIONAL RESTRICTIONS
+This directive is concerned exclusively with operational and jurisdictional management. Staff are advised that cost estimates, historical environmental impact data, and specific security protocols for Echo-Guard units are classified under separate departmental headings and are not contained within this briefing.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6078 · Off-entity</span></span></summary>
+          <pre class="doc-content">METROPOLITAN TRANSIT DEPARTMENT
+Hardware Diagnostics Division
+
+INTERNAL MAINTENANCE REPORT
+
+Subject: Technical Maintenance Log: Pulse-Metric Alpha-4 System Audit
+Unit ID: Pulse-Metric Alpha-4
+Location: Plateau Ridge Thoroughfare
+
+Audit Summary:
+This diagnostic review focuses on a critical occupancy rate spike recorded on 2024-04-04 between 16:00:00 and 18:00:00. Following a comprehensive technical assessment, the Hardware Diagnostics Division has attributed this specific data glitch to chronic hardware degradation within the Alpha-4 unit.
+
+Findings:
+The erratic data pattern observed during the two-hour window is a direct result of mechanical aging. It is the conclusion of the division that the spike pattern is expected to recur on a weekly basis until the sensor unit is replaced.
+
+Scope Note:
+This audit is limited to the identified fault on 2024-04-04 at this specific location. This report excludes data from adjacent sensors, traffic flow impact analysis, or replacement budget approvals.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6079 · Off-entity</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION - MONITORING DIVISION
+TECHNICAL OPERATIONAL REPORT
+
+REPORT ID: RDOT-MD-2024-PR12
+SUBJECT: Post-Incident Traffic Flow Analysis: Plateau Ridge Thoroughfare (Node 12)
+DATE: April 8, 2024
+
+1. SCOPE AND DEVICE IDENTIFICATION
+This technical operational report focuses exclusively on the performance and data validity of the Titan-Flow Monitor 12. The Titan-Flow Monitor 12 is the active monitoring device operating on the Plateau Ridge Thoroughfare at Node 12. This analysis is limited to the specific capabilities and findings of said device and does not encompass broader traffic statistics for the entire county or specific contextual details regarding external events.
+
+2. OBSERVED DATA ANOMALIES
+On 2024-04-04, system alerts triggered due to a significant fluctuation in standard traffic patterns. Data logs indicate that a surge in variable readings was recorded starting at 2024-04-04 16:00:00. These readings deviated sharply from the baseline metrics typically observed at Node 12 during this timeframe.
+
+3. DURATION AND QUANTIFICATION
+Automated tracking logs confirm that the duration of the detected variable reading surge was 2 hours. Following this window, readings returned to standard parameters. The monitoring division has isolated this 120-minute block for intensive diagnostic review to ensure mechanical integrity and sensor precision.
+
+4. DIAGNOSTIC FINDINGS AND VALIDATION
+Internal system diagnostics and sensor calibration tests were performed following the observation. Diagnostic findings confirm the spike was a valid measurement of a temporary traffic detour through the area. There were no hardware malfunctions or algorithmic errors recorded by Monitor 12 during the surge. The data captured is therefore classified as “Reliable” and accurately represents the physical flow of vehicles during that period.
+
+5. PREDICTIVE OUTLOOK
+Based on the correlation between the detected flow patterns and known infrastructural constraints of the thoroughfare, predictions indicate that similar surges should be expected whenever there is a local event on the ridge. Monitor 12 is calibrated to handle these spikes; however, automated alerting systems will continue to flag these events as deviations from the historical norm.
+
+6. LIMITATIONS OF REPORT
+This source focuses exclusively on the specific performance of Monitor 12 and the validation of the April 4th data; it does not include broader traffic statistics for the entire county or specific details regarding the nature of the local event causing the detour.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6080 · Off-entity</span></span></summary>
+          <pre class="doc-content">CENTRAL NETWORK INFRASTRUCTURE DIVISION
+OPERATIONAL MAINTENANCE REPORT
+
+REPORT ID: CNID-SGA09-2024-APR
+SUBJECT: Site-Gate Array 09 Operational Maintenance Report – April 2024
+LOCATION: Plateau Ridge Thoroughfare
+STATUS: Active / Periodic Review
+
+1. SYSTEM OVERVIEW
+This technical documentation pertains to the current operational status and maintenance activities of Site-Gate Array 09, situated at the Plateau Ridge Thoroughfare. This report serves as the primary log for performance verification and diagnostic review for the April 2024 period.
+
+2. ANALYTICS AND ANOMALY DETECTION
+During the standard monitoring cycle, network diagnostics flagged a specific data anomaly occurring on April 4, 2024. The recorded metrics indicate a significant data spike within the following timeframe:
+
+• Start Time: 2024-04-04 16:00:00
+• End Time: 2024-04-04 18:00:00
+
+Detailed packet inspection and log reconciliation have successfully identified the nature of this event. The spike recorded between 16:00:00 and 18:00:00 was an intentional calibration signal dispatched by the central server. This was not a breach or hardware failure, but a verified synchronization event.
+
+3. OPERATIONAL SCHEDULE
+The identification of the April 4 event aligns with standard operating procedures for Site-Gate Array 09. The central server is programmed to initiate this calibration procedure to ensure array alignment and signal integrity. Under the current operational schedule, this procedure repeats every 24 hours. The precise timing of these signals occurs at variable intervals within the 24-hour cycle to optimize throughput and network stabilization.
+
+4. MAINTENANCE NOTES
+This report is strictly focused on the technical status and localized maintenance activity of Site-Gate Array 09. Users should note that this documentation does not include broader network health data, external environmental causes for detected anomalies, or long-term performance forecasts. All technical queries regarding the Plateau Ridge Thoroughfare infrastructure should reference the specific event timestamps provided in Section 2.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6081 · Off-window</span></span></summary>
+          <pre class="doc-content">FACILITY OPERATIONS DEPARTMENT
+SYSTEM MAINTENANCE LOG
+
+Sensor ID: #402-OR
+Equipment Type: Occupancy Rate Sensor
+Status: Operational / High Accuracy
+
+MAINTENANCE SUMMARY:
+On 2024-03-15, Sensor Node #402-OR experienced a documented glitch event. This malfunction resulted in a sustained signal blackout effect, during which data transmission and occupancy tracking were temporarily interrupted. 
+
+Following the event, the unit underwent a comprehensive maintenance protocol. Recalibration of the sensor was successfully completed prior to the start of the current history window to ensure data integrity moving forward. 
+
+CURRENT STATUS:
+Post-recalibration verification confirms that Sensor Node #402-OR is currently operating at a high accuracy status. No further actions are required for this specific unit at this time.
+
+[Internal Log End]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6082 · Off-window</span></span></summary>
+          <pre class="doc-content">SYSTEMS OPERATIONS &amp; MAINTENANCE DEPARTMENT
+POST-INCIDENT TECHNICAL SUMMARY
+
+Document ID: SOMD-2024-0110-TS
+Date of Report: January 12, 2024
+Classification: Internal Technical Record
+
+1. ENTITY PROFILE AND GEOGRAPHIC SPECIFICS
+This report pertains to the operations managed by the Systems Operations &amp; Maintenance Department regarding our primary infrastructure located at the Northeast Regional Data Hub (Coordinates: 40.7128° N, 74.0060° W). The entity serves as the central processing node for localized distributed networks across the urban corridor, facilitating high-density data throughput and system synchronization.
+
+2. INCIDENT DOCUMENTATION: JANUARY 10 GLITCH
+On 2024-01-10, at approximately 08:14 UTC, the department logged a significant glitch event affecting primary processing arrays. The anomaly initiated during a routine load-balancing cycle and persisted through the mid-morning operational window. Systems monitors triggered automated alerts as performance metrics deviated from established baselines. This incident was localized to specific server clusters identified in the regional hub and did not propagate to secondary failover sites.
+
+3. EFFECT DESCRIPTION: ERRATIC DATA FLUCTUATION
+The primary manifestation of the glitch was a characterized effect of erratic data fluctuation. Observation of real-time telemetry indicated that output values were oscillating outside of standard deviation parameters. These fluctuations appeared as high-frequency noise within the data streams, causing instability in downstream applications. The erratic behavior led to intermittent synchronization failures and inconsistent throughput readings, which hampered the reliability of the system’s reporting modules during the duration of the event.
+
+4. RESOLUTION: FIRMWARE UPDATE
+Following the identification of the instability, technical teams deployed a targeted firmware update across the affected hardware modules. This update was designed to address the specific internal logic errors discovered during the glitch window. The installation was initiated at 11:20 UTC and concluded at 11:45 UTC. Upon application of the firmware patch, the erratic fluctuations ceased immediately. Post-installation validation confirmed that system registers had returned to stable operating conditions and that the data streams had successfully normalized.
+
+5. POST-RESOLUTION PERFORMANCE CLAIM
+In the history window immediately following the firmware update, the system transition was monitored for sustained stability. Analysis of performance records indicates that the entity achieved peak operational efficiency during this period. Throughput metrics and latency responses reached optimized levels higher than those recorded prior to the January 10 event. The department confirms that the systems are currently functioning at their maximum designed capacity with zero variance in data integrity.
+
+6. SCOPE LIMITATIONS
+This summary is strictly limited to the documentation of the 2024-01-10 incident and its immediate resolution via firmware deployment. This document does not provide a root cause analysis regarding the technical origins of the firmware bug, nor does it include broader historical performance data outside of the immediate incident window or future maintenance schedules. Information regarding long-term infrastructure planning is excluded from this report.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6083 · Off-window</span></span></summary>
+          <pre class="doc-content">TECHNICAL MAINTENANCE REPORT: SENSOR HARDWARE REPLACEMENT AND PERFORMANCE REVIEW
+Issuer: Systems Engineering Department
+Type: Internal Maintenance Log
+
+SENSOR IDENTIFICATION
+Unit Name: SN-Delta-09
+Variable Type: Ambient Temperature (°C)
+
+INCIDENT SUMMARY
+On 2023-12-28, a temporal glitch event was recorded during the 0400-hour cycle. Following this event, real-time monitoring indicated a sustained low-reading bias effect compared to secondary reference units. This deviation persisted under all standard operating conditions.
+
+RESOLUTION &amp; VERIFICATION
+To address the systematic bias, a full hardware replacement of the sensor unit was executed. Post-replacement diagnostics confirm that the resolution was successful. 
+
+CURRENT STATUS
+Through early 2024, the new hardware has established a predictable baseline reading. Performance remains stable, and the sensor is currently operating within calibrated parameters for consistent data acquisition.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6084 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">REGIONAL TRANSIT SURVEILLANCE DIVISION
+OPERATIONAL MONITORING REPORT
+
+SUBJECT: Traffic Density Trend Report: Plateau Ridge Thoroughfare (Echo-Guard Unit 7)
+
+OPERATIONAL SUMMARY:
+Monitoring station Echo-Guard Unit 7 has recorded a progressive intensification in the use of the Plateau Ridge Thoroughfare. Current data streams indicate a steady day-over-day increase in occupancy density throughout the duration of the observation period.
+
+PROJECTIONS:
+Based on current trends, occupancy rates are expected to undergo a sustained upward shift. Forecast modeling indicates that peak intensities will reach levels significantly higher than current recorded figures. Furthermore, as traffic continues to accumulate, daily cycle intensities are expected to consistently exceed the 20% threshold.
+
+Note: This report is restricted to traffic metrics and projections specific to Unit 7 and the Plateau Ridge Thoroughfare.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6085 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Plateau Ridge Thoroughfare Traffic Management Division
+Operational Performance Report: Echo-Guard Unit 7 Historical Traffic Pattern Analysis
+
+Statistical observation of Echo-Guard Unit 7 occupancy data demonstrates an empirical tendency for a singular concentration of daily volume. The historical pattern shows occupancy levels climbing slowly from daybreak toward a solitary late-afternoon crest. Following this late-afternoon peak, values fall away continuously through the evening. Daily volume maintains a minimal baseline into the early hours of the next day. Based on the statistical observation of this global periodic structure, it is suggested that future occupancy will continue to rise gradually toward a single peak. 
+
+Note: This analysis is restricted to cyclical occupancy behavior and excludes specific headcount figures, structural specifications of the Plateau Ridge Thoroughfare, or determinations regarding the underlying causes of traffic volume fluctuations.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6086 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">DISTRICT TRAFFIC AND INFRASTRUCTURE MANAGEMENT OFFICE
+Operational Monitoring Report: Weekly Sensor Analytics
+
+Reporting Unit: Echo-Guard Unit 7
+Location: Plateau Ridge Thoroughfare
+Subject: Telemetry and Occupancy Trends
+
+Executive Summary:
+This report details the telemetry findings for Echo-Guard Unit 7 located on the Plateau Ridge Thoroughfare for the current week. Data analysis reveals a clear and consistent upward shift in the baseline occupancy rate. Specifically, sensors have recorded a small but persistent increase in minimum nightly occupancy levels over the course of the week.
+
+Trend Analysis:
+Observed history indicates a marginal and steady nightly increase, which is highly consistent with the growth rate established during the previous week. Based on this current trajectory, nighttime occupancy levels are projected to continue climbing throughout the next reporting period. These findings focus strictly on Unit 7 telemetry.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6087 · Off-variable</span></span></summary>
+          <pre class="doc-content">CENTRAL OPERATIONS MONITORING SYSTEM
+AUTOMATED LOGISTICS MAINTENANCE LOG: EGU-07-PRT
+
+STATUS REPORT:
+Unit ID: Echo-Guard Unit 7
+Current Status: Active
+Location: Plateau Ridge Thoroughfare
+
+ACTIVITY DETAILS:
+Event Type: Routine Self-Calibration Sequence
+Progress: In Progress
+Diagnostic Notes: Signal noise internalization has been detected during the sequence.
+
+IMPACT ASSESSMENT:
+Occupancy Percentages: 0% Impact
+
+Summary:
+Echo-Guard Unit 7 is currently active at the Plateau Ridge Thoroughfare. A routine self-calibration sequence is in progress. Internalization of signal noise has been detected during this sequence. This maintenance event has zero impact on occupancy percentages.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6088 · Off-variable</span></span></summary>
+          <pre class="doc-content">Department of Transportation - Operations and Technology Division
+Technical Operational Report: Smart Traffic Sensor System Maintenance Brief
+
+1. Executive Summary
+This technical brief outlines the current operational status, hardware configuration, and data transmission protocols for the Smart Traffic Sensor System. The primary focus of this reporting period is the synchronization of field-deployed hardware with the Central Traffic Management System (CTMS) and the verification of sensor output integrity.
+
+2. Field Sensor Performance and Occupancy Monitoring
+The system is currently configured to record and report the occupancy rate across all monitored roadway segments. This metric is captured as a percentage (%) value, representing the proportion of time a specific sensor zone is occupied by a vehicle. These values are processed locally at the edge before being transmitted to the central server to maintain real-time situational awareness of roadway utilization.
+
+3. Mandatory Firmware Update Status
+All field-deployed sensor units are subject to a mandatory firmware update (v2.04.1) required for continued system stability. 
+- Deployment Phase: Ongoing
+- Current Status: Hardware units in Sectors Alpha and Beta have successfully completed the flashing process. Sensors in remaining sectors are scheduled for remote deployment during low-volume maintenance windows. 
+- Update Objective: To resolve intermittent handshake failures and ensure full compatibility with the revised CTMS integration protocols.
+
+4. Integration and Data Transmission Protocols
+Successful data transmission to the Central Traffic Management System (CTMS) is governed by specific integration protocols. All field units must establish a secure connection using the designated API endpoints. This ensures that the raw data collected at the roadside is ingested by the central database without loss of fidelity. The system utilizes a persistent TCP/IP connection for real-time reporting, with a failsafe buffer mechanism for periods of high network latency.
+
+5. Internal Requirements for Data Packetization
+To optimize bandwidth and ensure uniform data ingestion, all sensor outputs must adhere to internal packetization requirements. Data packets must be structured according to the following internal specifications:
+- Header: Device Identifier and Status Flags
+- Payload: Occupancy rate percentage and lane-specific detection counts
+- Trailer: Error detection checksums
+Failure to follow these packetization standards will result in the automated rejection of the data stream by the CTMS intake gateway.
+
+6. Metadata Timestamps and Stream Synchronization
+A critical requirement for the processing of incoming traffic data streams is the application of metadata timestamps. Every data packet must be appended with a UTC-synchronized ISO 8601 timestamp at the point of origin. This metadata is essential for the chronological alignment of streams from multiple sensor units, ensuring that the traffic data viewed at the management level is accurately sequenced and indexed according to the exact time of detection.
+
+7. Conclusion
+The Operations and Technology Division continues to monitor the rollout of the firmware updates. Compliance with the stated packetization and timestamping requirements is mandatory for all active units to ensure the continued reliability of the roadway occupancy monitoring network.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6090 · Irrelevant</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION
+Security Infrastructure Division
+
+OPERATIONAL LOG ENTRY
+
+Subject: Hardware Maintenance Record
+Location: Plateau Ridge Thoroughfare
+Hardware Identifier: Echo-Guard Unit 7
+Maintenance Date: 2024-04-06
+
+ACTIVITY SUMMARY:
+Routine lens cleaning was performed on Echo-Guard Unit 7. The inspection confirmed the physical integrity of the external optical sensors.
+
+DIAGNOSTIC DATA:
+- System Status: No technical glitches reported.
+- Traffic Data: No spikes in occupancy recorded during this interval.
+
+NOTES:
+Scope is limited to the physical inspection and maintenance status of this specific unit on the date listed. This record excludes long-term traffic trends or data from secondary units.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6091 · Irrelevant</span></span></summary>
+          <pre class="doc-content">### FLEET OPERATIONS &amp; REGULATORY AFFAIRS DIVISION
+**Technical Operations Report: Echo-Guard Unit 7**
+**Location ID:** Plateau Ridge Thoroughfare
+**Subject:** Maintenance and Compliance Log
+
+#### 1. HARDWARE SPECIFICATIONS
+**Unit Designation:** Echo-Guard Unit 7
+**Hardware Version:** EG-7.v4 (Base Chassis: Mark IV Heavy Duty)
+**Processor Architecture:** Quantum-Link Series 9
+**Sensor Array:** Multi-Spectral Optic-Thermal Suite (Rev 2.1)
+**Chassis Integrity:** Industrial Grade Weather-Shielded Carbon Composite
+
+#### 2. DEPLOYMENT HISTORY: PLATEAU RIDGE THOROUGHFARE
+Echo-Guard Unit 7 was first stationed at the Plateau Ridge Thoroughfare to manage traffic flow and security monitoring in high-elevation terrain. Its operational history at this site has been consistent since deployment, focusing on the preservation of the thoroughfare’s perimeter and the monitoring of transit activity. Throughout its tenure, the unit has undergone routine physical inspections to maintain hardware integrity against the environmental stressors specific to the Plateau Ridge topography. There have been no reported deviations from its primary stationing during the current operational cycle.
+
+#### 3. FIRMWARE UPDATE RECORD (DATE: 2024-04-05)
+All firmware modifications conducted on 2024-04-05 were performed remotely via the Fleet Operations Secure Uplink. These updates were mandatory for stabilizing the Unit 7 neural processing layers and ensuring compatibility with regional grid protocols.
+
+*   **04:15:00 UTC:** Initiation of System Diagnostic and Pre-Update Cache Flush.
+*   **04:22:18 UTC:** Installation of Firmware Patch 8.0.4 (Security Kernel Enhancement).
+*   **04:45:55 UTC:** Implementation of Logic Optimization Module (LOM-v2.0).
+*   **05:12:10 UTC:** System Reboot and Post-Installation Integrity Check.
+*   **05:30:00 UTC:** Full Re-activation of Unit 7 Sensor Array; return to active duty.
+
+#### 4. REGULATORY COMPLIANCE NOTES
+Unit 7 operations at Plateau Ridge are governed by the Fleet Regulatory Framework. The following compliance standards have been verified for the current reporting period:
+
+*   **Radio Frequency Emission Standards:** Unit 7 is operating within the permissible decibel range for high-altitude non-interference zones.
+*   **Privacy Protocols:** Data masking is active; all visual data captured at the Plateau Ridge Thoroughfare is processed locally and purged in accordance with Privacy Act Section 12-B.
+*   **Power Efficiency Compliance:** The unit’s energy consumption remains below the 15kW threshold for remote autonomous units.
+*   **Safety Interlocks:** Automated fail-safe mechanisms for kinetic dampening are certified functional. All emergency stop protocols have been tested and comply with the Fleet Safety Mandate (FSM-2024).
+
+#### 5. SCOPE LIMITATIONS
+This log is strictly confined to the technical specifications and operational history of Echo-Guard Unit 7 at the Plateau Ridge Thoroughfare. It does not contain data regarding other units in the fleet, future deployment schedules for the Plateau Ridge area, or comparative performance metrics against other Echo-Guard iterations.
+
+***
+**Authorized by:** Fleet Operations &amp; Regulatory Affairs Division
+**Status:** Finalized Log
+**Archive Ref:** PRT-EG7-MCL</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6093 · Off-entity</span></span></summary>
+          <pre class="doc-content">ECHO-GUARD TECHNICAL INCIDENT REPORT
+Ref: EG-12-SD-2024
+
+TO: Facilities Management / Systems Engineering Department
+SUBJECT: Unit 12 Sensor Drift Diagnostic and Calibration Reset Event
+
+1. DEVICE PROFILE: UNIT 12
+- Model: Echo-Guard Standard (Mk. II)
+- Hardware Revision: v3.4
+- Primary Function: Presence Detection / Area Monitoring
+- Variable Data (Current Occupancy Rate): 14.2% (Historical Average: 82%)
+- Status: Active / Post-Recalibration
+
+2. INCIDENT SUMMARY
+This technical report documents anomalous telemetry data observed in Echo-Guard Unit 12. Systems Engineering identified a significant sensor drift where the occupancy rate variable plummeted from normal operational levels to near-zero values. To rectify this, a manual calibration reset was initiated by the central server.
+
+3. TECHNICAL DATA &amp; TIMELINE
+Diagnostic telemetry indicates that following the calibration reset event, there was an immediate and sustained drop in all internal sensor values. This drop was not random; technical analysis confirms that the value shift correlates exactly with the time window of the original system glitch reported by onsite monitoring.
+
+Timeline of Events:
+- T+00:00: Original system glitch detected. 
+- T+00:05: Unit 12 remote diagnostic handshake initiated.
+- T+00:12: Calibration reset event triggered by Systems Engineering.
+- T+00:13: Sensor values drop to 0.04 - 0.12 range, diverging from real-world occupancy conditions.
+
+4. MAINTENANCE ANALYSIS
+The data indicates that the reset did not restore the unit to baseline accuracy but instead locked the sensors to a skewed reference point established during the glitch window. This resulted in the documented deviation from the prior occupancy rate variable.
+
+5. DISPOSITION AND NOTICE
+Unit 12 remains operational but is flagged for performance degradation. Users and onsite technicians are hereby notified that there is an expected future shift in the sensitivity threshold for Unit 12. Engineering will deploy a localized threshold patch to baseline the sensor against current environmental noise.
+
+Note: This report is limited to diagnostic telemetry and maintenance timelines for Unit 12. No fleet-wide analysis or budgetary impact assessments are included in this documentation.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6094 · Off-entity</span></span></summary>
+          <pre class="doc-content">SYSTEMS RELIABILITY ENGINEERING (SRE) DEPARTMENT
+POST-DEPLOYMENT TECHNICAL ANALYSIS
+
+REPORT ID: SRE-EGU4-202X-082
+SUBJECT: Echo-Guard Unit 4 Sensor Stability Analysis
+DATE: 202X-10-14
+
+1. EXECUTIVE SUMMARY
+This report details the technical performance and telemetry findings for Echo-Guard Unit 4 following the recent implementation of the v.2.4.1 firmware package. The analysis focuses on data integrity and sensor behavior during the post-deployment observation window.
+
+2. UNIT IDENTIFICATION
+Within the centralized monitoring system, the specific telemetry profile is identified as follows:
+- Asset ID: Echo-Guard-U4
+- Monitoring Node: EGU4-SRE-PRIMARY
+- Firmware Revision: 2.4.1-STABLE
+
+3. EVENT CORRELATION AND DATA OSCILLATIONS
+Logging systems indicate a direct correlation between the firmware upgrade execution (Timestamp: 04:12 Zulu) and the onset of specific data oscillations in the sensor array. Immediately following the initialization of the new system image, the telemetry stream showed a marked departure from the baseline stability seen in the legacy version.
+
+4. TEMPORAL VERIFICATION
+A comparative analysis of the system timestamps confirms that the measured data variance occurred within the exact same time window as the original system glitch reported by onsite monitoring. Cross-referencing the internal system clock with external telemetry logs validates that the instability is localized to the post-update operational cycle.
+
+5. OCCUPANCY RATE MEASUREMENT
+During the event period, the occupancy rate variable was monitored as a primary metric for sensor load. The analysis shows that this variable maintained a mean of 74.2% but exhibited erratic spikes reaching 98.6% coinciding with the oscillation peaks. This suggests that the sensor logic is struggling to maintain a consistent state at higher occupancy thresholds under the current firmware logic.
+
+6. PREDICTIVE SIGNALING
+The current data oscillations observed in Unit 4 are characterized by SRE as a future predictive signal. The pattern of these telemetry ripples provides a reliable precursor to high variance events. By monitoring these oscillations, technical staff can preemptively identify states that lead to systemic data instability before thresholds are breached.
+
+7. SCOPE LIMITATIONS
+This documentation is restricted to the telemetry and performance logs of Unit 4. This report does not contain information regarding Units 1, 2, or 3, nor does it provide an analysis of the wider fleet performance. Furthermore, this analysis is based on output data only; it does not include the original source code for the firmware update or specific logic modules.
+
+8. CONCLUSION
+Sensor stability on Unit 4 remains compromised. The SRE department recommends continuous monitoring of the occupancy rate variable to mitigate further variance events.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6096 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL INFRASTRUCTURE OPERATIONS CENTER
+Maintenance Completion Summary
+
+ID: RIOC-MAINT-7721-EG7
+Subject: Echo-Guard Unit 7 Sensor Glitch
+
+Deployment Site: Plateau Ridge Thoroughfare
+Hardware: Echo-Guard Unit 7 (Occupancy Rate Sensor)
+Event Date: 2024-03-25
+
+Summary of Maintenance Service:
+On 2024-03-25, Echo-Guard Unit 7 experienced a technical sensor glitch. This malfunction resulted in an anomalous spike in occupancy data, persisting for a duration of four hours. 
+
+Resolution Status: 
+Maintenance crews have completed a full recalibration and physical inspection. The technical report confirms the successful resolution of the glitch prior to the current monitoring period. Post-repair diagnostics indicate the unit has successfully returned to standard operational parameters, maintaining a flat baseline since the intervention was completed.
+
+End of Report</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6097 · Off-window</span></span></summary>
+          <pre class="doc-content">INCIDENT MAINTENANCE LOG
+ID: EG-U7-2024-02
+ISSUER: Plateau Ridge Infrastructure &amp; Traffic Management Division
+
+SUBJECT: Echo-Guard Unit 7 Sensor Malfunction
+LOCATION: Plateau Ridge Thoroughfare
+
+INCIDENT SUMMARY:
+In early February 2024, Echo-Guard Unit 7 experienced a significant glitch event. Internal diagnostics confirm that the operational history of this unit predates the current data window. 
+
+IMPACT ASSESSMENT:
+The malfunction directly impacted the occupancy metrics for a specific 12-hour cycle during the onset of the glitch. Diagnostic reviews indicate that current post-glitch sensor output displays under-reported values relative to actual traffic density. 
+
+CURRENT STATUS:
+Unit 7 remains active but continues to output degraded data. This log serves as an internal record of failure and current device state. No repair schedules, occupancy forecasts, or system-wide analysis are included in this report.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6099 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">OPERATIONAL ANALYSIS REPORT
+ISSUER: Echo-Guard Technical Analytics Division
+SUBJECT: Echo-Guard Unit 7 Operational Trend Report: Plateau Ridge Thoroughfare
+
+EXECUTIVE SUMMARY
+Based on historical traffic patterns, Echo-Guard Unit 7 on the Plateau Ridge Thoroughfare exhibits a characteristic &#x27;morning momentum&#x27; during peak activity periods. During this morning momentum phase, occupancy levels trend upward and intensify for several hours after the initial surge. 
+
+PROJECTIONS
+Projected occupancy for the upcoming Thursday morning is expected to climb toward higher sustained levels through mid-morning. Furthermore, occupancy on the following Thursday morning is not expected to enter a period of decline during the mid-morning hours.
+
+NOTE: Scope is limited to specific historical traffic patterns and the immediate occupancy projection for the upcoming Thursday. It does not include broader regional traffic data, weather variables, specific vehicle counts, or long-term strategic recommendations.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6100 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">OPERATIONAL SENSOR ANALYSIS REPORT
+ISSUER: Echo-Guard Automated Surveillance Systems Division
+REPORT NAME: Weekly Nighttime Traffic Trend Report: Plateau Ridge Thoroughfare
+
+EXECUTIVE SUMMARY:
+This report details findings from Echo-Guard Unit 7, positioned on the Plateau Ridge Thoroughfare. Current sensor analysis indicates that nighttime activity has shown a consistent pattern of cooling throughout the week. Baseline occupancy levels at this specific location have been steadily drifting toward lower minimums. Based on current trends, occupancy rates are predicted to remain at near-zero levels during typical low-traffic windows. Furthermore, observed activity is contracting further into the early morning hours.
+
+NOTES:
+Scope is limited to the specific observations and immediate short-term projections for Echo-Guard Unit 7. It does not include data from other units, broader regional traffic causes, weather data, or long-term infrastructure planning.</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:yihong.tang@servicenow.com">Yihong Tang</a> · <a href="mailto:valentina.zantedeschi@servicenow.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

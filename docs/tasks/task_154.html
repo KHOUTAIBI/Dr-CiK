@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Lumina Springs · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Lumina Springs</h1>
+          <p>Forecasting <strong>electricity consumption</strong> · short news electricity increase in prediction task</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="Energy (electricity)">Energy (electricity)</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="144">144</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="33">33</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>Energy (electricity)</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Likely</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">General</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Straightforward</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2012-10-03 13:00:00</span><span>Forecast horizon · through 2012-10-10 12:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,248.45 17.87,247.39 23.73,245.98 29.60,246.98 35.46,245.64 41.33,248.10 47.19,246.14 53.06,244.78 58.92,249.58 64.79,251.08 70.65,251.61 76.52,263.32 82.38,270.94 88.25,273.75 94.11,275.02 99.98,275.76 105.84,275.61 111.71,272.49 117.57,265.75 123.44,254.69 129.30,251.29 135.17,247.97 141.03,247.46 146.90,244.72 152.76,242.70 158.63,244.22 164.49,244.45 170.36,243.55 176.22,244.58 182.09,246.25 187.95,246.00 193.82,250.90 199.68,253.03 205.55,253.05 211.41,263.81 217.28,271.15 223.14,273.25 229.01,273.35 234.87,274.66 240.74,275.79 246.60,273.50 252.47,267.77 258.33,263.11 264.20,254.17 270.06,251.40 275.93,248.97 281.79,242.85 287.66,240.51 293.52,240.84 299.39,242.06 305.25,242.46 311.12,240.17 316.98,242.08 322.85,241.51 328.71,248.55 334.58,251.39 340.44,254.20 346.31,266.75 352.17,270.41 358.04,272.70 363.90,272.17 369.77,272.73 375.63,270.36 381.50,266.85 387.36,262.40 393.23,250.99 399.09,250.34 404.96,247.42 410.82,246.28 416.69,240.71 422.55,240.99 428.42,242.75 434.28,242.46 440.15,240.42 446.01,240.45 451.88,241.68 457.74,242.64 463.61,241.45 469.47,247.67 475.34,249.43 481.20,249.28 487.07,260.22 492.93,267.35 498.80,269.06 504.66,270.44 510.53,270.43 516.39,271.36 522.26,265.70 528.12,263.06 533.99,251.33 539.85,247.16 545.72,243.34 551.58,241.83 557.45,240.30 563.31,240.57 569.18,244.37 575.04,239.07 580.91,239.08 586.77,241.84 592.64,241.65 598.50,243.26 604.37,249.08 610.23,251.78 616.10,261.87 621.96,269.60 627.83,268.93 633.69,271.07 639.56,272.48 645.42,273.17 651.29,273.48 657.15,270.95 663.02,265.85 668.88,262.11 674.75,251.29 680.61,248.77 686.48,247.19 692.34,245.43 698.21,243.95 704.07,244.76 709.94,245.43 715.80,244.47 721.67,243.20 727.53,243.65 733.40,244.30 739.26,251.54 745.13,250.63 750.99,251.34 756.86,261.74 762.72,267.63 768.59,267.87 774.45,268.74 780.32,269.56 786.18,269.04 792.05,267.01 797.91,262.04 803.78,256.90 809.64,249.43 815.51,247.05 821.37,243.24 827.24,241.68 833.10,240.74" /><polyline class="chart-future" points="833.10,240.74 838.97,246.49 844.83,247.49 850.70,244.38 856.56,242.08 862.43,14.00 868.29,14.68 874.16,18.16 880.02,244.60 885.89,247.17 891.75,250.76 897.62,256.32 903.48,268.94 909.35,268.08 915.21,275.60 921.08,273.36 926.94,276.00 932.81,265.93 938.67,262.85 944.54,258.44 950.40,253.47 956.27,243.76 962.13,248.52 968.00,239.41" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (168 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2012-10-03 13:00:00</td><td>2849.5772658501</td></tr><tr><td>2</td><td>Observed history</td><td>2012-10-03 14:00:00</td><td>2912.3948948618</td></tr><tr><td>3</td><td>Observed history</td><td>2012-10-03 15:00:00</td><td>2995.9990754381</td></tr><tr><td>4</td><td>Observed history</td><td>2012-10-03 16:00:00</td><td>2936.6241224967</td></tr><tr><td>5</td><td>Observed history</td><td>2012-10-03 17:00:00</td><td>3016.1410781148</td></tr><tr><td>6</td><td>Observed history</td><td>2012-10-03 18:00:00</td><td>2869.9795732746</td></tr><tr><td>7</td><td>Observed history</td><td>2012-10-03 19:00:00</td><td>2986.7066796468</td></tr><tr><td>8</td><td>Observed history</td><td>2012-10-03 20:00:00</td><td>3066.888455762</td></tr><tr><td>9</td><td>Observed history</td><td>2012-10-03 21:00:00</td><td>2782.6679560927</td></tr><tr><td>10</td><td>Observed history</td><td>2012-10-03 22:00:00</td><td>2693.2375600866</td></tr><tr><td>11</td><td>Observed history</td><td>2012-10-03 23:00:00</td><td>2661.9296538372</td></tr><tr><td>12</td><td>Observed history</td><td>2012-10-04 00:00:00</td><td>1967.4012955567</td></tr><tr><td>13</td><td>Observed history</td><td>2012-10-04 01:00:00</td><td>1515.6707839959</td></tr><tr><td>14</td><td>Observed history</td><td>2012-10-04 02:00:00</td><td>1349.1352404037</td></tr><tr><td>15</td><td>Observed history</td><td>2012-10-04 03:00:00</td><td>1273.4706332749</td></tr><tr><td>16</td><td>Observed history</td><td>2012-10-04 04:00:00</td><td>1229.6741185857</td></tr><tr><td>17</td><td>Observed history</td><td>2012-10-04 05:00:00</td><td>1238.6434466747</td></tr><tr><td>18</td><td>Observed history</td><td>2012-10-04 06:00:00</td><td>1423.6177901462</td></tr><tr><td>19</td><td>Observed history</td><td>2012-10-04 07:00:00</td><td>1603.4921079395</td></tr><tr><td>20</td><td>Observed history</td><td>2012-10-04 08:00:00</td><td>1823.6914649733</td></tr><tr><td>21</td><td>Observed history</td><td>2012-10-04 09:00:00</td><td>2479.3371378663</td></tr><tr><td>22</td><td>Observed history</td><td>2012-10-04 10:00:00</td><td>2681.2494681263</td></tr><tr><td>23</td><td>Observed history</td><td>2012-10-04 11:00:00</td><td>2877.9508818488</td></tr><tr><td>24</td><td>Observed history</td><td>2012-10-04 12:00:00</td><td>2907.970659386</td></tr><tr><td>25</td><td>Observed history</td><td>2012-10-04 13:00:00</td><td>3070.961759864</td></tr><tr><td>26</td><td>Observed history</td><td>2012-10-04 14:00:00</td><td>3190.3460824708</td></tr><tr><td>27</td><td>Observed history</td><td>2012-10-04 15:00:00</td><td>3100.3907687287</td></tr><tr><td>28</td><td>Observed history</td><td>2012-10-04 16:00:00</td><td>3086.9856868143</td></tr><tr><td>29</td><td>Observed history</td><td>2012-10-04 17:00:00</td><td>3139.9443714562</td></tr><tr><td>30</td><td>Observed history</td><td>2012-10-04 18:00:00</td><td>3079.2664098807</td></tr><tr><td>31</td><td>Observed history</td><td>2012-10-04 19:00:00</td><td>2979.6736206744</td></tr><tr><td>32</td><td>Observed history</td><td>2012-10-04 20:00:00</td><td>2994.9114911074</td></tr><tr><td>33</td><td>Observed history</td><td>2012-10-04 21:00:00</td><td>2704.3883641817</td></tr><tr><td>34</td><td>Observed history</td><td>2012-10-04 22:00:00</td><td>2577.9240438683</td></tr><tr><td>35</td><td>Observed history</td><td>2012-10-04 23:00:00</td><td>2576.8941551698</td></tr><tr><td>36</td><td>Observed history</td><td>2012-10-05 00:00:00</td><td>1938.4659944474</td></tr><tr><td>37</td><td>Observed history</td><td>2012-10-05 01:00:00</td><td>1503.0460109553</td></tr><tr><td>38</td><td>Observed history</td><td>2012-10-05 02:00:00</td><td>1378.7377881789</td></tr><tr><td>39</td><td>Observed history</td><td>2012-10-05 03:00:00</td><td>1372.5784425232</td></tr><tr><td>40</td><td>Observed history</td><td>2012-10-05 04:00:00</td><td>1294.9910023961</td></tr><tr><td>41</td><td>Observed history</td><td>2012-10-05 05:00:00</td><td>1227.9052984645</td></tr><tr><td>42</td><td>Observed history</td><td>2012-10-05 06:00:00</td><td>1363.7415137977</td></tr><tr><td>43</td><td>Observed history</td><td>2012-10-05 07:00:00</td><td>1703.7778812034</td></tr><tr><td>44</td><td>Observed history</td><td>2012-10-05 08:00:00</td><td>1980.2221745067</td></tr><tr><td>45</td><td>Observed history</td><td>2012-10-05 09:00:00</td><td>2510.1015482782</td></tr><tr><td>46</td><td>Observed history</td><td>2012-10-05 10:00:00</td><td>2674.5978756839</td></tr><tr><td>47</td><td>Observed history</td><td>2012-10-05 11:00:00</td><td>2818.3835789571</td></tr><tr><td>48</td><td>Observed history</td><td>2012-10-05 12:00:00</td><td>3181.3578481056</td></tr><tr><td>49</td><td>Observed history</td><td>2012-10-05 13:00:00</td><td>3320.2317583016</td></tr><tr><td>50</td><td>Observed history</td><td>2012-10-05 14:00:00</td><td>3301.0026186632</td></tr><tr><td>51</td><td>Observed history</td><td>2012-10-05 15:00:00</td><td>3228.627295118</td></tr><tr><td>52</td><td>Observed history</td><td>2012-10-05 16:00:00</td><td>3205.0224362015</td></tr><tr><td>53</td><td>Observed history</td><td>2012-10-05 17:00:00</td><td>3340.595691017</td></tr><tr><td>54</td><td>Observed history</td><td>2012-10-05 18:00:00</td><td>3227.3649225898</td></tr><tr><td>55</td><td>Observed history</td><td>2012-10-05 19:00:00</td><td>3249.5330610108</td></tr><tr><td>56</td><td>Observed history</td><td>2012-10-05 20:00:00</td><td>3260.9762429811</td></tr><tr><td>57</td><td>Observed history</td><td>2012-10-05 21:00:00</td><td>2843.4419292151</td></tr><tr><td>58</td><td>Observed history</td><td>2012-10-05 22:00:00</td><td>2675.3670640417</td></tr><tr><td>59</td><td>Observed history</td><td>2012-10-05 23:00:00</td><td>2508.679706254</td></tr><tr><td>60</td><td>Observed history</td><td>2012-10-06 00:00:00</td><td>1764.3496895202</td></tr><tr><td>61</td><td>Observed history</td><td>2012-10-06 01:00:00</td><td>1546.96055947</td></tr><tr><td>62</td><td>Observed history</td><td>2012-10-06 02:00:00</td><td>1411.418089117</td></tr><tr><td>63</td><td>Observed history</td><td>2012-10-06 03:00:00</td><td>1442.4173743372</td></tr><tr><td>64</td><td>Observed history</td><td>2012-10-06 04:00:00</td><td>1409.2828683814</td></tr><tr><td>65</td><td>Observed history</td><td>2012-10-06 05:00:00</td><td>1550.1255060469</td></tr><tr><td>66</td><td>Observed history</td><td>2012-10-06 06:00:00</td><td>1758.0326101859</td></tr><tr><td>67</td><td>Observed history</td><td>2012-10-06 07:00:00</td><td>2022.1134919145</td></tr><tr><td>68</td><td>Observed history</td><td>2012-10-06 08:00:00</td><td>2698.6547060228</td></tr><tr><td>69</td><td>Observed history</td><td>2012-10-06 09:00:00</td><td>2737.1199249058</td></tr><tr><td>70</td><td>Observed history</td><td>2012-10-06 10:00:00</td><td>2910.443011798</td></tr><tr><td>71</td><td>Observed history</td><td>2012-10-06 11:00:00</td><td>2978.3682404578</td></tr><tr><td>72</td><td>Observed history</td><td>2012-10-06 12:00:00</td><td>3308.3525305608</td></tr><tr><td>73</td><td>Observed history</td><td>2012-10-06 13:00:00</td><td>3291.7884668302</td></tr><tr><td>74</td><td>Observed history</td><td>2012-10-06 14:00:00</td><td>3187.7517220354</td></tr><tr><td>75</td><td>Observed history</td><td>2012-10-06 15:00:00</td><td>3204.9236895233</td></tr><tr><td>76</td><td>Observed history</td><td>2012-10-06 16:00:00</td><td>3325.5442964251</td></tr><tr><td>77</td><td>Observed history</td><td>2012-10-06 17:00:00</td><td>3324.2469725293</td></tr><tr><td>78</td><td>Observed history</td><td>2012-10-06 18:00:00</td><td>3251.3005637522</td></tr><tr><td>79</td><td>Observed history</td><td>2012-10-06 19:00:00</td><td>3193.9688431415</td></tr><tr><td>80</td><td>Observed history</td><td>2012-10-06 20:00:00</td><td>3264.3704809467</td></tr><tr><td>81</td><td>Observed history</td><td>2012-10-06 21:00:00</td><td>2895.4935363541</td></tr><tr><td>82</td><td>Observed history</td><td>2012-10-06 22:00:00</td><td>2791.1018978952</td></tr><tr><td>83</td><td>Observed history</td><td>2012-10-06 23:00:00</td><td>2800.5312058794</td></tr><tr><td>84</td><td>Observed history</td><td>2012-10-07 00:00:00</td><td>2151.5665839073</td></tr><tr><td>85</td><td>Observed history</td><td>2012-10-07 01:00:00</td><td>1728.6765972961</td></tr><tr><td>86</td><td>Observed history</td><td>2012-10-07 02:00:00</td><td>1627.0487090476</td></tr><tr><td>87</td><td>Observed history</td><td>2012-10-07 03:00:00</td><td>1545.318447569</td></tr><tr><td>88</td><td>Observed history</td><td>2012-10-07 04:00:00</td><td>1545.6999760282</td></tr><tr><td>89</td><td>Observed history</td><td>2012-10-07 05:00:00</td><td>1490.8337493595</td></tr><tr><td>90</td><td>Observed history</td><td>2012-10-07 06:00:00</td><td>1614.9024435336</td></tr><tr><td>91</td><td>Observed history</td><td>2012-10-07 07:00:00</td><td>1826.559184069</td></tr><tr><td>92</td><td>Observed history</td><td>2012-10-07 08:00:00</td><td>1982.9076627393</td></tr><tr><td>93</td><td>Observed history</td><td>2012-10-07 09:00:00</td><td>2678.8388982404</td></tr><tr><td>94</td><td>Observed history</td><td>2012-10-07 10:00:00</td><td>2925.7382379523</td></tr><tr><td>95</td><td>Observed history</td><td>2012-10-07 11:00:00</td><td>3152.5326519243</td></tr><tr><td>96</td><td>Observed history</td><td>2012-10-07 12:00:00</td><td>3242.1866797744</td></tr><tr><td>97</td><td>Observed history</td><td>2012-10-07 13:00:00</td><td>3332.809426902</td></tr><tr><td>98</td><td>Observed history</td><td>2012-10-07 14:00:00</td><td>3317.0360481441</td></tr><tr><td>99</td><td>Observed history</td><td>2012-10-07 15:00:00</td><td>3091.2279423759</td></tr><tr><td>100</td><td>Observed history</td><td>2012-10-07 16:00:00</td><td>3405.6152155843</td></tr><tr><td>101</td><td>Observed history</td><td>2012-10-07 17:00:00</td><td>3405.4042467574</td></tr><tr><td>102</td><td>Observed history</td><td>2012-10-07 18:00:00</td><td>3241.2429139484</td></tr><tr><td>103</td><td>Observed history</td><td>2012-10-07 19:00:00</td><td>3252.6145135256</td></tr><tr><td>104</td><td>Observed history</td><td>2012-10-07 20:00:00</td><td>3157.4666873</td></tr><tr><td>105</td><td>Observed history</td><td>2012-10-07 21:00:00</td><td>2812.0264474906</td></tr><tr><td>106</td><td>Observed history</td><td>2012-10-07 22:00:00</td><td>2651.861323384</td></tr><tr><td>107</td><td>Observed history</td><td>2012-10-07 23:00:00</td><td>2053.2760579251</td></tr><tr><td>108</td><td>Observed history</td><td>2012-10-08 00:00:00</td><td>1595.2863204347</td></tr><tr><td>109</td><td>Observed history</td><td>2012-10-08 01:00:00</td><td>1634.6742739623</td></tr><tr><td>110</td><td>Observed history</td><td>2012-10-08 02:00:00</td><td>1507.707087314</td></tr><tr><td>111</td><td>Observed history</td><td>2012-10-08 03:00:00</td><td>1424.3763337724</td></tr><tr><td>112</td><td>Observed history</td><td>2012-10-08 04:00:00</td><td>1383.3273552885</td></tr><tr><td>113</td><td>Observed history</td><td>2012-10-08 05:00:00</td><td>1364.8133484701</td></tr><tr><td>114</td><td>Observed history</td><td>2012-10-08 06:00:00</td><td>1515.1600900018</td></tr><tr><td>115</td><td>Observed history</td><td>2012-10-08 07:00:00</td><td>1817.7497125473</td></tr><tr><td>116</td><td>Observed history</td><td>2012-10-08 08:00:00</td><td>2039.1988435146</td></tr><tr><td>117</td><td>Observed history</td><td>2012-10-08 09:00:00</td><td>2681.0986099299</td></tr><tr><td>118</td><td>Observed history</td><td>2012-10-08 10:00:00</td><td>2830.4428412354</td></tr><tr><td>119</td><td>Observed history</td><td>2012-10-08 11:00:00</td><td>2924.3255589578</td></tr><tr><td>120</td><td>Observed history</td><td>2012-10-08 12:00:00</td><td>3028.691932249</td></tr><tr><td>121</td><td>Observed history</td><td>2012-10-08 13:00:00</td><td>3116.1398354321</td></tr><tr><td>122</td><td>Observed history</td><td>2012-10-08 14:00:00</td><td>3068.2273671839</td></tr><tr><td>123</td><td>Observed history</td><td>2012-10-08 15:00:00</td><td>3028.6146004245</td></tr><tr><td>124</td><td>Observed history</td><td>2012-10-08 16:00:00</td><td>3085.4604847036</td></tr><tr><td>125</td><td>Observed history</td><td>2012-10-08 17:00:00</td><td>3160.7928892894</td></tr><tr><td>126</td><td>Observed history</td><td>2012-10-08 18:00:00</td><td>3112.9535025664</td></tr><tr><td>127</td><td>Observed history</td><td>2012-10-08 19:00:00</td><td>3134.2049673461</td></tr><tr><td>128</td><td>Observed history</td><td>2012-10-08 20:00:00</td><td>3095.347459526</td></tr><tr><td>129</td><td>Observed history</td><td>2012-10-08 21:00:00</td><td>2666.1014374187</td></tr><tr><td>130</td><td>Observed history</td><td>2012-10-08 22:00:00</td><td>2720.195162608</td></tr><tr><td>131</td><td>Observed history</td><td>2012-10-08 23:00:00</td><td>2678.3605804984</td></tr><tr><td>132</td><td>Observed history</td><td>2012-10-09 00:00:00</td><td>2061.4839405618</td></tr><tr><td>133</td><td>Observed history</td><td>2012-10-09 01:00:00</td><td>1712.0888833866</td></tr><tr><td>134</td><td>Observed history</td><td>2012-10-09 02:00:00</td><td>1697.7456975478</td></tr><tr><td>135</td><td>Observed history</td><td>2012-10-09 03:00:00</td><td>1645.9947710096</td></tr><tr><td>136</td><td>Observed history</td><td>2012-10-09 04:00:00</td><td>1597.2642418112</td></tr><tr><td>137</td><td>Observed history</td><td>2012-10-09 05:00:00</td><td>1628.56768374</td></tr><tr><td>138</td><td>Observed history</td><td>2012-10-09 06:00:00</td><td>1748.5947750573</td></tr><tr><td>139</td><td>Observed history</td><td>2012-10-09 07:00:00</td><td>2043.2147272274</td></tr><tr><td>140</td><td>Observed history</td><td>2012-10-09 08:00:00</td><td>2348.0559706323</td></tr><tr><td>141</td><td>Observed history</td><td>2012-10-09 09:00:00</td><td>2791.5156143893</td></tr><tr><td>142</td><td>Observed history</td><td>2012-10-09 10:00:00</td><td>2932.4382438012</td></tr><tr><td>143</td><td>Observed history</td><td>2012-10-09 11:00:00</td><td>3158.4872494593</td></tr><tr><td>144</td><td>Observed history</td><td>2012-10-09 12:00:00</td><td>3251.1104523266</td></tr><tr class="future"><td>145</td><td>Forecast horizon</td><td>2012-10-09 13:00:00</td><td>3306.4741385696</td></tr><tr class="future"><td>146</td><td>Forecast horizon</td><td>2012-10-09 14:00:00</td><td>2965.5678280322</td></tr><tr class="future"><td>147</td><td>Forecast horizon</td><td>2012-10-09 15:00:00</td><td>2906.5024835152</td></tr><tr class="future"><td>148</td><td>Forecast horizon</td><td>2012-10-09 16:00:00</td><td>3090.7526676863</td></tr><tr class="future"><td>149</td><td>Forecast horizon</td><td>2012-10-09 17:00:00</td><td>3227.4065827848</td></tr><tr class="future"><td>150</td><td>Forecast horizon</td><td>2012-10-09 18:00:00</td><td>16754.824092096</td></tr><tr class="future"><td>151</td><td>Forecast horizon</td><td>2012-10-09 19:00:00</td><td>16714.5345798109</td></tr><tr class="future"><td>152</td><td>Forecast horizon</td><td>2012-10-09 20:00:00</td><td>16508.3705540255</td></tr><tr class="future"><td>153</td><td>Forecast horizon</td><td>2012-10-09 21:00:00</td><td>3078.0590907026</td></tr><tr class="future"><td>154</td><td>Forecast horizon</td><td>2012-10-09 22:00:00</td><td>2925.632827312</td></tr><tr class="future"><td>155</td><td>Forecast horizon</td><td>2012-10-09 23:00:00</td><td>2712.755854788</td></tr><tr class="future"><td>156</td><td>Forecast horizon</td><td>2012-10-10 00:00:00</td><td>2382.423550912</td></tr><tr class="future"><td>157</td><td>Forecast horizon</td><td>2012-10-10 01:00:00</td><td>1634.0269895307</td></tr><tr class="future"><td>158</td><td>Forecast horizon</td><td>2012-10-10 02:00:00</td><td>1685.3201001031</td></tr><tr class="future"><td>159</td><td>Forecast horizon</td><td>2012-10-10 03:00:00</td><td>1239.3774489685</td></tr><tr class="future"><td>160</td><td>Forecast horizon</td><td>2012-10-10 04:00:00</td><td>1372.314253099</td></tr><tr class="future"><td>161</td><td>Forecast horizon</td><td>2012-10-10 05:00:00</td><td>1215.4750978417</td></tr><tr class="future"><td>162</td><td>Forecast horizon</td><td>2012-10-10 06:00:00</td><td>1812.9731719371</td></tr><tr class="future"><td>163</td><td>Forecast horizon</td><td>2012-10-10 07:00:00</td><td>1995.3306938469</td></tr><tr class="future"><td>164</td><td>Forecast horizon</td><td>2012-10-10 08:00:00</td><td>2257.0234699239</td></tr><tr class="future"><td>165</td><td>Forecast horizon</td><td>2012-10-10 09:00:00</td><td>2551.7606703863</td></tr><tr class="future"><td>166</td><td>Forecast horizon</td><td>2012-10-10 10:00:00</td><td>3127.7827184524</td></tr><tr class="future"><td>167</td><td>Forecast horizon</td><td>2012-10-10 11:00:00</td><td>2845.2415523361</td></tr><tr class="future"><td>168</td><td>Forecast horizon</td><td>2012-10-10 12:00:00</td><td>3385.8030056001</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-154-context" id="forecast-task-154-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-154-context" id="forecast-task-154-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-154-context" id="forecast-task-154-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-154-view" id="forecast-task-154-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-154-view" id="forecast-task-154-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-154-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-154-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-154-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-154-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-154-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 276.44 L 33.65 275.39 L 39.31 273.99 L 44.96 274.99 L 50.61 273.66 L 56.26 276.10 L 61.92 274.15 L 67.57 272.81 L 73.22 277.56 L 78.87 279.06 L 84.53 279.58 L 90.18 291.20 L 95.83 298.76 L 101.49 301.55 L 107.14 302.81 L 112.79 303.55 L 118.44 303.40 L 124.10 300.30 L 129.75 297.29 L 135.40 293.61 L 141.05 282.64 L 146.71 279.26 L 152.36 275.97 L 158.01 275.47 L 163.66 272.74 L 169.32 270.74 L 174.97 272.25 L 180.62 272.47 L 186.28 271.59 L 191.93 272.60 L 197.58 274.27 L 203.23 274.01 L 208.89 278.87 L 214.54 280.99 L 220.19 281.01 L 225.84 291.69 L 231.50 298.97 L 237.15 301.05 L 242.80 301.16 L 248.46 302.45 L 254.11 303.58 L 259.76 301.30 L 265.41 295.61 L 271.07 290.99 L 276.72 282.12 L 282.37 279.37 L 288.02 276.97 L 293.68 270.89 L 299.33 268.57 L 304.98 268.89 L 310.63 270.10 L 316.29 270.50 L 321.94 268.23 L 327.59 270.12 L 333.25 269.75 L 338.90 269.56 L 344.55 276.55 L 350.20 279.36 L 355.86 282.15 L 361.51 294.60 L 367.16 298.24 L 372.81 300.51 L 378.47 299.99 L 384.12 300.54 L 389.77 298.18 L 395.43 294.71 L 401.08 290.29 L 406.73 278.97 L 412.38 278.32 L 418.04 275.43 L 423.69 274.29 L 429.34 268.77 L 434.99 269.04 L 440.65 270.79 L 446.30 270.50 L 451.95 268.48 L 457.60 268.50 L 463.26 269.72 L 468.91 270.68 L 474.56 269.50 L 480.22 275.68 L 485.87 277.42 L 491.52 277.26 L 497.17 288.12 L 502.83 295.20 L 508.48 296.90 L 514.13 298.27 L 519.78 298.26 L 525.44 299.18 L 531.09 297.10 L 536.74 293.56 L 542.40 290.94 L 548.05 279.30 L 553.70 275.17 L 559.35 271.37 L 565.01 269.87 L 570.66 268.36 L 576.31 268.62 L 581.96 272.40 L 587.62 267.14 L 593.27 267.14 L 598.92 269.89 L 604.57 269.70 L 610.23 271.29 L 615.88 277.07 L 621.53 279.75 L 627.19 289.77 L 632.84 297.43 L 638.49 296.77 L 644.14 298.89 L 649.80 300.29 L 655.45 300.98 L 661.10 301.29 L 666.75 298.77 L 672.41 293.71 L 678.06 290.00 L 683.71 279.26 L 689.37 276.76 L 695.02 275.19 L 700.67 273.45 L 706.32 271.98 L 711.98 272.79 L 717.63 273.45 L 723.28 272.50 L 728.93 271.24 L 734.59 272.04 L 740.24 271.68 L 745.89 272.33 L 751.54 279.51 L 757.20 278.61 L 762.85 279.31 L 768.50 289.63 L 774.16 295.47 L 779.81 295.71 L 785.46 296.58 L 791.11 297.40 L 796.77 296.87 L 802.42 294.86 L 808.07 289.93 L 813.72 284.83 L 819.38 277.41 L 825.03 275.06 L 830.68 271.28 L 836.34 269.73" /><path class="forecast-svg-actual" d="M 841.99 268.80 L 847.64 274.50 L 853.29 275.49 L 858.95 272.41 L 864.60 270.12 L 870.25 43.79 L 875.90 44.47 L 881.56 47.92 L 887.21 272.62 L 892.86 275.17 L 898.51 278.73 L 904.17 284.26 L 909.82 296.78 L 915.47 295.92 L 921.13 303.38 L 926.78 301.16 L 932.43 303.78 L 938.08 293.79 L 943.74 290.74 L 949.39 286.36 L 955.04 281.43 L 960.69 271.79 L 966.35 276.52 L 972.00 267.47" /><path class="forecast-svg-band" fill="#b86d4a" d="M 841.99 266.99 L 847.64 266.99 L 853.29 268.60 L 858.95 267.36 L 864.60 266.78 L 870.25 268.83 L 875.90 269.34 L 881.56 268.23 L 887.21 274.70 L 892.86 277.01 L 898.51 279.76 L 904.17 290.38 L 909.82 294.81 L 915.47 296.83 L 921.13 297.87 L 926.78 298.34 L 932.43 298.36 L 938.08 296.54 L 943.74 292.61 L 949.39 287.04 L 955.04 278.29 L 960.69 274.20 L 966.35 271.17 L 972.00 270.08 L 972.00 274.25 L 966.35 276.31 L 960.69 278.31 L 955.04 281.62 L 949.39 288.90 L 943.74 293.52 L 938.08 297.79 L 932.43 299.73 L 926.78 299.77 L 921.13 299.20 L 915.47 298.07 L 909.82 296.27 L 904.17 291.76 L 898.51 282.43 L 892.86 279.85 L 887.21 278.13 L 881.56 273.04 L 875.90 273.63 L 870.25 274.08 L 864.60 271.82 L 858.95 272.56 L 853.29 273.29 L 847.64 272.26 L 841.99 272.60 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 841.99 269.80 L 847.64 269.63 L 853.29 270.94 L 858.95 269.96 L 864.60 269.30 L 870.25 271.46 L 875.90 271.48 L 881.56 270.63 L 887.21 276.42 L 892.86 278.43 L 898.51 281.10 L 904.17 291.07 L 909.82 295.54 L 915.47 297.45 L 921.13 298.53 L 926.78 299.06 L 932.43 299.05 L 938.08 297.17 L 943.74 293.07 L 949.39 287.97 L 955.04 279.96 L 960.69 276.25 L 966.35 273.74 L 972.00 272.16" /><circle class="forecast-svg-start" fill="#b86d4a" cx="841.99" cy="269.80" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 841.99 267.43 L 847.64 265.66 L 853.29 255.14 L 858.95 191.36 L 864.60 165.30 L 870.25 55.56 L 875.90 78.47 L 881.56 92.00 L 887.21 259.44 L 892.86 278.14 L 898.51 281.23 L 904.17 291.60 L 909.82 297.90 L 915.47 300.31 L 921.13 301.33 L 926.78 302.22 L 932.43 302.23 L 938.08 299.00 L 943.74 294.34 L 949.39 289.93 L 955.04 279.89 L 960.69 276.78 L 966.35 273.89 L 972.00 271.83" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="267.43" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 841.99 268.77 L 847.64 269.01 L 853.29 269.52 L 858.95 268.95 L 864.60 268.56 L 870.25 237.14 L 875.90 236.80 L 881.56 237.16 L 887.21 252.38 L 892.86 275.56 L 898.51 277.76 L 904.17 288.20 L 909.82 292.95 L 915.47 294.88 L 921.13 295.96 L 926.78 296.18 L 932.43 296.42 L 938.08 294.12 L 943.74 290.12 L 949.39 285.05 L 955.04 276.83 L 960.69 274.13 L 966.35 271.91 L 972.00 269.88" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="268.77" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 276.44 L 33.65 275.39 L 39.31 273.99 L 44.96 274.99 L 50.61 273.66 L 56.26 276.10 L 61.92 274.15 L 67.57 272.81 L 73.22 277.56 L 78.87 279.06 L 84.53 279.58 L 90.18 291.20 L 95.83 298.76 L 101.49 301.55 L 107.14 302.81 L 112.79 303.55 L 118.44 303.40 L 124.10 300.30 L 129.75 297.29 L 135.40 293.61 L 141.05 282.64 L 146.71 279.26 L 152.36 275.97 L 158.01 275.47 L 163.66 272.74 L 169.32 270.74 L 174.97 272.25 L 180.62 272.47 L 186.28 271.59 L 191.93 272.60 L 197.58 274.27 L 203.23 274.01 L 208.89 278.87 L 214.54 280.99 L 220.19 281.01 L 225.84 291.69 L 231.50 298.97 L 237.15 301.05 L 242.80 301.16 L 248.46 302.45 L 254.11 303.58 L 259.76 301.30 L 265.41 295.61 L 271.07 290.99 L 276.72 282.12 L 282.37 279.37 L 288.02 276.97 L 293.68 270.89 L 299.33 268.57 L 304.98 268.89 L 310.63 270.10 L 316.29 270.50 L 321.94 268.23 L 327.59 270.12 L 333.25 269.75 L 338.90 269.56 L 344.55 276.55 L 350.20 279.36 L 355.86 282.15 L 361.51 294.60 L 367.16 298.24 L 372.81 300.51 L 378.47 299.99 L 384.12 300.54 L 389.77 298.18 L 395.43 294.71 L 401.08 290.29 L 406.73 278.97 L 412.38 278.32 L 418.04 275.43 L 423.69 274.29 L 429.34 268.77 L 434.99 269.04 L 440.65 270.79 L 446.30 270.50 L 451.95 268.48 L 457.60 268.50 L 463.26 269.72 L 468.91 270.68 L 474.56 269.50 L 480.22 275.68 L 485.87 277.42 L 491.52 277.26 L 497.17 288.12 L 502.83 295.20 L 508.48 296.90 L 514.13 298.27 L 519.78 298.26 L 525.44 299.18 L 531.09 297.10 L 536.74 293.56 L 542.40 290.94 L 548.05 279.30 L 553.70 275.17 L 559.35 271.37 L 565.01 269.87 L 570.66 268.36 L 576.31 268.62 L 581.96 272.40 L 587.62 267.14 L 593.27 267.14 L 598.92 269.89 L 604.57 269.70 L 610.23 271.29 L 615.88 277.07 L 621.53 279.75 L 627.19 289.77 L 632.84 297.43 L 638.49 296.77 L 644.14 298.89 L 649.80 300.29 L 655.45 300.98 L 661.10 301.29 L 666.75 298.77 L 672.41 293.71 L 678.06 290.00 L 683.71 279.26 L 689.37 276.76 L 695.02 275.19 L 700.67 273.45 L 706.32 271.98 L 711.98 272.79 L 717.63 273.45 L 723.28 272.50 L 728.93 271.24 L 734.59 272.04 L 740.24 271.68 L 745.89 272.33 L 751.54 279.51 L 757.20 278.61 L 762.85 279.31 L 768.50 289.63 L 774.16 295.47 L 779.81 295.71 L 785.46 296.58 L 791.11 297.40 L 796.77 296.87 L 802.42 294.86 L 808.07 289.93 L 813.72 284.83 L 819.38 277.41 L 825.03 275.06 L 830.68 271.28 L 836.34 269.73" /><path class="forecast-svg-actual" d="M 841.99 268.80 L 847.64 274.50 L 853.29 275.49 L 858.95 272.41 L 864.60 270.12 L 870.25 43.79 L 875.90 44.47 L 881.56 47.92 L 887.21 272.62 L 892.86 275.17 L 898.51 278.73 L 904.17 284.26 L 909.82 296.78 L 915.47 295.92 L 921.13 303.38 L 926.78 301.16 L 932.43 303.78 L 938.08 293.79 L 943.74 290.74 L 949.39 286.36 L 955.04 281.43 L 960.69 271.79 L 966.35 276.52 L 972.00 267.47" /><path class="forecast-svg-band" fill="#b86d4a" d="M 841.99 266.99 L 847.64 266.99 L 853.29 268.60 L 858.95 267.36 L 864.60 266.78 L 870.25 268.83 L 875.90 269.34 L 881.56 268.23 L 887.21 274.70 L 892.86 277.01 L 898.51 279.76 L 904.17 290.38 L 909.82 294.81 L 915.47 296.83 L 921.13 297.87 L 926.78 298.34 L 932.43 298.36 L 938.08 296.54 L 943.74 292.61 L 949.39 287.04 L 955.04 278.29 L 960.69 274.20 L 966.35 271.17 L 972.00 270.08 L 972.00 274.25 L 966.35 276.31 L 960.69 278.31 L 955.04 281.62 L 949.39 288.90 L 943.74 293.52 L 938.08 297.79 L 932.43 299.73 L 926.78 299.77 L 921.13 299.20 L 915.47 298.07 L 909.82 296.27 L 904.17 291.76 L 898.51 282.43 L 892.86 279.85 L 887.21 278.13 L 881.56 273.04 L 875.90 273.63 L 870.25 274.08 L 864.60 271.82 L 858.95 272.56 L 853.29 273.29 L 847.64 272.26 L 841.99 272.60 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 841.99 269.80 L 847.64 269.63 L 853.29 270.94 L 858.95 269.96 L 864.60 269.30 L 870.25 271.46 L 875.90 271.48 L 881.56 270.63 L 887.21 276.42 L 892.86 278.43 L 898.51 281.10 L 904.17 291.07 L 909.82 295.54 L 915.47 297.45 L 921.13 298.53 L 926.78 299.06 L 932.43 299.05 L 938.08 297.17 L 943.74 293.07 L 949.39 287.97 L 955.04 279.96 L 960.69 276.25 L 966.35 273.74 L 972.00 272.16" /><circle class="forecast-svg-start" fill="#b86d4a" cx="841.99" cy="269.80" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 276.44 L 33.65 275.39 L 39.31 273.99 L 44.96 274.99 L 50.61 273.66 L 56.26 276.10 L 61.92 274.15 L 67.57 272.81 L 73.22 277.56 L 78.87 279.06 L 84.53 279.58 L 90.18 291.20 L 95.83 298.76 L 101.49 301.55 L 107.14 302.81 L 112.79 303.55 L 118.44 303.40 L 124.10 300.30 L 129.75 297.29 L 135.40 293.61 L 141.05 282.64 L 146.71 279.26 L 152.36 275.97 L 158.01 275.47 L 163.66 272.74 L 169.32 270.74 L 174.97 272.25 L 180.62 272.47 L 186.28 271.59 L 191.93 272.60 L 197.58 274.27 L 203.23 274.01 L 208.89 278.87 L 214.54 280.99 L 220.19 281.01 L 225.84 291.69 L 231.50 298.97 L 237.15 301.05 L 242.80 301.16 L 248.46 302.45 L 254.11 303.58 L 259.76 301.30 L 265.41 295.61 L 271.07 290.99 L 276.72 282.12 L 282.37 279.37 L 288.02 276.97 L 293.68 270.89 L 299.33 268.57 L 304.98 268.89 L 310.63 270.10 L 316.29 270.50 L 321.94 268.23 L 327.59 270.12 L 333.25 269.75 L 338.90 269.56 L 344.55 276.55 L 350.20 279.36 L 355.86 282.15 L 361.51 294.60 L 367.16 298.24 L 372.81 300.51 L 378.47 299.99 L 384.12 300.54 L 389.77 298.18 L 395.43 294.71 L 401.08 290.29 L 406.73 278.97 L 412.38 278.32 L 418.04 275.43 L 423.69 274.29 L 429.34 268.77 L 434.99 269.04 L 440.65 270.79 L 446.30 270.50 L 451.95 268.48 L 457.60 268.50 L 463.26 269.72 L 468.91 270.68 L 474.56 269.50 L 480.22 275.68 L 485.87 277.42 L 491.52 277.26 L 497.17 288.12 L 502.83 295.20 L 508.48 296.90 L 514.13 298.27 L 519.78 298.26 L 525.44 299.18 L 531.09 297.10 L 536.74 293.56 L 542.40 290.94 L 548.05 279.30 L 553.70 275.17 L 559.35 271.37 L 565.01 269.87 L 570.66 268.36 L 576.31 268.62 L 581.96 272.40 L 587.62 267.14 L 593.27 267.14 L 598.92 269.89 L 604.57 269.70 L 610.23 271.29 L 615.88 277.07 L 621.53 279.75 L 627.19 289.77 L 632.84 297.43 L 638.49 296.77 L 644.14 298.89 L 649.80 300.29 L 655.45 300.98 L 661.10 301.29 L 666.75 298.77 L 672.41 293.71 L 678.06 290.00 L 683.71 279.26 L 689.37 276.76 L 695.02 275.19 L 700.67 273.45 L 706.32 271.98 L 711.98 272.79 L 717.63 273.45 L 723.28 272.50 L 728.93 271.24 L 734.59 272.04 L 740.24 271.68 L 745.89 272.33 L 751.54 279.51 L 757.20 278.61 L 762.85 279.31 L 768.50 289.63 L 774.16 295.47 L 779.81 295.71 L 785.46 296.58 L 791.11 297.40 L 796.77 296.87 L 802.42 294.86 L 808.07 289.93 L 813.72 284.83 L 819.38 277.41 L 825.03 275.06 L 830.68 271.28 L 836.34 269.73" /><path class="forecast-svg-actual" d="M 841.99 268.80 L 847.64 274.50 L 853.29 275.49 L 858.95 272.41 L 864.60 270.12 L 870.25 43.79 L 875.90 44.47 L 881.56 47.92 L 887.21 272.62 L 892.86 275.17 L 898.51 278.73 L 904.17 284.26 L 909.82 296.78 L 915.47 295.92 L 921.13 303.38 L 926.78 301.16 L 932.43 303.78 L 938.08 293.79 L 943.74 290.74 L 949.39 286.36 L 955.04 281.43 L 960.69 271.79 L 966.35 276.52 L 972.00 267.47" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 841.99 265.82 L 847.64 262.18 L 853.29 225.21 L 858.95 105.27 L 864.60 73.51 L 870.25 45.43 L 875.90 55.82 L 881.56 63.63 L 887.21 209.53 L 892.86 276.52 L 898.51 279.90 L 904.17 290.48 L 909.82 296.93 L 915.47 299.22 L 921.13 300.35 L 926.78 301.36 L 932.43 301.30 L 938.08 297.95 L 943.74 293.08 L 949.39 288.58 L 955.04 278.71 L 960.69 275.75 L 966.35 272.73 L 972.00 270.59 L 972.00 273.08 L 966.35 275.06 L 960.69 277.81 L 955.04 281.07 L 949.39 291.29 L 943.74 295.60 L 938.08 300.05 L 932.43 303.17 L 926.78 303.08 L 921.13 302.31 L 915.47 301.41 L 909.82 298.86 L 904.17 292.73 L 898.51 282.55 L 892.86 279.75 L 887.21 309.35 L 881.56 120.36 L 875.90 101.13 L 870.25 65.68 L 864.60 257.09 L 858.95 277.45 L 853.29 285.07 L 847.64 269.13 L 841.99 269.04 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 841.99 267.43 L 847.64 265.66 L 853.29 255.14 L 858.95 191.36 L 864.60 165.30 L 870.25 55.56 L 875.90 78.47 L 881.56 92.00 L 887.21 259.44 L 892.86 278.14 L 898.51 281.23 L 904.17 291.60 L 909.82 297.90 L 915.47 300.31 L 921.13 301.33 L 926.78 302.22 L 932.43 302.23 L 938.08 299.00 L 943.74 294.34 L 949.39 289.93 L 955.04 279.89 L 960.69 276.78 L 966.35 273.89 L 972.00 271.83" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="267.43" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 276.44 L 33.65 275.39 L 39.31 273.99 L 44.96 274.99 L 50.61 273.66 L 56.26 276.10 L 61.92 274.15 L 67.57 272.81 L 73.22 277.56 L 78.87 279.06 L 84.53 279.58 L 90.18 291.20 L 95.83 298.76 L 101.49 301.55 L 107.14 302.81 L 112.79 303.55 L 118.44 303.40 L 124.10 300.30 L 129.75 297.29 L 135.40 293.61 L 141.05 282.64 L 146.71 279.26 L 152.36 275.97 L 158.01 275.47 L 163.66 272.74 L 169.32 270.74 L 174.97 272.25 L 180.62 272.47 L 186.28 271.59 L 191.93 272.60 L 197.58 274.27 L 203.23 274.01 L 208.89 278.87 L 214.54 280.99 L 220.19 281.01 L 225.84 291.69 L 231.50 298.97 L 237.15 301.05 L 242.80 301.16 L 248.46 302.45 L 254.11 303.58 L 259.76 301.30 L 265.41 295.61 L 271.07 290.99 L 276.72 282.12 L 282.37 279.37 L 288.02 276.97 L 293.68 270.89 L 299.33 268.57 L 304.98 268.89 L 310.63 270.10 L 316.29 270.50 L 321.94 268.23 L 327.59 270.12 L 333.25 269.75 L 338.90 269.56 L 344.55 276.55 L 350.20 279.36 L 355.86 282.15 L 361.51 294.60 L 367.16 298.24 L 372.81 300.51 L 378.47 299.99 L 384.12 300.54 L 389.77 298.18 L 395.43 294.71 L 401.08 290.29 L 406.73 278.97 L 412.38 278.32 L 418.04 275.43 L 423.69 274.29 L 429.34 268.77 L 434.99 269.04 L 440.65 270.79 L 446.30 270.50 L 451.95 268.48 L 457.60 268.50 L 463.26 269.72 L 468.91 270.68 L 474.56 269.50 L 480.22 275.68 L 485.87 277.42 L 491.52 277.26 L 497.17 288.12 L 502.83 295.20 L 508.48 296.90 L 514.13 298.27 L 519.78 298.26 L 525.44 299.18 L 531.09 297.10 L 536.74 293.56 L 542.40 290.94 L 548.05 279.30 L 553.70 275.17 L 559.35 271.37 L 565.01 269.87 L 570.66 268.36 L 576.31 268.62 L 581.96 272.40 L 587.62 267.14 L 593.27 267.14 L 598.92 269.89 L 604.57 269.70 L 610.23 271.29 L 615.88 277.07 L 621.53 279.75 L 627.19 289.77 L 632.84 297.43 L 638.49 296.77 L 644.14 298.89 L 649.80 300.29 L 655.45 300.98 L 661.10 301.29 L 666.75 298.77 L 672.41 293.71 L 678.06 290.00 L 683.71 279.26 L 689.37 276.76 L 695.02 275.19 L 700.67 273.45 L 706.32 271.98 L 711.98 272.79 L 717.63 273.45 L 723.28 272.50 L 728.93 271.24 L 734.59 272.04 L 740.24 271.68 L 745.89 272.33 L 751.54 279.51 L 757.20 278.61 L 762.85 279.31 L 768.50 289.63 L 774.16 295.47 L 779.81 295.71 L 785.46 296.58 L 791.11 297.40 L 796.77 296.87 L 802.42 294.86 L 808.07 289.93 L 813.72 284.83 L 819.38 277.41 L 825.03 275.06 L 830.68 271.28 L 836.34 269.73" /><path class="forecast-svg-actual" d="M 841.99 268.80 L 847.64 274.50 L 853.29 275.49 L 858.95 272.41 L 864.60 270.12 L 870.25 43.79 L 875.90 44.47 L 881.56 47.92 L 887.21 272.62 L 892.86 275.17 L 898.51 278.73 L 904.17 284.26 L 909.82 296.78 L 915.47 295.92 L 921.13 303.38 L 926.78 301.16 L 932.43 303.78 L 938.08 293.79 L 943.74 290.74 L 949.39 286.36 L 955.04 281.43 L 960.69 271.79 L 966.35 276.52 L 972.00 267.47" /><path class="forecast-svg-band" fill="#aa7c32" d="M 841.99 267.24 L 847.64 267.12 L 853.29 267.56 L 858.95 267.07 L 864.60 267.04 L 870.25 168.76 L 875.90 167.06 L 881.56 166.12 L 887.21 188.55 L 892.86 273.97 L 898.51 274.99 L 904.17 284.46 L 909.82 290.25 L 915.47 293.74 L 921.13 295.73 L 926.78 296.00 L 932.43 295.73 L 938.08 292.82 L 943.74 288.61 L 949.39 282.91 L 955.04 275.07 L 960.69 273.15 L 966.35 271.09 L 972.00 269.17 L 972.00 270.60 L 966.35 272.72 L 960.69 275.10 L 955.04 278.60 L 949.39 287.19 L 943.74 291.64 L 938.08 295.43 L 932.43 297.10 L 926.78 296.35 L 921.13 296.19 L 915.47 296.01 L 909.82 295.65 L 904.17 291.93 L 898.51 280.53 L 892.86 277.14 L 887.21 316.21 L 881.56 308.20 L 875.90 306.54 L 870.25 305.52 L 864.60 270.09 L 858.95 270.83 L 853.29 271.49 L 847.64 270.90 L 841.99 270.30 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 841.99 268.77 L 847.64 269.01 L 853.29 269.52 L 858.95 268.95 L 864.60 268.56 L 870.25 237.14 L 875.90 236.80 L 881.56 237.16 L 887.21 252.38 L 892.86 275.56 L 898.51 277.76 L 904.17 288.20 L 909.82 292.95 L 915.47 294.88 L 921.13 295.96 L 926.78 296.18 L 932.43 296.42 L 938.08 294.12 L 943.74 290.12 L 949.39 285.05 L 955.04 276.83 L 960.69 274.13 L 966.35 271.91 L 972.00 269.88" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="268.77" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 290.01 L 33.65 289.00 L 39.31 287.66 L 44.96 288.61 L 50.61 287.34 L 56.26 289.68 L 61.92 287.81 L 67.57 286.53 L 73.22 291.08 L 78.87 292.52 L 84.53 293.02 L 90.18 304.15 L 95.83 311.39 L 101.49 314.06 L 107.14 315.28 L 112.79 315.98 L 118.44 315.84 L 124.10 312.87 L 129.75 309.99 L 135.40 306.46 L 141.05 295.95 L 146.71 292.71 L 152.36 289.55 L 158.01 289.07 L 163.66 286.46 L 169.32 284.55 L 174.97 285.99 L 180.62 286.20 L 186.28 285.35 L 191.93 286.33 L 197.58 287.92 L 203.23 287.68 L 208.89 292.34 L 214.54 294.36 L 220.19 294.38 L 225.84 304.62 L 231.50 311.60 L 237.15 313.59 L 242.80 313.69 L 248.46 314.93 L 254.11 316.01 L 259.76 313.83 L 265.41 308.38 L 271.07 303.95 L 276.72 295.45 L 282.37 292.81 L 288.02 290.51 L 293.68 284.69 L 299.33 282.46 L 304.98 282.77 L 310.63 283.93 L 316.29 284.31 L 321.94 282.14 L 327.59 283.95 L 333.25 283.60 L 338.90 283.41 L 344.55 290.11 L 350.20 292.80 L 355.86 295.47 L 361.51 307.41 L 367.16 310.89 L 372.81 313.07 L 378.47 312.57 L 384.12 313.10 L 389.77 310.84 L 395.43 307.51 L 401.08 303.28 L 406.73 292.43 L 412.38 291.81 L 418.04 289.03 L 423.69 287.94 L 429.34 282.65 L 434.99 282.92 L 440.65 284.59 L 446.30 284.31 L 451.95 282.38 L 457.60 282.40 L 463.26 283.57 L 468.91 284.49 L 474.56 283.36 L 480.22 289.27 L 485.87 290.95 L 491.52 290.80 L 497.17 301.20 L 502.83 307.98 L 508.48 309.61 L 514.13 310.92 L 519.78 310.91 L 525.44 311.79 L 531.09 309.80 L 536.74 306.41 L 542.40 303.90 L 548.05 292.75 L 553.70 288.79 L 559.35 285.15 L 565.01 283.72 L 570.66 282.26 L 576.31 282.52 L 581.96 286.14 L 587.62 281.10 L 593.27 281.10 L 598.92 283.73 L 604.57 283.55 L 610.23 285.07 L 615.88 290.61 L 621.53 293.18 L 627.19 302.78 L 632.84 310.12 L 638.49 309.49 L 644.14 311.52 L 649.80 312.86 L 655.45 313.52 L 661.10 313.81 L 666.75 311.40 L 672.41 306.55 L 678.06 303.00 L 683.71 292.71 L 689.37 290.32 L 695.02 288.81 L 700.67 287.14 L 706.32 285.74 L 711.98 286.50 L 717.63 287.14 L 723.28 286.23 L 728.93 285.02 L 734.59 285.79 L 740.24 285.45 L 745.89 286.07 L 751.54 292.95 L 757.20 292.08 L 762.85 292.75 L 768.50 302.64 L 774.16 308.25 L 779.81 308.48 L 785.46 309.30 L 791.11 310.09 L 796.77 309.58 L 802.42 307.66 L 808.07 302.94 L 813.72 298.05 L 819.38 290.94 L 825.03 288.68 L 830.68 285.06 L 836.34 283.57" /><path class="forecast-svg-actual" d="M 841.99 282.68 L 847.64 288.15 L 853.29 289.10 L 858.95 286.14 L 864.60 283.95 L 870.25 67.09 L 875.90 67.73 L 881.56 71.04 L 887.21 286.35 L 892.86 288.79 L 898.51 292.20 L 904.17 297.50 L 909.82 309.50 L 915.47 308.67 L 921.13 315.82 L 926.78 313.69 L 932.43 316.21 L 938.08 306.63 L 943.74 303.70 L 949.39 299.51 L 955.04 294.78 L 960.69 285.55 L 966.35 290.08 L 972.00 281.41" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 841.99 74.57 L 847.64 70.49 L 853.29 76.45 L 858.95 284.59 L 864.60 283.03 L 870.25 284.05 L 875.90 284.25 L 881.56 285.10 L 887.21 290.97 L 892.86 292.81 L 898.51 294.51 L 904.17 303.64 L 909.82 309.35 L 915.47 310.98 L 921.13 311.66 L 926.78 312.39 L 932.43 311.78 L 938.08 308.97 L 943.74 304.34 L 949.39 297.42 L 955.04 291.99 L 960.69 289.33 L 966.35 286.53 L 972.00 283.72 L 972.00 286.42 L 966.35 288.85 L 960.69 291.28 L 955.04 294.40 L 949.39 304.54 L 943.74 307.83 L 938.08 312.94 L 932.43 315.81 L 926.78 315.31 L 921.13 314.52 L 915.47 313.88 L 909.82 311.43 L 904.17 306.43 L 898.51 297.33 L 892.86 294.28 L 887.21 292.26 L 881.56 287.41 L 875.90 286.22 L 870.25 285.54 L 864.60 284.89 L 858.95 286.09 L 853.29 85.08 L 847.64 72.31 L 841.99 76.47 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 841.99 75.52 L 847.64 71.40 L 853.29 80.76 L 858.95 285.34 L 864.60 283.96 L 870.25 284.79 L 875.90 285.24 L 881.56 286.25 L 887.21 291.61 L 892.86 293.55 L 898.51 295.92 L 904.17 305.04 L 909.82 310.39 L 915.47 312.43 L 921.13 313.09 L 926.78 313.85 L 932.43 313.79 L 938.08 310.96 L 943.74 306.08 L 949.39 300.98 L 955.04 293.20 L 960.69 290.30 L 966.35 287.69 L 972.00 285.07" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="75.52" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 841.99 282.37 L 847.64 282.52 L 853.29 283.03 L 858.95 282.50 L 864.60 282.22 L 870.25 94.69 L 875.90 94.70 L 881.56 91.65 L 887.21 288.17 L 892.86 289.52 L 898.51 291.01 L 904.17 301.81 L 909.82 306.30 L 915.47 307.88 L 921.13 308.76 L 926.78 308.96 L 932.43 309.24 L 938.08 307.03 L 943.74 303.11 L 949.39 298.42 L 955.04 290.21 L 960.69 287.81 L 966.35 285.77 L 972.00 283.87" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="282.37" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 290.01 L 33.65 289.00 L 39.31 287.66 L 44.96 288.61 L 50.61 287.34 L 56.26 289.68 L 61.92 287.81 L 67.57 286.53 L 73.22 291.08 L 78.87 292.52 L 84.53 293.02 L 90.18 304.15 L 95.83 311.39 L 101.49 314.06 L 107.14 315.28 L 112.79 315.98 L 118.44 315.84 L 124.10 312.87 L 129.75 309.99 L 135.40 306.46 L 141.05 295.95 L 146.71 292.71 L 152.36 289.55 L 158.01 289.07 L 163.66 286.46 L 169.32 284.55 L 174.97 285.99 L 180.62 286.20 L 186.28 285.35 L 191.93 286.33 L 197.58 287.92 L 203.23 287.68 L 208.89 292.34 L 214.54 294.36 L 220.19 294.38 L 225.84 304.62 L 231.50 311.60 L 237.15 313.59 L 242.80 313.69 L 248.46 314.93 L 254.11 316.01 L 259.76 313.83 L 265.41 308.38 L 271.07 303.95 L 276.72 295.45 L 282.37 292.81 L 288.02 290.51 L 293.68 284.69 L 299.33 282.46 L 304.98 282.77 L 310.63 283.93 L 316.29 284.31 L 321.94 282.14 L 327.59 283.95 L 333.25 283.60 L 338.90 283.41 L 344.55 290.11 L 350.20 292.80 L 355.86 295.47 L 361.51 307.41 L 367.16 310.89 L 372.81 313.07 L 378.47 312.57 L 384.12 313.10 L 389.77 310.84 L 395.43 307.51 L 401.08 303.28 L 406.73 292.43 L 412.38 291.81 L 418.04 289.03 L 423.69 287.94 L 429.34 282.65 L 434.99 282.92 L 440.65 284.59 L 446.30 284.31 L 451.95 282.38 L 457.60 282.40 L 463.26 283.57 L 468.91 284.49 L 474.56 283.36 L 480.22 289.27 L 485.87 290.95 L 491.52 290.80 L 497.17 301.20 L 502.83 307.98 L 508.48 309.61 L 514.13 310.92 L 519.78 310.91 L 525.44 311.79 L 531.09 309.80 L 536.74 306.41 L 542.40 303.90 L 548.05 292.75 L 553.70 288.79 L 559.35 285.15 L 565.01 283.72 L 570.66 282.26 L 576.31 282.52 L 581.96 286.14 L 587.62 281.10 L 593.27 281.10 L 598.92 283.73 L 604.57 283.55 L 610.23 285.07 L 615.88 290.61 L 621.53 293.18 L 627.19 302.78 L 632.84 310.12 L 638.49 309.49 L 644.14 311.52 L 649.80 312.86 L 655.45 313.52 L 661.10 313.81 L 666.75 311.40 L 672.41 306.55 L 678.06 303.00 L 683.71 292.71 L 689.37 290.32 L 695.02 288.81 L 700.67 287.14 L 706.32 285.74 L 711.98 286.50 L 717.63 287.14 L 723.28 286.23 L 728.93 285.02 L 734.59 285.79 L 740.24 285.45 L 745.89 286.07 L 751.54 292.95 L 757.20 292.08 L 762.85 292.75 L 768.50 302.64 L 774.16 308.25 L 779.81 308.48 L 785.46 309.30 L 791.11 310.09 L 796.77 309.58 L 802.42 307.66 L 808.07 302.94 L 813.72 298.05 L 819.38 290.94 L 825.03 288.68 L 830.68 285.06 L 836.34 283.57" /><path class="forecast-svg-actual" d="M 841.99 282.68 L 847.64 288.15 L 853.29 289.10 L 858.95 286.14 L 864.60 283.95 L 870.25 67.09 L 875.90 67.73 L 881.56 71.04 L 887.21 286.35 L 892.86 288.79 L 898.51 292.20 L 904.17 297.50 L 909.82 309.50 L 915.47 308.67 L 921.13 315.82 L 926.78 313.69 L 932.43 316.21 L 938.08 306.63 L 943.74 303.70 L 949.39 299.51 L 955.04 294.78 L 960.69 285.55 L 966.35 290.08 L 972.00 281.41" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 841.99 74.57 L 847.64 70.49 L 853.29 76.45 L 858.95 284.59 L 864.60 283.03 L 870.25 284.05 L 875.90 284.25 L 881.56 285.10 L 887.21 290.97 L 892.86 292.81 L 898.51 294.51 L 904.17 303.64 L 909.82 309.35 L 915.47 310.98 L 921.13 311.66 L 926.78 312.39 L 932.43 311.78 L 938.08 308.97 L 943.74 304.34 L 949.39 297.42 L 955.04 291.99 L 960.69 289.33 L 966.35 286.53 L 972.00 283.72 L 972.00 286.42 L 966.35 288.85 L 960.69 291.28 L 955.04 294.40 L 949.39 304.54 L 943.74 307.83 L 938.08 312.94 L 932.43 315.81 L 926.78 315.31 L 921.13 314.52 L 915.47 313.88 L 909.82 311.43 L 904.17 306.43 L 898.51 297.33 L 892.86 294.28 L 887.21 292.26 L 881.56 287.41 L 875.90 286.22 L 870.25 285.54 L 864.60 284.89 L 858.95 286.09 L 853.29 85.08 L 847.64 72.31 L 841.99 76.47 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 841.99 75.52 L 847.64 71.40 L 853.29 80.76 L 858.95 285.34 L 864.60 283.96 L 870.25 284.79 L 875.90 285.24 L 881.56 286.25 L 887.21 291.61 L 892.86 293.55 L 898.51 295.92 L 904.17 305.04 L 909.82 310.39 L 915.47 312.43 L 921.13 313.09 L 926.78 313.85 L 932.43 313.79 L 938.08 310.96 L 943.74 306.08 L 949.39 300.98 L 955.04 293.20 L 960.69 290.30 L 966.35 287.69 L 972.00 285.07" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="75.52" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 290.01 L 33.65 289.00 L 39.31 287.66 L 44.96 288.61 L 50.61 287.34 L 56.26 289.68 L 61.92 287.81 L 67.57 286.53 L 73.22 291.08 L 78.87 292.52 L 84.53 293.02 L 90.18 304.15 L 95.83 311.39 L 101.49 314.06 L 107.14 315.28 L 112.79 315.98 L 118.44 315.84 L 124.10 312.87 L 129.75 309.99 L 135.40 306.46 L 141.05 295.95 L 146.71 292.71 L 152.36 289.55 L 158.01 289.07 L 163.66 286.46 L 169.32 284.55 L 174.97 285.99 L 180.62 286.20 L 186.28 285.35 L 191.93 286.33 L 197.58 287.92 L 203.23 287.68 L 208.89 292.34 L 214.54 294.36 L 220.19 294.38 L 225.84 304.62 L 231.50 311.60 L 237.15 313.59 L 242.80 313.69 L 248.46 314.93 L 254.11 316.01 L 259.76 313.83 L 265.41 308.38 L 271.07 303.95 L 276.72 295.45 L 282.37 292.81 L 288.02 290.51 L 293.68 284.69 L 299.33 282.46 L 304.98 282.77 L 310.63 283.93 L 316.29 284.31 L 321.94 282.14 L 327.59 283.95 L 333.25 283.60 L 338.90 283.41 L 344.55 290.11 L 350.20 292.80 L 355.86 295.47 L 361.51 307.41 L 367.16 310.89 L 372.81 313.07 L 378.47 312.57 L 384.12 313.10 L 389.77 310.84 L 395.43 307.51 L 401.08 303.28 L 406.73 292.43 L 412.38 291.81 L 418.04 289.03 L 423.69 287.94 L 429.34 282.65 L 434.99 282.92 L 440.65 284.59 L 446.30 284.31 L 451.95 282.38 L 457.60 282.40 L 463.26 283.57 L 468.91 284.49 L 474.56 283.36 L 480.22 289.27 L 485.87 290.95 L 491.52 290.80 L 497.17 301.20 L 502.83 307.98 L 508.48 309.61 L 514.13 310.92 L 519.78 310.91 L 525.44 311.79 L 531.09 309.80 L 536.74 306.41 L 542.40 303.90 L 548.05 292.75 L 553.70 288.79 L 559.35 285.15 L 565.01 283.72 L 570.66 282.26 L 576.31 282.52 L 581.96 286.14 L 587.62 281.10 L 593.27 281.10 L 598.92 283.73 L 604.57 283.55 L 610.23 285.07 L 615.88 290.61 L 621.53 293.18 L 627.19 302.78 L 632.84 310.12 L 638.49 309.49 L 644.14 311.52 L 649.80 312.86 L 655.45 313.52 L 661.10 313.81 L 666.75 311.40 L 672.41 306.55 L 678.06 303.00 L 683.71 292.71 L 689.37 290.32 L 695.02 288.81 L 700.67 287.14 L 706.32 285.74 L 711.98 286.50 L 717.63 287.14 L 723.28 286.23 L 728.93 285.02 L 734.59 285.79 L 740.24 285.45 L 745.89 286.07 L 751.54 292.95 L 757.20 292.08 L 762.85 292.75 L 768.50 302.64 L 774.16 308.25 L 779.81 308.48 L 785.46 309.30 L 791.11 310.09 L 796.77 309.58 L 802.42 307.66 L 808.07 302.94 L 813.72 298.05 L 819.38 290.94 L 825.03 288.68 L 830.68 285.06 L 836.34 283.57" /><path class="forecast-svg-actual" d="M 841.99 282.68 L 847.64 288.15 L 853.29 289.10 L 858.95 286.14 L 864.60 283.95 L 870.25 67.09 L 875.90 67.73 L 881.56 71.04 L 887.21 286.35 L 892.86 288.79 L 898.51 292.20 L 904.17 297.50 L 909.82 309.50 L 915.47 308.67 L 921.13 315.82 L 926.78 313.69 L 932.43 316.21 L 938.08 306.63 L 943.74 303.70 L 949.39 299.51 L 955.04 294.78 L 960.69 285.55 L 966.35 290.08 L 972.00 281.41" /><path class="forecast-svg-band" fill="#aa7c32" d="M 841.99 282.37 L 847.64 282.52 L 853.29 283.03 L 858.95 282.50 L 864.60 282.22 L 870.25 43.79 L 875.90 47.21 L 881.56 47.50 L 887.21 288.17 L 892.86 289.52 L 898.51 291.01 L 904.17 301.81 L 909.82 306.30 L 915.47 307.88 L 921.13 308.76 L 926.78 308.96 L 932.43 309.24 L 938.08 307.03 L 943.74 303.11 L 949.39 298.42 L 955.04 290.21 L 960.69 287.81 L 966.35 285.77 L 972.00 283.87 L 972.00 283.87 L 966.35 285.77 L 960.69 287.81 L 955.04 290.21 L 949.39 298.42 L 943.74 303.11 L 938.08 307.03 L 932.43 309.24 L 926.78 308.96 L 921.13 308.76 L 915.47 307.88 L 909.82 306.30 L 904.17 301.81 L 898.51 291.01 L 892.86 289.52 L 887.21 288.17 L 881.56 135.79 L 875.90 142.19 L 870.25 145.58 L 864.60 282.22 L 858.95 282.50 L 853.29 283.03 L 847.64 282.52 L 841.99 282.37 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 841.99 282.37 L 847.64 282.52 L 853.29 283.03 L 858.95 282.50 L 864.60 282.22 L 870.25 94.69 L 875.90 94.70 L 881.56 91.65 L 887.21 288.17 L 892.86 289.52 L 898.51 291.01 L 904.17 301.81 L 909.82 306.30 L 915.47 307.88 L 921.13 308.76 L 926.78 308.96 L 932.43 309.24 L 938.08 307.03 L 943.74 303.11 L 949.39 298.42 L 955.04 290.21 L 960.69 287.81 L 966.35 285.77 L 972.00 283.87" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="282.37" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#3777a5" d="M 841.99 278.02 L 847.64 278.63 L 853.29 279.29 L 858.95 279.40 L 864.60 278.04 L 870.25 278.84 L 875.90 279.32 L 881.56 279.38 L 887.21 285.23 L 892.86 286.27 L 898.51 287.17 L 904.17 298.38 L 909.82 304.14 L 915.47 305.40 L 921.13 306.94 L 926.78 307.71 L 932.43 307.65 L 938.08 304.67 L 943.74 298.84 L 949.39 295.38 L 955.04 287.59 L 960.69 284.87 L 966.35 282.45 L 972.00 280.52 L 972.00 285.15 L 966.35 287.16 L 960.69 289.88 L 955.04 292.63 L 949.39 302.75 L 943.74 307.71 L 938.08 311.70 L 932.43 313.86 L 926.78 313.73 L 921.13 312.98 L 915.47 312.30 L 909.82 310.49 L 904.17 303.84 L 898.51 292.43 L 892.86 291.44 L 887.21 290.16 L 881.56 284.06 L 875.90 283.74 L 870.25 282.50 L 864.60 282.12 L 858.95 282.77 L 853.29 283.33 L 847.64 282.13 L 841.99 281.66 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 841.99 279.84 L 847.64 280.38 L 853.29 281.31 L 858.95 281.08 L 864.60 280.08 L 870.25 280.67 L 875.90 281.53 L 881.56 281.72 L 887.21 287.69 L 892.86 288.86 L 898.51 289.80 L 904.17 301.11 L 909.82 307.32 L 915.47 308.85 L 921.13 309.96 L 926.78 310.72 L 932.43 310.76 L 938.08 308.18 L 943.74 303.27 L 949.39 299.06 L 955.04 290.11 L 960.69 287.37 L 966.35 284.80 L 972.00 282.83" /><circle class="forecast-svg-start" fill="#3777a5" cx="841.99" cy="279.84" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 841.99 280.35 L 847.64 279.36 L 853.29 280.49 L 858.95 283.29 L 864.60 284.88 L 870.25 287.24 L 875.90 292.09 L 881.56 292.93 L 887.21 297.14 L 892.86 301.19 L 898.51 303.13 L 904.17 304.14 L 909.82 308.85 L 915.47 307.29 L 921.13 304.79 L 926.78 302.45 L 932.43 300.25 L 938.08 298.58 L 943.74 293.04 L 949.39 293.07 L 955.04 291.37 L 960.69 285.10 L 966.35 285.59 L 972.00 286.67" /><circle class="forecast-svg-start" fill="#8064a2" cx="841.99" cy="280.35" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 841.99 277.35 L 847.64 273.79 L 853.29 272.02 L 858.95 269.40 L 864.60 266.65 L 870.25 264.27 L 875.90 260.03 L 881.56 257.53 L 887.21 254.63 L 892.86 254.05 L 898.51 249.54 L 904.17 248.00 L 909.82 244.57 L 915.47 240.15 L 921.13 238.92 L 926.78 236.88 L 932.43 232.10 L 938.08 229.74 L 943.74 226.83 L 949.39 224.35 L 955.04 220.79 L 960.69 220.06 L 966.35 216.02 L 972.00 213.42" /><circle class="forecast-svg-start" fill="#668851" cx="841.99" cy="277.35" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#3777a5" d="M 841.99 278.02 L 847.64 278.63 L 853.29 279.29 L 858.95 279.40 L 864.60 278.04 L 870.25 278.84 L 875.90 279.32 L 881.56 279.38 L 887.21 285.23 L 892.86 286.27 L 898.51 287.17 L 904.17 298.38 L 909.82 304.14 L 915.47 305.40 L 921.13 306.94 L 926.78 307.71 L 932.43 307.65 L 938.08 304.67 L 943.74 298.84 L 949.39 295.38 L 955.04 287.59 L 960.69 284.87 L 966.35 282.45 L 972.00 280.52 L 972.00 285.15 L 966.35 287.16 L 960.69 289.88 L 955.04 292.63 L 949.39 302.75 L 943.74 307.71 L 938.08 311.70 L 932.43 313.86 L 926.78 313.73 L 921.13 312.98 L 915.47 312.30 L 909.82 310.49 L 904.17 303.84 L 898.51 292.43 L 892.86 291.44 L 887.21 290.16 L 881.56 284.06 L 875.90 283.74 L 870.25 282.50 L 864.60 282.12 L 858.95 282.77 L 853.29 283.33 L 847.64 282.13 L 841.99 281.66 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 841.99 279.84 L 847.64 280.38 L 853.29 281.31 L 858.95 281.08 L 864.60 280.08 L 870.25 280.67 L 875.90 281.53 L 881.56 281.72 L 887.21 287.69 L 892.86 288.86 L 898.51 289.80 L 904.17 301.11 L 909.82 307.32 L 915.47 308.85 L 921.13 309.96 L 926.78 310.72 L 932.43 310.76 L 938.08 308.18 L 943.74 303.27 L 949.39 299.06 L 955.04 290.11 L 960.69 287.37 L 966.35 284.80 L 972.00 282.83" /><circle class="forecast-svg-start" fill="#3777a5" cx="841.99" cy="279.84" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#8064a2" d="M 841.99 276.98 L 847.64 274.39 L 853.29 276.40 L 858.95 277.90 L 864.60 280.67 L 870.25 280.83 L 875.90 287.44 L 881.56 285.64 L 887.21 291.63 L 892.86 294.92 L 898.51 297.36 L 904.17 296.41 L 909.82 303.23 L 915.47 300.81 L 921.13 297.52 L 926.78 295.83 L 932.43 291.96 L 938.08 291.90 L 943.74 284.55 L 949.39 283.61 L 955.04 282.82 L 960.69 273.78 L 966.35 278.24 L 972.00 280.92 L 972.00 292.42 L 966.35 292.95 L 960.69 296.42 L 955.04 299.93 L 949.39 302.52 L 943.74 301.54 L 938.08 305.25 L 932.43 308.54 L 926.78 309.06 L 921.13 312.05 L 915.47 313.77 L 909.82 314.46 L 904.17 311.88 L 898.51 308.89 L 892.86 307.46 L 887.21 302.65 L 881.56 300.23 L 875.90 296.75 L 870.25 293.66 L 864.60 289.09 L 858.95 288.69 L 853.29 284.57 L 847.64 284.33 L 841.99 283.72 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 841.99 280.35 L 847.64 279.36 L 853.29 280.49 L 858.95 283.29 L 864.60 284.88 L 870.25 287.24 L 875.90 292.09 L 881.56 292.93 L 887.21 297.14 L 892.86 301.19 L 898.51 303.13 L 904.17 304.14 L 909.82 308.85 L 915.47 307.29 L 921.13 304.79 L 926.78 302.45 L 932.43 300.25 L 938.08 298.58 L 943.74 293.04 L 949.39 293.07 L 955.04 291.37 L 960.69 285.10 L 966.35 285.59 L 972.00 286.67" /><circle class="forecast-svg-start" fill="#8064a2" cx="841.99" cy="280.35" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#668851" d="M 841.99 274.76 L 847.64 269.10 L 853.29 268.94 L 858.95 265.71 L 864.60 263.86 L 870.25 260.61 L 875.90 256.14 L 881.56 253.79 L 887.21 250.87 L 892.86 250.87 L 898.51 244.65 L 904.17 244.04 L 909.82 239.77 L 915.47 236.94 L 921.13 235.07 L 926.78 233.25 L 932.43 226.89 L 938.08 226.37 L 943.74 224.06 L 949.39 221.41 L 955.04 216.12 L 960.69 215.37 L 966.35 212.65 L 972.00 210.75 L 972.00 216.09 L 966.35 219.39 L 960.69 224.75 L 955.04 225.46 L 949.39 227.28 L 943.74 229.60 L 938.08 233.11 L 932.43 237.31 L 926.78 240.51 L 921.13 242.76 L 915.47 243.35 L 909.82 249.37 L 904.17 251.95 L 898.51 254.44 L 892.86 257.24 L 887.21 258.38 L 881.56 261.28 L 875.90 263.91 L 870.25 267.94 L 864.60 269.44 L 858.95 273.10 L 853.29 275.10 L 847.64 278.48 L 841.99 279.95 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 841.99 277.35 L 847.64 273.79 L 853.29 272.02 L 858.95 269.40 L 864.60 266.65 L 870.25 264.27 L 875.90 260.03 L 881.56 257.53 L 887.21 254.63 L 892.86 254.05 L 898.51 249.54 L 904.17 248.00 L 909.82 244.57 L 915.47 240.15 L 921.13 238.92 L 926.78 236.88 L 932.43 232.10 L 938.08 229.74 L 943.74 226.83 L 949.39 224.35 L 955.04 220.79 L 960.69 220.06 L 966.35 216.02 L 972.00 213.42" /><circle class="forecast-svg-start" fill="#668851" cx="841.99" cy="277.35" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 841.99 276.03 L 847.64 273.27 L 853.29 270.97 L 858.95 268.29 L 864.60 266.42 L 870.25 265.93 L 875.90 265.94 L 881.56 265.46 L 887.21 263.85 L 892.86 264.03 L 898.51 264.54 L 904.17 263.99 L 909.82 262.32 L 915.47 261.22 L 921.13 260.63 L 926.78 259.78 L 932.43 261.03 L 938.08 260.29 L 943.74 260.42 L 949.39 260.10 L 955.04 261.72 L 960.69 262.92 L 966.35 261.97 L 972.00 261.82 L 972.00 291.28 L 966.35 291.11 L 960.69 289.81 L 955.04 290.52 L 949.39 291.59 L 943.74 291.60 L 938.08 293.41 L 932.43 292.63 L 926.78 290.67 L 921.13 289.74 L 915.47 290.00 L 909.82 289.84 L 904.17 289.23 L 898.51 289.06 L 892.86 287.78 L 887.21 288.15 L 881.56 287.82 L 875.90 287.67 L 870.25 286.66 L 864.60 285.61 L 858.95 285.03 L 853.29 284.25 L 847.64 284.99 L 841.99 283.53 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 841.99 279.78 L 847.64 279.13 L 853.29 277.61 L 858.95 276.66 L 864.60 276.01 L 870.25 276.30 L 875.90 276.81 L 881.56 276.64 L 887.21 276.00 L 892.86 275.90 L 898.51 276.80 L 904.17 276.61 L 909.82 276.08 L 915.47 275.61 L 921.13 275.19 L 926.78 275.22 L 932.43 276.83 L 938.08 276.85 L 943.74 276.01 L 949.39 275.84 L 955.04 276.12 L 960.69 276.37 L 966.35 276.54 L 972.00 276.55" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="841.99" cy="279.78" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 841.99 275.60 L 847.64 275.91 L 853.29 276.30 L 858.95 276.66 L 864.60 275.77 L 870.25 276.56 L 875.90 276.06 L 881.56 276.10 L 887.21 276.27 L 892.86 276.34 L 898.51 277.39 L 904.17 275.96 L 909.82 275.61 L 915.47 276.35 L 921.13 277.00 L 926.78 275.70 L 932.43 274.87 L 938.08 276.89 L 943.74 274.57 L 949.39 275.41 L 955.04 276.24 L 960.69 276.26 L 966.35 276.91 L 972.00 276.60 L 972.00 286.66 L 966.35 285.60 L 960.69 283.90 L 955.04 285.70 L 949.39 284.93 L 943.74 285.63 L 938.08 284.00 L 932.43 283.61 L 926.78 285.38 L 921.13 285.63 L 915.47 282.94 L 909.82 282.72 L 904.17 283.73 L 898.51 286.36 L 892.86 284.48 L 887.21 284.80 L 881.56 284.40 L 875.90 282.81 L 870.25 286.00 L 864.60 284.37 L 858.95 285.73 L 853.29 284.78 L 847.64 284.77 L 841.99 285.74 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 841.99 280.67 L 847.64 280.34 L 853.29 280.54 L 858.95 281.20 L 864.60 280.07 L 870.25 281.28 L 875.90 279.44 L 881.56 280.25 L 887.21 280.54 L 892.86 280.41 L 898.51 281.87 L 904.17 279.85 L 909.82 279.16 L 915.47 279.65 L 921.13 281.32 L 926.78 280.54 L 932.43 279.24 L 938.08 280.45 L 943.74 280.10 L 949.39 280.17 L 955.04 280.97 L 960.69 280.08 L 966.35 281.26 L 972.00 281.63" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="841.99" cy="280.67" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>electricity consumption</h3>
+              <p>This is the electricity consumption recorded in Kilowatt (kW) in the city of Lumina Springs.</p>
+              <p class="instruction">A heatwave struck the city, which began on 2012-10-09 18:00:00 and lasted for approximately 3 hours, saw temperatures soar to unprecedented levels. According to the city&#x27;s electricity provider, power consumption during the peak of the heatwave reached approximately 5 times the typical usage for this time of year.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This is the electricity consumption recorded in Kilowatt (kW) in the city of Lumina Springs.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>A heatwave struck the city, which began on 2012-10-09 18:00:00 and lasted for approximately 3 hours, saw temperatures soar to unprecedented levels.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>According to the city&#x27;s electricity provider, power consumption during the peak of the heatwave reached approximately 5 times the typical usage for this time of year.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">33 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6350</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF MUNICIPAL WEATHER SERVICES
+TECHNICAL FIELD REPORT: METEOROLOGICAL OCCURRENCES
+
+Date: October 9, 2012
+Subject: Record-Breaking Thermal Anomaly Incident
+
+On October 9, 2012, meteorological sensors recorded a sharp thermal deviation starting at 6:00 PM. This 6:00 PM deviation marked the onset of an intense atmospheric anomaly that persisted for a duration of approximately 3 hours, concluding at 21:00:00.
+
+The initiation of this temporal window triggered a steady climb toward extreme thermal thresholds. Throughout this period, the localized climate shifted toward extreme highs that surpassed all historical data points previously logged by municipal weather services for Lumina Springs. This report is strictly limited to the specific thermal data observed on October 9, 2012, documenting the resulting historical record breach.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6351</span></span></summary>
+          <pre class="doc-content">MUNICIPAL WEATHER AND POWER AUTHORITY
+URBAN ENVIRONMENTAL RESPONSE LOG: EXTREME HEAT EVENT
+REF: LS-EHE-8821
+OFFICIAL OPERATIONAL REPORT
+
+DATE OF LOG: [REDACTED]
+LOCATION: Lumina Springs Metro Area
+SUBJECT: Documented Physical Weather Extrapolations and Immediate Behavioral Infrastructure Load
+
+I. OVERVIEW OF ENVIRONMENTAL STATUS
+This operational report serves as the formal log for the recent climatic anomalies observed within the Lumina Springs municipal boundaries. On the date in question, the localized climate experienced extreme highs surpassing all historical data points recorded by municipal weather services. Data sensors situated across the urban core and residential suburbs confirmed a thermal trajectory that broke with all previous meteorological precedents for this region. The intensity of the heat was categorized as an unprecedented environmental spike, representing the highest ambient temperatures recorded since the inception of standardized municipal tracking.
+
+II. OBSERVED INHABITANT BEHAVIORAL RESPONSE
+The record-breaking heat event triggered a direct and immediate behavioral shift among the city&#x27;s inhabitants. Sensor logs indicate that as the localized climate reached these historic high-temperature thresholds, the sudden environmental stress caused inhabitants to activate high-capacity cooling systems and climate control units simultaneously across the metro area. This was not a gradual increase in demand, but a synchronized reaction to the thermal threshold being breached. The activation pattern was uniform across residential, commercial, and industrial zones, indicating a city-wide effort to mitigate the intensity of the exterior atmospheric conditions.
+
+III. CAUSALITY ANALYSIS: WEATHER AND DEMAND
+Based on the temporal alignment of the meteorological data and building management system telemetry, the Municipal Weather and Power Authority confirms that a direct causal link exists between the record-breaking heat and the synchronized shift toward indoor cooling. The thermal load presented by the external environment exceeded the natural cooling capacity of standard housing and workspace ventilation, necessitating the immediate engagement of high-capacity climate control units. The correlation coefficient between the rise in outside ambient air temperature and the mass activation of cooling hardware is absolute; the environmental stressor served as the sole driver for the resulting surge in electrical equipment utilization. 
+
+IV. LOAD DISTRIBUTION DATA
+The scale of the simultaneous activation was exhaustive. As temperatures climbed toward the peak historical high, the draw on the infrastructure reflected the mass transition of the population to climate-controlled environments. Total registered activity across high-capacity systems remained at peak levels for the duration of the extreme heat window. This synchronized shift created an immediate peak in the localized demand for kilowatt (kW) resources, directly mirroring the intensity of the heat index recorded by the automated weather stations.
+
+V. OPERATIONAL LIMITATIONS AND SCOPE
+This entry in the Urban Environmental Response Log is strictly limited to the documentation of the physical weather event and the resulting immediate behavioral response and infrastructure load. As per MWPA protocols, this specific document does not include power grid stability outcomes, future forecasts, or mitigation policy recommendations. The report serves as a primary source of data regarding the relationship between the extreme climate peaks and the immediate response of the Lumina Springs infrastructure-dependent population. 
+
+END OF LOG ENTRY.
+CERTIFIED BY: MWPA CLIMATIC MONITORING DIVISION</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6352</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER DISTRIBUTION AUTHORITY
+GRID OPERATIONS &amp; ASSET MANAGEMENT DIVISION
+
+TECHNICAL REPORT: GRID IMPACT ASSESSMENT
+EVENT CLASSIFICATION: METRO SECONDARY DISTRIBUTION EVENT
+
+1. EXECUTIVE SUMMARY
+This technical report outlines the findings regarding recent operational stress within the secondary distribution network of Lumina Springs. The analysis focuses on the engineering impact of sudden, high-profile load aggregation and the subsequent performance of distribution assets. This assessment is restricted to the technical mechanics of the grid strain.
+
+2. LOAD ANALYSIS AND CONSUMPTION PROFILES
+During the period under review, the distribution network experienced a massive, rapid-onset load. Technical logs indicate that inhabitants activated high-capacity cooling systems and climate control units simultaneously. This synchronized behavior was identified as a direct response to environmental stress impacting the metro area.
+
+Data recorded in Kilowatt (kW) confirms that the cumulative demand for refrigeration and air conditioning reached peak thresholds far exceeding standard operational baselines. The surge was characterized by its instantaneous nature, leaving minimal ramp-up time for automated grid balancing.
+
+3. SECONDARY DISTRIBUTION IMPACT
+The primary area of technical concern involves the secondary distribution transformers. The sudden surge in power demand placed severe strain on these assets. Investigation into the transformer load profiles reveals that thermal limits were challenged as the demand spiked to accommodate the localized climate control requirements.
+
+4. AGGREGATION CHARACTERISTICS
+A critical factor in this event was the aggregation of load. Simultaneous compressor operation throughout the city integrated into a significant and singular grid load. In traditional load modeling, compressor cycling is typically staggered; however, the environmental triggers present during this event led to a rare alignment of cooling cycles. This aggregation created a consolidated draw on the secondary network that tested the resilience of the local distribution infrastructure.
+
+5. TECHNICAL CONCLUSION
+The localized grid strain in Lumina Springs was driven by the concurrent activation of high-draw appliances. The resulting cumulative load was of such magnitude and speed that it created substantial mechanical and thermal stress on secondary distribution transformers. This report concludes that the event was a direct consequence of synchronized high-capacity cooling demand across the metropolitan service area.
+
+[End of Report - Authorized by Regional Power Distribution Authority]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6353</span></span></summary>
+          <pre class="doc-content">Municipal Utility Operations Department
+Grid Performance Analysis: Peak Event Summary Report
+
+Date: October 2012
+Subject: Technical Load Observations – Lumina Springs Distribution Infrastructure
+
+1.0 EXECUTIVE SUMMARY
+This technical report summarizes the load observations recorded on the secondary distribution infrastructure during the recent peak demand event in Lumina Springs. The analysis focuses on volumetric flow and throughput metrics. Per the reporting scope, this document is limited to technical load observations on distribution infrastructure and does not include weather forecasts, broader power grid stability predictions, or specific details on individual transformer failures.
+
+2.0 LOAD CHARACTERIZATION AND PEAK IMPACT
+During the peak hour of the event, metrics indicated a massive, rapid-onset load on the secondary distribution transformers. Technical analysis confirms that this surge was primarily driven by the cumulative demand for refrigeration and air conditioning. The synchronization of these cooling systems across the municipal service area resulted in a significant shift in the city&#x27;s kilowatt (kW) profile.
+
+Monitoring systems registered a volumetric flow of energy that was 500% of the standard seasonal baseline during the peak hour. This necessitated a rapid adjustment in the distribution layer to accommodate the shifting consumption patterns recorded in the city of Lumina Springs.
+
+3.0 INFRASTRUCTURE THROUGHPUT ANALYSIS
+The aggregated demand observed during the event forced the total energy throughput to scale up to five times the usual volume. This five-fold increase relative to the seasonal baseline represents the total scaling required of the municipal utility infrastructure to maintain service during the pinnacle of the event.
+
+Summary of Technical Observations:
+- Primary Load Drivers: Cumulative refrigeration and air conditioning demand.
+- System Impact: Rapid-onset load concentrated specifically on secondary distribution transformers.
+- Volumetric Baseline Deviation: Energy flow reached 500% of the standard seasonal baseline.
+- Aggregate Throughput: Total energy throughput scaled to five times the usual volume.
+
+4.0 REPORT LIMITATIONS
+Findings are restricted to recorded technical observations of load and energy flow. This report is not a predictive document regarding future grid stability or meteorological trends. Furthermore, while the data outlines the massive load on the distribution fleet, it does not catalog specific hardware failures or individual transformer maintenance records.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6354</span></span></summary>
+          <pre class="doc-content">Municipal Energy Utility Monitoring Center
+Grid Operations Incident Summary: Terminal Thermal Event Log
+
+Incident Overview:
+During the peak interval from 18:00 to 21:00, the municipal utility infrastructure in Lumina Springs registered a volumetric flow of energy 500% higher than the standard seasonal baseline (representing a 5x increase in typical load). This surge in energy usage was directly caused by the peak intensity of the thermal event.
+
+Performance Data:
+Grid monitoring equipment maintained this extraordinary performance profile throughout the duration of the heatwave&#x27;s peak intensity. System stability remained consistent with this 500% increase until the conclusion of the event window.
+
+Resolution:
+The thermal event receded at 21:00:00, marking the end of the approximately 3-hour peak demand period. This log is strictly limited to the technical performance data and timing of the specific energy surge.
+
+[End of Operational Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6355</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER AUTHORITY
+OPERATIONAL REPORT: GRID PERFORMANCE AND WEATHER CORRELATION
+
+Date: [REDACTED]
+Distribution: Regional Oversight Committee, Engineering Division, Operations Management
+
+I. EXECUTIVE SUMMARY
+This operational report details the performance profile of grid monitoring equipment during the most recent thermal event affecting the city of Lumina Springs. The primary objective of this documentation is to record the engineering verification of the correlation between environmental factors and grid surges, ensuring a precise log for management teams.
+
+II. EQUIPMENT PERFORMANCE ANALYSIS
+Prior to the resolution of the environmental anomaly, grid monitoring equipment maintained an extraordinary performance profile. Despite the increased load and external temperatures associated with the ongoing thermal event, the monitoring systems operated within optimal parameters, sustaining high-fidelity data capture without degradation in sensor accuracy or reporting latency. This high-performance baseline persisted until 21:00:00, at which point a shift in ambient conditions was recorded.
+
+III. THERMAL EVENT RESOLUTION
+Real-time telemetry confirms that the thermal event receded at 21:00:00. This temporal marker aligns with a stabilization of the thermal gradients across the Lumina Springs distribution network. As the external temperatures normalized, internal equipment load levels returned to standard operating thresholds. The transition from the thermal peak to the stabilization phase was seamless, with no recorded malfunctions in the primary monitoring hardware.
+
+IV. ENGINEERING VERIFICATION
+Following the event, the Engineering Division conducted a thorough diagnostic review of the grid’s response. Engineers verified the surge was directly correlated with a temporary weather spike. The data confirms that the increase in electricity consumption and subsequent grid stress were not caused by mechanical failure or infrastructure degradation, but were the direct result of rapid atmospheric changes. This verification serves to isolate the cause of the surge and confirms the robustness of the current hardware configuration against localized weather anomalies.
+
+V. DATA LOGGING AND STABILITY
+As of the conclusion of the event, the duration of stability has been sufficient to ensure reliable metrics. This stable duration allows for consistent data logging by management teams. The integrity of the records captured during the transition period provides a complete dataset for operational review and future load-balancing strategy.
+
+VI. SCOPE AND LIMITATIONS
+The scope of this report is strictly limited to the specific performance of grid equipment during the thermal event and the subsequent engineering verification of weather-related surges. This document does not include broader grid infrastructure details, long-term climate forecasts, or financial impact assessments. For information regarding fiscal implications or long-term infrastructure planning, refer to the Annual Capital Expenditure Review.
+
+[End of Document]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6356</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER AUTHORITY
+Internal Audit Division
+
+DOCUMENT ID: RPG-OA-772-B
+TITLE: REGIONAL POWER GRID OPERATIONAL AUDIT REPORT
+SUBJECT: Analysis of Evening Consumption Peak in Lumina Springs
+
+EXECUTIVE SUMMARY
+This incident report serves as a technical performance review of the Regional Power Grid during a recent high-load event. The objective of this audit was to reconcile real-time load distribution data with exogenous environmental variables recorded on the evening in question.
+
+TECHNICAL VERIFICATION
+Engineers from the regional power authority verified that the surge was directly correlated with the temporary weather spike. Following a comprehensive review of the grid&#x27;s supervisory control and data acquisition (SCADA) systems, technical staff confirmed that the peak in electricity consumption (recorded in Kilowatt/kW) occurred in direct synchronization with the recorded atmospheric temperature increase within the city of Lumina Springs. This technical verification by staff directly informed the publication of the official supply report issued following the event.
+
+CONSUMPTION METRICS
+Final reports released by the local energy supply corporation documented the unprecedented scale of the evening&#x27;s consumption metrics. Data indicates that total load reached levels previously unobserved in this service area, necessitating a post-action review of supply distribution efficiency. The corporation&#x27;s documentation confirms that while the system maintained stability, the magnitude of the demand spike was anomalous compared to standard seasonal baselines.
+
+AUDIT LIMITATIONS AND SCOPE
+This audit is strictly limited to the correlation between weather events and consumption metrics for a specific evening. The data contained herein is descriptive of past performance only. Consequently, this report does not include long-term infrastructure planning, specific demographic breakdowns of energy use, or future weather forecasts. The focus remains exclusively on the technical verification of the load-weather relationship and the resulting impact on the official supply report.
+
+OPERATIONAL DATA REVIEW
+As referenced in the background data for the city of Lumina Springs, the electricity consumption recorded in Kilowatt (kW) demonstrates a sharp vertical trajectory during the hours of the weather spike. Field staff assisted in the data validation process, ensuring that the surge was not the result of mechanical failure or grid mismanagement, but rather a direct response to the environmental shifts.
+
+CONCLUSION
+The findings of this Regional Power Authority audit confirm that the grid responded to an extraordinary environmental driver. The documentation provided by the local energy supply corporation, combined with the technical verification conducted by our engineering staff, provides a complete overview of the load event. All findings have been integrated into the official supply report to ensure transparency in grid operational performance.
+
+***
+
+AUTHORIZATION
+Issued by: Regional Power Authority Audit Committee
+Record Type: Technical Performance Report
+Status: Finalized</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6357</span></span></summary>
+          <pre class="doc-content">LOCAL ENERGY SUPPLY CORPORATION
+Technical Report: Post-Event Load Assessment
+Subject: Local Grid Performance Analysis – Lumina Springs
+
+1. EXECUTIVE SUMMARY
+
+This technical report has been prepared by the Local Energy Supply Corporation to provide a comprehensive post-event load assessment following the recent period of extreme atmospheric hardware stress. Final reports released by the local energy supply corporation documented the unprecedented scale of the evening&#x27;s consumption metrics. This documentation serves as the primary record for grid behavior during the peak demand window recorded in Lumina Springs.
+
+2. DATA SCOPE AND LIMITATIONS
+
+This assessment is strictly limited to the documentation and analysis of electricity consumption data, measured in Kilowatts (kW), following the specific extreme heat event in question. Per corporate privacy and technical siloing protocols, this report does not include specific meteorological data, individual customer usage details, or specific future infrastructure upgrade plans. The focus remains exclusively on aggregate grid performance and load distribution.
+
+3. CONSUMPTION METRICS AND GRID PERFORMANCE
+
+The evening in question saw electricity consumption reach levels previously unobserved in the Lumina Springs service area. The resulting dataset provided a critical case study for load management under extreme heat conditions. By analyzing the Kilowatt (kW) flow during peak hours, the corporation has successfully identified the threshold of the current distribution network when subjected to sustained thermal-induced demand.
+
+Key findings from the localized grid performance analysis include:
+
+- Unprecedented evening peaks: The final consumption metrics surpassed all historical evening records for the city.
+- Thermal Stress Response: The dataset highlights how the load profile shifted as a direct result of the extreme heat event, offering a granular look at grid stability.
+- Management Efficacy: The case study allows for an objective review of how the current load management protocols functioned under maximum stress environments.
+
+4. UTILITY AND ANALYTICAL APPLICATION
+
+The release of official consumption figures enables long-term infrastructure analysis. By transitioning these metrics from raw operational logs to a formalized technical report, the Local Energy Supply Corporation provides a foundation for internal and external stakeholders to evaluate systemic capacity. 
+
+Furthermore, the resulting dataset provided a critical case study for load management under extreme heat conditions. This analysis is vital for understanding the relationship between aggregate kW demand and grid reliability. The corporation will utilize these metrics to refine load-shedding algorithms and demand-response triggers in future peak-demand scenarios.
+
+5. CONCLUSION
+
+The documentation provided in this post-event assessment confirms that the scale of consumption during the recent heat event was anomalous. As the Local Energy Supply Corporation continues to monitor the grid in Lumina Springs, these documented metrics will serve as the benchmark for future load-profile modeling and performance benchmarking. The availability of this data ensures that infrastructure analysis is based on authenticated, high-resolution consumption figures recorded during the city&#x27;s most significant period of electrical demand to date.
+
+***
+End of Report
+Local Energy Supply Corporation
+Technical Operations Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6358 · Off-variable</span></span></summary>
+          <pre class="doc-content">REGIONAL ELECTRICITY BOARD
+OPERATIONS DEPARTMENT
+
+OFFICIAL DOCUMENT: Operational Technical Report
+SUBJECT: Post-Event Utility Impact Report: Lumina Springs Regional Festival
+
+I. EXECUTIVE SUMMARY
+This technical report assesses the operational impact of the Lumina Springs Regional Festival on the local electricity grid. The primary objective is to document the deviation from standard operational parameters during the event window and quantify the load demand changes attributed to festival activities.
+
+II. EVENT PARAMETERS
+Location: Lumina Springs Sector
+Event Date: 2012-10-19
+Event Start Time: 18:00:00
+Duration: 03:00:00
+Total Recorded window: 18:00:00 to 21:00:00
+
+III. OPERATIONAL CONDITIONS AND GRID LOAD
+The Regional Electricity Board Operations Department monitored real-time load distribution across the Lumina Springs grid during the specified duration. Electricity consumption for this sector is measured and recorded in Kilowatts (kW).
+
+During the three-hour festival window, the localized power grid experienced a significant increase in demand. This surge is directly attributed to the technical requirements of the event, which featured the widespread use of public decorative lighting installations and the deployment of high-capacity stage equipment for performances.
+
+IV. CONSUMPTION ANALYSIS
+Based on internal metered data, the Operations Department has calculated the impact on the regional baseline. The festival caused a consumption baseline shift of 1.1 times the typical seasonal usage for this sector. This 1.1x multiplier represents the total measured load compared to the standard expected requirement for this time of year.
+
+V. TECHNICAL OBSERVATIONS
+- Metric: Kilowatts (kW)
+- Recorded Baseline Shift: 1.1x
+- Peak Load Drivers: Decorative lighting arrays and audio-visual stage equipment.
+- Infrastructure Performance: The Lumina Springs distribution network remained stable throughout the event duration despite the 1.1x seasonal usage increase.
+
+VI. SCOPE LIMITATIONS
+This report is strictly focused on the recorded technical impact of the Lumina Springs Regional Festival held on 2012-10-19. Per departmental policy, this document is limited to observed operational data. This report does not include long-term load forecasts, nor does it provide financial billing data or broader historical seasonal trends beyond the specific 1.1x multiplier recorded during the event hours.
+
+VII. AUTHORIZATION
+Issued by: Regional Electricity Board Operations Department
+Report Status: Finalized Operational Record
+Date of Filing: 2012-10-20
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6359 · Off-variable</span></span></summary>
+          <pre class="doc-content">Lumina Springs Utilities Operational Department
+OPERATIONAL MAINTENANCE RECORD
+
+Date: 2012-10-09
+Log ID: LS-MGR-20121009
+
+Subject: Lumina Springs Local Grid Maintenance
+
+Activity Summary:
+Routine maintenance of the main grid commenced on 2012-10-09 at 18:00:00. To ensure service continuity, primary meters were bypassed during the maintenance window. Consumption readings were temporarily diverted to the secondary station for the duration of the procedure.
+
+Power Management:
+- Backup generators were utilized to offset local loads for a duration of 3 hours.
+- All electricity consumption for Lumina Springs is recorded in Kilowatts (kW).
+
+Notes:
+This internal operational log is restricted to the specific maintenance event described. It does not contain performance analysis, backup fuel costs, future scheduling, or regional statistics.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6360 · Off-variable</span></span></summary>
+          <pre class="doc-content">Lumina Springs Municipal Electricity Provider
+Operational Log Entry
+
+Date: 2012-10-09
+Log ID: LS-20121009-GRID
+Subject: Utility Grid Load Adjustment Log
+
+Operational Metrics:
+- Consumption Unit: Kilowatts (kW)
+
+Incident Report:
+A significant cloud cover event was recorded on 2012-10-09, beginning at 18:00:00. This meteorological event persisted for a duration of 3 hours.
+
+Impact Assessment:
+During the 3-hour window, the cloud cover caused a substantial reduction in the solar feed-in typically provided by residential panels across Lumina Springs. To compensate for the loss of local solar production, city-wide demand from the central grid increased by 15 percent.
+
+Summary:
+Grid stability was maintained throughout the adjustment period. This entry is limited to the specific operational data regarding the 3-hour shift in demand resulting from the documented cloud cover event.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6361 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Lumina Springs Municipal Administration
+Internal Memo
+
+TO: All Department Personnel
+FROM: Administrative Office
+DATE: October 2, 2012
+RE: IT System Maintenance and Personnel Adjustments
+
+Please be advised that a routine software upgrade is scheduled for the electricity provider&#x27;s systems. This maintenance is essential for ensuring the continued reliability of our municipal infrastructure.
+
+The system maintenance is scheduled for 2012-10-09 at 18:00:00. The maintenance window is expected to last 3 hours, concluding at approximately 21:00:00.
+
+In accordance with this schedule, clerical staff shifts have been adjusted to account for the 3-hour maintenance window. This document serves as an official administrative update regarding city personnel movements during this period. Staff should refer to their department supervisors for specific reassignment details for the evening of October 9.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6362 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Lumina Springs Department of Public Works
+Operational Report: Municipal Infrastructure and Beautification Update
+
+I. OVERVIEW
+This operational report details the current status of physical infrastructure and aesthetic maintenance within the Lumina Springs district. The scope of this document is limited to landscape architecture, utility metrics for decorative installations, and the progress of the localized gardening initiative. This report does not contain financial budgetary data, public opinion metrics, or climate forecasting.
+
+II. LANDSCAPE ARCHITECTURE PLANS
+The Department has finalized the landscape architecture plans for the central Lumina Springs district. The design emphasizes structural symmetry and the integration of perennial flora into existing pedestrian corridors. Key features include:
+- Tiered limestone planters situated along the primary thoroughfare.
+- Strategic placement of ornamental shade trees to define the district perimeter.
+- Integrated irrigation pathways designed to support localized soil stability.
+- Geometric paving patterns utilizing local slate to complement existing aesthetic standards.
+
+III. UTILITY METRICS: DECORATIVE WATER FOUNTAIN
+To maintain the city’s visual standards, the central decorative water fountain remains operational. The following electricity consumption metrics have been recorded for the stabilization of the fountain&#x27;s pump and lighting systems:
+- Baseline Power Requirement: 4.2 kW per hour.
+- Daily Peak Consumption: 6.8 kW (during synchronized lighting displays).
+- Monthly Aggregate Consumption: Approximately 3,240 kWh.
+- High-Efficiency Pump Calibration: Optimized to reduce draw during off-peak hours (12:00 AM – 5:00 AM).
+
+IV. GARDENING INITIATIVE PROJECT TIMELINE
+The local gardening initiative is scheduled to commence on 2012-10-09. The following timeline governs the initial implementation phase:
+- 2012-10-09: Site preparation and soil aeration.
+- 2012-10-12: Delivery of nursery stock and organic mulch.
+- 2012-10-15: Installation of primary floral beds and shrubs.
+- 2012-10-20: Final inspection of irrigation line connectivity.
+- 2012-10-25: Transition to routine maintenance cycles.
+
+V. OBSERVATIONAL ASSESSMENTS (POST-COMMENCEMENT PERIOD)
+Following the commencement of the gardening initiative and the implementation of the updated architecture plans, the Department conducted site-wide observational assessments of the city’s visual aesthetics. Observations are as follows:
+
+Week 1 Assessment: 
+Initial vegetation placement has improved the visual density of the district’s green spaces. The limestone planters provide a formal contrast to the natural growth, aligning with the district’s intended municipal character.
+
+Week 2 Assessment: 
+The decorative water fountain serves as the central focal point; its lighting levels are sufficient for evening visibility without causing excessive light pollution. The spatial orientation of the new plantings creates clear sightlines for pedestrian traffic.
+
+Week 3 Assessment: 
+General aesthetic cohesion has increased. The combination of active water features and maintained flora has mitigated the previous industrial starkness of the infrastructure hubs. Physical structures remain in good repair, with no visible degradation of the architectural elements installed during the project start. The visual profile of Lumina Springs remains consistent with Departmental aesthetic benchmarks.
+
+VI. NOTES
+Data included in this report is restricted to physical assets and observational data. For information regarding long-term environmental impacts or public feedback surveys, please consult separate departmental filings.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6363 · Irrelevant</span></span></summary>
+          <pre class="doc-content">**COMMUNITY EVENT BULLETIN**
+
+**Lumina Springs Historical Society Presents:**
+**A Special Historical Seminar**
+
+Residents and history enthusiasts are cordially invited to attend a community historical seminar hosted by the Lumina Springs Historical Society. This session will explore the local archives with a specific focus on historical electricity usage, examining the energy infrastructure and consumption patterns from decades prior.
+
+**Event Schedule:**
+*   **Date:** 2012-10-09
+*   **Start Time:** 18:00:00
+
+The evening will center around a keynote address from our guest speaker. Please note that the guest speaker’s presentation has a specific designated duration to ensure time for all scheduled agenda items. 
+
+We look forward to seeing you there as we delve into the electrical legacy of Lumina Springs. This flyer pertains only to the logistics of this specific seminar.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6364 · Off-entity</span></span></summary>
+          <pre class="doc-content">VERDANT BASIN DEPARTMENT OF POWER AND WATER
+OPERATIONAL LOG ENTRY: JULY 2018
+
+DATE: July 14, 2018
+LOCATION: Verdant Basin Service Area
+
+[LOG RECORD]
+Timestamp: 14:00
+Weather Status: Weather event recorded in progress.
+
+[METRIC SUMMARY]
+Grid Load Status: Stable / Decreasing
+Electricity Consumption: Monitoring at the 14:00 timestamp indicates that total electricity consumption within the Verdant Basin has either remained stable or shown a slight decrease compared to previous intervals.
+
+[NOTES]
+Scope of this log entry is strictly limited to recorded load metrics and weather status at the specific timestamp for Verdant Basin. This entry does not include long-form regional forecasts, infrastructure damage assessments, or economic impact analysis. Data represents a snapshot of the municipal utility operations for the July period.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6365 · Off-entity</span></span></summary>
+          <pre class="doc-content">Azure Creek Power &amp; Water Utility
+Operations Division: Quarterly Performance Review
+
+REPORT ID: AC-MEO-Q3-REVISED
+SUBJECT: Azure Creek Municipal Energy Operations Report: Q3 Usage Analytics
+ISSUER: Azure Creek Power &amp; Water Utility
+
+1. EXECUTIVE SUMMARY
+This operational performance review details the energy consumption metrics for the city entity of Azure Creek for the third quarter. The primary objective is to evaluate service sector efficiency and document electrical grid load variations. Analysis of the data indicates a significant reduction in power consumption during the monitored timeframe compared to previous standard benchmarks.
+
+2. SERVICE SECTOR COMPARATIVE STATISTICS
+The following data provides comparative power provider statistics categorized by specific municipal service sectors. Usage is measured in Megawatt-hours (MWh).
+
+| Service Sector | Provider Source | Q3 Consumption (MWh) | Variance from Q2 |
+|----------------|-----------------|----------------------|------------------|
+| Residential    | Grid Standard   | 4,210                | -12.4%           |
+| Commercial     | Industrial Main | 6,840                | -8.1%            |
+| Municipal/Gov  | Public Works    | 1,120                | -18.7%           |
+| Infrastructure | High-Tension    | 2,450                | -5.3%            |
+| Public Lighting| Direct Feed     | 890                  | -22.0%           |
+
+3. USAGE SHIFT CHRONOLOGY
+Specific event windows were monitored to correlate operational shifts with energy demand. The following timestamps represent key windows where notable usage shifts occurred:
+
+- Event Window A: [July 14, 02:00] to [July 16, 04:30]
+- Event Window B: [August 02, 11:00] to [August 03, 15:15]
+- Event Window C: [August 28, 18:00] to [September 01, 06:00]
+- Event Window D: [September 15, 09:00] to [September 15, 23:59]
+
+During these periods, the utility observed localized grid stabilization and a marked decrease in peak-load requirements. These shifts are directly tied to the overall trend of reduced municipal energy demand recorded throughout the Q3 period.
+
+4. CONSUMPTION REDUCTION EVIDENCE
+Data aggregation from the Azure Creek Power &amp; Water Utility monitoring stations confirms a significant reduction in total power consumption. Total municipal draw decreased by an average of 14.3% across all delivery points. High-frequency meter logs indicate that the reduction was most prevalent during overnight operational cycles and weekend maintenance windows. 
+
+Supporting Evidence Points:
+- Sustained drop in base-load requirements at the Central Azure Substation.
+- Reduced thermal overhead in the commercial distribution network.
+- Lowered throughput at the municipal pump and filtration stations.
+
+5. SYSTEM PERFORMANCE NOTES
+This document is strictly an operational performance review for the city of Azure Creek. The utility notes that this report is limited to historical usage stats and consumption analytics. This report does not include any predictive modeling for future quarters, long-term climate forecasts, or detailed budget information outside of the primary energy usage statistics presented in the tables above. For financial auditing or future planning, please refer to the specific departmental administrative files.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6366 · Off-entity</span></span></summary>
+          <pre class="doc-content">SILVER RIDGE DEPARTMENT OF UTILITIES
+PUBLIC SAFETY BULLETIN: LEVEL 4 CONSERVATION PROCEDURES
+
+Effective immediately, the Silver Ridge Department of Utilities is implementing a city-wide emergency energy conservation event for the city of Silver Ridge. This action is necessitated by current energy consumption levels, which are trending significantly higher than typical usage for this time of year.
+
+The duration and start time of this conservation event are identical to the original scheduled event. Due to these critical conditions, a scenario promoting extreme energy conservation measures is now in effect for all residents and businesses. All stakeholders are directed to minimize power usage to maintain grid stability. This Level 4 alert remains active until further notice. Authorized by the Department of Utilities.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6367 · Off-window</span></span></summary>
+          <pre class="doc-content">LUMINA SPRINGS POWER &amp; WATER AUTHORITY
+TECHNICAL REPORT: GRID OPERATIONS DIVISION
+
+Title: Historical Grid Performance Review (December 2011)
+Date: January 20, 2012
+Classification: Operational Retrospective
+
+1. EXECUTIVE SUMMARY
+This technical report provides a retrospective analysis of the Lumina Springs utility grid performance during the anomalous weather event recorded in December 2011. The report focuses exclusively on the 48-hour period of the heatwave and evaluates the system&#x27;s resilience under non-seasonal thermal stress. This data serves as a historical record prior to the current history window data.
+
+2. WEATHER ANOMALY OVERVIEW
+In December 2011, Lumina Springs experienced a localized heatwave. This event was characterized by a rapid rise in ambient temperature, remaining significantly above the seasonal baseline for a continuous duration of 48 hours. This event is categorized as an anomalous weather occurrence given the typical winter climate patterns of the region.
+
+3. POWER CONSUMPTION ANALYSIS
+During the 48-hour heatwave, the Grid Operations Center monitored load distribution and demand-side fluctuations across all sectors. Despite the unexpected increase in temperature, power consumption levels remained within the margins typical for normal winter variations. The anticipated surge in cooling-related demand did not manifest to an extent that exceeded standard seasonal load profiles.
+
+Specifically, the provider confirms that no consumption peaks were recorded during the anomalous weather event. The lack of abnormal spikes in demand ensured that the generation and distribution segments were not subjected to extraordinary stress.
+
+4. GRID STABILITY AND RELIABILITY
+Grid stability was fully maintained throughout the 48-hour period. There were no recorded instances of voltage instability, frequency deviations beyond permissible limits, or localized outages related to the thermal event. The transmission infrastructure operated within safety parameters, and the load-balancing mechanisms functioned as intended without requiring emergency intervention.
+
+5. FINAL DETERMINATION
+The Lumina Springs Power &amp; Water Authority concludes that the December 2011 event, while meteorologically significant, did not compromise the integrity of the energy delivery system. The grid demonstrated sufficient capacity to absorb the impact of the heatwave without departing from typical winter operational norms.
+
+6. LIMITATIONS OF REPORT
+This document is strictly limited to an operational retrospective of the December 2011 event. It is intended for historical audit purposes only. This report does not include information regarding current infrastructure, subsequent climate trends, or long-term load forecasting. The scope is confined to the specific performance metrics of the 2011 grid during the identified 48-hour window.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6368 · Off-window</span></span></summary>
+          <pre class="doc-content">Lumina Springs Department of Public Works
+Utility Division
+Internal Memorandum
+
+TO: Grid Operations Committee
+FROM: Utility Division Analysis Team
+DATE: August 15, 2012
+RE: July 2012 Load Analysis Memo: Lumina Springs Municipal Grid
+
+1. PURPOSE
+This memorandum provides a technical operational summary of the load anomalies observed on the Lumina Springs municipal grid during the month of July 2012. This analysis focuses on the specific relationship between ambient temperature fluctuations and residential electricity demand during a recorded heatwave occurrence.
+
+2. DATA COLLECTION METHODOLOGY
+Electricity consumption data across the municipal grid is tracked and recorded at a precise interval of 1 hour. This granular temporal resolution allows the Department of Public Works to monitor real-time distribution loads and identify specific variations in consumption patterns relative to external environmental factors.
+
+3. HEATWAVE OBSERVATIONS
+A significant heatwave occurrence was recorded in July 2012. It should be noted for record-keeping purposes that this July 2012 heatwave took place several months prior to the current historical tracking period. Despite the high temperatures typically associated with spikes in cooling demand, the grid exhibited unconventional performance metrics during this window.
+
+4. CONSUMPTION ANOMALIES
+Technical analysis of the hourly data indicates that total electricity consumption actually decreased during the July 2012 heatwave period. This downward trend stands in contrast to standard load forecasting models which predict positive correlations between temperature and demand.
+
+The investigation into this anomaly determined that the decrease in consumption was driven by residents leaving the city. Large-scale temporary outward migration during the peak of the heat event resulted in a net reduction of active residential accounts and lowered the overall load on the municipal infrastructure.
+
+5. CORRELATION ANALYSIS
+Based on the observed datasets, there was no correlation between increased heat and electricity consumption increases during this specific period. While the external temperature rose, the mass relocation of the population served as a decoupling factor between thermal levels and grid load. 
+
+6. SCOPE LIMITATIONS
+This report is limited exclusively to the historical consumption anomalies of July 2012 and the associated technical data intervals. This memorandum does not include future load forecasts, infrastructure health assessments, or demographic data outside of the movement of residents during this specific event. Further inquiries regarding broader demographic shifts or long-term grid stability should be directed to the respective planning departments.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6369 · Off-window</span></span></summary>
+          <pre class="doc-content">Lumina Springs Municipal Utility Board
+Operational Report: September 2012 Heatwave Response
+
+Date: September 28, 2012
+Subject: Grid Operations Incident Report
+
+1. EXECUTIVE SUMMARY
+This operational report details the actions taken by the Lumina Springs Municipal Utility Board during a localized heatwave event that occurred between 2012-09-25 14:00:00 and 2012-09-26 14:00:00. The reporting window is strictly limited to this 24-hour period to evaluate the immediate impact on grid load and the efficacy of emergency consumption management protocols. This report does not include long-term meteorological trends or post-event infrastructure recovery plans.
+
+2. EVENT DESCRIPTION
+Beginning at 14:00:00 on September 25, Lumina Springs experienced a localized heatwave. Sustained high temperatures led to an immediate and significant surge in residential and commercial cooling demands. The Grid Operations Center monitored electricity consumption patterns throughout the duration of the event to ensure system stability under extreme thermal stress.
+
+3. CONSUMPTION ANALYSIS AND LOAD MANAGEMENT
+As the heatwave progressed, analysis of electricity consumption patterns indicated that the total demand was rapidly approaching the maximum capacity of the local distribution network. To prevent a catastrophic grid failure or uncontrolled cascading outages, the Municipal Utility Board authorized the implementation of mandatory brownouts.
+
+These mandatory brownouts were systematically executed across the service area to manually cap electricity consumption. By reducing voltage and cycling power availability, the utility was able to maintain grid integrity while the heatwave persisted.
+
+4. OPERATIONAL IMPACT
+As a direct result of the mandatory brownouts, the recorded peak electricity usage during the 24-hour window was successfully restricted. Data analysis confirms that peak usage was recorded at 0.5 times the typical rate. While demand would have normally spiked well above baseline levels during a thermal event of this magnitude, the management protocols enforced a significant reduction in the total electricity load.
+
+5. INCIDENT TIMELINE
+• 2012-09-25 14:00:00: Commencement of localized heatwave monitoring and initial surge in consumption patterns.
+• 2012-09-25 18:00:00 - 2012-09-26 10:00:00: Implementation of mandatory brownouts to cap grid load.
+• 2012-09-26 14:00:00: Termination of the incident reporting window following the subsidence of peak heat levels.
+
+6. CONCLUSION
+The intervention by the Lumina Springs Municipal Utility Board successfully mitigated the risk of grid collapse. By capping electricity consumption at 0.5 times the typical rate through mandatory brownouts, the utility maintained service continuity for essential infrastructure throughout the 24-hour heatwave event.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6370 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Lumina Springs Municipal Utility Board (MUB)
+Dispatch and Planning Division
+Technical Operational Report: Grid Operations Forecast
+
+Subject: Extreme Weather Impact Analysis – Heatwave Surge Projections
+Ref: Internal Ops Memo #442-B
+
+I. Executive Summary
+
+This technical report, issued by the Lumina Springs Municipal Utility Board (MUB) Dispatch and Planning Division, provides an operational analysis of the anticipated impact of the upcoming extreme weather event on the local electrical grid. The focus of this assessment is the specific interaction between current downward trajectory baseline trends and projected peak loads during the heatwave.
+
+II. Historical Load Profile and Demand Trends
+
+Analysis of the Lumina Springs historical electricity load profile indicates a consistent and observable softening of energy demand across the service area. This shift in the load profile is not localized to specific sectors but reflects a broader systemic trend. System demand is increasingly characterized by a daily reduction in peak intensity, suggesting a structural trend toward a lower consumption equilibrium. This baseline shift is critical for accurate forecasting, as the starting load values for the grid are significantly lower than in previous historical cooling seasons.
+
+III. Heatwave Impact Projections
+
+While the upcoming extreme weather event will inevitably result in a significant spike in air conditioning and cooling system utilization, the power surge triggered by the heatwave is expected to be relatively constrained. This constraint is directly attributed to the aforementioned diminishing background demand. Because the baseline against which the surge occurs is at a historic low, the absolute strain on the generation and distribution infrastructure is projected to remain within manageable parameters.
+
+IV. Consumption Maximums
+
+Based on current meteorological modeling and historical surge data, the MUB Dispatch and Planning Division has calculated the following consumption ceiling for the duration of the heatwave:
+
+*   Projected Maximum Total Consumption: 14,500 kW
+
+The calculation for the 14,500 kW maximum is based on a projected fivefold increase (5x) in cooling-related demand. This surge is calculated occurring while city baseline usage remains at its current diminished level. Provided the trend toward a lower consumption equilibrium persists, the 14,500 kW peak represents the upper bound of the expected operational load.
+
+V. Scope and Limitations
+
+This report is strictly limited to the technical interaction between background demand trends and heatwave-induced surge projections. This document does not include general weather forecasts, infrastructure maintenance schedules, or specific mitigation strategies. Operational personnel should refer to the Unified Emergency Response Manual for standard mitigation protocols.
+
+--------------------------------------------------
+Authorized by:
+Lumina Springs Municipal Utility Board (MUB)
+Dispatch and Planning Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6371 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">LUMINA SPRINGS UTILITY COMMISSION (LSUC)
+Department of Energy Load Management
+
+OFFICIAL REPORT
+TITLE: Quarterly Grid Stability and Peak Demand Analysis Report
+REPORT ID: QGR-2024-LM-014
+
+1. EXECUTIVE SUMMARY
+
+This technical operational report presents a comprehensive analysis of the empirical grid performance and load fluctuations within the Lumina Springs service area. Based on a longitudinal review of internal tracking systems, electricity consumption in Lumina Springs shows an empirical pattern of declining peak demand over the long term. This downward shift suggests a fundamental change in the load requirements of the local grid compared to historical benchmarks.
+
+2. HISTORICAL LOAD PERFORMANCE
+
+Historical records indicate that the maximum daily electricity load has been consistently receding. Data sets spanning the previous quarters demonstrate that once-stable baselines for daily peaks are no longer being reached. This trajectory is observable across seasonal transitions, indicating that the shift is not merely cyclical but part of a persistent structural movement in total system throughput.
+
+3. OBSERVATIONAL DATA ANALYSIS
+
+A refinement of the data focused on diurnal cycles reveals that high-demand afternoon periods in the city are becoming less intense according to observational data. These periods, which previously strained system capacity and required supplemental reserves, now exhibit significantly reduced stress levels. The observational findings confirm that the gap between base load and afternoon peak is narrowing as the peak itself diminishes.
+
+4. SYSTEM VOLATILITY AND RECOVERY TRENDS
+
+In instances where localized events—such as maintenance restarts or temporary surges—have briefly elevated consumption, the subsequent system response remains uniform. Total power consumption following localized events typically settles back into a broader downward trajectory. The resilience of this trend suggests that short-term volatility does not disrupt the ongoing decline in total grid demand.
+
+5. PROJECTIONS
+
+In alignment with the receding global trend observed across the service territory, the Department of Energy Load Management has adjusted its forecasts for the upcoming operational cycle. The upcoming peak demand is expected to stay well below 3000 kW. Current modeling indicates that this ceiling will not be breached, provided the current trajectory of receding demand continues at its current pace.
+
+6. DATA LIMITATIONS AND SCOPE
+
+This analysis is strictly limited to the empirical load data and demand trends for Lumina Springs. The scope of this report is technical and observational in nature; it focuses solely on the recorded figures and stability metrics of the grid. Consequently, this document does not include information regarding the specific causes of the decline, demographic changes, infrastructure upgrades, or energy pricing details. These factors fall outside the remit of this specific technical audit.
+
+7. CONCLUSION
+
+The Lumina Springs Utility Commission confirms that the grid remains in a state of high stability characterized by a sustained reduction in load requirements. Management will continue to monitor the downward trajectory of peak demand to ensure long-term system alignment with these empirical findings.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6372 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">LUMINA SPRINGS MUNICIPAL UTILITY DEPARTMENT
+Internal Operational Report: Weekly Load Distribution Analysis
+
+Subject: Observed Electricity Consumption Patterns
+Measurement Unit: Kilowatt (kW)
+
+Executive Summary:
+This report documents a concerning pattern of creeping energy demand across the Lumina Springs service area. Monitoring of the current week’s load distribution indicates that baseline consumption during designated off-peak hours has been steadily ratcheting upward. 
+
+Empirical data shows that following periods of high usage, energy consumption no longer returns to previous established lows. Instead, the demand profile now stabilizes at a significantly elevated overnight plateau. Current readings indicate that the nightly load floor has settled at approximately 4,000 kW. This characteristic shift represents a permanent elevation in the city&#x27;s minimum operational energy demand compared to previous baselines.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6373 · Off-variable</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Grid Operations Staff
+FROM: Lumina Springs Utility IT Department
+DATE: October 10, 2012
+RE: Smart Meter Grid Operations Update – October 2012
+
+This memorandum serves as a routine status report regarding the software update recently conducted for the Lumina Springs smart meter grid. 
+
+Following the update, a system-wide synchronization event occurred on 2012-10-09 at 18:00:00. During this synchronization window, the data collection server experienced a notable reporting lag. Consequently, stakeholders should be aware that reported numbers for this timeframe may appear fluctuating. These variances are a result of necessary administrative re-calibration following the server delay. 
+
+Please note that this update is limited to the technical status of the grid and specific data reporting issues encountered on 2012-10-09.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6374 · Off-variable</span></span></summary>
+          <pre class="doc-content">CITY MUNICIPAL ENERGY BOARD
+OFFICIAL OPERATIONAL BULLETIN
+Ref ID: GIF-2012-VOL
+Subject: Green Initiative Festival Voluntary Blackout Schedule
+
+I. OVERVIEW
+This bulletin serves as the official operational guide for the upcoming &quot;Green Initiative&quot; festival, a city-wide celebration designed to promote sustainable living and communal environmental stewardship. The festival will feature various public events, educational workshops, and sustainable technology showcases across the municipal district.
+
+II. ENERGY CONSERVATION MEASURES
+In alignment with the festival’s core mission, the Board is implementing a series of targeted energy conservation measures. These measures are specifically timed to coincide with the onset of the anticipated heatwave, which is projected to begin on 2012-10-09 at 18:00:00. By integrating these conservation protocols with the festival schedule, the City Municipal Energy Board is taking proactive steps to stabilize the grid during this period of high thermal stress.
+
+III. VOLUNTARY BLACKOUT EVENT
+A central feature of the Green Initiative festival is the &quot;Unity in Darkness&quot; voluntary blackout event. This event is organized to facilitate massive energy conservation during the peak hours of the heatwave. Residents, local businesses, and industrial partners are encouraged to participate by deactivating all non-essential lighting, unplugging electronic devices, and suspending the use of high-draw appliances during the specified windows.
+
+IV. PLANNED SCHEDULE
+To ensure coordinated efforts, the following stamps mark the commencement of mandatory and voluntary festival conservation protocols:
+
+- 2012-10-09 18:00:00: Official Start of Green Initiative Energy Protocols and Heatwave Response Measures.
+- 2012-10-09 19:00:00 – 21:00:00: Primary Window for the Voluntary City-Wide Blackout Event.
+
+V. PROJECTED IMPACT
+Based on internal modeling and the high level of community commitment recorded during festival registration, the City Municipal Energy Board issues a formal causal claim: total municipal power consumption is expected to drop significantly. This anticipated reduction is directly attributed to the planned initiatives and the widespread adoption of the voluntary blackout measures by festival participants. 
+
+VI. OPERATIONAL NOTES
+All municipal street lighting in designated festival zones will be dimmed or deactivated at 18:00:00 on 2012-10-09 to lead the conservation effort. The Board appreciates the cooperation of all citizens in ensuring the stability of our local energy infrastructure through these planned voluntary actions.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6376 · Irrelevant</span></span></summary>
+          <pre class="doc-content">LUMINA SPRINGS CITY COUNCIL
+ADMINISTRATIVE MEETING MINUTES
+
+Date: October 9, 2012
+Location: City Hall, Room 302
+Session Type: Routine Administrative Meeting
+
+I. CALL TO ORDER
+Mayor Pro Tem called the administrative session to order at 9:00 AM on October 10, 2012. 
+
+II. ATTENDANCE
+All council members present. Administrative staff and Department of Public Works representatives in attendance.
+
+III. GENERAL INFRASTRUCTURE DISCUSSION
+The Council entered into a routine discussion regarding the current state of general city infrastructure. Representatives from the Department of Public Works provided a high-level briefing on the status of municipal assets. The discussion focused on maintaining existing service standards and prioritizing immediate maintenance needs across the city’s core operational frameworks. No long-term energy forecasts were reviewed, and no infrastructure projects beyond immediate maintenance were introduced during this session.
+
+IV. MAINTENANCE PROGRAM NOTIFICATION: TREE-TRIMMING
+As part of the routine administrative review, the Department of Public Works issued a formal notification regarding a scheduled tree-trimming program. This initiative is specifically designed for areas located near main power lines to ensure the integrity of the local grid and prevent potential service interruptions. 
+
+Staff confirmed that the program is preventative in nature. Discussion was limited to the logistics of the trimming schedule. No information regarding utility billing or rate changes was presented or discussed during this portion of the meeting.
+
+V. ADMINISTRATIVE WINDOW AND TIMESTAMPS
+The Council established the formal administrative duration for the upcoming maintenance window. The following timestamps were recorded for the 2012-10-09 session proceedings:
+
+- 09:15 AM: Commencement of infrastructure status updates.
+- 09:45 AM: Formal notification of the tree-trimming program near main power lines.
+- 10:15 AM: Approval of the scheduled maintenance timeline.
+- 10:30 AM: Conclusion of infrastructure-specific administrative items.
+
+VI. CLOSING REMARKS
+This meeting was strictly limited to the proceedings of the October 9, 2012 session. Matters pertaining to future energy projections or utility billing cycles remain outside the scope of these minutes.
+
+VII. ADJOURNMENT
+Meeting adjourned at 11:30 AM.
+
+Minutes prepared by the Office of the City Clerk.
+Published: October 12, 2012</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6377 · Irrelevant</span></span></summary>
+          <pre class="doc-content">LUMINA SPRINGS ELECTRICITY PROVIDER
+INTERNAL NOTIFICATION: OPERATIONAL UPDATE BULLETIN
+
+TO: All Staff
+FROM: Operations Department
+SUBJECT: Billing Software Transition and Facilities Maintenance
+
+This bulletin outlines upcoming logistical tasks regarding our internal systems and headquarters maintenance.
+
+1. Billing Software Update:
+We are beginning the rollout of the new billing software update. This transition is focused on the software’s operational logistics to ensure system compatibility across all departments.
+
+2. Data Verification Window:
+To facilitate the update, a data verification window is scheduled to commence on 2012-10-09. All relevant personnel must ensure system logs are accessible during this period.
+
+3. Facilities Maintenance:
+Technicians will be onsite at the provider&#x27;s headquarters to perform essential maintenance on the server cooling system. This is a routine procedure to ensure hardware stability for our digital infrastructure.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6379 · Off-entity</span></span></summary>
+          <pre class="doc-content">AZURE CREEK MUNICIPAL POWER AUTHORITY
+OPERATIONAL INCIDENT REPORT: OCTOBER 2012 STORM IMPACT
+
+Date of Report: October 12, 2012
+Subject: Technical Telemetry and Grid Physical Impact Analysis
+
+1. EXECUTIVE SUMMARY
+This incident report serves as a formal documentation of the localized grid performance and telemetry data for Azure Creek following the atmospheric disturbance encountered on October 9, 2012. The following data is focused exclusively on technical telemetry and the physical impact on the municipal electrical distribution system.
+
+2. GRID MONITORING PARAMETERS
+Electricity consumption for Azure Creek is recorded and monitored in Kilowatts (kW). Standard operating protocols involve constant real-time telemetry of load distribution across the municipal service area to ensure grid stability and peak demand management.
+
+3. TIMELINE OF EVENT
+At 2012-10-09 18:00:00, a severe storm event occurred. High-velocity winds and significant atmospheric discharge were noted in the immediate vicinity of the primary transmission infrastructure. As a direct result of this severe storm event, a city-wide power outage occurred. The interruption transitioned the grid from standard load-bearing capacity to an immediate failure state sustained across all sectors.
+
+4. IMPACT ON CONSUMPTION
+Following the structural and electrical failures initiated at 18:00:00, monitoring stations recorded a total loss of load. Electricity usage in Azure Creek dropped to near zero for a duration of 3 hours during the outage. The telemetry charts for this period show a flat-line consumption profile across all municipal substations, indicating a complete cessation of power delivery to residential and commercial meters.
+
+5. PHYSICAL IMPACT ANALYSIS
+The cessation of electricity flow was consistent with the physical stressors placed upon the grid by the 2012-10-09 storm. The rapid drop in kW readings across the control center&#x27;s dashboard confirms that the city-wide power outage was instantaneous upon the storm&#x27;s peak arrival. Post-incident telemetry indicates that the duration of the near-zero load state was maintained for exactly 180 minutes.
+
+6. LIMITATIONS OF REPORT
+This document is strictly limited to the technical telemetry and physical grid impact of the specified storm. This report does not include documentation regarding restoration procedures, financial loss assessments, or weather forecasts. It is intended for use by the engineering and grid-management departments for historical performance analytics.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6380 · Off-entity</span></span></summary>
+          <pre class="doc-content">VERIDIAN FALLS MUNICIPAL POWER AUTHORITY
+OPERATIONAL IMPACT SUMMARY: CITY-WIDE CONSERVATION HOLIDAY
+
+Event Date: 2012-10-09
+Event Time: 18:00:00
+Subject: Verification of Conservation Compliance and Grid Impact
+
+On 2012-10-09 at 18:00:00, Veridian Falls observed a city-wide energy conservation holiday. Per the operational mandate, all residents and commercial entities were required to turn off non-essential lights for the duration of the event. 
+
+Operational data monitoring recorded electricity consumption in Kilowatts (kW) to evaluate the success of the initiative. The Authority verifies that during the event window, electricity usage decreased by approximately 5 times compared to normal baseline levels. 
+
+Note: This summary evaluates specific operational outcomes of the event only. It excludes long-term grid forecasts, local weather data, or financial implications of the energy reduction.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6382 · Off-window</span></span></summary>
+          <pre class="doc-content">Lumina Springs Electricity Board
+Operational Summary: September 2012 Heatwave Impact
+
+Date: October 5, 2012
+Subject: Retrospective Analysis of Load Demand during Early September Thermal Event
+
+Executive Summary
+This operational report details the impact of the severe heatwave experienced in Lumina Springs between September 12, 2012, and September 15, 2012. Contrary to standard projections regarding high-temperature events, the Lumina Springs Electricity Board recorded a significant anomaly in grid load during this specific window.
+
+Operational Observations
+During the four-day period from 2012-09-12 to 2012-09-15, the region was subjected to extreme temperatures. Under normal conditions, such heat would trigger a surge in peak demand due to HVAC systems and cooling units. However, operational data indicates that electricity consumption decreased significantly during this early September period.
+
+The primary driver for this reduction was a mass temporary migration of the local population. Analysis confirms that residents left for cooler coastal regions during the heatwave to seek relief from the inland temperatures. This exodus resulted in a residential load shedding effect that far outweighed any increase in per-unit cooling demand.
+
+Impact on Load Demand
+The quantitative data for the period shows that power usage dropped by 40 percent compared to the seasonal average during those specific days. This 40% reduction represents a historic low for the utility during a high-heat event, reflecting the impact of high resident mobility on the grid.
+
+Conclusion
+This summary is provided strictly as a retrospective analysis of the September 2012 heatwave and its immediate impact on load demand. This document is intended for operational review only and does not contain information regarding long-term weather patterns, future infrastructure planning, or energy pricing details.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6383 · Off-window</span></span></summary>
+          <pre class="doc-content">LUMINA SPRINGS DEPARTMENT OF ENERGY AND WATER (LSDEW)
+OPERATIONAL LOG ENTRY: AUGUST 20, 2012
+
+SUBJECT: POST-INCIDENT GRID OPERATIONS REPORT
+
+Summary:
+On August 20, 2012, Lumina Springs experienced a significant heatwave event. The duration of the heatwave was recorded at exactly six hours. In response to the elevated thermal conditions and projected demand, a grid stabilization response was triggered immediately at 14:00:00.
+
+Actions Taken:
+Upon activation, automated smart-meter conservation protocols were deployed city-wide. These protocols remained active throughout the duration of the peak heat interval. 
+
+Operational Impact:
+Due to the activated protocols, city-wide electricity consumption remained completely flat throughout the peak heat interval. The automated system successfully mitigated demand spikes, ensuring grid integrity for the duration of the operational response.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6385 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Lumina Springs Municipal Utility Board
+Energy Load Management Division
+Technical Operational Report: Grid Stability and Peak Demand Projection
+
+1. EXECUTIVE SUMMARY
+This technical report provides an assessment of the current grid stability for the Lumina Springs service area and outlines projections for the upcoming forecasted demand event. Data analysis indicates that while a significant weekend surge is anticipated, the load is expected to remain within manageable operational parameters established by historical performance benchmarks.
+
+2. CURRENT CONSUMPTION PROFILE
+Lumina Springs maintains a daily electricity consumption profile characterized by consistent and steady daytime peaks. An analysis of historical power usage confirms that the grid oscillates within a fixed, stable range. There has been no significant upward drift in magnitude observed in recent cycles, suggesting a reliable baseline for normal municipal operations.
+
+3. PEAK DEMAND PROJECTIONS
+The Energy Load Management Division has modeled the upcoming demand surge based on real-time consumption trends and historical event correlations. The upcoming surge is expected to peak at a level consistent with five times the early-week usage. While this represents a sharp increase from Monday–Tuesday baselines, current modeling suggests the upcoming surge is not expected to escalate into an unprecedented extreme.
+
+4. CAPACITY LIMITS AND STABILITY THRESHOLDS
+Grid stability is predicated on maintaining a ceiling below critical infrastructure stress points. According to current projections, demand during the event is predicted to stay below the 16,000 kW mark. This threshold ensures that the load remains within the designed safety margins of the Lumina Springs distribution network. 
+
+5. POST-EVENT RECOVERY
+Following the conclusion of the peak window, the Load Management Division forecasts a rapid stabilization of the grid. System load will return to its typical operating range after the anticipated event, resuming the standard daytime peak/nighttime trough cycle. 
+
+6. SCOPE LIMITATIONS
+This report is limited specifically to the load profile and immediate peak forecasting for the Lumina Springs area. This documentation does not include broader grid infrastructure details, weather causality, or long-term multi-year expansion plans. All data is intended for immediate operational load management and short-term grid stability assessment only.
+
+***
+
+End of Report
+Lumina Springs Municipal Utility Board
+Energy Load Management Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6386 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">LUMINA SPRINGS MUNICIPAL UTILITY BOARD (MUB)
+TECHNICAL OPERATIONAL REPORT: WEEKLY GRID LOAD ANALYSIS
+
+I. EXECUTIVE SUMMARY
+This report provides a technical assessment of the electricity consumption patterns within the Lumina Springs network for the current operational period. Analysis focuses on shifting demand cycles, baseline trajectory, and maximum load projections. Note: This document is strictly limited to current consumption trends and near-term peak projections; it does not address long-term infrastructure planning, weather correlations, or specific household billing data.
+
+II. LOAD TREND ANALYSIS
+Electricity consumption in Lumina Springs fluctuates based on varying demand throughout the week. However, recent monitoring of the power network has observed a sustained downward trend in peak consumption levels. This shift is characterized by daily maximum usage values that have been consistently tapering off as the days progress.
+
+Furthermore, observations indicate that the baseline consumption is following a steadily diminishing pattern. This reduction in the foundational load is the primary driver behind the overall decrease in system-wide demand observed during this period.
+
+III. PEAK PROJECTIONS AND SURGE CONSTRAINTS
+Given the current data, the grid is operating under a weakened baseline. Consequently, any subsequent surge in consumption is expected to be relatively moderate. The diminishing baseline serves as a natural buffer, limiting the potential scale of rapid demand increases.
+
+Under current tapering trends, technical modeling suggests that peak values are unlikely to exceed a 12,000 kW threshold. This projected 12,000 kW cap is significant as it represents a five-fold increase relative to the recent lower typical levels observed across the network. 
+
+IV. OPERATIONAL OUTLOOK
+The immediate outlook for the Lumina Springs network remains stable. Potential surges in demand remain constrained by the current weakened baseline, which continues to anchor the grid&#x27;s overall performance. MUB will continue to monitor these tapering trends to ensure peak load management remains within these projected parameters.</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:yihong.tang@servicenow.com">Yihong Tang</a> · <a href="mailto:valentina.zantedeschi@servicenow.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

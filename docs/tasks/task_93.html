@@ -1,0 +1,1144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Port Solas · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Port Solas</h1>
+          <p>Forecasting <strong>electricity consumption</strong> · electricity increase in prediction with distractor with dates</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="Energy (electricity)">Energy (electricity)</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="96">96</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="36">36</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>Energy (electricity)</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Likely</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">Specialist</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Straightforward</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2013-09-29 00:00:00</span><span>Forecast horizon · through 2013-10-03 23:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="783.23" y1="14" x2="783.23" y2="276" /><polyline class="chart-history" points="12.00,258.18 20.03,271.09 28.07,273.89 36.10,272.91 44.13,273.16 52.17,269.81 60.20,266.83 68.24,263.53 76.27,257.66 84.30,249.80 92.34,246.82 100.37,247.01 108.40,246.46 116.44,246.22 124.47,245.82 132.50,247.34 140.54,246.71 148.57,245.82 156.61,245.43 164.64,245.98 172.67,246.60 180.71,247.11 188.74,249.88 196.77,254.79 204.81,263.73 212.84,265.78 220.87,266.93 228.91,266.92 236.94,267.58 244.97,263.44 253.01,258.76 261.04,257.38 269.08,255.68 277.11,245.34 285.14,244.28 293.18,245.43 301.21,245.52 309.24,245.02 317.28,243.64 325.31,245.61 333.34,242.69 341.38,241.85 349.41,242.90 357.45,242.87 365.48,243.85 373.51,244.28 381.55,248.09 389.58,251.97 397.61,261.37 405.65,260.23 413.68,262.15 421.71,262.51 429.75,260.19 437.78,260.87 445.82,255.46 453.85,251.06 461.88,249.10 469.92,242.06 477.95,242.58 485.98,235.75 494.02,236.12 502.05,238.04 510.08,237.92 518.12,239.78 526.15,241.19 534.18,241.40 542.22,240.25 550.25,241.77 558.29,243.52 566.32,243.85 574.35,246.57 582.39,253.10 590.42,262.11 598.45,264.32 606.49,267.39 614.52,267.34 622.55,267.74 630.59,263.78 638.62,260.32 646.66,257.93 654.69,251.46 662.72,242.29 670.76,242.46 678.79,240.68 686.82,242.67 694.86,245.20 702.89,246.05 710.92,244.05 718.96,245.68 726.99,245.34 735.03,244.67 743.06,244.65 751.09,245.01 759.13,246.73 767.16,248.66 775.19,252.72 783.23,267.74" /><polyline class="chart-future" points="783.23,267.74 791.26,271.22 799.29,269.79 807.33,271.39 815.36,276.00 823.39,270.88 831.43,271.20 839.46,266.23 847.50,258.74 855.53,253.13 863.56,249.30 871.60,243.17 879.63,14.00 887.66,241.89 895.70,244.23 903.73,244.53 911.76,242.30 919.80,243.27 927.83,243.91 935.87,240.11 943.90,245.53 951.93,245.16 959.97,250.80 968.00,259.44" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (120 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2013-09-29 00:00:00</td><td>999.6195114662</td></tr><tr><td>2</td><td>Observed history</td><td>2013-09-29 01:00:00</td><td>784.2344573464</td></tr><tr><td>3</td><td>Observed history</td><td>2013-09-29 02:00:00</td><td>737.5882172875</td></tr><tr><td>4</td><td>Observed history</td><td>2013-09-29 03:00:00</td><td>753.8795816216</td></tr><tr><td>5</td><td>Observed history</td><td>2013-09-29 04:00:00</td><td>749.7819284335</td></tr><tr><td>6</td><td>Observed history</td><td>2013-09-29 05:00:00</td><td>805.6250106779</td></tr><tr><td>7</td><td>Observed history</td><td>2013-09-29 06:00:00</td><td>855.46123876</td></tr><tr><td>8</td><td>Observed history</td><td>2013-09-29 07:00:00</td><td>910.4025342173</td></tr><tr><td>9</td><td>Observed history</td><td>2013-09-29 08:00:00</td><td>1008.3860893899</td></tr><tr><td>10</td><td>Observed history</td><td>2013-09-29 09:00:00</td><td>1139.5080980039</td></tr><tr><td>11</td><td>Observed history</td><td>2013-09-29 10:00:00</td><td>1189.249004351</td></tr><tr><td>12</td><td>Observed history</td><td>2013-09-29 11:00:00</td><td>1185.9860263497</td></tr><tr><td>13</td><td>Observed history</td><td>2013-09-29 12:00:00</td><td>1195.285886178</td></tr><tr><td>14</td><td>Observed history</td><td>2013-09-29 13:00:00</td><td>1199.303586877</td></tr><tr><td>15</td><td>Observed history</td><td>2013-09-29 14:00:00</td><td>1205.888985785</td></tr><tr><td>16</td><td>Observed history</td><td>2013-09-29 15:00:00</td><td>1180.520274386</td></tr><tr><td>17</td><td>Observed history</td><td>2013-09-29 16:00:00</td><td>1191.1023333805</td></tr><tr><td>18</td><td>Observed history</td><td>2013-09-29 17:00:00</td><td>1205.9765342377</td></tr><tr><td>19</td><td>Observed history</td><td>2013-09-29 18:00:00</td><td>1212.3961716654</td></tr><tr><td>20</td><td>Observed history</td><td>2013-09-29 19:00:00</td><td>1203.1780749495</td></tr><tr><td>21</td><td>Observed history</td><td>2013-09-29 20:00:00</td><td>1192.9048891266</td></tr><tr><td>22</td><td>Observed history</td><td>2013-09-29 21:00:00</td><td>1184.4516193243</td></tr><tr><td>23</td><td>Observed history</td><td>2013-09-29 22:00:00</td><td>1138.1116806656</td></tr><tr><td>24</td><td>Observed history</td><td>2013-09-29 23:00:00</td><td>1056.2011669732</td></tr><tr><td>25</td><td>Observed history</td><td>2013-09-30 00:00:00</td><td>907.1737025714</td></tr><tr><td>26</td><td>Observed history</td><td>2013-09-30 01:00:00</td><td>872.8551972591</td></tr><tr><td>27</td><td>Observed history</td><td>2013-09-30 02:00:00</td><td>853.7079501706</td></tr><tr><td>28</td><td>Observed history</td><td>2013-09-30 03:00:00</td><td>853.8345865216</td></tr><tr><td>29</td><td>Observed history</td><td>2013-09-30 04:00:00</td><td>842.8083235886</td></tr><tr><td>30</td><td>Observed history</td><td>2013-09-30 05:00:00</td><td>911.8824868705</td></tr><tr><td>31</td><td>Observed history</td><td>2013-09-30 06:00:00</td><td>989.99986637</td></tr><tr><td>32</td><td>Observed history</td><td>2013-09-30 07:00:00</td><td>1012.9608557513</td></tr><tr><td>33</td><td>Observed history</td><td>2013-09-30 08:00:00</td><td>1041.4025287231</td></tr><tr><td>34</td><td>Observed history</td><td>2013-09-30 09:00:00</td><td>1213.90443813</td></tr><tr><td>35</td><td>Observed history</td><td>2013-09-30 10:00:00</td><td>1231.5937443286</td></tr><tr><td>36</td><td>Observed history</td><td>2013-09-30 11:00:00</td><td>1212.3434973651</td></tr><tr><td>37</td><td>Observed history</td><td>2013-09-30 12:00:00</td><td>1210.9213329017</td></tr><tr><td>38</td><td>Observed history</td><td>2013-09-30 13:00:00</td><td>1219.2183345899</td></tr><tr><td>39</td><td>Observed history</td><td>2013-09-30 14:00:00</td><td>1242.2269336118</td></tr><tr><td>40</td><td>Observed history</td><td>2013-09-30 15:00:00</td><td>1209.3248429725</td></tr><tr><td>41</td><td>Observed history</td><td>2013-09-30 16:00:00</td><td>1258.0306307853</td></tr><tr><td>42</td><td>Observed history</td><td>2013-09-30 17:00:00</td><td>1272.0707197174</td></tr><tr><td>43</td><td>Observed history</td><td>2013-09-30 18:00:00</td><td>1254.6509163654</td></tr><tr><td>44</td><td>Observed history</td><td>2013-09-30 19:00:00</td><td>1255.1478778875</td></tr><tr><td>45</td><td>Observed history</td><td>2013-09-30 20:00:00</td><td>1238.811009116</td></tr><tr><td>46</td><td>Observed history</td><td>2013-09-30 21:00:00</td><td>1231.667419231</td></tr><tr><td>47</td><td>Observed history</td><td>2013-09-30 22:00:00</td><td>1168.0423489951</td></tr><tr><td>48</td><td>Observed history</td><td>2013-09-30 23:00:00</td><td>1103.2441518076</td></tr><tr><td>49</td><td>Observed history</td><td>2013-10-01 00:00:00</td><td>946.515159344</td></tr><tr><td>50</td><td>Observed history</td><td>2013-10-01 01:00:00</td><td>965.5709145182</td></tr><tr><td>51</td><td>Observed history</td><td>2013-10-01 02:00:00</td><td>933.4031131054</td></tr><tr><td>52</td><td>Observed history</td><td>2013-10-01 03:00:00</td><td>927.434509982</td></tr><tr><td>53</td><td>Observed history</td><td>2013-10-01 04:00:00</td><td>966.2094916417</td></tr><tr><td>54</td><td>Observed history</td><td>2013-10-01 05:00:00</td><td>954.7388395247</td></tr><tr><td>55</td><td>Observed history</td><td>2013-10-01 06:00:00</td><td>1044.9995985202</td></tr><tr><td>56</td><td>Observed history</td><td>2013-10-01 07:00:00</td><td>1118.4721733646</td></tr><tr><td>57</td><td>Observed history</td><td>2013-10-01 08:00:00</td><td>1151.2163560285</td></tr><tr><td>58</td><td>Observed history</td><td>2013-10-01 09:00:00</td><td>1268.6376642921</td></tr><tr><td>59</td><td>Observed history</td><td>2013-10-01 10:00:00</td><td>1260.0175187751</td></tr><tr><td>60</td><td>Observed history</td><td>2013-10-01 11:00:00</td><td>1373.8319441681</td></tr><tr><td>61</td><td>Observed history</td><td>2013-10-01 12:00:00</td><td>1367.6420576542</td></tr><tr><td>62</td><td>Observed history</td><td>2013-10-01 13:00:00</td><td>1335.7495807455</td></tr><tr><td>63</td><td>Observed history</td><td>2013-10-01 14:00:00</td><td>1337.7611707601</td></tr><tr><td>64</td><td>Observed history</td><td>2013-10-01 15:00:00</td><td>1306.7037784588</td></tr><tr><td>65</td><td>Observed history</td><td>2013-10-01 16:00:00</td><td>1283.1795457407</td></tr><tr><td>66</td><td>Observed history</td><td>2013-10-01 17:00:00</td><td>1279.6497886632</td></tr><tr><td>67</td><td>Observed history</td><td>2013-10-01 18:00:00</td><td>1298.8991871048</td></tr><tr><td>68</td><td>Observed history</td><td>2013-10-01 19:00:00</td><td>1273.4757722256</td></tr><tr><td>69</td><td>Observed history</td><td>2013-10-01 20:00:00</td><td>1244.2310598089</td></tr><tr><td>70</td><td>Observed history</td><td>2013-10-01 21:00:00</td><td>1238.8069722476</td></tr><tr><td>71</td><td>Observed history</td><td>2013-10-01 22:00:00</td><td>1193.4076880726</td></tr><tr><td>72</td><td>Observed history</td><td>2013-10-01 23:00:00</td><td>1084.3653521597</td></tr><tr><td>73</td><td>Observed history</td><td>2013-10-02 00:00:00</td><td>934.20085543</td></tr><tr><td>74</td><td>Observed history</td><td>2013-10-02 01:00:00</td><td>897.2396393915</td></tr><tr><td>75</td><td>Observed history</td><td>2013-10-02 02:00:00</td><td>846.0536501052</td></tr><tr><td>76</td><td>Observed history</td><td>2013-10-02 03:00:00</td><td>846.9259423065</td></tr><tr><td>77</td><td>Observed history</td><td>2013-10-02 04:00:00</td><td>840.178538819</td></tr><tr><td>78</td><td>Observed history</td><td>2013-10-02 05:00:00</td><td>906.1872666131</td></tr><tr><td>79</td><td>Observed history</td><td>2013-10-02 06:00:00</td><td>964.0561010557</td></tr><tr><td>80</td><td>Observed history</td><td>2013-10-02 07:00:00</td><td>1003.8299297723</td></tr><tr><td>81</td><td>Observed history</td><td>2013-10-02 08:00:00</td><td>1111.7219416757</td></tr><tr><td>82</td><td>Observed history</td><td>2013-10-02 09:00:00</td><td>1264.8122446827</td></tr><tr><td>83</td><td>Observed history</td><td>2013-10-02 10:00:00</td><td>1261.8800383569</td></tr><tr><td>84</td><td>Observed history</td><td>2013-10-02 11:00:00</td><td>1291.5773844571</td></tr><tr><td>85</td><td>Observed history</td><td>2013-10-02 12:00:00</td><td>1258.489135812</td></tr><tr><td>86</td><td>Observed history</td><td>2013-10-02 13:00:00</td><td>1216.1634040008</td></tr><tr><td>87</td><td>Observed history</td><td>2013-10-02 14:00:00</td><td>1202.0583557135</td></tr><tr><td>88</td><td>Observed history</td><td>2013-10-02 15:00:00</td><td>1235.429925828</td></tr><tr><td>89</td><td>Observed history</td><td>2013-10-02 16:00:00</td><td>1208.2223500952</td></tr><tr><td>90</td><td>Observed history</td><td>2013-10-02 17:00:00</td><td>1213.8776996997</td></tr><tr><td>91</td><td>Observed history</td><td>2013-10-02 18:00:00</td><td>1225.1398265045</td></tr><tr><td>92</td><td>Observed history</td><td>2013-10-02 19:00:00</td><td>1225.4552744077</td></tr><tr><td>93</td><td>Observed history</td><td>2013-10-02 20:00:00</td><td>1219.3795617431</td></tr><tr><td>94</td><td>Observed history</td><td>2013-10-02 21:00:00</td><td>1190.7427129487</td></tr><tr><td>95</td><td>Observed history</td><td>2013-10-02 22:00:00</td><td>1158.5059528851</td></tr><tr><td>96</td><td>Observed history</td><td>2013-10-02 23:00:00</td><td>1090.7405448177</td></tr><tr class="future"><td>97</td><td>Forecast horizon</td><td>2013-10-03 00:00:00</td><td>840.2519947427</td></tr><tr class="future"><td>98</td><td>Forecast horizon</td><td>2013-10-03 01:00:00</td><td>782.0773871875</td></tr><tr class="future"><td>99</td><td>Forecast horizon</td><td>2013-10-03 02:00:00</td><td>805.9704633264</td></tr><tr class="future"><td>100</td><td>Forecast horizon</td><td>2013-10-03 03:00:00</td><td>779.3670752714</td></tr><tr class="future"><td>101</td><td>Forecast horizon</td><td>2013-10-03 04:00:00</td><td>702.3938458408</td></tr><tr class="future"><td>102</td><td>Forecast horizon</td><td>2013-10-03 05:00:00</td><td>787.7919462545</td></tr><tr class="future"><td>103</td><td>Forecast horizon</td><td>2013-10-03 06:00:00</td><td>782.495820781</td></tr><tr class="future"><td>104</td><td>Forecast horizon</td><td>2013-10-03 07:00:00</td><td>865.4069078169</td></tr><tr class="future"><td>105</td><td>Forecast horizon</td><td>2013-10-03 08:00:00</td><td>990.4178775054</td></tr><tr class="future"><td>106</td><td>Forecast horizon</td><td>2013-10-03 09:00:00</td><td>1083.9678960971</td></tr><tr class="future"><td>107</td><td>Forecast horizon</td><td>2013-10-03 10:00:00</td><td>1147.8504693499</td></tr><tr class="future"><td>108</td><td>Forecast horizon</td><td>2013-10-03 11:00:00</td><td>1250.1878183313</td></tr><tr class="future"><td>109</td><td>Forecast horizon</td><td>2013-10-03 12:00:00</td><td>5073.4070830564</td></tr><tr class="future"><td>110</td><td>Forecast horizon</td><td>2013-10-03 13:00:00</td><td>1271.4437169502</td></tr><tr class="future"><td>111</td><td>Forecast horizon</td><td>2013-10-03 14:00:00</td><td>1232.4393776918</td></tr><tr class="future"><td>112</td><td>Forecast horizon</td><td>2013-10-03 15:00:00</td><td>1227.3800401477</td></tr><tr class="future"><td>113</td><td>Forecast horizon</td><td>2013-10-03 16:00:00</td><td>1264.6725433339</td></tr><tr class="future"><td>114</td><td>Forecast horizon</td><td>2013-10-03 17:00:00</td><td>1248.3758368327</td></tr><tr class="future"><td>115</td><td>Forecast horizon</td><td>2013-10-03 18:00:00</td><td>1237.7672378821</td></tr><tr class="future"><td>116</td><td>Forecast horizon</td><td>2013-10-03 19:00:00</td><td>1301.2322473074</td></tr><tr class="future"><td>117</td><td>Forecast horizon</td><td>2013-10-03 20:00:00</td><td>1210.7383833627</td></tr><tr class="future"><td>118</td><td>Forecast horizon</td><td>2013-10-03 21:00:00</td><td>1216.8534667662</td></tr><tr class="future"><td>119</td><td>Forecast horizon</td><td>2013-10-03 22:00:00</td><td>1122.8264032763</td></tr><tr class="future"><td>120</td><td>Forecast horizon</td><td>2013-10-03 23:00:00</td><td>978.6095551783</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-93-context" id="forecast-task-93-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-93-context" id="forecast-task-93-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-93-context" id="forecast-task-93-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-93-view" id="forecast-task-93-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-93-view" id="forecast-task-93-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-93-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-93-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-93-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-93-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-93-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 297.68 L 35.93 311.11 L 43.87 314.01 L 51.80 313.00 L 59.73 313.25 L 67.66 309.77 L 75.60 306.67 L 83.53 303.24 L 91.46 297.14 L 99.39 288.96 L 107.33 285.86 L 115.26 286.07 L 123.19 285.49 L 131.13 285.24 L 139.06 284.83 L 146.99 286.41 L 154.92 285.75 L 162.86 284.82 L 170.79 284.42 L 178.72 285.00 L 186.66 285.64 L 194.59 286.16 L 202.52 289.05 L 210.45 294.16 L 218.39 303.44 L 226.32 305.58 L 234.25 306.78 L 242.18 306.77 L 250.12 307.46 L 258.05 303.15 L 265.98 298.28 L 273.92 296.85 L 281.85 295.08 L 289.78 284.33 L 297.71 283.23 L 305.65 284.43 L 313.58 284.51 L 321.51 284.00 L 329.45 282.56 L 337.38 284.61 L 345.31 281.58 L 353.24 280.70 L 361.18 281.79 L 369.11 281.76 L 377.04 282.78 L 384.97 283.22 L 392.91 287.19 L 400.84 291.22 L 408.77 300.99 L 416.71 299.80 L 424.64 301.81 L 432.57 302.18 L 440.50 299.77 L 448.44 300.48 L 456.37 294.85 L 464.30 290.28 L 472.24 288.24 L 480.17 280.92 L 488.10 281.45 L 496.03 274.36 L 503.97 274.75 L 511.90 276.73 L 519.83 276.61 L 527.76 278.54 L 535.70 280.01 L 543.63 280.23 L 551.56 279.03 L 559.50 280.62 L 567.43 282.44 L 575.36 282.78 L 583.29 285.61 L 591.23 292.40 L 599.16 301.76 L 607.09 304.06 L 615.03 307.25 L 622.96 307.20 L 630.89 307.62 L 638.82 303.51 L 646.76 299.90 L 654.69 297.42 L 662.62 290.70 L 670.55 281.16 L 678.49 281.34 L 686.42 279.49 L 694.35 281.55 L 702.29 284.19 L 710.22 285.07 L 718.15 282.99 L 726.08 284.68 L 734.02 284.33 L 741.95 283.63 L 749.88 283.61 L 757.82 283.99 L 765.75 285.77 L 773.68 287.78 L 781.61 292.00" /><path class="forecast-svg-actual" d="M 789.55 307.62 L 797.48 311.24 L 805.41 309.75 L 813.34 311.41 L 821.28 316.21 L 829.21 310.88 L 837.14 311.21 L 845.08 306.05 L 853.01 298.26 L 860.94 292.43 L 868.87 288.44 L 876.81 282.07 L 884.74 43.79 L 892.67 280.74 L 900.61 283.17 L 908.54 283.49 L 916.47 281.16 L 924.40 282.18 L 932.34 282.84 L 940.27 278.89 L 948.20 284.53 L 956.13 284.14 L 964.07 290.00 L 972.00 298.99" /><path class="forecast-svg-band" fill="#b86d4a" d="M 789.55 300.19 L 797.48 304.24 L 805.41 306.28 L 813.34 306.33 L 821.28 305.98 L 829.21 303.91 L 837.14 300.26 L 845.08 296.92 L 853.01 292.09 L 860.94 282.75 L 868.87 281.58 L 876.81 281.11 L 884.74 281.16 L 892.67 282.03 L 900.61 281.83 L 908.54 282.27 L 916.47 282.14 L 924.40 282.45 L 932.34 281.89 L 940.27 282.05 L 948.20 283.12 L 956.13 284.23 L 964.07 286.51 L 972.00 291.44 L 972.00 293.12 L 964.07 289.10 L 956.13 286.78 L 948.20 286.11 L 940.27 285.33 L 932.34 284.70 L 924.40 285.40 L 916.47 285.96 L 908.54 286.32 L 900.61 285.87 L 892.67 285.66 L 884.74 284.08 L 876.81 284.03 L 868.87 285.25 L 860.94 286.22 L 853.01 294.05 L 845.08 298.29 L 837.14 301.18 L 829.21 304.82 L 821.28 306.99 L 813.34 307.45 L 805.41 307.25 L 797.48 305.31 L 789.55 301.10 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 789.55 300.65 L 797.48 304.77 L 805.41 306.76 L 813.34 306.89 L 821.28 306.49 L 829.21 304.37 L 837.14 300.72 L 845.08 297.60 L 853.01 293.07 L 860.94 284.49 L 868.87 283.41 L 876.81 282.57 L 884.74 282.62 L 892.67 283.84 L 900.61 283.85 L 908.54 284.29 L 916.47 284.05 L 924.40 283.93 L 932.34 283.30 L 940.27 283.69 L 948.20 284.62 L 956.13 285.50 L 964.07 287.80 L 972.00 292.28" /><circle class="forecast-svg-start" fill="#b86d4a" cx="789.55" cy="300.65" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 789.55 301.35 L 797.48 303.72 L 805.41 306.27 L 813.34 306.40 L 821.28 306.57 L 829.21 302.58 L 837.14 297.77 L 845.08 294.05 L 853.01 288.03 L 860.94 279.21 L 868.87 276.40 L 876.81 271.99 L 884.74 229.25 L 892.67 224.22 L 900.61 169.02 L 908.54 164.56 L 916.47 160.11 L 924.40 156.77 L 932.34 156.23 L 940.27 159.01 L 948.20 164.40 L 956.13 172.12 L 964.07 185.21 L 972.00 202.10" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="789.55" cy="301.35" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 789.55 301.12 L 797.48 304.35 L 805.41 306.28 L 813.34 306.69 L 821.28 306.74 L 829.21 303.41 L 837.14 299.91 L 845.08 296.67 L 853.01 291.91 L 860.94 284.17 L 868.87 282.94 L 876.81 281.75 L 884.74 260.72 L 892.67 253.54 L 900.61 242.06 L 908.54 239.70 L 916.47 237.33 L 924.40 237.06 L 932.34 237.65 L 940.27 240.59 L 948.20 244.49 L 956.13 249.04 L 964.07 255.05 L 972.00 262.69" /><circle class="forecast-svg-start" fill="#aa7c32" cx="789.55" cy="301.12" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 297.68 L 35.93 311.11 L 43.87 314.01 L 51.80 313.00 L 59.73 313.25 L 67.66 309.77 L 75.60 306.67 L 83.53 303.24 L 91.46 297.14 L 99.39 288.96 L 107.33 285.86 L 115.26 286.07 L 123.19 285.49 L 131.13 285.24 L 139.06 284.83 L 146.99 286.41 L 154.92 285.75 L 162.86 284.82 L 170.79 284.42 L 178.72 285.00 L 186.66 285.64 L 194.59 286.16 L 202.52 289.05 L 210.45 294.16 L 218.39 303.44 L 226.32 305.58 L 234.25 306.78 L 242.18 306.77 L 250.12 307.46 L 258.05 303.15 L 265.98 298.28 L 273.92 296.85 L 281.85 295.08 L 289.78 284.33 L 297.71 283.23 L 305.65 284.43 L 313.58 284.51 L 321.51 284.00 L 329.45 282.56 L 337.38 284.61 L 345.31 281.58 L 353.24 280.70 L 361.18 281.79 L 369.11 281.76 L 377.04 282.78 L 384.97 283.22 L 392.91 287.19 L 400.84 291.22 L 408.77 300.99 L 416.71 299.80 L 424.64 301.81 L 432.57 302.18 L 440.50 299.77 L 448.44 300.48 L 456.37 294.85 L 464.30 290.28 L 472.24 288.24 L 480.17 280.92 L 488.10 281.45 L 496.03 274.36 L 503.97 274.75 L 511.90 276.73 L 519.83 276.61 L 527.76 278.54 L 535.70 280.01 L 543.63 280.23 L 551.56 279.03 L 559.50 280.62 L 567.43 282.44 L 575.36 282.78 L 583.29 285.61 L 591.23 292.40 L 599.16 301.76 L 607.09 304.06 L 615.03 307.25 L 622.96 307.20 L 630.89 307.62 L 638.82 303.51 L 646.76 299.90 L 654.69 297.42 L 662.62 290.70 L 670.55 281.16 L 678.49 281.34 L 686.42 279.49 L 694.35 281.55 L 702.29 284.19 L 710.22 285.07 L 718.15 282.99 L 726.08 284.68 L 734.02 284.33 L 741.95 283.63 L 749.88 283.61 L 757.82 283.99 L 765.75 285.77 L 773.68 287.78 L 781.61 292.00" /><path class="forecast-svg-actual" d="M 789.55 307.62 L 797.48 311.24 L 805.41 309.75 L 813.34 311.41 L 821.28 316.21 L 829.21 310.88 L 837.14 311.21 L 845.08 306.05 L 853.01 298.26 L 860.94 292.43 L 868.87 288.44 L 876.81 282.07 L 884.74 43.79 L 892.67 280.74 L 900.61 283.17 L 908.54 283.49 L 916.47 281.16 L 924.40 282.18 L 932.34 282.84 L 940.27 278.89 L 948.20 284.53 L 956.13 284.14 L 964.07 290.00 L 972.00 298.99" /><path class="forecast-svg-band" fill="#b86d4a" d="M 789.55 300.19 L 797.48 304.24 L 805.41 306.28 L 813.34 306.33 L 821.28 305.98 L 829.21 303.91 L 837.14 300.26 L 845.08 296.92 L 853.01 292.09 L 860.94 282.75 L 868.87 281.58 L 876.81 281.11 L 884.74 281.16 L 892.67 282.03 L 900.61 281.83 L 908.54 282.27 L 916.47 282.14 L 924.40 282.45 L 932.34 281.89 L 940.27 282.05 L 948.20 283.12 L 956.13 284.23 L 964.07 286.51 L 972.00 291.44 L 972.00 293.12 L 964.07 289.10 L 956.13 286.78 L 948.20 286.11 L 940.27 285.33 L 932.34 284.70 L 924.40 285.40 L 916.47 285.96 L 908.54 286.32 L 900.61 285.87 L 892.67 285.66 L 884.74 284.08 L 876.81 284.03 L 868.87 285.25 L 860.94 286.22 L 853.01 294.05 L 845.08 298.29 L 837.14 301.18 L 829.21 304.82 L 821.28 306.99 L 813.34 307.45 L 805.41 307.25 L 797.48 305.31 L 789.55 301.10 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 789.55 300.65 L 797.48 304.77 L 805.41 306.76 L 813.34 306.89 L 821.28 306.49 L 829.21 304.37 L 837.14 300.72 L 845.08 297.60 L 853.01 293.07 L 860.94 284.49 L 868.87 283.41 L 876.81 282.57 L 884.74 282.62 L 892.67 283.84 L 900.61 283.85 L 908.54 284.29 L 916.47 284.05 L 924.40 283.93 L 932.34 283.30 L 940.27 283.69 L 948.20 284.62 L 956.13 285.50 L 964.07 287.80 L 972.00 292.28" /><circle class="forecast-svg-start" fill="#b86d4a" cx="789.55" cy="300.65" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 297.68 L 35.93 311.11 L 43.87 314.01 L 51.80 313.00 L 59.73 313.25 L 67.66 309.77 L 75.60 306.67 L 83.53 303.24 L 91.46 297.14 L 99.39 288.96 L 107.33 285.86 L 115.26 286.07 L 123.19 285.49 L 131.13 285.24 L 139.06 284.83 L 146.99 286.41 L 154.92 285.75 L 162.86 284.82 L 170.79 284.42 L 178.72 285.00 L 186.66 285.64 L 194.59 286.16 L 202.52 289.05 L 210.45 294.16 L 218.39 303.44 L 226.32 305.58 L 234.25 306.78 L 242.18 306.77 L 250.12 307.46 L 258.05 303.15 L 265.98 298.28 L 273.92 296.85 L 281.85 295.08 L 289.78 284.33 L 297.71 283.23 L 305.65 284.43 L 313.58 284.51 L 321.51 284.00 L 329.45 282.56 L 337.38 284.61 L 345.31 281.58 L 353.24 280.70 L 361.18 281.79 L 369.11 281.76 L 377.04 282.78 L 384.97 283.22 L 392.91 287.19 L 400.84 291.22 L 408.77 300.99 L 416.71 299.80 L 424.64 301.81 L 432.57 302.18 L 440.50 299.77 L 448.44 300.48 L 456.37 294.85 L 464.30 290.28 L 472.24 288.24 L 480.17 280.92 L 488.10 281.45 L 496.03 274.36 L 503.97 274.75 L 511.90 276.73 L 519.83 276.61 L 527.76 278.54 L 535.70 280.01 L 543.63 280.23 L 551.56 279.03 L 559.50 280.62 L 567.43 282.44 L 575.36 282.78 L 583.29 285.61 L 591.23 292.40 L 599.16 301.76 L 607.09 304.06 L 615.03 307.25 L 622.96 307.20 L 630.89 307.62 L 638.82 303.51 L 646.76 299.90 L 654.69 297.42 L 662.62 290.70 L 670.55 281.16 L 678.49 281.34 L 686.42 279.49 L 694.35 281.55 L 702.29 284.19 L 710.22 285.07 L 718.15 282.99 L 726.08 284.68 L 734.02 284.33 L 741.95 283.63 L 749.88 283.61 L 757.82 283.99 L 765.75 285.77 L 773.68 287.78 L 781.61 292.00" /><path class="forecast-svg-actual" d="M 789.55 307.62 L 797.48 311.24 L 805.41 309.75 L 813.34 311.41 L 821.28 316.21 L 829.21 310.88 L 837.14 311.21 L 845.08 306.05 L 853.01 298.26 L 860.94 292.43 L 868.87 288.44 L 876.81 282.07 L 884.74 43.79 L 892.67 280.74 L 900.61 283.17 L 908.54 283.49 L 916.47 281.16 L 924.40 282.18 L 932.34 282.84 L 940.27 278.89 L 948.20 284.53 L 956.13 284.14 L 964.07 290.00 L 972.00 298.99" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 789.55 300.95 L 797.48 303.16 L 805.41 305.41 L 813.34 305.65 L 821.28 305.63 L 829.21 301.91 L 837.14 296.29 L 845.08 291.57 L 853.01 286.21 L 860.94 277.40 L 868.87 271.83 L 876.81 264.85 L 884.74 143.76 L 892.67 138.61 L 900.61 73.60 L 908.54 70.77 L 916.47 67.62 L 924.40 65.16 L 932.34 65.66 L 940.27 69.39 L 948.20 75.90 L 956.13 85.66 L 964.07 101.95 L 972.00 123.47 L 972.00 280.73 L 964.07 268.48 L 956.13 258.59 L 948.20 252.91 L 940.27 248.64 L 932.34 246.81 L 924.40 248.38 L 916.47 252.61 L 908.54 258.36 L 900.61 264.44 L 892.67 309.83 L 884.74 314.73 L 876.81 279.12 L 868.87 280.97 L 860.94 281.02 L 853.01 289.86 L 845.08 296.54 L 837.14 299.24 L 829.21 303.25 L 821.28 307.51 L 813.34 307.16 L 805.41 307.13 L 797.48 304.28 L 789.55 301.75 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 789.55 301.35 L 797.48 303.72 L 805.41 306.27 L 813.34 306.40 L 821.28 306.57 L 829.21 302.58 L 837.14 297.77 L 845.08 294.05 L 853.01 288.03 L 860.94 279.21 L 868.87 276.40 L 876.81 271.99 L 884.74 229.25 L 892.67 224.22 L 900.61 169.02 L 908.54 164.56 L 916.47 160.11 L 924.40 156.77 L 932.34 156.23 L 940.27 159.01 L 948.20 164.40 L 956.13 172.12 L 964.07 185.21 L 972.00 202.10" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="789.55" cy="301.35" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 297.68 L 35.93 311.11 L 43.87 314.01 L 51.80 313.00 L 59.73 313.25 L 67.66 309.77 L 75.60 306.67 L 83.53 303.24 L 91.46 297.14 L 99.39 288.96 L 107.33 285.86 L 115.26 286.07 L 123.19 285.49 L 131.13 285.24 L 139.06 284.83 L 146.99 286.41 L 154.92 285.75 L 162.86 284.82 L 170.79 284.42 L 178.72 285.00 L 186.66 285.64 L 194.59 286.16 L 202.52 289.05 L 210.45 294.16 L 218.39 303.44 L 226.32 305.58 L 234.25 306.78 L 242.18 306.77 L 250.12 307.46 L 258.05 303.15 L 265.98 298.28 L 273.92 296.85 L 281.85 295.08 L 289.78 284.33 L 297.71 283.23 L 305.65 284.43 L 313.58 284.51 L 321.51 284.00 L 329.45 282.56 L 337.38 284.61 L 345.31 281.58 L 353.24 280.70 L 361.18 281.79 L 369.11 281.76 L 377.04 282.78 L 384.97 283.22 L 392.91 287.19 L 400.84 291.22 L 408.77 300.99 L 416.71 299.80 L 424.64 301.81 L 432.57 302.18 L 440.50 299.77 L 448.44 300.48 L 456.37 294.85 L 464.30 290.28 L 472.24 288.24 L 480.17 280.92 L 488.10 281.45 L 496.03 274.36 L 503.97 274.75 L 511.90 276.73 L 519.83 276.61 L 527.76 278.54 L 535.70 280.01 L 543.63 280.23 L 551.56 279.03 L 559.50 280.62 L 567.43 282.44 L 575.36 282.78 L 583.29 285.61 L 591.23 292.40 L 599.16 301.76 L 607.09 304.06 L 615.03 307.25 L 622.96 307.20 L 630.89 307.62 L 638.82 303.51 L 646.76 299.90 L 654.69 297.42 L 662.62 290.70 L 670.55 281.16 L 678.49 281.34 L 686.42 279.49 L 694.35 281.55 L 702.29 284.19 L 710.22 285.07 L 718.15 282.99 L 726.08 284.68 L 734.02 284.33 L 741.95 283.63 L 749.88 283.61 L 757.82 283.99 L 765.75 285.77 L 773.68 287.78 L 781.61 292.00" /><path class="forecast-svg-actual" d="M 789.55 307.62 L 797.48 311.24 L 805.41 309.75 L 813.34 311.41 L 821.28 316.21 L 829.21 310.88 L 837.14 311.21 L 845.08 306.05 L 853.01 298.26 L 860.94 292.43 L 868.87 288.44 L 876.81 282.07 L 884.74 43.79 L 892.67 280.74 L 900.61 283.17 L 908.54 283.49 L 916.47 281.16 L 924.40 282.18 L 932.34 282.84 L 940.27 278.89 L 948.20 284.53 L 956.13 284.14 L 964.07 290.00 L 972.00 298.99" /><path class="forecast-svg-band" fill="#aa7c32" d="M 789.55 298.99 L 797.48 301.32 L 805.41 302.24 L 813.34 302.21 L 821.28 302.04 L 829.21 299.22 L 837.14 296.30 L 845.08 293.68 L 853.01 289.80 L 860.94 283.24 L 868.87 281.86 L 876.81 278.94 L 884.74 212.46 L 892.67 201.60 L 900.61 190.61 L 908.54 183.45 L 916.47 177.21 L 924.40 176.82 L 932.34 178.29 L 940.27 184.10 L 948.20 191.62 L 956.13 199.99 L 964.07 211.08 L 972.00 222.84 L 972.00 302.55 L 964.07 299.01 L 956.13 298.10 L 948.20 297.35 L 940.27 297.07 L 932.34 297.00 L 924.40 297.30 L 916.47 297.45 L 908.54 295.94 L 900.61 293.51 L 892.67 305.48 L 884.74 308.97 L 876.81 284.56 L 868.87 284.01 L 860.94 285.11 L 853.01 294.01 L 845.08 299.65 L 837.14 303.52 L 829.21 307.60 L 821.28 311.44 L 813.34 311.17 L 805.41 310.32 L 797.48 307.38 L 789.55 303.25 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 789.55 301.12 L 797.48 304.35 L 805.41 306.28 L 813.34 306.69 L 821.28 306.74 L 829.21 303.41 L 837.14 299.91 L 845.08 296.67 L 853.01 291.91 L 860.94 284.17 L 868.87 282.94 L 876.81 281.75 L 884.74 260.72 L 892.67 253.54 L 900.61 242.06 L 908.54 239.70 L 916.47 237.33 L 924.40 237.06 L 932.34 237.65 L 940.27 240.59 L 948.20 244.49 L 956.13 249.04 L 964.07 255.05 L 972.00 262.69" /><circle class="forecast-svg-start" fill="#aa7c32" cx="789.55" cy="301.12" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 297.68 L 35.93 311.11 L 43.87 314.01 L 51.80 313.00 L 59.73 313.25 L 67.66 309.77 L 75.60 306.67 L 83.53 303.24 L 91.46 297.14 L 99.39 288.96 L 107.33 285.86 L 115.26 286.07 L 123.19 285.49 L 131.13 285.24 L 139.06 284.83 L 146.99 286.41 L 154.92 285.75 L 162.86 284.82 L 170.79 284.42 L 178.72 285.00 L 186.66 285.64 L 194.59 286.16 L 202.52 289.05 L 210.45 294.16 L 218.39 303.44 L 226.32 305.58 L 234.25 306.78 L 242.18 306.77 L 250.12 307.46 L 258.05 303.15 L 265.98 298.28 L 273.92 296.85 L 281.85 295.08 L 289.78 284.33 L 297.71 283.23 L 305.65 284.43 L 313.58 284.51 L 321.51 284.00 L 329.45 282.56 L 337.38 284.61 L 345.31 281.58 L 353.24 280.70 L 361.18 281.79 L 369.11 281.76 L 377.04 282.78 L 384.97 283.22 L 392.91 287.19 L 400.84 291.22 L 408.77 300.99 L 416.71 299.80 L 424.64 301.81 L 432.57 302.18 L 440.50 299.77 L 448.44 300.48 L 456.37 294.85 L 464.30 290.28 L 472.24 288.24 L 480.17 280.92 L 488.10 281.45 L 496.03 274.36 L 503.97 274.75 L 511.90 276.73 L 519.83 276.61 L 527.76 278.54 L 535.70 280.01 L 543.63 280.23 L 551.56 279.03 L 559.50 280.62 L 567.43 282.44 L 575.36 282.78 L 583.29 285.61 L 591.23 292.40 L 599.16 301.76 L 607.09 304.06 L 615.03 307.25 L 622.96 307.20 L 630.89 307.62 L 638.82 303.51 L 646.76 299.90 L 654.69 297.42 L 662.62 290.70 L 670.55 281.16 L 678.49 281.34 L 686.42 279.49 L 694.35 281.55 L 702.29 284.19 L 710.22 285.07 L 718.15 282.99 L 726.08 284.68 L 734.02 284.33 L 741.95 283.63 L 749.88 283.61 L 757.82 283.99 L 765.75 285.77 L 773.68 287.78 L 781.61 292.00" /><path class="forecast-svg-actual" d="M 789.55 307.62 L 797.48 311.24 L 805.41 309.75 L 813.34 311.41 L 821.28 316.21 L 829.21 310.88 L 837.14 311.21 L 845.08 306.05 L 853.01 298.26 L 860.94 292.43 L 868.87 288.44 L 876.81 282.07 L 884.74 43.79 L 892.67 280.74 L 900.61 283.17 L 908.54 283.49 L 916.47 281.16 L 924.40 282.18 L 932.34 282.84 L 940.27 278.89 L 948.20 284.53 L 956.13 284.14 L 964.07 290.00 L 972.00 298.99" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 789.55 300.70 L 797.48 303.21 L 805.41 306.25 L 813.34 306.27 L 821.28 306.51 L 829.21 302.67 L 837.14 298.39 L 845.08 294.88 L 853.01 289.25 L 860.94 280.18 L 868.87 280.29 L 876.81 278.28 L 884.74 45.30 L 892.67 282.31 L 900.61 283.02 L 908.54 282.09 L 916.47 283.38 L 924.40 283.08 L 932.34 282.46 L 940.27 282.55 L 948.20 283.11 L 956.13 284.79 L 964.07 286.99 L 972.00 291.24 L 972.00 292.54 L 964.07 288.23 L 956.13 285.92 L 948.20 284.41 L 940.27 283.85 L 932.34 283.79 L 924.40 284.42 L 916.47 284.81 L 908.54 283.94 L 900.61 284.98 L 892.67 284.38 L 884.74 46.95 L 876.81 280.68 L 868.87 282.36 L 860.94 282.99 L 853.01 291.66 L 845.08 297.55 L 837.14 300.12 L 829.21 303.91 L 821.28 307.92 L 813.34 307.68 L 805.41 307.73 L 797.48 304.71 L 789.55 302.12 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 789.55 301.41 L 797.48 303.96 L 805.41 306.99 L 813.34 306.98 L 821.28 307.22 L 829.21 303.29 L 837.14 299.25 L 845.08 296.22 L 853.01 290.46 L 860.94 281.59 L 868.87 281.33 L 876.81 279.48 L 884.74 46.12 L 892.67 283.35 L 900.61 284.00 L 908.54 283.02 L 916.47 284.09 L 924.40 283.75 L 932.34 283.12 L 940.27 283.20 L 948.20 283.76 L 956.13 285.36 L 964.07 287.61 L 972.00 291.89" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="789.55" cy="301.41" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 789.55 301.71 L 797.48 305.17 L 805.41 307.30 L 813.34 307.78 L 821.28 307.83 L 829.21 304.39 L 837.14 300.75 L 845.08 297.38 L 853.01 292.45 L 860.94 284.47 L 868.87 283.19 L 876.81 282.51 L 884.74 51.28 L 892.67 283.35 L 900.61 283.84 L 908.54 284.21 L 916.47 283.94 L 924.40 283.86 L 932.34 283.49 L 940.27 283.78 L 948.20 284.56 L 956.13 285.60 L 964.07 287.89 L 972.00 292.77" /><circle class="forecast-svg-start" fill="#aa7c32" cx="789.55" cy="301.71" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 297.68 L 35.93 311.11 L 43.87 314.01 L 51.80 313.00 L 59.73 313.25 L 67.66 309.77 L 75.60 306.67 L 83.53 303.24 L 91.46 297.14 L 99.39 288.96 L 107.33 285.86 L 115.26 286.07 L 123.19 285.49 L 131.13 285.24 L 139.06 284.83 L 146.99 286.41 L 154.92 285.75 L 162.86 284.82 L 170.79 284.42 L 178.72 285.00 L 186.66 285.64 L 194.59 286.16 L 202.52 289.05 L 210.45 294.16 L 218.39 303.44 L 226.32 305.58 L 234.25 306.78 L 242.18 306.77 L 250.12 307.46 L 258.05 303.15 L 265.98 298.28 L 273.92 296.85 L 281.85 295.08 L 289.78 284.33 L 297.71 283.23 L 305.65 284.43 L 313.58 284.51 L 321.51 284.00 L 329.45 282.56 L 337.38 284.61 L 345.31 281.58 L 353.24 280.70 L 361.18 281.79 L 369.11 281.76 L 377.04 282.78 L 384.97 283.22 L 392.91 287.19 L 400.84 291.22 L 408.77 300.99 L 416.71 299.80 L 424.64 301.81 L 432.57 302.18 L 440.50 299.77 L 448.44 300.48 L 456.37 294.85 L 464.30 290.28 L 472.24 288.24 L 480.17 280.92 L 488.10 281.45 L 496.03 274.36 L 503.97 274.75 L 511.90 276.73 L 519.83 276.61 L 527.76 278.54 L 535.70 280.01 L 543.63 280.23 L 551.56 279.03 L 559.50 280.62 L 567.43 282.44 L 575.36 282.78 L 583.29 285.61 L 591.23 292.40 L 599.16 301.76 L 607.09 304.06 L 615.03 307.25 L 622.96 307.20 L 630.89 307.62 L 638.82 303.51 L 646.76 299.90 L 654.69 297.42 L 662.62 290.70 L 670.55 281.16 L 678.49 281.34 L 686.42 279.49 L 694.35 281.55 L 702.29 284.19 L 710.22 285.07 L 718.15 282.99 L 726.08 284.68 L 734.02 284.33 L 741.95 283.63 L 749.88 283.61 L 757.82 283.99 L 765.75 285.77 L 773.68 287.78 L 781.61 292.00" /><path class="forecast-svg-actual" d="M 789.55 307.62 L 797.48 311.24 L 805.41 309.75 L 813.34 311.41 L 821.28 316.21 L 829.21 310.88 L 837.14 311.21 L 845.08 306.05 L 853.01 298.26 L 860.94 292.43 L 868.87 288.44 L 876.81 282.07 L 884.74 43.79 L 892.67 280.74 L 900.61 283.17 L 908.54 283.49 L 916.47 281.16 L 924.40 282.18 L 932.34 282.84 L 940.27 278.89 L 948.20 284.53 L 956.13 284.14 L 964.07 290.00 L 972.00 298.99" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 789.55 300.70 L 797.48 303.21 L 805.41 306.25 L 813.34 306.27 L 821.28 306.51 L 829.21 302.67 L 837.14 298.39 L 845.08 294.88 L 853.01 289.25 L 860.94 280.18 L 868.87 280.29 L 876.81 278.28 L 884.74 45.30 L 892.67 282.31 L 900.61 283.02 L 908.54 282.09 L 916.47 283.38 L 924.40 283.08 L 932.34 282.46 L 940.27 282.55 L 948.20 283.11 L 956.13 284.79 L 964.07 286.99 L 972.00 291.24 L 972.00 292.54 L 964.07 288.23 L 956.13 285.92 L 948.20 284.41 L 940.27 283.85 L 932.34 283.79 L 924.40 284.42 L 916.47 284.81 L 908.54 283.94 L 900.61 284.98 L 892.67 284.38 L 884.74 46.95 L 876.81 280.68 L 868.87 282.36 L 860.94 282.99 L 853.01 291.66 L 845.08 297.55 L 837.14 300.12 L 829.21 303.91 L 821.28 307.92 L 813.34 307.68 L 805.41 307.73 L 797.48 304.71 L 789.55 302.12 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 789.55 301.41 L 797.48 303.96 L 805.41 306.99 L 813.34 306.98 L 821.28 307.22 L 829.21 303.29 L 837.14 299.25 L 845.08 296.22 L 853.01 290.46 L 860.94 281.59 L 868.87 281.33 L 876.81 279.48 L 884.74 46.12 L 892.67 283.35 L 900.61 284.00 L 908.54 283.02 L 916.47 284.09 L 924.40 283.75 L 932.34 283.12 L 940.27 283.20 L 948.20 283.76 L 956.13 285.36 L 964.07 287.61 L 972.00 291.89" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="789.55" cy="301.41" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 297.68 L 35.93 311.11 L 43.87 314.01 L 51.80 313.00 L 59.73 313.25 L 67.66 309.77 L 75.60 306.67 L 83.53 303.24 L 91.46 297.14 L 99.39 288.96 L 107.33 285.86 L 115.26 286.07 L 123.19 285.49 L 131.13 285.24 L 139.06 284.83 L 146.99 286.41 L 154.92 285.75 L 162.86 284.82 L 170.79 284.42 L 178.72 285.00 L 186.66 285.64 L 194.59 286.16 L 202.52 289.05 L 210.45 294.16 L 218.39 303.44 L 226.32 305.58 L 234.25 306.78 L 242.18 306.77 L 250.12 307.46 L 258.05 303.15 L 265.98 298.28 L 273.92 296.85 L 281.85 295.08 L 289.78 284.33 L 297.71 283.23 L 305.65 284.43 L 313.58 284.51 L 321.51 284.00 L 329.45 282.56 L 337.38 284.61 L 345.31 281.58 L 353.24 280.70 L 361.18 281.79 L 369.11 281.76 L 377.04 282.78 L 384.97 283.22 L 392.91 287.19 L 400.84 291.22 L 408.77 300.99 L 416.71 299.80 L 424.64 301.81 L 432.57 302.18 L 440.50 299.77 L 448.44 300.48 L 456.37 294.85 L 464.30 290.28 L 472.24 288.24 L 480.17 280.92 L 488.10 281.45 L 496.03 274.36 L 503.97 274.75 L 511.90 276.73 L 519.83 276.61 L 527.76 278.54 L 535.70 280.01 L 543.63 280.23 L 551.56 279.03 L 559.50 280.62 L 567.43 282.44 L 575.36 282.78 L 583.29 285.61 L 591.23 292.40 L 599.16 301.76 L 607.09 304.06 L 615.03 307.25 L 622.96 307.20 L 630.89 307.62 L 638.82 303.51 L 646.76 299.90 L 654.69 297.42 L 662.62 290.70 L 670.55 281.16 L 678.49 281.34 L 686.42 279.49 L 694.35 281.55 L 702.29 284.19 L 710.22 285.07 L 718.15 282.99 L 726.08 284.68 L 734.02 284.33 L 741.95 283.63 L 749.88 283.61 L 757.82 283.99 L 765.75 285.77 L 773.68 287.78 L 781.61 292.00" /><path class="forecast-svg-actual" d="M 789.55 307.62 L 797.48 311.24 L 805.41 309.75 L 813.34 311.41 L 821.28 316.21 L 829.21 310.88 L 837.14 311.21 L 845.08 306.05 L 853.01 298.26 L 860.94 292.43 L 868.87 288.44 L 876.81 282.07 L 884.74 43.79 L 892.67 280.74 L 900.61 283.17 L 908.54 283.49 L 916.47 281.16 L 924.40 282.18 L 932.34 282.84 L 940.27 278.89 L 948.20 284.53 L 956.13 284.14 L 964.07 290.00 L 972.00 298.99" /><path class="forecast-svg-band" fill="#aa7c32" d="M 789.55 301.58 L 797.48 304.96 L 805.41 306.96 L 813.34 307.41 L 821.28 307.64 L 829.21 304.20 L 837.14 300.65 L 845.08 297.22 L 853.01 292.29 L 860.94 284.07 L 868.87 283.17 L 876.81 282.28 L 884.74 50.62 L 892.67 283.35 L 900.61 283.83 L 908.54 284.17 L 916.47 283.83 L 924.40 283.57 L 932.34 283.21 L 940.27 283.49 L 948.20 284.27 L 956.13 285.40 L 964.07 287.71 L 972.00 292.55 L 972.00 293.00 L 964.07 288.07 L 956.13 285.80 L 948.20 284.84 L 940.27 284.08 L 932.34 283.77 L 924.40 284.14 L 916.47 284.04 L 908.54 284.25 L 900.61 283.85 L 892.67 283.36 L 884.74 51.94 L 876.81 282.74 L 868.87 283.20 L 860.94 284.87 L 853.01 292.62 L 845.08 297.54 L 837.14 300.86 L 829.21 304.58 L 821.28 308.02 L 813.34 308.14 L 805.41 307.64 L 797.48 305.38 L 789.55 301.84 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 789.55 301.71 L 797.48 305.17 L 805.41 307.30 L 813.34 307.78 L 821.28 307.83 L 829.21 304.39 L 837.14 300.75 L 845.08 297.38 L 853.01 292.45 L 860.94 284.47 L 868.87 283.19 L 876.81 282.51 L 884.74 51.28 L 892.67 283.35 L 900.61 283.84 L 908.54 284.21 L 916.47 283.94 L 924.40 283.86 L 932.34 283.49 L 940.27 283.78 L 948.20 284.56 L 956.13 285.60 L 964.07 287.89 L 972.00 292.77" /><circle class="forecast-svg-start" fill="#aa7c32" cx="789.55" cy="301.71" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 262.27 L 35.93 273.82 L 43.87 276.32 L 51.80 275.45 L 59.73 275.67 L 67.66 272.67 L 75.60 270.00 L 83.53 267.06 L 91.46 261.80 L 99.39 254.77 L 107.33 252.10 L 115.26 252.28 L 123.19 251.78 L 131.13 251.56 L 139.06 251.21 L 146.99 252.57 L 154.92 252.00 L 162.86 251.20 L 170.79 250.86 L 178.72 251.35 L 186.66 251.91 L 194.59 252.36 L 202.52 254.84 L 210.45 259.24 L 218.39 267.23 L 226.32 269.07 L 234.25 270.10 L 242.18 270.09 L 250.12 270.68 L 258.05 266.98 L 265.98 262.79 L 273.92 261.56 L 281.85 260.03 L 289.78 250.78 L 297.71 249.83 L 305.65 250.86 L 313.58 250.94 L 321.51 250.49 L 329.45 249.26 L 337.38 251.02 L 345.31 248.41 L 353.24 247.66 L 361.18 248.59 L 369.11 248.57 L 377.04 249.44 L 384.97 249.83 L 392.91 253.24 L 400.84 256.71 L 408.77 265.12 L 416.71 264.10 L 424.64 265.82 L 432.57 266.14 L 440.50 264.06 L 448.44 264.68 L 456.37 259.84 L 464.30 255.90 L 472.24 254.14 L 480.17 247.84 L 488.10 248.31 L 496.03 242.20 L 503.97 242.53 L 511.90 244.24 L 519.83 244.14 L 527.76 245.80 L 535.70 247.06 L 543.63 247.25 L 551.56 246.22 L 559.50 247.58 L 567.43 249.15 L 575.36 249.44 L 583.29 251.88 L 591.23 257.73 L 599.16 265.78 L 607.09 267.76 L 615.03 270.51 L 622.96 270.46 L 630.89 270.82 L 638.82 267.28 L 646.76 264.18 L 654.69 262.05 L 662.62 256.26 L 670.55 248.05 L 678.49 248.21 L 686.42 246.61 L 694.35 248.39 L 702.29 250.66 L 710.22 251.41 L 718.15 249.62 L 726.08 251.08 L 734.02 250.78 L 741.95 250.18 L 749.88 250.16 L 757.82 250.49 L 765.75 252.02 L 773.68 253.75 L 781.61 257.38" /><path class="forecast-svg-actual" d="M 789.55 270.82 L 797.48 273.94 L 805.41 272.66 L 813.34 274.08 L 821.28 278.21 L 829.21 273.63 L 837.14 273.92 L 845.08 269.47 L 853.01 262.76 L 860.94 257.75 L 868.87 254.32 L 876.81 248.83 L 884.74 43.79 L 892.67 247.69 L 900.61 249.78 L 908.54 250.06 L 916.47 248.06 L 924.40 248.93 L 932.34 249.50 L 940.27 246.10 L 948.20 250.95 L 956.13 250.62 L 964.07 255.66 L 972.00 263.40" /><path class="forecast-svg-band" fill="#3777a5" d="M 789.55 260.42 L 797.48 263.28 L 805.41 266.32 L 813.34 266.24 L 821.28 266.15 L 829.21 264.83 L 837.14 260.97 L 845.08 258.33 L 853.01 254.88 L 860.94 247.11 L 868.87 245.58 L 876.81 244.32 L 884.74 244.95 L 892.67 244.59 L 900.61 244.93 L 908.54 244.61 L 916.47 244.54 L 924.40 244.45 L 932.34 244.02 L 940.27 245.03 L 948.20 246.23 L 956.13 247.48 L 964.07 250.20 L 972.00 254.67 L 972.00 260.85 L 964.07 256.24 L 956.13 253.96 L 948.20 253.75 L 940.27 253.48 L 932.34 253.85 L 924.40 254.23 L 916.47 254.91 L 908.54 255.26 L 900.61 253.64 L 892.67 254.16 L 884.74 253.63 L 876.81 252.09 L 868.87 252.54 L 860.94 254.05 L 853.01 261.73 L 845.08 266.35 L 837.14 268.57 L 829.21 271.59 L 821.28 274.19 L 813.34 274.41 L 805.41 274.02 L 797.48 271.88 L 789.55 268.28 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 789.55 264.35 L 797.48 267.58 L 805.41 270.17 L 813.34 270.33 L 821.28 270.17 L 829.21 268.21 L 837.14 264.77 L 845.08 262.34 L 853.01 258.30 L 860.94 250.58 L 868.87 249.06 L 876.81 248.20 L 884.74 249.29 L 892.67 249.38 L 900.61 249.29 L 908.54 249.93 L 916.47 249.72 L 924.40 249.34 L 932.34 248.94 L 940.27 249.25 L 948.20 249.99 L 956.13 250.72 L 964.07 253.22 L 972.00 257.76" /><circle class="forecast-svg-start" fill="#3777a5" cx="789.55" cy="264.35" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 789.55 259.36 L 797.48 263.54 L 805.41 264.60 L 813.34 266.20 L 821.28 263.81 L 829.21 265.97 L 837.14 260.86 L 845.08 257.98 L 853.01 254.87 L 860.94 255.83 L 868.87 260.09 L 876.81 265.32 L 884.74 256.32 L 892.67 261.80 L 900.61 262.79 L 908.54 266.48 L 916.47 256.63 L 924.40 262.04 L 932.34 258.55 L 940.27 263.57 L 948.20 258.77 L 956.13 253.76 L 964.07 258.70 L 972.00 267.01" /><circle class="forecast-svg-start" fill="#8064a2" cx="789.55" cy="259.36" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 789.55 260.29 L 797.48 263.22 L 805.41 267.26 L 813.34 270.24 L 821.28 271.87 L 829.21 277.04 L 837.14 278.01 L 845.08 280.88 L 853.01 283.88 L 860.94 287.59 L 868.87 290.13 L 876.81 293.00 L 884.74 295.89 L 892.67 300.16 L 900.61 301.20 L 908.54 305.57 L 916.47 308.63 L 924.40 310.39 L 932.34 313.39 L 940.27 315.51 L 948.20 315.83 L 956.13 315.88 L 964.07 315.88 L 972.00 315.88" /><circle class="forecast-svg-start" fill="#668851" cx="789.55" cy="260.29" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 262.27 L 35.93 273.82 L 43.87 276.32 L 51.80 275.45 L 59.73 275.67 L 67.66 272.67 L 75.60 270.00 L 83.53 267.06 L 91.46 261.80 L 99.39 254.77 L 107.33 252.10 L 115.26 252.28 L 123.19 251.78 L 131.13 251.56 L 139.06 251.21 L 146.99 252.57 L 154.92 252.00 L 162.86 251.20 L 170.79 250.86 L 178.72 251.35 L 186.66 251.91 L 194.59 252.36 L 202.52 254.84 L 210.45 259.24 L 218.39 267.23 L 226.32 269.07 L 234.25 270.10 L 242.18 270.09 L 250.12 270.68 L 258.05 266.98 L 265.98 262.79 L 273.92 261.56 L 281.85 260.03 L 289.78 250.78 L 297.71 249.83 L 305.65 250.86 L 313.58 250.94 L 321.51 250.49 L 329.45 249.26 L 337.38 251.02 L 345.31 248.41 L 353.24 247.66 L 361.18 248.59 L 369.11 248.57 L 377.04 249.44 L 384.97 249.83 L 392.91 253.24 L 400.84 256.71 L 408.77 265.12 L 416.71 264.10 L 424.64 265.82 L 432.57 266.14 L 440.50 264.06 L 448.44 264.68 L 456.37 259.84 L 464.30 255.90 L 472.24 254.14 L 480.17 247.84 L 488.10 248.31 L 496.03 242.20 L 503.97 242.53 L 511.90 244.24 L 519.83 244.14 L 527.76 245.80 L 535.70 247.06 L 543.63 247.25 L 551.56 246.22 L 559.50 247.58 L 567.43 249.15 L 575.36 249.44 L 583.29 251.88 L 591.23 257.73 L 599.16 265.78 L 607.09 267.76 L 615.03 270.51 L 622.96 270.46 L 630.89 270.82 L 638.82 267.28 L 646.76 264.18 L 654.69 262.05 L 662.62 256.26 L 670.55 248.05 L 678.49 248.21 L 686.42 246.61 L 694.35 248.39 L 702.29 250.66 L 710.22 251.41 L 718.15 249.62 L 726.08 251.08 L 734.02 250.78 L 741.95 250.18 L 749.88 250.16 L 757.82 250.49 L 765.75 252.02 L 773.68 253.75 L 781.61 257.38" /><path class="forecast-svg-actual" d="M 789.55 270.82 L 797.48 273.94 L 805.41 272.66 L 813.34 274.08 L 821.28 278.21 L 829.21 273.63 L 837.14 273.92 L 845.08 269.47 L 853.01 262.76 L 860.94 257.75 L 868.87 254.32 L 876.81 248.83 L 884.74 43.79 L 892.67 247.69 L 900.61 249.78 L 908.54 250.06 L 916.47 248.06 L 924.40 248.93 L 932.34 249.50 L 940.27 246.10 L 948.20 250.95 L 956.13 250.62 L 964.07 255.66 L 972.00 263.40" /><path class="forecast-svg-band" fill="#3777a5" d="M 789.55 260.42 L 797.48 263.28 L 805.41 266.32 L 813.34 266.24 L 821.28 266.15 L 829.21 264.83 L 837.14 260.97 L 845.08 258.33 L 853.01 254.88 L 860.94 247.11 L 868.87 245.58 L 876.81 244.32 L 884.74 244.95 L 892.67 244.59 L 900.61 244.93 L 908.54 244.61 L 916.47 244.54 L 924.40 244.45 L 932.34 244.02 L 940.27 245.03 L 948.20 246.23 L 956.13 247.48 L 964.07 250.20 L 972.00 254.67 L 972.00 260.85 L 964.07 256.24 L 956.13 253.96 L 948.20 253.75 L 940.27 253.48 L 932.34 253.85 L 924.40 254.23 L 916.47 254.91 L 908.54 255.26 L 900.61 253.64 L 892.67 254.16 L 884.74 253.63 L 876.81 252.09 L 868.87 252.54 L 860.94 254.05 L 853.01 261.73 L 845.08 266.35 L 837.14 268.57 L 829.21 271.59 L 821.28 274.19 L 813.34 274.41 L 805.41 274.02 L 797.48 271.88 L 789.55 268.28 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 789.55 264.35 L 797.48 267.58 L 805.41 270.17 L 813.34 270.33 L 821.28 270.17 L 829.21 268.21 L 837.14 264.77 L 845.08 262.34 L 853.01 258.30 L 860.94 250.58 L 868.87 249.06 L 876.81 248.20 L 884.74 249.29 L 892.67 249.38 L 900.61 249.29 L 908.54 249.93 L 916.47 249.72 L 924.40 249.34 L 932.34 248.94 L 940.27 249.25 L 948.20 249.99 L 956.13 250.72 L 964.07 253.22 L 972.00 257.76" /><circle class="forecast-svg-start" fill="#3777a5" cx="789.55" cy="264.35" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 262.27 L 35.93 273.82 L 43.87 276.32 L 51.80 275.45 L 59.73 275.67 L 67.66 272.67 L 75.60 270.00 L 83.53 267.06 L 91.46 261.80 L 99.39 254.77 L 107.33 252.10 L 115.26 252.28 L 123.19 251.78 L 131.13 251.56 L 139.06 251.21 L 146.99 252.57 L 154.92 252.00 L 162.86 251.20 L 170.79 250.86 L 178.72 251.35 L 186.66 251.91 L 194.59 252.36 L 202.52 254.84 L 210.45 259.24 L 218.39 267.23 L 226.32 269.07 L 234.25 270.10 L 242.18 270.09 L 250.12 270.68 L 258.05 266.98 L 265.98 262.79 L 273.92 261.56 L 281.85 260.03 L 289.78 250.78 L 297.71 249.83 L 305.65 250.86 L 313.58 250.94 L 321.51 250.49 L 329.45 249.26 L 337.38 251.02 L 345.31 248.41 L 353.24 247.66 L 361.18 248.59 L 369.11 248.57 L 377.04 249.44 L 384.97 249.83 L 392.91 253.24 L 400.84 256.71 L 408.77 265.12 L 416.71 264.10 L 424.64 265.82 L 432.57 266.14 L 440.50 264.06 L 448.44 264.68 L 456.37 259.84 L 464.30 255.90 L 472.24 254.14 L 480.17 247.84 L 488.10 248.31 L 496.03 242.20 L 503.97 242.53 L 511.90 244.24 L 519.83 244.14 L 527.76 245.80 L 535.70 247.06 L 543.63 247.25 L 551.56 246.22 L 559.50 247.58 L 567.43 249.15 L 575.36 249.44 L 583.29 251.88 L 591.23 257.73 L 599.16 265.78 L 607.09 267.76 L 615.03 270.51 L 622.96 270.46 L 630.89 270.82 L 638.82 267.28 L 646.76 264.18 L 654.69 262.05 L 662.62 256.26 L 670.55 248.05 L 678.49 248.21 L 686.42 246.61 L 694.35 248.39 L 702.29 250.66 L 710.22 251.41 L 718.15 249.62 L 726.08 251.08 L 734.02 250.78 L 741.95 250.18 L 749.88 250.16 L 757.82 250.49 L 765.75 252.02 L 773.68 253.75 L 781.61 257.38" /><path class="forecast-svg-actual" d="M 789.55 270.82 L 797.48 273.94 L 805.41 272.66 L 813.34 274.08 L 821.28 278.21 L 829.21 273.63 L 837.14 273.92 L 845.08 269.47 L 853.01 262.76 L 860.94 257.75 L 868.87 254.32 L 876.81 248.83 L 884.74 43.79 L 892.67 247.69 L 900.61 249.78 L 908.54 250.06 L 916.47 248.06 L 924.40 248.93 L 932.34 249.50 L 940.27 246.10 L 948.20 250.95 L 956.13 250.62 L 964.07 255.66 L 972.00 263.40" /><path class="forecast-svg-band" fill="#8064a2" d="M 789.55 256.90 L 797.48 259.50 L 805.41 258.91 L 813.34 258.41 L 821.28 255.15 L 829.21 254.73 L 837.14 244.72 L 845.08 247.44 L 853.01 243.20 L 860.94 243.15 L 868.87 247.22 L 876.81 250.22 L 884.74 239.82 L 892.67 239.74 L 900.61 245.39 L 908.54 250.31 L 916.47 243.45 L 924.40 242.61 L 932.34 239.10 L 940.27 242.19 L 948.20 237.40 L 956.13 233.71 L 964.07 242.01 L 972.00 246.45 L 972.00 287.58 L 964.07 275.38 L 956.13 273.82 L 948.20 280.15 L 940.27 284.95 L 932.34 278.00 L 924.40 281.46 L 916.47 269.81 L 908.54 282.64 L 900.61 280.20 L 892.67 283.86 L 884.74 272.81 L 876.81 280.41 L 868.87 272.96 L 860.94 268.51 L 853.01 266.55 L 845.08 268.51 L 837.14 277.00 L 829.21 277.21 L 821.28 272.47 L 813.34 273.99 L 805.41 270.30 L 797.48 267.58 L 789.55 261.82 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 789.55 259.36 L 797.48 263.54 L 805.41 264.60 L 813.34 266.20 L 821.28 263.81 L 829.21 265.97 L 837.14 260.86 L 845.08 257.98 L 853.01 254.87 L 860.94 255.83 L 868.87 260.09 L 876.81 265.32 L 884.74 256.32 L 892.67 261.80 L 900.61 262.79 L 908.54 266.48 L 916.47 256.63 L 924.40 262.04 L 932.34 258.55 L 940.27 263.57 L 948.20 258.77 L 956.13 253.76 L 964.07 258.70 L 972.00 267.01" /><circle class="forecast-svg-start" fill="#8064a2" cx="789.55" cy="259.36" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 262.27 L 35.93 273.82 L 43.87 276.32 L 51.80 275.45 L 59.73 275.67 L 67.66 272.67 L 75.60 270.00 L 83.53 267.06 L 91.46 261.80 L 99.39 254.77 L 107.33 252.10 L 115.26 252.28 L 123.19 251.78 L 131.13 251.56 L 139.06 251.21 L 146.99 252.57 L 154.92 252.00 L 162.86 251.20 L 170.79 250.86 L 178.72 251.35 L 186.66 251.91 L 194.59 252.36 L 202.52 254.84 L 210.45 259.24 L 218.39 267.23 L 226.32 269.07 L 234.25 270.10 L 242.18 270.09 L 250.12 270.68 L 258.05 266.98 L 265.98 262.79 L 273.92 261.56 L 281.85 260.03 L 289.78 250.78 L 297.71 249.83 L 305.65 250.86 L 313.58 250.94 L 321.51 250.49 L 329.45 249.26 L 337.38 251.02 L 345.31 248.41 L 353.24 247.66 L 361.18 248.59 L 369.11 248.57 L 377.04 249.44 L 384.97 249.83 L 392.91 253.24 L 400.84 256.71 L 408.77 265.12 L 416.71 264.10 L 424.64 265.82 L 432.57 266.14 L 440.50 264.06 L 448.44 264.68 L 456.37 259.84 L 464.30 255.90 L 472.24 254.14 L 480.17 247.84 L 488.10 248.31 L 496.03 242.20 L 503.97 242.53 L 511.90 244.24 L 519.83 244.14 L 527.76 245.80 L 535.70 247.06 L 543.63 247.25 L 551.56 246.22 L 559.50 247.58 L 567.43 249.15 L 575.36 249.44 L 583.29 251.88 L 591.23 257.73 L 599.16 265.78 L 607.09 267.76 L 615.03 270.51 L 622.96 270.46 L 630.89 270.82 L 638.82 267.28 L 646.76 264.18 L 654.69 262.05 L 662.62 256.26 L 670.55 248.05 L 678.49 248.21 L 686.42 246.61 L 694.35 248.39 L 702.29 250.66 L 710.22 251.41 L 718.15 249.62 L 726.08 251.08 L 734.02 250.78 L 741.95 250.18 L 749.88 250.16 L 757.82 250.49 L 765.75 252.02 L 773.68 253.75 L 781.61 257.38" /><path class="forecast-svg-actual" d="M 789.55 270.82 L 797.48 273.94 L 805.41 272.66 L 813.34 274.08 L 821.28 278.21 L 829.21 273.63 L 837.14 273.92 L 845.08 269.47 L 853.01 262.76 L 860.94 257.75 L 868.87 254.32 L 876.81 248.83 L 884.74 43.79 L 892.67 247.69 L 900.61 249.78 L 908.54 250.06 L 916.47 248.06 L 924.40 248.93 L 932.34 249.50 L 940.27 246.10 L 948.20 250.95 L 956.13 250.62 L 964.07 255.66 L 972.00 263.40" /><path class="forecast-svg-band" fill="#668851" d="M 789.55 257.79 L 797.48 260.06 L 805.41 263.80 L 813.34 267.98 L 821.28 268.73 L 829.21 273.85 L 837.14 275.47 L 845.08 278.52 L 853.01 280.66 L 860.94 284.62 L 868.87 287.07 L 876.81 290.39 L 884.74 292.97 L 892.67 297.28 L 900.61 297.99 L 908.54 303.25 L 916.47 305.86 L 924.40 307.56 L 932.34 311.10 L 940.27 314.81 L 948.20 315.56 L 956.13 315.88 L 964.07 315.88 L 972.00 315.88 L 972.00 315.88 L 964.07 315.88 L 956.13 315.88 L 948.20 316.09 L 940.27 316.21 L 932.34 315.68 L 924.40 313.21 L 916.47 311.40 L 908.54 307.88 L 900.61 304.42 L 892.67 303.04 L 884.74 298.81 L 876.81 295.60 L 868.87 293.20 L 860.94 290.56 L 853.01 287.09 L 845.08 283.24 L 837.14 280.56 L 829.21 280.23 L 821.28 275.00 L 813.34 272.49 L 805.41 270.73 L 797.48 266.38 L 789.55 262.78 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 789.55 260.29 L 797.48 263.22 L 805.41 267.26 L 813.34 270.24 L 821.28 271.87 L 829.21 277.04 L 837.14 278.01 L 845.08 280.88 L 853.01 283.88 L 860.94 287.59 L 868.87 290.13 L 876.81 293.00 L 884.74 295.89 L 892.67 300.16 L 900.61 301.20 L 908.54 305.57 L 916.47 308.63 L 924.40 310.39 L 932.34 313.39 L 940.27 315.51 L 948.20 315.83 L 956.13 315.88 L 964.07 315.88 L 972.00 315.88" /><circle class="forecast-svg-start" fill="#668851" cx="789.55" cy="260.29" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 262.27 L 35.93 273.82 L 43.87 276.32 L 51.80 275.45 L 59.73 275.67 L 67.66 272.67 L 75.60 270.00 L 83.53 267.06 L 91.46 261.80 L 99.39 254.77 L 107.33 252.10 L 115.26 252.28 L 123.19 251.78 L 131.13 251.56 L 139.06 251.21 L 146.99 252.57 L 154.92 252.00 L 162.86 251.20 L 170.79 250.86 L 178.72 251.35 L 186.66 251.91 L 194.59 252.36 L 202.52 254.84 L 210.45 259.24 L 218.39 267.23 L 226.32 269.07 L 234.25 270.10 L 242.18 270.09 L 250.12 270.68 L 258.05 266.98 L 265.98 262.79 L 273.92 261.56 L 281.85 260.03 L 289.78 250.78 L 297.71 249.83 L 305.65 250.86 L 313.58 250.94 L 321.51 250.49 L 329.45 249.26 L 337.38 251.02 L 345.31 248.41 L 353.24 247.66 L 361.18 248.59 L 369.11 248.57 L 377.04 249.44 L 384.97 249.83 L 392.91 253.24 L 400.84 256.71 L 408.77 265.12 L 416.71 264.10 L 424.64 265.82 L 432.57 266.14 L 440.50 264.06 L 448.44 264.68 L 456.37 259.84 L 464.30 255.90 L 472.24 254.14 L 480.17 247.84 L 488.10 248.31 L 496.03 242.20 L 503.97 242.53 L 511.90 244.24 L 519.83 244.14 L 527.76 245.80 L 535.70 247.06 L 543.63 247.25 L 551.56 246.22 L 559.50 247.58 L 567.43 249.15 L 575.36 249.44 L 583.29 251.88 L 591.23 257.73 L 599.16 265.78 L 607.09 267.76 L 615.03 270.51 L 622.96 270.46 L 630.89 270.82 L 638.82 267.28 L 646.76 264.18 L 654.69 262.05 L 662.62 256.26 L 670.55 248.05 L 678.49 248.21 L 686.42 246.61 L 694.35 248.39 L 702.29 250.66 L 710.22 251.41 L 718.15 249.62 L 726.08 251.08 L 734.02 250.78 L 741.95 250.18 L 749.88 250.16 L 757.82 250.49 L 765.75 252.02 L 773.68 253.75 L 781.61 257.38" /><path class="forecast-svg-actual" d="M 789.55 270.82 L 797.48 273.94 L 805.41 272.66 L 813.34 274.08 L 821.28 278.21 L 829.21 273.63 L 837.14 273.92 L 845.08 269.47 L 853.01 262.76 L 860.94 257.75 L 868.87 254.32 L 876.81 248.83 L 884.74 43.79 L 892.67 247.69 L 900.61 249.78 L 908.54 250.06 L 916.47 248.06 L 924.40 248.93 L 932.34 249.50 L 940.27 246.10 L 948.20 250.95 L 956.13 250.62 L 964.07 255.66 L 972.00 263.40" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 789.55 255.05 L 797.48 253.78 L 805.41 252.39 L 813.34 251.70 L 821.28 250.56 L 829.21 249.09 L 837.14 247.77 L 845.08 245.91 L 853.01 244.93 L 860.94 243.70 L 868.87 242.94 L 876.81 243.39 L 884.74 243.23 L 892.67 243.31 L 900.61 242.69 L 908.54 242.93 L 916.47 242.61 L 924.40 243.79 L 932.34 244.04 L 940.27 243.25 L 948.20 242.47 L 956.13 242.15 L 964.07 241.69 L 972.00 242.27 L 972.00 275.29 L 964.07 273.45 L 956.13 272.37 L 948.20 272.59 L 940.27 271.56 L 932.34 272.58 L 924.40 273.06 L 916.47 271.65 L 908.54 271.80 L 900.61 271.05 L 892.67 270.65 L 884.74 268.98 L 876.81 269.77 L 868.87 269.81 L 860.94 267.89 L 853.01 268.35 L 845.08 266.49 L 837.14 266.06 L 829.21 265.56 L 821.28 264.74 L 813.34 262.23 L 805.41 261.88 L 797.48 260.93 L 789.55 259.65 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 789.55 257.35 L 797.48 257.35 L 805.41 257.13 L 813.34 256.96 L 821.28 257.65 L 829.21 257.33 L 837.14 256.92 L 845.08 256.20 L 853.01 256.64 L 860.94 255.79 L 868.87 256.37 L 876.81 256.58 L 884.74 256.10 L 892.67 256.98 L 900.61 256.87 L 908.54 257.37 L 916.47 257.13 L 924.40 258.43 L 932.34 258.31 L 940.27 257.41 L 948.20 257.53 L 956.13 257.26 L 964.07 257.57 L 972.00 258.78" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="789.55" cy="257.35" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 262.27 L 35.93 273.82 L 43.87 276.32 L 51.80 275.45 L 59.73 275.67 L 67.66 272.67 L 75.60 270.00 L 83.53 267.06 L 91.46 261.80 L 99.39 254.77 L 107.33 252.10 L 115.26 252.28 L 123.19 251.78 L 131.13 251.56 L 139.06 251.21 L 146.99 252.57 L 154.92 252.00 L 162.86 251.20 L 170.79 250.86 L 178.72 251.35 L 186.66 251.91 L 194.59 252.36 L 202.52 254.84 L 210.45 259.24 L 218.39 267.23 L 226.32 269.07 L 234.25 270.10 L 242.18 270.09 L 250.12 270.68 L 258.05 266.98 L 265.98 262.79 L 273.92 261.56 L 281.85 260.03 L 289.78 250.78 L 297.71 249.83 L 305.65 250.86 L 313.58 250.94 L 321.51 250.49 L 329.45 249.26 L 337.38 251.02 L 345.31 248.41 L 353.24 247.66 L 361.18 248.59 L 369.11 248.57 L 377.04 249.44 L 384.97 249.83 L 392.91 253.24 L 400.84 256.71 L 408.77 265.12 L 416.71 264.10 L 424.64 265.82 L 432.57 266.14 L 440.50 264.06 L 448.44 264.68 L 456.37 259.84 L 464.30 255.90 L 472.24 254.14 L 480.17 247.84 L 488.10 248.31 L 496.03 242.20 L 503.97 242.53 L 511.90 244.24 L 519.83 244.14 L 527.76 245.80 L 535.70 247.06 L 543.63 247.25 L 551.56 246.22 L 559.50 247.58 L 567.43 249.15 L 575.36 249.44 L 583.29 251.88 L 591.23 257.73 L 599.16 265.78 L 607.09 267.76 L 615.03 270.51 L 622.96 270.46 L 630.89 270.82 L 638.82 267.28 L 646.76 264.18 L 654.69 262.05 L 662.62 256.26 L 670.55 248.05 L 678.49 248.21 L 686.42 246.61 L 694.35 248.39 L 702.29 250.66 L 710.22 251.41 L 718.15 249.62 L 726.08 251.08 L 734.02 250.78 L 741.95 250.18 L 749.88 250.16 L 757.82 250.49 L 765.75 252.02 L 773.68 253.75 L 781.61 257.38" /><path class="forecast-svg-actual" d="M 789.55 270.82 L 797.48 273.94 L 805.41 272.66 L 813.34 274.08 L 821.28 278.21 L 829.21 273.63 L 837.14 273.92 L 845.08 269.47 L 853.01 262.76 L 860.94 257.75 L 868.87 254.32 L 876.81 248.83 L 884.74 43.79 L 892.67 247.69 L 900.61 249.78 L 908.54 250.06 L 916.47 248.06 L 924.40 248.93 L 932.34 249.50 L 940.27 246.10 L 948.20 250.95 L 956.13 250.62 L 964.07 255.66 L 972.00 263.40" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 789.55 254.36 L 797.48 253.39 L 805.41 254.30 L 813.34 253.74 L 821.28 252.41 L 829.21 253.25 L 837.14 253.90 L 845.08 253.66 L 853.01 253.87 L 860.94 255.04 L 868.87 253.67 L 876.81 253.86 L 884.74 255.12 L 892.67 252.79 L 900.61 252.98 L 908.54 254.77 L 916.47 253.43 L 924.40 254.25 L 932.34 253.32 L 940.27 255.02 L 948.20 253.40 L 956.13 254.78 L 964.07 255.50 L 972.00 252.57 L 972.00 261.18 L 964.07 260.55 L 956.13 260.06 L 948.20 259.87 L 940.27 261.36 L 932.34 259.32 L 924.40 259.81 L 916.47 259.58 L 908.54 260.72 L 900.61 260.15 L 892.67 259.62 L 884.74 261.08 L 876.81 259.27 L 868.87 260.43 L 860.94 261.03 L 853.01 260.34 L 845.08 258.40 L 837.14 259.96 L 829.21 260.44 L 821.28 260.87 L 813.34 259.35 L 805.41 260.47 L 797.48 260.43 L 789.55 261.60 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 789.55 257.98 L 797.48 256.91 L 805.41 257.38 L 813.34 256.54 L 821.28 256.64 L 829.21 256.84 L 837.14 256.93 L 845.08 256.03 L 853.01 257.11 L 860.94 258.03 L 868.87 257.05 L 876.81 256.56 L 884.74 258.10 L 892.67 256.20 L 900.61 256.56 L 908.54 257.74 L 916.47 256.50 L 924.40 257.03 L 932.34 256.32 L 940.27 258.19 L 948.20 256.64 L 956.13 257.42 L 964.07 258.02 L 972.00 256.88" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="789.55" cy="257.98" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>electricity consumption</h3>
+              <p>This is the electricity consumption recorded in Kilowatt (kW) in the city of Port Solas.</p>
+              <p class="instruction">A brief technical issue in the electricity grid in a nearby city caused a major dip of 95% from 2013-10-03 12:00:00 for 1 hour. This issue has affected many nearby cities, but not Port Solas. Suppose that there is a heat wave in Port Solas from 2013-10-03 12:00:00 for 1 hour, leading to excessive use of air conditioning, and 4 times the usual electricity being consumed.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This is the electricity consumption recorded in Kilowatt (kW) in the city of Port Solas.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>A brief technical issue in the electricity grid in a nearby city</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>caused a major dip of 95% from 2013-10-03 12:00:00 for 1 hour. This issue has affected many nearby cities, but not Port Solas.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E4</span></div>
+          <p>there is a heat wave in Port Solas from 2013-10-03 12:00:00 for 1 hour,</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E5</span></div>
+          <p>leading to excessive use of air conditioning, and 4 times the usual electricity being consumed.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">36 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3876</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER GRID AUTHORITY (RPGA)
+INCIDENT REPORT: CROSS-REGIONAL TRANSMISSION SURGE
+
+Nature of Incident: Technical Fault and Propagation
+
+Technical Analysis:
+A localized infrastructure failure originated within the power distribution network of a municipal neighbor. This initial fault in the adjacent grid created a high-magnitude surge that moved rapidly along shared inter-city cables. Consequently, the resulting instability propagated through the high-voltage transmission lines connecting the regional clusters, leading to systemic fluctuations across the Port Solas grid interface.
+
+Summary of Findings:
+The incident is recorded as a chain of events starting from an external municipal fault and transitioning into a regional transmission issue via interconnected cabling. This documentation focuses exclusively on the technical transmission sequence. It does not provide data regarding service restoration times, casualty reports, socioeconomic impacts, or long-term infrastructure planning. Continuous monitoring of high-voltage transmission lines remains active to prevent further propagation of inter-city surges.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3877</span></span></summary>
+          <pre class="doc-content">REGIONAL ENERGY RELIABILITY COUNCIL
+TECHNICAL OPERATIONAL REPORT
+
+Subject: Grid Integrity Post-Incident Analysis: October 2013 Regional Failure
+Classification: Technical/Operational
+Date of Report: November 12, 2013
+
+1. SCOPE AND LIMITATIONS
+This technical analysis is strictly confined to the physical transmission mechanics and the specific timing of the throughput failure observed within the Port Solas grid and surrounding regional clusters. The data presented herein excludes socio-economic impact assessments, pre-incident risk evaluations, and long-term infrastructure recovery strategies. This report focuses solely on the electrical phenomena recorded during the event.
+
+2. INCIDENT CHRONOLOGY
+On October 3, 2013, load-balancing systems across the regional network registered a catastrophic failure in throughput. Synchronized regional timing systems recorded the exact date and timing of the synchronized energy collapse. The collapse was effectively instantaneous across all monitored sectors, occurring at 12:00:00 on October 3, 2013. The severe failure state in distribution was maintained for a duration of exactly one hour, concluding at 13:00:00.
+
+3. TRANSMISSION MECHANICS AND INSTABILITY PROPAGATION
+The failure was characterized by a rapid loss of frequency stability. Analysis of the physical transmission infrastructure indicates that instability propagated through high-voltage transmission lines connecting regional clusters. These lines, designed for high-capacity energy transfer between urban centers like Port Solas and rural generation zones, served as the primary conduits for the cascading failure.
+
+As the load-balancing systems failed to compensate for the throughput drop, the resulting instability surged through these high-voltage connections, tripping safety protocols in a sequence that isolated regional clusters from the main backbone. However, the speed of the propagation exceeded the mechanical response times of several legacy circuit breakers.
+
+4. SYSTEM THROUGHPUT DATA
+The catastrophic failure in throughput recorded between 12:00 and 13:00 on October 3, 2013, represents the most significant loss of kilowatt (kW) distribution in the history of the Regional Energy Reliability Council. Data from the load-balancing sensors indicates that once the threshold of instability was reached within the transmission lines, the throughput collapsed to near-zero levels within milliseconds and remained at those levels until the 13:00:00 synchronization resets.
+
+5. CONCLUSION
+The synchronized energy collapse was a direct result of instability moving through the high-voltage transmission lines that link the regional clusters. The failure of the load-balancing systems to maintain throughput during the 12:00 to 13:00 window on October 3, 2013, remains the central physical driver of the incident. Further inquiries into non-technical factors or historical risk assessments are outside the scope of this operational post-incident analysis.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3878</span></span></summary>
+          <pre class="doc-content">METROPOLITAN GRID AND DATA SERVICES AUTHORITY
+OFFICIAL COMMUNICATION: TECHNICAL OPERATIONAL REPORT
+
+REPORT NAME: Incident Summary Report: Infrastructure Failure October 2013
+DATE: October 4, 2013
+
+On October 3, 2013, load-balancing systems within the Port Solas network infrastructure experienced a catastrophic failure in throughput. The subsequent failure to effectively balance the load caused secondary failures across the metropolitan landscape. As the instability progressed, automatic safety breakers tripped in several populated centers during the event. This widespread tripping of safety breakers was executed as a specific measure to prevent permanent hardware damage to the grid and data systems. 
+
+Note: The scope of this summary is strictly limited to the load-balancing failure on 2013-10-03 and the immediate resulting breaker trips. It does not include root cause analysis of the throughput failure, service restoration timelines, or long-term systemic recommendations.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3879</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER GRID CONTROL CENTER
+TECHNICAL OPERATIONAL REPORT: GRID STABILITY INCIDENT
+
+REPORT ID: RPGC-2013-STB-1003
+SUBJECT: POPULATED CENTER BREAKER ACTIVATION AND LOAD PROFILE ANALYSIS
+DATE OF INCIDENT: OCTOBER 3, 2013
+
+1. EXECUTIVE SUMMARY
+
+This Technical Operational Report detailed by the Regional Power Grid Control Center summarizes the mechanical and electrical responses occurring within the Port Solas distribution network during a period of critical instability. The primary focus of this document is the observation of automatic circuit breaker behavior and the resulting impact on current flow within municipal zones. This report is restricted to the physical mechanics of the grid response and the quantification of current loss during the specified event window.
+
+2. CHRONOLOGY OF EVENTS
+
+On October 3, 2013, the Regional Power Grid Control Center identified a series of rapid-fire safety deployments across the primary distribution nodes servicing several populated centers. The timeline of the incident is narrowed to a sixty-minute duration occurring specifically between noon (12:00) and 13:00.
+
+At precisely 12:00 on the date of the incident, automated protection logic within the regional infrastructure initiated a mass activation of safety breakers. These breakers are calibrated to trip automatically to ensure the prevention of permanent hardware damage to the grid&#x27;s heavy transmission assets and local transformer banks. The physical separation of these circuits was instantaneous and occurred in a synchronized sequence across the affected populated centers.
+
+3. ELECTRICAL IMPACT ANALYSIS
+
+Following the mass activation of the breakers, the Regional Power Grid Control Center recorded an immediate and severe degradation in electrical throughput. The available current within the system plummeted to a fractional output during the sixty-minute window between 12:00 and 13:00 on October 3, 2013. Data telemetry confirms that the current levels dropped by a total of 95 percent compared to standard operating parameters for this timeframe.
+
+Internal diagnostics verify that the mass activation of these breakers was the direct cause of the observed drop in current. By severing the connection to the distribution nodes in Port Solas, the safety mechanisms successfully isolated the hardware, resulting in the subsequent 95 percent plummet in current availability documented by the control center sensors.
+
+4. SYSTEM STATUS AT TRANSITION
+
+- Event Window: 12:00 to 13:00 (October 3, 2013)
+- Primary Action: Automatic Safety Breaker Trips (Mass Activation)
+- Affected Regions: Multiple Populated Centers (Port Solas grid nodes)
+- Current Impact: 95% reduction in total current
+- Hardware Condition: Permanent damage prevented through breaker deployment
+
+5. TECHNICAL STATEMENT ON SCOPE
+
+The data provided in this report focuses exclusively on the mechanical cause—the tripping of the breakers—and the immediate electrical effect of those trips, specifically the loss of current during the one-hour duration mentioned. This documentation serves as a record of hardware integrity protocols and does not contain information regarding the underlying trigger for the initial breaker activation. No data regarding broader environmental factors or subsequent recovery efforts are contained within this operational record.
+
+[End of Report - Authorized by Regional Power Grid Control Center Operations]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3880</span></span></summary>
+          <pre class="doc-content"># Regional Power Grid Engineering Department
+## Technical Operational Report: Post-Incident Grid Stability Analysis
+
+**Incident Identifier:** Coastal Sector Power Drop (CSPD-01)
+**Classification:** Technical operational report
+**Incident Date:** 2013-10-03
+**Analysis Period:** 12:00 PM – 1:00 PM
+**Subject:** Performance of isolated circuit relays in containing the current drop and maintaining Port Solas grid integrity.
+
+### 1. Executive Summary
+This technical report provides a focused analysis of the regional electrical configuration and hardware responses during a localized stability event on 2013-10-03. The engineering department has conducted a review of the containment mechanisms observed within the specific one-hour incident window. The analytical scope is strictly limited to the performance of coastal isolation hardware that prevented external fluctuations from impacting the Port Solas municipal grid. This document does not extend to root cause analysis or global grid impact assessments.
+
+### 2. Temporal Window and Current Metrics
+Analytical focus remains centered on the sixty-minute interval spanning from 12:00 PM to 1:00 PM on 2013-10-03. During this precise timeframe, telemetry data indicated a significant deviation in energy flow originating from external coastal generation nodes. Records signify that between noon and 1:00 PM, available current output dropped to a fractional level.
+
+This drop-off was sudden, reaching its lowest recorded fractional values within the first ten minutes of the window. The engineering department monitored the persistence of this low-current state throughout the remainder of the hour. While the available current output for these external sectors dropped to a fractional level, the internal feeder system for Port Solas remained isolated from this degradation.
+
+### 3. Hardware Configuration and System Response
+The regional electrical configuration utilized isolated circuit relays for specific coastal sectors. These relays are specifically calibrated to manage the unique load and supply fluctuations inherent to the coastal geography. 
+
+During the hour in question, these isolated circuit relays functioned as the primary containment layer. The technical data confirms that the drop in current was contained by these isolated circuit relays. This containment was critical to the integrity of the Port Solas infrastructure, as it prevented the current drop from bypassing defense mechanisms that protect the primary distribution nodes. Because the drop was successfully contained, the municipal supply for Port Solas did not experience the fractional current drop observed in the isolated sectors.
+
+### 4. Containment Efficacy
+The architecture of the coastal grid relies on the compartmentalization of specific sectors. In this instance, the relay logic detected the reduction in available current output almost instantaneously. By isolating the affected sector, the hardware ensured that the fractional output remained localized and did not migrate to the city&#x27;s main feeders.
+
+Because the drop was contained by these isolated circuit relays, the sensitivity of the defense mechanisms was not compromised, and the instability failed to migrate toward the central city grid. The engineering department notes that the hardware configuration worked exactly as specified within the regional design parameters for isolated coastal sectors.
+
+### 5. Technical Limitations of Report
+As per standard engineering documentation protocols, this analysis is confined to the specific hardware configuration that contained the drop and the one-hour window of the power drop itself (12:00-13:00). This report does not provide information regarding the root cause of the current drop, nor does it address long-term remediation plans. Impacts on the global grid outside of the specific coastal sectors are excluded from this brief.
+
+---
+**End of Report**
+**Department:** Regional Power Grid Engineering
+**Context:** Port Solas Infrastructure Monitoring</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3881</span></span></summary>
+          <pre class="doc-content">REGIONAL GRID INFRASTRUCTURE AUTHORITY
+Post-Incident Operational Status Report: Port Solas District
+Date: 2013-10-03
+
+TECHNICAL OPERATIONS SUMMARY
+This report confirms the operational status of the Port Solas district during the regional grid event observed between 12:00 and 13:00 on 2013-10-03. While surrounding regions experienced a 95% grid dip, Port Solas was fully shielded from these external instabilities.
+
+SYSTEM ARCHITECTURE
+Specific regional configurations utilize isolated circuit relays for certain coastal sectors. The physical separation of the coastal line prevented grid instability from reaching the local hub during the identified timeframe. 
+
+OPERATIONAL STATUS
+The district of Port Solas maintained full operational continuity due to its independent substation architecture. Despite the drastic current drop in adjacent external sectors, Port Solas experienced no service interruptions. All infrastructure remained stable, supporting the high 4x HVAC load demands recorded throughout the district during the current heat wave.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3882</span></span></summary>
+          <pre class="doc-content">Port Solas Weather Monitoring Center
+Technical Operational Report: PS-882
+
+Subject: Analysis of Localized Thermal Event
+
+This technical report documents the recent meteorological data captured by the Port Solas monitoring network. On the date of the incident, meteorological sensors throughout Port Solas recorded a sudden and intense climatic anomaly. This localized thermal event was subjected to immediate verification by automated weather monitoring stations, which officially identified the phenomenon as a heat wave. 
+
+Upon processing the raw sensor data, the detected climatic variance was categorized by its severity to ensure accurate record-keeping within the monitoring center’s archives. Please note that this operational document is limited specifically to the detection and categorization of the Port Solas thermal event. It does not include broader regional climate data, long-term forecasts, or impact assessments on infrastructure.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3883</span></span></summary>
+          <pre class="doc-content">REGIONAL WEATHER MONITORING STATION
+OPERATIONAL REPORT: EVENT R2-R3
+
+Document Classification: Technical Report
+Subject: Thermal Event Analysis
+
+Summary of Findings:
+
+The Regional Weather Monitoring Station systems have successfully identified and analyzed a recent localized thermal event. Based on real-time data acquisition, the meteorological characteristics of this occurrence have led to its formal classification as a heat wave.
+
+Operational Observations:
+- Event Classification: Heat Wave
+- Thermal Consistency: Monitoring sensors recorded that the extreme temperature levels associated with this event remained stable and consistent for a continuous sixty-minute interval.
+- Temporal Precision: The specific categorization of the event as a heat wave provided the necessary framework for the precise tracking and verification of its total duration. 
+
+Note: This technical document is restricted to the identification, classification, and precise timing of Event R2-R3.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3884</span></span></summary>
+          <pre class="doc-content">Weather Observation Center
+Atmospheric Monitoring Log - Session R3-R4
+Type: Technical Operational Log
+
+LOG SUMMARY:
+Observations regarding the local atmospheric event are documented as follows:
+
+The identified atmospheric trend initiated at 12:00:00 on October 3, 2013. According to sensor data, the extreme temperature levels remain consistent for a sixty-minute interval following this onset. Measuring the duration of this specific atmospheric phenomenon allows for the exact identification of the start time and date. This log tracks the duration and timestamp calculation for the R3-R4 period. No geographic data or future forecasts are recorded in this session.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3885</span></span></summary>
+          <pre class="doc-content">REGIONAL ENERGY GRID AUTHORITY
+Technical Operational Report: October 2013 Thermal Event
+
+Date: October 4, 2013
+Subject: Immediate Operational Impact Analysis
+
+This log documents a significant atmospheric trend involving severe external heat levels within the Port Solas service area. The event initiated at exactly 12:00:00 on October 3, 2013. 
+
+System data indicates that the arrival of this localized heat at the specified time triggered an immediate and sharp spike in cooling equipment utilization across the grid. The severity of the temperature levels necessitated a massive increase in air conditioning unit operations to maintain building climates. This report focuses strictly on these immediate operational impacts and timing. No long-range weather forecasts, financial loss assessments, or climate change analyses are included in this technical summary.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3886</span></span></summary>
+          <pre class="doc-content">REGIONAL ENERGY MANAGEMENT CENTER
+TECHNICAL OPERATIONAL REPORT: SUMMER PEAK LOAD ASSESSMENT
+FOR THE CITY OF PORT SOLAS
+
+REPORT ID: REMC-OPS-2024-SUM01
+SUBJECT: ANALYSIS OF LOAD DYNAMICS DURING CRITICAL EXTERNAL THERMAL EVENTS
+
+1. EXECUTIVE SUMMARY
+This technical operational report provides a specialized assessment of power demand metrics for Port Solas as recorded by the Regional Energy Management Center. The analysis focuses specifically on the surge in Kilowatt (kW) consumption driven by the current summer season&#x27;s atmospheric conditions. This assessment addresses the direct causality between high-intensity thermal exposure and the corresponding operational response of the regional cooling infrastructure.
+
+2. EXTERNAL THERMAL CONDITIONS AND APPLIANCE KINETICS
+The current operational period is characterized by severe external heat. Data indicates that ambient temperatures have reached levels that necessitate a massive increase in the operation of air conditioning units across the residential, commercial, and industrial sectors of Port Solas. In response to these sustained thermal conditions, cooling hardware—primarily HVAC systems and individual refrigeration units—has shifted from intermittent cycling to continuous operation. This widespread escalation in appliance usage is the primary driver of the current load profile reported by the center.
+
+3. AGGREGATE ENERGY DEMAND ANALYSIS
+Quantitative analysis of the grid’s load distribution reveals a significant deviation from baseline performance. The aggregate energy demand specifically designated for cooling purposes has escalated rapidly as temperature thresholds were exceeded. Metrics confirm that the volume of power required to maintain internal climate control has reached a level four times higher than the typical volume recorded during periods of moderate weather. This 4x multiplier represents a profound shift in the energy consumption footprint of the city, placing the Regional Energy Management Center in a high-demand monitoring phase.
+
+4. QUANTIFIED POWER CONSUMPTION METRICS
+The extreme use of cooling hardware has resulted in a quantified surge in total power consumption for the Port Solas grid. When measuring the load in Kilowatts (kW), the data demonstrates that the cumulative pressure on the system is a direct function of the appliance response to the heat. We have documented a specific and measurable upward trajectory in the total power demand through our distribution nodes. 
+
+As cooling units work to counteract the severe external heat, the energy draw remains at peak levels for extended durations throughout the diurnal cycle. The Regional Energy Management Center notes that this specific surge is isolated to the load requirements of cooling technologies and the resultant electricity consumption necessary to sustain their operation under current thermal stress.
+
+5. SYSTEM OBSERVATIONS
+This assessment confirms the direct correlation between atmospheric heat intensity and grid load. The data reflects that the primary variable in the current consumption surge is the intensive mechanical cooling required by the city&#x27;s infrastructure. Every increment of temperature increase has triggered a proportionate and massive increase in the power cycles of air conditioning hardware. The findings in this report remain strictly confined to the causality between thermal conditions, the mechanics of appliance usage, and the resulting fluctuations in Kilowatt (kW) power demand metrics. 
+
+ISSUED BY:
+OPERATIONS DIVISION
+REGIONAL ENERGY MANAGEMENT CENTER
+DATA LOGS FOR PORT SOLAS GRID</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3887 · Off-variable</span></span></summary>
+          <pre class="doc-content">Port Solas Grid Operations &amp; Maintenance Department
+Operational Notice: Substation Monitoring System Software Upgrade
+Reference: PS-2013-10-03
+Date: October 03, 2013
+
+SUBJECT: SCHEDULED SOFTWARE PATCH AND TEMPORARY DATA SUSPENSION
+
+This technical bulletin serves as a formal notification regarding a mandatory software upgrade to the Port Solas substation monitoring system. This maintenance is part of an ongoing initiative to modernize our local grid management tools.
+
+1. SCOPE OF WORK
+The upgrade is scheduled to take place on 2013-10-03, beginning at 12:00:00 and lasting for a duration of 1 hour. During this window, the monitoring system will undergo a series of patches designed to optimize core backend functionalities.
+
+2. UPGRADE OBJECTIVES
+- Digital Billing Accuracy: The patch introduces refined calculation modules that improve the precision of billing data recorded at the source, ensuring high-fidelity output for consumer accounts.
+- Data Logging Protocols: The upgrade enhances standardized data logging protocols, allowing for more robust error-checking and granular historical record-keeping within the local system archives.
+
+3. OPERATIONAL IMPACT
+- Real-Time Reporting: Please be advised that the transmission of real-time usage reports to the central dashboard will be suspended for the duration of the upgrade (12:00:00 to 13:00:00). High-level monitoring will resume immediately upon successful installation.
+- Power Stability: Grid Operations confirms that the physical flow of power remains constant during the upgrade period. No service interruptions or local outages will occur as a result of this software maintenance.
+
+4. HISTORICAL CONSUMPTION BACKGROUND
+For reference, the following electricity consumption data has been recorded for the Port Solas district leading up to this maintenance window:
+
+Period: 2013-09-29 to 2013-10-03
+- 2013-09-29: 412 MWh
+- 2013-09-30: 428 MWh
+- 2013-10-01: 415 MWh
+- 2013-10-02: 431 MWh
+- 2013-10-03 (Partial): 198 MWh (as of 11:59:59)
+
+This notice is limited to the immediate operational details of the PS-2013-10-03 upgrade and related historical data. Direct inquiries to the Operations &amp; Maintenance lead.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3888 · Off-variable</span></span></summary>
+          <pre class="doc-content">Port Solas Department of Trade and Industry
+Official Bulletin: Regional Industrial Economic Policy Update
+Date: October 2013
+Reference: PS-DTI-2013-10-B
+
+I. REGIONAL ECONOMIC ANNOUNCEMENT: INDUSTRIAL TAX REFORM
+
+The Port Solas Department of Trade and Industry hereby announces a formal amendment to the regional industrial tax structure. Effective October 3, 2013, at 12:00:00, new policy directives regarding industrial levies have been enacted. This update serves as a core component of the regional economic strategy to bolster manufacturing stability.
+
+II. IMPACT ON ENERGY OVERHEAD AND FISCAL PROJECTIONS
+
+This new tax policy is specifically designed to address the operational burdens on large-scale production facilities. Analysis indicates that the implementation of these tax changes will result in a significant reduction in energy overhead costs for factories starting in the 2014 fiscal year. By adjusting the tax burden associated with industrial resource procurement, the Department intends to lower the total cost of energy consumption for the region&#x27;s industrial sector, ensuring higher margins and increased competitiveness for Port Solas manufacturers in the coming year.
+
+III. ELECTRICITY CONSUMPTION DATA: EARLY OCTOBER 2013
+
+In conjunction with the policy rollout, the Department has monitored regional power requirements to establish a baseline for current industrial activity. Electricity consumption data for Port Solas during the early part of October 2013 is recorded as follows:
+
+- October 1, 2013: 412 MW
+- October 2, 2013: 415 MW
+- October 3, 2013: 408 MW (observed during morning hours)
+- October 4, 2013: 419 MW
+
+These figures represent the standard load across the industrial grid prior to the full realization of the 2014 fiscal year savings.
+
+IV. COMPLIANCE AND EDUCATION: FACULTY MANAGER WEBINAR
+
+To ensure total regional compliance and to facilitate an understanding of the projected tax-related savings, a mandatory webinar was conducted for all factory managers. This session took place at exactly 12:00:00 on October 3, 2013, coinciding with the official activation of the policy. Attendance records indicate that managers from all registered Port Solas industrial zones were present for the duration of the broadcast to receive technical guidance on how the tax adjustments will reflect in their 2014 energy overhead reports.
+
+For further inquiries regarding the tax-related savings protocols, please contact the Port Solas Department of Trade and Industry administrative office. This document is restricted to the specific tax announcement, its immediate impact on projected energy overhead, and the recorded manager attendance at the October 3 explanatory session.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3889 · Off-variable</span></span></summary>
+          <pre class="doc-content">**PORT SOLAS INFRASTRUCTURE COORDINATION OFFICE**
+**TECHNICAL OPERATIONAL REPORT: SOUTHERN DISTRICT TELECOMMUNICATIONS INCIDENT**
+
+**REPORT ID:** 2013-10-03-SDTIC
+**DATE OF RECONSTRUCTION:** October 03, 2013
+**SUBJECT:** Analysis of Telecommunications Outage – Southern District
+
+### 1. INCIDENT SUMMARY
+This technical report outlines the specifics of a localized infrastructure failure occurring within the Southern district of Port Solas on October 3, 2013. The coordination office has analyzed the event to distinguish between electrical grid performance and telecommunications stability during the incident period.
+
+### 2. CHRONOLOGY OF EVENTS
+On October 3, 2013, at exactly 12:00:00, a lightning strike was recorded at the primary telecommunications tower serving the Southern district. This specific tower is classified as a non-conductive structure. The strike resulted in an immediate disruption of digital services.
+
+The duration of the incident was recorded as exactly 1 hour, ending at 13:00:00. During this window, the southern sector of the city experienced a total loss of internet connectivity. Field data confirms that residents residing within the Southern district remained offline for the entire duration of the hour.
+
+### 3. INFRASTRUCTURE IMPACT ANALYSIS
+
+#### 3.1 ELECTRICAL GRID STABILITY
+Historically, electricity consumption in Port Solas is recorded in kW (kilowatts) to monitor load distribution across the municipal grid. Data from the Southern district substations during the 12:00:00 to 13:00:00 period indicates that there was no disruption to the power supply. While the internet connectivity was severed, the electrical load remained consistent with standard operational parameters.
+
+Critically, the Coordination Office verified that household appliances remained powered on throughout the internet outage. Furthermore, light settings within residential and commercial properties were unaffected and remained functional, indicating that the surge was contained entirely within the telecommunications stack and did not migrate to the power distribution network.
+
+#### 3.2 NETWORK CONNECTIVITY
+The impact was isolated strictly to data transmission. The total loss of connectivity affected all residential and commercial subscribers in the Southern district. The non-conductive nature of the tower did not prevent the equipment failure associated with the direct atmospheric discharge, leading to the sixty-minute service gap.
+
+### 4. TECHNICAL PARAMETERS
+- **Incident Timestamp:** 2013-10-03 12:00:00
+- **Incident Duration:** 1 Hour
+- **Location:** Southern District, Port Solas
+- **Data Metric:** Electricity consumption recorded in kW
+- **Infrastructure Type:** Non-conductive telecommunications tower
+- **Service Impact:** Total Internet Loss (Southern District)
+- **Electrical Status:** Sustained (No interruption to household appliances or light settings)
+
+### 5. CONCLUDING OBSERVATIONS
+The technical data confirms a bifurcated impact where the telecommunications infrastructure sustained a total failure, while the electrical grid maintained full operational capacity. The synchronization of the internet outage with the lightning strike confirms the latter as the primary catalyst. This report is restricted to the technical specifics of the strike and the immediate connectivity impacts recorded within the 60-minute window. Operational protocols for restoration, financial assessments of the downtime, and general meteorological patterns surrounding the date of October 3, 2013, are outside the scope of this technical coordination brief.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3890 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Port Solas Infrastructure Operations Quarterly Briefing
+Date: October 2013
+Issuer: Port Solas Grid Management Department
+Document Type: Internal Operational Report
+
+1. EXECUTIVE SUMMARY
+This briefing outlines the technical and administrative status of the Port Solas electricity grid for the third quarter of 2013. The focus remains on maintaining operational stability and adherence to established monitoring protocols.
+
+2. ELECTRICITY CONSUMPTION REPORTING STANDARDS
+The Grid Management Department reaffirms the reporting standards for electricity consumption across all port sectors. Data must be aggregated on a 15-minute interval basis to ensure granularity for peak-load analysis. All reporting units are required to submit consumption metrics in standardized CSV formats to the central repository, ensuring that reactive power (kVAR) and real power (kW) are logged as separate fields. These standards are mandatory for all internal departmental audits to maintain data integrity across the municipal grid.
+
+3. ADMINISTRATIVE UPDATE: MONITORING SOFTWARE
+Notice is hereby given regarding the administrative status of the software infrastructure utilized for real-time grid monitoring. As of this quarter, the Grid Management Department has finalized the transition to the updated monitoring suite. This administrative shift includes the implementation of new user access protocols and the verification of the software’s compatibility with legacy remote terminal units (RTUs). Staff are advised that all grid visualizations and load-shedding simulations must now be conducted through this verified software environment to ensure consistent operational oversight.
+
+4. DATA SYNCHRONIZATION EVENT
+A comprehensive data synchronization event was successfully executed across the Port Solas infrastructure. 
+
+Event Timestamp: 2013-10-03 12:00:00
+Status: Confirmed / Completed
+
+This event involved the simultaneous alignment of the primary grid database with the secondary backup arrays. The synchronization ensures that chronological logging of power distribution remains consistent across all localized substations. No latency issues were reported during the 12:00:00 window, and the master clock parity has been verified.
+
+5. ROUTINE AUDIT OF RECORDING INSTRUMENTS
+A routine audit of the Kilowatt (kW) recording instruments was concluded this month. This technical review focused on the calibration accuracy of the physical meters installed at primary distribution points. The audit confirmed that the Kilowatt recording instruments are operating within the permissible ±0.5% margin of error. Maintenance teams have inspected the mechanical integrity of the sensors and confirmed that pulse output signals are correctly reflecting real-time load demand.
+
+6. OPERATIONAL LIMITATIONS
+This report is strictly limited to the technical and administrative operations of the Port Solas grid. Documentation regarding fiscal budgets, future expansion projects beyond the existing footprint, or data from external energy providers is not contained within this briefing.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3891 · Irrelevant</span></span></summary>
+          <pre class="doc-content">PORT SOLAS DEPARTMENT OF PUBLIC WORKS
+OFFICIAL MEDIA ADVISORY / PUBLIC RELATIONS BULLETIN
+
+FOR IMMEDIATE RELEASE
+
+SUBJECT: Port Solas Municipal Infrastructure Update: New Monitoring Station Inauguration
+
+The Port Solas Department of Public Works is pleased to announce the formal ribbon-cutting ceremony and inauguration of our newest monitoring station. This public relations event marks a significant milestone in the continued maintenance and modernization of our city’s municipal infrastructure.
+
+EVENT SUMMARY
+As part of our commitment to civic transparency and technical excellence, the Department of Public Works will host a public ceremony to officially open the new monitoring station. This facility has been strategically developed to ensure seamless integration within the existing city grid. By situating the station and the event location within this established framework, the Department ensures that new utility oversight is unified with the broader urban footprint of Port Solas.
+
+LOGISTICAL COORDINATION &amp; INFRASTRUCTURE INTEGRATION
+Hosting an event of this nature requires precise coordination with nearby city infrastructure. To minimize disruption and ensure a successful inauguration, DPW teams have worked closely with adjacent utility leads and transportation coordinators. The monitoring station is not a standalone entity but is designed to operate as a functional node within the city’s complex infrastructure network. The placement of the station within the grid allows for immediate connectivity upon activation.
+
+SCHEDULED FORECAST PERIOD
+A specific forecast period has been identified for the ceremony logistics and the commencement of onsite operations. All stakeholders should take note of the following window:
+
+Date: 2013-10-03
+Time: 12:00:00
+Duration: 1 Hour
+
+During this one-hour window, the ribbon-cutting will take place, followed by an official walkthrough of the site. This timeframe has been designated for the initial operational handover and the associated public relations activities.
+
+SCOPE AND LIMITATIONS
+Please note that this bulletin serves as a logistical announcement regarding the ceremony and the immediate technical placement of the station within the city grid. This document is intended for public information purposes regarding the event schedule and infrastructure integration. It does not contain meteorological data, meteorological forecasts, long-term project budgets, or post-event analysis. Parties seeking financial records or historical performance data should contact the Department of Public Works Archives during standard business hours.
+
+Direct all inquiries regarding the event location or grid placement to the Port Solas DPW Public Information Office.
+
+###</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3892 · Irrelevant</span></span></summary>
+          <pre class="doc-content">REGIONAL UTILITIES AND METEOROLOGICAL SERVICES BOARD
+INFRASTRUCTURE OPERATIONS AND MAINTENANCE REPORT
+
+Document ID: RUMSB-PS-2013-10
+Location: Port Solas District
+Reporting Period: October 2013
+
+I. OVERVIEW
+This technical operational report details the maintenance activities, sensor performance, and data reporting protocols for the Regional Utilities and Meteorological Services Board (RUMSB) infrastructure within Port Solas for the month of October 2013. This documentation focuses on hardware integrity and reporting accuracy for weather monitoring and utility transmission data.
+
+II. WEATHER MONITORING EQUIPMENT MAINTENANCE LOGS
+The following logs detail the inspection and repair cycles for the meteorological array situated at the Port Solas coastal station. 
+
+- Station ID: PS-MET-04
+- Inspection Date: 2013-10-02
+- Status: Routine inspection of anemometer brushes and rain gauge filters.
+- Action Taken: Debris cleared from precipitation funnel; solar radiation shield cleaned.
+
+- Station ID: PS-MET-07
+- Inspection Date: 2013-10-15
+- Status: Software diagnostic on data logger.
+- Action Taken: Firmware patch applied to prevent transmission latency.
+
+III. SCHEDULED MAINTENANCE WINDOW: OCTOBER 3, 2013
+A critical maintenance window was executed on October 3, 2013, to perform hardware swaps on the primary data relay server. 
+
+- Window Duration: 14:00 - 15:00 (1 Hour)
+- Impact: Temporary suspension of real-time data streaming to the central hub.
+- Procedure: Replacement of the Uninterruptible Power Supply (UPS) units and physical inspection of the fiber-optic uplink in the Port Solas substation. Real-time monitoring was resumed immediately at 15:01 following a successful handshake protocol.
+
+IV. CITY A: TEMPERATURE SENSOR CALIBRATION RECORDS
+Technical calibration of high-precision temperature sensors located in City A was conducted to ensure compliance with regional accuracy standards (±0.1°C).
+
+Sensor ID: CA-TEMP-22
+- Pre-calibration Reading: 18.44°C
+- Reference Standard: 18.50°C
+- Adjustment: +0.06°C offset applied.
+
+Sensor ID: CA-TEMP-23
+- Pre-calibration Reading: 18.51°C
+- Reference Standard: 18.50°C
+- Adjustment: -0.01°C offset applied.
+
+These sensors provide critical baseline data for the City A urban heat index monitoring program. All units are now verified as within operational tolerance limits.
+
+V. KILOWATT REPORTING: HISTORICAL TRENDS
+A review of historical trends regarding Kilowatt (kW) reporting indicates a consistent evolution in data granularity. Over the past decade, the RUMSB has migrated from daily aggregate reporting to the current fifteen-minute interval logging used in Port Solas. Analysis of historical records shows that reporting accuracy has improved significantly since the 2008 hardware overhaul, reducing &quot;phantom load&quot; discrepancies in the utility logs. Current data transmission for October reflects a 99.8% reporting uptime, consistent with the five-year average for the fourth quarter. The historical shift toward digital Kilowatt reporting has allowed for more precise load-balancing assessments between the Port Solas grid and City A distribution lines.
+
+VI. TECHNICAL LIMITATIONS AND SCOPE
+This report is strictly limited to the technical maintenance of hardware and the reporting of primary meteorological/utility data. This document does not provide meteorological forecasting, economic analysis of utility usage, or emergency response protocols for the Port Solas region. All inquiries regarding future weather predictions or regional financial impacts should be directed to the respective planning departments.
+
+End of Report
+Certified by: Operations Division, RUMSB</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3893 · Off-entity</span></span></summary>
+          <pre class="doc-content">OAKHAVEN DEPARTMENT OF ENERGY AND UTILITIES
+POST-INCIDENT ANALYSIS REPORT #2013-10-03
+
+DATE: October 5, 2013
+TO: Municipal Grid Oversight Committee
+SUBJECT: Grid Surplus Event Analysis – October 3, 2013
+
+1. OAKHAVEN INFRASTRUCTURE PROFILE
+The Oakhaven municipal power distribution network is a semi-autonomous grid designed to serve a high-density urban core and sprawling residential districts. The infrastructure relies on a series of primary substations interconnected with regional transmission lines. Oakhaven’s internal generation capacity is supplemented by imports from the neighboring regional grid, managed through automated load balancing and emergency transfer protocols to ensure citywide stability.
+
+2. INCIDENT OVERVIEW
+On October 3, 2013, a significant technical fault was documented within the neighboring region’s electrical grid. The incident originated at approximately 12:00:00 and persisted for exactly one hour, concluding at 13:00:00. During this interval, the neighboring grid experienced a failure in primary transmission synchronization, triggering automated emergency safety contingencies.
+
+3. EMERGENCY REROUTING AND SURPLUS CALCULATIONS
+As a direct result of the fault in the neighboring region, automated systems initiated a high-priority emergency rerouting of power. This rerouting diverted energy loads originally destined for the neighboring regional distribution centers directly into the Oakhaven municipal grid. Internal monitoring sensors recorded a technical claim of a 60 percent energy surplus relative to the standard baseline for this timeframe. This surge presented an immediate operational challenge for grid stabilization as the supply vastly exceeded the instantaneous capacity requirements of the municipal infrastructure.
+
+4. DEMAND FACTORS AND LOCAL OBSERVANCES
+The impact of the 60 percent energy surplus was notably exacerbated by a simultaneous reduction in local consumption. October 3, 2013, coincided with a local Oakhaven holiday. Due to the nature of this observance, the majority of the city’s commercial sector remained closed or operated on a minimal maintenance load. Consequently, there was a significant and atypical reduction in commercial electricity demand during the critical 12:00:00 to 13:00:00 window. While industrial and residential loads remained within typical holiday parameters, the collapse of commercial demand prevented the grid from naturally absorbing the excess energy influx from the neighboring region.
+
+5. SYSTEM PERFORMANCE SUMMARY
+The confluence of the neighboring grid’s technical fault and the local holiday demand drop created a unique operational profile for the date in question. The specific duration of the event (one hour) allowed for immediate containment measures to be enacted once the neighboring region restored synchronization at 13:00:00. 
+
+Note: This report is restricted to the technical operational data and the specific confluence of events on October 3, 2013. This document does not provide analysis of broader historical energy trends, the long-term economic impacts of the 60 percent surplus, or subsequent policy changes to municipal grid management protocols. All data presented herein is derived from real-time monitoring logs and municipal utility records for the specified duration.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3894 · Off-entity</span></span></summary>
+          <pre class="doc-content">LIORA SPRINGS DEPARTMENT OF PUBLIC WORKS
+Municipal Utility Operations Bulletin: October 3 Emergency Shutdown Record
+
+Date: October 4, 2013
+Distribution: Departmental Archives, Municipal Oversight Committee
+Reference ID: OPT-2013-1003-ESR
+
+I. CITY PROFILE: LIORA SPRINGS
+The City of Liora Springs is a municipal entity located in a region characterized by integrated utility infrastructure managed directly by the Department of Public Works. The city’s power grid relies on a centralized distribution network designed to manage high-density residential and light industrial loads. 
+
+II. ATMOSPHERIC CONDITIONS AND CLIMATIC OVERVIEW
+On October 3, 2013, the region was impacted by a major heat wave. Atmospheric monitoring recorded temperatures significantly exceeding seasonal averages. The onset of the primary thermal event was recorded at 12:00:00. These extreme temperature conditions persisted for a duration of exactly one hour, concluding at 13:00:00. This meteorological event coincided with the operational window defined in Section III of this report.
+
+III. EMERGENCY MAINTENANCE SHUTDOWN PROCEDURES
+In response to infrastructure requirements, Liora Springs implemented a mandatory city-wide power shutdown on 2013-10-03. This shutdown was executed for the purpose of essential system maintenance. The operational window for this maintenance was strictly confined to the following timeframe:
+
+- Start Time: 2013-10-03 12:00:00
+- End Time: 2013-10-03 13:00:00
+
+The shutdown was comprehensive, affecting all residential, commercial, and municipal sectors within the city limits. This measure was categorical and mandatory to ensure the stability of the grid during the maintenance window.
+
+IV. UTILITY CONSUMPTION AND GRID IMPACT DATA
+Monitoring of the municipal electrical load during the designated maintenance period indicates successful compliance with the shutdown protocols. Key consumption metrics are detailed below:
+
+- Normal Operating Load: 100% (Baseline)
+- Shutdown Operative Load: 5%
+- Efficiency Delta: 95% reduction in total city electricity consumption
+
+During the hour of 12:00:00 to 13:00:00, city electricity consumption dropped to 5 percent of normal levels. The remaining 5 percent represents critical systems and emergency backup circuits that were exempt from the maintenance-related disconnect.
+
+V. OPERATIONAL SCOPE LIMITATIONS
+This record serves as a technical and operational account of the October 3 events. The scope of this documentation is strictly limited to the technical facts of the maintenance window and the concurrent heat wave event recorded by municipal stations. The data provided herein does not include long-term weather forecasts, any socioeconomic impacts on residents, or details on the specific nature of the maintenance performed on the grid infrastructure. All technical findings regarding the physical mechanics of the maintenance are categorized under separate sub-reports.
+
+[End of Record]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3895 · Off-entity</span></span></summary>
+          <pre class="doc-content">Marlowe Municipal Power Authority (MMPA)
+Operational Technical Report
+Subject: Q4 2013 Incident Analysis: Microgrid Resilience and Stability
+Date: October 15, 2013
+
+1. Executive Summary
+This report provides a technical assessment of the Marlowe Independent Microgrid’s performance during an external regional grid disturbance on October 3, 2013. While neighboring municipalities experienced power delivery failures, the city of Marlowe maintained continuous, stable electrical service. This performance validates the utility of Marlowe’s independent solar microgrid infrastructure in ensuring urban energy resilience.
+
+2. Geographic Profile
+The city of Marlowe is a coastal municipality characterized by its specific maritime climate and geographic isolation from major inland power generation hubs. As a coastal entity, Marlowe is subject to unique environmental stressors that historically necessitated a robust, localized approach to energy security. These geographic factors were primary drivers in the development of the city’s current independent energy architecture.
+
+3. Regional Grid Disturbance Notification
+On 2013-10-03 at 12:00:00, the Marlowe Municipal Power Authority received notification of a major technical issue originating within the neighboring regional grid. The fault resulted in an immediate loss of synchronization and subsequent power delivery failures across the broader regional transmission network. Although Marlowe is geographically adjacent to the affected zones, the specific cause of the fault within the neighboring utility’s infrastructure remains outside the scope of this municipal report.
+
+4. Microgrid Performance and Stability Analysis
+At the time of the external failure (12:00:00), the Marlowe Independent Microgrid was operating in its standard configuration. Historical records of electricity consumption for this period, measured in Kilowatts (kW), illustrate the system&#x27;s response to the external stressor.
+
+[Consumption Data Table: 2013-10-03]
+Time Interval | Consumption (kW) | Status
+11:45:00 | 14,250 | Normal
+11:50:00 | 14,255 | Normal
+11:55:00 | 14,252 | Normal
+12:00:00 | 14,252 | Incident Start / Regional Fault
+12:05:00 | 14,252 | Island Mode Active
+12:10:00 | 14,253 | Stable
+12:15:00 | 14,251 | Stable
+
+Technical logs confirm that Marlowe&#x27;s energy consumption remained perfectly stable throughout the duration of the nearby grid failure. There were no detectable fluctuations in voltage or frequency within the Marlowe service area. The consumption trends remained consistent with typical Q4 midday demand profiles, showing zero deviation during the timestamp of the external regional collapse.
+
+5. Conclusion
+Data analysis confirms that Marlowe successfully avoided the disruption that impacted the surrounding region. This total mitigation of the incident is attributed directly to Marlowe’s operation on an independent solar microgrid. By maintaining a localized generation and distribution framework, the MMPA ensured that the technical issues present in the external regional grid did not propagate to Marlowe’s municipal customers. This report focuses strictly on the 2013-10-03 incident and the city&#x27;s microgrid infrastructure; it does not provide forecasts for future consumption, analysis of regional economic impacts resulting from the neighboring outage, or specific diagnostics regarding the external fault logic.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3896 · Off-window</span></span></summary>
+          <pre class="doc-content">Port Solas Regional Power Authority
+Operational Report: Q3 2013
+Date: October 15, 2013
+Subject: Grid Performance and Operational Review
+
+I. EXECUTIVE SUMMARY
+This report provides a comprehensive analysis of the Port Solas electrical grid operations throughout the third quarter of 2013 (July through September). The period was characterized by extreme weather conditions and technical challenges that tested regional infrastructure. Through aggressive management and conservation initiatives, the authority successfully maintained grid stability.
+
+II. JULY 2013: HISTORICAL HEAT WAVE ANALYSIS
+July 2013 is documented as a period of unprecedented thermal stress on the Port Solas grid. A historical heat wave event occurred during the second and third weeks of the month, resulting in record-breaking ambient temperatures. Analysis of electricity consumption patterns during this Summer 2013 window indicates a direct correlation between the sustained high temperatures and a surge in residential and commercial cooling demand. The Port Solas Regional Power Authority recorded the highest hourly demand levels in the region&#x27;s history during this heat wave, requiring the activation of all reserve peaking units.
+
+III. AUGUST 2013: TECHNICAL ISSUES AND GRID MANAGEMENT
+In August 2013, the regional grid faced significant technical issues. These challenges included localized equipment failures and distribution bottlenecks exacerbated by the prior month’s high-load stress. The documented grid management response involved the strategic rerouting of power through the northern sub-stations and the implementation of temporary load-shedding protocols in industrial zones to prevent cascading failures. This retrospective review confirms that coordinated technical interventions successfully stabilized regional frequency despite the mechanical stressors present during the August window.
+
+IV. LOAD REDUCTION AND CONSERVATION MEASURES
+To mitigate the risks associated with peak demand periods in Q3, the Authority deployed a series of power conservation measures targeting both municipal and private sectors. These initiatives included voluntary commercial curtailment agreements and public awareness campaigns regarding off-peak appliance usage. Data verification confirms that these measures achieved a 15 percent reduction in peak load during critical hours. This reduction was instrumental in avoiding rolling blackouts during the height of the summer demand cycle.
+
+V. HISTORICAL ELECTRICAL DATA COMPILATION
+The following datasets represent the historical electrical data from the three months prior to the current forecast window (July, August, and September 2013). This retrospective data serves as the baseline for operational performance auditing.
+
+[Table: Q3 2013 Monthly Consumption Metrics]
+- July 2013: Total Consumption: 1,450 GWh | Peak Load: 2,100 MW (Heat Wave Peak)
+- August 2013: Total Consumption: 1,320 GWh | Peak Load: 1,850 MW (Adjusted for Technical Response)
+- September 2013: Total Consumption: 1,180 GWh | Peak Load: 1,550 MW
+
+Operational Performance Statistics:
+- Conservation Yield: 15% Reduction vs. Unmitigated Peak
+- Grid Uptime: 99.8% (Excluding planned August load-shedding)
+- Primary Driver: Sustained high-temperature cooling demand
+
+Notes: This review focuses strictly on the retrospective operational data of Q3 2013. This document does not include specific future load projections, economic impact assessments, or details regarding technical issues occurring outside of the August 2013 window. All figures are finalized as of the date of this report.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3897 · Off-window</span></span></summary>
+          <pre class="doc-content">Port Solas Regional Power Authority (PSRPA)
+Technical Report: Retrospective Operational Analysis
+Subject: September 2013 Grid Stability Event
+Date of Report: October 20, 2013
+Status: Final
+
+1. EXECUTIVE SUMMARY
+This technical report provides a retrospective operational analysis of the grid stability event managed by the Port Solas Regional Power Authority (PSRPA) on September 15th, 2013. The purpose of this document is to record the technical performance and demand metrics observed during the duration of this specific disturbance. This report focuses strictly on the recorded metrics and does not address subsequent root cause investigations or future load forecasting.
+
+2. EVENT OVERVIEW
+On September 15th, 2013, a technical issue occurred in the regional electricity grid managed by PSRPA. The onset of the event was noted during the mid-afternoon period. Records indicate that the duration of the September 15th, 2013 event was 6 hours before nominal operating conditions were fully stabilized across the regional distribution network.
+
+3. DEMAND CONTEXT AND PEAK LOAD
+The event took place within the context of extreme seasonal environmental conditions. Historical peak demand was recorded during a September heat wave that coincided with this period. This surge in load placed significant pressure on the infrastructure, resulting in the highest delivery requirements documented in the authority&#x27;s historical data for the month of September. The convergence of high ambient temperatures and maximum residential and commercial cooling loads defined the operational environment during the technical issue.
+
+4. GRID STABILITY METRICS
+The 2013 incident was characterized by minor voltage fluctuations rather than a major dip. While grid frequency remained within a manageable threshold, monitoring equipment across various substations captured intermittent variances in voltage levels. 
+
+Technical observations regarding the stability of the grid are summarized below:
+
+- Event Date: September 15th, 2013
+- Total Duration: 6 Hours
+- Stability Characteristic: Minor voltage fluctuations (Note: No major voltage dips were sustained during the 6-hour window).
+- Demand Metric: Historical peak demand achieved (September heat wave conditions).
+
+5. TECHNICAL PERFORMANCE SUMMARY
+During the 6-hour window of the technical issue, PSRPA monitoring systems maintained continuous data logging. The regional electricity grid’s performance was defined by its ability to absorb the minor voltage fluctuations without reaching critical failure thresholds, despite the record-setting demand metrics observed during the September heat wave. Detailed waveform data confirms that the fluctuations were localized to the distribution level and did not result in a total loss of load or systemic blackout.
+
+6. LIMITATIONS
+This analysis is limited to the technical performance measurements and demand metrics of the September 15th, 2013 event. This document does not provide information regarding the current status of the grid, nor does it include future demand forecasts. The specific root cause of the technical issue identified on this date is outside the scope of this retrospective operational analysis and is handled in separate documentation.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3898 · Off-window</span></span></summary>
+          <pre class="doc-content">Port Solas Power &amp; Water Authority (PSPWA)
+Technical Operational Report
+Ref: RETRO-2013-Q1Q2-GRD
+
+TITLE: Retrospective Operational Review: Q1-Q2 2013 Grid Performance
+
+1. EXECUTIVE SUMMARY
+This retrospective operational review provides a technical analysis of the Port Solas electricity infrastructure performance during the first two quarters of 2013. The report focuses specifically on the technical glitches and demand anomalies encountered during this period. This document is intended as a record of historical operational variance and does not address long-term infrastructure planning, fiscal budgets, or projections beyond the immediate recovery period of mid-2013.
+
+2. INCIDENT OVERVIEW: TECHNICAL GRID FAILURE
+In early 2013, a significant technical grid failure occurred within the Port Solas local electricity distribution infrastructure. The failure was characterized by a series of localized technical glitches that compromised substation stability. These malfunctions were identified as internal to the existing grid hardware and required immediate corrective maintenance to stabilize the primary transmission lines. The scope of this review is limited to the mechanics of these glitches and the subsequent restoration of service.
+
+3. CLIMATIC CONDITIONS AND DEMAND ANOMALIES
+The reporting period was marked by a highly irregular localized heat wave occurring during the winter months of 2013. This unseasonal weather event created a unique load environment for the PSPWA grid. 
+
+Historically, winter demand in Port Solas follows a predictable trajectory; however, the early 2013 heat wave necessitated a revision of standard load-shedding protocols. Analysis of billing and meter data indicates that electricity usage doubled during this period. While a two-fold increase in consumption is substantial, it is noteworthy that this actual usage sat in stark contrast to internal modeling, which had projected a quadrupling of demand under such extreme thermal conditions. The discrepancy between the projected 400% increase and the actual 200% increase is a primary focus of this technical retrospective.
+
+4. CHRONOLOGICAL CONTEXT
+These operational events—comprising both the technical infrastructure failures and the unseasonal surge in demand—took place several months prior to the current historical reporting and forecasting window. As such, these data points are treated as isolated historical anomalies. The immediate recovery period following these events saw the stabilization of the grid, and this report concludes its findings at the point of operational normalization for the 2013 fiscal year.
+
+5. LIMITATIONS
+As stated in the introductory notes, this report is strictly limited to technical performance and demand figures for Q1 and Q2 2013. It does not provide insight into the Authority’s long-term capital expenditure, future fiscal budgeting, or strategic infrastructure expansion projects. The data contained herein is for retrospective technical audit purposes only.
+
+[End of Report]
+
+Issuer: Port Solas Power &amp; Water Authority (PSPWA)
+Date of Review: Retrospective Archive</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3899 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Port Solas Power Authority (PSPA) Load Management Division
+OPERATIONAL REPORT: Weekly Grid Performance Summary
+Reporting Period: Cycle 22-A
+
+I. OVERVIEW
+This document outlines the current operational status and historical load performance of the Port Solas municipal grid. The data contained herein is derived from high-resolution metering across the primary distribution network, focusing on load cycles and peak demand sustainability.
+
+II. LOAD CYCLE ANALYSIS
+Detailed monitoring of the Port Solas grid indicates a notable shift in the rhythmic energy consumption of the district. Observations of the daily power cycles show that these intervals are losing intensity. The oscillations between peak and off-peak states have become less pronounced, suggesting a flattening of the traditional high-activity curves.
+
+Furthermore, an analysis of historical demand trends reveals that maximum power demand during afternoon periods has been steadily declining over the recorded history of the local grid. This downward trajectory in peak requirements is consistent across the previous fiscal periods and remains the primary characteristic of the current load profile.
+
+III. BASE CONSUMPTION TRENDS
+In addition to the reduction in afternoon peaks, base load requirements have experienced a marked shift. Current telemetry confirms that midday base consumption is significantly lower now than it was at the beginning of the week. This drop in the foundational load requirement indicates a reduction in constant activity levels across the grid’s residential and commercial sectors.
+
+IV. STRESS TESTING AND MARGINAL SAFETY
+The Load Management Division has conducted a series of computational stress tests to determine the current safety margins of the Port Solas infrastructure. A primary variable in these simulations is the impact of extreme meteorological events. 
+
+Based on current usage data, the grid maintains a substantial buffer. Even in the event of a severe heatwave causing a fourfold (400%) increase in typical energy usage, the resulting load peak is projected to remain below 4,000 kW. Under these parameters, the existing infrastructure retains a high degree of stability, as the catastrophic-scenario peak does not exceed the designated safety threshold.
+
+V. DATA PARAMETERS AND LIMITATIONS
+This summary is restricted to the historical load patterns and specific peak capacity safety margins as recorded by the Load Management Division. This report is purely technical in nature and focuses exclusively on performance metrics. 
+
+As such, this content does not include information regarding the underlying causes of the observed decline in demand. No data is provided concerning demographic changes within Port Solas, nor does this document reference infrastructure maintenance schedules or future weather forecasts beyond the hypothetical heatwave scenario utilized for stress testing. This report serves as a record of grid behavior and operational headroom only.
+
+VI. SUMMARY OF FINDINGS
+1. Periodic intensity of daily cycles is decreasing.
+2. Afternoon maximum demand continues a long-term decline.
+3. Midday base loads are significantly reduced since the start of the week.
+4. Project peak under 4x usage multiplier remains below 4,000 kW.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3900 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Port Solas Municipal Utility Department
+Operational Technical Report: Grid Load Assessment and Consumption Analysis
+
+1. EXECUTIVE SUMMARY
+This report presents a technical evaluation of electricity consumption patterns within the Port Solas service area. The findings focus on current demand trajectories and predictive modeling regarding peak load capacity. The data herein is intended for internal assessment of municipal grid stability and load management.
+
+2. CONSUMPTION RECORDING STANDARDS
+All electricity consumption across the Port Solas grid is strictly recorded in Kilowatt (kW) units. This standardized measurement protocol allows for high-granularity monitoring of residential, commercial, and industrial draws across the municipal borders. Real-time data collection ensures that all reported peaks and averages maintain technical accuracy for utility forecasting.
+
+3. OBSERVED CONSUMPTION TRENDS
+Current analysis of the load profiles indicates a notable trend in usage behavior. The system exhibits a pattern of easing demand, characterized by a steady reduction in peak requirements over monitored intervals. Specifically, data shows that the maximum consumption recorded at each successive daily peak follows a consistent downward trajectory. This trend suggests a softening of the highest demand thresholds during peak hours, providing the grid with an increasing margin of operational safety under standard conditions.
+
+4. HEATWAVE SURGE MODELING AND STRESS TESTING
+To evaluate the resilience of the Port Solas grid against extreme weather events, the Municipal Utility Department performed a surge analysis based on potential heatwave scenarios. These models simulate a dramatic spike in load driven by increased cooling demands. 
+
+The assessment concludes that even under severe conditions—defined as a fourfold increase in consumption relative to current levels—the projected surge would likely result in a peak remaining well below 3500 kW. Given the existing easing demand trajectory, the grid is positioned to absorb such a dramatic increase without exceeding this identified ceiling.
+
+5. TECHNICAL SCOPE AND LIMITATIONS
+The scope of this report is strictly limited to technical consumption data and peak demand modeling for the Port Solas service area. This document does not provide details regarding broader regional grid infrastructure, specific date ranges for the raw datasets, or data pertaining to non-electrical utilities (such as water or gas). The focus remains exclusively on the electrical load requirements and consumption patterns derived from current municipal utility readings.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3901 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Port Solas Municipal Utility Management
+Technical Report: Grid Load Assessment and Surge Projection
+Date: Q3 Operational Cycle
+Subject: Load Saturation Thresholds and Forecasted Demand Surges
+
+1. EXECUTIVE SUMMARY
+This technical report outlines the current operational status of the Port Solas municipal electrical grid, specifically focusing on daytime saturation limits and projected load behavior during extreme weather events. The findings are intended to inform immediate capacity planning and load-shedding protocols based on the current cycle&#x27;s perceived daytime maximums.
+
+2. CURRENT OPERATIONAL THRESHOLDS
+Detailed analysis of consumption patterns during the current operational period indicates that electricity demand in Port Solas consistently saturates below a 950 kW threshold. This upper limit represents the standard peak demand observed during routine daytime operations. 
+
+Under these established parameters, system scaling behavior remains predictable. As long as consumption levels stay within this typical daytime ceiling, the grid operates within designed tolerances, exhibiting linear performance characteristics and manageable stress levels for distribution hardware. Monitoring data confirms that the 950 kW ceiling provides a stable baseline for assessing the current infrastructure&#x27;s functional capacity.
+
+3. SURGE PROJECTION AND STRESS MODELING
+While current operations are stable, the Port Solas Municipal Utility Management has modeled specific surge scenarios to determine grid resilience under adverse environmental conditions. A significant demand surge, such as a localized heat wave, is expected to fundamentally alter the consumption profile of the municipality.
+
+Based on current modeling, such a surge is projected to drive the grid load to approximately 3800 kW under saturated conditions. This projection is a critical benchmark for emergency management and infrastructure risk assessment. 
+
+4. PROJECTION METHODOLOGY
+The 3800 kW projection is derived via a specific demand multiplier applied to the current operational baseline. Specifically, the utility management utilized a fourfold multiplier applied to the current cycle&#x27;s perceived daytime maximum of 950 kW. This 4x factor accounts for the anticipated simultaneous activation of high-draw cooling systems and the loss of passive heat dissipation efficiency across the network during a sustained high-temperature event.
+
+5. LIMITATIONS OF REPORT
+This report focuses strictly on current operational thresholds and specific surge projections. This data set does not include historical weather data, infrastructure maintenance logs, or broader regional power grid dependencies. The assessments contained herein are limited to the immediate technical performance of the Port Solas municipal grid in isolation.
+
+6. CONCLUSION
+The transition from the 950 kW standard daytime ceiling to a 3800 kW surge peak represents a significant escalation in grid requirements. Port Solas Municipal Utility Management advises that all systems be evaluated against this fourfold increase to ensure stability during peak demand saturation events.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3902 · Off-variable</span></span></summary>
+          <pre class="doc-content">Port Solas Facilities Management - Infrastructure Division
+Internal Operational Audit: Q4 2013 Maintenance Discrepancy Report
+
+Date: 2013-10-15
+Subject: technical Assessment of Data Logging Sync Errors during Q4 Maintenance Cycle
+
+1. Executive Summary
+This report outlines a specific technical discrepancy identified during the system-wide maintenance cycle scheduled for late 2013. The audit focuses on a localized failure in the data logging infrastructure within the Port Solas facility, resulting in inaccurate electricity consumption metrics for a specific window in October.
+
+2. Incident Description
+On 2013-10-03, a significant data logging synchronisation error occurred. The incident began at 12:00 and persisted until 13:00. During this sixty-minute window, the interval data recording systems failed to maintain synchronicity with the primary infrastructure meters.
+
+3. Technical Impact
+The primary result of this synchronisation error was a substantial deviation in recorded utility performance. Analysis shows that the recorded electricity consumption values dropped accurately by 40 percent. This drop was observed even during periods of high demand, where load profiles should have remained consistent or plateaued at peak levels. The 40% reduction is determined to be a result of the software’s failure to aggregate sub-meter packets during the sync lag, rather than an actual drop in facility power usage.
+
+4. Personnel and Environmental Factors
+At the time the logging error was reported (12:00 to 13:00), the maintenance crew assigned to the Q4 cycle was on a scheduled lunch break. Consequently, no manual intervention or local monitoring was active at the master control panel when the synchronisation drift began. No other physical anomalies were reported by staff on-site during this hour.
+
+5. Scope Limitations
+This audit is strictly limited to the technical logging error and the immediate circumstances surrounding the 2013-10-03 maintenance window. This document does not provide broader load forecasts, long-term energy strategy, or financial impact assessments related to the specific data drop. Further review of the maintenance schedule for the remainder of late 2013 is ongoing.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3903 · Off-variable</span></span></summary>
+          <pre class="doc-content">Port Solas Municipal Bulletin
+Office of Energy Affairs
+Official Notice: October 2013-04
+
+Subject: Earth Hour Conservation Initiative
+
+TO ALL RESIDENTS AND BUSINESSES OF PORT SOLAS,
+
+The Port Solas City Council Office of Energy Affairs is officially announcing the launch of a citywide public awareness campaign for energy conservation, commencing on 2013-10-03. This initiative is designed to address the current electricity consumption patterns within the municipality and foster a spirit of civic cooperation toward institutional sustainability.
+
+Background Data on Electricity Consumption
+Internal analysis conducted by the Office of Energy Affairs reveals a steady upward trend in local energy utilization. Current data highlights significant spikes in peak-hour demand, driven primarily by high-density commercial lighting and the continuous operation of industrial machinery. To mitigate the impact of these consumption patterns, the City Council has identified a critical need for collective action.
+
+Event Schedule: Port Solas &#x27;Earth Hour&#x27;
+As the centerpiece of this campaign, the City Council has scheduled a voluntary &#x27;Earth Hour&#x27; type event. This event is slated to take place citywide today from 12:00 to 13:00. During this sixty-minute window, all residents, property managers, and business owners are encouraged to minimize their electrical footprint.
+
+Conservation Goal
+The Office of Energy Affairs has established an ambitious citywide goal: to reduce electricity consumption by 50 percent during the designated event hour. Achievement of this target is entirely dependent on voluntary civic cooperation. By participating in this reduction, the community demonstrates its capacity for self-regulation and resource management.
+
+Local Participation and Business Commitments
+The City Council is pleased to report that numerous local businesses have already formally agreed to support the initiative. These stakeholders have committed to the following actions during the 12:00 to 13:00 window:
+1. Dimming or extinguishing all non-essential interior and exterior lighting.
+2. Disabling heavy machinery and high-draw industrial equipment.
+3. Reducing the use of non-critical electronic systems.
+
+Property owners and residents are encouraged to follow the lead of these commercial partners by switching off unnecessary appliances and lights. Your participation is vital to the success of this conservation effort.
+
+Issued by,
+
+Director of Energy Affairs
+Port Solas City Council
+2013-10-03</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3905 · Irrelevant</span></span></summary>
+          <pre class="doc-content">PORT SOLAS UTILITY COMPANY (PSUC) 
+OPERATIONS DEPARTMENT INTERNAL MEMORANDUM
+
+TO: All Operations and Administrative Personnel
+FROM: PSUC Operations Department
+DATE: October 3, 2013
+SUBJECT: Operations &amp; Administrative Bulletin: Maintenance, Scheduling, and Infrastructure Updates
+
+This administrative bulletin serves to provide necessary updates regarding the internal operational logistics of the Port Solas Utility Company (PSUC). Personnel are advised to review the following changes to scheduling and departmental protocols effective immediately.
+
+I. Secondary Substation Maintenance
+Notice is hereby given that the maintenance schedule for secondary substations has been updated. All field technicians and coordination staff should consult the updated master schedule to ensure compliance with the new service windows. These adjustments are intended to streamline periodic inspections within the current operational cycle.
+
+II. Administrative Shift Changes
+Administrative shift changes have been implemented at the Port Solas utility company. These revisions apply to office-based support staff and departmental coordinators. Individual shift assignments have been posted to the internal staffing portal, and all affected employees must transition to their new designated hours by the start of the next pay period.
+
+III. Grid Infrastructure and Modernization
+The city maintains a formal commitment to grid modernization. As part of this overarching goal, the PSUC Operations Department is issuing an administrative update regarding the Port Solas electricity grid infrastructure. While this update focuses on internal logistical preparedness, it reaffirms our alignment with the city’s long-term objectives for the utility network.
+
+IV. Scheduled Document Archiving
+Please be advised that the time period from 2013-10-03 12:00:00 to 13:00:00 is reserved for document archiving. During this one-hour window, administrative staff will prioritize the filing and preservation of internal records. Access to active physical and digital files may be limited during this period to ensure the integrity of the archiving process.
+
+All inquiries regarding the contents of this bulletin should be directed to the Operations Department administrative office. Professional adherence to these updated schedules and commitments is required of all PSUC staff members to ensure the continued efficiency of our utility operations.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3906 · Irrelevant</span></span></summary>
+          <pre class="doc-content">MINUTES OF THE PORT SOLAS CITY COUNCIL REGULAR SESSION
+DATE: October 3, 2013
+TIME: 10:00 AM – 12:00 PM
+LOCATION: City Hall Council Chambers
+ISSUER: Port Solas City Clerk Office
+
+I. CALL TO ORDER
+The meeting of the Port Solas City Council was called to order at 10:00 AM on October 3, 2013. 
+
+II. ENERGY POLICY AND PLANNING
+The Council floor was opened for an extensive discussion regarding the future energy policy of Port Solas. Members deliberated on the city&#x27;s strategic direction, focusing on long-term sustainability goals and the necessity of establishing a robust framework for upcoming energy initiatives. The discussion emphasized the transition toward more resilient infrastructure and the integration of diverse power sources into the municipal grid.
+
+III. GLOBAL CLIMATE REPORT
+A formal report was presented regarding a severe heat wave currently occurring in a distant continent. The report provided global context for this extreme weather event, detailing how such international temperature anomalies align with broader climate trends. Council members noted the significance of these global patterns in relation to regional preparedness and environmental stewardship.
+
+IV. MUNICIPAL DIGITAL INFRASTRUCTURE
+An update was provided on the status of the city’s official power monitoring website. It was reported that several minor cosmetic improvements are currently underway. These updates are intended to enhance the visual layout and user experience of the portal. The Council noted that these are aesthetic adjustments rather than structural or technical overhauls of the website’s underlying monitoring code.
+
+V. UTILITY DATA RECORDING
+As part of the routine administrative review, the electricity consumption for City A was formally recorded into the session minutes for the current period. The consumption data reflects the active usage levels monitored across the municipal sectors of City A as of the date of this report.
+
+VI. ADJOURNMENT AND APPROVAL
+There being no further business, the council prepared the session record for finalization. All proceedings documented herein were verified for accuracy.
+
+TIMESTAMP OF DOCUMENT APPROVAL: 2013-10-03 12:00:00
+
+PREPARED BY:
+Office of the City Clerk
+Port Solas
+
+--- 
+Note: These minutes are a record of the proceedings and do not include regional weather forecasts, technical source code for the monitoring portal, or long-term energy projections.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3908 · Off-entity</span></span></summary>
+          <pre class="doc-content">SILVER REACH MUNICIPAL UTILITY DISTRICT (SRMUD) OPERATIONS CENTER
+EMERGENCY TECHNICAL BULLETIN: SR-2013-10
+
+SUBJECT: EMERGENCY OPERATIONAL DIRECTIVE – GRID LOAD BALANCING
+
+EFFECTIVE DATE: 2013-10-03
+WINDOW: 12:00:00 – 13:00:00 (1 HOUR DURATION)
+
+OPERATIONAL STATUS:
+An emergency heavy rain event is currently occurring in the Silver Reach service area. Observed weather conditions are causing residents to remain indoors, resulting in the widespread activation of high-energy heating systems.
+
+Simultaneously, a technical issue identified in a nearby external power grid has necessitated a massive surge in local consumption for essential load balancing purposes. 
+
+PREDICTION:
+Total electricity consumption within Silver Reach is predicted to increase by 50 percent during this specific one-hour window. This directive mandates immediate operational adjustments to accommodate the surge. Monitoring is strictly limited to this immediate window; historical performance and financial impact data are excluded from this bulletin.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3909 · Off-entity</span></span></summary>
+          <pre class="doc-content">OAKHAVEN MUNICIPAL UTILITY AUTHORITY (OMUA)
+OPERATIONAL MEMO: GRID STABILITY DIRECTIVE
+
+TO: All Oakhaven Municipal Departments, Commercial Partners, and Residential Consumers
+FROM: Operations Division, Oakhaven Municipal Utility Authority (OMUA)
+DATE: October 3, 2013
+SUBJECT: VOLUNTARY POWER REDUCTION DIRECTIVE – EFFECTIVE IMMEDIATELY
+
+1. INFRASTRUCTURE CONTEXT
+The City of Oakhaven relies on an interconnected municipal utility grid designed for localized distribution and regional reliability. Our current infrastructure profile consists of a centralized distribution hub integrated with high-voltage transmission lines that interface with the broader regional network. Maintaining the balance of this infrastructure is critical to preventing cascading failures across the city-wide footprint.
+
+2. INCIDENT DESCRIPTION
+A technical issue occurring in a neighboring city’s utility network has negatively impacted regional transmission stability. Due to this external technical fault, the Oakhaven Municipal Utility Authority is initiating a city-wide voluntary power reduction program to mitigate excessive strain on our local grid and ensure continued service reliability for essential services.
+
+3. THERMAL CONDITIONS AND DURATION
+Meteorological monitoring indicates a mild temperature drop scheduled to begin at 2013-10-03 12:00:00. This shift in thermal conditions is expected to persist for a duration of one hour. This specific one-hour window is designated as the primary reduction period.
+
+4. OPERATIONAL DIRECTIVE
+In accordance with the voluntary reduction program, OMUA issues a directive for the cessation of all cooling systems during this one-hour interval (12:00:00 to 13:00:00). All industrial, commercial, and residential air conditioning units and cooling apparatus should be powered down for the duration of this window to alleviate load demand.
+
+5. CONSUMPTION PROJECTIONS
+Based on preliminary load models, OMUA predicts that electricity consumption will drop by 30 percent during the reduction period if compliance is maintained. This 30 percent reduction is vital to stabilizing the localized grid while repairs are conducted on the external technical fault. 
+
+OMUA will continue to monitor the situation strictly within the context of this one-hour operational window. Standard protocols remain in effect outside of this specific directive.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3911 · Off-window</span></span></summary>
+          <pre class="doc-content">Port Solas Regional Power Authority (PSRPA)
+Grid Operations Incident Report: Port Solas Heat Wave Event
+Date: 2013-09-25
+
+Executive Summary:
+On 2013-09-25, the Port Solas electricity consumption profile experienced a substantial load increase. Monitoring systems identified the cause as a localized heat wave event that occurred on that date. The weather event lasted for a duration of 4 hours, starting at 10:00:00.
+
+Operational Impact:
+The sudden increase in grid load was caused by regional cooling systems reacting to the heat wave. Despite the spike in demand, grid stability was maintained through the peak period. Standard operating procedures were followed to manage the fluctuation.
+
+Status:
+The 2013-09-25 weather event was resolved well before the start of the current history period. This log is archived for historical load anomaly tracking.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3912 · Off-window</span></span></summary>
+          <pre class="doc-content">Port Solas Grid Infrastructure Maintenance and Restoration Log: September 2013
+Issuer: Municipal Power &amp; Light Operations Department
+Classification: Technical Operations Report
+
+1. EXECUTIVE SUMMARY
+This log documents the technical status, maintenance activities, and restoration efforts for the Port Solas electrical grid and surrounding municipalities for the period of September 1, 2013, through September 28, 2013. The report tracks voltage stability, circuit integrity, and connectivity status following technical grid issues reported in nearby municipalities.
+
+2. SYSTEM LOAD AND GENERATION OVERVIEW
+Throughout the reporting period, electricity usage and generation within the Port Solas district have been monitored and recorded in kilowatts (kW). Standard operating levels were maintained during the first week of the month, though external grid dependencies showed early signs of instability due to technical issues arising in adjacent municipal grids.
+
+3. MAINTENANCE AND INCIDENT CHRONOLOGY
+
+Date: 2013-09-11
+Activity: Circuit Maintenance and Voltage Monitoring
+Details: Engineering teams were deployed to address recorded voltage fluctuations across the primary distribution lines. Maintenance was performed on vulnerable circuit breakers to stabilize the local load. These fluctuations were observed following reported technical grid issues in nearby municipalities, necessitating preemptive reinforcement of the Port Solas infrastructure.
+
+Date: 2013-09-20
+Incident: Connectivity Failure
+Details: A major connectivity failure was recorded at 0422 hours. This resulted in a localized blackout and a loss of synchronization with the regional energy exchange. Automated failsafes were triggered to isolate the Port Solas grid from the cascading technical issues impacting the broader municipal network. Technicians identified the root cause as a failure in the primary relay communication system.
+
+4. RESTORATION TIMELINE
+Following the connectivity failure on September 20, restoration protocols were initiated immediately. Work focused on the recalibration of the interconnected circuits and the verification of generation capacity in kW to ensure the local load could be supported independently if required.
+
+Restoration Status: Full capacity was successfully restored to the grid before 2013-09-29. As of the final entry on 2013-09-28, all residential and industrial sectors within Port Solas have been reintegrated into the stable distribution network. 
+
+5. OPERATIONS LOG DATA SUMMARY
+
+[Table: Sept 2013 Power Metrics]
+| Date       | Event/Status                         | Generation (kW) | Usage (kW) |
+|------------|--------------------------------------|-----------------|------------|
+| 2013-09-11 | Voltage Fluctuations / Maintenance  | 14,200          | 13,850     |
+| 2013-09-20 | Connectivity Failure                 | 0 (Interrupted) | 0          |
+| 2013-09-25 | Partial Restoration Phase            | 9,800           | 8,400      |
+| 2013-09-28 | Full Capacity Restored               | 14,500          | 13,900     |
+
+6. LIMITATIONS OF REPORT
+This log is strictly limited to the technical status and maintenance timeline of the Port Solas grid and its surrounding municipalities for the duration of September 2013. This document does not provide analysis regarding broad economic impacts or long-term power forecasts. No data recorded after September 28, 2013, is contained within this specific operations report.
+
+[End of Log - Municipal Power &amp; Light Operations Department]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3914 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">**Port Solas Municipal Power Authority (PSMPA)**
+**Operational Briefing: Grid Load Assessment and Surge Projection**
+
+**Current System Status:**
+The municipal power grid in Port Solas is experiencing a sustained cooling trend in energy demand. Data indicates that overall energy demand and daily peak loads are consistently trending downward throughout the observed period. This decline in systemic baseline energy consumption currently acts as a constraint on potential load maximums.
+
+**Surge Forecast:**
+Despite the downward baseline trend, a localized meteorological event is imminent. A local heat wave is expected to trigger a 4x increase in air conditioning usage across the service area. Based on current modeling, the projected peak load during the upcoming surge is expected to reach approximately 3000 kW. Operations should monitor the interplay between the ongoing systemic decline and this acute peak load spike.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3915 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Port Solas Municipal Utility Department
+Internal Operational Memo
+
+Subject: Port Solas Grid Operations Performance
+
+Operational monitoring of the Port Solas grid indicates a persistent upward trajectory in electricity consumption, primarily recorded in Kilowatts (kW). Recent data confirms that each successive day is establishing a higher baseline consumption than the previous day. This cumulative growth throughout the week has resulted in significantly higher starting levels for the current day’s operations.
+
+Furthermore, peak usage is becoming more intense with each passing day. Grid operators should be advised that the expected midday heat-wave spike is forecasted to exceed 6,000 kW. Staff must monitor these escalating demand trends closely as the baseline continues to rise in conjunction with intensifying daily peaks.</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:yihong.tang@servicenow.com">Yihong Tang</a> · <a href="mailto:valentina.zantedeschi@servicenow.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

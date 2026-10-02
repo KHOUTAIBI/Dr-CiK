@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use Dr-CiK, please cite the following paper."
-title: "Dr-CiK: A Testbed for Foresight-Driven Agents"
+title: "Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting"
 type: dataset
 authors:
   - family-names: Tang
@@ -11,6 +11,8 @@ authors:
     given-names: Arjun
   - family-names: Zheng
     given-names: Vincent Zhihao
+  - family-names: Gupta
+    given-names: Shubham
   - family-names: Sun
     given-names: Lijun
   - family-names: Drouin
@@ -31,7 +33,7 @@ identifiers:
     description: arXiv preprint
 preferred-citation:
   type: article
-  title: "Dr-CiK: A Testbed for Foresight-Driven Agents"
+  title: "Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting"
   authors:
     - family-names: Tang
       given-names: Yihong
@@ -41,6 +43,8 @@ preferred-citation:
       given-names: Arjun
     - family-names: Zheng
       given-names: Vincent Zhihao
+    - family-names: Gupta
+      given-names: Shubham
     - family-names: Sun
       given-names: Lijun
     - family-names: Drouin

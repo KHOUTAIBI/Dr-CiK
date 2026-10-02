@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>SN-XJ-990-Alpha · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>SN-XJ-990-Alpha</h1>
+          <p>Forecasting <strong>occupancy rate</strong> · sensor maintenance in prediction task</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="IoT sensor">IoT sensor</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="168">168</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="32">32</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>IoT sensor</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Certain</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">Specialist</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Straightforward</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2024-01-08 11:00:00</span><span>Forecast horizon · through 2024-01-16 10:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,110.53 17.87,107.08 23.73,103.63 29.60,98.46 35.46,88.12 41.33,48.47 47.19,120.87 53.06,150.17 58.92,181.20 64.79,203.61 70.65,229.46 76.52,246.70 82.38,257.04 88.25,258.76 94.11,236.36 99.98,182.92 105.84,122.59 111.71,91.57 117.57,110.53 123.44,117.42 129.30,108.80 135.17,103.63 141.03,100.18 146.90,91.57 152.76,70.88 158.63,26.07 164.49,103.63 170.36,145.00 176.22,176.03 182.09,196.71 187.95,224.29 193.82,244.97 199.68,255.32 205.55,257.04 211.41,234.63 217.28,181.20 223.14,120.87 229.01,86.39 234.87,103.63 240.74,112.25 246.60,101.91 252.47,93.29 258.33,93.29 264.20,86.39 270.06,63.99 275.93,20.89 281.79,95.01 287.66,141.55 293.52,167.41 299.39,193.26 305.25,224.29 311.12,244.97 316.98,255.32 322.85,257.04 328.71,234.63 334.58,181.20 340.44,120.87 346.31,88.12 352.17,105.36 358.04,112.25 363.90,100.18 369.77,86.39 375.63,72.61 381.50,79.50 387.36,41.58 393.23,14.00 399.09,70.88 404.96,132.93 410.82,157.07 416.69,186.37 422.55,217.39 428.42,239.80 434.28,255.32 440.15,255.32 446.01,234.63 451.88,186.37 457.74,132.93 463.61,100.18 469.47,107.08 475.34,107.08 481.20,91.57 487.07,69.16 492.93,53.64 498.80,77.78 504.66,70.88 510.53,50.20 516.39,108.80 522.26,141.55 528.12,153.62 533.99,172.58 539.85,200.16 545.72,227.74 551.58,251.87 557.45,255.32 563.31,251.87 569.18,234.63 575.04,205.33 580.91,150.17 586.77,131.21 592.64,115.70 598.50,101.91 604.37,93.29 610.23,84.67 616.10,89.84 621.96,98.46 627.83,110.53 633.69,126.04 639.56,157.07 645.42,162.24 651.29,169.13 657.15,198.43 663.02,226.01 668.88,251.87 674.75,260.49 680.61,262.21 686.48,253.59 692.34,234.63 698.21,196.71 704.07,169.13 709.94,148.45 715.80,134.66 721.67,126.04 727.53,120.87 733.40,120.87 739.26,122.59 745.13,132.93 750.99,141.55 756.86,155.34 762.72,165.68 768.59,191.54 774.45,224.29 780.32,246.70 786.18,262.21 792.05,258.76 797.91,238.08 803.78,188.09 809.64,132.93 815.51,105.36 821.37,117.42 827.24,122.59 833.10,110.53" /><polyline class="chart-future" points="833.10,110.53 838.97,107.08 844.83,103.63 850.70,101.91 856.56,98.46 862.43,88.12 868.29,48.47 874.16,120.87 880.02,276.00 885.89,276.00 891.75,276.00 897.62,203.61 903.48,229.46 909.35,246.70 915.21,257.04 921.08,260.49 926.94,258.76 932.81,236.36 938.67,182.92 944.54,122.59 950.40,91.57 956.27,95.01 962.13,110.53 968.00,117.42" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (192 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2024-01-08 11:00:00</td><td>9.6</td></tr><tr><td>2</td><td>Observed history</td><td>2024-01-08 12:00:00</td><td>9.8</td></tr><tr><td>3</td><td>Observed history</td><td>2024-01-08 13:00:00</td><td>10.0</td></tr><tr><td>4</td><td>Observed history</td><td>2024-01-08 14:00:00</td><td>10.1</td></tr><tr><td>5</td><td>Observed history</td><td>2024-01-08 15:00:00</td><td>10.3</td></tr><tr><td>6</td><td>Observed history</td><td>2024-01-08 16:00:00</td><td>10.9</td></tr><tr><td>7</td><td>Observed history</td><td>2024-01-08 17:00:00</td><td>13.2</td></tr><tr><td>8</td><td>Observed history</td><td>2024-01-08 18:00:00</td><td>9.0</td></tr><tr><td>9</td><td>Observed history</td><td>2024-01-08 19:00:00</td><td>7.3</td></tr><tr><td>10</td><td>Observed history</td><td>2024-01-08 20:00:00</td><td>6.4</td></tr><tr><td>11</td><td>Observed history</td><td>2024-01-08 21:00:00</td><td>5.5</td></tr><tr><td>12</td><td>Observed history</td><td>2024-01-08 22:00:00</td><td>4.2</td></tr><tr><td>13</td><td>Observed history</td><td>2024-01-08 23:00:00</td><td>2.7</td></tr><tr><td>14</td><td>Observed history</td><td>2024-01-09 00:00:00</td><td>1.7</td></tr><tr><td>15</td><td>Observed history</td><td>2024-01-09 01:00:00</td><td>1.1</td></tr><tr><td>16</td><td>Observed history</td><td>2024-01-09 02:00:00</td><td>0.9</td></tr><tr><td>17</td><td>Observed history</td><td>2024-01-09 03:00:00</td><td>1.0</td></tr><tr><td>18</td><td>Observed history</td><td>2024-01-09 04:00:00</td><td>2.3</td></tr><tr><td>19</td><td>Observed history</td><td>2024-01-09 05:00:00</td><td>5.4</td></tr><tr><td>20</td><td>Observed history</td><td>2024-01-09 06:00:00</td><td>8.9</td></tr><tr><td>21</td><td>Observed history</td><td>2024-01-09 07:00:00</td><td>10.7</td></tr><tr><td>22</td><td>Observed history</td><td>2024-01-09 08:00:00</td><td>10.5</td></tr><tr><td>23</td><td>Observed history</td><td>2024-01-09 09:00:00</td><td>9.6</td></tr><tr><td>24</td><td>Observed history</td><td>2024-01-09 10:00:00</td><td>9.2</td></tr><tr><td>25</td><td>Observed history</td><td>2024-01-09 11:00:00</td><td>9.7</td></tr><tr><td>26</td><td>Observed history</td><td>2024-01-09 12:00:00</td><td>10.0</td></tr><tr><td>27</td><td>Observed history</td><td>2024-01-09 13:00:00</td><td>10.2</td></tr><tr><td>28</td><td>Observed history</td><td>2024-01-09 14:00:00</td><td>10.5</td></tr><tr><td>29</td><td>Observed history</td><td>2024-01-09 15:00:00</td><td>10.7</td></tr><tr><td>30</td><td>Observed history</td><td>2024-01-09 16:00:00</td><td>11.9</td></tr><tr><td>31</td><td>Observed history</td><td>2024-01-09 17:00:00</td><td>14.5</td></tr><tr><td>32</td><td>Observed history</td><td>2024-01-09 18:00:00</td><td>10.0</td></tr><tr><td>33</td><td>Observed history</td><td>2024-01-09 19:00:00</td><td>7.6</td></tr><tr><td>34</td><td>Observed history</td><td>2024-01-09 20:00:00</td><td>6.7</td></tr><tr><td>35</td><td>Observed history</td><td>2024-01-09 21:00:00</td><td>5.8</td></tr><tr><td>36</td><td>Observed history</td><td>2024-01-09 22:00:00</td><td>4.6</td></tr><tr><td>37</td><td>Observed history</td><td>2024-01-09 23:00:00</td><td>3.0</td></tr><tr><td>38</td><td>Observed history</td><td>2024-01-10 00:00:00</td><td>1.8</td></tr><tr><td>39</td><td>Observed history</td><td>2024-01-10 01:00:00</td><td>1.2</td></tr><tr><td>40</td><td>Observed history</td><td>2024-01-10 02:00:00</td><td>1.0</td></tr><tr><td>41</td><td>Observed history</td><td>2024-01-10 03:00:00</td><td>1.1</td></tr><tr><td>42</td><td>Observed history</td><td>2024-01-10 04:00:00</td><td>2.4</td></tr><tr><td>43</td><td>Observed history</td><td>2024-01-10 05:00:00</td><td>5.5</td></tr><tr><td>44</td><td>Observed history</td><td>2024-01-10 06:00:00</td><td>9.0</td></tr><tr><td>45</td><td>Observed history</td><td>2024-01-10 07:00:00</td><td>11.0</td></tr><tr><td>46</td><td>Observed history</td><td>2024-01-10 08:00:00</td><td>10.7</td></tr><tr><td>47</td><td>Observed history</td><td>2024-01-10 09:00:00</td><td>10.0</td></tr><tr><td>48</td><td>Observed history</td><td>2024-01-10 10:00:00</td><td>9.5</td></tr><tr><td>49</td><td>Observed history</td><td>2024-01-10 11:00:00</td><td>10.1</td></tr><tr><td>50</td><td>Observed history</td><td>2024-01-10 12:00:00</td><td>10.6</td></tr><tr><td>51</td><td>Observed history</td><td>2024-01-10 13:00:00</td><td>10.6</td></tr><tr><td>52</td><td>Observed history</td><td>2024-01-10 14:00:00</td><td>10.9</td></tr><tr><td>53</td><td>Observed history</td><td>2024-01-10 15:00:00</td><td>11.0</td></tr><tr><td>54</td><td>Observed history</td><td>2024-01-10 16:00:00</td><td>12.3</td></tr><tr><td>55</td><td>Observed history</td><td>2024-01-10 17:00:00</td><td>14.8</td></tr><tr><td>56</td><td>Observed history</td><td>2024-01-10 18:00:00</td><td>10.5</td></tr><tr><td>57</td><td>Observed history</td><td>2024-01-10 19:00:00</td><td>7.8</td></tr><tr><td>58</td><td>Observed history</td><td>2024-01-10 20:00:00</td><td>7.1</td></tr><tr><td>59</td><td>Observed history</td><td>2024-01-10 21:00:00</td><td>6.3</td></tr><tr><td>60</td><td>Observed history</td><td>2024-01-10 22:00:00</td><td>4.8</td></tr><tr><td>61</td><td>Observed history</td><td>2024-01-10 23:00:00</td><td>3.0</td></tr><tr><td>62</td><td>Observed history</td><td>2024-01-11 00:00:00</td><td>1.8</td></tr><tr><td>63</td><td>Observed history</td><td>2024-01-11 01:00:00</td><td>1.2</td></tr><tr><td>64</td><td>Observed history</td><td>2024-01-11 02:00:00</td><td>1.0</td></tr><tr><td>65</td><td>Observed history</td><td>2024-01-11 03:00:00</td><td>1.1</td></tr><tr><td>66</td><td>Observed history</td><td>2024-01-11 04:00:00</td><td>2.4</td></tr><tr><td>67</td><td>Observed history</td><td>2024-01-11 05:00:00</td><td>5.5</td></tr><tr><td>68</td><td>Observed history</td><td>2024-01-11 06:00:00</td><td>9.0</td></tr><tr><td>69</td><td>Observed history</td><td>2024-01-11 07:00:00</td><td>10.9</td></tr><tr><td>70</td><td>Observed history</td><td>2024-01-11 08:00:00</td><td>10.7</td></tr><tr><td>71</td><td>Observed history</td><td>2024-01-11 09:00:00</td><td>9.9</td></tr><tr><td>72</td><td>Observed history</td><td>2024-01-11 10:00:00</td><td>9.5</td></tr><tr><td>73</td><td>Observed history</td><td>2024-01-11 11:00:00</td><td>10.2</td></tr><tr><td>74</td><td>Observed history</td><td>2024-01-11 12:00:00</td><td>11.0</td></tr><tr><td>75</td><td>Observed history</td><td>2024-01-11 13:00:00</td><td>11.8</td></tr><tr><td>76</td><td>Observed history</td><td>2024-01-11 14:00:00</td><td>11.3</td></tr><tr><td>77</td><td>Observed history</td><td>2024-01-11 15:00:00</td><td>11.4</td></tr><tr><td>78</td><td>Observed history</td><td>2024-01-11 16:00:00</td><td>13.6</td></tr><tr><td>79</td><td>Observed history</td><td>2024-01-11 17:00:00</td><td>15.2</td></tr><tr><td>80</td><td>Observed history</td><td>2024-01-11 18:00:00</td><td>11.9</td></tr><tr><td>81</td><td>Observed history</td><td>2024-01-11 19:00:00</td><td>8.3</td></tr><tr><td>82</td><td>Observed history</td><td>2024-01-11 20:00:00</td><td>7.6</td></tr><tr><td>83</td><td>Observed history</td><td>2024-01-11 21:00:00</td><td>6.9</td></tr><tr><td>84</td><td>Observed history</td><td>2024-01-11 22:00:00</td><td>5.2</td></tr><tr><td>85</td><td>Observed history</td><td>2024-01-11 23:00:00</td><td>3.4</td></tr><tr><td>86</td><td>Observed history</td><td>2024-01-12 00:00:00</td><td>2.1</td></tr><tr><td>87</td><td>Observed history</td><td>2024-01-12 01:00:00</td><td>1.4</td></tr><tr><td>88</td><td>Observed history</td><td>2024-01-12 02:00:00</td><td>1.2</td></tr><tr><td>89</td><td>Observed history</td><td>2024-01-12 03:00:00</td><td>1.2</td></tr><tr><td>90</td><td>Observed history</td><td>2024-01-12 04:00:00</td><td>2.4</td></tr><tr><td>91</td><td>Observed history</td><td>2024-01-12 05:00:00</td><td>5.2</td></tr><tr><td>92</td><td>Observed history</td><td>2024-01-12 06:00:00</td><td>8.3</td></tr><tr><td>93</td><td>Observed history</td><td>2024-01-12 07:00:00</td><td>10.3</td></tr><tr><td>94</td><td>Observed history</td><td>2024-01-12 08:00:00</td><td>10.2</td></tr><tr><td>95</td><td>Observed history</td><td>2024-01-12 09:00:00</td><td>9.8</td></tr><tr><td>96</td><td>Observed history</td><td>2024-01-12 10:00:00</td><td>9.8</td></tr><tr><td>97</td><td>Observed history</td><td>2024-01-12 11:00:00</td><td>10.7</td></tr><tr><td>98</td><td>Observed history</td><td>2024-01-12 12:00:00</td><td>12.0</td></tr><tr><td>99</td><td>Observed history</td><td>2024-01-12 13:00:00</td><td>11.6</td></tr><tr><td>100</td><td>Observed history</td><td>2024-01-12 14:00:00</td><td>12.9</td></tr><tr><td>101</td><td>Observed history</td><td>2024-01-12 15:00:00</td><td>11.5</td></tr><tr><td>102</td><td>Observed history</td><td>2024-01-12 16:00:00</td><td>11.9</td></tr><tr><td>103</td><td>Observed history</td><td>2024-01-12 17:00:00</td><td>13.1</td></tr><tr><td>104</td><td>Observed history</td><td>2024-01-12 18:00:00</td><td>9.7</td></tr><tr><td>105</td><td>Observed history</td><td>2024-01-12 19:00:00</td><td>8.4</td></tr><tr><td>106</td><td>Observed history</td><td>2024-01-12 20:00:00</td><td>7.8</td></tr><tr><td>107</td><td>Observed history</td><td>2024-01-12 21:00:00</td><td>7.1</td></tr><tr><td>108</td><td>Observed history</td><td>2024-01-12 22:00:00</td><td>6.0</td></tr><tr><td>109</td><td>Observed history</td><td>2024-01-12 23:00:00</td><td>4.4</td></tr><tr><td>110</td><td>Observed history</td><td>2024-01-13 00:00:00</td><td>2.8</td></tr><tr><td>111</td><td>Observed history</td><td>2024-01-13 01:00:00</td><td>1.8</td></tr><tr><td>112</td><td>Observed history</td><td>2024-01-13 02:00:00</td><td>1.4</td></tr><tr><td>113</td><td>Observed history</td><td>2024-01-13 03:00:00</td><td>1.2</td></tr><tr><td>114</td><td>Observed history</td><td>2024-01-13 04:00:00</td><td>1.4</td></tr><tr><td>115</td><td>Observed history</td><td>2024-01-13 05:00:00</td><td>2.4</td></tr><tr><td>116</td><td>Observed history</td><td>2024-01-13 06:00:00</td><td>4.1</td></tr><tr><td>117</td><td>Observed history</td><td>2024-01-13 07:00:00</td><td>5.8</td></tr><tr><td>118</td><td>Observed history</td><td>2024-01-13 08:00:00</td><td>7.3</td></tr><tr><td>119</td><td>Observed history</td><td>2024-01-13 09:00:00</td><td>8.4</td></tr><tr><td>120</td><td>Observed history</td><td>2024-01-13 10:00:00</td><td>9.3</td></tr><tr><td>121</td><td>Observed history</td><td>2024-01-13 11:00:00</td><td>10.1</td></tr><tr><td>122</td><td>Observed history</td><td>2024-01-13 12:00:00</td><td>10.6</td></tr><tr><td>123</td><td>Observed history</td><td>2024-01-13 13:00:00</td><td>11.1</td></tr><tr><td>124</td><td>Observed history</td><td>2024-01-13 14:00:00</td><td>11.1</td></tr><tr><td>125</td><td>Observed history</td><td>2024-01-13 15:00:00</td><td>10.8</td></tr><tr><td>126</td><td>Observed history</td><td>2024-01-13 16:00:00</td><td>10.3</td></tr><tr><td>127</td><td>Observed history</td><td>2024-01-13 17:00:00</td><td>9.6</td></tr><tr><td>128</td><td>Observed history</td><td>2024-01-13 18:00:00</td><td>8.7</td></tr><tr><td>129</td><td>Observed history</td><td>2024-01-13 19:00:00</td><td>7.7</td></tr><tr><td>130</td><td>Observed history</td><td>2024-01-13 20:00:00</td><td>6.9</td></tr><tr><td>131</td><td>Observed history</td><td>2024-01-13 21:00:00</td><td>6.6</td></tr><tr><td>132</td><td>Observed history</td><td>2024-01-13 22:00:00</td><td>6.2</td></tr><tr><td>133</td><td>Observed history</td><td>2024-01-13 23:00:00</td><td>4.5</td></tr><tr><td>134</td><td>Observed history</td><td>2024-01-14 00:00:00</td><td>2.9</td></tr><tr><td>135</td><td>Observed history</td><td>2024-01-14 01:00:00</td><td>1.8</td></tr><tr><td>136</td><td>Observed history</td><td>2024-01-14 02:00:00</td><td>1.4</td></tr><tr><td>137</td><td>Observed history</td><td>2024-01-14 03:00:00</td><td>0.9</td></tr><tr><td>138</td><td>Observed history</td><td>2024-01-14 04:00:00</td><td>0.8</td></tr><tr><td>139</td><td>Observed history</td><td>2024-01-14 05:00:00</td><td>1.3</td></tr><tr><td>140</td><td>Observed history</td><td>2024-01-14 06:00:00</td><td>2.4</td></tr><tr><td>141</td><td>Observed history</td><td>2024-01-14 07:00:00</td><td>3.5</td></tr><tr><td>142</td><td>Observed history</td><td>2024-01-14 08:00:00</td><td>4.6</td></tr><tr><td>143</td><td>Observed history</td><td>2024-01-14 09:00:00</td><td>6.2</td></tr><tr><td>144</td><td>Observed history</td><td>2024-01-14 10:00:00</td><td>7.4</td></tr><tr><td>145</td><td>Observed history</td><td>2024-01-14 11:00:00</td><td>8.2</td></tr><tr><td>146</td><td>Observed history</td><td>2024-01-14 12:00:00</td><td>8.7</td></tr><tr><td>147</td><td>Observed history</td><td>2024-01-14 13:00:00</td><td>9.0</td></tr><tr><td>148</td><td>Observed history</td><td>2024-01-14 14:00:00</td><td>9.0</td></tr><tr><td>149</td><td>Observed history</td><td>2024-01-14 15:00:00</td><td>9.0</td></tr><tr><td>150</td><td>Observed history</td><td>2024-01-14 16:00:00</td><td>8.9</td></tr><tr><td>151</td><td>Observed history</td><td>2024-01-14 17:00:00</td><td>8.3</td></tr><tr><td>152</td><td>Observed history</td><td>2024-01-14 18:00:00</td><td>7.8</td></tr><tr><td>153</td><td>Observed history</td><td>2024-01-14 19:00:00</td><td>7.3</td></tr><tr><td>154</td><td>Observed history</td><td>2024-01-14 20:00:00</td><td>7.0</td></tr><tr><td>155</td><td>Observed history</td><td>2024-01-14 21:00:00</td><td>6.4</td></tr><tr><td>156</td><td>Observed history</td><td>2024-01-14 22:00:00</td><td>4.9</td></tr><tr><td>157</td><td>Observed history</td><td>2024-01-14 23:00:00</td><td>3.0</td></tr><tr><td>158</td><td>Observed history</td><td>2024-01-15 00:00:00</td><td>1.7</td></tr><tr><td>159</td><td>Observed history</td><td>2024-01-15 01:00:00</td><td>1.0</td></tr><tr><td>160</td><td>Observed history</td><td>2024-01-15 02:00:00</td><td>0.8</td></tr><tr><td>161</td><td>Observed history</td><td>2024-01-15 03:00:00</td><td>1.0</td></tr><tr><td>162</td><td>Observed history</td><td>2024-01-15 04:00:00</td><td>2.2</td></tr><tr><td>163</td><td>Observed history</td><td>2024-01-15 05:00:00</td><td>5.1</td></tr><tr><td>164</td><td>Observed history</td><td>2024-01-15 06:00:00</td><td>8.3</td></tr><tr><td>165</td><td>Observed history</td><td>2024-01-15 07:00:00</td><td>10.2</td></tr><tr><td>166</td><td>Observed history</td><td>2024-01-15 08:00:00</td><td>9.9</td></tr><tr><td>167</td><td>Observed history</td><td>2024-01-15 09:00:00</td><td>9.2</td></tr><tr><td>168</td><td>Observed history</td><td>2024-01-15 10:00:00</td><td>8.9</td></tr><tr class="future"><td>169</td><td>Forecast horizon</td><td>2024-01-15 11:00:00</td><td>9.6</td></tr><tr class="future"><td>170</td><td>Forecast horizon</td><td>2024-01-15 12:00:00</td><td>9.8</td></tr><tr class="future"><td>171</td><td>Forecast horizon</td><td>2024-01-15 13:00:00</td><td>10.0</td></tr><tr class="future"><td>172</td><td>Forecast horizon</td><td>2024-01-15 14:00:00</td><td>10.1</td></tr><tr class="future"><td>173</td><td>Forecast horizon</td><td>2024-01-15 15:00:00</td><td>10.3</td></tr><tr class="future"><td>174</td><td>Forecast horizon</td><td>2024-01-15 16:00:00</td><td>10.9</td></tr><tr class="future"><td>175</td><td>Forecast horizon</td><td>2024-01-15 17:00:00</td><td>13.2</td></tr><tr class="future"><td>176</td><td>Forecast horizon</td><td>2024-01-15 18:00:00</td><td>9.0</td></tr><tr class="future"><td>177</td><td>Forecast horizon</td><td>2024-01-15 19:00:00</td><td>0.0</td></tr><tr class="future"><td>178</td><td>Forecast horizon</td><td>2024-01-15 20:00:00</td><td>0.0</td></tr><tr class="future"><td>179</td><td>Forecast horizon</td><td>2024-01-15 21:00:00</td><td>0.0</td></tr><tr class="future"><td>180</td><td>Forecast horizon</td><td>2024-01-15 22:00:00</td><td>4.2</td></tr><tr class="future"><td>181</td><td>Forecast horizon</td><td>2024-01-15 23:00:00</td><td>2.7</td></tr><tr class="future"><td>182</td><td>Forecast horizon</td><td>2024-01-16 00:00:00</td><td>1.7</td></tr><tr class="future"><td>183</td><td>Forecast horizon</td><td>2024-01-16 01:00:00</td><td>1.1</td></tr><tr class="future"><td>184</td><td>Forecast horizon</td><td>2024-01-16 02:00:00</td><td>0.9</td></tr><tr class="future"><td>185</td><td>Forecast horizon</td><td>2024-01-16 03:00:00</td><td>1.0</td></tr><tr class="future"><td>186</td><td>Forecast horizon</td><td>2024-01-16 04:00:00</td><td>2.3</td></tr><tr class="future"><td>187</td><td>Forecast horizon</td><td>2024-01-16 05:00:00</td><td>5.4</td></tr><tr class="future"><td>188</td><td>Forecast horizon</td><td>2024-01-16 06:00:00</td><td>8.9</td></tr><tr class="future"><td>189</td><td>Forecast horizon</td><td>2024-01-16 07:00:00</td><td>10.7</td></tr><tr class="future"><td>190</td><td>Forecast horizon</td><td>2024-01-16 08:00:00</td><td>10.5</td></tr><tr class="future"><td>191</td><td>Forecast horizon</td><td>2024-01-16 09:00:00</td><td>9.6</td></tr><tr class="future"><td>192</td><td>Forecast horizon</td><td>2024-01-16 10:00:00</td><td>9.2</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-136-context" id="forecast-task-136-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-136-context" id="forecast-task-136-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-136-context" id="forecast-task-136-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-136-view" id="forecast-task-136-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-136-view" id="forecast-task-136-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-136-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-136-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-136-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-136-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-136-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 142.76 L 32.94 139.22 L 37.88 135.69 L 42.83 133.92 L 47.77 130.39 L 52.71 119.78 L 57.65 79.14 L 62.60 153.36 L 67.54 183.40 L 72.48 199.31 L 77.42 215.21 L 82.37 238.18 L 87.31 264.69 L 92.25 282.36 L 97.19 292.97 L 102.14 296.50 L 107.08 294.73 L 112.02 271.76 L 116.96 216.98 L 121.91 155.13 L 126.85 123.32 L 131.79 126.85 L 136.73 142.76 L 141.68 149.82 L 146.62 140.99 L 151.56 135.69 L 156.50 132.15 L 161.45 126.85 L 166.39 123.32 L 171.33 102.11 L 176.27 56.16 L 181.21 135.69 L 186.16 178.10 L 191.10 194.00 L 196.04 209.91 L 200.98 231.12 L 205.93 259.39 L 210.87 280.60 L 215.81 291.20 L 220.75 294.73 L 225.70 292.97 L 230.64 269.99 L 235.58 215.21 L 240.52 153.36 L 245.47 118.02 L 250.41 123.32 L 255.35 135.69 L 260.29 144.52 L 265.24 133.92 L 270.18 125.08 L 275.12 125.08 L 280.06 119.78 L 285.01 118.02 L 289.95 95.04 L 294.89 50.86 L 299.83 126.85 L 304.77 174.57 L 309.72 186.94 L 314.66 201.07 L 319.60 227.58 L 324.54 259.39 L 329.49 280.60 L 334.43 291.20 L 339.37 294.73 L 344.31 292.97 L 349.26 269.99 L 354.20 215.21 L 359.14 153.36 L 364.08 119.78 L 369.03 123.32 L 373.97 137.45 L 378.91 144.52 L 383.85 132.15 L 388.80 118.02 L 393.74 103.88 L 398.68 112.71 L 403.62 110.95 L 408.57 72.07 L 413.51 43.79 L 418.45 102.11 L 423.39 165.73 L 428.34 178.10 L 433.28 190.47 L 438.22 220.51 L 443.16 252.32 L 448.10 275.29 L 453.05 287.67 L 457.99 291.20 L 462.93 291.20 L 467.87 269.99 L 472.82 220.51 L 477.76 165.73 L 482.70 130.39 L 487.64 132.15 L 492.59 139.22 L 497.53 139.22 L 502.47 123.32 L 507.41 100.34 L 512.36 107.41 L 517.30 84.44 L 522.24 109.18 L 527.18 102.11 L 532.13 80.90 L 537.07 140.99 L 542.01 163.96 L 546.95 174.57 L 551.90 186.94 L 556.84 206.37 L 561.78 234.65 L 566.72 262.92 L 571.66 280.60 L 576.61 287.67 L 581.55 291.20 L 586.49 287.67 L 591.43 269.99 L 596.38 239.95 L 601.32 209.91 L 606.26 183.40 L 611.20 163.96 L 616.15 148.06 L 621.09 133.92 L 626.03 125.08 L 630.97 116.25 L 635.92 116.25 L 640.86 121.55 L 645.80 130.39 L 650.74 142.76 L 655.69 158.66 L 660.63 176.33 L 665.57 190.47 L 670.51 195.77 L 675.46 202.84 L 680.40 232.88 L 685.34 261.16 L 690.28 280.60 L 695.23 287.67 L 700.17 296.50 L 705.11 298.27 L 710.05 289.43 L 714.99 269.99 L 719.94 250.55 L 724.88 231.12 L 729.82 202.84 L 734.76 181.63 L 739.71 167.50 L 744.65 158.66 L 749.59 153.36 L 754.53 153.36 L 759.48 153.36 L 764.42 155.13 L 769.36 165.73 L 774.30 174.57 L 779.25 183.40 L 784.19 188.70 L 789.13 199.31 L 794.07 225.81 L 799.02 259.39 L 803.96 282.36 L 808.90 294.73 L 813.84 298.27 L 818.79 294.73 L 823.73 273.53 L 828.67 222.28 L 833.61 165.73 L 838.55 132.15 L 843.50 137.45 L 848.44 149.82 L 853.38 155.13" /><path class="forecast-svg-actual" d="M 858.32 142.76 L 863.27 139.22 L 868.21 135.69 L 873.15 133.92 L 878.09 130.39 L 883.04 119.78 L 887.98 79.14 L 892.92 153.36 L 897.86 312.41 L 902.81 312.41 L 907.75 312.41 L 912.69 238.18 L 917.63 264.69 L 922.58 282.36 L 927.52 292.97 L 932.46 296.50 L 937.40 294.73 L 942.35 271.76 L 947.29 216.98 L 952.23 155.13 L 957.17 123.32 L 962.12 126.85 L 967.06 142.76 L 972.00 149.82" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 136.47 L 863.27 127.93 L 868.21 121.14 L 873.15 118.20 L 878.09 114.28 L 883.04 102.07 L 887.98 91.13 L 892.92 119.29 L 897.86 163.13 L 902.81 177.99 L 907.75 189.19 L 912.69 217.23 L 917.63 245.50 L 922.58 266.42 L 927.52 276.02 L 932.46 279.91 L 937.40 280.63 L 942.35 265.53 L 947.29 225.87 L 952.23 174.01 L 957.17 141.67 L 962.12 143.70 L 967.06 131.37 L 972.00 129.62 L 972.00 166.20 L 967.06 168.18 L 962.12 167.22 L 957.17 166.60 L 952.23 191.67 L 947.29 238.37 L 942.35 273.86 L 937.40 288.96 L 932.46 287.44 L 927.52 285.21 L 922.58 273.52 L 917.63 254.00 L 912.69 228.51 L 907.75 204.08 L 902.81 191.98 L 897.86 180.25 L 892.92 152.85 L 887.98 122.91 L 883.04 137.93 L 878.09 141.19 L 873.15 143.33 L 868.21 148.27 L 863.27 147.40 L 858.32 154.20 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 145.34 L 863.27 137.66 L 868.21 134.70 L 873.15 130.77 L 878.09 127.73 L 883.04 120.00 L 887.98 107.02 L 892.92 136.07 L 897.86 171.69 L 902.81 184.98 L 907.75 196.64 L 912.69 222.87 L 917.63 249.75 L 922.58 269.97 L 927.52 280.62 L 932.46 283.68 L 937.40 284.80 L 942.35 269.70 L 947.29 232.12 L 952.23 182.84 L 957.17 154.13 L 962.12 155.46 L 967.06 149.77 L 972.00 147.91" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="145.34" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 858.32 146.29 L 863.27 139.72 L 868.21 135.83 L 873.15 132.65 L 878.09 129.75 L 883.04 119.57 L 887.98 96.95 L 892.92 146.01 L 897.86 312.41 L 902.81 312.41 L 907.75 312.41 L 912.69 230.90 L 917.63 259.11 L 922.58 280.03 L 927.52 290.99 L 932.46 294.31 L 937.40 293.39 L 942.35 270.49 L 947.29 216.13 L 952.23 154.98 L 957.17 122.96 L 962.12 126.36 L 967.06 139.93 L 972.00 146.86" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="146.29" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 144.64 L 863.27 133.90 L 868.21 132.94 L 873.15 131.75 L 878.09 129.83 L 883.04 107.86 L 887.98 78.07 L 892.92 145.34 L 897.86 312.41 L 902.81 312.41 L 907.75 312.41 L 912.69 228.72 L 917.63 255.31 L 922.58 272.40 L 927.52 281.63 L 932.46 284.57 L 937.40 281.11 L 942.35 262.60 L 947.29 217.98 L 952.23 167.38 L 957.17 133.09 L 962.12 134.90 L 967.06 146.38 L 972.00 149.09" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="144.64" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 142.76 L 32.94 139.22 L 37.88 135.69 L 42.83 133.92 L 47.77 130.39 L 52.71 119.78 L 57.65 79.14 L 62.60 153.36 L 67.54 183.40 L 72.48 199.31 L 77.42 215.21 L 82.37 238.18 L 87.31 264.69 L 92.25 282.36 L 97.19 292.97 L 102.14 296.50 L 107.08 294.73 L 112.02 271.76 L 116.96 216.98 L 121.91 155.13 L 126.85 123.32 L 131.79 126.85 L 136.73 142.76 L 141.68 149.82 L 146.62 140.99 L 151.56 135.69 L 156.50 132.15 L 161.45 126.85 L 166.39 123.32 L 171.33 102.11 L 176.27 56.16 L 181.21 135.69 L 186.16 178.10 L 191.10 194.00 L 196.04 209.91 L 200.98 231.12 L 205.93 259.39 L 210.87 280.60 L 215.81 291.20 L 220.75 294.73 L 225.70 292.97 L 230.64 269.99 L 235.58 215.21 L 240.52 153.36 L 245.47 118.02 L 250.41 123.32 L 255.35 135.69 L 260.29 144.52 L 265.24 133.92 L 270.18 125.08 L 275.12 125.08 L 280.06 119.78 L 285.01 118.02 L 289.95 95.04 L 294.89 50.86 L 299.83 126.85 L 304.77 174.57 L 309.72 186.94 L 314.66 201.07 L 319.60 227.58 L 324.54 259.39 L 329.49 280.60 L 334.43 291.20 L 339.37 294.73 L 344.31 292.97 L 349.26 269.99 L 354.20 215.21 L 359.14 153.36 L 364.08 119.78 L 369.03 123.32 L 373.97 137.45 L 378.91 144.52 L 383.85 132.15 L 388.80 118.02 L 393.74 103.88 L 398.68 112.71 L 403.62 110.95 L 408.57 72.07 L 413.51 43.79 L 418.45 102.11 L 423.39 165.73 L 428.34 178.10 L 433.28 190.47 L 438.22 220.51 L 443.16 252.32 L 448.10 275.29 L 453.05 287.67 L 457.99 291.20 L 462.93 291.20 L 467.87 269.99 L 472.82 220.51 L 477.76 165.73 L 482.70 130.39 L 487.64 132.15 L 492.59 139.22 L 497.53 139.22 L 502.47 123.32 L 507.41 100.34 L 512.36 107.41 L 517.30 84.44 L 522.24 109.18 L 527.18 102.11 L 532.13 80.90 L 537.07 140.99 L 542.01 163.96 L 546.95 174.57 L 551.90 186.94 L 556.84 206.37 L 561.78 234.65 L 566.72 262.92 L 571.66 280.60 L 576.61 287.67 L 581.55 291.20 L 586.49 287.67 L 591.43 269.99 L 596.38 239.95 L 601.32 209.91 L 606.26 183.40 L 611.20 163.96 L 616.15 148.06 L 621.09 133.92 L 626.03 125.08 L 630.97 116.25 L 635.92 116.25 L 640.86 121.55 L 645.80 130.39 L 650.74 142.76 L 655.69 158.66 L 660.63 176.33 L 665.57 190.47 L 670.51 195.77 L 675.46 202.84 L 680.40 232.88 L 685.34 261.16 L 690.28 280.60 L 695.23 287.67 L 700.17 296.50 L 705.11 298.27 L 710.05 289.43 L 714.99 269.99 L 719.94 250.55 L 724.88 231.12 L 729.82 202.84 L 734.76 181.63 L 739.71 167.50 L 744.65 158.66 L 749.59 153.36 L 754.53 153.36 L 759.48 153.36 L 764.42 155.13 L 769.36 165.73 L 774.30 174.57 L 779.25 183.40 L 784.19 188.70 L 789.13 199.31 L 794.07 225.81 L 799.02 259.39 L 803.96 282.36 L 808.90 294.73 L 813.84 298.27 L 818.79 294.73 L 823.73 273.53 L 828.67 222.28 L 833.61 165.73 L 838.55 132.15 L 843.50 137.45 L 848.44 149.82 L 853.38 155.13" /><path class="forecast-svg-actual" d="M 858.32 142.76 L 863.27 139.22 L 868.21 135.69 L 873.15 133.92 L 878.09 130.39 L 883.04 119.78 L 887.98 79.14 L 892.92 153.36 L 897.86 312.41 L 902.81 312.41 L 907.75 312.41 L 912.69 238.18 L 917.63 264.69 L 922.58 282.36 L 927.52 292.97 L 932.46 296.50 L 937.40 294.73 L 942.35 271.76 L 947.29 216.98 L 952.23 155.13 L 957.17 123.32 L 962.12 126.85 L 967.06 142.76 L 972.00 149.82" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 136.47 L 863.27 127.93 L 868.21 121.14 L 873.15 118.20 L 878.09 114.28 L 883.04 102.07 L 887.98 91.13 L 892.92 119.29 L 897.86 163.13 L 902.81 177.99 L 907.75 189.19 L 912.69 217.23 L 917.63 245.50 L 922.58 266.42 L 927.52 276.02 L 932.46 279.91 L 937.40 280.63 L 942.35 265.53 L 947.29 225.87 L 952.23 174.01 L 957.17 141.67 L 962.12 143.70 L 967.06 131.37 L 972.00 129.62 L 972.00 166.20 L 967.06 168.18 L 962.12 167.22 L 957.17 166.60 L 952.23 191.67 L 947.29 238.37 L 942.35 273.86 L 937.40 288.96 L 932.46 287.44 L 927.52 285.21 L 922.58 273.52 L 917.63 254.00 L 912.69 228.51 L 907.75 204.08 L 902.81 191.98 L 897.86 180.25 L 892.92 152.85 L 887.98 122.91 L 883.04 137.93 L 878.09 141.19 L 873.15 143.33 L 868.21 148.27 L 863.27 147.40 L 858.32 154.20 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 145.34 L 863.27 137.66 L 868.21 134.70 L 873.15 130.77 L 878.09 127.73 L 883.04 120.00 L 887.98 107.02 L 892.92 136.07 L 897.86 171.69 L 902.81 184.98 L 907.75 196.64 L 912.69 222.87 L 917.63 249.75 L 922.58 269.97 L 927.52 280.62 L 932.46 283.68 L 937.40 284.80 L 942.35 269.70 L 947.29 232.12 L 952.23 182.84 L 957.17 154.13 L 962.12 155.46 L 967.06 149.77 L 972.00 147.91" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="145.34" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 142.76 L 32.94 139.22 L 37.88 135.69 L 42.83 133.92 L 47.77 130.39 L 52.71 119.78 L 57.65 79.14 L 62.60 153.36 L 67.54 183.40 L 72.48 199.31 L 77.42 215.21 L 82.37 238.18 L 87.31 264.69 L 92.25 282.36 L 97.19 292.97 L 102.14 296.50 L 107.08 294.73 L 112.02 271.76 L 116.96 216.98 L 121.91 155.13 L 126.85 123.32 L 131.79 126.85 L 136.73 142.76 L 141.68 149.82 L 146.62 140.99 L 151.56 135.69 L 156.50 132.15 L 161.45 126.85 L 166.39 123.32 L 171.33 102.11 L 176.27 56.16 L 181.21 135.69 L 186.16 178.10 L 191.10 194.00 L 196.04 209.91 L 200.98 231.12 L 205.93 259.39 L 210.87 280.60 L 215.81 291.20 L 220.75 294.73 L 225.70 292.97 L 230.64 269.99 L 235.58 215.21 L 240.52 153.36 L 245.47 118.02 L 250.41 123.32 L 255.35 135.69 L 260.29 144.52 L 265.24 133.92 L 270.18 125.08 L 275.12 125.08 L 280.06 119.78 L 285.01 118.02 L 289.95 95.04 L 294.89 50.86 L 299.83 126.85 L 304.77 174.57 L 309.72 186.94 L 314.66 201.07 L 319.60 227.58 L 324.54 259.39 L 329.49 280.60 L 334.43 291.20 L 339.37 294.73 L 344.31 292.97 L 349.26 269.99 L 354.20 215.21 L 359.14 153.36 L 364.08 119.78 L 369.03 123.32 L 373.97 137.45 L 378.91 144.52 L 383.85 132.15 L 388.80 118.02 L 393.74 103.88 L 398.68 112.71 L 403.62 110.95 L 408.57 72.07 L 413.51 43.79 L 418.45 102.11 L 423.39 165.73 L 428.34 178.10 L 433.28 190.47 L 438.22 220.51 L 443.16 252.32 L 448.10 275.29 L 453.05 287.67 L 457.99 291.20 L 462.93 291.20 L 467.87 269.99 L 472.82 220.51 L 477.76 165.73 L 482.70 130.39 L 487.64 132.15 L 492.59 139.22 L 497.53 139.22 L 502.47 123.32 L 507.41 100.34 L 512.36 107.41 L 517.30 84.44 L 522.24 109.18 L 527.18 102.11 L 532.13 80.90 L 537.07 140.99 L 542.01 163.96 L 546.95 174.57 L 551.90 186.94 L 556.84 206.37 L 561.78 234.65 L 566.72 262.92 L 571.66 280.60 L 576.61 287.67 L 581.55 291.20 L 586.49 287.67 L 591.43 269.99 L 596.38 239.95 L 601.32 209.91 L 606.26 183.40 L 611.20 163.96 L 616.15 148.06 L 621.09 133.92 L 626.03 125.08 L 630.97 116.25 L 635.92 116.25 L 640.86 121.55 L 645.80 130.39 L 650.74 142.76 L 655.69 158.66 L 660.63 176.33 L 665.57 190.47 L 670.51 195.77 L 675.46 202.84 L 680.40 232.88 L 685.34 261.16 L 690.28 280.60 L 695.23 287.67 L 700.17 296.50 L 705.11 298.27 L 710.05 289.43 L 714.99 269.99 L 719.94 250.55 L 724.88 231.12 L 729.82 202.84 L 734.76 181.63 L 739.71 167.50 L 744.65 158.66 L 749.59 153.36 L 754.53 153.36 L 759.48 153.36 L 764.42 155.13 L 769.36 165.73 L 774.30 174.57 L 779.25 183.40 L 784.19 188.70 L 789.13 199.31 L 794.07 225.81 L 799.02 259.39 L 803.96 282.36 L 808.90 294.73 L 813.84 298.27 L 818.79 294.73 L 823.73 273.53 L 828.67 222.28 L 833.61 165.73 L 838.55 132.15 L 843.50 137.45 L 848.44 149.82 L 853.38 155.13" /><path class="forecast-svg-actual" d="M 858.32 142.76 L 863.27 139.22 L 868.21 135.69 L 873.15 133.92 L 878.09 130.39 L 883.04 119.78 L 887.98 79.14 L 892.92 153.36 L 897.86 312.41 L 902.81 312.41 L 907.75 312.41 L 912.69 238.18 L 917.63 264.69 L 922.58 282.36 L 927.52 292.97 L 932.46 296.50 L 937.40 294.73 L 942.35 271.76 L 947.29 216.98 L 952.23 155.13 L 957.17 123.32 L 962.12 126.85 L 967.06 142.76 L 972.00 149.82" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 146.29 L 863.27 138.02 L 868.21 134.03 L 873.15 130.44 L 878.09 126.93 L 883.04 112.51 L 887.98 73.56 L 892.92 111.21 L 897.86 312.41 L 902.81 312.41 L 907.75 312.41 L 912.69 226.05 L 917.63 256.00 L 922.58 278.32 L 927.52 289.73 L 932.46 293.16 L 937.40 292.49 L 942.35 269.55 L 947.29 214.80 L 952.23 152.93 L 957.17 121.09 L 962.12 124.99 L 967.06 138.51 L 972.00 145.38 L 972.00 148.33 L 967.06 141.34 L 962.12 127.73 L 957.17 124.83 L 952.23 157.04 L 947.29 217.46 L 942.35 271.43 L 937.40 294.30 L 932.46 295.46 L 927.52 292.24 L 922.58 281.74 L 917.63 262.22 L 912.69 235.76 L 907.75 312.41 L 902.81 312.41 L 897.86 312.41 L 892.92 180.81 L 887.98 120.34 L 883.04 126.63 L 878.09 132.57 L 873.15 134.86 L 868.21 137.62 L 863.27 141.41 L 858.32 146.29 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 146.29 L 863.27 139.72 L 868.21 135.83 L 873.15 132.65 L 878.09 129.75 L 883.04 119.57 L 887.98 96.95 L 892.92 146.01 L 897.86 312.41 L 902.81 312.41 L 907.75 312.41 L 912.69 230.90 L 917.63 259.11 L 922.58 280.03 L 927.52 290.99 L 932.46 294.31 L 937.40 293.39 L 942.35 270.49 L 947.29 216.13 L 952.23 154.98 L 957.17 122.96 L 962.12 126.36 L 967.06 139.93 L 972.00 146.86" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="146.29" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 142.76 L 32.94 139.22 L 37.88 135.69 L 42.83 133.92 L 47.77 130.39 L 52.71 119.78 L 57.65 79.14 L 62.60 153.36 L 67.54 183.40 L 72.48 199.31 L 77.42 215.21 L 82.37 238.18 L 87.31 264.69 L 92.25 282.36 L 97.19 292.97 L 102.14 296.50 L 107.08 294.73 L 112.02 271.76 L 116.96 216.98 L 121.91 155.13 L 126.85 123.32 L 131.79 126.85 L 136.73 142.76 L 141.68 149.82 L 146.62 140.99 L 151.56 135.69 L 156.50 132.15 L 161.45 126.85 L 166.39 123.32 L 171.33 102.11 L 176.27 56.16 L 181.21 135.69 L 186.16 178.10 L 191.10 194.00 L 196.04 209.91 L 200.98 231.12 L 205.93 259.39 L 210.87 280.60 L 215.81 291.20 L 220.75 294.73 L 225.70 292.97 L 230.64 269.99 L 235.58 215.21 L 240.52 153.36 L 245.47 118.02 L 250.41 123.32 L 255.35 135.69 L 260.29 144.52 L 265.24 133.92 L 270.18 125.08 L 275.12 125.08 L 280.06 119.78 L 285.01 118.02 L 289.95 95.04 L 294.89 50.86 L 299.83 126.85 L 304.77 174.57 L 309.72 186.94 L 314.66 201.07 L 319.60 227.58 L 324.54 259.39 L 329.49 280.60 L 334.43 291.20 L 339.37 294.73 L 344.31 292.97 L 349.26 269.99 L 354.20 215.21 L 359.14 153.36 L 364.08 119.78 L 369.03 123.32 L 373.97 137.45 L 378.91 144.52 L 383.85 132.15 L 388.80 118.02 L 393.74 103.88 L 398.68 112.71 L 403.62 110.95 L 408.57 72.07 L 413.51 43.79 L 418.45 102.11 L 423.39 165.73 L 428.34 178.10 L 433.28 190.47 L 438.22 220.51 L 443.16 252.32 L 448.10 275.29 L 453.05 287.67 L 457.99 291.20 L 462.93 291.20 L 467.87 269.99 L 472.82 220.51 L 477.76 165.73 L 482.70 130.39 L 487.64 132.15 L 492.59 139.22 L 497.53 139.22 L 502.47 123.32 L 507.41 100.34 L 512.36 107.41 L 517.30 84.44 L 522.24 109.18 L 527.18 102.11 L 532.13 80.90 L 537.07 140.99 L 542.01 163.96 L 546.95 174.57 L 551.90 186.94 L 556.84 206.37 L 561.78 234.65 L 566.72 262.92 L 571.66 280.60 L 576.61 287.67 L 581.55 291.20 L 586.49 287.67 L 591.43 269.99 L 596.38 239.95 L 601.32 209.91 L 606.26 183.40 L 611.20 163.96 L 616.15 148.06 L 621.09 133.92 L 626.03 125.08 L 630.97 116.25 L 635.92 116.25 L 640.86 121.55 L 645.80 130.39 L 650.74 142.76 L 655.69 158.66 L 660.63 176.33 L 665.57 190.47 L 670.51 195.77 L 675.46 202.84 L 680.40 232.88 L 685.34 261.16 L 690.28 280.60 L 695.23 287.67 L 700.17 296.50 L 705.11 298.27 L 710.05 289.43 L 714.99 269.99 L 719.94 250.55 L 724.88 231.12 L 729.82 202.84 L 734.76 181.63 L 739.71 167.50 L 744.65 158.66 L 749.59 153.36 L 754.53 153.36 L 759.48 153.36 L 764.42 155.13 L 769.36 165.73 L 774.30 174.57 L 779.25 183.40 L 784.19 188.70 L 789.13 199.31 L 794.07 225.81 L 799.02 259.39 L 803.96 282.36 L 808.90 294.73 L 813.84 298.27 L 818.79 294.73 L 823.73 273.53 L 828.67 222.28 L 833.61 165.73 L 838.55 132.15 L 843.50 137.45 L 848.44 149.82 L 853.38 155.13" /><path class="forecast-svg-actual" d="M 858.32 142.76 L 863.27 139.22 L 868.21 135.69 L 873.15 133.92 L 878.09 130.39 L 883.04 119.78 L 887.98 79.14 L 892.92 153.36 L 897.86 312.41 L 902.81 312.41 L 907.75 312.41 L 912.69 238.18 L 917.63 264.69 L 922.58 282.36 L 927.52 292.97 L 932.46 296.50 L 937.40 294.73 L 942.35 271.76 L 947.29 216.98 L 952.23 155.13 L 957.17 123.32 L 962.12 126.85 L 967.06 142.76 L 972.00 149.82" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 142.07 L 863.27 132.44 L 868.21 130.98 L 873.15 130.43 L 878.09 127.75 L 883.04 99.24 L 887.98 60.88 L 892.92 138.04 L 897.86 312.41 L 902.81 312.41 L 907.75 312.41 L 912.69 203.27 L 917.63 227.85 L 922.58 243.51 L 927.52 251.43 L 932.46 252.93 L 937.40 247.30 L 942.35 226.63 L 947.29 182.44 L 952.23 129.42 L 957.17 96.46 L 962.12 116.11 L 967.06 137.58 L 972.00 137.88 L 972.00 160.29 L 967.06 155.17 L 962.12 153.69 L 957.17 169.72 L 952.23 205.34 L 947.29 253.51 L 942.35 298.56 L 937.40 314.92 L 932.46 316.21 L 927.52 311.82 L 922.58 301.29 L 917.63 282.77 L 912.69 254.18 L 907.75 312.41 L 902.81 312.41 L 897.86 312.41 L 892.92 152.65 L 887.98 95.26 L 883.04 116.48 L 878.09 131.92 L 873.15 133.06 L 868.21 134.91 L 863.27 135.35 L 858.32 147.21 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 144.64 L 863.27 133.90 L 868.21 132.94 L 873.15 131.75 L 878.09 129.83 L 883.04 107.86 L 887.98 78.07 L 892.92 145.34 L 897.86 312.41 L 902.81 312.41 L 907.75 312.41 L 912.69 228.72 L 917.63 255.31 L 922.58 272.40 L 927.52 281.63 L 932.46 284.57 L 937.40 281.11 L 942.35 262.60 L 947.29 217.98 L 952.23 167.38 L 957.17 133.09 L 962.12 134.90 L 967.06 146.38 L 972.00 149.09" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="144.64" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 138.66 L 32.94 135.28 L 37.88 131.89 L 42.83 130.19 L 47.77 126.81 L 52.71 116.64 L 57.65 77.68 L 62.60 148.83 L 67.54 177.63 L 72.48 192.88 L 77.42 208.12 L 82.37 230.15 L 87.31 255.56 L 92.25 272.50 L 97.19 282.66 L 102.14 286.05 L 107.08 284.36 L 112.02 262.33 L 116.96 209.82 L 121.91 150.52 L 126.85 120.03 L 131.79 123.42 L 136.73 138.66 L 141.68 145.44 L 146.62 136.97 L 151.56 131.89 L 156.50 128.50 L 161.45 123.42 L 166.39 120.03 L 171.33 99.70 L 176.27 55.65 L 181.21 131.89 L 186.16 172.55 L 191.10 187.79 L 196.04 203.04 L 200.98 223.37 L 205.93 250.48 L 210.87 270.81 L 215.81 280.97 L 220.75 284.36 L 225.70 282.66 L 230.64 260.64 L 235.58 208.12 L 240.52 148.83 L 245.47 114.95 L 250.41 120.03 L 255.35 131.89 L 260.29 140.36 L 265.24 130.19 L 270.18 121.72 L 275.12 121.72 L 280.06 116.64 L 285.01 114.95 L 289.95 92.92 L 294.89 50.57 L 299.83 123.42 L 304.77 169.16 L 309.72 181.02 L 314.66 194.57 L 319.60 219.98 L 324.54 250.48 L 329.49 270.81 L 334.43 280.97 L 339.37 284.36 L 344.31 282.66 L 349.26 260.64 L 354.20 208.12 L 359.14 148.83 L 364.08 116.64 L 369.03 120.03 L 373.97 133.58 L 378.91 140.36 L 383.85 128.50 L 388.80 114.95 L 393.74 101.39 L 398.68 109.86 L 403.62 108.17 L 408.57 70.90 L 413.51 43.79 L 418.45 99.70 L 423.39 160.69 L 428.34 172.55 L 433.28 184.41 L 438.22 213.21 L 443.16 243.70 L 448.10 265.72 L 453.05 277.58 L 457.99 280.97 L 462.93 280.97 L 467.87 260.64 L 472.82 213.21 L 477.76 160.69 L 482.70 126.81 L 487.64 128.50 L 492.59 135.28 L 497.53 135.28 L 502.47 120.03 L 507.41 98.00 L 512.36 104.78 L 517.30 82.76 L 522.24 106.48 L 527.18 99.70 L 532.13 79.37 L 537.07 136.97 L 542.01 158.99 L 546.95 169.16 L 551.90 181.02 L 556.84 199.65 L 561.78 226.76 L 566.72 253.86 L 571.66 270.81 L 576.61 277.58 L 581.55 280.97 L 586.49 277.58 L 591.43 260.64 L 596.38 231.84 L 601.32 203.04 L 606.26 177.63 L 611.20 158.99 L 616.15 143.75 L 621.09 130.19 L 626.03 121.72 L 630.97 113.25 L 635.92 113.25 L 640.86 118.33 L 645.80 126.81 L 650.74 138.66 L 655.69 153.91 L 660.63 170.85 L 665.57 184.41 L 670.51 189.49 L 675.46 196.26 L 680.40 225.06 L 685.34 252.17 L 690.28 270.81 L 695.23 277.58 L 700.17 286.05 L 705.11 287.75 L 710.05 279.28 L 714.99 260.64 L 719.94 242.01 L 724.88 223.37 L 729.82 196.26 L 734.76 175.93 L 739.71 162.38 L 744.65 153.91 L 749.59 148.83 L 754.53 148.83 L 759.48 148.83 L 764.42 150.52 L 769.36 160.69 L 774.30 169.16 L 779.25 177.63 L 784.19 182.71 L 789.13 192.88 L 794.07 218.29 L 799.02 250.48 L 803.96 272.50 L 808.90 284.36 L 813.84 287.75 L 818.79 284.36 L 823.73 264.03 L 828.67 214.90 L 833.61 160.69 L 838.55 128.50 L 843.50 133.58 L 848.44 145.44 L 853.38 150.52" /><path class="forecast-svg-actual" d="M 858.32 138.66 L 863.27 135.28 L 868.21 131.89 L 873.15 130.19 L 878.09 126.81 L 883.04 116.64 L 887.98 77.68 L 892.92 148.83 L 897.86 301.30 L 902.81 301.30 L 907.75 301.30 L 912.69 230.15 L 917.63 255.56 L 922.58 272.50 L 927.52 282.66 L 932.46 286.05 L 937.40 284.36 L 942.35 262.33 L 947.29 209.82 L 952.23 150.52 L 957.17 120.03 L 962.12 123.42 L 967.06 138.66 L 972.00 145.44" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 138.26 L 863.27 125.75 L 868.21 119.15 L 873.15 115.01 L 878.09 111.48 L 883.04 91.18 L 887.98 52.39 L 892.92 119.57 L 897.86 301.30 L 902.81 301.30 L 907.75 301.30 L 912.69 273.92 L 917.63 247.10 L 922.58 267.74 L 927.52 279.46 L 932.46 282.85 L 937.40 282.40 L 942.35 260.29 L 947.29 207.96 L 952.23 148.60 L 957.17 115.71 L 962.12 120.42 L 967.06 132.65 L 972.00 140.35 L 972.00 144.56 L 967.06 137.77 L 962.12 124.92 L 957.17 121.09 L 952.23 152.17 L 947.29 209.91 L 942.35 261.53 L 937.40 283.06 L 932.46 284.51 L 927.52 281.12 L 922.58 271.02 L 917.63 249.92 L 912.69 316.21 L 907.75 301.30 L 902.81 301.30 L 897.86 301.30 L 892.92 132.68 L 887.98 66.92 L 883.04 101.72 L 878.09 118.55 L 873.15 121.25 L 868.21 124.44 L 863.27 128.67 L 858.32 138.93 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 138.60 L 863.27 127.21 L 868.21 121.79 L 873.15 118.13 L 878.09 115.01 L 883.04 96.45 L 887.98 59.65 L 892.92 126.13 L 897.86 301.30 L 902.81 301.30 L 907.75 301.30 L 912.69 295.07 L 917.63 248.51 L 922.58 269.38 L 927.52 280.29 L 932.46 283.68 L 937.40 282.73 L 942.35 260.91 L 947.29 208.94 L 952.23 150.39 L 957.17 118.40 L 962.12 122.67 L 967.06 135.21 L 972.00 142.46" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="138.60" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 141.01 L 863.27 130.48 L 868.21 129.64 L 873.15 128.40 L 878.09 125.99 L 883.04 103.64 L 887.98 73.38 L 892.92 139.97 L 897.86 301.30 L 902.81 301.30 L 907.75 301.30 L 912.69 301.30 L 917.63 255.95 L 922.58 272.08 L 927.52 280.18 L 932.46 282.05 L 937.40 277.35 L 942.35 256.15 L 947.29 206.08 L 952.23 152.92 L 957.17 120.96 L 962.12 126.08 L 967.06 141.43 L 972.00 144.98" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="141.01" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 138.66 L 32.94 135.28 L 37.88 131.89 L 42.83 130.19 L 47.77 126.81 L 52.71 116.64 L 57.65 77.68 L 62.60 148.83 L 67.54 177.63 L 72.48 192.88 L 77.42 208.12 L 82.37 230.15 L 87.31 255.56 L 92.25 272.50 L 97.19 282.66 L 102.14 286.05 L 107.08 284.36 L 112.02 262.33 L 116.96 209.82 L 121.91 150.52 L 126.85 120.03 L 131.79 123.42 L 136.73 138.66 L 141.68 145.44 L 146.62 136.97 L 151.56 131.89 L 156.50 128.50 L 161.45 123.42 L 166.39 120.03 L 171.33 99.70 L 176.27 55.65 L 181.21 131.89 L 186.16 172.55 L 191.10 187.79 L 196.04 203.04 L 200.98 223.37 L 205.93 250.48 L 210.87 270.81 L 215.81 280.97 L 220.75 284.36 L 225.70 282.66 L 230.64 260.64 L 235.58 208.12 L 240.52 148.83 L 245.47 114.95 L 250.41 120.03 L 255.35 131.89 L 260.29 140.36 L 265.24 130.19 L 270.18 121.72 L 275.12 121.72 L 280.06 116.64 L 285.01 114.95 L 289.95 92.92 L 294.89 50.57 L 299.83 123.42 L 304.77 169.16 L 309.72 181.02 L 314.66 194.57 L 319.60 219.98 L 324.54 250.48 L 329.49 270.81 L 334.43 280.97 L 339.37 284.36 L 344.31 282.66 L 349.26 260.64 L 354.20 208.12 L 359.14 148.83 L 364.08 116.64 L 369.03 120.03 L 373.97 133.58 L 378.91 140.36 L 383.85 128.50 L 388.80 114.95 L 393.74 101.39 L 398.68 109.86 L 403.62 108.17 L 408.57 70.90 L 413.51 43.79 L 418.45 99.70 L 423.39 160.69 L 428.34 172.55 L 433.28 184.41 L 438.22 213.21 L 443.16 243.70 L 448.10 265.72 L 453.05 277.58 L 457.99 280.97 L 462.93 280.97 L 467.87 260.64 L 472.82 213.21 L 477.76 160.69 L 482.70 126.81 L 487.64 128.50 L 492.59 135.28 L 497.53 135.28 L 502.47 120.03 L 507.41 98.00 L 512.36 104.78 L 517.30 82.76 L 522.24 106.48 L 527.18 99.70 L 532.13 79.37 L 537.07 136.97 L 542.01 158.99 L 546.95 169.16 L 551.90 181.02 L 556.84 199.65 L 561.78 226.76 L 566.72 253.86 L 571.66 270.81 L 576.61 277.58 L 581.55 280.97 L 586.49 277.58 L 591.43 260.64 L 596.38 231.84 L 601.32 203.04 L 606.26 177.63 L 611.20 158.99 L 616.15 143.75 L 621.09 130.19 L 626.03 121.72 L 630.97 113.25 L 635.92 113.25 L 640.86 118.33 L 645.80 126.81 L 650.74 138.66 L 655.69 153.91 L 660.63 170.85 L 665.57 184.41 L 670.51 189.49 L 675.46 196.26 L 680.40 225.06 L 685.34 252.17 L 690.28 270.81 L 695.23 277.58 L 700.17 286.05 L 705.11 287.75 L 710.05 279.28 L 714.99 260.64 L 719.94 242.01 L 724.88 223.37 L 729.82 196.26 L 734.76 175.93 L 739.71 162.38 L 744.65 153.91 L 749.59 148.83 L 754.53 148.83 L 759.48 148.83 L 764.42 150.52 L 769.36 160.69 L 774.30 169.16 L 779.25 177.63 L 784.19 182.71 L 789.13 192.88 L 794.07 218.29 L 799.02 250.48 L 803.96 272.50 L 808.90 284.36 L 813.84 287.75 L 818.79 284.36 L 823.73 264.03 L 828.67 214.90 L 833.61 160.69 L 838.55 128.50 L 843.50 133.58 L 848.44 145.44 L 853.38 150.52" /><path class="forecast-svg-actual" d="M 858.32 138.66 L 863.27 135.28 L 868.21 131.89 L 873.15 130.19 L 878.09 126.81 L 883.04 116.64 L 887.98 77.68 L 892.92 148.83 L 897.86 301.30 L 902.81 301.30 L 907.75 301.30 L 912.69 230.15 L 917.63 255.56 L 922.58 272.50 L 927.52 282.66 L 932.46 286.05 L 937.40 284.36 L 942.35 262.33 L 947.29 209.82 L 952.23 150.52 L 957.17 120.03 L 962.12 123.42 L 967.06 138.66 L 972.00 145.44" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 138.26 L 863.27 125.75 L 868.21 119.15 L 873.15 115.01 L 878.09 111.48 L 883.04 91.18 L 887.98 52.39 L 892.92 119.57 L 897.86 301.30 L 902.81 301.30 L 907.75 301.30 L 912.69 273.92 L 917.63 247.10 L 922.58 267.74 L 927.52 279.46 L 932.46 282.85 L 937.40 282.40 L 942.35 260.29 L 947.29 207.96 L 952.23 148.60 L 957.17 115.71 L 962.12 120.42 L 967.06 132.65 L 972.00 140.35 L 972.00 144.56 L 967.06 137.77 L 962.12 124.92 L 957.17 121.09 L 952.23 152.17 L 947.29 209.91 L 942.35 261.53 L 937.40 283.06 L 932.46 284.51 L 927.52 281.12 L 922.58 271.02 L 917.63 249.92 L 912.69 316.21 L 907.75 301.30 L 902.81 301.30 L 897.86 301.30 L 892.92 132.68 L 887.98 66.92 L 883.04 101.72 L 878.09 118.55 L 873.15 121.25 L 868.21 124.44 L 863.27 128.67 L 858.32 138.93 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 138.60 L 863.27 127.21 L 868.21 121.79 L 873.15 118.13 L 878.09 115.01 L 883.04 96.45 L 887.98 59.65 L 892.92 126.13 L 897.86 301.30 L 902.81 301.30 L 907.75 301.30 L 912.69 295.07 L 917.63 248.51 L 922.58 269.38 L 927.52 280.29 L 932.46 283.68 L 937.40 282.73 L 942.35 260.91 L 947.29 208.94 L 952.23 150.39 L 957.17 118.40 L 962.12 122.67 L 967.06 135.21 L 972.00 142.46" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="138.60" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 138.66 L 32.94 135.28 L 37.88 131.89 L 42.83 130.19 L 47.77 126.81 L 52.71 116.64 L 57.65 77.68 L 62.60 148.83 L 67.54 177.63 L 72.48 192.88 L 77.42 208.12 L 82.37 230.15 L 87.31 255.56 L 92.25 272.50 L 97.19 282.66 L 102.14 286.05 L 107.08 284.36 L 112.02 262.33 L 116.96 209.82 L 121.91 150.52 L 126.85 120.03 L 131.79 123.42 L 136.73 138.66 L 141.68 145.44 L 146.62 136.97 L 151.56 131.89 L 156.50 128.50 L 161.45 123.42 L 166.39 120.03 L 171.33 99.70 L 176.27 55.65 L 181.21 131.89 L 186.16 172.55 L 191.10 187.79 L 196.04 203.04 L 200.98 223.37 L 205.93 250.48 L 210.87 270.81 L 215.81 280.97 L 220.75 284.36 L 225.70 282.66 L 230.64 260.64 L 235.58 208.12 L 240.52 148.83 L 245.47 114.95 L 250.41 120.03 L 255.35 131.89 L 260.29 140.36 L 265.24 130.19 L 270.18 121.72 L 275.12 121.72 L 280.06 116.64 L 285.01 114.95 L 289.95 92.92 L 294.89 50.57 L 299.83 123.42 L 304.77 169.16 L 309.72 181.02 L 314.66 194.57 L 319.60 219.98 L 324.54 250.48 L 329.49 270.81 L 334.43 280.97 L 339.37 284.36 L 344.31 282.66 L 349.26 260.64 L 354.20 208.12 L 359.14 148.83 L 364.08 116.64 L 369.03 120.03 L 373.97 133.58 L 378.91 140.36 L 383.85 128.50 L 388.80 114.95 L 393.74 101.39 L 398.68 109.86 L 403.62 108.17 L 408.57 70.90 L 413.51 43.79 L 418.45 99.70 L 423.39 160.69 L 428.34 172.55 L 433.28 184.41 L 438.22 213.21 L 443.16 243.70 L 448.10 265.72 L 453.05 277.58 L 457.99 280.97 L 462.93 280.97 L 467.87 260.64 L 472.82 213.21 L 477.76 160.69 L 482.70 126.81 L 487.64 128.50 L 492.59 135.28 L 497.53 135.28 L 502.47 120.03 L 507.41 98.00 L 512.36 104.78 L 517.30 82.76 L 522.24 106.48 L 527.18 99.70 L 532.13 79.37 L 537.07 136.97 L 542.01 158.99 L 546.95 169.16 L 551.90 181.02 L 556.84 199.65 L 561.78 226.76 L 566.72 253.86 L 571.66 270.81 L 576.61 277.58 L 581.55 280.97 L 586.49 277.58 L 591.43 260.64 L 596.38 231.84 L 601.32 203.04 L 606.26 177.63 L 611.20 158.99 L 616.15 143.75 L 621.09 130.19 L 626.03 121.72 L 630.97 113.25 L 635.92 113.25 L 640.86 118.33 L 645.80 126.81 L 650.74 138.66 L 655.69 153.91 L 660.63 170.85 L 665.57 184.41 L 670.51 189.49 L 675.46 196.26 L 680.40 225.06 L 685.34 252.17 L 690.28 270.81 L 695.23 277.58 L 700.17 286.05 L 705.11 287.75 L 710.05 279.28 L 714.99 260.64 L 719.94 242.01 L 724.88 223.37 L 729.82 196.26 L 734.76 175.93 L 739.71 162.38 L 744.65 153.91 L 749.59 148.83 L 754.53 148.83 L 759.48 148.83 L 764.42 150.52 L 769.36 160.69 L 774.30 169.16 L 779.25 177.63 L 784.19 182.71 L 789.13 192.88 L 794.07 218.29 L 799.02 250.48 L 803.96 272.50 L 808.90 284.36 L 813.84 287.75 L 818.79 284.36 L 823.73 264.03 L 828.67 214.90 L 833.61 160.69 L 838.55 128.50 L 843.50 133.58 L 848.44 145.44 L 853.38 150.52" /><path class="forecast-svg-actual" d="M 858.32 138.66 L 863.27 135.28 L 868.21 131.89 L 873.15 130.19 L 878.09 126.81 L 883.04 116.64 L 887.98 77.68 L 892.92 148.83 L 897.86 301.30 L 902.81 301.30 L 907.75 301.30 L 912.69 230.15 L 917.63 255.56 L 922.58 272.50 L 927.52 282.66 L 932.46 286.05 L 937.40 284.36 L 942.35 262.33 L 947.29 209.82 L 952.23 150.52 L 957.17 120.03 L 962.12 123.42 L 967.06 138.66 L 972.00 145.44" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 140.87 L 863.27 130.39 L 868.21 129.63 L 873.15 128.01 L 878.09 125.60 L 883.04 103.18 L 887.98 73.01 L 892.92 139.04 L 897.86 301.30 L 902.81 301.30 L 907.75 301.30 L 912.69 301.30 L 917.63 250.87 L 922.58 269.88 L 927.52 280.05 L 932.46 277.68 L 937.40 263.77 L 942.35 234.80 L 947.29 187.86 L 952.23 147.21 L 957.17 116.76 L 962.12 122.27 L 967.06 141.30 L 972.00 143.69 L 972.00 146.27 L 967.06 141.56 L 962.12 129.90 L 957.17 125.16 L 952.23 158.63 L 947.29 224.31 L 942.35 277.51 L 937.40 290.93 L 932.46 286.42 L 927.52 280.31 L 922.58 274.27 L 917.63 261.02 L 912.69 301.30 L 907.75 301.30 L 902.81 301.30 L 897.86 301.30 L 892.92 140.89 L 887.98 73.75 L 883.04 104.10 L 878.09 126.37 L 873.15 128.80 L 868.21 129.65 L 863.27 130.57 L 858.32 141.14 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 141.01 L 863.27 130.48 L 868.21 129.64 L 873.15 128.40 L 878.09 125.99 L 883.04 103.64 L 887.98 73.38 L 892.92 139.97 L 897.86 301.30 L 902.81 301.30 L 907.75 301.30 L 912.69 301.30 L 917.63 255.95 L 922.58 272.08 L 927.52 280.18 L 932.46 282.05 L 937.40 277.35 L 942.35 256.15 L 947.29 206.08 L 952.23 152.92 L 957.17 120.96 L 962.12 126.08 L 967.06 141.43 L 972.00 144.98" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="141.01" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 144.16 L 32.94 140.57 L 37.88 136.99 L 42.83 135.20 L 47.77 131.61 L 52.71 120.86 L 57.65 79.64 L 62.60 154.91 L 67.54 185.38 L 72.48 201.51 L 77.42 217.64 L 82.37 240.93 L 87.31 267.82 L 92.25 285.74 L 97.19 296.49 L 102.14 300.08 L 107.08 298.28 L 112.02 274.99 L 116.96 219.43 L 121.91 156.70 L 126.85 124.44 L 131.79 128.03 L 136.73 144.16 L 141.68 151.32 L 146.62 142.36 L 151.56 136.99 L 156.50 133.40 L 161.45 128.03 L 166.39 124.44 L 171.33 102.94 L 176.27 56.34 L 181.21 136.99 L 186.16 180.00 L 191.10 196.13 L 196.04 212.26 L 200.98 233.77 L 205.93 262.44 L 210.87 283.95 L 215.81 294.70 L 220.75 298.28 L 225.70 296.49 L 230.64 273.19 L 235.58 217.64 L 240.52 154.91 L 245.47 119.07 L 250.41 124.44 L 255.35 136.99 L 260.29 145.95 L 265.24 135.20 L 270.18 126.23 L 275.12 126.23 L 280.06 120.86 L 285.01 119.07 L 289.95 95.77 L 294.89 50.96 L 299.83 128.03 L 304.77 176.42 L 309.72 188.96 L 314.66 203.30 L 319.60 230.18 L 324.54 262.44 L 329.49 283.95 L 334.43 294.70 L 339.37 298.28 L 344.31 296.49 L 349.26 273.19 L 354.20 217.64 L 359.14 154.91 L 364.08 120.86 L 369.03 124.44 L 373.97 138.78 L 378.91 145.95 L 383.85 133.40 L 388.80 119.07 L 393.74 104.73 L 398.68 113.69 L 403.62 111.90 L 408.57 72.47 L 413.51 43.79 L 418.45 102.94 L 423.39 167.45 L 428.34 180.00 L 433.28 192.55 L 438.22 223.01 L 443.16 255.27 L 448.10 278.57 L 453.05 291.12 L 457.99 294.70 L 462.93 294.70 L 467.87 273.19 L 472.82 223.01 L 477.76 167.45 L 482.70 131.61 L 487.64 133.40 L 492.59 140.57 L 497.53 140.57 L 502.47 124.44 L 507.41 101.14 L 512.36 108.31 L 517.30 85.01 L 522.24 110.10 L 527.18 102.94 L 532.13 81.43 L 537.07 142.36 L 542.01 165.66 L 546.95 176.42 L 551.90 188.96 L 556.84 208.68 L 561.78 237.35 L 566.72 266.03 L 571.66 283.95 L 576.61 291.12 L 581.55 294.70 L 586.49 291.12 L 591.43 273.19 L 596.38 242.73 L 601.32 212.26 L 606.26 185.38 L 611.20 165.66 L 616.15 149.53 L 621.09 135.20 L 626.03 126.23 L 630.97 117.27 L 635.92 117.27 L 640.86 122.65 L 645.80 131.61 L 650.74 144.16 L 655.69 160.29 L 660.63 178.21 L 665.57 192.55 L 670.51 197.92 L 675.46 205.09 L 680.40 235.56 L 685.34 264.23 L 690.28 283.95 L 695.23 291.12 L 700.17 300.08 L 705.11 301.87 L 710.05 292.91 L 714.99 273.19 L 719.94 253.48 L 724.88 233.77 L 729.82 205.09 L 734.76 183.58 L 739.71 169.25 L 744.65 160.29 L 749.59 154.91 L 754.53 154.91 L 759.48 154.91 L 764.42 156.70 L 769.36 167.45 L 774.30 176.42 L 779.25 185.38 L 784.19 190.75 L 789.13 201.51 L 794.07 228.39 L 799.02 262.44 L 803.96 285.74 L 808.90 298.28 L 813.84 301.87 L 818.79 298.28 L 823.73 276.78 L 828.67 224.80 L 833.61 167.45 L 838.55 133.40 L 843.50 138.78 L 848.44 151.32 L 853.38 156.70" /><path class="forecast-svg-actual" d="M 858.32 144.16 L 863.27 140.57 L 868.21 136.99 L 873.15 135.20 L 878.09 131.61 L 883.04 120.86 L 887.98 79.64 L 892.92 154.91 L 897.86 316.21 L 902.81 316.21 L 907.75 316.21 L 912.69 240.93 L 917.63 267.82 L 922.58 285.74 L 927.52 296.49 L 932.46 300.08 L 937.40 298.28 L 942.35 274.99 L 947.29 219.43 L 952.23 156.70 L 957.17 124.44 L 962.12 128.03 L 967.06 144.16 L 972.00 151.32" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 140.81 L 863.27 133.38 L 868.21 127.95 L 873.15 124.96 L 878.09 120.94 L 883.04 93.30 L 887.98 46.65 L 892.92 125.81 L 897.86 173.49 L 902.81 191.17 L 907.75 203.24 L 912.69 227.56 L 917.63 259.27 L 922.58 280.56 L 927.52 293.76 L 932.46 298.18 L 937.40 296.31 L 942.35 273.27 L 947.29 217.81 L 952.23 154.64 L 957.17 117.65 L 962.12 123.80 L 967.06 139.59 L 972.00 143.49 L 972.00 160.11 L 967.06 152.54 L 962.12 139.12 L 957.17 136.27 L 952.23 167.16 L 947.29 224.98 L 942.35 277.18 L 937.40 299.24 L 932.46 301.94 L 927.52 298.64 L 922.58 290.20 L 917.63 272.52 L 912.69 245.43 L 907.75 222.02 L 902.81 208.17 L 897.86 193.26 L 892.92 151.94 L 887.98 86.65 L 883.04 122.04 L 878.09 144.07 L 873.15 152.04 L 868.21 151.23 L 863.27 152.09 L 858.32 155.07 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 147.94 L 863.27 142.73 L 868.21 139.59 L 873.15 138.50 L 878.09 132.51 L 883.04 107.67 L 887.98 66.65 L 892.92 138.87 L 897.86 183.38 L 902.81 199.67 L 907.75 212.63 L 912.69 236.49 L 917.63 265.90 L 922.58 285.38 L 927.52 296.20 L 932.46 300.06 L 937.40 297.78 L 942.35 275.23 L 947.29 221.40 L 952.23 160.90 L 957.17 126.96 L 962.12 131.46 L 967.06 146.07 L 972.00 151.80" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="147.94" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 858.32 158.37 L 863.27 172.20 L 868.21 165.34 L 873.15 182.89 L 878.09 175.77 L 883.04 188.49 L 887.98 202.40 L 892.92 202.20 L 897.86 211.76 L 902.81 203.06 L 907.75 205.32 L 912.69 209.08 L 917.63 196.34 L 922.58 190.22 L 927.52 193.95 L 932.46 182.96 L 937.40 178.90 L 942.35 189.97 L 947.29 178.07 L 952.23 163.48 L 957.17 170.09 L 962.12 173.33 L 967.06 179.41 L 972.00 170.98" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="158.37" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 858.32 166.40 L 863.27 161.52 L 868.21 177.52 L 873.15 174.38 L 878.09 180.74 L 883.04 190.41 L 887.98 194.48 L 892.92 194.61 L 897.86 207.22 L 902.81 211.07 L 907.75 222.64 L 912.69 225.01 L 917.63 228.24 L 922.58 233.59 L 927.52 233.40 L 932.46 238.08 L 937.40 239.99 L 942.35 256.78 L 947.29 261.65 L 952.23 267.96 L 957.17 273.59 L 962.12 279.60 L 967.06 276.54 L 972.00 286.46" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="166.40" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 148.26 L 32.94 144.76 L 37.88 141.26 L 42.83 139.51 L 47.77 136.02 L 52.71 125.52 L 57.65 85.28 L 62.60 158.76 L 67.54 188.50 L 72.48 204.24 L 77.42 219.99 L 82.37 242.73 L 87.31 268.97 L 92.25 286.47 L 97.19 296.96 L 102.14 300.46 L 107.08 298.71 L 112.02 275.97 L 116.96 221.74 L 121.91 160.51 L 126.85 129.02 L 131.79 132.52 L 136.73 148.26 L 141.68 155.26 L 146.62 146.51 L 151.56 141.26 L 156.50 137.77 L 161.45 132.52 L 166.39 129.02 L 171.33 108.03 L 176.27 62.54 L 181.21 141.26 L 186.16 183.25 L 191.10 199.00 L 196.04 214.74 L 200.98 235.73 L 205.93 263.72 L 210.87 284.72 L 215.81 295.21 L 220.75 298.71 L 225.70 296.96 L 230.64 274.22 L 235.58 219.99 L 240.52 158.76 L 245.47 123.77 L 250.41 129.02 L 255.35 141.26 L 260.29 150.01 L 265.24 139.51 L 270.18 130.77 L 275.12 130.77 L 280.06 125.52 L 285.01 123.77 L 289.95 101.03 L 294.89 57.29 L 299.83 132.52 L 304.77 179.75 L 309.72 192.00 L 314.66 205.99 L 319.60 232.23 L 324.54 263.72 L 329.49 284.72 L 334.43 295.21 L 339.37 298.71 L 344.31 296.96 L 349.26 274.22 L 354.20 219.99 L 359.14 158.76 L 364.08 125.52 L 369.03 129.02 L 373.97 143.01 L 378.91 150.01 L 383.85 137.77 L 388.80 123.77 L 393.74 109.77 L 398.68 118.52 L 403.62 116.77 L 408.57 78.28 L 413.51 50.29 L 418.45 108.03 L 423.39 171.00 L 428.34 183.25 L 433.28 195.50 L 438.22 225.24 L 443.16 256.73 L 448.10 279.47 L 453.05 291.71 L 457.99 295.21 L 462.93 295.21 L 467.87 274.22 L 472.82 225.24 L 477.76 171.00 L 482.70 136.02 L 487.64 137.77 L 492.59 144.76 L 497.53 144.76 L 502.47 129.02 L 507.41 106.28 L 512.36 113.27 L 517.30 90.53 L 522.24 115.02 L 527.18 108.03 L 532.13 87.03 L 537.07 146.51 L 542.01 169.26 L 546.95 179.75 L 551.90 192.00 L 556.84 211.24 L 561.78 239.23 L 566.72 267.22 L 571.66 284.72 L 576.61 291.71 L 581.55 295.21 L 586.49 291.71 L 591.43 274.22 L 596.38 244.48 L 601.32 214.74 L 606.26 188.50 L 611.20 169.26 L 616.15 153.51 L 621.09 139.51 L 626.03 130.77 L 630.97 122.02 L 635.92 122.02 L 640.86 127.27 L 645.80 136.02 L 650.74 148.26 L 655.69 164.01 L 660.63 181.50 L 665.57 195.50 L 670.51 200.74 L 675.46 207.74 L 680.40 237.48 L 685.34 265.47 L 690.28 284.72 L 695.23 291.71 L 700.17 300.46 L 705.11 302.21 L 710.05 293.46 L 714.99 274.22 L 719.94 254.98 L 724.88 235.73 L 729.82 207.74 L 734.76 186.75 L 739.71 172.75 L 744.65 164.01 L 749.59 158.76 L 754.53 158.76 L 759.48 158.76 L 764.42 160.51 L 769.36 171.00 L 774.30 179.75 L 779.25 188.50 L 784.19 193.75 L 789.13 204.24 L 794.07 230.48 L 799.02 263.72 L 803.96 286.47 L 808.90 298.71 L 813.84 302.21 L 818.79 298.71 L 823.73 277.72 L 828.67 226.99 L 833.61 171.00 L 838.55 137.77 L 843.50 143.01 L 848.44 155.26 L 853.38 160.51" /><path class="forecast-svg-actual" d="M 858.32 148.26 L 863.27 144.76 L 868.21 141.26 L 873.15 139.51 L 878.09 136.02 L 883.04 125.52 L 887.98 85.28 L 892.92 158.76 L 897.86 316.21 L 902.81 316.21 L 907.75 316.21 L 912.69 242.73 L 917.63 268.97 L 922.58 286.47 L 927.52 296.96 L 932.46 300.46 L 937.40 298.71 L 942.35 275.97 L 947.29 221.74 L 952.23 160.51 L 957.17 129.02 L 962.12 132.52 L 967.06 148.26 L 972.00 155.26" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 144.99 L 863.27 137.74 L 868.21 132.44 L 873.15 129.52 L 878.09 125.60 L 883.04 98.62 L 887.98 53.09 L 892.92 130.35 L 897.86 176.89 L 902.81 194.16 L 907.75 205.94 L 912.69 229.67 L 917.63 260.63 L 922.58 281.41 L 927.52 294.30 L 932.46 298.61 L 937.40 296.78 L 942.35 274.30 L 947.29 220.16 L 952.23 158.49 L 957.17 122.39 L 962.12 128.39 L 967.06 143.81 L 972.00 147.61 L 972.00 163.83 L 967.06 156.45 L 962.12 143.34 L 957.17 140.56 L 952.23 170.72 L 947.29 227.16 L 942.35 278.11 L 937.40 299.65 L 932.46 302.28 L 927.52 299.06 L 922.58 290.82 L 917.63 273.57 L 912.69 247.12 L 907.75 224.27 L 902.81 210.75 L 897.86 196.20 L 892.92 155.86 L 887.98 92.13 L 883.04 126.67 L 878.09 148.18 L 873.15 155.96 L 868.21 155.16 L 863.27 156.00 L 858.32 158.92 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 151.95 L 863.27 146.87 L 868.21 143.80 L 873.15 142.74 L 878.09 136.89 L 883.04 112.65 L 887.98 72.61 L 892.92 143.11 L 897.86 186.55 L 902.81 202.45 L 907.75 215.10 L 912.69 238.40 L 917.63 267.10 L 922.58 286.11 L 927.52 296.68 L 932.46 300.45 L 937.40 298.22 L 942.35 276.20 L 947.29 223.66 L 952.23 164.61 L 957.17 131.48 L 962.12 135.87 L 967.06 150.13 L 972.00 155.72" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="151.95" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 148.26 L 32.94 144.76 L 37.88 141.26 L 42.83 139.51 L 47.77 136.02 L 52.71 125.52 L 57.65 85.28 L 62.60 158.76 L 67.54 188.50 L 72.48 204.24 L 77.42 219.99 L 82.37 242.73 L 87.31 268.97 L 92.25 286.47 L 97.19 296.96 L 102.14 300.46 L 107.08 298.71 L 112.02 275.97 L 116.96 221.74 L 121.91 160.51 L 126.85 129.02 L 131.79 132.52 L 136.73 148.26 L 141.68 155.26 L 146.62 146.51 L 151.56 141.26 L 156.50 137.77 L 161.45 132.52 L 166.39 129.02 L 171.33 108.03 L 176.27 62.54 L 181.21 141.26 L 186.16 183.25 L 191.10 199.00 L 196.04 214.74 L 200.98 235.73 L 205.93 263.72 L 210.87 284.72 L 215.81 295.21 L 220.75 298.71 L 225.70 296.96 L 230.64 274.22 L 235.58 219.99 L 240.52 158.76 L 245.47 123.77 L 250.41 129.02 L 255.35 141.26 L 260.29 150.01 L 265.24 139.51 L 270.18 130.77 L 275.12 130.77 L 280.06 125.52 L 285.01 123.77 L 289.95 101.03 L 294.89 57.29 L 299.83 132.52 L 304.77 179.75 L 309.72 192.00 L 314.66 205.99 L 319.60 232.23 L 324.54 263.72 L 329.49 284.72 L 334.43 295.21 L 339.37 298.71 L 344.31 296.96 L 349.26 274.22 L 354.20 219.99 L 359.14 158.76 L 364.08 125.52 L 369.03 129.02 L 373.97 143.01 L 378.91 150.01 L 383.85 137.77 L 388.80 123.77 L 393.74 109.77 L 398.68 118.52 L 403.62 116.77 L 408.57 78.28 L 413.51 50.29 L 418.45 108.03 L 423.39 171.00 L 428.34 183.25 L 433.28 195.50 L 438.22 225.24 L 443.16 256.73 L 448.10 279.47 L 453.05 291.71 L 457.99 295.21 L 462.93 295.21 L 467.87 274.22 L 472.82 225.24 L 477.76 171.00 L 482.70 136.02 L 487.64 137.77 L 492.59 144.76 L 497.53 144.76 L 502.47 129.02 L 507.41 106.28 L 512.36 113.27 L 517.30 90.53 L 522.24 115.02 L 527.18 108.03 L 532.13 87.03 L 537.07 146.51 L 542.01 169.26 L 546.95 179.75 L 551.90 192.00 L 556.84 211.24 L 561.78 239.23 L 566.72 267.22 L 571.66 284.72 L 576.61 291.71 L 581.55 295.21 L 586.49 291.71 L 591.43 274.22 L 596.38 244.48 L 601.32 214.74 L 606.26 188.50 L 611.20 169.26 L 616.15 153.51 L 621.09 139.51 L 626.03 130.77 L 630.97 122.02 L 635.92 122.02 L 640.86 127.27 L 645.80 136.02 L 650.74 148.26 L 655.69 164.01 L 660.63 181.50 L 665.57 195.50 L 670.51 200.74 L 675.46 207.74 L 680.40 237.48 L 685.34 265.47 L 690.28 284.72 L 695.23 291.71 L 700.17 300.46 L 705.11 302.21 L 710.05 293.46 L 714.99 274.22 L 719.94 254.98 L 724.88 235.73 L 729.82 207.74 L 734.76 186.75 L 739.71 172.75 L 744.65 164.01 L 749.59 158.76 L 754.53 158.76 L 759.48 158.76 L 764.42 160.51 L 769.36 171.00 L 774.30 179.75 L 779.25 188.50 L 784.19 193.75 L 789.13 204.24 L 794.07 230.48 L 799.02 263.72 L 803.96 286.47 L 808.90 298.71 L 813.84 302.21 L 818.79 298.71 L 823.73 277.72 L 828.67 226.99 L 833.61 171.00 L 838.55 137.77 L 843.50 143.01 L 848.44 155.26 L 853.38 160.51" /><path class="forecast-svg-actual" d="M 858.32 148.26 L 863.27 144.76 L 868.21 141.26 L 873.15 139.51 L 878.09 136.02 L 883.04 125.52 L 887.98 85.28 L 892.92 158.76 L 897.86 316.21 L 902.81 316.21 L 907.75 316.21 L 912.69 242.73 L 917.63 268.97 L 922.58 286.47 L 927.52 296.96 L 932.46 300.46 L 937.40 298.71 L 942.35 275.97 L 947.29 221.74 L 952.23 160.51 L 957.17 129.02 L 962.12 132.52 L 967.06 148.26 L 972.00 155.26" /><path class="forecast-svg-band" fill="#8064a2" d="M 858.32 148.25 L 863.27 152.89 L 868.21 133.95 L 873.15 148.35 L 878.09 145.98 L 883.04 166.79 L 887.98 176.13 L 892.92 167.30 L 897.86 175.50 L 902.81 168.38 L 907.75 172.35 L 912.69 178.31 L 917.63 159.11 L 922.58 168.58 L 927.52 146.23 L 932.46 142.18 L 937.40 145.47 L 942.35 162.31 L 947.29 144.92 L 952.23 123.41 L 957.17 136.81 L 962.12 136.67 L 967.06 129.81 L 972.00 129.86 L 972.00 219.03 L 967.06 235.53 L 962.12 216.81 L 957.17 210.35 L 952.23 210.85 L 947.29 217.80 L 942.35 223.65 L 937.40 218.88 L 932.46 230.11 L 927.52 247.50 L 922.58 217.87 L 917.63 239.29 L 912.69 244.96 L 907.75 243.58 L 902.81 243.14 L 897.86 253.00 L 892.92 242.55 L 887.98 234.10 L 883.04 216.28 L 878.09 212.27 L 873.15 223.78 L 868.21 203.93 L 863.27 198.39 L 858.32 176.01 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 858.32 162.13 L 863.27 175.64 L 868.21 168.94 L 873.15 186.07 L 878.09 179.13 L 883.04 191.53 L 887.98 205.11 L 892.92 204.92 L 897.86 214.25 L 902.81 205.76 L 907.75 207.96 L 912.69 211.63 L 917.63 199.20 L 922.58 193.23 L 927.52 196.87 L 932.46 186.14 L 937.40 182.18 L 942.35 192.98 L 947.29 181.36 L 952.23 167.13 L 957.17 173.58 L 962.12 176.74 L 967.06 182.67 L 972.00 174.44" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="162.13" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 148.26 L 32.94 144.76 L 37.88 141.26 L 42.83 139.51 L 47.77 136.02 L 52.71 125.52 L 57.65 85.28 L 62.60 158.76 L 67.54 188.50 L 72.48 204.24 L 77.42 219.99 L 82.37 242.73 L 87.31 268.97 L 92.25 286.47 L 97.19 296.96 L 102.14 300.46 L 107.08 298.71 L 112.02 275.97 L 116.96 221.74 L 121.91 160.51 L 126.85 129.02 L 131.79 132.52 L 136.73 148.26 L 141.68 155.26 L 146.62 146.51 L 151.56 141.26 L 156.50 137.77 L 161.45 132.52 L 166.39 129.02 L 171.33 108.03 L 176.27 62.54 L 181.21 141.26 L 186.16 183.25 L 191.10 199.00 L 196.04 214.74 L 200.98 235.73 L 205.93 263.72 L 210.87 284.72 L 215.81 295.21 L 220.75 298.71 L 225.70 296.96 L 230.64 274.22 L 235.58 219.99 L 240.52 158.76 L 245.47 123.77 L 250.41 129.02 L 255.35 141.26 L 260.29 150.01 L 265.24 139.51 L 270.18 130.77 L 275.12 130.77 L 280.06 125.52 L 285.01 123.77 L 289.95 101.03 L 294.89 57.29 L 299.83 132.52 L 304.77 179.75 L 309.72 192.00 L 314.66 205.99 L 319.60 232.23 L 324.54 263.72 L 329.49 284.72 L 334.43 295.21 L 339.37 298.71 L 344.31 296.96 L 349.26 274.22 L 354.20 219.99 L 359.14 158.76 L 364.08 125.52 L 369.03 129.02 L 373.97 143.01 L 378.91 150.01 L 383.85 137.77 L 388.80 123.77 L 393.74 109.77 L 398.68 118.52 L 403.62 116.77 L 408.57 78.28 L 413.51 50.29 L 418.45 108.03 L 423.39 171.00 L 428.34 183.25 L 433.28 195.50 L 438.22 225.24 L 443.16 256.73 L 448.10 279.47 L 453.05 291.71 L 457.99 295.21 L 462.93 295.21 L 467.87 274.22 L 472.82 225.24 L 477.76 171.00 L 482.70 136.02 L 487.64 137.77 L 492.59 144.76 L 497.53 144.76 L 502.47 129.02 L 507.41 106.28 L 512.36 113.27 L 517.30 90.53 L 522.24 115.02 L 527.18 108.03 L 532.13 87.03 L 537.07 146.51 L 542.01 169.26 L 546.95 179.75 L 551.90 192.00 L 556.84 211.24 L 561.78 239.23 L 566.72 267.22 L 571.66 284.72 L 576.61 291.71 L 581.55 295.21 L 586.49 291.71 L 591.43 274.22 L 596.38 244.48 L 601.32 214.74 L 606.26 188.50 L 611.20 169.26 L 616.15 153.51 L 621.09 139.51 L 626.03 130.77 L 630.97 122.02 L 635.92 122.02 L 640.86 127.27 L 645.80 136.02 L 650.74 148.26 L 655.69 164.01 L 660.63 181.50 L 665.57 195.50 L 670.51 200.74 L 675.46 207.74 L 680.40 237.48 L 685.34 265.47 L 690.28 284.72 L 695.23 291.71 L 700.17 300.46 L 705.11 302.21 L 710.05 293.46 L 714.99 274.22 L 719.94 254.98 L 724.88 235.73 L 729.82 207.74 L 734.76 186.75 L 739.71 172.75 L 744.65 164.01 L 749.59 158.76 L 754.53 158.76 L 759.48 158.76 L 764.42 160.51 L 769.36 171.00 L 774.30 179.75 L 779.25 188.50 L 784.19 193.75 L 789.13 204.24 L 794.07 230.48 L 799.02 263.72 L 803.96 286.47 L 808.90 298.71 L 813.84 302.21 L 818.79 298.71 L 823.73 277.72 L 828.67 226.99 L 833.61 171.00 L 838.55 137.77 L 843.50 143.01 L 848.44 155.26 L 853.38 160.51" /><path class="forecast-svg-actual" d="M 858.32 148.26 L 863.27 144.76 L 868.21 141.26 L 873.15 139.51 L 878.09 136.02 L 883.04 125.52 L 887.98 85.28 L 892.92 158.76 L 897.86 316.21 L 902.81 316.21 L 907.75 316.21 L 912.69 242.73 L 917.63 268.97 L 922.58 286.47 L 927.52 296.96 L 932.46 300.46 L 937.40 298.71 L 942.35 275.97 L 947.29 221.74 L 952.23 160.51 L 957.17 129.02 L 962.12 132.52 L 967.06 148.26 L 972.00 155.26" /><path class="forecast-svg-band" fill="#668851" d="M 858.32 149.17 L 863.27 145.44 L 868.21 159.09 L 873.15 154.53 L 878.09 158.99 L 883.04 170.14 L 887.98 174.75 L 892.92 174.73 L 897.86 188.94 L 902.81 193.73 L 907.75 201.59 L 912.69 208.40 L 917.63 202.09 L 922.58 212.56 L 927.52 215.81 L 932.46 219.29 L 937.40 217.91 L 942.35 240.00 L 947.29 238.14 L 952.23 242.62 L 957.17 255.47 L 962.12 255.46 L 967.06 252.39 L 972.00 262.50 L 972.00 311.83 L 967.06 302.58 L 962.12 305.49 L 957.17 293.73 L 952.23 295.61 L 947.29 287.77 L 942.35 276.40 L 937.40 265.70 L 932.46 260.60 L 927.52 254.94 L 922.58 258.57 L 917.63 258.59 L 912.69 245.97 L 907.75 248.15 L 902.81 233.43 L 897.86 230.70 L 892.92 220.28 L 887.98 220.03 L 883.04 216.70 L 878.09 208.95 L 873.15 201.00 L 868.21 202.58 L 863.27 184.99 L 858.32 190.78 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 858.32 169.98 L 863.27 165.21 L 868.21 180.83 L 873.15 177.77 L 878.09 183.97 L 883.04 193.42 L 887.98 197.39 L 892.92 197.51 L 897.86 209.82 L 902.81 213.58 L 907.75 224.87 L 912.69 227.18 L 917.63 230.34 L 922.58 235.56 L 927.52 235.37 L 932.46 239.95 L 937.40 241.81 L 942.35 258.20 L 947.29 262.95 L 952.23 269.11 L 957.17 274.60 L 962.12 280.48 L 967.06 277.48 L 972.00 287.17" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="169.98" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 148.26 L 32.94 144.76 L 37.88 141.26 L 42.83 139.51 L 47.77 136.02 L 52.71 125.52 L 57.65 85.28 L 62.60 158.76 L 67.54 188.50 L 72.48 204.24 L 77.42 219.99 L 82.37 242.73 L 87.31 268.97 L 92.25 286.47 L 97.19 296.96 L 102.14 300.46 L 107.08 298.71 L 112.02 275.97 L 116.96 221.74 L 121.91 160.51 L 126.85 129.02 L 131.79 132.52 L 136.73 148.26 L 141.68 155.26 L 146.62 146.51 L 151.56 141.26 L 156.50 137.77 L 161.45 132.52 L 166.39 129.02 L 171.33 108.03 L 176.27 62.54 L 181.21 141.26 L 186.16 183.25 L 191.10 199.00 L 196.04 214.74 L 200.98 235.73 L 205.93 263.72 L 210.87 284.72 L 215.81 295.21 L 220.75 298.71 L 225.70 296.96 L 230.64 274.22 L 235.58 219.99 L 240.52 158.76 L 245.47 123.77 L 250.41 129.02 L 255.35 141.26 L 260.29 150.01 L 265.24 139.51 L 270.18 130.77 L 275.12 130.77 L 280.06 125.52 L 285.01 123.77 L 289.95 101.03 L 294.89 57.29 L 299.83 132.52 L 304.77 179.75 L 309.72 192.00 L 314.66 205.99 L 319.60 232.23 L 324.54 263.72 L 329.49 284.72 L 334.43 295.21 L 339.37 298.71 L 344.31 296.96 L 349.26 274.22 L 354.20 219.99 L 359.14 158.76 L 364.08 125.52 L 369.03 129.02 L 373.97 143.01 L 378.91 150.01 L 383.85 137.77 L 388.80 123.77 L 393.74 109.77 L 398.68 118.52 L 403.62 116.77 L 408.57 78.28 L 413.51 50.29 L 418.45 108.03 L 423.39 171.00 L 428.34 183.25 L 433.28 195.50 L 438.22 225.24 L 443.16 256.73 L 448.10 279.47 L 453.05 291.71 L 457.99 295.21 L 462.93 295.21 L 467.87 274.22 L 472.82 225.24 L 477.76 171.00 L 482.70 136.02 L 487.64 137.77 L 492.59 144.76 L 497.53 144.76 L 502.47 129.02 L 507.41 106.28 L 512.36 113.27 L 517.30 90.53 L 522.24 115.02 L 527.18 108.03 L 532.13 87.03 L 537.07 146.51 L 542.01 169.26 L 546.95 179.75 L 551.90 192.00 L 556.84 211.24 L 561.78 239.23 L 566.72 267.22 L 571.66 284.72 L 576.61 291.71 L 581.55 295.21 L 586.49 291.71 L 591.43 274.22 L 596.38 244.48 L 601.32 214.74 L 606.26 188.50 L 611.20 169.26 L 616.15 153.51 L 621.09 139.51 L 626.03 130.77 L 630.97 122.02 L 635.92 122.02 L 640.86 127.27 L 645.80 136.02 L 650.74 148.26 L 655.69 164.01 L 660.63 181.50 L 665.57 195.50 L 670.51 200.74 L 675.46 207.74 L 680.40 237.48 L 685.34 265.47 L 690.28 284.72 L 695.23 291.71 L 700.17 300.46 L 705.11 302.21 L 710.05 293.46 L 714.99 274.22 L 719.94 254.98 L 724.88 235.73 L 729.82 207.74 L 734.76 186.75 L 739.71 172.75 L 744.65 164.01 L 749.59 158.76 L 754.53 158.76 L 759.48 158.76 L 764.42 160.51 L 769.36 171.00 L 774.30 179.75 L 779.25 188.50 L 784.19 193.75 L 789.13 204.24 L 794.07 230.48 L 799.02 263.72 L 803.96 286.47 L 808.90 298.71 L 813.84 302.21 L 818.79 298.71 L 823.73 277.72 L 828.67 226.99 L 833.61 171.00 L 838.55 137.77 L 843.50 143.01 L 848.44 155.26 L 853.38 160.51" /><path class="forecast-svg-actual" d="M 858.32 148.26 L 863.27 144.76 L 868.21 141.26 L 873.15 139.51 L 878.09 136.02 L 883.04 125.52 L 887.98 85.28 L 892.92 158.76 L 897.86 316.21 L 902.81 316.21 L 907.75 316.21 L 912.69 242.73 L 917.63 268.97 L 922.58 286.47 L 927.52 296.96 L 932.46 300.46 L 937.40 298.71 L 942.35 275.97 L 947.29 221.74 L 952.23 160.51 L 957.17 129.02 L 962.12 132.52 L 967.06 148.26 L 972.00 155.26" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 858.32 129.38 L 863.27 132.46 L 868.21 127.84 L 873.15 124.35 L 878.09 130.82 L 883.04 127.12 L 887.98 110.20 L 892.92 93.95 L 897.86 84.67 L 902.81 67.52 L 907.75 53.53 L 912.69 44.71 L 917.63 43.79 L 922.58 59.73 L 927.52 64.07 L 932.46 66.56 L 937.40 72.07 L 942.35 80.67 L 947.29 81.63 L 952.23 92.60 L 957.17 87.97 L 962.12 84.01 L 967.06 76.64 L 972.00 73.50 L 972.00 306.44 L 967.06 309.31 L 962.12 307.12 L 957.17 307.92 L 952.23 301.06 L 947.29 293.54 L 942.35 289.47 L 937.40 278.06 L 932.46 278.95 L 927.52 264.65 L 922.58 268.85 L 917.63 262.67 L 912.69 254.47 L 907.75 257.13 L 902.81 249.02 L 897.86 241.67 L 892.92 250.58 L 887.98 244.13 L 883.04 242.88 L 878.09 235.26 L 873.15 221.58 L 868.21 206.05 L 863.27 182.54 L 858.32 175.12 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 858.32 152.25 L 863.27 157.50 L 868.21 166.95 L 873.15 172.96 L 878.09 183.04 L 883.04 185.00 L 887.98 177.16 L 892.92 172.26 L 897.86 163.17 L 902.81 158.27 L 907.75 155.33 L 912.69 149.59 L 917.63 153.23 L 922.58 164.29 L 927.52 164.36 L 932.46 172.75 L 937.40 175.06 L 942.35 185.07 L 947.29 187.59 L 952.23 196.83 L 957.17 197.95 L 962.12 195.57 L 967.06 192.98 L 972.00 189.97" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="858.32" cy="152.25" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 148.26 L 32.94 144.76 L 37.88 141.26 L 42.83 139.51 L 47.77 136.02 L 52.71 125.52 L 57.65 85.28 L 62.60 158.76 L 67.54 188.50 L 72.48 204.24 L 77.42 219.99 L 82.37 242.73 L 87.31 268.97 L 92.25 286.47 L 97.19 296.96 L 102.14 300.46 L 107.08 298.71 L 112.02 275.97 L 116.96 221.74 L 121.91 160.51 L 126.85 129.02 L 131.79 132.52 L 136.73 148.26 L 141.68 155.26 L 146.62 146.51 L 151.56 141.26 L 156.50 137.77 L 161.45 132.52 L 166.39 129.02 L 171.33 108.03 L 176.27 62.54 L 181.21 141.26 L 186.16 183.25 L 191.10 199.00 L 196.04 214.74 L 200.98 235.73 L 205.93 263.72 L 210.87 284.72 L 215.81 295.21 L 220.75 298.71 L 225.70 296.96 L 230.64 274.22 L 235.58 219.99 L 240.52 158.76 L 245.47 123.77 L 250.41 129.02 L 255.35 141.26 L 260.29 150.01 L 265.24 139.51 L 270.18 130.77 L 275.12 130.77 L 280.06 125.52 L 285.01 123.77 L 289.95 101.03 L 294.89 57.29 L 299.83 132.52 L 304.77 179.75 L 309.72 192.00 L 314.66 205.99 L 319.60 232.23 L 324.54 263.72 L 329.49 284.72 L 334.43 295.21 L 339.37 298.71 L 344.31 296.96 L 349.26 274.22 L 354.20 219.99 L 359.14 158.76 L 364.08 125.52 L 369.03 129.02 L 373.97 143.01 L 378.91 150.01 L 383.85 137.77 L 388.80 123.77 L 393.74 109.77 L 398.68 118.52 L 403.62 116.77 L 408.57 78.28 L 413.51 50.29 L 418.45 108.03 L 423.39 171.00 L 428.34 183.25 L 433.28 195.50 L 438.22 225.24 L 443.16 256.73 L 448.10 279.47 L 453.05 291.71 L 457.99 295.21 L 462.93 295.21 L 467.87 274.22 L 472.82 225.24 L 477.76 171.00 L 482.70 136.02 L 487.64 137.77 L 492.59 144.76 L 497.53 144.76 L 502.47 129.02 L 507.41 106.28 L 512.36 113.27 L 517.30 90.53 L 522.24 115.02 L 527.18 108.03 L 532.13 87.03 L 537.07 146.51 L 542.01 169.26 L 546.95 179.75 L 551.90 192.00 L 556.84 211.24 L 561.78 239.23 L 566.72 267.22 L 571.66 284.72 L 576.61 291.71 L 581.55 295.21 L 586.49 291.71 L 591.43 274.22 L 596.38 244.48 L 601.32 214.74 L 606.26 188.50 L 611.20 169.26 L 616.15 153.51 L 621.09 139.51 L 626.03 130.77 L 630.97 122.02 L 635.92 122.02 L 640.86 127.27 L 645.80 136.02 L 650.74 148.26 L 655.69 164.01 L 660.63 181.50 L 665.57 195.50 L 670.51 200.74 L 675.46 207.74 L 680.40 237.48 L 685.34 265.47 L 690.28 284.72 L 695.23 291.71 L 700.17 300.46 L 705.11 302.21 L 710.05 293.46 L 714.99 274.22 L 719.94 254.98 L 724.88 235.73 L 729.82 207.74 L 734.76 186.75 L 739.71 172.75 L 744.65 164.01 L 749.59 158.76 L 754.53 158.76 L 759.48 158.76 L 764.42 160.51 L 769.36 171.00 L 774.30 179.75 L 779.25 188.50 L 784.19 193.75 L 789.13 204.24 L 794.07 230.48 L 799.02 263.72 L 803.96 286.47 L 808.90 298.71 L 813.84 302.21 L 818.79 298.71 L 823.73 277.72 L 828.67 226.99 L 833.61 171.00 L 838.55 137.77 L 843.50 143.01 L 848.44 155.26 L 853.38 160.51" /><path class="forecast-svg-actual" d="M 858.32 148.26 L 863.27 144.76 L 868.21 141.26 L 873.15 139.51 L 878.09 136.02 L 883.04 125.52 L 887.98 85.28 L 892.92 158.76 L 897.86 316.21 L 902.81 316.21 L 907.75 316.21 L 912.69 242.73 L 917.63 268.97 L 922.58 286.47 L 927.52 296.96 L 932.46 300.46 L 937.40 298.71 L 942.35 275.97 L 947.29 221.74 L 952.23 160.51 L 957.17 129.02 L 962.12 132.52 L 967.06 148.26 L 972.00 155.26" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 858.32 147.53 L 863.27 134.34 L 868.21 131.78 L 873.15 125.53 L 878.09 137.34 L 883.04 141.01 L 887.98 142.08 L 892.92 133.04 L 897.86 126.89 L 902.81 129.03 L 907.75 135.77 L 912.69 137.45 L 917.63 138.62 L 922.58 131.57 L 927.52 145.24 L 932.46 140.56 L 937.40 126.30 L 942.35 146.28 L 947.29 132.11 L 952.23 143.38 L 957.17 135.92 L 962.12 139.91 L 967.06 147.19 L 972.00 138.40 L 972.00 184.64 L 967.06 182.27 L 962.12 193.13 L 957.17 184.58 L 952.23 194.73 L 947.29 189.73 L 942.35 183.10 L 937.40 177.68 L 932.46 187.48 L 927.52 186.47 L 922.58 186.07 L 917.63 177.85 L 912.69 188.85 L 907.75 189.42 L 902.81 178.40 L 897.86 201.56 L 892.92 185.37 L 887.98 190.37 L 883.04 184.50 L 878.09 185.59 L 873.15 184.54 L 868.21 180.68 L 863.27 199.61 L 858.32 189.71 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 858.32 168.62 L 863.27 166.97 L 868.21 156.23 L 873.15 155.03 L 878.09 161.46 L 883.04 162.76 L 887.98 166.23 L 892.92 159.20 L 897.86 164.23 L 902.81 153.72 L 907.75 162.59 L 912.69 163.15 L 917.63 158.24 L 922.58 158.82 L 927.52 165.86 L 932.46 164.02 L 937.40 151.99 L 942.35 164.69 L 947.29 160.92 L 952.23 169.06 L 957.17 160.25 L 962.12 166.52 L 967.06 164.73 L 972.00 161.52" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="858.32" cy="168.62" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>occupancy rate</h3>
+              <p>This series represents the occupancy rate (%) captured by sensor SN-XJ-990-Alpha.</p>
+              <p class="instruction">Consider that SN-XJ-990-Alpha will be offline for maintenance between 2024-01-15 19:00:00 and 2024-01-15 22:00:00, which results in zero readings at High-Desert Arterial (Segment 42).</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This series represents the occupancy rate (%) captured by sensor SN-XJ-990-Alpha.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>SN-XJ-990-Alpha will be offline for maintenance between 2024-01-15 19:00:00 and 2024-01-15 22:00:00</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>which results in zero readings at High-Desert Arterial (Segment 42).</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">32 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5626</span></span></summary>
+          <pre class="doc-content">**CENTRAL MONITORING AND OPERATIONS COMMAND**
+**OPERATIONAL LOG ENTRY: SYSTEM MAINTENANCE NOTIFICATION**
+
+**Subject:** Hardware Update Window - January 15
+**Status:** Planned / Executive Mandate
+
+**Operational Schedule:**
+For the date of January 15, 2024, the command has established a three-hour technical window commencing at 19:00:00. Hardware assets are designated as the priority for technical updates during this designated period.
+
+**Technical Requirements:**
+Required hardware optimizations necessitate that central monitoring systems trigger a planned isolation protocol. Implementation of the update window requires the immediate execution of these isolation protocols to ensure system integrity. During this process, specific field modules (associated with sensor units such as SN-XJ-990-Alpha) are subject to isolation to facilitate necessary internal optimizations.
+
+[End of Entry]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5627</span></span></summary>
+          <pre class="doc-content">CENTRAL MONITORING AND OPERATIONS DEPARTMENT
+INTERNAL MAINTENANCE BULLETIN
+
+ID: MOB-SN-XJ-990
+Subject: Hardware Optimization Cycle SN-XJ-990
+Effective Date: 15th
+
+OPERATIONAL NOTICE:
+Central monitoring systems are scheduled to trigger a planned isolation protocol for specific field modules. This protocol is designed to facilitate internal hardware optimizations across the network infrastructure. 
+
+UNIT DESIGNATION:
+Unit SN-XJ-990-Alpha is the primary telemetric instrument designated for this specific maintenance cycle. This unit will be subject to the isolation protocol on the 15th to allow for hardware-level adjustments during the assigned maintenance slot.
+
+TECHNICAL SCOPE:
+The isolation protocol is specifically designed to target the hardware equipment assigned for this cycle. Maintenance is localized to the identified modules; broader system impacts, personnel assignments, and post-maintenance performance forecasts are excluded from this operational log.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5628</span></span></summary>
+          <pre class="doc-content">MAINTENANCE OPERATIONS LOG
+Issuer: Telemetrics Maintenance Division
+Document Type: Technical Operations Report
+Subject: Unit SN-XJ-990-Alpha Cycle Report
+
+STATUS SUMMARY:
+Unit SN-XJ-990-Alpha is designated as the primary telemetric instrument for the maintenance cycle occurring on the 15th. This unit captures the occupancy rate (%) data stream for the sector.
+
+OPERATIONAL IMPACT:
+Technical assessment indicates that removing Unit SN-XJ-990-Alpha from active duty disrupts the communication link for environmental data stream processing. Operators must be advised that decommissioning this specific unit causes an immediate break in the telemetry chain.
+
+NOTE:
+This report is strictly limited to the technical status of Unit SN-XJ-990-Alpha and the immediate functional consequences of its removal. It does not provide broader maintenance schedules for other units, specific details on environmental data, or long-term mitigation strategies.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5629</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION
+Infrastructure Monitoring Division
+
+OPERATIONAL STATUS REPORT: High-Desert Arterial Telemetric Infrastructure
+Ref: Segment 42 / Node SN-XJ-990-Alpha
+Status: Operational Alert / Unit Offline
+
+1. EXECUTIVE SUMMARY
+This memorandum serves as a formal assessment of the operational status regarding the telemetric infrastructure serving the High-Desert Arterial, specifically designated as Segment 42. Due to the recent change in status of sensor unit SN-XJ-990-Alpha, the Infrastructure Monitoring Division is reporting a significant degradation in data acquisition capabilities for this corridor. This report outlines the dependencies and systemic impacts resulting from the current lack of telemetric overhead.
+
+2. INFRASTRUCTURE OVERVIEW
+The data integrity of Segment 42 within the High-Desert Arterial is governed by a singular point of ingress. The occupancy rate (%) and related flow metrics for this section of the arterial are captured by sensor SN-XJ-990-Alpha. This telemetric node functions as the primary conduit for the transmission of real-time diagnostics from the roadway surface to the central processing servers. 
+
+3. OPERATIONAL DEPENDENCY ANALYSIS
+The removal of this unit from active duty disrupts the communication link required for processing environmental data streams. Under standard protocols, the node facilitates the continuous flow of digital packets containing temperature, moisture, and vibrational data essential for automated monitoring systems. The absence of this unit creates an immediate void in the data stream, preventing the integration of localized environmental variables into the broader infrastructure health database.
+
+Furthermore, it is critical to note that traffic and infrastructure analytics for the High-Desert Arterial (Segment 42) rely exclusively on this single telemetric node. There are no secondary sensors or redundant systems currently positioned to capture the occupancy rate or throughput statistics for this specific span of roadway. Consequently, the cessation of transmissions from SN-XJ-990-Alpha results in a total blackout of analytical insights for this corridor. Historical data modeling cannot compensate for the lack of real-time telemetry, as the current traffic models for this arterial require live input to generate actionable reports.
+
+4. GEOGRAPHIC SCOPE OF IMPACT
+The loss of telemetry affects the specific geographic area whose monitoring depends on that sensor. The monitoring deficiency is contained within the spatial boundaries of Segment 42. However, within these bounds, the lack of operational telemetric infrastructure means that any anomalies, traffic surges, or infrastructure stress events cannot be detected or logged by the Infrastructure Monitoring Division. The geographic isolation of the High-Desert Arterial reinforces the criticality of this specific node, as there are no adjacent sensors capable of overlapping their range to cover the monitored segment.
+
+5. CURRENT LIMITATIONS
+In accordance with current reporting constraints, this document is limited to the identification of operational dependencies. This report focuses strictly on the operational dependency of Segment 42 analytics on a specific telemetric unit. Per internal protocol, this status assessment does not include repair timelines, specific causes of the unit&#x27;s removal, or broader regional traffic impacts beyond the identified segment. The findings herein are intended to document the immediate loss of data continuity and the resulting dependency failures at the localized level of Segment 42. 
+
+6. CONCLUSION
+As of the current timestamp, the Infrastructure Monitoring Division remains unable to provide verified occupancy or environmental data for Segment 42. Until the communication link is restored via sensor SN-XJ-990-Alpha, all analytics for this specific telemetric node remain suspended.
+
+Authorized by:
+Infrastructure Monitoring Division
+Regional Department of Transportation</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5630</span></span></summary>
+          <pre class="doc-content">REGIONAL TRAFFIC INFRASTRUCTURE DEPARTMENT
+TECHNICAL OPERATIONAL REPORT
+
+Project: High-Desert Arterial (Segment 42) Telemetry Infrastructure Audit
+Sub-system: Sensor SN-XJ-990-Alpha
+
+Operational Assessment:
+This audit confirms that all traffic and infrastructure analytics for Segment 42 of the High-Desert Arterial rely exclusively on a single telemetric node. Technical monitoring reveals that the system&#x27;s data ingestion engine registers an immediate absence of signal whenever the localized feedback loop is broken. 
+
+Due to the segment&#x27;s total dependency on this single node, any physical or electronic disconnection of sensor SN-XJ-990-Alpha directly silences the downstream processing engine. This report identifies this specific architecture as a functional vulnerability for the telemetry of Segment 42. No wider traffic patterns, budget details, or mitigation strategies are addressed in this documentation.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5631</span></span></summary>
+          <pre class="doc-content">DATA SYSTEMS INCIDENT REPORT: REGIONAL CORRIDOR SENSOR OUTAGE
+
+ISSUER: Systems Engineering &amp; Data Operations Department
+TYPE: Technical Operations Report
+
+INCIDENT SUMMARY:
+The data ingestion engine registers an absence of signal when the expected localized feedback loop is broken. Technical monitoring confirms that upstream sensor deactivation has occurred for sensor SN-XJ-990-Alpha. Consequently, the final metrics for the specific regional corridor reflect a total lack of quantitative data. The inability to receive signals results in the logging of null values for the affected infrastructure within the central database. 
+
+TECHNICAL NOTES:
+This report focuses exclusively on the technical causal chain between sensor deactivation, engine signal registration, and the resulting null values in regional metrics. No further details regarding location, restoration timelines, or the cause of deactivation are available in this record.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5632</span></span></summary>
+          <pre class="doc-content">REGIONAL OPERATIONS CONTROL CENTER (ROCC)
+TECHNICAL INTEGRITY AUDIT: UPSTREAM SENSOR DEACTIVATION
+
+REPORT SUMMARY
+Final metrics for the specific regional corridor reflect a total lack of quantitative data due to upstream sensor deactivation. During the audit of sensor SN-XJ-990-Alpha, it was confirmed that data ingestion ceased entirely during the specified deactivation window. 
+
+INTEGRITY LOG ANALYSIS
+The automated integrity report shows an absolute nullity in log entries for the period ending at 22:00:00. This absence of telemetry is consistent across all primary monitoring channels within the corridor. Indicators show that zero readings persist until the maintenance period concludes and the report window closes.
+
+AUDIT STATUS: INCOMPLETE DATASET
+STATUS: NULL ENTRIES CONFIRMED
+TIMESTAMP: 22:00:00
+DISTRIBUTION: TECHNICAL INTEGRITY ARCHIVE</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5633 · Off-variable</span></span></summary>
+          <pre class="doc-content">**INCIDENT TICKET: #IT-8842-SYS**
+**TO:** Systems Engineering Department
+**FROM:** Monitoring Operations
+**SUBJECT:** Technical Support Incident: Dashboard Monitoring Anomaly
+
+**Incident Overview:**
+A monitoring anomaly has been identified affecting the dashboard display icons during the specific assessment time window. This issue is localized to the identical sensor array previously identified for testing purposes.
+
+**Technical Diagnosis:**
+System analysis indicates that the root cause of the display failure is the introduction of a new encryption protocol. Internal system logs confirm that data is still being recorded internally despite the display issue. The failure is specifically characterized by the behavior of dashboard display icons rather than the accuracy of the underlying data values. 
+
+**Scope Note:**
+This ticket is limited to the technical diagnosis of the specific monitoring glitch. No details regarding the encryption protocol&#x27;s purpose, the nature of recorded data, or the resolution timeline are included.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5634 · Off-variable</span></span></summary>
+          <pre class="doc-content">NETWORK SYSTEMS ENGINEERING CHANGE LOG
+Document ID: NSE-CL-2024-0812
+Issuer: Systems Integration Department
+Subject: Firmware Sync Protocol Implementation
+Status: Final Implementation Report
+
+1. EXECUTIVE OVERVIEW
+This report documents the systematic rollout of the network firmware synchronization protocol across the sensor hardware architecture. The objective of this update is to establish a uniform firmware baseline to ensure operational consistency throughout the sensor grid.
+
+2. TECHNICAL IMPLEMENTATION DETAILS
+The implementation involves the deployment of a master-slave synchronization architecture. Under this new protocol, all active sensor units are required to undergo a firmware handshake to align with the centralized control version. 
+
+Directives for hardware units during this phase:
+- Location Integrity: All sensors must maintain their fixed geographic coordinates throughout the update window. Relocation or movement of hardware during the sync process will result in protocol failure.
+- ID Maintenance: Sensors must retain their unique Sensor ID with no modifications to registry keys. Identification consistency is mandatory for the propagation of the firmware image.
+
+3. CAUSAL OBSERVATIONS AND METRICS
+Following the activation of the firmware synchronization protocol, the Systems Integration Department monitored immediate effects on network messaging and data transit. The following causal relationships have been identified:
+
+3.1 Effect on Transmission Latency
+Data diagnostics indicate a clear causal link between the firmware synchronization and a shift in transmission latency. As the protocol manages the overhead required for version verification, fluctuations in the time-to-delivery for packets across the sensor mesh were recorded. This latency adjustment is a direct consequence of the synchronization handshake requirements.
+
+3.2 Effect on Message Timestamps
+The synchronization rollout has had a measurable causal effect on message timestamps. By aligning the internal clocks of all hardware units to the firmware baseline, the temporal data recorded at the point of origin has been standardized. This has resulted in higher precision in chronological sequencing across the network.
+
+4. DATA ACCURACY AND INTEGRITY
+A primary focus of this engineering change was the preservation of data fidelity. Post-rollout analysis confirms that following the synchronization, data accuracy has been fully preserved. There is no evidence of packet corruption or value degradation resulting from the firmware transition. The sensor units continue to report environmental metrics with a high degree of fidelity, matching pre-sync calibration standards.
+
+5. SYSTEM LOGS: METRIC SUMMARY
+| Metric | Observation |
+| :--- | :--- |
+| Hardware Status | Synchronized |
+| Sensor ID Validation | Verified |
+| Latency Delta | Causal Shift Recorded |
+| Timestamp Precision | Unified Protocol Alignment |
+| Data Accuracy | Preserved (No Degradation) |
+
+6. DOCUMENTATION LIMITATIONS
+This engineering log is confined to the technical operational details of the firmware synchronization and its immediate impacts on data metrics. This document does not provide forecasts regarding long-term network performance, nor does it address broader security implications or threat modeling related to the protocol implementation. All inquiries regarding these excluded areas should be directed to their respective departments.
+
+END OF REPORT
+Systems Integration Department</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5635 · Off-variable</span></span></summary>
+          <pre class="doc-content">TECHNICAL BULLETIN
+
+TO: Systems Operations
+FROM: Hardware Engineering Department
+SUBJECT: Optical Sensor Unit Tech-Note: Low-Angle Sunlight Interference
+
+This technical bulletin documents a specific anomaly regarding the Alpha-9 Optical Unit. During the recorded time span of 16:00 to 17:30 UTC, the unit was subjected to intense low-angle environmental glare. Engineering has identified this glare as the confounding cause of the anomaly.
+
+Key observed effects during this window include a shift in the sensor&#x27;s optical mode and a measurable change in unit power consumption. Despite these physical deviations, system sensing functions and the primary data stream remained fully operational and were not interrupted during the event.
+
+Note: This assessment is limited to physical sensor response during this specific glare event and excludes long-term performance forecasts or broader atmospheric impact assessments.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5636 · Irrelevant</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION
+INTELLIGENT TRANSPORTATION SYSTEMS (ITS) DIVISION
+
+QUARTERLY OPERATIONAL MAINTENANCE AND COMPLIANCE REPORT
+Reporting Period: Q3
+Location Focus: High-Desert Arterial Segment 42
+
+1. EXECUTIVE SUMMARY
+This document details the operational maintenance and technical compliance status for the hardware assets located within High-Desert Arterial Segment 42. This review is limited to technical maintenance and regulatory adherence of the specified hardware and does not encompass budgetary data, traffic volume analysis, or future network expansion planning.
+
+2. HARDWARE MAINTENANCE STATUS: SENSOR SN-XJ-990-ALPHA
+The primary sensor unit for Segment 42, designated as SN-XJ-990-Alpha, underwent its scheduled quarterly inspection. The unit is currently flagged as Operational. All internal diagnostics indicate that the sensor is functioning within standard parameters. This component remains the focal point of the Segment 42 monitoring infrastructure.
+
+3. FIRMWARE UPDATES
+During this reporting cycle, a mandatory firmware update was performed on sensor SN-XJ-990-Alpha. The hardware was flashed from version 4.2.1 to the current stable build. This update addressed minor bugs in data packet prioritization and improved the stability of the onboard kernel. Post-update testing confirms successful installation and hardware reboot without error cycles.
+
+4. PHYSICAL HARDWARE CLEANING PROCEDURES
+To ensure the longevity and accuracy of the equipment in the high-desert environment, the following physical maintenance procedures were performed on the SN-XJ-990-Alpha unit:
+- Exterior housing inspection for heat-related stress or debris accumulation.
+- Cleaning of the optical lens and external sensor interface using non-abrasive, anti-static solutions.
+- Removal of particulate matter from the ventilation ports.
+- Verification of mounting bracket stability.
+Status: Physical cleaning is marked as Complete.
+
+5. QUARTERLY EQUIPMENT REVIEW: SEGMENT 42 CORRIDOR
+The ITS Division has concluded its quarterly review of all equipment stationed along the Segment 42 corridor. This review confirms that the secondary supporting infrastructure—including cabling, power supply units, and weather-shielding—is intact. The total inventory of hardware for this segment is accounted for and shows no signs of unauthorized tampering or environmental degradation beyond acceptable limits.
+
+6. NETWORK PROTOCOL COMPLIANCE
+A critical component of this report is the verification of the sensor’s current network protocol compliance status. Sensor SN-XJ-990-Alpha was subjected to a compliance audit to ensure it meets the Regional Department of Transportation’s updated security and transmission standards. 
+
+Compliance Results:
+- Encryption Standard: Verified
+- Transmission Frequency: Verified
+- Protocol Alignment: The unit is confirmed to be in full compliance with current ITS Division network protocols. No remediation is required at this time.
+
+7. CONCLUDING REMARKS
+The maintenance cycle for High-Desert Arterial Segment 42 is finished. Sensor SN-XJ-990-Alpha is fully operational, updated, and compliant with all departmental technical requirements for the current quarter.
+
+***
+END OF REPORT
+Issuer: ITS Division - Regional Department of Transportation
+Document ID: RDOT-ITS-SEG42-Q3-OMCR</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5637 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Department of Asset Management, Infrastructure Operations Division
+Technical Report: Environmental Sensor Performance and Site Infrastructure Review
+
+1. EXECUTIVE SUMMARY
+This report presents a technical evaluation of environmental sensing hardware and the associated physical infrastructure at the primary deployment zone. The focus of this assessment is on the physical durability of components and the accuracy of data streams relative to localized site conditions.
+
+2. SENSOR DEPLOYMENT AND GEOSPATIAL DATA
+The following sensor models are currently active within the deployment perimeter. Precise GPS coordinates are recorded for each unit to ensure data spatial integrity:
+
+*   Model: AeroQual Series 500 (ST-01) | Coordinates: 34°05&#x27;22.4&quot;N 118°14&#x27;37.2&quot;W
+*   Model: Vaisala HMP155 (ST-02) | Coordinates: 34°05&#x27;21.9&quot;N 118°14&#x27;38.5&quot;W
+*   Model: Libelium Waspmote Plug &amp; Sense! (ST-03) | Coordinates: 34°05&#x27;23.1&quot;N 118°14&#x27;36.8&quot;W
+
+3. PHYSICAL CONDITION AND UV DEGRADATION ANALYSIS
+A thorough inspection of the sensor housings and external components has been completed. Significant UV degradation is evident on the thermoplastic enclosures of units ST-01 and ST-03. Prolonged exposure to high-intensity solar radiation has resulted in surface chalking and increased brittleness of the mounting brackets. The polycarbonate shields on the light sensors show signs of yellowing, which may affect long-term structural integrity if not addressed in future maintenance cycles.
+
+4. DATA ACCURACY AND SIGNAL NOISE (SOLAR GLARE IMPACT)
+Operational analysis indicates that solar glare is a recurring factor affecting sensor data accuracy. Specifically, during peak afternoon hours (13:00 – 15:30), high-angle solar reflection off the surrounding metallic infrastructure introduces significant signal noise into the optical subsystems. This glare has been linked to intermittent spikes in data readings, necessitating the use of post-processing filters to isolate environmental signals from solar interference. Evaluation confirms that without corrective shielding, signal-to-noise ratios remain suboptimal during clear-sky conditions.
+
+5. SITE ENVIRONMENTAL DATA: RELATIVE HUMIDITY
+The following relative humidity (RH) levels were recorded at the deployment site during the assessment period to establish current operational baselines:
+
+*   Minimum Recorded RH: 14.2%
+*   Maximum Recorded RH: 68.7%
+*   Mean Site RH: 41.5%
+
+These levels remain within the operating specifications for all deployed sensor models, though localized moisture retention was noted near the base of the ST-02 mounting pole.
+
+6. INFRASTRUCTURE LONGEVITY ASSESSMENT
+Using existing maintenance reports as a baseline, the Division has evaluated the projected longevity of the site infrastructure. Current reports indicate that the primary support structures and cabling conduits are performing within expected parameters for their age. However, the observed rate of component weathering suggests that the infrastructure&#x27;s service life may be shortened if the current rate of UV-induced material fatigue continues. Maintenance logs show a 15% increase in small-scale repairs (fasteners and seals) over the last 24 months, which serves as a metric for forecasting hardware replacement cycles.
+
+7. NOTES
+This document is strictly limited to the technical performance of hardware and the physical condition of the site. This report does not contain weather forecasting, financial budgeting data, or strategic planning recommendations for the division.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5638 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Department of Transportation Maintenance &amp; Operations Division
+Technical and Operational Report: Segment 42
+Arterial Sensor Installation and Maintenance Technical Manual
+
+1.0 ADMINISTRATIVE STATUS AND BUDGETARY OVERSIGHT
+Project Code: ART-SEG42-MAINT
+Budgetary Approval Status: APPROVED. Funding for Segment 42 infrastructure projects has been fully authorized and allocated through the current fiscal cycle. All maintenance activities and hardware deployments listed herein fall under the sanctioned Segment 42 operational budget.
+
+2.0 SENSOR IDENTIFICATION AND LOCATION LOGS
+The following sensor identification numbers are assigned exclusively to the arterial locations within Segment 42. These IDs must be referenced in all maintenance tickets.
+
+- Sensor ID: S42-ART-001 (Main Arterial/North Junction)
+- Sensor ID: S42-ART-002 (Main Arterial/East Crossing)
+- Sensor ID: S42-ART-003 (Secondary Arterial/South Connector)
+- Sensor ID: S42-ART-004 (Arterial Bypass/West Interchange)
+- Sensor ID: S42-ART-005 (Arterial Service Road/Median)
+
+3.0 INVENTORY AND EQUIPMENT DEPLOYMENT LOG
+The following parts and equipment have been utilized for sensor deployment within this segment:
+
+- Part #882-A: Ultrasonic Sensor Housing (5 units)
+- Part #440-C: Mounting Brackets, Grade A Steel (10 units)
+- Part #912-K: Signal Processor Modules (5 units)
+- Equipment: SC-7 Industrial Drills, Fiber Splicing Kits, and Aerial Lift Platform (Unit 12).
+
+4.0 TECHNICAL SPECIFICATIONS: WIRING AND LABELING
+4.1 Standardized Cable Color Coding
+All sensor wiring must adhere to the following color coding protocols to ensure uniform maintenance across the segment:
+- Power (Positive): Red
+- Ground: Black
+- Data Transmission (TX): Blue
+- Data Reception (RX): Yellow
+- Shield/Drain: Green
+
+4.2 Labeling Requirements
+All technical hardware and interconnects must be labeled at the point of entry and exit within the junction box. 
+- Hardware Labeling: All sensor units must be etched with their specific Sensor ID (e.g., S42-ART-XXX).
+- Interconnect Labeling: Cables must be tagged with heat-shrink labels indicating the source (Sensor ID) and destination (Control Hub ID). All labels must be printed in high-contrast black ink on a white background for visibility in low-light environments.
+
+5.0 MAINTENANCE SCHEDULE AND RECORD-KEEPING
+Maintenance personnel are required to update the Segment 42 Inventory Log immediately following any site visit where parts are replaced or equipment is relocated. This manual serves as the primary technical reference for the Segment 42 project; please note that this document is limited to local technical specifications and administrative logs. It does not contain regional traffic statistics, future expansion forecasts, or city-wide infrastructure planning data.
+
+[End of Segment 42 Technical Manual]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5639 · Off-entity</span></span></summary>
+          <pre class="doc-content">**Department of Infrastructure Operations**
+**Network Operations Center (NOC) Maintenance Notification**
+
+**Subject:** SN-BQ-442-Gamma Scheduled Firmware Update
+**Reference:** SN-BQ-442-Gamma
+
+This technical maintenance log details the upcoming activities for sensor SN-BQ-442-Gamma. A firmware update is scheduled for the window of 2024-01-15 19:00:00 to 2024-01-15 22:00:00. 
+
+During this update period, users should expect a forecast of a temporary spike to full saturation. This will result in a constant 100 percent occupancy rate reading at Valley-Midpoint Crossing (Segment 12). 
+
+Comprehensive occupancy rate data records for SN-BQ-442-Gamma remain available, with the historical data span covering 2024-01-08 to 2024-01-15 10:00:00. This log and associated data are strictly limited to the maintenance schedule and immediate data impact for the specified sensor; no further network or infrastructure status is included.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5640 · Off-entity</span></span></summary>
+          <pre class="doc-content">INFRASTRUCTURE MONITORING DEPARTMENT / SEGMENT 88 OPERATIONS
+TECHNICAL MAINTENANCE LOG: SN-TR-115-SIGMA
+
+ID: MAINT-LOG-TR115-S88
+TYPE: Sensor Maintenance and Calibration Schedule
+
+OPERATIONAL PARAMETERS:
+Sensor Unit: SN-TR-115-Sigma
+Location: East-Platea Junction (Segment 88)
+
+SCHEDULED ACTIVITY:
+A calibration cycle is scheduled for sensor unit SN-TR-115-Sigma on 2024-01-15. The designated maintenance window will take place between 19:00:00 and 22:00:00.
+
+DATA IMPACT FORECAST:
+This procedure is expected to result in erratic fluctuating noise ranging between 40 percent and 60 percent. This event is categorized as a period of localized variability rather than a sensor outage. The specific forecasting window for this data series impact is 2024-01-15 11:00:00 to 2024-01-16 10:00:00.
+
+DISTRIBUTION: Segment 88 Operations Team</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5641 · Off-entity</span></span></summary>
+          <pre class="doc-content">Operational Maintenance Log: SN-MZ-771-Delta
+
+Issuer: Mountain-Pass Corridor Infrastructure Monitoring Team
+Type: Technical Maintenance Record
+
+Subject: Scheduled Manual Override Test
+
+Activity Details:
+A manual override test is scheduled for flow sensor SN-MZ-771-Delta. The test is slated to commence on 2024-01-15 19:00:00 and will conclude at 2024-01-15 22:00:00. This specific sensor is located at the Mountain-Pass Corridor, Segment 05.
+
+Technical Behavior:
+During the designated test window, the output data will freeze at the last recorded value captured prior to the 19:00:00 start time. The resulting test data will appear as a static flatline at an arbitrary historical level. Despite the override, the time span and forecast length for the test data will remain identical to original requirements.
+
+Scope:
+Limited solely to the scheduling and technical behavior of sensor SN-MZ-771-Delta.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5642 · Off-window</span></span></summary>
+          <pre class="doc-content">MAINTENANCE AND CALIBRATION LOG: SN-XJ-990-ALPHA
+
+Issuer: High-Desert Arterial Infrastructure Maintenance Team
+Document Type: Technical Operations Log
+Log ID: HDA-LOG-20231201-990A
+
+MAINTENANCE SUMMARY:
+Between 2023-12-01 08:00:00 and 2023-12-01 11:00:00, Sensor SN-XJ-990-Alpha underwent comprehensive calibration and hardware maintenance. 
+
+OPERATIONAL STATUS:
+The sensor remained fully operational in a laboratory setting during the maintenance window. 
+
+DATA IMPACT PROFILE: 
+The controlled testing environment utilized during the work resulted in a constant 100% saturation signal (occupancy rate) at High-Desert Arterial (Segment 42) for the duration of the period. 
+
+NOTES:
+This source is strictly limited to the specific maintenance event and its immediate data profile; it does not include traffic forecasts, data from other sensor units, or broader regional infrastructure assessments.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5643 · Off-window</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION
+INFRASTRUCTURE MONITORING DIVISION
+TECHNICAL OPERATIONS REPORT
+
+REPORT ID: DOT-IMD-2023-1115-ANOMALY
+SUBJECT: POST-INCIDENT MAINTENANCE REVIEW: SN-XJ-990-ALPHA INITIAL DEPLOYMENT
+DATE: 2023-11-16
+STATUS: FINAL / RECORD ONLY
+
+1. EXECUTIVE SUMMARY
+This report details the technical incident regarding the SN-XJ-990-Alpha unit during its initial deployment phase. The unit was temporarily removed from active service to facilitate critical firmware synchronization, leading to observed data anomalies at a specific monitoring site. This review documents the cause and impact of the data irregularities to ensure accurate historical database integrity.
+
+2. INCIDENT TIMELINE AND DESCRIPTION
+On 2023-11-15, the tracking system unit SN-XJ-990-Alpha was taken offline to undergo a scheduled firmware synchronization sequence. This action was necessary to align the hardware with current divisional standards during the preliminary deployment stage.
+
+Time of Outage (Start): 14:00:00
+Time of Outage (End): 17:00:00
+Total Duration: 03:00:00
+
+3. TECHNICAL ANOMALY ANALYSIS
+During the period referenced above, the system output reported for High-Desert Arterial (Segment 42) exhibited significant data degradation. Analysis of the logs confirms that the output consisted of randomized noise patterns rather than actionable telemetry. 
+
+Key Observations:
+- Location: High-Desert Arterial (Segment 42)
+- Patterning: Randomized noise
+- Variance: 45% to 55% signal saturation
+
+4. ROOT CAUSE DETERMINATION
+The engineering team has identified the cause of the noise patterns as a buffer purge initiated while the SN-XJ-990-Alpha unit was in an offline state. The system failed to suppress the output channel during the purge cycle, resulting in the transmission of residual, non-contextual data signatures to the monitoring interface.
+
+5. SCOPE OF REPORT
+This review is confined exclusively to the hardware event of 2023-11-15 and the resulting performance anomalies in Segment 42. It does not provide broader network reliability statistics, future performance projections, or maintenance schedules for other segments within the tracking network.
+
+6. CONCLUSION
+The noise patterns observed at Segment 42 were a direct byproduct of the synchronization-related buffer purge. Proper documentation of this event is required to account for the gap in valid telemetry during the initial deployment window of the SN-XJ-990-Alpha hardware. No further action is required for this specific incident log.
+
+***
+END OF REPORT
+Department of Transportation - Infrastructure Monitoring Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5644 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL TRAFFIC INFRASTRUCTURE CONTROL CENTER
+POST-MAINTENANCE OPERATIONAL INCIDENT REPORT: SN-XJ-990-ALPHA
+
+REPORT ID: OPS-20240101-SNXJ990A
+DATE: 2024-01-01
+SUBJECT: Technical Maintenance Log / Incident Report
+
+EVENT SUMMARY:
+A scheduled maintenance check was conducted on sensor SN-XJ-990-Alpha on 2024-01-01. The maintenance window was active between 02:00:00 and 05:00:00. This procedure was performed to verify the physical and digital integrity of the sensor unit.
+
+TECHNICAL IMPACT:
+During the maintenance activity, the data stream for High-Desert Arterial (Segment 42) entered a frozen occupancy state. System logs indicate that a static value of 12% occupancy was duplicated across all timestamps within the three-hour maintenance window. This duplication resulted in an artificial data plateau for the affected segment. Normal operational reporting resumed immediately following the conclusion of the check at 05:00:00.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5645 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">HIGH-DESERT REGIONAL TRANSPORT AUTHORITY (HDRTA)
+DATA ANALYTICS DIVISION
+TECHNICAL OPERATIONAL REPORT: SEGMENT 42
+
+Date: October 24, 2023
+Subject: Traffic Sensor Performance and Occupancy Analysis Report: Segment 42
+Document Ref: HDRTA-DIV-S42-990A
+
+I. OVERVIEW
+This technical report provides a detailed performance analysis of sensor SN-XJ-990-Alpha, currently installed at the High-Desert Arterial (Segment 42). The primary focus of this assessment is the occupancy rate (%) and the telemetry behavioral patterns observed during the most recent monitoring cycle.
+
+II. TELEMETRY OBSERVATIONS AND TREND ANALYSIS
+Based on a review of the data streams from SN-XJ-990-Alpha, the Data Analytics Division has identified several unique transitions in the traffic flow characteristics of Segment 42. Recent occupancy levels have officially transitioned into a stabilization phase. This phase is characterized by a notably flat volume during peak periods, departing from the typical sharp peaks observed in prior operational months.
+
+Furthermore, historical daily cycles, which previously exhibited a rhythmic rise and fall in line with regional traffic demand, have leveled off. These cycles have now merged into what is classified as a suppressed plateau. This suggests that the dynamic range of the occupancy data is narrowing significantly.
+
+III. PERSISTENCE AND PROJECTIONS
+Data analysis confirms that the occupancy values maintained during these suppressed peak cycles are not momentary fluctuations. Instead, these lower levels typically persist through the end of the daily cycle and continue into the following day. This continuity indicates a sustained shift in the sensor’s captured environment rather than a transient anomaly.
+
+Regarding the forward-looking outlook for Segment 42, the series is projected to continue within this current suppressed range. Current modeling suggests that the telemetry will remain at these stabilized, lower levels for the foreseeable future, rather than showing a near-term recovery to higher historical occupancy levels.
+
+IV. SCOPE LIMITATIONS AND ANALYTICAL CONTEXT
+This report focuses exclusively on the telemetry data and behavioral patterns generated by sensor SN-XJ-990-Alpha. The scope of this document is limited to the performance of this specific unit and the resulting occupancy statistics. 
+
+It is important to note the following exclusions:
+- This report does not include external causes for the observed traffic slowdown (e.g., roadwork, weather events, or economic factors).
+- Data from other sensors or adjacent segments of the High-Desert Arterial are not included in this analysis.
+
+V. SUMMARY OF METRICS
+Segment Identifier: Segment 42
+Sensor HWID: SN-XJ-990-Alpha
+Primary Metric: Occupancy (%)
+Current Trend: Stabilization Phase (Flat Volume)
+Cycle Characteristic: Suppressed Plateau
+Projection: Sustained Low-Range Persistence
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5646 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Department of Transportation
+High-Desert Arterial Maintenance Division
+Technical Operational Report: Profile SN-XJ-990-Alpha
+
+Date: October 24, 2023
+Subject: Sensor Baseline Performance Profile: SN-XJ-990-Alpha
+Reference: High-Desert Arterial (Segment 42)
+Document Type: Technical Operational Report
+
+1.0 SYSTEM OVERVIEW
+This report establishes the technical operational profile for Sensor SN-XJ-990-Alpha. This specific unit is responsible for the continuous monitoring of occupancy rates at Segment 42 of the High-Desert Arterial. The maintenance division utilizes this profile as a benchmark for evaluating sensor health and performance against historical benchmarks recorded during the unit&#x27;s service life.
+
+2.0 HISTORICAL PERFORMANCE DATA
+Based on exhaustive historical data analysis, Sensor SN-XJ-990-Alpha exhibits a distinct operational fingerprint characterized by an elevated operational floor. While typical roadside assets may see fluctuations that approach a theoretical zero, the calibration and historical logs for this unit show that occupancy levels stay above a significant baseline threshold. 
+
+Consistent with institutional records, readings for this sensor never drop into the negligible or near-zero range. This behavior is persistent throughout all recorded timeframes, encompassing peak traffic hours, off-peak transitions, and late-night periods. Even during times when volume is traditionally expected to be at its lowest, the data from SN-XJ-990-Alpha maintains a non-zero floor that deviates from standard null-state expectations.
+
+3.0 OPERATIONAL PREDICTIONS AND OBSERVATION WINDOWS
+During upcoming observation windows, technicians and data analysts should account for this established baseline. Recorded occupancy is expected to stabilize at this consistent baseline rather than dropping to zero. This stabilization is considered a normal operating state for this specific hardware profile and should be considered the primary reference point for system validation.
+
+4.0 SCOPE LIMITATIONS
+The scope of this technical profile is strictly limited to the specific historical behavior and calibration profile of the SN-XJ-990-Alpha sensor. This document is intended as a baseline performance guide and does not include broader traffic analysis or socioeconomic evaluations of the arterial. Furthermore, this report does not provide explanations for why the occupancy remains high at this location, nor does it include comparative data from other segments of the High-Desert Arterial.
+
+5.0 MAINTENANCE COMPLIANCE
+Data integrity checks performed on Segment 42 must reference the baseline thresholds defined in this profile. Discrepancies between this report and real-time outputs should be flagged for maintenance review, provided they fall below the significant baseline threshold identified in Section 2.0. 
+
+***
+
+Technical Specifications Summary:
+Assigned Segment: 42 (High-Desert Arterial)
+Sensor ID: SN-XJ-990-Alpha
+Primary Metric: Occupancy Rate
+Baseline Status: Persistent/Elevated Floor
+Null State: Not Observed/Non-Negligible
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5647 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">TECHNICAL OPERATIONS REPORT
+Issuer: Department of Transportation Traffic Management Center
+Subject: Traffic Sensor Log Analysis: SN-XJ-990-Alpha Baseline Calibration
+
+Sensor SN-XJ-990-Alpha is responsible for monitoring Segment 42 of the High-Desert Arterial. This specific monitoring environment is officially characterized as a high-intensity arterial, defined by its constant usage patterns throughout the diurnal cycle. 
+
+Operational analysis indicates that the occupancy rate at this location maintains a floor of at least 4% during the lowest usage periods of the overnight cycle. For high-activity arterials such as Segment 42, sensors are expected to remain settled at their designated baseline floor overnight. Technical observers should note that occupancy levels should not drop to the 1% range, as the 4% threshold represents the established minimum calibration for this constant-use environment.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5648 · Off-variable</span></span></summary>
+          <pre class="doc-content">CENTRAL MONITORING &amp; SECURITY DIVISION (CMSD)
+INCIDENT RESOLUTION REPORT
+
+Subject: Sensor Node 44-X Error Logs
+Incident Type: Technical Incident
+
+Hardware Identification:
+- Sensor ID: Node 44-X
+- Location: Site 44-X (Hardware Match Validated)
+
+Maintenance Window / Anomaly Period:
+Start: 2023-10-14 02:15 UTC
+End: 2023-10-14 04:30 UTC
+
+Administrative Cause:
+The reported log mismatch originated from an urgent update to internal security protocols required by CMSD. This administrative override triggered a temporary system re-sync.
+
+Resolution Summary:
+The incident resulted in the scheduled alteration of system metadata and the rotation of credentials/passwords for Node 44-X. Physical sensor readings remained accurate and unaffected during this period. Technical reconciliation is complete. This report excludes broader system health metrics or specific text of the updated security protocols.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5649 · Off-variable</span></span></summary>
+          <pre class="doc-content">FACILITY MAINTENANCE DEPARTMENT
+OPERATIONAL LOG ENTRY
+
+Site: Unit 4 Sector B
+Location ID: 44-098
+Date: October 12, 2023
+Timeframe: 08:00 – 14:00
+
+ACTIVITY SUMMARY:
+Conducted scheduled casing inspection on sensor units located at 44-098. Maintenance activities included a comprehensive structural integrity check of the unit housings and the installation of localized spotlights for enhanced visibility. 
+
+OPERATIONAL IMPACT:
+Physical work was confined to the hardware exterior and mounting structures. Data transmission from the sensors was monitored throughout the process and remained unaffected by the maintenance activities.
+
+NOTES:
+This entry covers local physical outcomes and specific maintenance actions performed during the shift only. This log does not contain sensor readings, data analysis, or future maintenance schedules. 
+
+Status: Complete
+Issuer: Facility Maintenance Department</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5651 · Irrelevant</span></span></summary>
+          <pre class="doc-content">REGIONAL TRANSIT INFRASTRUCTURE MAINTENANCE DIVISION
+TECHNICAL AUDIT REPORT | POST-AUDIT SUMMARY
+
+REPORT ID: RT-HD-SEG42-2024
+SUBJECT: High-Desert Arterial Segment 42 Routine Security Audit
+
+1. SCOPE AND RECAP
+This document serves as a summary of the technical audit conducted at High-Desert Arterial (Segment 42). The audit focused on hardware verification and firmware integrity checks for the local sensor network. This summary is strictly limited to the technical parameters and verification results for the specified hardware and does not address broader regional traffic patterns or long-term maintenance forecasts.
+
+2. HARDWARE SPECIFICATIONS
+The sensor array deployed throughout Segment 42 utilizes the following hardware profiles:
+
+*   Sensor Model: SN-XJ-990-Alpha
+*   Unit Type: Occupancy Sensor
+*   Enclosure Composition: The hardware enclosure is constructed from a reinforced die-cast aluminum alloy with a thermal-resistant polymer coating designed specifically for high-desert temperature fluctuations.
+
+3. FIRMWARE AND SOFTWARE VERIFICATION
+Verification procedures were executed to ensure that all active units are running the authorized system architecture. 
+
+*   Active Firmware Version: 4.2.1
+*   Verification Status: Validated
+
+4. AUDIT TIME WINDOW
+Software and integrity verification tests were conducted during the following designated window on January 15, 2024:
+
+*   Audit Start: 2024-01-15 19:00:00
+*   Audit End: 2024-01-15 22:00:00
+
+During this three-hour window, communication protocols and encryption headers were audited for compliance with standard Division security protocols. 
+
+5. TECHNICAL FINDINGS SUMMARY
+All SN-XJ-990-Alpha units successfully reported back during the software verification window. The firmware (v4.2.1) showed no unauthorized modifications or checksum mismatches. Enclosure integrity checks performed during the audit confirmed that the material composition remains within operational tolerance for high-arid environments. 
+
+No security findings or hardware failures were noted within the specified scope of the Segment 42 audit. Further broad-scale regional data or forecasted maintenance requirements are excluded from this technical summary.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5652 · Irrelevant</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION
+Digital Infrastructure Division
+
+Quarterly Infrastructure Operations and Maintenance Report: South District Expansion
+Reporting Period: Q1
+Date: January 15th
+Status: Final / Internal Use Only
+
+1. ADMINISTRATIVE REASSIGNMENT OVERVIEW
+Effective as of the current reporting cycle, Segment 42 has been formally transitioned from the Central District jurisdiction to the South District operations pool. This administrative reassignment includes all physical assets, maintenance responsibilities, and data oversight for the stretch of infrastructure intersecting the High-Desert Arterial. The South District is now the primary authority for all regulatory compliance and technical upkeep of existing hardware within this segment.
+
+2. SENSOR NAMING CONVENTIONS AND ORIGIN
+This report clarifies the technical nomenclature utilized for the current sensor deployment. The naming convention, identified as the SN-XJ-990-Alpha series, originated during the initial Research and Development phase of the Digital Infrastructure Division’s automated monitoring initiative. 
+
+The alpha-numeric string is structured as follows:
+- SN: Standard Network
+- XJ-990: Designates the hardware architecture and transmission protocol
+- Alpha: Denotes the initial stable release of the sensor firmware used in sub-tropical and arid high-desert climates.
+
+This convention was established to ensure consistency across regional datasets, tracking the evolution of the hardware from theoretical design to field-ready implementation.
+
+3. HISTORICAL INSTALLATION RECORDS: HIGH-DESERT ARTERIAL
+Installation of monitoring equipment along the High-Desert Arterial was conducted in phased deployments. Below are the finalized records for the existing hardware currently maintained by the South District:
+
+- Station HDA-01 through HDA-15: Installed August 12th
+- Station HDA-16 through HDA-30: Installed October 4th
+- Primary Relay Hubs (South Link): Installed October 15th
+- Segment 42 Integration Bridge: Installed November 22nd
+
+These dates represent the physical mounting and activation of the hardware. Maintenance logs confirm that all equipment has remained in its original position since these recorded dates.
+
+4. ENVIRONMENTAL CERTIFICATION AND VERIFICATION
+In accordance with regulatory mandates, a comprehensive verification cycle was completed on January 15th. This process ensures that all active SN-XJ-990-Alpha series sensors comply with environmental durability standards required for operation in the South District.
+
+Verification Results (Reporting Date: January 15th):
+- Sensor Response Rate: 100% compliance with environmental shielding protocols.
+- Physical Integrity: Verified for all hardware within the newly acquired Segment 42.
+- Regulatory Status: Certified. The January 15th inspection confirms that the equipment meets all state and regional environmental protection requirements for digital infrastructure.
+
+5. TECHNICAL SPECIFICATIONS SUMMARY
+The hardware currently utilized consists of localized atmospheric and vibration sensors designed for long-term placement. This report serves as a record of the technical specifications and administrative boundaries as they exist currently. 
+
+Note: This document is strictly limited to technical specifications, administrative boundaries, and regulatory compliance. This report does not contain performance forecasts, budget projections, or information regarding infrastructure in other regional districts. All inquiries regarding the Central District should be directed to the respective divisional lead.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5654 · Off-entity</span></span></summary>
+          <pre class="doc-content">FACILITIES OPERATIONS &amp; MONITORING DEPARTMENT
+TECHNICAL MAINTENANCE REPORT
+
+**Entity Profile**
+Sensor ID: SN-BW-442-Gamma
+Description: Occupancy Monitoring Hardware
+Segment Allocation: Segment 88
+
+**Background &amp; Protocol**
+This document outlines technical adjustments performed in accordance with standard occupancy rate monitoring protocols. These protocols require periodic hardware validation to ensure accuracy in building management tracking systems.
+
+**Maintenance Schedule**
+Work Window: 2024-01-15 19:00:00 to 2024-01-15 22:00:00
+Status: Completed
+
+**Technical Adjustment Summary**
+During the scheduled maintenance window, technicians performed a recalibration of the signal for SN-BW-442-Gamma. This procedure was successfully executed, resulting in a 5 percent increase in signal sensitivity for Segment 88. 
+
+**Functional Outcome**
+The immediate functional outcome confirms that the sensor is operating within recalibrated parameters. This report is restricted to technical specifications and does not contain occupancy trends or downstream forecasting.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5655 · Off-entity</span></span></summary>
+          <pre class="doc-content">MAINTENANCE IMPACT STATEMENT: SEGMENT 12 INFRASTRUCTURE UPGRADES
+
+ISSUER: Infrastructure Operations &amp; Monitoring Department
+TYPE: Operational Maintenance Notification
+
+OVERVIEW:
+This statement provides formal notification regarding scheduled maintenance activities affecting Segment 12 infrastructure. As part of planned infrastructure upgrades, sensor SN-RT-115-Sigma is scheduled to be taken offline during the following window:
+
+- Start Date/Time: 2024-01-15 19:00:00
+- End Date/Time: 2024-01-15 22:00:00
+
+OPERATIONAL IMPACT &amp; DATA INTEGRITY:
+During this period, the sensor will be unavailable for real-time reporting. However, internal backup local storage on SN-RT-115-Sigma will be utilized to prevent any data loss during the offline window. Operations and Monitoring ensures that continuous 100 percent data availability for Segment 12 will be maintained throughout the duration of the upgrade. No data gaps are expected as a result of this downtime.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5657 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL INFRASTRUCTURE MAINTENANCE DEPARTMENT
+TECHNICAL MAINTENANCE REPORT: SN-XJ-990-Alpha
+
+Completion Log Summary
+----------------------
+Subject: Scheduled System Overhaul
+Status: Completed
+Location: High-Desert Arterial Segment 42
+
+Maintenance Window Details:
+- Start: 2023-05-10 12:00:00
+- End: 2023-05-10 15:00:00
+
+Execution Notes:
+In May 2023, Sensor SN-XJ-990-Alpha underwent a comprehensive scheduled system overhaul. To facilitate the calibration of sensor sensitivity, sensor output was set to maximum capacity for the duration of the maintenance window. As a direct result of the overhaul procedures, High-Desert Arterial Segment 42 recorded a temporary saturation reading of 100 percent.
+
+Scope:
+This report covers the technical execution and immediate output of the specified overhaul. It does not include long-term performance forecasts, broader traffic impacts, or maintenance history outside of the May 2023 window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5658 · Off-window</span></span></summary>
+          <pre class="doc-content">MAINTENANCE INCIDENT REPORT
+
+REPORT ID: SN-XJ-990-Alpha-20231120
+ISSUER: High-Desert Arterial Network Operations Center (NOC)
+TYPE: Technical Operational Log
+DATE: 2023-11-20
+
+EVENT SUMMARY:
+A firmware update was performed on sensor SN-XJ-990-Alpha on 2023-11-20. To facilitate this routine check, the sensor was taken offline from 02:00:00 to 05:00:00 on the day of maintenance. 
+
+TECHNICAL IMPACTS:
+During this maintenance window, the update caused the sensor to bypass the High-Desert Arterial Segment 42 local processor. Consequently, all outgoing data was redirected to the backup server for the duration of the event. 
+
+OUTCOME:
+The redirection of data streams resulted in double-count readings recorded for the morning of 2023-11-20. Operational logs confirm regular service resumed following the completion of the firmware installation and processor reintegration.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5660 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION
+Division of Traffic Analysis
+Technical Operations Report: High-Desert Arterial (Segment 42)
+Document ID: DTA-OPS-S42-REV1
+Status: Final Empirical Data Export
+
+1.0 SYSTEM CONFIGURATION AND TELEMETRY
+This report focuses exclusively on the observed empirical occupancy patterns and sensor specifications for Segment 42. Data collection is facilitated via Sensor SN-XJ-990-Alpha, which is permanently installed at the High-Desert Arterial location. This device is the primary hardware asset responsible for tracking real-time usage metrics. Specifically, Sensor SN-XJ-990-Alpha captures the occupancy rate (%) at High-Desert Arterial (Segment 42), measuring the percentage of time that the detection zone is occupied by vehicles.
+
+2.0 OBSERVED OCCUPANCY CHARACTERISTICS
+Analysis of the longitudinal data series indicates highly specific flow patterns unique to this arterial segment. The primary characteristic of the daily transit cycle is identified in the afternoon hours. Daily peak occupancy at this location is characterized as a broad afternoon plateau. Unlike typical commute spikes observed in urban centers, the High-Desert Arterial demonstrates a sustained saturation period.
+
+Key observations regarding this plateau include:
+- Temporal Consistency: High usage levels remain relatively constant for several hours before the evening decline. 
+- Peak Stability: The occupancy series maintains a stable and elevated maximum throughout the late afternoon window, indicating a consistent volume of through-traffic during the peak window.
+- Variance Metrics: The occupancy data shows minimal fluctuation prior to any subsequent reduction in activity. The trend lines lack the volatility usually associated with intermittent arterial signaling, remaining steady until the naturally occurring drawdown.
+
+3.0 DATA INTEGRITY AND SCOPE
+This report provides a localized assessment based on the telemetry from SN-XJ-990-Alpha. In accordance with technical operations standards for this document type, current analysis is restricted to existing empirical occupancy data. This documentation does not include external causes for the traffic, future traffic forecasts, maintenance schedules for the sensor, or broader regional traffic trends. The focus remains on the specific performance and saturation levels of Segment 42 as recorded during the study period.
+
+[End of Segment 42 Technical Operations Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5661 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION
+INTELLIGENT TRANSPORTATION SYSTEMS (ITS) DIVISION
+
+TECHNICAL OPERATIONAL REPORT: TRAFFIC SENSOR DATA ANALYSIS
+SUBJECT: High-Desert Arterial (Segment 42)
+DATA SOURCE: Sensor SN-XJ-990-Alpha
+REPORT STATUS: FINAL
+
+1. EXECUTIVE SUMMARY
+This Technical Operational Report provides a detailed assessment of traffic flow and occupancy characteristics for Segment 42 of the High-Desert Arterial. The internal Intelligent Transportation Systems (ITS) monitoring hardware, specifically Sensor SN-XJ-990-Alpha, has recorded a distinct behavioral pattern regarding vehicle density and road utilization within this specific corridor. The findings outlined below focus on the occupancy rates and the structural progression of traffic volume during peak operating hours.
+
+2. SENSOR PERFORMANCE AND DATA COLLECTION
+Sensor SN-XJ-990-Alpha is the primary data source for monitoring occupancy rates at High-Desert Arterial Segment 42. The sensor utilizes standardized detection protocols to measure the percentage of time the detection zone is occupied by vehicles. The current analysis is restricted to the datasets produced by this specific unit.
+
+3. OCCUPANCY ANALYSIS AND TRAFFIC REGIMES
+Based on the longitudinal data reviewed by the ITS Division, the following operational characteristics have been identified for Segment 42:
+
+3.1 Afternoon Peak Transition
+Occupancy levels reach a peak during the afternoon rush. Observations indicate a sharp upward trajectory in vehicle density as the transition from midday flow to peak demand occurs. Unlike standard arterial behavior, which typically displays a distinct peak followed by a gradual recession, these occupancy levels remain high throughout the evening.
+
+3.2 Evening Plateau Persistence
+Following the initial afternoon surge, the segment enters a persistent high-occupancy state. Detailed diagnostics confirm that there is no downward trend during the evening period. The traffic volume does not dissipate according to standard diurnal models. Instead, measurements maintain elevated levels without returning to a lower baseline during this regime. This lack of regression suggests a sustained saturation point that characterizes the late-day operational profile of the High-Desert Arterial.
+
+4. FORECASTING AND BASELINE EXPECTATIONS
+In terms of data volatility and predictive modeling, the ITS Division notes a significant stabilization factor within the current data stream. Readings are expected to reflect levels observed just prior to any interruption once the evening plateau consolidates. This consistency provides a steady-state metric for the segment, establishing that the occupancy recorded during the onset of the evening regime serves as the definitive baseline for the duration of the high-occupancy state.
+
+5. LIMITATIONS OF REPORT
+This report focuses exclusively on the behavioral patterns and occupancy characteristics of Segment 42 as recorded by sensor SN-XJ-990-Alpha. It does not include data from other sensors, traffic incident logs, weather conditions, or specific roadwork schedules. The scope is limited strictly to the occupancy metrics as a function of time and segment location to ensure a focused technical assessment of the arterial&#x27;s physical throughput performance.
+
+6. CONCLUSION
+The data indicates a shift from a standard rush-hour peak to a sustained high-occupancy plateau on Segment 42. Continued monitoring via SN-XJ-990-Alpha is required to determine the duration of this persistent state and its impact on long-term arterial efficiency.
+
+[End of Report]</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:yihong.tang@servicenow.com">Yihong Tang</a> · <a href="mailto:valentina.zantedeschi@servicenow.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

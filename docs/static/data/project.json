@@ -1,0 +1,113 @@
+{
+  "title": "Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting",
+  "authors": [
+    {
+      "name": "Yihong Tang",
+      "affiliations": [
+        1,
+        2,
+        4
+      ],
+      "email": "yihong.tang@servicenow.com"
+    },
+    {
+      "name": "Andrew Robert Williams",
+      "affiliations": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Arjun Ashok",
+      "affiliations": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Vincent Zhihao Zheng",
+      "affiliations": [
+        1
+      ]
+    },
+    {
+      "name": "Shubham Gupta",
+      "affiliations": [
+        2,
+        5,
+        4
+      ]
+    },
+    {
+      "name": "Lijun Sun",
+      "affiliations": [
+        1
+      ]
+    },
+    {
+      "name": "Alexandre Drouin",
+      "affiliations": [
+        2,
+        5,
+        4
+      ]
+    },
+    {
+      "name": "Issam H. Laradji",
+      "affiliations": [
+        2,
+        6
+      ]
+    },
+    {
+      "name": "Étienne Marcotte",
+      "affiliations": [
+        2
+      ]
+    },
+    {
+      "name": "Valentina Zantedeschi",
+      "affiliations": [
+        2,
+        5
+      ],
+      "email": "valentina.zantedeschi@servicenow.com"
+    }
+  ],
+  "affiliations": [
+    {
+      "id": 1,
+      "name": "McGill University"
+    },
+    {
+      "id": 2,
+      "name": "ServiceNow Research"
+    },
+    {
+      "id": 3,
+      "name": "Université de Montréal"
+    },
+    {
+      "id": 4,
+      "name": "Mila – Quebec AI Institute"
+    },
+    {
+      "id": 5,
+      "name": "Université Laval"
+    },
+    {
+      "id": 6,
+      "name": "University of British Columbia"
+    }
+  ],
+  "links": {
+    "project": "https://servicenow.github.io/Dr-CiK/",
+    "paper": "https://arxiv.org/abs/2605.27904",
+    "dataset": "https://huggingface.co/datasets/ServiceNow/Dr-CiK",
+    "repository": "https://github.com/ServiceNow/Dr-CiK",
+    "submission": "https://github.com/ServiceNow/Dr-CiK/blob/main/SUBMISSION.md",
+    "license": "https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE"
+  }
+}

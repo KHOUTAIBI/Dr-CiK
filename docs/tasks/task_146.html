@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Vista-Point Node 4 · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Vista-Point Node 4</h1>
+          <p>Forecasting <strong>occupancy rate</strong> · sensor spike task</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="IoT sensor">IoT sensor</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="168">168</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="38">38</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>IoT sensor</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Certain</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">General</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Straightforward</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2024-01-08 11:00:00</span><span>Forecast horizon · through 2024-01-16 10:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,38.13 17.87,37.27 23.73,36.41 29.60,35.12 35.46,32.53 41.33,22.62 47.19,40.72 53.06,48.04 58.92,55.80 64.79,61.40 70.65,67.87 76.52,72.17 82.38,74.76 88.25,75.19 94.11,69.59 99.98,56.23 105.84,41.15 111.71,33.39 117.57,38.13 123.44,39.86 129.30,37.70 135.17,36.41 141.03,35.55 146.90,33.39 152.76,28.22 158.63,17.02 164.49,36.41 170.36,46.75 176.22,54.51 182.09,59.68 187.95,66.57 193.82,71.74 199.68,74.33 205.55,74.76 211.41,69.16 217.28,55.80 223.14,40.72 229.01,32.10 234.87,36.41 240.74,38.56 246.60,35.98 252.47,33.82 258.33,33.82 264.20,32.10 270.06,26.50 275.93,276.00 281.79,276.00 287.66,45.89 293.52,52.35 299.39,58.82 305.25,66.57 311.12,71.74 316.98,74.33 322.85,74.76 328.71,69.16 334.58,55.80 340.44,40.72 346.31,32.53 352.17,36.84 358.04,38.56 363.90,35.55 369.77,32.10 375.63,28.65 381.50,30.38 387.36,20.89 393.23,14.00 399.09,28.22 404.96,43.73 410.82,49.77 416.69,57.09 422.55,64.85 428.42,70.45 434.28,74.33 440.15,74.33 446.01,69.16 451.88,57.09 457.74,43.73 463.61,35.55 469.47,37.27 475.34,37.27 481.20,33.39 487.07,27.79 492.93,23.91 498.80,29.94 504.66,28.22 510.53,23.05 516.39,37.70 522.26,45.89 528.12,48.90 533.99,53.64 539.85,60.54 545.72,67.43 551.58,73.47 557.45,74.33 563.31,73.47 569.18,69.16 575.04,61.83 580.91,48.04 586.77,43.30 592.64,39.42 598.50,35.98 604.37,33.82 610.23,31.67 616.10,32.96 621.96,35.12 627.83,38.13 633.69,42.01 639.56,49.77 645.42,51.06 651.29,52.78 657.15,60.11 663.02,67.00 668.88,73.47 674.75,75.62 680.61,76.05 686.48,73.90 692.34,69.16 698.21,59.68 704.07,52.78 709.94,47.61 715.80,44.16 721.67,42.01 727.53,40.72 733.40,40.72 739.26,41.15 745.13,43.73 750.99,45.89 756.86,49.34 762.72,51.92 768.59,58.38 774.45,66.57 780.32,72.17 786.18,76.05 792.05,75.19 797.91,70.02 803.78,57.52 809.64,43.73 815.51,36.84 821.37,39.86 827.24,41.15 833.10,38.13" /><polyline class="chart-future" points="833.10,38.13 838.97,37.27 844.83,36.41 850.70,35.98 856.56,35.12 862.43,32.53 868.29,22.62 874.16,40.72 880.02,48.04 885.89,51.92 891.75,55.80 897.62,61.40 903.48,67.87 909.35,72.17 915.21,74.76 921.08,75.62 926.94,75.19 932.81,69.59 938.67,56.23 944.54,41.15 950.40,33.39 956.27,34.25 962.13,38.13 968.00,39.86" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (192 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2024-01-08 11:00:00</td><td>9.6</td></tr><tr><td>2</td><td>Observed history</td><td>2024-01-08 12:00:00</td><td>9.8</td></tr><tr><td>3</td><td>Observed history</td><td>2024-01-08 13:00:00</td><td>10.0</td></tr><tr><td>4</td><td>Observed history</td><td>2024-01-08 14:00:00</td><td>10.1</td></tr><tr><td>5</td><td>Observed history</td><td>2024-01-08 15:00:00</td><td>10.3</td></tr><tr><td>6</td><td>Observed history</td><td>2024-01-08 16:00:00</td><td>10.9</td></tr><tr><td>7</td><td>Observed history</td><td>2024-01-08 17:00:00</td><td>13.2</td></tr><tr><td>8</td><td>Observed history</td><td>2024-01-08 18:00:00</td><td>9.0</td></tr><tr><td>9</td><td>Observed history</td><td>2024-01-08 19:00:00</td><td>7.3</td></tr><tr><td>10</td><td>Observed history</td><td>2024-01-08 20:00:00</td><td>6.4</td></tr><tr><td>11</td><td>Observed history</td><td>2024-01-08 21:00:00</td><td>5.5</td></tr><tr><td>12</td><td>Observed history</td><td>2024-01-08 22:00:00</td><td>4.2</td></tr><tr><td>13</td><td>Observed history</td><td>2024-01-08 23:00:00</td><td>2.7</td></tr><tr><td>14</td><td>Observed history</td><td>2024-01-09 00:00:00</td><td>1.7</td></tr><tr><td>15</td><td>Observed history</td><td>2024-01-09 01:00:00</td><td>1.1</td></tr><tr><td>16</td><td>Observed history</td><td>2024-01-09 02:00:00</td><td>0.9</td></tr><tr><td>17</td><td>Observed history</td><td>2024-01-09 03:00:00</td><td>1.0</td></tr><tr><td>18</td><td>Observed history</td><td>2024-01-09 04:00:00</td><td>2.3</td></tr><tr><td>19</td><td>Observed history</td><td>2024-01-09 05:00:00</td><td>5.4</td></tr><tr><td>20</td><td>Observed history</td><td>2024-01-09 06:00:00</td><td>8.9</td></tr><tr><td>21</td><td>Observed history</td><td>2024-01-09 07:00:00</td><td>10.7</td></tr><tr><td>22</td><td>Observed history</td><td>2024-01-09 08:00:00</td><td>10.5</td></tr><tr><td>23</td><td>Observed history</td><td>2024-01-09 09:00:00</td><td>9.6</td></tr><tr><td>24</td><td>Observed history</td><td>2024-01-09 10:00:00</td><td>9.2</td></tr><tr><td>25</td><td>Observed history</td><td>2024-01-09 11:00:00</td><td>9.7</td></tr><tr><td>26</td><td>Observed history</td><td>2024-01-09 12:00:00</td><td>10.0</td></tr><tr><td>27</td><td>Observed history</td><td>2024-01-09 13:00:00</td><td>10.2</td></tr><tr><td>28</td><td>Observed history</td><td>2024-01-09 14:00:00</td><td>10.5</td></tr><tr><td>29</td><td>Observed history</td><td>2024-01-09 15:00:00</td><td>10.7</td></tr><tr><td>30</td><td>Observed history</td><td>2024-01-09 16:00:00</td><td>11.9</td></tr><tr><td>31</td><td>Observed history</td><td>2024-01-09 17:00:00</td><td>14.5</td></tr><tr><td>32</td><td>Observed history</td><td>2024-01-09 18:00:00</td><td>10.0</td></tr><tr><td>33</td><td>Observed history</td><td>2024-01-09 19:00:00</td><td>7.6</td></tr><tr><td>34</td><td>Observed history</td><td>2024-01-09 20:00:00</td><td>6.7</td></tr><tr><td>35</td><td>Observed history</td><td>2024-01-09 21:00:00</td><td>5.8</td></tr><tr><td>36</td><td>Observed history</td><td>2024-01-09 22:00:00</td><td>4.6</td></tr><tr><td>37</td><td>Observed history</td><td>2024-01-09 23:00:00</td><td>3.0</td></tr><tr><td>38</td><td>Observed history</td><td>2024-01-10 00:00:00</td><td>1.8</td></tr><tr><td>39</td><td>Observed history</td><td>2024-01-10 01:00:00</td><td>1.2</td></tr><tr><td>40</td><td>Observed history</td><td>2024-01-10 02:00:00</td><td>1.0</td></tr><tr><td>41</td><td>Observed history</td><td>2024-01-10 03:00:00</td><td>1.1</td></tr><tr><td>42</td><td>Observed history</td><td>2024-01-10 04:00:00</td><td>2.4</td></tr><tr><td>43</td><td>Observed history</td><td>2024-01-10 05:00:00</td><td>5.5</td></tr><tr><td>44</td><td>Observed history</td><td>2024-01-10 06:00:00</td><td>9.0</td></tr><tr><td>45</td><td>Observed history</td><td>2024-01-10 07:00:00</td><td>11.0</td></tr><tr><td>46</td><td>Observed history</td><td>2024-01-10 08:00:00</td><td>10.7</td></tr><tr><td>47</td><td>Observed history</td><td>2024-01-10 09:00:00</td><td>10.0</td></tr><tr><td>48</td><td>Observed history</td><td>2024-01-10 10:00:00</td><td>9.5</td></tr><tr><td>49</td><td>Observed history</td><td>2024-01-10 11:00:00</td><td>10.1</td></tr><tr><td>50</td><td>Observed history</td><td>2024-01-10 12:00:00</td><td>10.6</td></tr><tr><td>51</td><td>Observed history</td><td>2024-01-10 13:00:00</td><td>10.6</td></tr><tr><td>52</td><td>Observed history</td><td>2024-01-10 14:00:00</td><td>10.9</td></tr><tr><td>53</td><td>Observed history</td><td>2024-01-10 15:00:00</td><td>11.0</td></tr><tr><td>54</td><td>Observed history</td><td>2024-01-10 16:00:00</td><td>12.3</td></tr><tr><td>55</td><td>Observed history</td><td>2024-01-10 17:00:00</td><td>-45.6</td></tr><tr><td>56</td><td>Observed history</td><td>2024-01-10 18:00:00</td><td>-45.6</td></tr><tr><td>57</td><td>Observed history</td><td>2024-01-10 19:00:00</td><td>7.8</td></tr><tr><td>58</td><td>Observed history</td><td>2024-01-10 20:00:00</td><td>7.1</td></tr><tr><td>59</td><td>Observed history</td><td>2024-01-10 21:00:00</td><td>6.3</td></tr><tr><td>60</td><td>Observed history</td><td>2024-01-10 22:00:00</td><td>4.8</td></tr><tr><td>61</td><td>Observed history</td><td>2024-01-10 23:00:00</td><td>3.0</td></tr><tr><td>62</td><td>Observed history</td><td>2024-01-11 00:00:00</td><td>1.8</td></tr><tr><td>63</td><td>Observed history</td><td>2024-01-11 01:00:00</td><td>1.2</td></tr><tr><td>64</td><td>Observed history</td><td>2024-01-11 02:00:00</td><td>1.0</td></tr><tr><td>65</td><td>Observed history</td><td>2024-01-11 03:00:00</td><td>1.1</td></tr><tr><td>66</td><td>Observed history</td><td>2024-01-11 04:00:00</td><td>2.4</td></tr><tr><td>67</td><td>Observed history</td><td>2024-01-11 05:00:00</td><td>5.5</td></tr><tr><td>68</td><td>Observed history</td><td>2024-01-11 06:00:00</td><td>9.0</td></tr><tr><td>69</td><td>Observed history</td><td>2024-01-11 07:00:00</td><td>10.9</td></tr><tr><td>70</td><td>Observed history</td><td>2024-01-11 08:00:00</td><td>10.7</td></tr><tr><td>71</td><td>Observed history</td><td>2024-01-11 09:00:00</td><td>9.9</td></tr><tr><td>72</td><td>Observed history</td><td>2024-01-11 10:00:00</td><td>9.5</td></tr><tr><td>73</td><td>Observed history</td><td>2024-01-11 11:00:00</td><td>10.2</td></tr><tr><td>74</td><td>Observed history</td><td>2024-01-11 12:00:00</td><td>11.0</td></tr><tr><td>75</td><td>Observed history</td><td>2024-01-11 13:00:00</td><td>11.8</td></tr><tr><td>76</td><td>Observed history</td><td>2024-01-11 14:00:00</td><td>11.3</td></tr><tr><td>77</td><td>Observed history</td><td>2024-01-11 15:00:00</td><td>11.4</td></tr><tr><td>78</td><td>Observed history</td><td>2024-01-11 16:00:00</td><td>13.6</td></tr><tr><td>79</td><td>Observed history</td><td>2024-01-11 17:00:00</td><td>15.2</td></tr><tr><td>80</td><td>Observed history</td><td>2024-01-11 18:00:00</td><td>11.9</td></tr><tr><td>81</td><td>Observed history</td><td>2024-01-11 19:00:00</td><td>8.3</td></tr><tr><td>82</td><td>Observed history</td><td>2024-01-11 20:00:00</td><td>7.6</td></tr><tr><td>83</td><td>Observed history</td><td>2024-01-11 21:00:00</td><td>6.9</td></tr><tr><td>84</td><td>Observed history</td><td>2024-01-11 22:00:00</td><td>5.2</td></tr><tr><td>85</td><td>Observed history</td><td>2024-01-11 23:00:00</td><td>3.4</td></tr><tr><td>86</td><td>Observed history</td><td>2024-01-12 00:00:00</td><td>2.1</td></tr><tr><td>87</td><td>Observed history</td><td>2024-01-12 01:00:00</td><td>1.4</td></tr><tr><td>88</td><td>Observed history</td><td>2024-01-12 02:00:00</td><td>1.2</td></tr><tr><td>89</td><td>Observed history</td><td>2024-01-12 03:00:00</td><td>1.2</td></tr><tr><td>90</td><td>Observed history</td><td>2024-01-12 04:00:00</td><td>2.4</td></tr><tr><td>91</td><td>Observed history</td><td>2024-01-12 05:00:00</td><td>5.2</td></tr><tr><td>92</td><td>Observed history</td><td>2024-01-12 06:00:00</td><td>8.3</td></tr><tr><td>93</td><td>Observed history</td><td>2024-01-12 07:00:00</td><td>10.3</td></tr><tr><td>94</td><td>Observed history</td><td>2024-01-12 08:00:00</td><td>10.2</td></tr><tr><td>95</td><td>Observed history</td><td>2024-01-12 09:00:00</td><td>9.8</td></tr><tr><td>96</td><td>Observed history</td><td>2024-01-12 10:00:00</td><td>9.8</td></tr><tr><td>97</td><td>Observed history</td><td>2024-01-12 11:00:00</td><td>10.7</td></tr><tr><td>98</td><td>Observed history</td><td>2024-01-12 12:00:00</td><td>12.0</td></tr><tr><td>99</td><td>Observed history</td><td>2024-01-12 13:00:00</td><td>11.6</td></tr><tr><td>100</td><td>Observed history</td><td>2024-01-12 14:00:00</td><td>12.9</td></tr><tr><td>101</td><td>Observed history</td><td>2024-01-12 15:00:00</td><td>11.5</td></tr><tr><td>102</td><td>Observed history</td><td>2024-01-12 16:00:00</td><td>11.9</td></tr><tr><td>103</td><td>Observed history</td><td>2024-01-12 17:00:00</td><td>13.1</td></tr><tr><td>104</td><td>Observed history</td><td>2024-01-12 18:00:00</td><td>9.7</td></tr><tr><td>105</td><td>Observed history</td><td>2024-01-12 19:00:00</td><td>8.4</td></tr><tr><td>106</td><td>Observed history</td><td>2024-01-12 20:00:00</td><td>7.8</td></tr><tr><td>107</td><td>Observed history</td><td>2024-01-12 21:00:00</td><td>7.1</td></tr><tr><td>108</td><td>Observed history</td><td>2024-01-12 22:00:00</td><td>6.0</td></tr><tr><td>109</td><td>Observed history</td><td>2024-01-12 23:00:00</td><td>4.4</td></tr><tr><td>110</td><td>Observed history</td><td>2024-01-13 00:00:00</td><td>2.8</td></tr><tr><td>111</td><td>Observed history</td><td>2024-01-13 01:00:00</td><td>1.8</td></tr><tr><td>112</td><td>Observed history</td><td>2024-01-13 02:00:00</td><td>1.4</td></tr><tr><td>113</td><td>Observed history</td><td>2024-01-13 03:00:00</td><td>1.2</td></tr><tr><td>114</td><td>Observed history</td><td>2024-01-13 04:00:00</td><td>1.4</td></tr><tr><td>115</td><td>Observed history</td><td>2024-01-13 05:00:00</td><td>2.4</td></tr><tr><td>116</td><td>Observed history</td><td>2024-01-13 06:00:00</td><td>4.1</td></tr><tr><td>117</td><td>Observed history</td><td>2024-01-13 07:00:00</td><td>5.8</td></tr><tr><td>118</td><td>Observed history</td><td>2024-01-13 08:00:00</td><td>7.3</td></tr><tr><td>119</td><td>Observed history</td><td>2024-01-13 09:00:00</td><td>8.4</td></tr><tr><td>120</td><td>Observed history</td><td>2024-01-13 10:00:00</td><td>9.3</td></tr><tr><td>121</td><td>Observed history</td><td>2024-01-13 11:00:00</td><td>10.1</td></tr><tr><td>122</td><td>Observed history</td><td>2024-01-13 12:00:00</td><td>10.6</td></tr><tr><td>123</td><td>Observed history</td><td>2024-01-13 13:00:00</td><td>11.1</td></tr><tr><td>124</td><td>Observed history</td><td>2024-01-13 14:00:00</td><td>11.1</td></tr><tr><td>125</td><td>Observed history</td><td>2024-01-13 15:00:00</td><td>10.8</td></tr><tr><td>126</td><td>Observed history</td><td>2024-01-13 16:00:00</td><td>10.3</td></tr><tr><td>127</td><td>Observed history</td><td>2024-01-13 17:00:00</td><td>9.6</td></tr><tr><td>128</td><td>Observed history</td><td>2024-01-13 18:00:00</td><td>8.7</td></tr><tr><td>129</td><td>Observed history</td><td>2024-01-13 19:00:00</td><td>7.7</td></tr><tr><td>130</td><td>Observed history</td><td>2024-01-13 20:00:00</td><td>6.9</td></tr><tr><td>131</td><td>Observed history</td><td>2024-01-13 21:00:00</td><td>6.6</td></tr><tr><td>132</td><td>Observed history</td><td>2024-01-13 22:00:00</td><td>6.2</td></tr><tr><td>133</td><td>Observed history</td><td>2024-01-13 23:00:00</td><td>4.5</td></tr><tr><td>134</td><td>Observed history</td><td>2024-01-14 00:00:00</td><td>2.9</td></tr><tr><td>135</td><td>Observed history</td><td>2024-01-14 01:00:00</td><td>1.8</td></tr><tr><td>136</td><td>Observed history</td><td>2024-01-14 02:00:00</td><td>1.4</td></tr><tr><td>137</td><td>Observed history</td><td>2024-01-14 03:00:00</td><td>0.9</td></tr><tr><td>138</td><td>Observed history</td><td>2024-01-14 04:00:00</td><td>0.8</td></tr><tr><td>139</td><td>Observed history</td><td>2024-01-14 05:00:00</td><td>1.3</td></tr><tr><td>140</td><td>Observed history</td><td>2024-01-14 06:00:00</td><td>2.4</td></tr><tr><td>141</td><td>Observed history</td><td>2024-01-14 07:00:00</td><td>3.5</td></tr><tr><td>142</td><td>Observed history</td><td>2024-01-14 08:00:00</td><td>4.6</td></tr><tr><td>143</td><td>Observed history</td><td>2024-01-14 09:00:00</td><td>6.2</td></tr><tr><td>144</td><td>Observed history</td><td>2024-01-14 10:00:00</td><td>7.4</td></tr><tr><td>145</td><td>Observed history</td><td>2024-01-14 11:00:00</td><td>8.2</td></tr><tr><td>146</td><td>Observed history</td><td>2024-01-14 12:00:00</td><td>8.7</td></tr><tr><td>147</td><td>Observed history</td><td>2024-01-14 13:00:00</td><td>9.0</td></tr><tr><td>148</td><td>Observed history</td><td>2024-01-14 14:00:00</td><td>9.0</td></tr><tr><td>149</td><td>Observed history</td><td>2024-01-14 15:00:00</td><td>9.0</td></tr><tr><td>150</td><td>Observed history</td><td>2024-01-14 16:00:00</td><td>8.9</td></tr><tr><td>151</td><td>Observed history</td><td>2024-01-14 17:00:00</td><td>8.3</td></tr><tr><td>152</td><td>Observed history</td><td>2024-01-14 18:00:00</td><td>7.8</td></tr><tr><td>153</td><td>Observed history</td><td>2024-01-14 19:00:00</td><td>7.3</td></tr><tr><td>154</td><td>Observed history</td><td>2024-01-14 20:00:00</td><td>7.0</td></tr><tr><td>155</td><td>Observed history</td><td>2024-01-14 21:00:00</td><td>6.4</td></tr><tr><td>156</td><td>Observed history</td><td>2024-01-14 22:00:00</td><td>4.9</td></tr><tr><td>157</td><td>Observed history</td><td>2024-01-14 23:00:00</td><td>3.0</td></tr><tr><td>158</td><td>Observed history</td><td>2024-01-15 00:00:00</td><td>1.7</td></tr><tr><td>159</td><td>Observed history</td><td>2024-01-15 01:00:00</td><td>1.0</td></tr><tr><td>160</td><td>Observed history</td><td>2024-01-15 02:00:00</td><td>0.8</td></tr><tr><td>161</td><td>Observed history</td><td>2024-01-15 03:00:00</td><td>1.0</td></tr><tr><td>162</td><td>Observed history</td><td>2024-01-15 04:00:00</td><td>2.2</td></tr><tr><td>163</td><td>Observed history</td><td>2024-01-15 05:00:00</td><td>5.1</td></tr><tr><td>164</td><td>Observed history</td><td>2024-01-15 06:00:00</td><td>8.3</td></tr><tr><td>165</td><td>Observed history</td><td>2024-01-15 07:00:00</td><td>10.2</td></tr><tr><td>166</td><td>Observed history</td><td>2024-01-15 08:00:00</td><td>9.9</td></tr><tr><td>167</td><td>Observed history</td><td>2024-01-15 09:00:00</td><td>9.2</td></tr><tr><td>168</td><td>Observed history</td><td>2024-01-15 10:00:00</td><td>8.9</td></tr><tr class="future"><td>169</td><td>Forecast horizon</td><td>2024-01-15 11:00:00</td><td>9.6</td></tr><tr class="future"><td>170</td><td>Forecast horizon</td><td>2024-01-15 12:00:00</td><td>9.8</td></tr><tr class="future"><td>171</td><td>Forecast horizon</td><td>2024-01-15 13:00:00</td><td>10.0</td></tr><tr class="future"><td>172</td><td>Forecast horizon</td><td>2024-01-15 14:00:00</td><td>10.1</td></tr><tr class="future"><td>173</td><td>Forecast horizon</td><td>2024-01-15 15:00:00</td><td>10.3</td></tr><tr class="future"><td>174</td><td>Forecast horizon</td><td>2024-01-15 16:00:00</td><td>10.9</td></tr><tr class="future"><td>175</td><td>Forecast horizon</td><td>2024-01-15 17:00:00</td><td>13.2</td></tr><tr class="future"><td>176</td><td>Forecast horizon</td><td>2024-01-15 18:00:00</td><td>9.0</td></tr><tr class="future"><td>177</td><td>Forecast horizon</td><td>2024-01-15 19:00:00</td><td>7.3</td></tr><tr class="future"><td>178</td><td>Forecast horizon</td><td>2024-01-15 20:00:00</td><td>6.4</td></tr><tr class="future"><td>179</td><td>Forecast horizon</td><td>2024-01-15 21:00:00</td><td>5.5</td></tr><tr class="future"><td>180</td><td>Forecast horizon</td><td>2024-01-15 22:00:00</td><td>4.2</td></tr><tr class="future"><td>181</td><td>Forecast horizon</td><td>2024-01-15 23:00:00</td><td>2.7</td></tr><tr class="future"><td>182</td><td>Forecast horizon</td><td>2024-01-16 00:00:00</td><td>1.7</td></tr><tr class="future"><td>183</td><td>Forecast horizon</td><td>2024-01-16 01:00:00</td><td>1.1</td></tr><tr class="future"><td>184</td><td>Forecast horizon</td><td>2024-01-16 02:00:00</td><td>0.9</td></tr><tr class="future"><td>185</td><td>Forecast horizon</td><td>2024-01-16 03:00:00</td><td>1.0</td></tr><tr class="future"><td>186</td><td>Forecast horizon</td><td>2024-01-16 04:00:00</td><td>2.3</td></tr><tr class="future"><td>187</td><td>Forecast horizon</td><td>2024-01-16 05:00:00</td><td>5.4</td></tr><tr class="future"><td>188</td><td>Forecast horizon</td><td>2024-01-16 06:00:00</td><td>8.9</td></tr><tr class="future"><td>189</td><td>Forecast horizon</td><td>2024-01-16 07:00:00</td><td>10.7</td></tr><tr class="future"><td>190</td><td>Forecast horizon</td><td>2024-01-16 08:00:00</td><td>10.5</td></tr><tr class="future"><td>191</td><td>Forecast horizon</td><td>2024-01-16 09:00:00</td><td>9.6</td></tr><tr class="future"><td>192</td><td>Forecast horizon</td><td>2024-01-16 10:00:00</td><td>9.2</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-146-context" id="forecast-task-146-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-146-context" id="forecast-task-146-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-146-context" id="forecast-task-146-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-146-view" id="forecast-task-146-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-146-view" id="forecast-task-146-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-146-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-146-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-146-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-146-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-146-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 71.58 L 32.94 70.70 L 37.88 69.81 L 42.83 69.37 L 47.77 68.48 L 52.71 65.82 L 57.65 55.63 L 62.60 74.24 L 67.54 81.78 L 72.48 85.76 L 77.42 89.75 L 82.37 95.51 L 87.31 102.16 L 92.25 106.59 L 97.19 109.25 L 102.14 110.14 L 107.08 109.69 L 112.02 103.93 L 116.96 90.20 L 121.91 74.69 L 126.85 66.71 L 131.79 67.59 L 136.73 71.58 L 141.68 73.36 L 146.62 71.14 L 151.56 69.81 L 156.50 68.92 L 161.45 67.59 L 166.39 66.71 L 171.33 61.39 L 176.27 49.87 L 181.21 69.81 L 186.16 80.45 L 191.10 84.43 L 196.04 88.42 L 200.98 93.74 L 205.93 100.83 L 210.87 106.15 L 215.81 108.81 L 220.75 109.69 L 225.70 109.25 L 230.64 103.49 L 235.58 89.75 L 240.52 74.24 L 245.47 65.38 L 250.41 66.71 L 255.35 69.81 L 260.29 72.03 L 265.24 69.37 L 270.18 67.15 L 275.12 67.15 L 280.06 65.82 L 285.01 65.38 L 289.95 59.62 L 294.89 316.21 L 299.83 316.21 L 304.77 79.56 L 309.72 82.66 L 314.66 86.21 L 319.60 92.85 L 324.54 100.83 L 329.49 106.15 L 334.43 108.81 L 339.37 109.69 L 344.31 109.25 L 349.26 103.49 L 354.20 89.75 L 359.14 74.24 L 364.08 65.82 L 369.03 66.71 L 373.97 70.25 L 378.91 72.03 L 383.85 68.92 L 388.80 65.38 L 393.74 61.83 L 398.68 64.05 L 403.62 63.61 L 408.57 53.86 L 413.51 46.77 L 418.45 61.39 L 423.39 77.34 L 428.34 80.45 L 433.28 83.55 L 438.22 91.08 L 443.16 99.06 L 448.10 104.82 L 453.05 107.92 L 457.99 108.81 L 462.93 108.81 L 467.87 103.49 L 472.82 91.08 L 477.76 77.34 L 482.70 68.48 L 487.64 68.92 L 492.59 70.70 L 497.53 70.70 L 502.47 66.71 L 507.41 60.95 L 512.36 62.72 L 517.30 56.96 L 522.24 63.16 L 527.18 61.39 L 532.13 56.07 L 537.07 71.14 L 542.01 76.90 L 546.95 79.56 L 551.90 82.66 L 556.84 87.54 L 561.78 94.63 L 566.72 101.72 L 571.66 106.15 L 576.61 107.92 L 581.55 108.81 L 586.49 107.92 L 591.43 103.49 L 596.38 95.96 L 601.32 88.42 L 606.26 81.78 L 611.20 76.90 L 616.15 72.91 L 621.09 69.37 L 626.03 67.15 L 630.97 64.94 L 635.92 64.94 L 640.86 66.27 L 645.80 68.48 L 650.74 71.58 L 655.69 75.57 L 660.63 80.00 L 665.57 83.55 L 670.51 84.88 L 675.46 86.65 L 680.40 94.18 L 685.34 101.27 L 690.28 106.15 L 695.23 107.92 L 700.17 110.14 L 705.11 110.58 L 710.05 108.37 L 714.99 103.49 L 719.94 98.62 L 724.88 93.74 L 729.82 86.65 L 734.76 81.33 L 739.71 77.79 L 744.65 75.57 L 749.59 74.24 L 754.53 74.24 L 759.48 74.24 L 764.42 74.69 L 769.36 77.34 L 774.30 79.56 L 779.25 81.78 L 784.19 83.11 L 789.13 85.76 L 794.07 92.41 L 799.02 100.83 L 803.96 106.59 L 808.90 109.69 L 813.84 110.58 L 818.79 109.69 L 823.73 104.38 L 828.67 91.53 L 833.61 77.34 L 838.55 68.92 L 843.50 70.25 L 848.44 73.36 L 853.38 74.69" /><path class="forecast-svg-actual" d="M 858.32 71.58 L 863.27 70.70 L 868.21 69.81 L 873.15 69.37 L 878.09 68.48 L 883.04 65.82 L 887.98 55.63 L 892.92 74.24 L 897.86 81.78 L 902.81 85.76 L 907.75 89.75 L 912.69 95.51 L 917.63 102.16 L 922.58 106.59 L 927.52 109.25 L 932.46 110.14 L 937.40 109.69 L 942.35 103.93 L 947.29 90.20 L 952.23 74.69 L 957.17 66.71 L 962.12 67.59 L 967.06 71.58 L 972.00 73.36" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 59.73 L 863.27 63.27 L 868.21 63.36 L 873.15 63.62 L 878.09 63.66 L 883.04 64.20 L 887.98 62.96 L 892.92 70.24 L 897.86 67.55 L 902.81 71.52 L 907.75 76.32 L 912.69 87.43 L 917.63 93.05 L 922.58 97.96 L 927.52 101.31 L 932.46 102.18 L 937.40 100.79 L 942.35 98.34 L 947.29 88.22 L 952.23 79.13 L 957.17 56.45 L 962.12 68.42 L 967.06 47.29 L 972.00 43.79 L 972.00 97.81 L 967.06 91.86 L 962.12 90.21 L 957.17 96.09 L 952.23 97.39 L 947.29 103.49 L 942.35 105.46 L 937.40 106.80 L 932.46 108.50 L 927.52 106.93 L 922.58 105.50 L 917.63 99.99 L 912.69 95.36 L 907.75 90.03 L 902.81 90.39 L 897.86 86.47 L 892.92 84.71 L 887.98 82.83 L 883.04 82.57 L 878.09 83.46 L 873.15 85.19 L 868.21 87.18 L 863.27 85.28 L 858.32 87.78 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 73.76 L 863.27 74.28 L 868.21 75.27 L 873.15 74.40 L 878.09 73.56 L 883.04 73.38 L 887.98 72.90 L 892.92 77.47 L 897.86 77.01 L 902.81 80.95 L 907.75 83.17 L 912.69 91.40 L 917.63 96.52 L 922.58 101.73 L 927.52 104.12 L 932.46 105.34 L 937.40 103.79 L 942.35 101.90 L 947.29 95.86 L 952.23 88.26 L 957.17 76.27 L 962.12 79.32 L 967.06 69.58 L 972.00 70.80" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="73.76" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 858.32 71.58 L 863.27 68.76 L 868.21 67.47 L 873.15 66.35 L 878.09 65.11 L 883.04 60.70 L 887.98 50.61 L 892.92 68.36 L 897.86 79.35 L 902.81 83.26 L 907.75 87.04 L 912.69 92.78 L 917.63 100.16 L 922.58 105.78 L 927.52 108.61 L 932.46 109.54 L 937.40 109.22 L 942.35 103.58 L 947.29 90.02 L 952.23 74.90 L 957.17 66.50 L 962.12 67.42 L 967.06 70.75 L 972.00 72.47" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="71.58" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 71.69 L 863.27 68.86 L 868.21 68.03 L 873.15 67.50 L 878.09 67.39 L 883.04 63.42 L 887.98 58.50 L 892.92 68.50 L 897.86 77.26 L 902.81 84.16 L 907.75 88.32 L 912.69 93.52 L 917.63 99.98 L 922.58 104.64 L 927.52 107.38 L 932.46 108.80 L 937.40 108.30 L 942.35 104.39 L 947.29 94.80 L 952.23 82.03 L 957.17 72.11 L 962.12 69.73 L 967.06 70.98 L 972.00 71.78" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="71.69" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 71.58 L 32.94 70.70 L 37.88 69.81 L 42.83 69.37 L 47.77 68.48 L 52.71 65.82 L 57.65 55.63 L 62.60 74.24 L 67.54 81.78 L 72.48 85.76 L 77.42 89.75 L 82.37 95.51 L 87.31 102.16 L 92.25 106.59 L 97.19 109.25 L 102.14 110.14 L 107.08 109.69 L 112.02 103.93 L 116.96 90.20 L 121.91 74.69 L 126.85 66.71 L 131.79 67.59 L 136.73 71.58 L 141.68 73.36 L 146.62 71.14 L 151.56 69.81 L 156.50 68.92 L 161.45 67.59 L 166.39 66.71 L 171.33 61.39 L 176.27 49.87 L 181.21 69.81 L 186.16 80.45 L 191.10 84.43 L 196.04 88.42 L 200.98 93.74 L 205.93 100.83 L 210.87 106.15 L 215.81 108.81 L 220.75 109.69 L 225.70 109.25 L 230.64 103.49 L 235.58 89.75 L 240.52 74.24 L 245.47 65.38 L 250.41 66.71 L 255.35 69.81 L 260.29 72.03 L 265.24 69.37 L 270.18 67.15 L 275.12 67.15 L 280.06 65.82 L 285.01 65.38 L 289.95 59.62 L 294.89 316.21 L 299.83 316.21 L 304.77 79.56 L 309.72 82.66 L 314.66 86.21 L 319.60 92.85 L 324.54 100.83 L 329.49 106.15 L 334.43 108.81 L 339.37 109.69 L 344.31 109.25 L 349.26 103.49 L 354.20 89.75 L 359.14 74.24 L 364.08 65.82 L 369.03 66.71 L 373.97 70.25 L 378.91 72.03 L 383.85 68.92 L 388.80 65.38 L 393.74 61.83 L 398.68 64.05 L 403.62 63.61 L 408.57 53.86 L 413.51 46.77 L 418.45 61.39 L 423.39 77.34 L 428.34 80.45 L 433.28 83.55 L 438.22 91.08 L 443.16 99.06 L 448.10 104.82 L 453.05 107.92 L 457.99 108.81 L 462.93 108.81 L 467.87 103.49 L 472.82 91.08 L 477.76 77.34 L 482.70 68.48 L 487.64 68.92 L 492.59 70.70 L 497.53 70.70 L 502.47 66.71 L 507.41 60.95 L 512.36 62.72 L 517.30 56.96 L 522.24 63.16 L 527.18 61.39 L 532.13 56.07 L 537.07 71.14 L 542.01 76.90 L 546.95 79.56 L 551.90 82.66 L 556.84 87.54 L 561.78 94.63 L 566.72 101.72 L 571.66 106.15 L 576.61 107.92 L 581.55 108.81 L 586.49 107.92 L 591.43 103.49 L 596.38 95.96 L 601.32 88.42 L 606.26 81.78 L 611.20 76.90 L 616.15 72.91 L 621.09 69.37 L 626.03 67.15 L 630.97 64.94 L 635.92 64.94 L 640.86 66.27 L 645.80 68.48 L 650.74 71.58 L 655.69 75.57 L 660.63 80.00 L 665.57 83.55 L 670.51 84.88 L 675.46 86.65 L 680.40 94.18 L 685.34 101.27 L 690.28 106.15 L 695.23 107.92 L 700.17 110.14 L 705.11 110.58 L 710.05 108.37 L 714.99 103.49 L 719.94 98.62 L 724.88 93.74 L 729.82 86.65 L 734.76 81.33 L 739.71 77.79 L 744.65 75.57 L 749.59 74.24 L 754.53 74.24 L 759.48 74.24 L 764.42 74.69 L 769.36 77.34 L 774.30 79.56 L 779.25 81.78 L 784.19 83.11 L 789.13 85.76 L 794.07 92.41 L 799.02 100.83 L 803.96 106.59 L 808.90 109.69 L 813.84 110.58 L 818.79 109.69 L 823.73 104.38 L 828.67 91.53 L 833.61 77.34 L 838.55 68.92 L 843.50 70.25 L 848.44 73.36 L 853.38 74.69" /><path class="forecast-svg-actual" d="M 858.32 71.58 L 863.27 70.70 L 868.21 69.81 L 873.15 69.37 L 878.09 68.48 L 883.04 65.82 L 887.98 55.63 L 892.92 74.24 L 897.86 81.78 L 902.81 85.76 L 907.75 89.75 L 912.69 95.51 L 917.63 102.16 L 922.58 106.59 L 927.52 109.25 L 932.46 110.14 L 937.40 109.69 L 942.35 103.93 L 947.29 90.20 L 952.23 74.69 L 957.17 66.71 L 962.12 67.59 L 967.06 71.58 L 972.00 73.36" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 59.73 L 863.27 63.27 L 868.21 63.36 L 873.15 63.62 L 878.09 63.66 L 883.04 64.20 L 887.98 62.96 L 892.92 70.24 L 897.86 67.55 L 902.81 71.52 L 907.75 76.32 L 912.69 87.43 L 917.63 93.05 L 922.58 97.96 L 927.52 101.31 L 932.46 102.18 L 937.40 100.79 L 942.35 98.34 L 947.29 88.22 L 952.23 79.13 L 957.17 56.45 L 962.12 68.42 L 967.06 47.29 L 972.00 43.79 L 972.00 97.81 L 967.06 91.86 L 962.12 90.21 L 957.17 96.09 L 952.23 97.39 L 947.29 103.49 L 942.35 105.46 L 937.40 106.80 L 932.46 108.50 L 927.52 106.93 L 922.58 105.50 L 917.63 99.99 L 912.69 95.36 L 907.75 90.03 L 902.81 90.39 L 897.86 86.47 L 892.92 84.71 L 887.98 82.83 L 883.04 82.57 L 878.09 83.46 L 873.15 85.19 L 868.21 87.18 L 863.27 85.28 L 858.32 87.78 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 73.76 L 863.27 74.28 L 868.21 75.27 L 873.15 74.40 L 878.09 73.56 L 883.04 73.38 L 887.98 72.90 L 892.92 77.47 L 897.86 77.01 L 902.81 80.95 L 907.75 83.17 L 912.69 91.40 L 917.63 96.52 L 922.58 101.73 L 927.52 104.12 L 932.46 105.34 L 937.40 103.79 L 942.35 101.90 L 947.29 95.86 L 952.23 88.26 L 957.17 76.27 L 962.12 79.32 L 967.06 69.58 L 972.00 70.80" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="73.76" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 71.58 L 32.94 70.70 L 37.88 69.81 L 42.83 69.37 L 47.77 68.48 L 52.71 65.82 L 57.65 55.63 L 62.60 74.24 L 67.54 81.78 L 72.48 85.76 L 77.42 89.75 L 82.37 95.51 L 87.31 102.16 L 92.25 106.59 L 97.19 109.25 L 102.14 110.14 L 107.08 109.69 L 112.02 103.93 L 116.96 90.20 L 121.91 74.69 L 126.85 66.71 L 131.79 67.59 L 136.73 71.58 L 141.68 73.36 L 146.62 71.14 L 151.56 69.81 L 156.50 68.92 L 161.45 67.59 L 166.39 66.71 L 171.33 61.39 L 176.27 49.87 L 181.21 69.81 L 186.16 80.45 L 191.10 84.43 L 196.04 88.42 L 200.98 93.74 L 205.93 100.83 L 210.87 106.15 L 215.81 108.81 L 220.75 109.69 L 225.70 109.25 L 230.64 103.49 L 235.58 89.75 L 240.52 74.24 L 245.47 65.38 L 250.41 66.71 L 255.35 69.81 L 260.29 72.03 L 265.24 69.37 L 270.18 67.15 L 275.12 67.15 L 280.06 65.82 L 285.01 65.38 L 289.95 59.62 L 294.89 316.21 L 299.83 316.21 L 304.77 79.56 L 309.72 82.66 L 314.66 86.21 L 319.60 92.85 L 324.54 100.83 L 329.49 106.15 L 334.43 108.81 L 339.37 109.69 L 344.31 109.25 L 349.26 103.49 L 354.20 89.75 L 359.14 74.24 L 364.08 65.82 L 369.03 66.71 L 373.97 70.25 L 378.91 72.03 L 383.85 68.92 L 388.80 65.38 L 393.74 61.83 L 398.68 64.05 L 403.62 63.61 L 408.57 53.86 L 413.51 46.77 L 418.45 61.39 L 423.39 77.34 L 428.34 80.45 L 433.28 83.55 L 438.22 91.08 L 443.16 99.06 L 448.10 104.82 L 453.05 107.92 L 457.99 108.81 L 462.93 108.81 L 467.87 103.49 L 472.82 91.08 L 477.76 77.34 L 482.70 68.48 L 487.64 68.92 L 492.59 70.70 L 497.53 70.70 L 502.47 66.71 L 507.41 60.95 L 512.36 62.72 L 517.30 56.96 L 522.24 63.16 L 527.18 61.39 L 532.13 56.07 L 537.07 71.14 L 542.01 76.90 L 546.95 79.56 L 551.90 82.66 L 556.84 87.54 L 561.78 94.63 L 566.72 101.72 L 571.66 106.15 L 576.61 107.92 L 581.55 108.81 L 586.49 107.92 L 591.43 103.49 L 596.38 95.96 L 601.32 88.42 L 606.26 81.78 L 611.20 76.90 L 616.15 72.91 L 621.09 69.37 L 626.03 67.15 L 630.97 64.94 L 635.92 64.94 L 640.86 66.27 L 645.80 68.48 L 650.74 71.58 L 655.69 75.57 L 660.63 80.00 L 665.57 83.55 L 670.51 84.88 L 675.46 86.65 L 680.40 94.18 L 685.34 101.27 L 690.28 106.15 L 695.23 107.92 L 700.17 110.14 L 705.11 110.58 L 710.05 108.37 L 714.99 103.49 L 719.94 98.62 L 724.88 93.74 L 729.82 86.65 L 734.76 81.33 L 739.71 77.79 L 744.65 75.57 L 749.59 74.24 L 754.53 74.24 L 759.48 74.24 L 764.42 74.69 L 769.36 77.34 L 774.30 79.56 L 779.25 81.78 L 784.19 83.11 L 789.13 85.76 L 794.07 92.41 L 799.02 100.83 L 803.96 106.59 L 808.90 109.69 L 813.84 110.58 L 818.79 109.69 L 823.73 104.38 L 828.67 91.53 L 833.61 77.34 L 838.55 68.92 L 843.50 70.25 L 848.44 73.36 L 853.38 74.69" /><path class="forecast-svg-actual" d="M 858.32 71.58 L 863.27 70.70 L 868.21 69.81 L 873.15 69.37 L 878.09 68.48 L 883.04 65.82 L 887.98 55.63 L 892.92 74.24 L 897.86 81.78 L 902.81 85.76 L 907.75 89.75 L 912.69 95.51 L 917.63 102.16 L 922.58 106.59 L 927.52 109.25 L 932.46 110.14 L 937.40 109.69 L 942.35 103.93 L 947.29 90.20 L 952.23 74.69 L 957.17 66.71 L 962.12 67.59 L 967.06 71.58 L 972.00 73.36" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 71.58 L 863.27 68.41 L 868.21 66.99 L 873.15 65.84 L 878.09 64.38 L 883.04 59.97 L 887.98 49.52 L 892.92 66.77 L 897.86 78.95 L 902.81 82.78 L 907.75 86.52 L 912.69 92.46 L 917.63 99.90 L 922.58 105.48 L 927.52 108.39 L 932.46 109.32 L 937.40 109.00 L 942.35 103.36 L 947.29 89.71 L 952.23 74.43 L 957.17 66.01 L 962.12 67.02 L 967.06 70.31 L 972.00 72.09 L 972.00 72.85 L 967.06 71.19 L 962.12 67.81 L 957.17 66.98 L 952.23 75.37 L 947.29 90.33 L 942.35 103.80 L 937.40 109.43 L 932.46 109.75 L 927.52 108.83 L 922.58 106.08 L 917.63 100.41 L 912.69 93.11 L 907.75 87.56 L 902.81 83.75 L 897.86 79.75 L 892.92 69.94 L 887.98 51.70 L 883.04 61.43 L 878.09 65.84 L 873.15 66.87 L 868.21 67.95 L 863.27 69.12 L 858.32 71.58 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 71.58 L 863.27 68.76 L 868.21 67.47 L 873.15 66.35 L 878.09 65.11 L 883.04 60.70 L 887.98 50.61 L 892.92 68.36 L 897.86 79.35 L 902.81 83.26 L 907.75 87.04 L 912.69 92.78 L 917.63 100.16 L 922.58 105.78 L 927.52 108.61 L 932.46 109.54 L 937.40 109.22 L 942.35 103.58 L 947.29 90.02 L 952.23 74.90 L 957.17 66.50 L 962.12 67.42 L 967.06 70.75 L 972.00 72.47" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="71.58" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 71.58 L 32.94 70.70 L 37.88 69.81 L 42.83 69.37 L 47.77 68.48 L 52.71 65.82 L 57.65 55.63 L 62.60 74.24 L 67.54 81.78 L 72.48 85.76 L 77.42 89.75 L 82.37 95.51 L 87.31 102.16 L 92.25 106.59 L 97.19 109.25 L 102.14 110.14 L 107.08 109.69 L 112.02 103.93 L 116.96 90.20 L 121.91 74.69 L 126.85 66.71 L 131.79 67.59 L 136.73 71.58 L 141.68 73.36 L 146.62 71.14 L 151.56 69.81 L 156.50 68.92 L 161.45 67.59 L 166.39 66.71 L 171.33 61.39 L 176.27 49.87 L 181.21 69.81 L 186.16 80.45 L 191.10 84.43 L 196.04 88.42 L 200.98 93.74 L 205.93 100.83 L 210.87 106.15 L 215.81 108.81 L 220.75 109.69 L 225.70 109.25 L 230.64 103.49 L 235.58 89.75 L 240.52 74.24 L 245.47 65.38 L 250.41 66.71 L 255.35 69.81 L 260.29 72.03 L 265.24 69.37 L 270.18 67.15 L 275.12 67.15 L 280.06 65.82 L 285.01 65.38 L 289.95 59.62 L 294.89 316.21 L 299.83 316.21 L 304.77 79.56 L 309.72 82.66 L 314.66 86.21 L 319.60 92.85 L 324.54 100.83 L 329.49 106.15 L 334.43 108.81 L 339.37 109.69 L 344.31 109.25 L 349.26 103.49 L 354.20 89.75 L 359.14 74.24 L 364.08 65.82 L 369.03 66.71 L 373.97 70.25 L 378.91 72.03 L 383.85 68.92 L 388.80 65.38 L 393.74 61.83 L 398.68 64.05 L 403.62 63.61 L 408.57 53.86 L 413.51 46.77 L 418.45 61.39 L 423.39 77.34 L 428.34 80.45 L 433.28 83.55 L 438.22 91.08 L 443.16 99.06 L 448.10 104.82 L 453.05 107.92 L 457.99 108.81 L 462.93 108.81 L 467.87 103.49 L 472.82 91.08 L 477.76 77.34 L 482.70 68.48 L 487.64 68.92 L 492.59 70.70 L 497.53 70.70 L 502.47 66.71 L 507.41 60.95 L 512.36 62.72 L 517.30 56.96 L 522.24 63.16 L 527.18 61.39 L 532.13 56.07 L 537.07 71.14 L 542.01 76.90 L 546.95 79.56 L 551.90 82.66 L 556.84 87.54 L 561.78 94.63 L 566.72 101.72 L 571.66 106.15 L 576.61 107.92 L 581.55 108.81 L 586.49 107.92 L 591.43 103.49 L 596.38 95.96 L 601.32 88.42 L 606.26 81.78 L 611.20 76.90 L 616.15 72.91 L 621.09 69.37 L 626.03 67.15 L 630.97 64.94 L 635.92 64.94 L 640.86 66.27 L 645.80 68.48 L 650.74 71.58 L 655.69 75.57 L 660.63 80.00 L 665.57 83.55 L 670.51 84.88 L 675.46 86.65 L 680.40 94.18 L 685.34 101.27 L 690.28 106.15 L 695.23 107.92 L 700.17 110.14 L 705.11 110.58 L 710.05 108.37 L 714.99 103.49 L 719.94 98.62 L 724.88 93.74 L 729.82 86.65 L 734.76 81.33 L 739.71 77.79 L 744.65 75.57 L 749.59 74.24 L 754.53 74.24 L 759.48 74.24 L 764.42 74.69 L 769.36 77.34 L 774.30 79.56 L 779.25 81.78 L 784.19 83.11 L 789.13 85.76 L 794.07 92.41 L 799.02 100.83 L 803.96 106.59 L 808.90 109.69 L 813.84 110.58 L 818.79 109.69 L 823.73 104.38 L 828.67 91.53 L 833.61 77.34 L 838.55 68.92 L 843.50 70.25 L 848.44 73.36 L 853.38 74.69" /><path class="forecast-svg-actual" d="M 858.32 71.58 L 863.27 70.70 L 868.21 69.81 L 873.15 69.37 L 878.09 68.48 L 883.04 65.82 L 887.98 55.63 L 892.92 74.24 L 897.86 81.78 L 902.81 85.76 L 907.75 89.75 L 912.69 95.51 L 917.63 102.16 L 922.58 106.59 L 927.52 109.25 L 932.46 110.14 L 937.40 109.69 L 942.35 103.93 L 947.29 90.20 L 952.23 74.69 L 957.17 66.71 L 962.12 67.59 L 967.06 71.58 L 972.00 73.36" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 70.60 L 863.27 66.56 L 868.21 65.06 L 873.15 63.80 L 878.09 63.09 L 883.04 57.33 L 887.98 53.77 L 892.92 63.12 L 897.86 72.35 L 902.81 78.26 L 907.75 83.32 L 912.69 89.49 L 917.63 96.88 L 922.58 102.34 L 927.52 105.08 L 932.46 105.45 L 937.40 103.57 L 942.35 99.03 L 947.29 88.06 L 952.23 74.61 L 957.17 66.81 L 962.12 68.24 L 967.06 69.26 L 972.00 69.91 L 972.00 73.65 L 967.06 72.70 L 962.12 71.23 L 957.17 77.40 L 952.23 89.45 L 947.29 101.53 L 942.35 109.75 L 937.40 113.02 L 932.46 112.15 L 927.52 109.68 L 922.58 106.94 L 917.63 103.07 L 912.69 97.54 L 907.75 93.32 L 902.81 90.07 L 897.86 82.18 L 892.92 73.87 L 887.98 63.23 L 883.04 69.51 L 878.09 71.69 L 873.15 71.19 L 868.21 71.00 L 863.27 71.16 L 858.32 72.78 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 71.69 L 863.27 68.86 L 868.21 68.03 L 873.15 67.50 L 878.09 67.39 L 883.04 63.42 L 887.98 58.50 L 892.92 68.50 L 897.86 77.26 L 902.81 84.16 L 907.75 88.32 L 912.69 93.52 L 917.63 99.98 L 922.58 104.64 L 927.52 107.38 L 932.46 108.80 L 937.40 108.30 L 942.35 104.39 L 947.29 94.80 L 952.23 82.03 L 957.17 72.11 L 962.12 69.73 L 967.06 70.98 L 972.00 71.78" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="71.69" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 68.88 L 32.94 67.99 L 37.88 67.09 L 42.83 66.64 L 47.77 65.75 L 52.71 63.06 L 57.65 52.75 L 62.60 71.57 L 67.54 79.19 L 72.48 83.22 L 77.42 87.25 L 82.37 93.08 L 87.31 99.80 L 92.25 104.28 L 97.19 106.97 L 102.14 107.86 L 107.08 107.42 L 112.02 101.59 L 116.96 87.70 L 121.91 72.02 L 126.85 63.96 L 131.79 64.85 L 136.73 68.88 L 141.68 70.68 L 146.62 68.44 L 151.56 67.09 L 156.50 66.20 L 161.45 64.85 L 166.39 63.96 L 171.33 58.58 L 176.27 46.93 L 181.21 67.09 L 186.16 77.84 L 191.10 81.88 L 196.04 85.91 L 200.98 91.29 L 205.93 98.46 L 210.87 103.83 L 215.81 106.52 L 220.75 107.42 L 225.70 106.97 L 230.64 101.14 L 235.58 87.25 L 240.52 71.57 L 245.47 62.61 L 250.41 63.96 L 255.35 67.09 L 260.29 69.33 L 265.24 66.64 L 270.18 64.40 L 275.12 64.40 L 280.06 63.06 L 285.01 62.61 L 289.95 56.79 L 294.89 316.21 L 299.83 316.21 L 304.77 76.95 L 309.72 80.09 L 314.66 83.67 L 319.60 90.39 L 324.54 98.46 L 329.49 103.83 L 334.43 106.52 L 339.37 107.42 L 344.31 106.97 L 349.26 101.14 L 354.20 87.25 L 359.14 71.57 L 364.08 63.06 L 369.03 63.96 L 373.97 67.54 L 378.91 69.33 L 383.85 66.20 L 388.80 62.61 L 393.74 59.03 L 398.68 61.27 L 403.62 60.82 L 408.57 50.96 L 413.51 43.79 L 418.45 58.58 L 423.39 74.71 L 428.34 77.84 L 433.28 80.98 L 438.22 88.60 L 443.16 96.66 L 448.10 102.49 L 453.05 105.62 L 457.99 106.52 L 462.93 106.52 L 467.87 101.14 L 472.82 88.60 L 477.76 74.71 L 482.70 65.75 L 487.64 66.20 L 492.59 67.99 L 497.53 67.99 L 502.47 63.96 L 507.41 58.13 L 512.36 59.92 L 517.30 54.10 L 522.24 60.37 L 527.18 58.58 L 532.13 53.20 L 537.07 68.44 L 542.01 74.26 L 546.95 76.95 L 551.90 80.09 L 556.84 85.01 L 561.78 92.18 L 566.72 99.35 L 571.66 103.83 L 576.61 105.62 L 581.55 106.52 L 586.49 105.62 L 591.43 101.14 L 596.38 93.53 L 601.32 85.91 L 606.26 79.19 L 611.20 74.26 L 616.15 70.23 L 621.09 66.64 L 626.03 64.40 L 630.97 62.16 L 635.92 62.16 L 640.86 63.51 L 645.80 65.75 L 650.74 68.88 L 655.69 72.92 L 660.63 77.40 L 665.57 80.98 L 670.51 82.33 L 675.46 84.12 L 680.40 91.73 L 685.34 98.90 L 690.28 103.83 L 695.23 105.62 L 700.17 107.86 L 705.11 108.31 L 710.05 106.07 L 714.99 101.14 L 719.94 96.21 L 724.88 91.29 L 729.82 84.12 L 734.76 78.74 L 739.71 75.16 L 744.65 72.92 L 749.59 71.57 L 754.53 71.57 L 759.48 71.57 L 764.42 72.02 L 769.36 74.71 L 774.30 76.95 L 779.25 79.19 L 784.19 80.53 L 789.13 83.22 L 794.07 89.94 L 799.02 98.46 L 803.96 104.28 L 808.90 107.42 L 813.84 108.31 L 818.79 107.42 L 823.73 102.04 L 828.67 89.05 L 833.61 74.71 L 838.55 66.20 L 843.50 67.54 L 848.44 70.68 L 853.38 72.02" /><path class="forecast-svg-actual" d="M 858.32 68.88 L 863.27 67.99 L 868.21 67.09 L 873.15 66.64 L 878.09 65.75 L 883.04 63.06 L 887.98 52.75 L 892.92 71.57 L 897.86 79.19 L 902.81 83.22 L 907.75 87.25 L 912.69 93.08 L 917.63 99.80 L 922.58 104.28 L 927.52 106.97 L 932.46 107.86 L 937.40 107.42 L 942.35 101.59 L 947.29 87.70 L 952.23 72.02 L 957.17 63.96 L 962.12 64.85 L 967.06 68.88 L 972.00 70.68" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 68.90 L 863.27 66.51 L 868.21 65.06 L 873.15 63.83 L 878.09 62.38 L 883.04 57.36 L 887.98 47.43 L 892.92 65.12 L 897.86 76.28 L 902.81 80.44 L 907.75 84.38 L 912.69 90.03 L 917.63 97.52 L 922.58 103.31 L 927.52 106.07 L 932.46 107.09 L 937.40 106.90 L 942.35 101.13 L 947.29 87.26 L 952.23 71.59 L 957.17 63.02 L 962.12 64.03 L 967.06 67.42 L 972.00 69.37 L 972.00 70.34 L 967.06 68.59 L 962.12 65.06 L 957.17 64.18 L 952.23 72.49 L 947.29 87.71 L 942.35 101.58 L 937.40 107.07 L 932.46 107.49 L 927.52 106.58 L 922.58 103.82 L 917.63 98.35 L 912.69 91.14 L 907.75 85.79 L 902.81 81.74 L 897.86 77.76 L 892.92 67.92 L 887.98 51.16 L 883.04 59.44 L 878.09 64.14 L 873.15 65.12 L 868.21 66.22 L 863.27 67.35 L 858.32 69.70 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 69.30 L 863.27 66.93 L 868.21 65.64 L 873.15 64.48 L 878.09 63.26 L 883.04 58.40 L 887.98 49.30 L 892.92 66.52 L 897.86 77.02 L 902.81 81.09 L 907.75 85.09 L 912.69 90.59 L 917.63 97.94 L 922.58 103.56 L 927.52 106.32 L 932.46 107.29 L 937.40 106.99 L 942.35 101.36 L 947.29 87.49 L 952.23 72.04 L 957.17 63.60 L 962.12 64.55 L 967.06 68.01 L 972.00 69.85" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="69.30" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 69.28 L 863.27 66.47 L 868.21 66.01 L 873.15 65.52 L 878.09 64.91 L 883.04 58.95 L 887.98 54.89 L 892.92 68.94 L 897.86 79.24 L 902.81 82.87 L 907.75 86.60 L 912.69 92.15 L 917.63 99.45 L 922.58 103.97 L 927.52 106.24 L 932.46 107.07 L 937.40 106.56 L 942.35 101.44 L 947.29 88.01 L 952.23 72.98 L 957.17 63.87 L 962.12 65.27 L 967.06 69.42 L 972.00 70.46" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="69.28" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 68.88 L 32.94 67.99 L 37.88 67.09 L 42.83 66.64 L 47.77 65.75 L 52.71 63.06 L 57.65 52.75 L 62.60 71.57 L 67.54 79.19 L 72.48 83.22 L 77.42 87.25 L 82.37 93.08 L 87.31 99.80 L 92.25 104.28 L 97.19 106.97 L 102.14 107.86 L 107.08 107.42 L 112.02 101.59 L 116.96 87.70 L 121.91 72.02 L 126.85 63.96 L 131.79 64.85 L 136.73 68.88 L 141.68 70.68 L 146.62 68.44 L 151.56 67.09 L 156.50 66.20 L 161.45 64.85 L 166.39 63.96 L 171.33 58.58 L 176.27 46.93 L 181.21 67.09 L 186.16 77.84 L 191.10 81.88 L 196.04 85.91 L 200.98 91.29 L 205.93 98.46 L 210.87 103.83 L 215.81 106.52 L 220.75 107.42 L 225.70 106.97 L 230.64 101.14 L 235.58 87.25 L 240.52 71.57 L 245.47 62.61 L 250.41 63.96 L 255.35 67.09 L 260.29 69.33 L 265.24 66.64 L 270.18 64.40 L 275.12 64.40 L 280.06 63.06 L 285.01 62.61 L 289.95 56.79 L 294.89 316.21 L 299.83 316.21 L 304.77 76.95 L 309.72 80.09 L 314.66 83.67 L 319.60 90.39 L 324.54 98.46 L 329.49 103.83 L 334.43 106.52 L 339.37 107.42 L 344.31 106.97 L 349.26 101.14 L 354.20 87.25 L 359.14 71.57 L 364.08 63.06 L 369.03 63.96 L 373.97 67.54 L 378.91 69.33 L 383.85 66.20 L 388.80 62.61 L 393.74 59.03 L 398.68 61.27 L 403.62 60.82 L 408.57 50.96 L 413.51 43.79 L 418.45 58.58 L 423.39 74.71 L 428.34 77.84 L 433.28 80.98 L 438.22 88.60 L 443.16 96.66 L 448.10 102.49 L 453.05 105.62 L 457.99 106.52 L 462.93 106.52 L 467.87 101.14 L 472.82 88.60 L 477.76 74.71 L 482.70 65.75 L 487.64 66.20 L 492.59 67.99 L 497.53 67.99 L 502.47 63.96 L 507.41 58.13 L 512.36 59.92 L 517.30 54.10 L 522.24 60.37 L 527.18 58.58 L 532.13 53.20 L 537.07 68.44 L 542.01 74.26 L 546.95 76.95 L 551.90 80.09 L 556.84 85.01 L 561.78 92.18 L 566.72 99.35 L 571.66 103.83 L 576.61 105.62 L 581.55 106.52 L 586.49 105.62 L 591.43 101.14 L 596.38 93.53 L 601.32 85.91 L 606.26 79.19 L 611.20 74.26 L 616.15 70.23 L 621.09 66.64 L 626.03 64.40 L 630.97 62.16 L 635.92 62.16 L 640.86 63.51 L 645.80 65.75 L 650.74 68.88 L 655.69 72.92 L 660.63 77.40 L 665.57 80.98 L 670.51 82.33 L 675.46 84.12 L 680.40 91.73 L 685.34 98.90 L 690.28 103.83 L 695.23 105.62 L 700.17 107.86 L 705.11 108.31 L 710.05 106.07 L 714.99 101.14 L 719.94 96.21 L 724.88 91.29 L 729.82 84.12 L 734.76 78.74 L 739.71 75.16 L 744.65 72.92 L 749.59 71.57 L 754.53 71.57 L 759.48 71.57 L 764.42 72.02 L 769.36 74.71 L 774.30 76.95 L 779.25 79.19 L 784.19 80.53 L 789.13 83.22 L 794.07 89.94 L 799.02 98.46 L 803.96 104.28 L 808.90 107.42 L 813.84 108.31 L 818.79 107.42 L 823.73 102.04 L 828.67 89.05 L 833.61 74.71 L 838.55 66.20 L 843.50 67.54 L 848.44 70.68 L 853.38 72.02" /><path class="forecast-svg-actual" d="M 858.32 68.88 L 863.27 67.99 L 868.21 67.09 L 873.15 66.64 L 878.09 65.75 L 883.04 63.06 L 887.98 52.75 L 892.92 71.57 L 897.86 79.19 L 902.81 83.22 L 907.75 87.25 L 912.69 93.08 L 917.63 99.80 L 922.58 104.28 L 927.52 106.97 L 932.46 107.86 L 937.40 107.42 L 942.35 101.59 L 947.29 87.70 L 952.23 72.02 L 957.17 63.96 L 962.12 64.85 L 967.06 68.88 L 972.00 70.68" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 68.90 L 863.27 66.51 L 868.21 65.06 L 873.15 63.83 L 878.09 62.38 L 883.04 57.36 L 887.98 47.43 L 892.92 65.12 L 897.86 76.28 L 902.81 80.44 L 907.75 84.38 L 912.69 90.03 L 917.63 97.52 L 922.58 103.31 L 927.52 106.07 L 932.46 107.09 L 937.40 106.90 L 942.35 101.13 L 947.29 87.26 L 952.23 71.59 L 957.17 63.02 L 962.12 64.03 L 967.06 67.42 L 972.00 69.37 L 972.00 70.34 L 967.06 68.59 L 962.12 65.06 L 957.17 64.18 L 952.23 72.49 L 947.29 87.71 L 942.35 101.58 L 937.40 107.07 L 932.46 107.49 L 927.52 106.58 L 922.58 103.82 L 917.63 98.35 L 912.69 91.14 L 907.75 85.79 L 902.81 81.74 L 897.86 77.76 L 892.92 67.92 L 887.98 51.16 L 883.04 59.44 L 878.09 64.14 L 873.15 65.12 L 868.21 66.22 L 863.27 67.35 L 858.32 69.70 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 69.30 L 863.27 66.93 L 868.21 65.64 L 873.15 64.48 L 878.09 63.26 L 883.04 58.40 L 887.98 49.30 L 892.92 66.52 L 897.86 77.02 L 902.81 81.09 L 907.75 85.09 L 912.69 90.59 L 917.63 97.94 L 922.58 103.56 L 927.52 106.32 L 932.46 107.29 L 937.40 106.99 L 942.35 101.36 L 947.29 87.49 L 952.23 72.04 L 957.17 63.60 L 962.12 64.55 L 967.06 68.01 L 972.00 69.85" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="69.30" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 68.88 L 32.94 67.99 L 37.88 67.09 L 42.83 66.64 L 47.77 65.75 L 52.71 63.06 L 57.65 52.75 L 62.60 71.57 L 67.54 79.19 L 72.48 83.22 L 77.42 87.25 L 82.37 93.08 L 87.31 99.80 L 92.25 104.28 L 97.19 106.97 L 102.14 107.86 L 107.08 107.42 L 112.02 101.59 L 116.96 87.70 L 121.91 72.02 L 126.85 63.96 L 131.79 64.85 L 136.73 68.88 L 141.68 70.68 L 146.62 68.44 L 151.56 67.09 L 156.50 66.20 L 161.45 64.85 L 166.39 63.96 L 171.33 58.58 L 176.27 46.93 L 181.21 67.09 L 186.16 77.84 L 191.10 81.88 L 196.04 85.91 L 200.98 91.29 L 205.93 98.46 L 210.87 103.83 L 215.81 106.52 L 220.75 107.42 L 225.70 106.97 L 230.64 101.14 L 235.58 87.25 L 240.52 71.57 L 245.47 62.61 L 250.41 63.96 L 255.35 67.09 L 260.29 69.33 L 265.24 66.64 L 270.18 64.40 L 275.12 64.40 L 280.06 63.06 L 285.01 62.61 L 289.95 56.79 L 294.89 316.21 L 299.83 316.21 L 304.77 76.95 L 309.72 80.09 L 314.66 83.67 L 319.60 90.39 L 324.54 98.46 L 329.49 103.83 L 334.43 106.52 L 339.37 107.42 L 344.31 106.97 L 349.26 101.14 L 354.20 87.25 L 359.14 71.57 L 364.08 63.06 L 369.03 63.96 L 373.97 67.54 L 378.91 69.33 L 383.85 66.20 L 388.80 62.61 L 393.74 59.03 L 398.68 61.27 L 403.62 60.82 L 408.57 50.96 L 413.51 43.79 L 418.45 58.58 L 423.39 74.71 L 428.34 77.84 L 433.28 80.98 L 438.22 88.60 L 443.16 96.66 L 448.10 102.49 L 453.05 105.62 L 457.99 106.52 L 462.93 106.52 L 467.87 101.14 L 472.82 88.60 L 477.76 74.71 L 482.70 65.75 L 487.64 66.20 L 492.59 67.99 L 497.53 67.99 L 502.47 63.96 L 507.41 58.13 L 512.36 59.92 L 517.30 54.10 L 522.24 60.37 L 527.18 58.58 L 532.13 53.20 L 537.07 68.44 L 542.01 74.26 L 546.95 76.95 L 551.90 80.09 L 556.84 85.01 L 561.78 92.18 L 566.72 99.35 L 571.66 103.83 L 576.61 105.62 L 581.55 106.52 L 586.49 105.62 L 591.43 101.14 L 596.38 93.53 L 601.32 85.91 L 606.26 79.19 L 611.20 74.26 L 616.15 70.23 L 621.09 66.64 L 626.03 64.40 L 630.97 62.16 L 635.92 62.16 L 640.86 63.51 L 645.80 65.75 L 650.74 68.88 L 655.69 72.92 L 660.63 77.40 L 665.57 80.98 L 670.51 82.33 L 675.46 84.12 L 680.40 91.73 L 685.34 98.90 L 690.28 103.83 L 695.23 105.62 L 700.17 107.86 L 705.11 108.31 L 710.05 106.07 L 714.99 101.14 L 719.94 96.21 L 724.88 91.29 L 729.82 84.12 L 734.76 78.74 L 739.71 75.16 L 744.65 72.92 L 749.59 71.57 L 754.53 71.57 L 759.48 71.57 L 764.42 72.02 L 769.36 74.71 L 774.30 76.95 L 779.25 79.19 L 784.19 80.53 L 789.13 83.22 L 794.07 89.94 L 799.02 98.46 L 803.96 104.28 L 808.90 107.42 L 813.84 108.31 L 818.79 107.42 L 823.73 102.04 L 828.67 89.05 L 833.61 74.71 L 838.55 66.20 L 843.50 67.54 L 848.44 70.68 L 853.38 72.02" /><path class="forecast-svg-actual" d="M 858.32 68.88 L 863.27 67.99 L 868.21 67.09 L 873.15 66.64 L 878.09 65.75 L 883.04 63.06 L 887.98 52.75 L 892.92 71.57 L 897.86 79.19 L 902.81 83.22 L 907.75 87.25 L 912.69 93.08 L 917.63 99.80 L 922.58 104.28 L 927.52 106.97 L 932.46 107.86 L 937.40 107.42 L 942.35 101.59 L 947.29 87.70 L 952.23 72.02 L 957.17 63.96 L 962.12 64.85 L 967.06 68.88 L 972.00 70.68" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 69.10 L 863.27 66.19 L 868.21 65.57 L 873.15 64.99 L 878.09 64.57 L 883.04 58.38 L 887.98 53.52 L 892.92 67.24 L 897.86 78.24 L 902.81 82.31 L 907.75 86.08 L 912.69 91.52 L 917.63 98.80 L 922.58 103.51 L 927.52 105.87 L 932.46 106.92 L 937.40 106.41 L 942.35 100.74 L 947.29 86.46 L 952.23 71.45 L 957.17 62.98 L 962.12 65.04 L 967.06 68.92 L 972.00 70.16 L 972.00 70.77 L 967.06 69.93 L 962.12 65.50 L 957.17 64.77 L 952.23 74.51 L 947.29 89.57 L 942.35 102.13 L 937.40 106.71 L 932.46 107.22 L 927.52 106.61 L 922.58 104.43 L 917.63 100.11 L 912.69 92.78 L 907.75 87.11 L 902.81 83.44 L 897.86 80.25 L 892.92 70.64 L 887.98 56.26 L 883.04 59.52 L 878.09 65.25 L 873.15 66.06 L 868.21 66.46 L 863.27 66.74 L 858.32 69.46 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 69.28 L 863.27 66.47 L 868.21 66.01 L 873.15 65.52 L 878.09 64.91 L 883.04 58.95 L 887.98 54.89 L 892.92 68.94 L 897.86 79.24 L 902.81 82.87 L 907.75 86.60 L 912.69 92.15 L 917.63 99.45 L 922.58 103.97 L 927.52 106.24 L 932.46 107.07 L 937.40 106.56 L 942.35 101.44 L 947.29 88.01 L 952.23 72.98 L 957.17 63.87 L 962.12 65.27 L 967.06 69.42 L 972.00 70.46" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="69.28" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 81.96 L 32.94 81.11 L 37.88 80.26 L 42.83 79.83 L 47.77 78.98 L 52.71 76.44 L 57.65 66.68 L 62.60 84.50 L 67.54 91.72 L 72.48 95.54 L 77.42 99.35 L 82.37 104.87 L 87.31 111.24 L 92.25 115.48 L 97.19 118.03 L 102.14 118.88 L 107.08 118.45 L 112.02 112.93 L 116.96 99.78 L 121.91 84.93 L 126.85 77.29 L 131.79 78.14 L 136.73 81.96 L 141.68 83.65 L 146.62 81.53 L 151.56 80.26 L 156.50 79.41 L 161.45 78.14 L 166.39 77.29 L 171.33 72.19 L 176.27 61.16 L 181.21 80.26 L 186.16 90.44 L 191.10 94.26 L 196.04 98.08 L 200.98 103.17 L 205.93 109.96 L 210.87 115.06 L 215.81 117.60 L 220.75 118.45 L 225.70 118.03 L 230.64 112.51 L 235.58 99.35 L 240.52 84.50 L 245.47 76.01 L 250.41 77.29 L 255.35 80.26 L 260.29 82.38 L 265.24 79.83 L 270.18 77.71 L 275.12 77.71 L 280.06 76.44 L 285.01 76.01 L 289.95 70.50 L 294.89 316.21 L 299.83 316.21 L 304.77 89.59 L 309.72 92.56 L 314.66 95.96 L 319.60 102.33 L 324.54 109.96 L 329.49 115.06 L 334.43 117.60 L 339.37 118.45 L 344.31 118.03 L 349.26 112.51 L 354.20 99.35 L 359.14 84.50 L 364.08 76.44 L 369.03 77.29 L 373.97 80.68 L 378.91 82.38 L 383.85 79.41 L 388.80 76.01 L 393.74 72.62 L 398.68 74.74 L 403.62 74.32 L 408.57 64.98 L 413.51 58.19 L 418.45 72.19 L 423.39 87.47 L 428.34 90.44 L 433.28 93.41 L 438.22 100.63 L 443.16 108.27 L 448.10 113.78 L 453.05 116.75 L 457.99 117.60 L 462.93 117.60 L 467.87 112.51 L 472.82 100.63 L 477.76 87.47 L 482.70 78.98 L 487.64 79.41 L 492.59 81.11 L 497.53 81.11 L 502.47 77.29 L 507.41 71.77 L 512.36 73.47 L 517.30 67.95 L 522.24 73.89 L 527.18 72.19 L 532.13 67.10 L 537.07 81.53 L 542.01 87.05 L 546.95 89.59 L 551.90 92.56 L 556.84 97.23 L 561.78 104.02 L 566.72 110.81 L 571.66 115.06 L 576.61 116.75 L 581.55 117.60 L 586.49 116.75 L 591.43 112.51 L 596.38 105.30 L 601.32 98.08 L 606.26 91.72 L 611.20 87.05 L 616.15 83.23 L 621.09 79.83 L 626.03 77.71 L 630.97 75.59 L 635.92 75.59 L 640.86 76.86 L 645.80 78.98 L 650.74 81.96 L 655.69 85.77 L 660.63 90.02 L 665.57 93.41 L 670.51 94.69 L 675.46 96.38 L 680.40 103.60 L 685.34 110.39 L 690.28 115.06 L 695.23 116.75 L 700.17 118.88 L 705.11 119.30 L 710.05 117.18 L 714.99 112.51 L 719.94 107.84 L 724.88 103.17 L 729.82 96.38 L 734.76 91.29 L 739.71 87.90 L 744.65 85.77 L 749.59 84.50 L 754.53 84.50 L 759.48 84.50 L 764.42 84.93 L 769.36 87.47 L 774.30 89.59 L 779.25 91.72 L 784.19 92.99 L 789.13 95.54 L 794.07 101.90 L 799.02 109.96 L 803.96 115.48 L 808.90 118.45 L 813.84 119.30 L 818.79 118.45 L 823.73 113.36 L 828.67 101.05 L 833.61 87.47 L 838.55 79.41 L 843.50 80.68 L 848.44 83.65 L 853.38 84.93" /><path class="forecast-svg-actual" d="M 858.32 81.96 L 863.27 81.11 L 868.21 80.26 L 873.15 79.83 L 878.09 78.98 L 883.04 76.44 L 887.98 66.68 L 892.92 84.50 L 897.86 91.72 L 902.81 95.54 L 907.75 99.35 L 912.69 104.87 L 917.63 111.24 L 922.58 115.48 L 927.52 118.03 L 932.46 118.88 L 937.40 118.45 L 942.35 112.93 L 947.29 99.78 L 952.23 84.93 L 957.17 77.29 L 962.12 78.14 L 967.06 81.96 L 972.00 83.65" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 81.08 L 863.27 78.95 L 868.21 78.11 L 873.15 76.72 L 878.09 76.07 L 883.04 70.03 L 887.98 59.58 L 892.92 76.17 L 897.86 86.80 L 902.81 91.14 L 907.75 93.21 L 912.69 99.98 L 917.63 107.59 L 922.58 113.21 L 927.52 116.41 L 932.46 117.61 L 937.40 117.41 L 942.35 111.87 L 947.29 97.21 L 952.23 80.42 L 957.17 72.22 L 962.12 74.10 L 967.06 78.78 L 972.00 81.01 L 972.00 86.52 L 967.06 87.06 L 962.12 86.45 L 957.17 87.62 L 952.23 94.20 L 947.29 105.53 L 942.35 114.67 L 937.40 119.18 L 932.46 119.97 L 927.52 119.06 L 922.58 116.81 L 917.63 112.18 L 912.69 105.56 L 907.75 99.72 L 902.81 95.40 L 897.86 91.53 L 892.92 82.60 L 887.98 65.50 L 883.04 75.27 L 878.09 80.25 L 873.15 80.78 L 868.21 81.01 L 863.27 81.90 L 858.32 83.66 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 82.37 L 863.27 80.42 L 868.21 79.56 L 873.15 78.75 L 878.09 78.16 L 883.04 72.65 L 887.98 62.54 L 892.92 79.39 L 897.86 89.16 L 902.81 93.27 L 907.75 96.46 L 912.69 102.77 L 917.63 109.88 L 922.58 115.01 L 927.52 117.74 L 932.46 118.79 L 937.40 118.30 L 942.35 113.27 L 947.29 101.37 L 952.23 87.31 L 957.17 79.92 L 962.12 80.27 L 967.06 82.92 L 972.00 83.77" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="82.37" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 858.32 82.95 L 863.27 79.03 L 868.21 75.87 L 873.15 82.41 L 878.09 88.08 L 883.04 75.63 L 887.98 70.70 L 892.92 82.01 L 897.86 87.82 L 902.81 91.84 L 907.75 94.29 L 912.69 105.06 L 917.63 97.14 L 922.58 98.10 L 927.52 107.21 L 932.46 105.58 L 937.40 103.70 L 942.35 103.62 L 947.29 99.15 L 952.23 99.82 L 957.17 97.08 L 962.12 100.42 L 967.06 86.79 L 972.00 87.18" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="82.95" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 858.32 84.87 L 863.27 88.87 L 868.21 87.80 L 873.15 93.23 L 878.09 78.56 L 883.04 82.54 L 887.98 79.34 L 892.92 83.01 L 897.86 90.53 L 902.81 80.02 L 907.75 92.18 L 912.69 72.79 L 917.63 79.57 L 922.58 85.58 L 927.52 84.15 L 932.46 89.24 L 937.40 75.68 L 942.35 81.76 L 947.29 84.73 L 952.23 81.53 L 957.17 81.27 L 962.12 90.07 L 967.06 81.40 L 972.00 78.22" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="84.87" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 143.10 L 32.94 142.47 L 37.88 141.84 L 42.83 141.53 L 47.77 140.90 L 52.71 139.02 L 57.65 131.81 L 62.60 144.98 L 67.54 150.31 L 72.48 153.13 L 77.42 155.96 L 82.37 160.03 L 87.31 164.74 L 92.25 167.87 L 97.19 169.75 L 102.14 170.38 L 107.08 170.07 L 112.02 165.99 L 116.96 156.27 L 121.91 145.29 L 126.85 139.65 L 131.79 140.28 L 136.73 143.10 L 141.68 144.35 L 146.62 142.78 L 151.56 141.84 L 156.50 141.22 L 161.45 140.28 L 166.39 139.65 L 171.33 135.89 L 176.27 127.73 L 181.21 141.84 L 186.16 149.37 L 191.10 152.19 L 196.04 155.01 L 200.98 158.78 L 205.93 163.80 L 210.87 167.56 L 215.81 169.44 L 220.75 170.07 L 225.70 169.75 L 230.64 165.68 L 235.58 155.96 L 240.52 144.98 L 245.47 138.71 L 250.41 139.65 L 255.35 141.84 L 260.29 143.41 L 265.24 141.53 L 270.18 139.96 L 275.12 139.96 L 280.06 139.02 L 285.01 138.71 L 289.95 134.63 L 294.89 316.21 L 299.83 316.21 L 304.77 148.74 L 309.72 150.94 L 314.66 153.45 L 319.60 158.15 L 324.54 163.80 L 329.49 167.56 L 334.43 169.44 L 339.37 170.07 L 344.31 169.75 L 349.26 165.68 L 354.20 155.96 L 359.14 144.98 L 364.08 139.02 L 369.03 139.65 L 373.97 142.16 L 378.91 143.41 L 383.85 141.22 L 388.80 138.71 L 393.74 136.20 L 398.68 137.77 L 403.62 137.45 L 408.57 130.55 L 413.51 125.54 L 418.45 135.89 L 423.39 147.17 L 428.34 149.37 L 433.28 151.57 L 438.22 156.90 L 443.16 162.54 L 448.10 166.62 L 453.05 168.81 L 457.99 169.44 L 462.93 169.44 L 467.87 165.68 L 472.82 156.90 L 477.76 147.17 L 482.70 140.90 L 487.64 141.22 L 492.59 142.47 L 497.53 142.47 L 502.47 139.65 L 507.41 135.57 L 512.36 136.83 L 517.30 132.75 L 522.24 137.14 L 527.18 135.89 L 532.13 132.12 L 537.07 142.78 L 542.01 146.86 L 546.95 148.74 L 551.90 150.94 L 556.84 154.39 L 561.78 159.41 L 566.72 164.42 L 571.66 167.56 L 576.61 168.81 L 581.55 169.44 L 586.49 168.81 L 591.43 165.68 L 596.38 160.35 L 601.32 155.01 L 606.26 150.31 L 611.20 146.86 L 616.15 144.04 L 621.09 141.53 L 626.03 139.96 L 630.97 138.39 L 635.92 138.39 L 640.86 139.33 L 645.80 140.90 L 650.74 143.10 L 655.69 145.92 L 660.63 149.06 L 665.57 151.57 L 670.51 152.51 L 675.46 153.76 L 680.40 159.09 L 685.34 164.11 L 690.28 167.56 L 695.23 168.81 L 700.17 170.38 L 705.11 170.70 L 710.05 169.13 L 714.99 165.68 L 719.94 162.23 L 724.88 158.78 L 729.82 153.76 L 734.76 150.00 L 739.71 147.49 L 744.65 145.92 L 749.59 144.98 L 754.53 144.98 L 759.48 144.98 L 764.42 145.29 L 769.36 147.17 L 774.30 148.74 L 779.25 150.31 L 784.19 151.25 L 789.13 153.13 L 794.07 157.84 L 799.02 163.80 L 803.96 167.87 L 808.90 170.07 L 813.84 170.70 L 818.79 170.07 L 823.73 166.30 L 828.67 157.21 L 833.61 147.17 L 838.55 141.22 L 843.50 142.16 L 848.44 144.35 L 853.38 145.29" /><path class="forecast-svg-actual" d="M 858.32 143.10 L 863.27 142.47 L 868.21 141.84 L 873.15 141.53 L 878.09 140.90 L 883.04 139.02 L 887.98 131.81 L 892.92 144.98 L 897.86 150.31 L 902.81 153.13 L 907.75 155.96 L 912.69 160.03 L 917.63 164.74 L 922.58 167.87 L 927.52 169.75 L 932.46 170.38 L 937.40 170.07 L 942.35 165.99 L 947.29 156.27 L 952.23 145.29 L 957.17 139.65 L 962.12 140.28 L 967.06 143.10 L 972.00 144.35" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 142.45 L 863.27 140.87 L 868.21 140.26 L 873.15 139.23 L 878.09 138.75 L 883.04 134.28 L 887.98 126.56 L 892.92 138.82 L 897.86 146.68 L 902.81 149.89 L 907.75 151.41 L 912.69 156.42 L 917.63 162.04 L 922.58 166.20 L 927.52 168.56 L 932.46 169.45 L 937.40 169.30 L 942.35 165.21 L 947.29 154.37 L 952.23 141.97 L 957.17 135.90 L 962.12 137.29 L 967.06 140.75 L 972.00 142.40 L 972.00 146.47 L 967.06 146.87 L 962.12 146.42 L 957.17 147.29 L 952.23 152.15 L 947.29 160.52 L 942.35 167.27 L 937.40 170.61 L 932.46 171.19 L 927.52 170.52 L 922.58 168.86 L 917.63 165.43 L 912.69 160.54 L 907.75 156.22 L 902.81 153.03 L 897.86 150.17 L 892.92 143.58 L 887.98 130.94 L 883.04 138.16 L 878.09 141.84 L 873.15 142.23 L 868.21 142.40 L 863.27 143.06 L 858.32 144.36 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 143.40 L 863.27 141.97 L 868.21 141.33 L 873.15 140.73 L 878.09 140.29 L 883.04 136.22 L 887.98 128.75 L 892.92 141.20 L 897.86 148.43 L 902.81 151.46 L 907.75 153.82 L 912.69 158.48 L 917.63 163.74 L 922.58 167.53 L 927.52 169.54 L 932.46 170.32 L 937.40 169.95 L 942.35 166.24 L 947.29 157.44 L 952.23 147.06 L 957.17 141.59 L 962.12 141.86 L 967.06 143.81 L 972.00 144.44" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="143.40" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 143.10 L 32.94 142.47 L 37.88 141.84 L 42.83 141.53 L 47.77 140.90 L 52.71 139.02 L 57.65 131.81 L 62.60 144.98 L 67.54 150.31 L 72.48 153.13 L 77.42 155.96 L 82.37 160.03 L 87.31 164.74 L 92.25 167.87 L 97.19 169.75 L 102.14 170.38 L 107.08 170.07 L 112.02 165.99 L 116.96 156.27 L 121.91 145.29 L 126.85 139.65 L 131.79 140.28 L 136.73 143.10 L 141.68 144.35 L 146.62 142.78 L 151.56 141.84 L 156.50 141.22 L 161.45 140.28 L 166.39 139.65 L 171.33 135.89 L 176.27 127.73 L 181.21 141.84 L 186.16 149.37 L 191.10 152.19 L 196.04 155.01 L 200.98 158.78 L 205.93 163.80 L 210.87 167.56 L 215.81 169.44 L 220.75 170.07 L 225.70 169.75 L 230.64 165.68 L 235.58 155.96 L 240.52 144.98 L 245.47 138.71 L 250.41 139.65 L 255.35 141.84 L 260.29 143.41 L 265.24 141.53 L 270.18 139.96 L 275.12 139.96 L 280.06 139.02 L 285.01 138.71 L 289.95 134.63 L 294.89 316.21 L 299.83 316.21 L 304.77 148.74 L 309.72 150.94 L 314.66 153.45 L 319.60 158.15 L 324.54 163.80 L 329.49 167.56 L 334.43 169.44 L 339.37 170.07 L 344.31 169.75 L 349.26 165.68 L 354.20 155.96 L 359.14 144.98 L 364.08 139.02 L 369.03 139.65 L 373.97 142.16 L 378.91 143.41 L 383.85 141.22 L 388.80 138.71 L 393.74 136.20 L 398.68 137.77 L 403.62 137.45 L 408.57 130.55 L 413.51 125.54 L 418.45 135.89 L 423.39 147.17 L 428.34 149.37 L 433.28 151.57 L 438.22 156.90 L 443.16 162.54 L 448.10 166.62 L 453.05 168.81 L 457.99 169.44 L 462.93 169.44 L 467.87 165.68 L 472.82 156.90 L 477.76 147.17 L 482.70 140.90 L 487.64 141.22 L 492.59 142.47 L 497.53 142.47 L 502.47 139.65 L 507.41 135.57 L 512.36 136.83 L 517.30 132.75 L 522.24 137.14 L 527.18 135.89 L 532.13 132.12 L 537.07 142.78 L 542.01 146.86 L 546.95 148.74 L 551.90 150.94 L 556.84 154.39 L 561.78 159.41 L 566.72 164.42 L 571.66 167.56 L 576.61 168.81 L 581.55 169.44 L 586.49 168.81 L 591.43 165.68 L 596.38 160.35 L 601.32 155.01 L 606.26 150.31 L 611.20 146.86 L 616.15 144.04 L 621.09 141.53 L 626.03 139.96 L 630.97 138.39 L 635.92 138.39 L 640.86 139.33 L 645.80 140.90 L 650.74 143.10 L 655.69 145.92 L 660.63 149.06 L 665.57 151.57 L 670.51 152.51 L 675.46 153.76 L 680.40 159.09 L 685.34 164.11 L 690.28 167.56 L 695.23 168.81 L 700.17 170.38 L 705.11 170.70 L 710.05 169.13 L 714.99 165.68 L 719.94 162.23 L 724.88 158.78 L 729.82 153.76 L 734.76 150.00 L 739.71 147.49 L 744.65 145.92 L 749.59 144.98 L 754.53 144.98 L 759.48 144.98 L 764.42 145.29 L 769.36 147.17 L 774.30 148.74 L 779.25 150.31 L 784.19 151.25 L 789.13 153.13 L 794.07 157.84 L 799.02 163.80 L 803.96 167.87 L 808.90 170.07 L 813.84 170.70 L 818.79 170.07 L 823.73 166.30 L 828.67 157.21 L 833.61 147.17 L 838.55 141.22 L 843.50 142.16 L 848.44 144.35 L 853.38 145.29" /><path class="forecast-svg-actual" d="M 858.32 143.10 L 863.27 142.47 L 868.21 141.84 L 873.15 141.53 L 878.09 140.90 L 883.04 139.02 L 887.98 131.81 L 892.92 144.98 L 897.86 150.31 L 902.81 153.13 L 907.75 155.96 L 912.69 160.03 L 917.63 164.74 L 922.58 167.87 L 927.52 169.75 L 932.46 170.38 L 937.40 170.07 L 942.35 165.99 L 947.29 156.27 L 952.23 145.29 L 957.17 139.65 L 962.12 140.28 L 967.06 143.10 L 972.00 144.35" /><path class="forecast-svg-band" fill="#8064a2" d="M 858.32 130.07 L 863.27 121.60 L 868.21 120.42 L 873.15 123.78 L 878.09 131.03 L 883.04 122.75 L 887.98 114.90 L 892.92 125.97 L 897.86 130.40 L 902.81 132.61 L 907.75 133.85 L 912.69 149.61 L 917.63 135.58 L 922.58 137.96 L 927.52 146.92 L 932.46 149.56 L 937.40 142.47 L 942.35 143.80 L 947.29 138.31 L 952.23 143.04 L 957.17 139.96 L 962.12 143.10 L 967.06 124.93 L 972.00 129.70 L 972.00 164.22 L 967.06 168.41 L 962.12 170.38 L 957.17 168.60 L 952.23 169.55 L 947.29 173.30 L 942.35 174.41 L 937.40 175.87 L 932.46 171.56 L 927.52 176.61 L 922.58 172.09 L 917.63 173.06 L 912.69 170.74 L 907.75 170.58 L 902.81 168.19 L 897.86 164.47 L 892.92 160.30 L 887.98 154.67 L 883.04 154.10 L 878.09 164.22 L 873.15 163.09 L 868.21 156.79 L 863.27 160.27 L 858.32 157.60 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 858.32 143.84 L 863.27 140.94 L 868.21 138.60 L 873.15 143.43 L 878.09 147.62 L 883.04 138.42 L 887.98 134.78 L 892.92 143.14 L 897.86 147.43 L 902.81 150.40 L 907.75 152.22 L 912.69 160.18 L 917.63 154.32 L 922.58 155.03 L 927.52 161.76 L 932.46 160.56 L 937.40 159.17 L 942.35 159.11 L 947.29 155.81 L 952.23 156.30 L 957.17 154.28 L 962.12 156.74 L 967.06 146.67 L 972.00 146.96" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="143.84" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 143.10 L 32.94 142.47 L 37.88 141.84 L 42.83 141.53 L 47.77 140.90 L 52.71 139.02 L 57.65 131.81 L 62.60 144.98 L 67.54 150.31 L 72.48 153.13 L 77.42 155.96 L 82.37 160.03 L 87.31 164.74 L 92.25 167.87 L 97.19 169.75 L 102.14 170.38 L 107.08 170.07 L 112.02 165.99 L 116.96 156.27 L 121.91 145.29 L 126.85 139.65 L 131.79 140.28 L 136.73 143.10 L 141.68 144.35 L 146.62 142.78 L 151.56 141.84 L 156.50 141.22 L 161.45 140.28 L 166.39 139.65 L 171.33 135.89 L 176.27 127.73 L 181.21 141.84 L 186.16 149.37 L 191.10 152.19 L 196.04 155.01 L 200.98 158.78 L 205.93 163.80 L 210.87 167.56 L 215.81 169.44 L 220.75 170.07 L 225.70 169.75 L 230.64 165.68 L 235.58 155.96 L 240.52 144.98 L 245.47 138.71 L 250.41 139.65 L 255.35 141.84 L 260.29 143.41 L 265.24 141.53 L 270.18 139.96 L 275.12 139.96 L 280.06 139.02 L 285.01 138.71 L 289.95 134.63 L 294.89 316.21 L 299.83 316.21 L 304.77 148.74 L 309.72 150.94 L 314.66 153.45 L 319.60 158.15 L 324.54 163.80 L 329.49 167.56 L 334.43 169.44 L 339.37 170.07 L 344.31 169.75 L 349.26 165.68 L 354.20 155.96 L 359.14 144.98 L 364.08 139.02 L 369.03 139.65 L 373.97 142.16 L 378.91 143.41 L 383.85 141.22 L 388.80 138.71 L 393.74 136.20 L 398.68 137.77 L 403.62 137.45 L 408.57 130.55 L 413.51 125.54 L 418.45 135.89 L 423.39 147.17 L 428.34 149.37 L 433.28 151.57 L 438.22 156.90 L 443.16 162.54 L 448.10 166.62 L 453.05 168.81 L 457.99 169.44 L 462.93 169.44 L 467.87 165.68 L 472.82 156.90 L 477.76 147.17 L 482.70 140.90 L 487.64 141.22 L 492.59 142.47 L 497.53 142.47 L 502.47 139.65 L 507.41 135.57 L 512.36 136.83 L 517.30 132.75 L 522.24 137.14 L 527.18 135.89 L 532.13 132.12 L 537.07 142.78 L 542.01 146.86 L 546.95 148.74 L 551.90 150.94 L 556.84 154.39 L 561.78 159.41 L 566.72 164.42 L 571.66 167.56 L 576.61 168.81 L 581.55 169.44 L 586.49 168.81 L 591.43 165.68 L 596.38 160.35 L 601.32 155.01 L 606.26 150.31 L 611.20 146.86 L 616.15 144.04 L 621.09 141.53 L 626.03 139.96 L 630.97 138.39 L 635.92 138.39 L 640.86 139.33 L 645.80 140.90 L 650.74 143.10 L 655.69 145.92 L 660.63 149.06 L 665.57 151.57 L 670.51 152.51 L 675.46 153.76 L 680.40 159.09 L 685.34 164.11 L 690.28 167.56 L 695.23 168.81 L 700.17 170.38 L 705.11 170.70 L 710.05 169.13 L 714.99 165.68 L 719.94 162.23 L 724.88 158.78 L 729.82 153.76 L 734.76 150.00 L 739.71 147.49 L 744.65 145.92 L 749.59 144.98 L 754.53 144.98 L 759.48 144.98 L 764.42 145.29 L 769.36 147.17 L 774.30 148.74 L 779.25 150.31 L 784.19 151.25 L 789.13 153.13 L 794.07 157.84 L 799.02 163.80 L 803.96 167.87 L 808.90 170.07 L 813.84 170.70 L 818.79 170.07 L 823.73 166.30 L 828.67 157.21 L 833.61 147.17 L 838.55 141.22 L 843.50 142.16 L 848.44 144.35 L 853.38 145.29" /><path class="forecast-svg-actual" d="M 858.32 143.10 L 863.27 142.47 L 868.21 141.84 L 873.15 141.53 L 878.09 140.90 L 883.04 139.02 L 887.98 131.81 L 892.92 144.98 L 897.86 150.31 L 902.81 153.13 L 907.75 155.96 L 912.69 160.03 L 917.63 164.74 L 922.58 167.87 L 927.52 169.75 L 932.46 170.38 L 937.40 170.07 L 942.35 165.99 L 947.29 156.27 L 952.23 145.29 L 957.17 139.65 L 962.12 140.28 L 967.06 143.10 L 972.00 144.35" /><path class="forecast-svg-band" fill="#668851" d="M 858.32 128.72 L 863.27 129.10 L 868.21 132.05 L 873.15 134.65 L 878.09 124.86 L 883.04 127.68 L 887.98 123.01 L 892.92 125.56 L 897.86 131.39 L 902.81 127.10 L 907.75 130.48 L 912.69 123.56 L 917.63 121.22 L 922.58 127.49 L 927.52 120.93 L 932.46 129.32 L 937.40 121.89 L 942.35 124.88 L 947.29 127.71 L 952.23 128.45 L 957.17 123.36 L 962.12 130.22 L 967.06 120.32 L 972.00 123.60 L 972.00 157.07 L 967.06 165.05 L 962.12 167.97 L 957.17 161.82 L 952.23 157.12 L 947.29 162.59 L 942.35 161.02 L 937.40 155.03 L 932.46 167.64 L 927.52 168.51 L 922.58 164.05 L 917.63 161.45 L 912.69 149.08 L 907.75 170.82 L 902.81 156.24 L 897.86 167.48 L 892.92 162.20 L 887.98 159.32 L 883.04 159.38 L 878.09 156.31 L 873.15 168.21 L 868.21 162.77 L 863.27 167.32 L 858.32 161.79 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 858.32 145.25 L 863.27 148.21 L 868.21 147.41 L 873.15 151.43 L 878.09 140.59 L 883.04 143.53 L 887.98 141.17 L 892.92 143.88 L 897.86 149.44 L 902.81 141.67 L 907.75 150.65 L 912.69 136.32 L 917.63 141.33 L 922.58 145.77 L 927.52 144.72 L 932.46 148.48 L 937.40 138.46 L 942.35 142.95 L 947.29 145.15 L 952.23 142.78 L 957.17 142.59 L 962.12 149.09 L 967.06 142.68 L 972.00 140.34" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="145.25" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 143.10 L 32.94 142.47 L 37.88 141.84 L 42.83 141.53 L 47.77 140.90 L 52.71 139.02 L 57.65 131.81 L 62.60 144.98 L 67.54 150.31 L 72.48 153.13 L 77.42 155.96 L 82.37 160.03 L 87.31 164.74 L 92.25 167.87 L 97.19 169.75 L 102.14 170.38 L 107.08 170.07 L 112.02 165.99 L 116.96 156.27 L 121.91 145.29 L 126.85 139.65 L 131.79 140.28 L 136.73 143.10 L 141.68 144.35 L 146.62 142.78 L 151.56 141.84 L 156.50 141.22 L 161.45 140.28 L 166.39 139.65 L 171.33 135.89 L 176.27 127.73 L 181.21 141.84 L 186.16 149.37 L 191.10 152.19 L 196.04 155.01 L 200.98 158.78 L 205.93 163.80 L 210.87 167.56 L 215.81 169.44 L 220.75 170.07 L 225.70 169.75 L 230.64 165.68 L 235.58 155.96 L 240.52 144.98 L 245.47 138.71 L 250.41 139.65 L 255.35 141.84 L 260.29 143.41 L 265.24 141.53 L 270.18 139.96 L 275.12 139.96 L 280.06 139.02 L 285.01 138.71 L 289.95 134.63 L 294.89 316.21 L 299.83 316.21 L 304.77 148.74 L 309.72 150.94 L 314.66 153.45 L 319.60 158.15 L 324.54 163.80 L 329.49 167.56 L 334.43 169.44 L 339.37 170.07 L 344.31 169.75 L 349.26 165.68 L 354.20 155.96 L 359.14 144.98 L 364.08 139.02 L 369.03 139.65 L 373.97 142.16 L 378.91 143.41 L 383.85 141.22 L 388.80 138.71 L 393.74 136.20 L 398.68 137.77 L 403.62 137.45 L 408.57 130.55 L 413.51 125.54 L 418.45 135.89 L 423.39 147.17 L 428.34 149.37 L 433.28 151.57 L 438.22 156.90 L 443.16 162.54 L 448.10 166.62 L 453.05 168.81 L 457.99 169.44 L 462.93 169.44 L 467.87 165.68 L 472.82 156.90 L 477.76 147.17 L 482.70 140.90 L 487.64 141.22 L 492.59 142.47 L 497.53 142.47 L 502.47 139.65 L 507.41 135.57 L 512.36 136.83 L 517.30 132.75 L 522.24 137.14 L 527.18 135.89 L 532.13 132.12 L 537.07 142.78 L 542.01 146.86 L 546.95 148.74 L 551.90 150.94 L 556.84 154.39 L 561.78 159.41 L 566.72 164.42 L 571.66 167.56 L 576.61 168.81 L 581.55 169.44 L 586.49 168.81 L 591.43 165.68 L 596.38 160.35 L 601.32 155.01 L 606.26 150.31 L 611.20 146.86 L 616.15 144.04 L 621.09 141.53 L 626.03 139.96 L 630.97 138.39 L 635.92 138.39 L 640.86 139.33 L 645.80 140.90 L 650.74 143.10 L 655.69 145.92 L 660.63 149.06 L 665.57 151.57 L 670.51 152.51 L 675.46 153.76 L 680.40 159.09 L 685.34 164.11 L 690.28 167.56 L 695.23 168.81 L 700.17 170.38 L 705.11 170.70 L 710.05 169.13 L 714.99 165.68 L 719.94 162.23 L 724.88 158.78 L 729.82 153.76 L 734.76 150.00 L 739.71 147.49 L 744.65 145.92 L 749.59 144.98 L 754.53 144.98 L 759.48 144.98 L 764.42 145.29 L 769.36 147.17 L 774.30 148.74 L 779.25 150.31 L 784.19 151.25 L 789.13 153.13 L 794.07 157.84 L 799.02 163.80 L 803.96 167.87 L 808.90 170.07 L 813.84 170.70 L 818.79 170.07 L 823.73 166.30 L 828.67 157.21 L 833.61 147.17 L 838.55 141.22 L 843.50 142.16 L 848.44 144.35 L 853.38 145.29" /><path class="forecast-svg-actual" d="M 858.32 143.10 L 863.27 142.47 L 868.21 141.84 L 873.15 141.53 L 878.09 140.90 L 883.04 139.02 L 887.98 131.81 L 892.92 144.98 L 897.86 150.31 L 902.81 153.13 L 907.75 155.96 L 912.69 160.03 L 917.63 164.74 L 922.58 167.87 L 927.52 169.75 L 932.46 170.38 L 937.40 170.07 L 942.35 165.99 L 947.29 156.27 L 952.23 145.29 L 957.17 139.65 L 962.12 140.28 L 967.06 143.10 L 972.00 144.35" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 858.32 142.15 L 863.27 138.85 L 868.21 136.13 L 873.15 134.83 L 878.09 101.90 L 883.04 100.44 L 887.98 101.41 L 892.92 102.51 L 897.86 101.57 L 902.81 101.96 L 907.75 103.22 L 912.69 103.10 L 917.63 103.73 L 922.58 82.83 L 927.52 82.26 L 932.46 80.96 L 937.40 67.72 L 942.35 66.14 L 947.29 50.42 L 952.23 49.95 L 957.17 49.41 L 962.12 47.51 L 967.06 44.71 L 972.00 43.79 L 972.00 192.43 L 967.06 192.89 L 962.12 192.40 L 957.17 192.65 L 952.23 193.09 L 947.29 192.92 L 942.35 190.50 L 937.40 191.08 L 932.46 191.66 L 927.52 190.94 L 922.58 190.22 L 917.63 183.42 L 912.69 183.57 L 907.75 182.42 L 902.81 182.79 L 897.86 180.87 L 892.92 181.23 L 887.98 178.74 L 883.04 177.75 L 878.09 179.71 L 873.15 156.99 L 868.21 155.43 L 863.27 155.90 L 858.32 150.15 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 858.32 146.15 L 863.27 147.38 L 868.21 145.78 L 873.15 145.91 L 878.09 140.80 L 883.04 139.10 L 887.98 140.07 L 892.92 141.87 L 897.86 141.22 L 902.81 142.37 L 907.75 142.82 L 912.69 143.34 L 917.63 143.57 L 922.58 136.52 L 927.52 136.60 L 932.46 136.31 L 937.40 129.40 L 942.35 128.32 L 947.29 121.67 L 952.23 121.52 L 957.17 121.03 L 962.12 119.95 L 967.06 118.80 L 972.00 118.11" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="858.32" cy="146.15" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 143.10 L 32.94 142.47 L 37.88 141.84 L 42.83 141.53 L 47.77 140.90 L 52.71 139.02 L 57.65 131.81 L 62.60 144.98 L 67.54 150.31 L 72.48 153.13 L 77.42 155.96 L 82.37 160.03 L 87.31 164.74 L 92.25 167.87 L 97.19 169.75 L 102.14 170.38 L 107.08 170.07 L 112.02 165.99 L 116.96 156.27 L 121.91 145.29 L 126.85 139.65 L 131.79 140.28 L 136.73 143.10 L 141.68 144.35 L 146.62 142.78 L 151.56 141.84 L 156.50 141.22 L 161.45 140.28 L 166.39 139.65 L 171.33 135.89 L 176.27 127.73 L 181.21 141.84 L 186.16 149.37 L 191.10 152.19 L 196.04 155.01 L 200.98 158.78 L 205.93 163.80 L 210.87 167.56 L 215.81 169.44 L 220.75 170.07 L 225.70 169.75 L 230.64 165.68 L 235.58 155.96 L 240.52 144.98 L 245.47 138.71 L 250.41 139.65 L 255.35 141.84 L 260.29 143.41 L 265.24 141.53 L 270.18 139.96 L 275.12 139.96 L 280.06 139.02 L 285.01 138.71 L 289.95 134.63 L 294.89 316.21 L 299.83 316.21 L 304.77 148.74 L 309.72 150.94 L 314.66 153.45 L 319.60 158.15 L 324.54 163.80 L 329.49 167.56 L 334.43 169.44 L 339.37 170.07 L 344.31 169.75 L 349.26 165.68 L 354.20 155.96 L 359.14 144.98 L 364.08 139.02 L 369.03 139.65 L 373.97 142.16 L 378.91 143.41 L 383.85 141.22 L 388.80 138.71 L 393.74 136.20 L 398.68 137.77 L 403.62 137.45 L 408.57 130.55 L 413.51 125.54 L 418.45 135.89 L 423.39 147.17 L 428.34 149.37 L 433.28 151.57 L 438.22 156.90 L 443.16 162.54 L 448.10 166.62 L 453.05 168.81 L 457.99 169.44 L 462.93 169.44 L 467.87 165.68 L 472.82 156.90 L 477.76 147.17 L 482.70 140.90 L 487.64 141.22 L 492.59 142.47 L 497.53 142.47 L 502.47 139.65 L 507.41 135.57 L 512.36 136.83 L 517.30 132.75 L 522.24 137.14 L 527.18 135.89 L 532.13 132.12 L 537.07 142.78 L 542.01 146.86 L 546.95 148.74 L 551.90 150.94 L 556.84 154.39 L 561.78 159.41 L 566.72 164.42 L 571.66 167.56 L 576.61 168.81 L 581.55 169.44 L 586.49 168.81 L 591.43 165.68 L 596.38 160.35 L 601.32 155.01 L 606.26 150.31 L 611.20 146.86 L 616.15 144.04 L 621.09 141.53 L 626.03 139.96 L 630.97 138.39 L 635.92 138.39 L 640.86 139.33 L 645.80 140.90 L 650.74 143.10 L 655.69 145.92 L 660.63 149.06 L 665.57 151.57 L 670.51 152.51 L 675.46 153.76 L 680.40 159.09 L 685.34 164.11 L 690.28 167.56 L 695.23 168.81 L 700.17 170.38 L 705.11 170.70 L 710.05 169.13 L 714.99 165.68 L 719.94 162.23 L 724.88 158.78 L 729.82 153.76 L 734.76 150.00 L 739.71 147.49 L 744.65 145.92 L 749.59 144.98 L 754.53 144.98 L 759.48 144.98 L 764.42 145.29 L 769.36 147.17 L 774.30 148.74 L 779.25 150.31 L 784.19 151.25 L 789.13 153.13 L 794.07 157.84 L 799.02 163.80 L 803.96 167.87 L 808.90 170.07 L 813.84 170.70 L 818.79 170.07 L 823.73 166.30 L 828.67 157.21 L 833.61 147.17 L 838.55 141.22 L 843.50 142.16 L 848.44 144.35 L 853.38 145.29" /><path class="forecast-svg-actual" d="M 858.32 143.10 L 863.27 142.47 L 868.21 141.84 L 873.15 141.53 L 878.09 140.90 L 883.04 139.02 L 887.98 131.81 L 892.92 144.98 L 897.86 150.31 L 902.81 153.13 L 907.75 155.96 L 912.69 160.03 L 917.63 164.74 L 922.58 167.87 L 927.52 169.75 L 932.46 170.38 L 937.40 170.07 L 942.35 165.99 L 947.29 156.27 L 952.23 145.29 L 957.17 139.65 L 962.12 140.28 L 967.06 143.10 L 972.00 144.35" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 858.32 131.47 L 863.27 126.31 L 868.21 124.01 L 873.15 132.03 L 878.09 122.86 L 883.04 127.70 L 887.98 132.73 L 892.92 124.49 L 897.86 126.00 L 902.81 134.66 L 907.75 131.66 L 912.69 125.10 L 917.63 125.17 L 922.58 129.26 L 927.52 134.25 L 932.46 126.30 L 937.40 123.46 L 942.35 132.35 L 947.29 134.86 L 952.23 126.30 L 957.17 123.03 L 962.12 132.84 L 967.06 127.28 L 972.00 130.81 L 972.00 166.56 L 967.06 163.11 L 962.12 168.76 L 957.17 162.01 L 952.23 168.93 L 947.29 160.40 L 942.35 164.85 L 937.40 160.06 L 932.46 155.72 L 927.52 162.80 L 922.58 168.06 L 917.63 156.70 L 912.69 167.93 L 907.75 165.91 L 902.81 159.60 L 897.86 167.16 L 892.92 162.73 L 887.98 162.62 L 883.04 159.66 L 878.09 165.42 L 873.15 167.31 L 868.21 163.88 L 863.27 162.97 L 858.32 160.23 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 858.32 145.85 L 863.27 144.64 L 868.21 143.94 L 873.15 149.67 L 878.09 144.14 L 883.04 143.68 L 887.98 147.68 L 892.92 143.61 L 897.86 146.58 L 902.81 147.13 L 907.75 148.79 L 912.69 146.51 L 917.63 140.93 L 922.58 148.66 L 927.52 148.53 L 932.46 141.01 L 937.40 141.76 L 942.35 148.60 L 947.29 147.63 L 952.23 147.61 L 957.17 142.52 L 962.12 150.80 L 967.06 145.20 L 972.00 148.69" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="858.32" cy="145.85" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>occupancy rate</h3>
+              <p>Vista-Point Node 4 is a sensor located on the Coastal Linkway Route 9 highway that captures occupancy rate (%) data.</p>
+              <p class="instruction">No forecast instruction is available.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This series represents the occupancy rate (%) captured by a sensor, Vista-Point Node 4. This sensor, located on the Coastal Linkway Route 9 highway, experienced an unexpected glitch</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>resulting in a spike starting from 2024-01-10 17:00:00 for 2 hours.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>Assume that Vista-Point Node 4 will not have this glitch in the future.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">38 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6017</span></span></summary>
+          <pre class="doc-content">NETWORK MONITORING SERVICE: OPERATIONAL LOG ENTRY
+
+ID: OPS-LOG-7729-NP
+ISSUER: IT Infrastructure Monitoring Department
+
+[INCIDENT SUMMARY]
+A sudden surge in incoming request volume was detected in the network monitoring logs during the latest reporting interval. This anomaly triggered an immediate infrastructure analysis to assess current network stability. The primary objective of this ongoing analysis is to determine if the heightened traffic load aligns with a previously scheduled maintenance window for local assets, such as Vista-Point Node 4, or if the activity corresponds to an unidentified external event. 
+
+[SCOPE NOTICE]
+The scope of this entry is strictly limited to the initial detection of the traffic surge and the immediate analytical response. This log does not include specific investigation results, the source of the traffic, or any broader impact assessments.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6018</span></span></summary>
+          <pre class="doc-content">Network Operations Center (NOC) Investigative Team
+Technical Incident Report
+
+Date: January 10, 2024
+Subject: Network Traffic Infrastructure Incident Report
+
+Incident Overview:
+At 17:00:00 on January 10, 2024, automated monitoring systems recorded a significant traffic deviation on the infrastructure. This timestamp marks the exact chronological start point of the traffic anomaly as identified by the investigative analysis.
+
+Procedural Response:
+Following the detection of this anomaly, an infrastructure analysis was initiated. The objective of this analysis was to determine if the high traffic patterns observed at Vista-Point Node 4 matched any scheduled maintenance windows or known external events impacting the Coastal Linkway Route 9 highway area. This report confirms the identification of the start time and the trigger for the subsequent investigative procedure regarding the infrastructure traffic logs.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6019</span></span></summary>
+          <pre class="doc-content">INCIDENT ANALYSIS LOG: NETWORK TRAFFIC DEVIATION
+ISSUER: Network Operations Center (NOC)
+DATE: January 10, 2024
+
+INCIDENT DETAILS:
+At 17:00:00 on January 10, 2024, an anomaly was recorded at Vista-Point Node 4. Traffic deviation began at this precise timestamp, triggering a formal review process. 
+
+PROCEDURAL REQUIREMENTS:
+Per standard operating procedures, system stability protocols require close observation over a continuous interval following the initial detection. This mandatory observation period is utilized to determine if the recorded threshold breach is persistent or transient in nature. 
+
+CHRONOLOGY AND TRACKING:
+The identification of the 17:00:00 start time is critical for the NOC, as it enables the accurate timing of the total breach duration. Monitoring remains active to ensure compliance with immediate procedural requirements for reporting and traffic management.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6020</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING DEPARTMENT
+TECHNICAL OPERATIONS REPORT: SYSTEM STABILITY AND TELEMETRY ANALYSIS
+
+Subject: Vista-Point Node 4 Stability Observation
+
+In accordance with standard procedural requirements, stability protocols require the observation of the system over a continuous interval to verify if the threshold breach is persistent or transient. Continuous monitoring throughout the duration confirms the total elapsed time of the event characterized by an abnormal state at Vista-Point Node 4. 
+
+Telemetry data reveals that the abnormal state maintained its peak intensity for a span of one hundred and twenty minutes. This report is strictly focused on the technical observation protocol and the specific duration of the detected abnormal state. It provides the metrics for the occupancy rate (%) threshold breach as recorded by the sensor located on the Coastal Linkway Route 9 highway.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6021</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING DEPARTMENT
+INCIDENT POST-MORTEM: PEAK ABNORMAL STATE ANALYSIS
+
+EXECUTIVE SUMMARY
+This report details telemetry findings regarding the recent performance anomaly observed at Vista-Point Node 4. The analysis focuses specifically on the duration of peak activity and the resulting automated system responses.
+
+TELEMETRY DATA FINDINGS
+Internal monitoring logs indicate that the detected abnormal state maintained its peak intensity for a duration of exactly 120 minutes. During this window, occupancy rate metrics remained at maximum deviation levels.
+
+AUTOMATED RESPONSE PROTOCOLS
+Upon reaching the measured 120-minute interval of sustained peak intensity, the system&#x27;s automated scaling rules were successfully engaged. The completion of this 120-minute interval served as the direct trigger for the system&#x27;s traffic normalization phase. Subsequent metrics confirm that normalization procedures commenced immediately following the threshold breach to stabilize highway sensor operations.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6022</span></span></summary>
+          <pre class="doc-content">SYSTEM OPERATIONS POST-INCIDENT LOG: TRAFFIC NORMALIZATION TRACE
+
+Issuer: Infrastructure Engineering Team
+Incident Record ID: 2024-01-10-VISTA9
+
+[PHASE: RECONCILIATION]
+
+Following the measured interval, automated scaling rules engaged as programmed to initiate the traffic normalization sequence for Vista-Point Node 4. The system performed high-frequency monitoring of the final decline in metrics to confirm a return to baseline levels for the Coastal Linkway Route 9 sensor.
+
+[METRIC CONVERGENCE]
+
+Metric stabilization on Vista-Point Node 4 was verified against historical baseline averages. The system reached the identified baseline levels at 19:00:00 on 2024-01-10.
+
+[TERMINATION]
+
+The conclusion of the normalization process is logged and marked by the following terminal timestamp:
+
+FIXED_TRACE_END: 2024-01-10T19:05:22Z
+
+Note: This log pertains strictly to the normalization sequence. Root cause analysis and long-term impact are categorized under separate documentation.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6023</span></span></summary>
+          <pre class="doc-content">NETWORK OPERATIONS CENTER (NOC)
+INCIDENT CLOSURE LOG
+Case #: 2024-01-10-A
+
+[STATUS: FINAL MONITORING PHASE]
+
+At 18:30:00, the system began the final monitoring phase to capture the final decline of the event. Surveillance of the Vista-Point Node 4 sensor stream continued until the system confirmed that all metrics returned to baseline levels at 19:00:00 on 2024-01-10.
+
+Confirming the end of the event enables the finalization of the incident record for Case #2024-01-10-A. Pursuant to standard operating procedures, a post-incident report is generated to document the anomaly&#x27;s lifecycle for future preventative modeling. 
+
+Log Entry Complete.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6024</span></span></summary>
+          <pre class="doc-content">TELEMETRIC MAINTENANCE DIVISION
+INTERNAL DIAGNOSTIC REPORT
+
+DOCUMENT ID: Vista-Point Cluster Operational Assessment Log: Unit 4
+DATE: January 10, 2024
+
+[SYSTEM METADATA]
+Log Finalization: 19:00:01
+Focus Area: Fourth Structural Unit
+Primary Cluster: Vista-Point Telemetric Cluster
+Location Reference: Coastal Linkway Route 9 Highway
+
+[LOG START]
+This internal diagnostic log was finalized at 19:00:01 on January 10, 2024. The objective of this specific technical analysis was to evaluate the operational integrity of the fourth structural unit within the Vista-Point telemetric cluster. Per automated scheduling, the 19:00:01 timestamp marks the exact moment the analysis for this specific array segment commenced. Use of this metadata is restricted to the technical focus area of the diagnostic log and the verification of sensor array Unit 4 telemetry. No repair actions or integrity results are included.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6025</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING DEPARTMENT
+TECHNICAL MAINTENANCE REPORT
+
+Project: Vista-Point Telemetric Cluster Operational Assessment
+Subject: Structural Unit 04 Diagnostic Summary
+
+An assessment was conducted on the operational integrity of the fourth structural unit of the Vista-Point telemetric cluster. During this inspection, systems engineers identified a recurring logic error within this network component. Internal diagnostic logs indicate that the identified logic error had previously compromised data transmission across the node. 
+
+By focusing the assessment on this specific node on the Coastal Linkway Route 9 highway, engineers successfully facilitated the isolation of the underlying fault. This report is restricted to the diagnostic findings of the fourth structural unit and does not provide an overview of wider network status. Furthermore, repair timelines and broader impacts of the data transmission failure are outside the scope of this assessment summary. All telemetric data from the fourth structural unit remains under review.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6026</span></span></summary>
+          <pre class="doc-content">VP-N4 Logic Error Remediation Report
+
+To: Infrastructure Operations
+From: Systems Engineering Department
+Subject: Remediation of VP-N4 Network Component
+
+Summary:
+Systems engineers recently identified a recurring logic error within a specific network component on Vista-Point Node 4 (VP-N4), a sensor located on Coastal Linkway Route 9. 
+
+Technical Details:
+Prior to remediation, the identified logic error compromised the integrity of data transmission associated with occupancy rate (%) collection. This defect resulted in intermittent packet failure and loss of signal consistency.
+
+Resolution:
+Following the identification of the logic error, a permanent software patch was developed and successfully deployed to the hardware unit designated as VP-N4. Post-deployment verification confirms that the fix has addressed the underlying logic failure. Data transmission has been restored to normal operational parameters. No further action is required for this specific hardware unit.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6027</span></span></summary>
+          <pre class="doc-content">Systems Engineering Department
+Technical Status Report: VP-N4 System Deployment and Stability
+
+Following the scheduled maintenance window, a permanent software patch was successfully deployed to the VP-N4 hardware. To support this deployment, continuous monitoring scripts have been updated to ensure comprehensive oversight of the node&#x27;s performance. 
+
+These updated scripts are designed to verify environment stability under peak load conditions, ensuring the sensor&#x27;s occupancy rate data remains accurate during high-traffic intervals. Upon the patch becoming active, the initialization of secondary monitoring scripts was triggered; this action was taken specifically to ensure fix integrity and long-term system reliability. 
+
+Note: This update is strictly limited to the VP-N4 patching event and immediate subsequent monitoring adjustments. It does not encompass broader network status, root cause analysis, or future maintenance schedules.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6028</span></span></summary>
+          <pre class="doc-content">**Systems Engineering Department**
+**Technical Operations Report: Post-Remediation Verification and Stability Report**
+
+**Subject:** Final Validation of Vista-Point Node 4 Sensor Stability
+
+**Executive Summary:**
+Following recent remediation efforts on the Coastal Linkway Route 9 infrastructure, the Systems Engineering Department has completed a formal verification of environmental stability. 
+
+To ensure the durability of the fix, continuous monitoring scripts have been updated to verify environment stability under peak load. Recent testing cycles confirm that the infrastructure successfully maintains integrity during high-traffic intervals; this successful verification of peak loads proves that the remediation is durable. Furthermore, revised maintenance protocols confirm a definitive transition to a long-term state where the specific malfunction is eliminated. 
+
+**Scope Note:**
+This report is limited to the verification of the current fix and environmental stability. It does not include historical logs of the original malfunction, specific code changes, or future scaling projections.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6029</span></span></summary>
+          <pre class="doc-content">TECHNICAL OPERATIONS DEPARTMENT
+INFRASTRUCTURE MAINTENANCE AND VALIDATION REPORT
+
+RE: VISTA-POINT NODE 4 - COASTAL LINKWAY ROUTE 9
+Project Code: INFRA-MAIN-2024-089
+Document Classification: Technical Operations - Official Record
+
+EXECUTIVE SUMMARY
+
+The Technical Operations Department has completed an extensive validation of the infrastructure components following recent adjustments to the Vista-Point Node 4 sensor array located on the Coastal Linkway Route 9 highway. This Infrastructure Maintenance and Validation Report serves as the definitive certification of the asset&#x27;s operational status. The primary objective of this documentation is to record the transition of the system into a stable, long-term state and to outline the resulting projections for the remainder of the unit’s service life.
+
+MAINTENANCE PROTOCOLS AND VALIDATION
+
+Pursuant to the high-level maintenance protocols executed by our engineering teams, we hereby confirm a definitive transition to a long-term state where the specific malfunction previously noted in the monitoring logs has been fully and permanently eliminated. The validation process involved rigorous stress-testing of the node’s internal logic and environmental response systems to ensure that the systemic threshold for the discrepancy was no longer present in the operational environment. These protocols have confirmed that the underlying cause of the variance has been addressed at the architectural level, moving the infrastructure beyond the temporary remediation phase into a permanent state of resolution.
+
+OPERATIONAL IMPLICATIONS
+
+The successful process of eliminating the malfunction allows the system to operate under the firm premise that it will not recur. This foundational change in the maintenance status of Vista-Point Node 4 effectively resets the risk profile of the sensor. Operations may now proceed with the certainty that the specific technical conditions that previously impeded data integrity or hardware stability have been removed. By establishing this permanent correction, the Technical Operations Department has cleared the infrastructure for continuous, uninterrupted function without the need for the recurrent oversight cycles previously necessitated by the technical discrepancy.
+
+LONG-TERM SERVICE LIFE PROJECTIONS
+
+Based on the current validation data, official projections for the Coastal Linkway Route 9 highway sensor network have been updated. These official projections now assume the infrastructure will remain free of the technical discrepancy throughout its upcoming service life. This long-term forecast anticipates that the node will maintain nominal functionality according to its original design specifications for the duration of its deployment. The Technical Operations Department considers this matter closed, as the system is now categorized as being in a state of terminal stability regarding the specific malfunction addressed in this validation cycle.
+
+PREPARED BY:
+Technical Operations Department
+Infrastructure Validation Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6030 · Off-variable</span></span></summary>
+          <pre class="doc-content">Coastal Transit Systems Infrastructure Department
+Technical Operational Log: Network Performance and Synchronization
+
+NODE IDENTIFIER: Vista-Point Node 4
+LOCATION: Coastal Linkway Route 9
+LOG TYPE: Technical Operational Log
+
+[EVENT DATA]
+TIMESTAMP: 2024-01-10 17:00:00
+EVENT TYPE: Performance Anomaly
+PRIMARY ISSUE: Database synchronization delays
+SECONDARY EFFECT: Display latency
+
+[METRICS]
+START TIME: 17:00:00
+EVENT DURATION: 2 hours
+STATUS: Resolved
+
+[SUMMARY]
+A performance anomaly occurred at Vista-Point Node 4 located on Coastal Linkway Route 9. The event, recorded at 2024-01-10 17:00:00, lasted for a total duration of 2 hours. Technical analysis confirms the issue involved specific database synchronization delays, which resulted in observable display latency across the node interface. This log is restricted to technical performance metrics for the specified node and timeframe.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6031 · Off-variable</span></span></summary>
+          <pre class="doc-content">Coastal Linkway Infrastructure Management
+Technical Incident Report: Node 4
+
+REPORT SUMMARY
+Form: Equipment Status and Environmental Interference
+Location: Vista-Point Node 4, Coastal Linkway Route 9
+
+INCIDENT DETAILS
+Event Start Time: 17:00:00
+Event Duration: 2 hours
+Primary Cause: Solar glare contributing to hardware heat issues
+
+TECHNICAL LOG
+At 17:00:00, automated sensors at Vista-Point Node 4 flagged a critical temperature rise in the primary processing unit. Diagnostic logs indicate that intense solar glare during the late afternoon period directly impacted the external housing, compounding internal hardware heat issues. The thermal interference persisted for a duration of 2 hours until environmental conditions stabilized. This report is restricted to the specific operational incident at Node 4; it does not include wider network status, traffic data, or long-term maintenance logs.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6032 · Off-variable</span></span></summary>
+          <pre class="doc-content">REGIONAL INFRASTRUCTURE MAINTENANCE DEPARTMENT
+OPERATIONAL LOG: VISTA-POINT NODE 4 FIELD TEST
+
+Date: 2024-01-10
+Location: Hwy Vista-Point Node 4 Equipment Site
+Subject: Technical Performance Metrics
+
+1. MONITORING PERIOD
+This field test commenced at 17:00:00 on 2024-01-10. The duration of the monitoring activity was exactly 2 hours.
+
+2. BANDWIDTH TESTING RESULTS
+Performance data recorded for the Node 4 uplink and downlink during the specified window shows consistent throughput. Measured metrics indicate bandwidth stability under current load conditions at this highway location.
+
+3. POWER CONSUMPTION METRICS
+Monitoring protocols captured real-time power draw for the node hardware. Metrics indicate consumption levels remained within standard operational parameters for the duration of the test.
+
+NOTES:
+Data is limited to the two-hour window for Node 4. This report excludes network-wide status, longitudinal data, or maintenance recommendations.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6033 · Irrelevant</span></span></summary>
+          <pre class="doc-content"># Data Center Node Maintenance and Compliance Audit Report
+
+**Issuer:** Internal Operations and Quality Assurance Department  
+**Date:** October 24, 2023  
+**Audit Type:** Technical Audit Report  
+**Scope:** Physical and operational status of data center infrastructure. 
+
+## 1. Executive Summary
+This report provides a comprehensive overview of the current operational state of the data center nodes, focusing on hardware integrity, environmental control, and procedural compliance. Note: This assessment is limited to infrastructure performance; financial data, expansion roadmaps, and external security assessments are excluded from this scope.
+
+## 2. Hardware Specifications: Server Racks
+The following hardware specifications apply to the audited node racks (Racks A1-F12):
+- **Chassis:** 42U Industrial Grade Steel Frame
+- **Compute Units:** Dual-socket architecture with high-density heat sink configurations
+- **Memory:** ECC-compatible DDR4/DDR5 modules (Load-Reduced DIMM)
+- **Storage:** Hot-swappable NVMe SSD arrays with RAID 10 controllers
+- **Power Distribution:** Dual 30A Vertical PDUs with integrated surge protection and redundancy
+
+## 3. Localized Cooling Units: Operational Status
+The localized cooling systems were inspected for efficiency and mechanical wear. Current status is as follows:
+- **Unit 01-04 (In-Row Cooling):** Status: Operational. Compressor cycles within nominal range. Fan speeds at 65% capacity.
+- **Unit 05-08 (In-Row Cooling):** Status: Operational. Condensate pumps cleared; sensors calibrated.
+- **Coolant Flow:** Maintained at 14°C (57.2°F). No leaks or pressure drops detected during the audit period.
+
+## 4. Connectivity Ping Log History
+As part of the routine connectivity validation, the following ping history log represents a sample of the node responsiveness over the monitoring period:
+
+| Timestamp | Target Node | Internal Latency | Result |
+| :--- | :--- | :--- | :--- |
+| 2023-10-20 08:00:01 | Node-A101 | 0.22ms | PASS |
+| 2023-10-20 12:00:01 | Node-A101 | 0.24ms | PASS |
+| 2023-10-21 08:00:01 | Node-B202 | 0.19ms | PASS |
+| 2023-10-21 12:00:01 | Node-B202 | 0.21ms | PASS |
+| 2023-10-22 08:00:01 | Node-C303 | 0.25ms | PASS |
+| 2023-10-22 12:00:01 | Node-C303 | 0.23ms | PASS |
+| 2023-10-23 08:00:01 | Node-D404 | 0.20ms | PASS |
+| 2023-10-23 12:00:01 | Node-D404 | 0.22ms | PASS |
+
+## 5. ISO-9001 Quality Management Protocol Compliance
+Internal Operations has conducted a review of the data center’s adherence to ISO-9001 quality management standards. Documentation confirms the following:
+- **Process Control:** All maintenance activities follow standardized Work Instructions (WI-DC-04). Each intervention is logged with a timestamp and technician ID.
+- **Equipment Calibration:** Sensors and diagnostic tools are calibrated annually according to manufacturer specifications.
+- **Continuous Improvement:** Findings from previous internal audits have been integrated into the current maintenance lifecycle.
+- **Record Keeping:** All compliance documentation is stored in the centralized quality management system for a minimum of seven years.
+
+## 6. Auditor Notes
+The physical infrastructure remains in peak operational condition. Compliance with internal quality protocols is verified at 100%. This audit does not assess financial costs or potential future expansion needs, nor does it address external security threat vectors.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6034 · Irrelevant</span></span></summary>
+          <pre class="doc-content">REGIONAL TRANSIT AUTHORITY
+Quarterly Facilities Maintenance and Infrastructure Operational Report
+Reporting Period: Q3
+
+I. EXECUTIVE SUMMARY
+This operational report provides a status update on current maintenance activities and technical infrastructure integrity across the Regional Transit Authority (RTA) network. Focus remains on the execution of scheduled corridor upkeep and the deployment of renewable energy backup systems. This document serves as a technical record of current operations; it excludes long-term financial forecasting, urban planning strategies, and passenger ridership statistics.
+
+II. CORRIDOR MAINTENANCE: LANDSCAPING AND FOLIAGE
+To maintain transit corridor safety and visual standards, the following aesthetic landscaping and foliage trimming schedules have been implemented for the current quarter:
+
+- Northern Corridor (Segments A-D): Mechanical brush clearing and aesthetic hedging are scheduled for the first two weeks of each month. Work focuses on maintaining a 15-foot clearance from the track centerline.
+- Central Hub &amp; Urban Interface: Ornamental foliage trimming and soil stabilization planting are conducted bi-weekly. Pruning is limited to non-peak hours to ensure zero operational impact.
+- Southern Extension: Quarterly canopy reduction and invasive species removal along the masonry sound walls. 
+
+All landscaping activities are strictly aesthetic and safety-oriented, ensuring clear sightlines for operators and general site cleanliness.
+
+III. INFRASTRUCTURE UPDATE: SOLAR-POWERED BACKUP BATTERY SYSTEMS
+As part of the ongoing technical hardening of RTA assets, the transit authority is transitioning key signaling and emergency lighting systems to solar-powered battery backups. 
+
+Specifications:
+- Standard Unit: 10kWh Lithium-Iron Phosphate (LiFePO4) storage arrays.
+- Photovoltaic Input: 400W high-efficiency crystalline panels.
+- Performance Metric: Capable of sustaining essential terminal operations for 48 hours in the event of grid failure.
+
+Status Updates:
+- Site 88 (Parkway Station): Installation 100% complete; system synchronized with the primary grid.
+- Site 104 (Subway Vent Vaults): 75% complete; battery housing units installed, pending final panel mounting.
+- Site 112 (East Depot): Scheduled for commissioning in the final week of the quarter.
+
+IV. LOGISTICAL LAND MANAGEMENT &amp; UTILITY COORDINATION
+Operational efficiency is contingent upon effective site accessibility and localized utility coordination. Current logistical comments include:
+
+- Site Accessibility: Maintenance teams have identified restricted ingress points at the West Oak junction due to redundant fencing. Adjustments to gate protocols are required for heavy machinery access. All teams must utilize the secondary gravel access roads for heavy foliage removal equipment.
+- Utility Coordination: RTA is currently coordinating with municipal water and electric providers regarding the relocation of subsurface conduits that intersect with new battery system foundations. This coordination ensures that solar infrastructure does not interfere with existing underground utility easements.
+- Easement Maintenance: Regular inspections of RTA-owned land parcels bordering private property are ongoing to prevent unpermitted encroachment that could hinder maintenance vehicle pathways.
+
+Notice: This report is confined to the technical and logistical parameters of current operations. No data regarding ridership volume or future urban development planning is contained herein.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6035 · Irrelevant</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING DEPARTMENT
+TECHNICAL OPERATIONS MANUAL: PERIMETER SENSOR UNITS
+Document ID: SED-PSU-TMDS-04
+
+1. SCOPE AND PURPOSE
+This document provides technical maintenance requirements and data specifications for the Perimeter Sensor Units (PSU). It serves as the governing standard for physical upkeep and digital protocol compliance for all deployed sensor hardware.
+
+2. ANNUAL CALIBRATION CHECK REQUIREMENTS
+All Perimeter Sensor Units must undergo a comprehensive calibration check on an annual basis to ensure detection accuracy remains within specified tolerances. The procedure requires the following:
+- Verification of the internal optical alignment against the master reference point.
+- Recalibration of sensitivity thresholds for infrared and ultrasonic frequencies.
+- Testing of signal-to-noise ratios in varying ambient light conditions.
+- Documentation of variance in the unit’s non-volatile memory.
+Failure to perform this annual check will result in the unit being marked as &#x27;Out of Compliance&#x27; in the central registry.
+
+3. PHYSICAL SPECIFICATION: REFLECTIVE COATING
+The external sensor casing is treated with a specialized reflective coating intended to manage thermal loads and reduce visual detection. The coating must adhere to the following specifications:
+- Material: Grade-A Spectrally Selective Aluminum-Polymer.
+- Thickness: 0.25 mm (±0.02 mm).
+- Reflectivity Index: Minimum 92% for wavelengths between 400nm and 1100nm.
+- Durability: Must maintain integrity across a temperature range of -30°C to +70°C. 
+If the coating shows signs of pitting, peeling, or oxidation exceeding 5% of the surface area, the casing must be replaced or recoated.
+
+4. DATA SPECIFICATION: DIGITAL TIMESTAMP FORMAT
+To maintain synchronization across the network, all metadata generated by the sensor must utilize the standardized digital timestamp format. All data packets must be appended with a UTC-based ISO 8601 string as follows:
+- Format: YYYY-MM-DDThh:mm:ss.sssZ
+- Example: 2023-11-15T14:30:05.125Z
+Timestamps must be generated at the hardware level at the exact moment of signal detection to ensure data integrity during post-processing.
+
+5. MONTHLY SECURITY HANDSHAKE PROTOCOL
+A security handshake must be performed monthly to validate the identity of the unit and the integrity of the encrypted link. The protocol steps are:
+- Initiation: The Central Server sends a 256-bit challenge token to the PSU.
+- Validation: The PSU processes the token using the current hardware-embedded salt.
+- Response: The PSU returns the hashed result within a 500ms window.
+- Resolution: Upon successful verification, the session key is refreshed for the next 30-day cycle.
+
+Note: This manual is restricted to physical maintenance and digital protocols. It does not contain incident logs, facility security policies, or predictive maintenance schedules.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6036 · Off-entity</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION
+DATA INTEGRITY UNIT: TECHNICAL VALIDATION REPORT
+
+SUBJECT: Sensor Discrepancy Investigation – Harbor-View Node 7
+
+OVERVIEW:
+This report documents a data validation conflict regarding Harbor-View Node 7. Analysis confirms that this sensor is positioned at the same highway location as the primary monitoring unit. Both units are configured to record the same variable type.
+
+FINDINGS:
+During a recent logging window, Harbor-View Node 7 captured an event with a start time and duration identical to those documented by the correlate unit. However, the data integrity is compromised by a significant discrepancy in the readings. While the correlate unit and other local sensors reported a return-to-normal outcome, data from Harbor-View Node 7 indicates a spike that transitions into a permanent baseline shift. This hardware-level contradiction requires technical review to address the persistent deviation.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6037 · Off-entity</span></span></summary>
+          <pre class="doc-content">MARINA INFRASTRUCTURE MONITORING DEPARTMENT
+Technical Operational Report: Comparative Signal Analysis
+
+Subject: Site Event Log – Marina-Gate Node 2 vs. Primary Reference
+
+This report summarizes telemetry discrepancies observed at the Marina-Gate installation. Both Marina-Gate Node 2 and the primary reference sensor are situated at the same site, monitoring the identical variable type.
+
+Event Log Details:
+- Initial Event Timestamp: Synchronous (identical) across both sensors.
+- Marina-Gate Node 2 Response: Recorded a distinct signal drop.
+- Reference Sensor Response: Recorded a distinct signal spike.
+
+Post-Event Frequency Analysis:
+Following the initial event, Marina-Gate Node 2 exhibits a different signal frequency compared to the reference sensor. While the location and variable type remain consistent between the units, the telemetry profiles have diverged in both directionality and future frequency patterns.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6038 · Off-entity</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION MAINTENANCE DIVISION
+OPERATIONAL LOG ENTRY
+
+Asset ID: Shoreline-Pier Node 5
+Context: Highway Infrastructure
+Log Type: Recurring Scheduled Occurrence
+
+Timestamp: [Reported Timestamp]
+Event Status: Routine Maintenance Cycle
+
+Summary:
+This entry confirms technical activity associated with Shoreline-Pier Node 5, situated within the highway corridor. The recorded data event occurred at the reported timestamp and is categorized as a recurring scheduled occurrence. This event is verified as part of the planned maintenance protocol and is explicitly not an unexpected non-repeating glitch. This log is restricted to hardware status and scheduling; no traffic flow data or regional impact analysis is included.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6039 · Off-window</span></span></summary>
+          <pre class="doc-content">Coastal Linkway Route 9 Traffic Operations Center
+Technical Maintenance Report: Vista-Point Node 4 Maintenance and Resolution Summary
+
+Reporting Period: November 2023 – Late 2023
+
+Summary of Technical Issues:
+Throughout November 2023, the Vista-Point Node 4 sensor experienced a recurring system reset issue. This technical malfunction caused significant data gaps, specifically characterized by a sharp drop in the recorded occupancy rate to 0 percent during every morning commute for a full week in November.
+
+Resolution Maintenance:
+Maintenance crews were deployed to address the hardware and software failures. In late 2023, the system was permanently patched to rectify the reset loop. This intervention ensures that the recorded morning drop-off pattern does not occur in 2024.
+
+Future Forecast:
+The 2024 monitoring data for the Coastal Linkway Route 9 highway is expected to show typical traffic flow without these historic outages. This report focuses exclusively on historical sensor malfunctions at Vista-Point Node 4 and the subsequent technical resolution.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6040 · Off-window</span></span></summary>
+          <pre class="doc-content">SYSTEMS MAINTENANCE DEPARTMENT
+OPERATIONAL LOG DETAIL: VISTA-POINT TERMINAL NODE 4
+
+REPORT ID: VPTN4-JAN-2024-CAL
+STATUS: LOG CLOSED
+
+SUMMARY:
+This report confirms the operational status of Vista-Point Terminal Node 4 regarding the planned maintenance window during the first week of January 2024. 
+
+CHRONOLOGY AND PARAMETERS:
+- Status: Node 4 was offline for calibration from 2024-01-01 through 2024-01-07.
+- Manual Override: During the calibration period, a manual override was utilized to maintain occupancy readings at a fixed 50 percent for system stability.
+- Conclusion: The calibration process officially concluded on 2024-01-07 at 09:00:00.
+
+POST-CALIBRATION EXPECTATIONS:
+Following the conclusion of the calibration, the override has been released. Sensor readings are now live and are expected to follow established seasonal traffic trends.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6041 · Off-window</span></span></summary>
+          <pre class="doc-content">Vista-Point Node 4 Data Integrity Log: December 2023 - January 2024
+Issuer: Vista-Point Facilities Monitoring Team
+Type: Operational Incident Report
+
+Scope: Hardware Status and Data Quality (Node 4)
+
+During the 2023 holiday season, Vista-Point Node 4 experienced significant hardware interference. Monitoring logs indicate that activity from nearby construction equipment created a steady, artificial increase in reported occupancy levels spanning several days in December. 
+
+Updates:
+- Incident Resolution: The construction project was officially finished on 2023-12-31, at which point the external interference ceased immediately.
+- Data Integrity Forecast: No further hardware artifacts are expected. Forecasters should assume the sensor will maintain high accuracy throughout mid-January 2024 without interference.
+
+Notes: This report is restricted to hardware status and data integrity. Detailed traffic analysis, construction project specifics, and financial impact assessments are outside the scope of this log.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6042 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">METROPOLITAN DEPARTMENT OF TRANSPORTATION (MDOT)
+TRAFFIC ENGINEERING DIVISION
+TECHNICAL TRAFFIC ANALYSIS REPORT
+
+DATE: October 24, 2023
+DOCUMENT ID: MDOT-TED-V4-2023-POSS
+SUBJECT: Vista-Point Node 4: Periodic Occupancy Stabilization Summary
+
+I. EXECUTIVE OVERVIEW
+This report summarizes the telemetry trends and statistical behavior observed at Vista-Point Node 4. As a critical telemetry sensor located on the Coastal Linkway Route 9 highway, Node 4 is responsible for monitoring the occupancy rate percentage of the thoroughfare. Recent technical analysis indicates a significant shift in the behavioral profile of the node, characterized by a transition from high-intensity fluctuations to a moderated, stable periodic pattern. These findings are based on longitudinal data reviews of the sensor’s historical daily cycles.
+
+II. TELEMETRY ANALYSIS AND SENSOR DATA
+Vista-Point Node 4 provides a granular look at the occupancy rate percentage on the Coastal Linkway Route 9 highway. Analysis of the historical daily cycles for Node 4 demonstrates an empirical tendency toward stabilizing at a lower peak magnitude over time. While earlier phases of data collection recorded considerable volatility and higher saturation points, current telemetry outputs indicate that these fluctuations have subsided.
+
+Specifically, occupancy peaks have recently moved into a consistently reduced and uniform intensity compared to earlier fluctuations. This transition suggests a shift in the underlying statistical distribution of the series. The previous highs, which often presented as sharp, inconsistent spikes, have been replaced by a smoother, more predictable rhythmic profile.
+
+III. STABILIZATION PROJECTIONS
+Based on current modeling of the moderated periodic pattern, the MDOT Traffic Engineering Division has established the following projections for Node 4:
+
+1. Magnitude Consistency: The occupancy rate is expected to continue leveling off within a range of 9-10%. This range represents the new stabilized ceiling for the sensor’s periodic peaks.
+2. Profile Maintenance: The series is projected to maintain a tempered and stable rhythmic profile rather than returning to previous higher intensities. This indicates a permanent or long-term baseline shift in the data stream.
+3. Variance Reduction: Statistical variance has decreased, leading to a more uniform output across daily observation cycles. 
+
+IV. TECHNICAL LIMITATIONS
+This summary focuses exclusively on the telemetry trends and statistical behavior of Node 4. This analysis is limited to the mathematical and rhythmic output of the specific sensor mentioned. As such, the following items are outside the scope of this report:
+- Interpretations regarding the external causes of traffic reduction.
+- Hardware maintenance schedules or sensor calibration logs.
+- Comparative traffic data or telemetry from other nodes located on Route 9.
+
+V. CONCLUSION
+The data from Vista-Point Node 4 confirms a successful transition into a stabilized state. The Traffic Engineering Division will continue to monitor the 9-10% range to ensure the occupancy rate maintains its current tempered profile. No return to previous high-intensity fluctuations is anticipated under existing conditions.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6043 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Coastal Linkway Route 9 Traffic Management Center
+Operational Monitoring Report
+
+Subject: Vista-Point Node 4 Traffic Pattern Analysis
+
+Operational Overview:
+Vista-Point Node 4 is located on the Coastal Linkway Route 9 highway. Based on current operational monitoring, sensor readings at this location indicate that occupancy rates typically exhibit an early-peaking behavior. 
+
+Traffic Volume Trends:
+Data indicates that traffic volumes on this route concentrate primarily during midday hours. Daily maximum occupancy levels are reached shortly after morning levels are established. Following this peak, occupancy rates are expected to decline throughout the afternoon and evening commute periods.
+
+Sensor Observations:
+Remote sensor readings show a consistent reduction and downward trend through the afternoon and evening hours. This pattern represents the recurring traffic volume profile for Node 4. No additional external variables or management strategies are included in this specific assessment.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6044 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Coastal Linkway Route 9 Traffic Management Bureau
+Technical Operational Report: Vista-Point Node 4 Traffic Sensor Daily Performance Audit
+
+1. EXECUTIVE SUMMARY
+This technical audit evaluates the performance metrics and observed occupancy patterns of the traffic sensor located at Vista-Point Node 4 on the Coastal Linkway Route 9 highway. The audit focuses on establishing the baseline reliability of occupancy rate data through the analysis of repetitive daily cycles. Observations confirm that Node 4 exhibits a highly regular daily routine, characterized by uniform peak demand intervals and consistent ceiling thresholds.
+
+2. SENSOR PERFORMANCE &amp; OCCUPANCY METRICS
+Monitoring of Vista-Point Node 4 reveals a distinct and predictable behavior in traffic flow density. Sensor records indicate a uniform peak demand during the day, following a standardized curve that mirrors established operational expectations for this specific segment of Route 9. 
+
+A key finding of this performance audit is the stability of maximum occupancy levels. Data logs demonstrate that maximum occupancy levels at Node 4 are independent of the day of the week. Whether analyzing weekday commuting patterns or weekend transit, the sensor detects a maximum load that remains at a constant ceiling. 
+
+3. PEAK ANALYSIS AND PROJECTIONS
+Based on the recurring daily cycles, the occupancy rate is expected to reach a maximum of approximately 9-10% in the afternoon. This specific threshold has shown remarkable stability across the current reporting period. These afternoon peak levels align precisely with the most recent daily cycles recorded by the bureau’s telemetry. 
+
+Historically, the 9-10% range represents the saturation limit for this node under current performance parameters. The audit confirms that the sensor accurately captures the rise and fall of these patterns, with the afternoon peak consistently reaching the established ceiling before tapering off. 
+
+4. OPERATIONAL SCOPE AND LIMITATIONS
+The scope of this report is strictly limited to the performance metrics and observed occupancy patterns of Node 4. This document serves as a technical record of sensor output and observed traffic density routines. As such, it does not include broader regional traffic forecasts or projections beyond the localized Node 4 vicinity. Additionally, this audit does not provide maintenance schedules for the sensor hardware or physical infrastructure. The data provided herein reflects the observed 10% ceiling but does not investigate or identify specific causes for that 10% ceiling (such as lane geometry, speed limits, or external bottlenecks).
+
+5. CONCLUSION
+The Vista-Point Node 4 sensor continues to report data that is highly consistent with previous daily operational cycles. The uniformity of the afternoon peak and the independence of maximum occupancy levels from the day of the week suggest high sensor reliability and a predictable traffic flow environment on the Coastal Linkway Route 9. 
+
+***
+End of Report
+Issuer: Coastal Linkway Route 9 Traffic Management Bureau
+Internal Reference: AUD-VP4-CL9</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6045 · Off-variable</span></span></summary>
+          <pre class="doc-content">COASTAL LINKWAY ROUTE 9 HIGHWAY AUTHORITY
+Technical Operations Department
+
+REPORT ID: CLR9-VPT-N4-2023-ANL
+SUBJECT: VISTA-POINT NODE 4 TRAFFIC SENSOR OPERATIONAL ANALYSIS
+
+1.0 EXECUTIVE SUMMARY
+This technical report provides a comprehensive evaluation of the sensor performance and traffic metrics recorded at Vista-Point Node 4. The primary objective is to analyze the high road occupancy levels observed at this specific coordinate and determine the external variables influencing data accuracy and traffic flow integrity. 
+
+2.0 SITE SPECIFICATION
+The Vista-Point Node 4 sensor is located on the Coastal Linkway Route 9 highway. This placement is a critical data collection point for monitoring coastal traffic density. Current operations focus exclusively on this specific node, evaluating localized environmental interactions with station hardware.
+
+3.0 SENSOR PERFORMANCE AND DATA ANOMALIES
+Operational analysis of the telemetry received from Node 4 indicates a significant correlation between atmospheric shifts and data spikes. Specifically, data indicates that fog and lighting conditions are confounding causes of occupancy rate increases. 
+
+Dense coastal fog banks common to the Route 9 corridor, combined with variable lighting conditions during dawn and dusk cycles, appear to affect the sensor’s optical and infrared triggers. These environmental factors introduce noise into the dataset, resulting in inflated occupancy readings that may not solely reflect vehicle presence but rather atmospheric interference and visibility degradation.
+
+4.0 OCCUPANCY TRENDS AND PROJECTIONS
+Despite the confounding environmental variables, the baseline data suggests a persistent shift in road usage. Road occupancy levels at this location are projected to remain elevated in the future. Statistical modeling, accounting for the identified sensor interference, still points toward a sustained upward trend in vehicle density at Node 4. Strategic planning should account for this continued elevation in roadway saturation.
+
+5.0 LIMITATIONS OF REPORT
+This analysis is strictly limited to the operational data from the Node 4 sensor and its immediate environmental variables. This document does not provide analysis regarding broader traffic patterns for the entire Route 9 system. Furthermore, this report does not investigate the secondary economic drivers for the occupancy increase, nor does it detail specific maintenance schedules for the sensor hardware. All findings are focused on raw telemetry and immediate physical site conditions.
+
+6.0 CONCLUSION
+The Vista-Point Node 4 sensor remains operational, though precision is hampered by localized weather patterns. While the data reflects frequent atmospheric interference, the upward trend in road occupancy is a confirmed phenomenon that will require ongoing monitoring by the Highway Authority.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6046 · Off-variable</span></span></summary>
+          <pre class="doc-content">COASTAL DEPARTMENT OF TRANSPORTATION
+Intelligent Transit Systems (ITS) Division
+
+TECHNICAL OPERATIONS LOG: Vista-Point Node 4
+Location: Coastal Linkway Route 9
+
+MAINTENANCE SUMMARY
+Date: 2024-01-10
+Activity: Firmware Calibration
+Status: Completed
+
+LOG DETAILS:
+On 2024-01-10, ITS technicians performed a scheduled firmware calibration on the Vista-Point Node 4 sensor assembly situated along Coastal Linkway Route 9. 
+
+During the calibration procedure, diagnostic testing documented a permanent baseline shift in the sensor readings. This shift is categorized as a permanent confounding factor affecting the device&#x27;s operational data profile. Despite the firmware adjustments, this alteration in the baseline is non-revertible and must be accounted for in all subsequent data processing originating from this specific node. This log serves as the formal record of this hardware state change; external factors causing the shift were not assessed during this maintenance window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6048 · Irrelevant</span></span></summary>
+          <pre class="doc-content">REGIONAL INFRASTRUCTURE TRANSIT AUTHORITY
+TECHNICAL FIELD MAINTENANCE LOG: VISTA-POINT NODE 4
+
+REPORT ID: RITA-CL9-2023-VPN4
+LOCATION: Coastal Linkway Route 9, Vista-Point Section (Node 4)
+STATION COORDINATES: 34° 24&#x27; 12&quot; N / 119° 41&#x27; 05&quot; W
+DATE: October 24, 2023
+ISSUER: Regional Infrastructure Transit Authority (RITA)
+
+1. INFRASTRUCTURE PROJECT OVERVIEW
+The Vista-Point Node 4 sensor is an integral component of the Coastal Linkway sensor network. This network was established to monitor environmental and structural dynamics across the Route 9 corridor, ensuring real-time data flow for regional infrastructure management. The Coastal Linkway project integrates localized sensor units to provide granular oversight of the coastal transit path.
+
+2. AMBIENT ENVIRONMENTAL CONDITIONS
+Readings collected at the time of site visit for system normalization:
+- Ambient Temperature: 22.4°C (72.3°F)
+- Relative Humidity: 64%
+
+3. EQUIPMENT SPECIFICATIONS
+Unit Type: Infrastructure Monitoring Sensor
+Voltage Specifications:
+- Input Voltage: 24V DC (Nominal)
+- Operating Range: 18V - 30V DC
+- Current Draw: 450mA (Active State)
+- Power Source: Local grid connection with battery backup (functional)
+
+4. ROUTINE MAINTENANCE LOG
+The following physical maintenance tasks were completed on-site as part of the standard operational protocols for Node 4:
+
+- PHYSICAL HARDWARE INSPECTION:
+  - Sensor Housing: Inspected for cracks, corrosion, and seal integrity. No significant degradation noted.
+  - Mounting Brackets: Inspected for signs of fatigue or structural loosening.
+  
+- CLEANING AND HARDWARE ADJUSTMENTS:
+  - External Lens/Aperture: Precision cleaning conducted using isopropyl solution and non-abrasive wipes to ensure optical clarity. Removed airborne salt residue and dust typical of Route 9 coastal conditions.
+  - Fastener Maintenance: Tightening of all primary mounting bolts and housing screws. Torque levels verified to specification (12 Nm) to mitigate vibration-induced loosening.
+  - Connector Terminal Cleaning: Verified and cleaned interface pins for the power and data transmission cables.
+
+5. OPERATIONAL STATUS SUMMARY
+Upon completion of maintenance, the Node 4 sensor was power-cycled and performed a successful self-diagnostic. The sensor is currently in an active state, transmitting data within defined voltage parameters. Physical hardware is secure and clear of environmental debris.
+
+6. SCOPE LIMITATIONS
+Note: This report is limited strictly to the operational status and physical maintenance of Node 4. This log does not include network-wide performance analysis, future traffic forecasts, or budgetary information for the broader Route 9 project. For broader project logistics or financial data, please refer to the Regional Infrastructure Transit Authority central office archives.
+
+FIELD ENGINEER SIGNATURE:
+[Authorized RITA Technical Personnel]
+DEPARTMENT OF MAINTENANCE AND FIELD OPERATIONS</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6049 · Irrelevant</span></span></summary>
+          <pre class="doc-content">COASTAL LINKWAY TRANSIT AUTHORITY
+Systems Engineering Division
+
+TECHNICAL AND OPERATIONAL MAINTENANCE REPORT: VISTA-POINT NODE 4
+Ref ID: CLTA-SED-VPN4-2024
+
+1. SCOPE AND LOCATION SUMMARY
+This report details the operational specifications and technical status for Vista-Point Node 4. The sensor installation is located on Coastal Linkway Route 9, specifically positioned at the Vista-Point intersection to monitor transit flow and infrastructure integrity. This document governs the technical maintenance of Node 4 and does not encompass wider regional traffic statistics or weather-related data.
+
+2. HARDWARE TRACKING AND INVENTORY
+For the purposes of hardware lifecycle management and tracking, the following serial numbers are currently registered to the Node 4 subsystem:
+• Primary Optical Sensor: SN-VP4-9982-A
+• Secondary Infrared Array: SN-VP4-9982-B
+• Processing Unit: CPU-CLTA-004-9
+
+3. ADMINISTRATIVE AND LOGISTICAL OPERATIONS
+Node 4 operates as a standalone administrative unit within the Coastal Linkway framework. Logistics for on-site maintenance are coordinated through the Systems Engineering Division (SED). Technicians must log all entrance and system access via the VPN4-Secure-Gateway. Administrative reporting occurs on a fixed cycle to ensure data continuity. 
+
+Reporting Schedule:
+• Weekly Status Update: Every Tuesday, 09:00 PST
+• Monthly Operational Review: Last Friday of each calendar month
+• Quarterly Technical Audit: January, April, July, October
+
+4. INFRASTRUCTURE AND ROADWAY UPDATES
+As part of the recent infrastructure alignment project on Route 9, several physical and logistical changes have been implemented at the Vista-Point Node 4 coordinates:
+• Road Markings: High-visibility thermoplastic markings have been reapplied to the sensor zone to ensure accurate lane demarcation and automated sensing precision.
+• Exit Renaming: In accordance with the new directional naming convention, the exit formerly designated as &#x27;Vista-North&#x27; has been officially renamed to &#x27;Coastal-Exit 4A&#x27;. The &#x27;Point-Industrial&#x27; turnoff is now designated &#x27;Linkway-Exit 4B&#x27;. All internal Node 4 logic has been updated to reflect these exit designations.
+
+5. DATA ENCRYPTION AND STORAGE PROTOCOLS
+Sensor output generated by the Node 4 hardware is subject to strict data security standards. All captured data packets are encrypted at the source using the CLTA-Standard 256-bit AES protocol. 
+
+Storage Procedures:
+• Local Cache: Sensor output is buffered locally for a period of 24 hours.
+• Central Uplink: Encrypted logs are transmitted hourly to the SED secure server.
+• Archival: Data is stored in read-only format for the duration of the administrative period before being moved to long-term cold storage. 
+
+6. LIMITATIONS
+Usage of this report is restricted to the technical specifications and logistical road changes specific to Node 4. External factors, including general transit policy or external environmental forecasts, are outside the jurisdiction of this maintenance document.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6051 · Off-entity</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION
+Maintenance Advisory Notice
+
+Subject: Scheduled Maintenance Advisory - Coastal Linkway Route 9
+
+Operational Status Update: Sensor Node-Tech Alpha 7
+Location: Coastal Linkway Route 9 Highway
+
+On 2024-01-10, a recording indicated a 2-hour occupancy rate drop starting at 17:00:00. This occupancy drop on 2024-01-10 was caused by a scheduled lane closure required for infrastructure upkeep.
+
+Moving forward, Node-Tech Alpha 7 will continue to experience scheduled dips every Wednesday at 17:00:00 for a duration of 2 hours. These fluctuations are expected to persist throughout the forecast period due to ongoing maintenance requirements on Route 9.
+
+This advisory is strictly limited to the operational status and maintenance-related fluctuations of sensor Node-Tech Alpha 7. It does not provide broader traffic analysis, weather conditions, or data regarding other sensors on the Route 9 highway.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6052 · Off-entity</span></span></summary>
+          <pre class="doc-content">Coastal Highway Infrastructure Department
+Technical Maintenance Log
+
+ID: Unit 12 Technical Maintenance Log: Horizon-Scanner Calibration Update
+Location: Coastal Linkway Route 9 Highway
+
+Maintenance Summary:
+A scheduled data calibration phase for Horizon-Scanner Unit 12 was conducted on 2024-01-10. The procedure commenced at 17:00:00 and concluded after a 2-hour duration.
+
+Observations:
+During this specific calibration window, erratic oscillations were observed within the sensor data. Per departmental protocol, these observed oscillations are now to be treated as the new baseline sensitivity for Unit 12. 
+
+Forward Outlook:
+Technical staff should note that this new baseline sensitivity is expected to persist and amplify in all future sensor readings for this unit. This log pertains strictly to Unit 12; data regarding other sensors on Route 9 or external traffic impacts are not included.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6054 · Off-window</span></span></summary>
+          <pre class="doc-content">Systems Engineering &amp; Maintenance Department
+Technical Post-Mortem and Maintenance Validation Report
+
+Subject: Vista-Point Node 4 System Hang Analysis
+
+Executive Summary:
+This report documents a technical failure identified in Vista-Point Node 4 during the previous calendar year. Internal logs indicate the sensor experienced a recurring system hang, leading to a total interruption of data flow. 
+
+Incident Details:
+- Date: 2023-11-15
+- Incident Window: 08:00:00 to 12:00:00
+- Impact: During this historical window, the recorded occupancy rate dropped to zero.
+
+Root Cause &amp; Validation:
+The hang was attributed to a firmware-level conflict. Systems Engineering has since deployed comprehensive firmware updates. Maintenance has confirmed that these updates successfully prevent the system hang behavior. Under current operations, the sensor remains stable, and its performance has been validated for the present monitoring window. Technical remediation is complete.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6055 · Off-window</span></span></summary>
+          <pre class="doc-content">Vista-Point Operations Department
+Technical Maintenance Report
+
+Subject: Vista-Point Sensor Network Maintenance Log: Node 4 - Q4 2023 / Q1 2024
+
+Log Entry: Q4-2023-N4-77
+Incident Timestamp: 2023-12-24 22:00:00
+Device ID: Node 4
+
+Status Description:
+During the 2023 holiday season, Vista-Point Node 4 recorded a calibration error. Data analysis regarding the event on 2023-12-24 shows that the sensor output experienced gradual oscillation and noise rather than a sharp spike. 
+
+Corrective Action:
+Technical staff were dispatched to address the hardware performance issue. On 2024-01-01, the team performed a full recalibration of the sensor to restore the unit to standard operating parameters.
+
+Notes:
+This internal log is limited to Node 4 hardware performance only. Further analysis regarding root causes or network-wide data collection impacts for 2024 is not included in this report.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6057 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">COASTAL LINKWAY TRAFFIC MANAGEMENT CENTER (TMC)
+TECHNICAL OPERATIONS REPORT
+
+TO: Systems Engineering
+FROM: Technical Operations
+SUBJECT: Vista-Point Node 4 Baseline Drift Diagnostic Memo
+
+Recent diagnostics on Vista-Point Node 4, located on the Coastal Linkway Route 9 highway, have identified a subtle but persistent upward drift in baseline occupancy levels. Analysis of historical data reveals that the series is hitting higher nightly minimums as the week progresses, indicating a distinct shift in the underlying traffic floor. 
+
+Based on current trends, occupancy levels are expected to settle at a higher minimum during overnight periods rather than returning to the historical 1% baseline. The future operating range of this specific sensor will be dictated by this gradual elevation of baseline occupancy. Technical monitoring of Node 4 will continue to account for these adjusted parameters.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6058 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">COASTAL LINKWAY ROUTE 9 TRAFFIC MANAGEMENT BUREAU
+OPERATIONAL MONITORING REPORT
+
+Subject: Vista-Point Node 4 Traffic Pattern Characterization
+
+This report summarizes the operational findings for Vista-Point Node 4 located on Coastal Linkway Route 9. Monitoring of occupancy rates at this node reveals a consistent daily cycle. Under this observed pattern, circulation levels are characterized by a recurring morning-peak periodicity, where the highest occupancy rates of the day are recorded.
+
+Following these morning peaks, data indicates that occupancy levels taper off to lower relative levels by the afternoon hours. Specifically, on the 16th, the occupancy rate reached its daily maximum during the morning rush hour. Recorded values during this peak on the 16th exceeded those documented during the preceding afternoon. This report is limited to the historical and observed occupancy trends of Node 4.</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:yihong.tang@servicenow.com">Yihong Tang</a> · <a href="mailto:valentina.zantedeschi@servicenow.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

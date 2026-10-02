@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Arterial Segment ID-4822 (The Cedar Glen Overpass) · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Arterial Segment ID-4822 (The Cedar Glen Overpass)</h1>
+          <p>Forecasting <strong>traffic</strong> · decrease in traffic in prediction task</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="Transport (road)">Transport (road)</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="168">168</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="31">31</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>Transport (road)</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Likely</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">General</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Straightforward</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2024-04-17 13:00:00</span><span>Forecast horizon · through 2024-04-25 12:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,155.08 17.87,114.77 23.73,94.62 29.60,14.00 35.46,155.08 41.33,175.23 47.19,215.54 53.06,215.54 58.92,255.85 64.79,255.85 70.65,276.00 76.52,276.00 82.38,255.85 88.25,235.69 94.11,215.54 99.98,155.08 105.84,175.23 111.71,195.38 117.57,175.23 123.44,155.08 129.30,134.92 135.17,114.77 141.03,114.77 146.90,54.31 152.76,155.08 158.63,195.38 164.49,215.54 170.36,235.69 176.22,175.23 182.09,195.38 187.95,235.69 193.82,215.54 199.68,195.38 205.55,235.69 211.41,215.54 217.28,195.38 223.14,155.08 229.01,175.23 234.87,175.23 240.74,134.92 246.60,134.92 252.47,114.77 258.33,114.77 264.20,94.62 270.06,155.08 275.93,195.38 281.79,195.38 287.66,175.23 293.52,215.54 299.39,235.69 305.25,255.85 311.12,255.85 316.98,255.85 322.85,276.00 328.71,255.85 334.58,235.69 340.44,215.54 346.31,215.54 352.17,215.54 358.04,195.38 363.90,195.38 369.77,155.08 375.63,134.92 381.50,134.92 387.36,175.23 393.23,155.08 399.09,175.23 404.96,195.38 410.82,114.77 416.69,195.38 422.55,235.69 428.42,255.85 434.28,276.00 440.15,276.00 446.01,276.00 451.88,255.85 457.74,235.69 463.61,175.23 469.47,195.38 475.34,175.23 481.20,175.23 487.07,175.23 492.93,155.08 498.80,195.38 504.66,195.38 510.53,195.38 516.39,195.38 522.26,235.69 528.12,255.85 533.99,255.85 539.85,255.85 545.72,276.00 551.58,255.85 557.45,235.69 563.31,215.54 569.18,175.23 575.04,155.08 580.91,175.23 586.77,175.23 592.64,175.23 598.50,175.23 604.37,134.92 610.23,74.46 616.10,74.46 621.96,175.23 627.83,215.54 633.69,215.54 639.56,235.69 645.42,255.85 651.29,255.85 657.15,276.00 663.02,276.00 668.88,255.85 674.75,235.69 680.61,215.54 686.48,175.23 692.34,175.23 698.21,175.23 704.07,175.23 709.94,195.38 715.80,155.08 721.67,114.77 727.53,34.15 733.40,14.00 739.26,155.08 745.13,215.54 750.99,215.54 756.86,255.85 762.72,255.85 768.59,255.85 774.45,276.00 780.32,276.00 786.18,255.85 792.05,235.69 797.91,215.54 803.78,175.23 809.64,155.08 815.51,195.38 821.37,175.23 827.24,155.08 833.10,155.08" /><polyline class="chart-future" points="833.10,155.08 838.97,114.77 844.83,94.62 850.70,14.00 856.56,163.14 862.43,163.14 868.29,163.14 874.16,163.14 880.02,163.14 885.89,163.14 891.75,74.46 897.62,215.54 903.48,255.85 909.35,255.85 915.21,276.00 921.08,255.85 926.94,235.69 932.81,215.54 938.67,175.23 944.54,155.08 950.40,195.38 956.27,175.23 962.13,175.23 968.00,155.08" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (192 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2024-04-17 13:00:00</td><td>0.6</td></tr><tr><td>2</td><td>Observed history</td><td>2024-04-17 14:00:00</td><td>0.8</td></tr><tr><td>3</td><td>Observed history</td><td>2024-04-17 15:00:00</td><td>0.9</td></tr><tr><td>4</td><td>Observed history</td><td>2024-04-17 16:00:00</td><td>1.3</td></tr><tr><td>5</td><td>Observed history</td><td>2024-04-17 17:00:00</td><td>1.3</td></tr><tr><td>6</td><td>Observed history</td><td>2024-04-17 18:00:00</td><td>0.6</td></tr><tr><td>7</td><td>Observed history</td><td>2024-04-17 19:00:00</td><td>0.5</td></tr><tr><td>8</td><td>Observed history</td><td>2024-04-17 20:00:00</td><td>0.3</td></tr><tr><td>9</td><td>Observed history</td><td>2024-04-17 21:00:00</td><td>0.3</td></tr><tr><td>10</td><td>Observed history</td><td>2024-04-17 22:00:00</td><td>0.2</td></tr><tr><td>11</td><td>Observed history</td><td>2024-04-17 23:00:00</td><td>0.1</td></tr><tr><td>12</td><td>Observed history</td><td>2024-04-18 00:00:00</td><td>0.1</td></tr><tr><td>13</td><td>Observed history</td><td>2024-04-18 01:00:00</td><td>0.0</td></tr><tr><td>14</td><td>Observed history</td><td>2024-04-18 02:00:00</td><td>0.0</td></tr><tr><td>15</td><td>Observed history</td><td>2024-04-18 03:00:00</td><td>0.1</td></tr><tr><td>16</td><td>Observed history</td><td>2024-04-18 04:00:00</td><td>0.1</td></tr><tr><td>17</td><td>Observed history</td><td>2024-04-18 05:00:00</td><td>0.2</td></tr><tr><td>18</td><td>Observed history</td><td>2024-04-18 06:00:00</td><td>0.3</td></tr><tr><td>19</td><td>Observed history</td><td>2024-04-18 07:00:00</td><td>0.6</td></tr><tr><td>20</td><td>Observed history</td><td>2024-04-18 08:00:00</td><td>0.5</td></tr><tr><td>21</td><td>Observed history</td><td>2024-04-18 09:00:00</td><td>0.4</td></tr><tr><td>22</td><td>Observed history</td><td>2024-04-18 10:00:00</td><td>0.5</td></tr><tr><td>23</td><td>Observed history</td><td>2024-04-18 11:00:00</td><td>0.5</td></tr><tr><td>24</td><td>Observed history</td><td>2024-04-18 12:00:00</td><td>0.6</td></tr><tr><td>25</td><td>Observed history</td><td>2024-04-18 13:00:00</td><td>0.7</td></tr><tr><td>26</td><td>Observed history</td><td>2024-04-18 14:00:00</td><td>0.8</td></tr><tr><td>27</td><td>Observed history</td><td>2024-04-18 15:00:00</td><td>0.8</td></tr><tr><td>28</td><td>Observed history</td><td>2024-04-18 16:00:00</td><td>1.3</td></tr><tr><td>29</td><td>Observed history</td><td>2024-04-18 17:00:00</td><td>1.1</td></tr><tr><td>30</td><td>Observed history</td><td>2024-04-18 18:00:00</td><td>0.6</td></tr><tr><td>31</td><td>Observed history</td><td>2024-04-18 19:00:00</td><td>0.4</td></tr><tr><td>32</td><td>Observed history</td><td>2024-04-18 20:00:00</td><td>0.3</td></tr><tr><td>33</td><td>Observed history</td><td>2024-04-18 21:00:00</td><td>0.2</td></tr><tr><td>34</td><td>Observed history</td><td>2024-04-18 22:00:00</td><td>0.5</td></tr><tr><td>35</td><td>Observed history</td><td>2024-04-18 23:00:00</td><td>0.5</td></tr><tr><td>36</td><td>Observed history</td><td>2024-04-19 00:00:00</td><td>0.4</td></tr><tr><td>37</td><td>Observed history</td><td>2024-04-19 01:00:00</td><td>0.2</td></tr><tr><td>38</td><td>Observed history</td><td>2024-04-19 02:00:00</td><td>0.3</td></tr><tr><td>39</td><td>Observed history</td><td>2024-04-19 03:00:00</td><td>0.4</td></tr><tr><td>40</td><td>Observed history</td><td>2024-04-19 04:00:00</td><td>0.5</td></tr><tr><td>41</td><td>Observed history</td><td>2024-04-19 05:00:00</td><td>0.2</td></tr><tr><td>42</td><td>Observed history</td><td>2024-04-19 06:00:00</td><td>0.3</td></tr><tr><td>43</td><td>Observed history</td><td>2024-04-19 07:00:00</td><td>0.4</td></tr><tr><td>44</td><td>Observed history</td><td>2024-04-19 08:00:00</td><td>0.6</td></tr><tr><td>45</td><td>Observed history</td><td>2024-04-19 09:00:00</td><td>0.5</td></tr><tr><td>46</td><td>Observed history</td><td>2024-04-19 10:00:00</td><td>0.5</td></tr><tr><td>47</td><td>Observed history</td><td>2024-04-19 11:00:00</td><td>0.5</td></tr><tr><td>48</td><td>Observed history</td><td>2024-04-19 12:00:00</td><td>0.7</td></tr><tr><td>49</td><td>Observed history</td><td>2024-04-19 13:00:00</td><td>0.7</td></tr><tr><td>50</td><td>Observed history</td><td>2024-04-19 14:00:00</td><td>0.8</td></tr><tr><td>51</td><td>Observed history</td><td>2024-04-19 15:00:00</td><td>0.8</td></tr><tr><td>52</td><td>Observed history</td><td>2024-04-19 16:00:00</td><td>0.8</td></tr><tr><td>53</td><td>Observed history</td><td>2024-04-19 17:00:00</td><td>0.9</td></tr><tr><td>54</td><td>Observed history</td><td>2024-04-19 18:00:00</td><td>0.6</td></tr><tr><td>55</td><td>Observed history</td><td>2024-04-19 19:00:00</td><td>0.4</td></tr><tr><td>56</td><td>Observed history</td><td>2024-04-19 20:00:00</td><td>0.4</td></tr><tr><td>57</td><td>Observed history</td><td>2024-04-19 21:00:00</td><td>0.5</td></tr><tr><td>58</td><td>Observed history</td><td>2024-04-19 22:00:00</td><td>0.4</td></tr><tr><td>59</td><td>Observed history</td><td>2024-04-19 23:00:00</td><td>0.3</td></tr><tr><td>60</td><td>Observed history</td><td>2024-04-20 00:00:00</td><td>0.2</td></tr><tr><td>61</td><td>Observed history</td><td>2024-04-20 01:00:00</td><td>0.1</td></tr><tr><td>62</td><td>Observed history</td><td>2024-04-20 02:00:00</td><td>0.1</td></tr><tr><td>63</td><td>Observed history</td><td>2024-04-20 03:00:00</td><td>0.1</td></tr><tr><td>64</td><td>Observed history</td><td>2024-04-20 04:00:00</td><td>0.1</td></tr><tr><td>65</td><td>Observed history</td><td>2024-04-20 05:00:00</td><td>0.0</td></tr><tr><td>66</td><td>Observed history</td><td>2024-04-20 06:00:00</td><td>0.1</td></tr><tr><td>67</td><td>Observed history</td><td>2024-04-20 07:00:00</td><td>0.2</td></tr><tr><td>68</td><td>Observed history</td><td>2024-04-20 08:00:00</td><td>0.3</td></tr><tr><td>69</td><td>Observed history</td><td>2024-04-20 09:00:00</td><td>0.3</td></tr><tr><td>70</td><td>Observed history</td><td>2024-04-20 10:00:00</td><td>0.2</td></tr><tr><td>71</td><td>Observed history</td><td>2024-04-20 11:00:00</td><td>0.3</td></tr><tr><td>72</td><td>Observed history</td><td>2024-04-20 12:00:00</td><td>0.4</td></tr><tr><td>73</td><td>Observed history</td><td>2024-04-20 13:00:00</td><td>0.4</td></tr><tr><td>74</td><td>Observed history</td><td>2024-04-20 14:00:00</td><td>0.6</td></tr><tr><td>75</td><td>Observed history</td><td>2024-04-20 15:00:00</td><td>0.7</td></tr><tr><td>76</td><td>Observed history</td><td>2024-04-20 16:00:00</td><td>0.5</td></tr><tr><td>77</td><td>Observed history</td><td>2024-04-20 17:00:00</td><td>0.7</td></tr><tr><td>78</td><td>Observed history</td><td>2024-04-20 18:00:00</td><td>0.5</td></tr><tr><td>79</td><td>Observed history</td><td>2024-04-20 19:00:00</td><td>0.6</td></tr><tr><td>80</td><td>Observed history</td><td>2024-04-20 20:00:00</td><td>0.5</td></tr><tr><td>81</td><td>Observed history</td><td>2024-04-20 21:00:00</td><td>0.4</td></tr><tr><td>82</td><td>Observed history</td><td>2024-04-20 22:00:00</td><td>0.5</td></tr><tr><td>83</td><td>Observed history</td><td>2024-04-20 23:00:00</td><td>0.8</td></tr><tr><td>84</td><td>Observed history</td><td>2024-04-21 00:00:00</td><td>0.4</td></tr><tr><td>85</td><td>Observed history</td><td>2024-04-21 01:00:00</td><td>0.2</td></tr><tr><td>86</td><td>Observed history</td><td>2024-04-21 02:00:00</td><td>0.1</td></tr><tr><td>87</td><td>Observed history</td><td>2024-04-21 03:00:00</td><td>0.1</td></tr><tr><td>88</td><td>Observed history</td><td>2024-04-21 04:00:00</td><td>0.0</td></tr><tr><td>89</td><td>Observed history</td><td>2024-04-21 05:00:00</td><td>0.0</td></tr><tr><td>90</td><td>Observed history</td><td>2024-04-21 06:00:00</td><td>0.0</td></tr><tr><td>91</td><td>Observed history</td><td>2024-04-21 07:00:00</td><td>0.1</td></tr><tr><td>92</td><td>Observed history</td><td>2024-04-21 08:00:00</td><td>0.2</td></tr><tr><td>93</td><td>Observed history</td><td>2024-04-21 09:00:00</td><td>0.3</td></tr><tr><td>94</td><td>Observed history</td><td>2024-04-21 10:00:00</td><td>0.5</td></tr><tr><td>95</td><td>Observed history</td><td>2024-04-21 11:00:00</td><td>0.4</td></tr><tr><td>96</td><td>Observed history</td><td>2024-04-21 12:00:00</td><td>0.5</td></tr><tr><td>97</td><td>Observed history</td><td>2024-04-21 13:00:00</td><td>0.5</td></tr><tr><td>98</td><td>Observed history</td><td>2024-04-21 14:00:00</td><td>0.5</td></tr><tr><td>99</td><td>Observed history</td><td>2024-04-21 15:00:00</td><td>0.6</td></tr><tr><td>100</td><td>Observed history</td><td>2024-04-21 16:00:00</td><td>0.6</td></tr><tr><td>101</td><td>Observed history</td><td>2024-04-21 17:00:00</td><td>0.4</td></tr><tr><td>102</td><td>Observed history</td><td>2024-04-21 18:00:00</td><td>0.4</td></tr><tr><td>103</td><td>Observed history</td><td>2024-04-21 19:00:00</td><td>0.4</td></tr><tr><td>104</td><td>Observed history</td><td>2024-04-21 20:00:00</td><td>0.4</td></tr><tr><td>105</td><td>Observed history</td><td>2024-04-21 21:00:00</td><td>0.3</td></tr><tr><td>106</td><td>Observed history</td><td>2024-04-21 22:00:00</td><td>0.2</td></tr><tr><td>107</td><td>Observed history</td><td>2024-04-21 23:00:00</td><td>0.1</td></tr><tr><td>108</td><td>Observed history</td><td>2024-04-22 00:00:00</td><td>0.1</td></tr><tr><td>109</td><td>Observed history</td><td>2024-04-22 01:00:00</td><td>0.1</td></tr><tr><td>110</td><td>Observed history</td><td>2024-04-22 02:00:00</td><td>0.0</td></tr><tr><td>111</td><td>Observed history</td><td>2024-04-22 03:00:00</td><td>0.0</td></tr><tr><td>112</td><td>Observed history</td><td>2024-04-22 04:00:00</td><td>0.1</td></tr><tr><td>113</td><td>Observed history</td><td>2024-04-22 05:00:00</td><td>0.2</td></tr><tr><td>114</td><td>Observed history</td><td>2024-04-22 06:00:00</td><td>0.3</td></tr><tr><td>115</td><td>Observed history</td><td>2024-04-22 07:00:00</td><td>0.5</td></tr><tr><td>116</td><td>Observed history</td><td>2024-04-22 08:00:00</td><td>0.6</td></tr><tr><td>117</td><td>Observed history</td><td>2024-04-22 09:00:00</td><td>0.9</td></tr><tr><td>118</td><td>Observed history</td><td>2024-04-22 10:00:00</td><td>0.5</td></tr><tr><td>119</td><td>Observed history</td><td>2024-04-22 11:00:00</td><td>0.5</td></tr><tr><td>120</td><td>Observed history</td><td>2024-04-22 12:00:00</td><td>0.5</td></tr><tr><td>121</td><td>Observed history</td><td>2024-04-22 13:00:00</td><td>0.5</td></tr><tr><td>122</td><td>Observed history</td><td>2024-04-22 14:00:00</td><td>0.7</td></tr><tr><td>123</td><td>Observed history</td><td>2024-04-22 15:00:00</td><td>0.8</td></tr><tr><td>124</td><td>Observed history</td><td>2024-04-22 16:00:00</td><td>1.0</td></tr><tr><td>125</td><td>Observed history</td><td>2024-04-22 17:00:00</td><td>1.0</td></tr><tr><td>126</td><td>Observed history</td><td>2024-04-22 18:00:00</td><td>0.5</td></tr><tr><td>127</td><td>Observed history</td><td>2024-04-22 19:00:00</td><td>0.3</td></tr><tr><td>128</td><td>Observed history</td><td>2024-04-22 20:00:00</td><td>0.3</td></tr><tr><td>129</td><td>Observed history</td><td>2024-04-22 21:00:00</td><td>0.2</td></tr><tr><td>130</td><td>Observed history</td><td>2024-04-22 22:00:00</td><td>0.2</td></tr><tr><td>131</td><td>Observed history</td><td>2024-04-22 23:00:00</td><td>0.1</td></tr><tr><td>132</td><td>Observed history</td><td>2024-04-23 00:00:00</td><td>0.1</td></tr><tr><td>133</td><td>Observed history</td><td>2024-04-23 01:00:00</td><td>0.0</td></tr><tr><td>134</td><td>Observed history</td><td>2024-04-23 02:00:00</td><td>0.0</td></tr><tr><td>135</td><td>Observed history</td><td>2024-04-23 03:00:00</td><td>0.0</td></tr><tr><td>136</td><td>Observed history</td><td>2024-04-23 04:00:00</td><td>0.1</td></tr><tr><td>137</td><td>Observed history</td><td>2024-04-23 05:00:00</td><td>0.2</td></tr><tr><td>138</td><td>Observed history</td><td>2024-04-23 06:00:00</td><td>0.3</td></tr><tr><td>139</td><td>Observed history</td><td>2024-04-23 07:00:00</td><td>0.5</td></tr><tr><td>140</td><td>Observed history</td><td>2024-04-23 08:00:00</td><td>0.5</td></tr><tr><td>141</td><td>Observed history</td><td>2024-04-23 09:00:00</td><td>0.4</td></tr><tr><td>142</td><td>Observed history</td><td>2024-04-23 10:00:00</td><td>0.5</td></tr><tr><td>143</td><td>Observed history</td><td>2024-04-23 11:00:00</td><td>0.5</td></tr><tr><td>144</td><td>Observed history</td><td>2024-04-23 12:00:00</td><td>0.4</td></tr><tr><td>145</td><td>Observed history</td><td>2024-04-23 13:00:00</td><td>0.6</td></tr><tr><td>146</td><td>Observed history</td><td>2024-04-23 14:00:00</td><td>0.8</td></tr><tr><td>147</td><td>Observed history</td><td>2024-04-23 15:00:00</td><td>1.2</td></tr><tr><td>148</td><td>Observed history</td><td>2024-04-23 16:00:00</td><td>1.2</td></tr><tr><td>149</td><td>Observed history</td><td>2024-04-23 17:00:00</td><td>1.3</td></tr><tr><td>150</td><td>Observed history</td><td>2024-04-23 18:00:00</td><td>0.6</td></tr><tr><td>151</td><td>Observed history</td><td>2024-04-23 19:00:00</td><td>0.3</td></tr><tr><td>152</td><td>Observed history</td><td>2024-04-23 20:00:00</td><td>0.3</td></tr><tr><td>153</td><td>Observed history</td><td>2024-04-23 21:00:00</td><td>0.3</td></tr><tr><td>154</td><td>Observed history</td><td>2024-04-23 22:00:00</td><td>0.1</td></tr><tr><td>155</td><td>Observed history</td><td>2024-04-23 23:00:00</td><td>0.1</td></tr><tr><td>156</td><td>Observed history</td><td>2024-04-24 00:00:00</td><td>0.1</td></tr><tr><td>157</td><td>Observed history</td><td>2024-04-24 01:00:00</td><td>0.0</td></tr><tr><td>158</td><td>Observed history</td><td>2024-04-24 02:00:00</td><td>0.0</td></tr><tr><td>159</td><td>Observed history</td><td>2024-04-24 03:00:00</td><td>0.1</td></tr><tr><td>160</td><td>Observed history</td><td>2024-04-24 04:00:00</td><td>0.1</td></tr><tr><td>161</td><td>Observed history</td><td>2024-04-24 05:00:00</td><td>0.2</td></tr><tr><td>162</td><td>Observed history</td><td>2024-04-24 06:00:00</td><td>0.3</td></tr><tr><td>163</td><td>Observed history</td><td>2024-04-24 07:00:00</td><td>0.5</td></tr><tr><td>164</td><td>Observed history</td><td>2024-04-24 08:00:00</td><td>0.6</td></tr><tr><td>165</td><td>Observed history</td><td>2024-04-24 09:00:00</td><td>0.5</td></tr><tr><td>166</td><td>Observed history</td><td>2024-04-24 10:00:00</td><td>0.4</td></tr><tr><td>167</td><td>Observed history</td><td>2024-04-24 11:00:00</td><td>0.5</td></tr><tr><td>168</td><td>Observed history</td><td>2024-04-24 12:00:00</td><td>0.6</td></tr><tr class="future"><td>169</td><td>Forecast horizon</td><td>2024-04-24 13:00:00</td><td>0.6</td></tr><tr class="future"><td>170</td><td>Forecast horizon</td><td>2024-04-24 14:00:00</td><td>0.8</td></tr><tr class="future"><td>171</td><td>Forecast horizon</td><td>2024-04-24 15:00:00</td><td>0.9</td></tr><tr class="future"><td>172</td><td>Forecast horizon</td><td>2024-04-24 16:00:00</td><td>1.3</td></tr><tr class="future"><td>173</td><td>Forecast horizon</td><td>2024-04-24 17:00:00</td><td>0.56</td></tr><tr class="future"><td>174</td><td>Forecast horizon</td><td>2024-04-24 18:00:00</td><td>0.56</td></tr><tr class="future"><td>175</td><td>Forecast horizon</td><td>2024-04-24 19:00:00</td><td>0.56</td></tr><tr class="future"><td>176</td><td>Forecast horizon</td><td>2024-04-24 20:00:00</td><td>0.56</td></tr><tr class="future"><td>177</td><td>Forecast horizon</td><td>2024-04-24 21:00:00</td><td>0.56</td></tr><tr class="future"><td>178</td><td>Forecast horizon</td><td>2024-04-24 22:00:00</td><td>0.56</td></tr><tr class="future"><td>179</td><td>Forecast horizon</td><td>2024-04-24 23:00:00</td><td>1.0</td></tr><tr class="future"><td>180</td><td>Forecast horizon</td><td>2024-04-25 00:00:00</td><td>0.3</td></tr><tr class="future"><td>181</td><td>Forecast horizon</td><td>2024-04-25 01:00:00</td><td>0.1</td></tr><tr class="future"><td>182</td><td>Forecast horizon</td><td>2024-04-25 02:00:00</td><td>0.1</td></tr><tr class="future"><td>183</td><td>Forecast horizon</td><td>2024-04-25 03:00:00</td><td>0.0</td></tr><tr class="future"><td>184</td><td>Forecast horizon</td><td>2024-04-25 04:00:00</td><td>0.1</td></tr><tr class="future"><td>185</td><td>Forecast horizon</td><td>2024-04-25 05:00:00</td><td>0.2</td></tr><tr class="future"><td>186</td><td>Forecast horizon</td><td>2024-04-25 06:00:00</td><td>0.3</td></tr><tr class="future"><td>187</td><td>Forecast horizon</td><td>2024-04-25 07:00:00</td><td>0.5</td></tr><tr class="future"><td>188</td><td>Forecast horizon</td><td>2024-04-25 08:00:00</td><td>0.6</td></tr><tr class="future"><td>189</td><td>Forecast horizon</td><td>2024-04-25 09:00:00</td><td>0.4</td></tr><tr class="future"><td>190</td><td>Forecast horizon</td><td>2024-04-25 10:00:00</td><td>0.5</td></tr><tr class="future"><td>191</td><td>Forecast horizon</td><td>2024-04-25 11:00:00</td><td>0.5</td></tr><tr class="future"><td>192</td><td>Forecast horizon</td><td>2024-04-25 12:00:00</td><td>0.6</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-67-context" id="forecast-task-67-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-67-context" id="forecast-task-67-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-67-context" id="forecast-task-67-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-67-view" id="forecast-task-67-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-67-view" id="forecast-task-67-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-67-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-67-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-67-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-67-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-67-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 187.04 L 32.94 146.11 L 37.88 125.65 L 42.83 43.79 L 47.77 43.79 L 52.71 187.04 L 57.65 207.50 L 62.60 248.43 L 67.54 248.43 L 72.48 268.90 L 77.42 289.36 L 82.37 289.36 L 87.31 309.82 L 92.25 309.82 L 97.19 289.36 L 102.14 289.36 L 107.08 268.90 L 112.02 248.43 L 116.96 187.04 L 121.91 207.50 L 126.85 227.97 L 131.79 207.50 L 136.73 207.50 L 141.68 187.04 L 146.62 166.58 L 151.56 146.11 L 156.50 146.11 L 161.45 43.79 L 166.39 84.72 L 171.33 187.04 L 176.27 227.97 L 181.21 248.43 L 186.16 268.90 L 191.10 207.50 L 196.04 207.50 L 200.98 227.97 L 205.93 268.90 L 210.87 248.43 L 215.81 227.97 L 220.75 207.50 L 225.70 268.90 L 230.64 248.43 L 235.58 227.97 L 240.52 187.04 L 245.47 207.50 L 250.41 207.50 L 255.35 207.50 L 260.29 166.58 L 265.24 166.58 L 270.18 146.11 L 275.12 146.11 L 280.06 146.11 L 285.01 125.65 L 289.95 187.04 L 294.89 227.97 L 299.83 227.97 L 304.77 207.50 L 309.72 227.97 L 314.66 248.43 L 319.60 268.90 L 324.54 289.36 L 329.49 289.36 L 334.43 289.36 L 339.37 289.36 L 344.31 309.82 L 349.26 289.36 L 354.20 268.90 L 359.14 248.43 L 364.08 248.43 L 369.03 268.90 L 373.97 248.43 L 378.91 227.97 L 383.85 227.97 L 388.80 187.04 L 393.74 166.58 L 398.68 207.50 L 403.62 166.58 L 408.57 207.50 L 413.51 187.04 L 418.45 207.50 L 423.39 227.97 L 428.34 207.50 L 433.28 146.11 L 438.22 227.97 L 443.16 268.90 L 448.10 289.36 L 453.05 289.36 L 457.99 309.82 L 462.93 309.82 L 467.87 309.82 L 472.82 289.36 L 477.76 268.90 L 482.70 248.43 L 487.64 207.50 L 492.59 227.97 L 497.53 207.50 L 502.47 207.50 L 507.41 207.50 L 512.36 187.04 L 517.30 187.04 L 522.24 227.97 L 527.18 227.97 L 532.13 227.97 L 537.07 227.97 L 542.01 248.43 L 546.95 268.90 L 551.90 289.36 L 556.84 289.36 L 561.78 289.36 L 566.72 309.82 L 571.66 309.82 L 576.61 289.36 L 581.55 268.90 L 586.49 248.43 L 591.43 207.50 L 596.38 187.04 L 601.32 125.65 L 606.26 207.50 L 611.20 207.50 L 616.15 207.50 L 621.09 207.50 L 626.03 166.58 L 630.97 146.11 L 635.92 105.18 L 640.86 105.18 L 645.80 207.50 L 650.74 248.43 L 655.69 248.43 L 660.63 268.90 L 665.57 268.90 L 670.51 289.36 L 675.46 289.36 L 680.40 309.82 L 685.34 309.82 L 690.28 309.82 L 695.23 289.36 L 700.17 268.90 L 705.11 248.43 L 710.05 207.50 L 714.99 207.50 L 719.94 227.97 L 724.88 207.50 L 729.82 207.50 L 734.76 227.97 L 739.71 187.04 L 744.65 146.11 L 749.59 64.26 L 754.53 64.26 L 759.48 43.79 L 764.42 187.04 L 769.36 248.43 L 774.30 248.43 L 779.25 248.43 L 784.19 289.36 L 789.13 289.36 L 794.07 289.36 L 799.02 309.82 L 803.96 309.82 L 808.90 289.36 L 813.84 289.36 L 818.79 268.90 L 823.73 248.43 L 828.67 207.50 L 833.61 187.04 L 838.55 207.50 L 843.50 227.97 L 848.44 207.50 L 853.38 187.04" /><path class="forecast-svg-actual" d="M 858.32 187.04 L 863.27 146.11 L 868.21 125.65 L 873.15 43.79 L 878.09 195.23 L 883.04 195.23 L 887.98 195.23 L 892.92 195.23 L 897.86 195.23 L 902.81 195.23 L 907.75 105.18 L 912.69 248.43 L 917.63 289.36 L 922.58 289.36 L 927.52 309.82 L 932.46 289.36 L 937.40 268.90 L 942.35 248.43 L 947.29 207.50 L 952.23 187.04 L 957.17 227.97 L 962.12 207.50 L 967.06 207.50 L 972.00 187.04" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 161.45 L 863.27 137.49 L 868.21 112.80 L 873.15 92.79 L 878.09 96.06 L 883.04 181.44 L 887.98 215.85 L 892.92 226.71 L 897.86 234.88 L 902.81 246.41 L 907.75 260.29 L 912.69 269.78 L 917.63 282.38 L 922.58 282.14 L 927.52 279.59 L 932.46 272.58 L 937.40 263.23 L 942.35 242.82 L 947.29 211.53 L 952.23 164.45 L 957.17 193.94 L 962.12 190.47 L 967.06 165.80 L 972.00 167.36 L 972.00 222.42 L 967.06 235.95 L 962.12 231.27 L 957.17 226.30 L 952.23 221.21 L 947.29 232.94 L 942.35 261.11 L 937.40 278.24 L 932.46 285.76 L 927.52 289.38 L 922.58 292.90 L 917.63 291.93 L 912.69 279.57 L 907.75 272.44 L 902.81 260.98 L 897.86 252.02 L 892.92 242.17 L 887.98 235.71 L 883.04 210.22 L 878.09 144.12 L 873.15 148.54 L 868.21 162.20 L 863.27 183.95 L 858.32 199.19 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 180.32 L 863.27 160.72 L 868.21 137.50 L 873.15 120.66 L 878.09 120.09 L 883.04 195.83 L 887.98 225.78 L 892.92 234.44 L 897.86 243.45 L 902.81 253.70 L 907.75 266.37 L 912.69 274.68 L 917.63 287.16 L 922.58 287.52 L 927.52 284.49 L 932.46 279.17 L 937.40 270.73 L 942.35 251.97 L 947.29 222.24 L 952.23 192.83 L 957.17 210.12 L 962.12 210.87 L 967.06 200.87 L 972.00 194.89" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="180.32" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 858.32 254.16 L 863.27 244.34 L 868.21 244.01 L 873.15 226.99 L 878.09 225.02 L 883.04 260.71 L 887.98 277.08 L 892.92 285.27 L 897.86 285.59 L 902.81 293.45 L 907.75 301.64 L 912.69 295.58 L 917.63 304.18 L 922.58 308.19 L 927.52 297.55 L 932.46 288.54 L 937.40 268.08 L 942.35 247.61 L 947.29 206.69 L 952.23 186.22 L 957.17 206.69 L 962.12 212.42 L 967.06 207.50 L 972.00 187.04" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="254.16" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 197.32 L 863.27 179.51 L 868.21 159.40 L 873.15 136.35 L 878.09 221.83 L 883.04 260.31 L 887.98 272.07 L 892.92 276.20 L 897.86 279.98 L 902.81 283.50 L 907.75 265.36 L 912.69 281.08 L 917.63 292.90 L 922.58 298.09 L 927.52 294.25 L 932.46 285.41 L 937.40 268.08 L 942.35 242.39 L 947.29 214.41 L 952.23 204.35 L 957.17 207.92 L 962.12 205.56 L 967.06 198.48 L 972.00 191.84" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="197.32" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 187.04 L 32.94 146.11 L 37.88 125.65 L 42.83 43.79 L 47.77 43.79 L 52.71 187.04 L 57.65 207.50 L 62.60 248.43 L 67.54 248.43 L 72.48 268.90 L 77.42 289.36 L 82.37 289.36 L 87.31 309.82 L 92.25 309.82 L 97.19 289.36 L 102.14 289.36 L 107.08 268.90 L 112.02 248.43 L 116.96 187.04 L 121.91 207.50 L 126.85 227.97 L 131.79 207.50 L 136.73 207.50 L 141.68 187.04 L 146.62 166.58 L 151.56 146.11 L 156.50 146.11 L 161.45 43.79 L 166.39 84.72 L 171.33 187.04 L 176.27 227.97 L 181.21 248.43 L 186.16 268.90 L 191.10 207.50 L 196.04 207.50 L 200.98 227.97 L 205.93 268.90 L 210.87 248.43 L 215.81 227.97 L 220.75 207.50 L 225.70 268.90 L 230.64 248.43 L 235.58 227.97 L 240.52 187.04 L 245.47 207.50 L 250.41 207.50 L 255.35 207.50 L 260.29 166.58 L 265.24 166.58 L 270.18 146.11 L 275.12 146.11 L 280.06 146.11 L 285.01 125.65 L 289.95 187.04 L 294.89 227.97 L 299.83 227.97 L 304.77 207.50 L 309.72 227.97 L 314.66 248.43 L 319.60 268.90 L 324.54 289.36 L 329.49 289.36 L 334.43 289.36 L 339.37 289.36 L 344.31 309.82 L 349.26 289.36 L 354.20 268.90 L 359.14 248.43 L 364.08 248.43 L 369.03 268.90 L 373.97 248.43 L 378.91 227.97 L 383.85 227.97 L 388.80 187.04 L 393.74 166.58 L 398.68 207.50 L 403.62 166.58 L 408.57 207.50 L 413.51 187.04 L 418.45 207.50 L 423.39 227.97 L 428.34 207.50 L 433.28 146.11 L 438.22 227.97 L 443.16 268.90 L 448.10 289.36 L 453.05 289.36 L 457.99 309.82 L 462.93 309.82 L 467.87 309.82 L 472.82 289.36 L 477.76 268.90 L 482.70 248.43 L 487.64 207.50 L 492.59 227.97 L 497.53 207.50 L 502.47 207.50 L 507.41 207.50 L 512.36 187.04 L 517.30 187.04 L 522.24 227.97 L 527.18 227.97 L 532.13 227.97 L 537.07 227.97 L 542.01 248.43 L 546.95 268.90 L 551.90 289.36 L 556.84 289.36 L 561.78 289.36 L 566.72 309.82 L 571.66 309.82 L 576.61 289.36 L 581.55 268.90 L 586.49 248.43 L 591.43 207.50 L 596.38 187.04 L 601.32 125.65 L 606.26 207.50 L 611.20 207.50 L 616.15 207.50 L 621.09 207.50 L 626.03 166.58 L 630.97 146.11 L 635.92 105.18 L 640.86 105.18 L 645.80 207.50 L 650.74 248.43 L 655.69 248.43 L 660.63 268.90 L 665.57 268.90 L 670.51 289.36 L 675.46 289.36 L 680.40 309.82 L 685.34 309.82 L 690.28 309.82 L 695.23 289.36 L 700.17 268.90 L 705.11 248.43 L 710.05 207.50 L 714.99 207.50 L 719.94 227.97 L 724.88 207.50 L 729.82 207.50 L 734.76 227.97 L 739.71 187.04 L 744.65 146.11 L 749.59 64.26 L 754.53 64.26 L 759.48 43.79 L 764.42 187.04 L 769.36 248.43 L 774.30 248.43 L 779.25 248.43 L 784.19 289.36 L 789.13 289.36 L 794.07 289.36 L 799.02 309.82 L 803.96 309.82 L 808.90 289.36 L 813.84 289.36 L 818.79 268.90 L 823.73 248.43 L 828.67 207.50 L 833.61 187.04 L 838.55 207.50 L 843.50 227.97 L 848.44 207.50 L 853.38 187.04" /><path class="forecast-svg-actual" d="M 858.32 187.04 L 863.27 146.11 L 868.21 125.65 L 873.15 43.79 L 878.09 195.23 L 883.04 195.23 L 887.98 195.23 L 892.92 195.23 L 897.86 195.23 L 902.81 195.23 L 907.75 105.18 L 912.69 248.43 L 917.63 289.36 L 922.58 289.36 L 927.52 309.82 L 932.46 289.36 L 937.40 268.90 L 942.35 248.43 L 947.29 207.50 L 952.23 187.04 L 957.17 227.97 L 962.12 207.50 L 967.06 207.50 L 972.00 187.04" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 161.45 L 863.27 137.49 L 868.21 112.80 L 873.15 92.79 L 878.09 96.06 L 883.04 181.44 L 887.98 215.85 L 892.92 226.71 L 897.86 234.88 L 902.81 246.41 L 907.75 260.29 L 912.69 269.78 L 917.63 282.38 L 922.58 282.14 L 927.52 279.59 L 932.46 272.58 L 937.40 263.23 L 942.35 242.82 L 947.29 211.53 L 952.23 164.45 L 957.17 193.94 L 962.12 190.47 L 967.06 165.80 L 972.00 167.36 L 972.00 222.42 L 967.06 235.95 L 962.12 231.27 L 957.17 226.30 L 952.23 221.21 L 947.29 232.94 L 942.35 261.11 L 937.40 278.24 L 932.46 285.76 L 927.52 289.38 L 922.58 292.90 L 917.63 291.93 L 912.69 279.57 L 907.75 272.44 L 902.81 260.98 L 897.86 252.02 L 892.92 242.17 L 887.98 235.71 L 883.04 210.22 L 878.09 144.12 L 873.15 148.54 L 868.21 162.20 L 863.27 183.95 L 858.32 199.19 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 180.32 L 863.27 160.72 L 868.21 137.50 L 873.15 120.66 L 878.09 120.09 L 883.04 195.83 L 887.98 225.78 L 892.92 234.44 L 897.86 243.45 L 902.81 253.70 L 907.75 266.37 L 912.69 274.68 L 917.63 287.16 L 922.58 287.52 L 927.52 284.49 L 932.46 279.17 L 937.40 270.73 L 942.35 251.97 L 947.29 222.24 L 952.23 192.83 L 957.17 210.12 L 962.12 210.87 L 967.06 200.87 L 972.00 194.89" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="180.32" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 187.04 L 32.94 146.11 L 37.88 125.65 L 42.83 43.79 L 47.77 43.79 L 52.71 187.04 L 57.65 207.50 L 62.60 248.43 L 67.54 248.43 L 72.48 268.90 L 77.42 289.36 L 82.37 289.36 L 87.31 309.82 L 92.25 309.82 L 97.19 289.36 L 102.14 289.36 L 107.08 268.90 L 112.02 248.43 L 116.96 187.04 L 121.91 207.50 L 126.85 227.97 L 131.79 207.50 L 136.73 207.50 L 141.68 187.04 L 146.62 166.58 L 151.56 146.11 L 156.50 146.11 L 161.45 43.79 L 166.39 84.72 L 171.33 187.04 L 176.27 227.97 L 181.21 248.43 L 186.16 268.90 L 191.10 207.50 L 196.04 207.50 L 200.98 227.97 L 205.93 268.90 L 210.87 248.43 L 215.81 227.97 L 220.75 207.50 L 225.70 268.90 L 230.64 248.43 L 235.58 227.97 L 240.52 187.04 L 245.47 207.50 L 250.41 207.50 L 255.35 207.50 L 260.29 166.58 L 265.24 166.58 L 270.18 146.11 L 275.12 146.11 L 280.06 146.11 L 285.01 125.65 L 289.95 187.04 L 294.89 227.97 L 299.83 227.97 L 304.77 207.50 L 309.72 227.97 L 314.66 248.43 L 319.60 268.90 L 324.54 289.36 L 329.49 289.36 L 334.43 289.36 L 339.37 289.36 L 344.31 309.82 L 349.26 289.36 L 354.20 268.90 L 359.14 248.43 L 364.08 248.43 L 369.03 268.90 L 373.97 248.43 L 378.91 227.97 L 383.85 227.97 L 388.80 187.04 L 393.74 166.58 L 398.68 207.50 L 403.62 166.58 L 408.57 207.50 L 413.51 187.04 L 418.45 207.50 L 423.39 227.97 L 428.34 207.50 L 433.28 146.11 L 438.22 227.97 L 443.16 268.90 L 448.10 289.36 L 453.05 289.36 L 457.99 309.82 L 462.93 309.82 L 467.87 309.82 L 472.82 289.36 L 477.76 268.90 L 482.70 248.43 L 487.64 207.50 L 492.59 227.97 L 497.53 207.50 L 502.47 207.50 L 507.41 207.50 L 512.36 187.04 L 517.30 187.04 L 522.24 227.97 L 527.18 227.97 L 532.13 227.97 L 537.07 227.97 L 542.01 248.43 L 546.95 268.90 L 551.90 289.36 L 556.84 289.36 L 561.78 289.36 L 566.72 309.82 L 571.66 309.82 L 576.61 289.36 L 581.55 268.90 L 586.49 248.43 L 591.43 207.50 L 596.38 187.04 L 601.32 125.65 L 606.26 207.50 L 611.20 207.50 L 616.15 207.50 L 621.09 207.50 L 626.03 166.58 L 630.97 146.11 L 635.92 105.18 L 640.86 105.18 L 645.80 207.50 L 650.74 248.43 L 655.69 248.43 L 660.63 268.90 L 665.57 268.90 L 670.51 289.36 L 675.46 289.36 L 680.40 309.82 L 685.34 309.82 L 690.28 309.82 L 695.23 289.36 L 700.17 268.90 L 705.11 248.43 L 710.05 207.50 L 714.99 207.50 L 719.94 227.97 L 724.88 207.50 L 729.82 207.50 L 734.76 227.97 L 739.71 187.04 L 744.65 146.11 L 749.59 64.26 L 754.53 64.26 L 759.48 43.79 L 764.42 187.04 L 769.36 248.43 L 774.30 248.43 L 779.25 248.43 L 784.19 289.36 L 789.13 289.36 L 794.07 289.36 L 799.02 309.82 L 803.96 309.82 L 808.90 289.36 L 813.84 289.36 L 818.79 268.90 L 823.73 248.43 L 828.67 207.50 L 833.61 187.04 L 838.55 207.50 L 843.50 227.97 L 848.44 207.50 L 853.38 187.04" /><path class="forecast-svg-actual" d="M 858.32 187.04 L 863.27 146.11 L 868.21 125.65 L 873.15 43.79 L 878.09 195.23 L 883.04 195.23 L 887.98 195.23 L 892.92 195.23 L 897.86 195.23 L 902.81 195.23 L 907.75 105.18 L 912.69 248.43 L 917.63 289.36 L 922.58 289.36 L 927.52 309.82 L 932.46 289.36 L 937.40 268.90 L 942.35 248.43 L 947.29 207.50 L 952.23 187.04 L 957.17 227.97 L 962.12 207.50 L 967.06 207.50 L 972.00 187.04" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 250.89 L 863.27 244.34 L 868.21 242.41 L 873.15 219.20 L 878.09 217.04 L 883.04 260.71 L 887.98 277.08 L 892.92 285.27 L 897.86 283.99 L 902.81 293.45 L 907.75 301.64 L 912.69 287.63 L 917.63 293.74 L 922.58 300.17 L 927.52 285.97 L 932.46 284.53 L 937.40 264.07 L 942.35 243.60 L 947.29 202.68 L 952.23 182.21 L 957.17 202.68 L 962.12 203.68 L 967.06 207.50 L 972.00 187.04 L 972.00 187.04 L 967.06 207.50 L 962.12 221.16 L 957.17 210.70 L 952.23 190.23 L 947.29 210.70 L 942.35 251.62 L 937.40 272.09 L 932.46 292.55 L 927.52 309.12 L 922.58 316.21 L 917.63 314.61 L 912.69 303.53 L 907.75 301.64 L 902.81 293.45 L 897.86 287.20 L 892.92 285.27 L 887.98 277.08 L 883.04 260.71 L 878.09 233.00 L 873.15 234.78 L 868.21 245.62 L 863.27 244.34 L 858.32 257.44 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 254.16 L 863.27 244.34 L 868.21 244.01 L 873.15 226.99 L 878.09 225.02 L 883.04 260.71 L 887.98 277.08 L 892.92 285.27 L 897.86 285.59 L 902.81 293.45 L 907.75 301.64 L 912.69 295.58 L 917.63 304.18 L 922.58 308.19 L 927.52 297.55 L 932.46 288.54 L 937.40 268.08 L 942.35 247.61 L 947.29 206.69 L 952.23 186.22 L 957.17 206.69 L 962.12 212.42 L 967.06 207.50 L 972.00 187.04" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="254.16" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 187.04 L 32.94 146.11 L 37.88 125.65 L 42.83 43.79 L 47.77 43.79 L 52.71 187.04 L 57.65 207.50 L 62.60 248.43 L 67.54 248.43 L 72.48 268.90 L 77.42 289.36 L 82.37 289.36 L 87.31 309.82 L 92.25 309.82 L 97.19 289.36 L 102.14 289.36 L 107.08 268.90 L 112.02 248.43 L 116.96 187.04 L 121.91 207.50 L 126.85 227.97 L 131.79 207.50 L 136.73 207.50 L 141.68 187.04 L 146.62 166.58 L 151.56 146.11 L 156.50 146.11 L 161.45 43.79 L 166.39 84.72 L 171.33 187.04 L 176.27 227.97 L 181.21 248.43 L 186.16 268.90 L 191.10 207.50 L 196.04 207.50 L 200.98 227.97 L 205.93 268.90 L 210.87 248.43 L 215.81 227.97 L 220.75 207.50 L 225.70 268.90 L 230.64 248.43 L 235.58 227.97 L 240.52 187.04 L 245.47 207.50 L 250.41 207.50 L 255.35 207.50 L 260.29 166.58 L 265.24 166.58 L 270.18 146.11 L 275.12 146.11 L 280.06 146.11 L 285.01 125.65 L 289.95 187.04 L 294.89 227.97 L 299.83 227.97 L 304.77 207.50 L 309.72 227.97 L 314.66 248.43 L 319.60 268.90 L 324.54 289.36 L 329.49 289.36 L 334.43 289.36 L 339.37 289.36 L 344.31 309.82 L 349.26 289.36 L 354.20 268.90 L 359.14 248.43 L 364.08 248.43 L 369.03 268.90 L 373.97 248.43 L 378.91 227.97 L 383.85 227.97 L 388.80 187.04 L 393.74 166.58 L 398.68 207.50 L 403.62 166.58 L 408.57 207.50 L 413.51 187.04 L 418.45 207.50 L 423.39 227.97 L 428.34 207.50 L 433.28 146.11 L 438.22 227.97 L 443.16 268.90 L 448.10 289.36 L 453.05 289.36 L 457.99 309.82 L 462.93 309.82 L 467.87 309.82 L 472.82 289.36 L 477.76 268.90 L 482.70 248.43 L 487.64 207.50 L 492.59 227.97 L 497.53 207.50 L 502.47 207.50 L 507.41 207.50 L 512.36 187.04 L 517.30 187.04 L 522.24 227.97 L 527.18 227.97 L 532.13 227.97 L 537.07 227.97 L 542.01 248.43 L 546.95 268.90 L 551.90 289.36 L 556.84 289.36 L 561.78 289.36 L 566.72 309.82 L 571.66 309.82 L 576.61 289.36 L 581.55 268.90 L 586.49 248.43 L 591.43 207.50 L 596.38 187.04 L 601.32 125.65 L 606.26 207.50 L 611.20 207.50 L 616.15 207.50 L 621.09 207.50 L 626.03 166.58 L 630.97 146.11 L 635.92 105.18 L 640.86 105.18 L 645.80 207.50 L 650.74 248.43 L 655.69 248.43 L 660.63 268.90 L 665.57 268.90 L 670.51 289.36 L 675.46 289.36 L 680.40 309.82 L 685.34 309.82 L 690.28 309.82 L 695.23 289.36 L 700.17 268.90 L 705.11 248.43 L 710.05 207.50 L 714.99 207.50 L 719.94 227.97 L 724.88 207.50 L 729.82 207.50 L 734.76 227.97 L 739.71 187.04 L 744.65 146.11 L 749.59 64.26 L 754.53 64.26 L 759.48 43.79 L 764.42 187.04 L 769.36 248.43 L 774.30 248.43 L 779.25 248.43 L 784.19 289.36 L 789.13 289.36 L 794.07 289.36 L 799.02 309.82 L 803.96 309.82 L 808.90 289.36 L 813.84 289.36 L 818.79 268.90 L 823.73 248.43 L 828.67 207.50 L 833.61 187.04 L 838.55 207.50 L 843.50 227.97 L 848.44 207.50 L 853.38 187.04" /><path class="forecast-svg-actual" d="M 858.32 187.04 L 863.27 146.11 L 868.21 125.65 L 873.15 43.79 L 878.09 195.23 L 883.04 195.23 L 887.98 195.23 L 892.92 195.23 L 897.86 195.23 L 902.81 195.23 L 907.75 105.18 L 912.69 248.43 L 917.63 289.36 L 922.58 289.36 L 927.52 309.82 L 932.46 289.36 L 937.40 268.90 L 942.35 248.43 L 947.29 207.50 L 952.23 187.04 L 957.17 227.97 L 962.12 207.50 L 967.06 207.50 L 972.00 187.04" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 168.26 L 863.27 142.87 L 868.21 110.00 L 873.15 68.24 L 878.09 175.72 L 883.04 254.27 L 887.98 262.22 L 892.92 264.49 L 897.86 268.29 L 902.81 270.42 L 907.75 231.31 L 912.69 258.50 L 917.63 274.86 L 922.58 286.12 L 927.52 285.72 L 932.46 274.79 L 937.40 252.85 L 942.35 219.74 L 947.29 192.75 L 952.23 192.22 L 957.17 199.32 L 962.12 194.41 L 967.06 187.59 L 972.00 186.20 L 972.00 197.48 L 967.06 209.37 L 962.12 216.72 L 957.17 216.53 L 952.23 216.47 L 947.29 236.07 L 942.35 265.03 L 937.40 283.31 L 932.46 296.04 L 927.52 302.77 L 922.58 310.06 L 917.63 310.94 L 912.69 303.66 L 907.75 299.41 L 902.81 296.58 L 897.86 291.67 L 892.92 287.91 L 887.98 281.91 L 883.04 266.34 L 878.09 267.94 L 873.15 204.46 L 868.21 208.79 L 863.27 216.14 L 858.32 226.38 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 197.32 L 863.27 179.51 L 868.21 159.40 L 873.15 136.35 L 878.09 221.83 L 883.04 260.31 L 887.98 272.07 L 892.92 276.20 L 897.86 279.98 L 902.81 283.50 L 907.75 265.36 L 912.69 281.08 L 917.63 292.90 L 922.58 298.09 L 927.52 294.25 L 932.46 285.41 L 937.40 268.08 L 942.35 242.39 L 947.29 214.41 L 952.23 204.35 L 957.17 207.92 L 962.12 205.56 L 967.06 198.48 L 972.00 191.84" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="197.32" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 190.48 L 32.94 148.57 L 37.88 127.61 L 42.83 43.79 L 47.77 43.79 L 52.71 190.48 L 57.65 211.43 L 62.60 253.34 L 67.54 253.34 L 72.48 274.30 L 77.42 295.25 L 82.37 295.25 L 87.31 316.21 L 92.25 316.21 L 97.19 295.25 L 102.14 295.25 L 107.08 274.30 L 112.02 253.34 L 116.96 190.48 L 121.91 211.43 L 126.85 232.39 L 131.79 211.43 L 136.73 211.43 L 141.68 190.48 L 146.62 169.52 L 151.56 148.57 L 156.50 148.57 L 161.45 43.79 L 166.39 85.70 L 171.33 190.48 L 176.27 232.39 L 181.21 253.34 L 186.16 274.30 L 191.10 211.43 L 196.04 211.43 L 200.98 232.39 L 205.93 274.30 L 210.87 253.34 L 215.81 232.39 L 220.75 211.43 L 225.70 274.30 L 230.64 253.34 L 235.58 232.39 L 240.52 190.48 L 245.47 211.43 L 250.41 211.43 L 255.35 211.43 L 260.29 169.52 L 265.24 169.52 L 270.18 148.57 L 275.12 148.57 L 280.06 148.57 L 285.01 127.61 L 289.95 190.48 L 294.89 232.39 L 299.83 232.39 L 304.77 211.43 L 309.72 232.39 L 314.66 253.34 L 319.60 274.30 L 324.54 295.25 L 329.49 295.25 L 334.43 295.25 L 339.37 295.25 L 344.31 316.21 L 349.26 295.25 L 354.20 274.30 L 359.14 253.34 L 364.08 253.34 L 369.03 274.30 L 373.97 253.34 L 378.91 232.39 L 383.85 232.39 L 388.80 190.48 L 393.74 169.52 L 398.68 211.43 L 403.62 169.52 L 408.57 211.43 L 413.51 190.48 L 418.45 211.43 L 423.39 232.39 L 428.34 211.43 L 433.28 148.57 L 438.22 232.39 L 443.16 274.30 L 448.10 295.25 L 453.05 295.25 L 457.99 316.21 L 462.93 316.21 L 467.87 316.21 L 472.82 295.25 L 477.76 274.30 L 482.70 253.34 L 487.64 211.43 L 492.59 232.39 L 497.53 211.43 L 502.47 211.43 L 507.41 211.43 L 512.36 190.48 L 517.30 190.48 L 522.24 232.39 L 527.18 232.39 L 532.13 232.39 L 537.07 232.39 L 542.01 253.34 L 546.95 274.30 L 551.90 295.25 L 556.84 295.25 L 561.78 295.25 L 566.72 316.21 L 571.66 316.21 L 576.61 295.25 L 581.55 274.30 L 586.49 253.34 L 591.43 211.43 L 596.38 190.48 L 601.32 127.61 L 606.26 211.43 L 611.20 211.43 L 616.15 211.43 L 621.09 211.43 L 626.03 169.52 L 630.97 148.57 L 635.92 106.66 L 640.86 106.66 L 645.80 211.43 L 650.74 253.34 L 655.69 253.34 L 660.63 274.30 L 665.57 274.30 L 670.51 295.25 L 675.46 295.25 L 680.40 316.21 L 685.34 316.21 L 690.28 316.21 L 695.23 295.25 L 700.17 274.30 L 705.11 253.34 L 710.05 211.43 L 714.99 211.43 L 719.94 232.39 L 724.88 211.43 L 729.82 211.43 L 734.76 232.39 L 739.71 190.48 L 744.65 148.57 L 749.59 64.75 L 754.53 64.75 L 759.48 43.79 L 764.42 190.48 L 769.36 253.34 L 774.30 253.34 L 779.25 253.34 L 784.19 295.25 L 789.13 295.25 L 794.07 295.25 L 799.02 316.21 L 803.96 316.21 L 808.90 295.25 L 813.84 295.25 L 818.79 274.30 L 823.73 253.34 L 828.67 211.43 L 833.61 190.48 L 838.55 211.43 L 843.50 232.39 L 848.44 211.43 L 853.38 190.48" /><path class="forecast-svg-actual" d="M 858.32 190.48 L 863.27 148.57 L 868.21 127.61 L 873.15 43.79 L 878.09 198.86 L 883.04 198.86 L 887.98 198.86 L 892.92 198.86 L 897.86 198.86 L 902.81 198.86 L 907.75 106.66 L 912.69 253.34 L 917.63 295.25 L 922.58 295.25 L 927.52 316.21 L 932.46 295.25 L 937.40 274.30 L 942.35 253.34 L 947.29 211.43 L 952.23 190.48 L 957.17 232.39 L 962.12 211.43 L 967.06 211.43 L 972.00 190.48" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 185.53 L 863.27 148.57 L 868.21 61.33 L 873.15 61.49 L 878.09 207.24 L 883.04 265.92 L 887.98 291.06 L 892.92 291.06 L 897.86 291.06 L 902.81 305.85 L 907.75 295.25 L 912.69 295.25 L 917.63 316.21 L 922.58 316.21 L 927.52 290.96 L 932.46 295.25 L 937.40 274.30 L 942.35 253.34 L 947.29 211.43 L 952.23 186.47 L 957.17 207.42 L 962.12 225.03 L 967.06 211.43 L 972.00 182.46 L 972.00 205.20 L 967.06 211.43 L 962.12 236.40 L 957.17 218.79 L 952.23 197.84 L 947.29 211.43 L 942.35 253.34 L 937.40 274.30 L 932.46 295.25 L 927.52 304.58 L 922.58 316.21 L 917.63 316.21 L 912.69 295.25 L 907.75 295.25 L 902.81 309.13 L 897.86 291.06 L 892.92 291.06 L 887.98 291.06 L 883.04 265.92 L 878.09 207.24 L 873.15 70.52 L 868.21 89.13 L 863.27 148.57 L 858.32 193.75 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 189.64 L 863.27 148.57 L 868.21 75.23 L 873.15 66.01 L 878.09 207.24 L 883.04 265.92 L 887.98 291.06 L 892.92 291.06 L 897.86 291.06 L 902.81 307.49 L 907.75 295.25 L 912.69 295.25 L 917.63 316.21 L 922.58 316.21 L 927.52 297.77 L 932.46 295.25 L 937.40 274.30 L 942.35 253.34 L 947.29 211.43 L 952.23 192.15 L 957.17 213.11 L 962.12 230.71 L 967.06 211.43 L 972.00 193.83" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="189.64" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 187.02 L 863.27 160.85 L 868.21 130.84 L 873.15 86.54 L 878.09 224.35 L 883.04 265.41 L 887.98 283.00 L 892.92 288.90 L 897.86 293.14 L 902.81 297.93 L 907.75 284.88 L 912.69 295.71 L 917.63 307.70 L 922.58 310.59 L 927.52 304.30 L 932.46 292.28 L 937.40 272.60 L 942.35 246.24 L 947.29 206.68 L 952.23 200.56 L 957.17 214.05 L 962.12 213.76 L 967.06 205.50 L 972.00 194.61" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="187.02" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 190.48 L 32.94 148.57 L 37.88 127.61 L 42.83 43.79 L 47.77 43.79 L 52.71 190.48 L 57.65 211.43 L 62.60 253.34 L 67.54 253.34 L 72.48 274.30 L 77.42 295.25 L 82.37 295.25 L 87.31 316.21 L 92.25 316.21 L 97.19 295.25 L 102.14 295.25 L 107.08 274.30 L 112.02 253.34 L 116.96 190.48 L 121.91 211.43 L 126.85 232.39 L 131.79 211.43 L 136.73 211.43 L 141.68 190.48 L 146.62 169.52 L 151.56 148.57 L 156.50 148.57 L 161.45 43.79 L 166.39 85.70 L 171.33 190.48 L 176.27 232.39 L 181.21 253.34 L 186.16 274.30 L 191.10 211.43 L 196.04 211.43 L 200.98 232.39 L 205.93 274.30 L 210.87 253.34 L 215.81 232.39 L 220.75 211.43 L 225.70 274.30 L 230.64 253.34 L 235.58 232.39 L 240.52 190.48 L 245.47 211.43 L 250.41 211.43 L 255.35 211.43 L 260.29 169.52 L 265.24 169.52 L 270.18 148.57 L 275.12 148.57 L 280.06 148.57 L 285.01 127.61 L 289.95 190.48 L 294.89 232.39 L 299.83 232.39 L 304.77 211.43 L 309.72 232.39 L 314.66 253.34 L 319.60 274.30 L 324.54 295.25 L 329.49 295.25 L 334.43 295.25 L 339.37 295.25 L 344.31 316.21 L 349.26 295.25 L 354.20 274.30 L 359.14 253.34 L 364.08 253.34 L 369.03 274.30 L 373.97 253.34 L 378.91 232.39 L 383.85 232.39 L 388.80 190.48 L 393.74 169.52 L 398.68 211.43 L 403.62 169.52 L 408.57 211.43 L 413.51 190.48 L 418.45 211.43 L 423.39 232.39 L 428.34 211.43 L 433.28 148.57 L 438.22 232.39 L 443.16 274.30 L 448.10 295.25 L 453.05 295.25 L 457.99 316.21 L 462.93 316.21 L 467.87 316.21 L 472.82 295.25 L 477.76 274.30 L 482.70 253.34 L 487.64 211.43 L 492.59 232.39 L 497.53 211.43 L 502.47 211.43 L 507.41 211.43 L 512.36 190.48 L 517.30 190.48 L 522.24 232.39 L 527.18 232.39 L 532.13 232.39 L 537.07 232.39 L 542.01 253.34 L 546.95 274.30 L 551.90 295.25 L 556.84 295.25 L 561.78 295.25 L 566.72 316.21 L 571.66 316.21 L 576.61 295.25 L 581.55 274.30 L 586.49 253.34 L 591.43 211.43 L 596.38 190.48 L 601.32 127.61 L 606.26 211.43 L 611.20 211.43 L 616.15 211.43 L 621.09 211.43 L 626.03 169.52 L 630.97 148.57 L 635.92 106.66 L 640.86 106.66 L 645.80 211.43 L 650.74 253.34 L 655.69 253.34 L 660.63 274.30 L 665.57 274.30 L 670.51 295.25 L 675.46 295.25 L 680.40 316.21 L 685.34 316.21 L 690.28 316.21 L 695.23 295.25 L 700.17 274.30 L 705.11 253.34 L 710.05 211.43 L 714.99 211.43 L 719.94 232.39 L 724.88 211.43 L 729.82 211.43 L 734.76 232.39 L 739.71 190.48 L 744.65 148.57 L 749.59 64.75 L 754.53 64.75 L 759.48 43.79 L 764.42 190.48 L 769.36 253.34 L 774.30 253.34 L 779.25 253.34 L 784.19 295.25 L 789.13 295.25 L 794.07 295.25 L 799.02 316.21 L 803.96 316.21 L 808.90 295.25 L 813.84 295.25 L 818.79 274.30 L 823.73 253.34 L 828.67 211.43 L 833.61 190.48 L 838.55 211.43 L 843.50 232.39 L 848.44 211.43 L 853.38 190.48" /><path class="forecast-svg-actual" d="M 858.32 190.48 L 863.27 148.57 L 868.21 127.61 L 873.15 43.79 L 878.09 198.86 L 883.04 198.86 L 887.98 198.86 L 892.92 198.86 L 897.86 198.86 L 902.81 198.86 L 907.75 106.66 L 912.69 253.34 L 917.63 295.25 L 922.58 295.25 L 927.52 316.21 L 932.46 295.25 L 937.40 274.30 L 942.35 253.34 L 947.29 211.43 L 952.23 190.48 L 957.17 232.39 L 962.12 211.43 L 967.06 211.43 L 972.00 190.48" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 185.53 L 863.27 148.57 L 868.21 61.33 L 873.15 61.49 L 878.09 207.24 L 883.04 265.92 L 887.98 291.06 L 892.92 291.06 L 897.86 291.06 L 902.81 305.85 L 907.75 295.25 L 912.69 295.25 L 917.63 316.21 L 922.58 316.21 L 927.52 290.96 L 932.46 295.25 L 937.40 274.30 L 942.35 253.34 L 947.29 211.43 L 952.23 186.47 L 957.17 207.42 L 962.12 225.03 L 967.06 211.43 L 972.00 182.46 L 972.00 205.20 L 967.06 211.43 L 962.12 236.40 L 957.17 218.79 L 952.23 197.84 L 947.29 211.43 L 942.35 253.34 L 937.40 274.30 L 932.46 295.25 L 927.52 304.58 L 922.58 316.21 L 917.63 316.21 L 912.69 295.25 L 907.75 295.25 L 902.81 309.13 L 897.86 291.06 L 892.92 291.06 L 887.98 291.06 L 883.04 265.92 L 878.09 207.24 L 873.15 70.52 L 868.21 89.13 L 863.27 148.57 L 858.32 193.75 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 189.64 L 863.27 148.57 L 868.21 75.23 L 873.15 66.01 L 878.09 207.24 L 883.04 265.92 L 887.98 291.06 L 892.92 291.06 L 897.86 291.06 L 902.81 307.49 L 907.75 295.25 L 912.69 295.25 L 917.63 316.21 L 922.58 316.21 L 927.52 297.77 L 932.46 295.25 L 937.40 274.30 L 942.35 253.34 L 947.29 211.43 L 952.23 192.15 L 957.17 213.11 L 962.12 230.71 L 967.06 211.43 L 972.00 193.83" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="189.64" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 190.48 L 32.94 148.57 L 37.88 127.61 L 42.83 43.79 L 47.77 43.79 L 52.71 190.48 L 57.65 211.43 L 62.60 253.34 L 67.54 253.34 L 72.48 274.30 L 77.42 295.25 L 82.37 295.25 L 87.31 316.21 L 92.25 316.21 L 97.19 295.25 L 102.14 295.25 L 107.08 274.30 L 112.02 253.34 L 116.96 190.48 L 121.91 211.43 L 126.85 232.39 L 131.79 211.43 L 136.73 211.43 L 141.68 190.48 L 146.62 169.52 L 151.56 148.57 L 156.50 148.57 L 161.45 43.79 L 166.39 85.70 L 171.33 190.48 L 176.27 232.39 L 181.21 253.34 L 186.16 274.30 L 191.10 211.43 L 196.04 211.43 L 200.98 232.39 L 205.93 274.30 L 210.87 253.34 L 215.81 232.39 L 220.75 211.43 L 225.70 274.30 L 230.64 253.34 L 235.58 232.39 L 240.52 190.48 L 245.47 211.43 L 250.41 211.43 L 255.35 211.43 L 260.29 169.52 L 265.24 169.52 L 270.18 148.57 L 275.12 148.57 L 280.06 148.57 L 285.01 127.61 L 289.95 190.48 L 294.89 232.39 L 299.83 232.39 L 304.77 211.43 L 309.72 232.39 L 314.66 253.34 L 319.60 274.30 L 324.54 295.25 L 329.49 295.25 L 334.43 295.25 L 339.37 295.25 L 344.31 316.21 L 349.26 295.25 L 354.20 274.30 L 359.14 253.34 L 364.08 253.34 L 369.03 274.30 L 373.97 253.34 L 378.91 232.39 L 383.85 232.39 L 388.80 190.48 L 393.74 169.52 L 398.68 211.43 L 403.62 169.52 L 408.57 211.43 L 413.51 190.48 L 418.45 211.43 L 423.39 232.39 L 428.34 211.43 L 433.28 148.57 L 438.22 232.39 L 443.16 274.30 L 448.10 295.25 L 453.05 295.25 L 457.99 316.21 L 462.93 316.21 L 467.87 316.21 L 472.82 295.25 L 477.76 274.30 L 482.70 253.34 L 487.64 211.43 L 492.59 232.39 L 497.53 211.43 L 502.47 211.43 L 507.41 211.43 L 512.36 190.48 L 517.30 190.48 L 522.24 232.39 L 527.18 232.39 L 532.13 232.39 L 537.07 232.39 L 542.01 253.34 L 546.95 274.30 L 551.90 295.25 L 556.84 295.25 L 561.78 295.25 L 566.72 316.21 L 571.66 316.21 L 576.61 295.25 L 581.55 274.30 L 586.49 253.34 L 591.43 211.43 L 596.38 190.48 L 601.32 127.61 L 606.26 211.43 L 611.20 211.43 L 616.15 211.43 L 621.09 211.43 L 626.03 169.52 L 630.97 148.57 L 635.92 106.66 L 640.86 106.66 L 645.80 211.43 L 650.74 253.34 L 655.69 253.34 L 660.63 274.30 L 665.57 274.30 L 670.51 295.25 L 675.46 295.25 L 680.40 316.21 L 685.34 316.21 L 690.28 316.21 L 695.23 295.25 L 700.17 274.30 L 705.11 253.34 L 710.05 211.43 L 714.99 211.43 L 719.94 232.39 L 724.88 211.43 L 729.82 211.43 L 734.76 232.39 L 739.71 190.48 L 744.65 148.57 L 749.59 64.75 L 754.53 64.75 L 759.48 43.79 L 764.42 190.48 L 769.36 253.34 L 774.30 253.34 L 779.25 253.34 L 784.19 295.25 L 789.13 295.25 L 794.07 295.25 L 799.02 316.21 L 803.96 316.21 L 808.90 295.25 L 813.84 295.25 L 818.79 274.30 L 823.73 253.34 L 828.67 211.43 L 833.61 190.48 L 838.55 211.43 L 843.50 232.39 L 848.44 211.43 L 853.38 190.48" /><path class="forecast-svg-actual" d="M 858.32 190.48 L 863.27 148.57 L 868.21 127.61 L 873.15 43.79 L 878.09 198.86 L 883.04 198.86 L 887.98 198.86 L 892.92 198.86 L 897.86 198.86 L 902.81 198.86 L 907.75 106.66 L 912.69 253.34 L 917.63 295.25 L 922.58 295.25 L 927.52 316.21 L 932.46 295.25 L 937.40 274.30 L 942.35 253.34 L 947.29 211.43 L 952.23 190.48 L 957.17 232.39 L 962.12 211.43 L 967.06 211.43 L 972.00 190.48" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 187.02 L 863.27 160.85 L 868.21 130.84 L 873.15 86.54 L 878.09 224.35 L 883.04 265.41 L 887.98 283.00 L 892.92 288.90 L 897.86 293.14 L 902.81 297.92 L 907.75 284.88 L 912.69 295.71 L 917.63 307.70 L 922.58 310.59 L 927.52 304.30 L 932.46 292.28 L 937.40 272.60 L 942.35 246.24 L 947.29 206.68 L 952.23 200.56 L 957.17 214.05 L 962.12 213.76 L 967.06 205.50 L 972.00 194.61 L 972.00 194.61 L 967.06 205.50 L 962.12 213.76 L 957.17 214.05 L 952.23 200.56 L 947.29 206.68 L 942.35 246.24 L 937.40 272.60 L 932.46 292.28 L 927.52 304.30 L 922.58 310.59 L 917.63 307.70 L 912.69 295.71 L 907.75 284.88 L 902.81 297.93 L 897.86 293.14 L 892.92 288.90 L 887.98 283.00 L 883.04 265.41 L 878.09 224.35 L 873.15 86.54 L 868.21 130.84 L 863.27 160.85 L 858.32 187.02 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 187.02 L 863.27 160.85 L 868.21 130.84 L 873.15 86.54 L 878.09 224.35 L 883.04 265.41 L 887.98 283.00 L 892.92 288.90 L 897.86 293.14 L 902.81 297.93 L 907.75 284.88 L 912.69 295.71 L 917.63 307.70 L 922.58 310.59 L 927.52 304.30 L 932.46 292.28 L 937.40 272.60 L 942.35 246.24 L 947.29 206.68 L 952.23 200.56 L 957.17 214.05 L 962.12 213.76 L 967.06 205.50 L 972.00 194.61" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="187.02" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 182.96 L 32.94 143.20 L 37.88 123.32 L 42.83 43.79 L 47.77 43.79 L 52.71 182.96 L 57.65 202.84 L 62.60 242.61 L 67.54 242.61 L 72.48 262.49 L 77.42 282.37 L 82.37 282.37 L 87.31 302.25 L 92.25 302.25 L 97.19 282.37 L 102.14 282.37 L 107.08 262.49 L 112.02 242.61 L 116.96 182.96 L 121.91 202.84 L 126.85 222.73 L 131.79 202.84 L 136.73 202.84 L 141.68 182.96 L 146.62 163.08 L 151.56 143.20 L 156.50 143.20 L 161.45 43.79 L 166.39 83.56 L 171.33 182.96 L 176.27 222.73 L 181.21 242.61 L 186.16 262.49 L 191.10 202.84 L 196.04 202.84 L 200.98 222.73 L 205.93 262.49 L 210.87 242.61 L 215.81 222.73 L 220.75 202.84 L 225.70 262.49 L 230.64 242.61 L 235.58 222.73 L 240.52 182.96 L 245.47 202.84 L 250.41 202.84 L 255.35 202.84 L 260.29 163.08 L 265.24 163.08 L 270.18 143.20 L 275.12 143.20 L 280.06 143.20 L 285.01 123.32 L 289.95 182.96 L 294.89 222.73 L 299.83 222.73 L 304.77 202.84 L 309.72 222.73 L 314.66 242.61 L 319.60 262.49 L 324.54 282.37 L 329.49 282.37 L 334.43 282.37 L 339.37 282.37 L 344.31 302.25 L 349.26 282.37 L 354.20 262.49 L 359.14 242.61 L 364.08 242.61 L 369.03 262.49 L 373.97 242.61 L 378.91 222.73 L 383.85 222.73 L 388.80 182.96 L 393.74 163.08 L 398.68 202.84 L 403.62 163.08 L 408.57 202.84 L 413.51 182.96 L 418.45 202.84 L 423.39 222.73 L 428.34 202.84 L 433.28 143.20 L 438.22 222.73 L 443.16 262.49 L 448.10 282.37 L 453.05 282.37 L 457.99 302.25 L 462.93 302.25 L 467.87 302.25 L 472.82 282.37 L 477.76 262.49 L 482.70 242.61 L 487.64 202.84 L 492.59 222.73 L 497.53 202.84 L 502.47 202.84 L 507.41 202.84 L 512.36 182.96 L 517.30 182.96 L 522.24 222.73 L 527.18 222.73 L 532.13 222.73 L 537.07 222.73 L 542.01 242.61 L 546.95 262.49 L 551.90 282.37 L 556.84 282.37 L 561.78 282.37 L 566.72 302.25 L 571.66 302.25 L 576.61 282.37 L 581.55 262.49 L 586.49 242.61 L 591.43 202.84 L 596.38 182.96 L 601.32 123.32 L 606.26 202.84 L 611.20 202.84 L 616.15 202.84 L 621.09 202.84 L 626.03 163.08 L 630.97 143.20 L 635.92 103.44 L 640.86 103.44 L 645.80 202.84 L 650.74 242.61 L 655.69 242.61 L 660.63 262.49 L 665.57 262.49 L 670.51 282.37 L 675.46 282.37 L 680.40 302.25 L 685.34 302.25 L 690.28 302.25 L 695.23 282.37 L 700.17 262.49 L 705.11 242.61 L 710.05 202.84 L 714.99 202.84 L 719.94 222.73 L 724.88 202.84 L 729.82 202.84 L 734.76 222.73 L 739.71 182.96 L 744.65 143.20 L 749.59 63.67 L 754.53 63.67 L 759.48 43.79 L 764.42 182.96 L 769.36 242.61 L 774.30 242.61 L 779.25 242.61 L 784.19 282.37 L 789.13 282.37 L 794.07 282.37 L 799.02 302.25 L 803.96 302.25 L 808.90 282.37 L 813.84 282.37 L 818.79 262.49 L 823.73 242.61 L 828.67 202.84 L 833.61 182.96 L 838.55 202.84 L 843.50 222.73 L 848.44 202.84 L 853.38 182.96" /><path class="forecast-svg-actual" d="M 858.32 182.96 L 863.27 143.20 L 868.21 123.32 L 873.15 43.79 L 878.09 190.92 L 883.04 190.92 L 887.98 190.92 L 892.92 190.92 L 897.86 190.92 L 902.81 190.92 L 907.75 103.44 L 912.69 242.61 L 917.63 282.37 L 922.58 282.37 L 927.52 302.25 L 932.46 282.37 L 937.40 262.49 L 942.35 242.61 L 947.29 202.84 L 952.23 182.96 L 957.17 222.73 L 962.12 202.84 L 967.06 202.84 L 972.00 182.96" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 139.58 L 863.27 110.38 L 868.21 67.53 L 873.15 44.33 L 878.09 63.72 L 883.04 120.23 L 887.98 150.81 L 892.92 198.64 L 897.86 214.48 L 902.81 219.28 L 907.75 209.14 L 912.69 235.73 L 917.63 239.77 L 922.58 243.92 L 927.52 238.93 L 932.46 236.98 L 937.40 213.21 L 942.35 175.66 L 947.29 151.87 L 952.23 142.04 L 957.17 165.25 L 962.12 173.30 L 967.06 150.83 L 972.00 150.12 L 972.00 215.73 L 967.06 237.32 L 962.12 227.58 L 957.17 237.23 L 952.23 220.80 L 947.29 225.20 L 942.35 266.67 L 937.40 284.94 L 932.46 302.37 L 927.52 316.21 L 922.58 308.06 L 917.63 310.66 L 912.69 301.92 L 907.75 304.80 L 902.81 281.88 L 897.86 288.23 L 892.92 264.48 L 887.98 275.62 L 883.04 214.67 L 878.09 143.21 L 873.15 141.84 L 868.21 156.84 L 863.27 187.15 L 858.32 210.58 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 175.08 L 863.27 148.77 L 868.21 112.18 L 873.15 93.09 L 878.09 103.46 L 883.04 167.45 L 887.98 213.22 L 892.92 231.56 L 897.86 251.36 L 902.81 250.58 L 907.75 256.97 L 912.69 268.82 L 917.63 275.21 L 922.58 275.99 L 927.52 277.57 L 932.46 269.67 L 937.40 249.07 L 942.35 221.16 L 947.29 188.54 L 952.23 181.42 L 957.17 201.24 L 962.12 200.44 L 967.06 194.07 L 972.00 182.92" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="175.08" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 858.32 182.91 L 863.27 183.14 L 868.21 188.10 L 873.15 209.42 L 878.09 208.75 L 883.04 220.96 L 887.98 215.51 L 892.92 231.06 L 897.86 217.41 L 902.81 236.27 L 907.75 240.50 L 912.69 242.97 L 917.63 217.84 L 922.58 202.77 L 927.52 231.73 L 932.46 209.67 L 937.40 209.75 L 942.35 227.49 L 947.29 212.17 L 952.23 223.52 L 957.17 219.66 L 962.12 232.02 L 967.06 203.66 L 972.00 222.40" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="182.91" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 858.32 190.22 L 863.27 192.90 L 868.21 180.40 L 873.15 184.29 L 878.09 163.12 L 883.04 184.40 L 887.98 194.59 L 892.92 179.97 L 897.86 176.82 L 902.81 188.38 L 907.75 176.65 L 912.69 185.40 L 917.63 180.97 L 922.58 190.72 L 927.52 188.87 L 932.46 182.61 L 937.40 190.63 L 942.35 198.87 L 947.29 181.86 L 952.23 180.05 L 957.17 192.74 L 962.12 183.66 L 967.06 178.38 L 972.00 172.75" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="190.22" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 182.96 L 32.94 143.20 L 37.88 123.32 L 42.83 43.79 L 47.77 43.79 L 52.71 182.96 L 57.65 202.84 L 62.60 242.61 L 67.54 242.61 L 72.48 262.49 L 77.42 282.37 L 82.37 282.37 L 87.31 302.25 L 92.25 302.25 L 97.19 282.37 L 102.14 282.37 L 107.08 262.49 L 112.02 242.61 L 116.96 182.96 L 121.91 202.84 L 126.85 222.73 L 131.79 202.84 L 136.73 202.84 L 141.68 182.96 L 146.62 163.08 L 151.56 143.20 L 156.50 143.20 L 161.45 43.79 L 166.39 83.56 L 171.33 182.96 L 176.27 222.73 L 181.21 242.61 L 186.16 262.49 L 191.10 202.84 L 196.04 202.84 L 200.98 222.73 L 205.93 262.49 L 210.87 242.61 L 215.81 222.73 L 220.75 202.84 L 225.70 262.49 L 230.64 242.61 L 235.58 222.73 L 240.52 182.96 L 245.47 202.84 L 250.41 202.84 L 255.35 202.84 L 260.29 163.08 L 265.24 163.08 L 270.18 143.20 L 275.12 143.20 L 280.06 143.20 L 285.01 123.32 L 289.95 182.96 L 294.89 222.73 L 299.83 222.73 L 304.77 202.84 L 309.72 222.73 L 314.66 242.61 L 319.60 262.49 L 324.54 282.37 L 329.49 282.37 L 334.43 282.37 L 339.37 282.37 L 344.31 302.25 L 349.26 282.37 L 354.20 262.49 L 359.14 242.61 L 364.08 242.61 L 369.03 262.49 L 373.97 242.61 L 378.91 222.73 L 383.85 222.73 L 388.80 182.96 L 393.74 163.08 L 398.68 202.84 L 403.62 163.08 L 408.57 202.84 L 413.51 182.96 L 418.45 202.84 L 423.39 222.73 L 428.34 202.84 L 433.28 143.20 L 438.22 222.73 L 443.16 262.49 L 448.10 282.37 L 453.05 282.37 L 457.99 302.25 L 462.93 302.25 L 467.87 302.25 L 472.82 282.37 L 477.76 262.49 L 482.70 242.61 L 487.64 202.84 L 492.59 222.73 L 497.53 202.84 L 502.47 202.84 L 507.41 202.84 L 512.36 182.96 L 517.30 182.96 L 522.24 222.73 L 527.18 222.73 L 532.13 222.73 L 537.07 222.73 L 542.01 242.61 L 546.95 262.49 L 551.90 282.37 L 556.84 282.37 L 561.78 282.37 L 566.72 302.25 L 571.66 302.25 L 576.61 282.37 L 581.55 262.49 L 586.49 242.61 L 591.43 202.84 L 596.38 182.96 L 601.32 123.32 L 606.26 202.84 L 611.20 202.84 L 616.15 202.84 L 621.09 202.84 L 626.03 163.08 L 630.97 143.20 L 635.92 103.44 L 640.86 103.44 L 645.80 202.84 L 650.74 242.61 L 655.69 242.61 L 660.63 262.49 L 665.57 262.49 L 670.51 282.37 L 675.46 282.37 L 680.40 302.25 L 685.34 302.25 L 690.28 302.25 L 695.23 282.37 L 700.17 262.49 L 705.11 242.61 L 710.05 202.84 L 714.99 202.84 L 719.94 222.73 L 724.88 202.84 L 729.82 202.84 L 734.76 222.73 L 739.71 182.96 L 744.65 143.20 L 749.59 63.67 L 754.53 63.67 L 759.48 43.79 L 764.42 182.96 L 769.36 242.61 L 774.30 242.61 L 779.25 242.61 L 784.19 282.37 L 789.13 282.37 L 794.07 282.37 L 799.02 302.25 L 803.96 302.25 L 808.90 282.37 L 813.84 282.37 L 818.79 262.49 L 823.73 242.61 L 828.67 202.84 L 833.61 182.96 L 838.55 202.84 L 843.50 222.73 L 848.44 202.84 L 853.38 182.96" /><path class="forecast-svg-actual" d="M 858.32 182.96 L 863.27 143.20 L 868.21 123.32 L 873.15 43.79 L 878.09 190.92 L 883.04 190.92 L 887.98 190.92 L 892.92 190.92 L 897.86 190.92 L 902.81 190.92 L 907.75 103.44 L 912.69 242.61 L 917.63 282.37 L 922.58 282.37 L 927.52 302.25 L 932.46 282.37 L 937.40 262.49 L 942.35 242.61 L 947.29 202.84 L 952.23 182.96 L 957.17 222.73 L 962.12 202.84 L 967.06 202.84 L 972.00 182.96" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 139.58 L 863.27 110.38 L 868.21 67.53 L 873.15 44.33 L 878.09 63.72 L 883.04 120.23 L 887.98 150.81 L 892.92 198.64 L 897.86 214.48 L 902.81 219.28 L 907.75 209.14 L 912.69 235.73 L 917.63 239.77 L 922.58 243.92 L 927.52 238.93 L 932.46 236.98 L 937.40 213.21 L 942.35 175.66 L 947.29 151.87 L 952.23 142.04 L 957.17 165.25 L 962.12 173.30 L 967.06 150.83 L 972.00 150.12 L 972.00 215.73 L 967.06 237.32 L 962.12 227.58 L 957.17 237.23 L 952.23 220.80 L 947.29 225.20 L 942.35 266.67 L 937.40 284.94 L 932.46 302.37 L 927.52 316.21 L 922.58 308.06 L 917.63 310.66 L 912.69 301.92 L 907.75 304.80 L 902.81 281.88 L 897.86 288.23 L 892.92 264.48 L 887.98 275.62 L 883.04 214.67 L 878.09 143.21 L 873.15 141.84 L 868.21 156.84 L 863.27 187.15 L 858.32 210.58 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 175.08 L 863.27 148.77 L 868.21 112.18 L 873.15 93.09 L 878.09 103.46 L 883.04 167.45 L 887.98 213.22 L 892.92 231.56 L 897.86 251.36 L 902.81 250.58 L 907.75 256.97 L 912.69 268.82 L 917.63 275.21 L 922.58 275.99 L 927.52 277.57 L 932.46 269.67 L 937.40 249.07 L 942.35 221.16 L 947.29 188.54 L 952.23 181.42 L 957.17 201.24 L 962.12 200.44 L 967.06 194.07 L 972.00 182.92" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="175.08" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 182.96 L 32.94 143.20 L 37.88 123.32 L 42.83 43.79 L 47.77 43.79 L 52.71 182.96 L 57.65 202.84 L 62.60 242.61 L 67.54 242.61 L 72.48 262.49 L 77.42 282.37 L 82.37 282.37 L 87.31 302.25 L 92.25 302.25 L 97.19 282.37 L 102.14 282.37 L 107.08 262.49 L 112.02 242.61 L 116.96 182.96 L 121.91 202.84 L 126.85 222.73 L 131.79 202.84 L 136.73 202.84 L 141.68 182.96 L 146.62 163.08 L 151.56 143.20 L 156.50 143.20 L 161.45 43.79 L 166.39 83.56 L 171.33 182.96 L 176.27 222.73 L 181.21 242.61 L 186.16 262.49 L 191.10 202.84 L 196.04 202.84 L 200.98 222.73 L 205.93 262.49 L 210.87 242.61 L 215.81 222.73 L 220.75 202.84 L 225.70 262.49 L 230.64 242.61 L 235.58 222.73 L 240.52 182.96 L 245.47 202.84 L 250.41 202.84 L 255.35 202.84 L 260.29 163.08 L 265.24 163.08 L 270.18 143.20 L 275.12 143.20 L 280.06 143.20 L 285.01 123.32 L 289.95 182.96 L 294.89 222.73 L 299.83 222.73 L 304.77 202.84 L 309.72 222.73 L 314.66 242.61 L 319.60 262.49 L 324.54 282.37 L 329.49 282.37 L 334.43 282.37 L 339.37 282.37 L 344.31 302.25 L 349.26 282.37 L 354.20 262.49 L 359.14 242.61 L 364.08 242.61 L 369.03 262.49 L 373.97 242.61 L 378.91 222.73 L 383.85 222.73 L 388.80 182.96 L 393.74 163.08 L 398.68 202.84 L 403.62 163.08 L 408.57 202.84 L 413.51 182.96 L 418.45 202.84 L 423.39 222.73 L 428.34 202.84 L 433.28 143.20 L 438.22 222.73 L 443.16 262.49 L 448.10 282.37 L 453.05 282.37 L 457.99 302.25 L 462.93 302.25 L 467.87 302.25 L 472.82 282.37 L 477.76 262.49 L 482.70 242.61 L 487.64 202.84 L 492.59 222.73 L 497.53 202.84 L 502.47 202.84 L 507.41 202.84 L 512.36 182.96 L 517.30 182.96 L 522.24 222.73 L 527.18 222.73 L 532.13 222.73 L 537.07 222.73 L 542.01 242.61 L 546.95 262.49 L 551.90 282.37 L 556.84 282.37 L 561.78 282.37 L 566.72 302.25 L 571.66 302.25 L 576.61 282.37 L 581.55 262.49 L 586.49 242.61 L 591.43 202.84 L 596.38 182.96 L 601.32 123.32 L 606.26 202.84 L 611.20 202.84 L 616.15 202.84 L 621.09 202.84 L 626.03 163.08 L 630.97 143.20 L 635.92 103.44 L 640.86 103.44 L 645.80 202.84 L 650.74 242.61 L 655.69 242.61 L 660.63 262.49 L 665.57 262.49 L 670.51 282.37 L 675.46 282.37 L 680.40 302.25 L 685.34 302.25 L 690.28 302.25 L 695.23 282.37 L 700.17 262.49 L 705.11 242.61 L 710.05 202.84 L 714.99 202.84 L 719.94 222.73 L 724.88 202.84 L 729.82 202.84 L 734.76 222.73 L 739.71 182.96 L 744.65 143.20 L 749.59 63.67 L 754.53 63.67 L 759.48 43.79 L 764.42 182.96 L 769.36 242.61 L 774.30 242.61 L 779.25 242.61 L 784.19 282.37 L 789.13 282.37 L 794.07 282.37 L 799.02 302.25 L 803.96 302.25 L 808.90 282.37 L 813.84 282.37 L 818.79 262.49 L 823.73 242.61 L 828.67 202.84 L 833.61 182.96 L 838.55 202.84 L 843.50 222.73 L 848.44 202.84 L 853.38 182.96" /><path class="forecast-svg-actual" d="M 858.32 182.96 L 863.27 143.20 L 868.21 123.32 L 873.15 43.79 L 878.09 190.92 L 883.04 190.92 L 887.98 190.92 L 892.92 190.92 L 897.86 190.92 L 902.81 190.92 L 907.75 103.44 L 912.69 242.61 L 917.63 282.37 L 922.58 282.37 L 927.52 302.25 L 932.46 282.37 L 937.40 262.49 L 942.35 242.61 L 947.29 202.84 L 952.23 182.96 L 957.17 222.73 L 962.12 202.84 L 967.06 202.84 L 972.00 182.96" /><path class="forecast-svg-band" fill="#8064a2" d="M 858.32 154.99 L 863.27 142.52 L 868.21 135.40 L 873.15 165.56 L 878.09 160.63 L 883.04 178.44 L 887.98 167.81 L 892.92 197.13 L 897.86 165.32 L 902.81 191.15 L 907.75 193.65 L 912.69 196.75 L 917.63 170.22 L 922.58 156.42 L 927.52 184.89 L 932.46 152.32 L 937.40 157.12 L 942.35 166.08 L 947.29 162.88 L 952.23 173.85 L 957.17 166.69 L 962.12 192.17 L 967.06 153.14 L 972.00 172.39 L 972.00 272.42 L 967.06 254.18 L 962.12 271.87 L 957.17 272.63 L 952.23 273.19 L 947.29 261.46 L 942.35 288.89 L 937.40 262.38 L 932.46 267.02 L 927.52 278.58 L 922.58 249.13 L 917.63 265.46 L 912.69 289.20 L 907.75 287.35 L 902.81 281.40 L 897.86 269.49 L 892.92 264.99 L 887.98 263.20 L 883.04 263.47 L 878.09 256.86 L 873.15 253.29 L 868.21 240.81 L 863.27 223.76 L 858.32 210.84 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 858.32 182.91 L 863.27 183.14 L 868.21 188.10 L 873.15 209.42 L 878.09 208.75 L 883.04 220.96 L 887.98 215.51 L 892.92 231.06 L 897.86 217.41 L 902.81 236.27 L 907.75 240.50 L 912.69 242.97 L 917.63 217.84 L 922.58 202.77 L 927.52 231.73 L 932.46 209.67 L 937.40 209.75 L 942.35 227.49 L 947.29 212.17 L 952.23 223.52 L 957.17 219.66 L 962.12 232.02 L 967.06 203.66 L 972.00 222.40" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="182.91" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 182.96 L 32.94 143.20 L 37.88 123.32 L 42.83 43.79 L 47.77 43.79 L 52.71 182.96 L 57.65 202.84 L 62.60 242.61 L 67.54 242.61 L 72.48 262.49 L 77.42 282.37 L 82.37 282.37 L 87.31 302.25 L 92.25 302.25 L 97.19 282.37 L 102.14 282.37 L 107.08 262.49 L 112.02 242.61 L 116.96 182.96 L 121.91 202.84 L 126.85 222.73 L 131.79 202.84 L 136.73 202.84 L 141.68 182.96 L 146.62 163.08 L 151.56 143.20 L 156.50 143.20 L 161.45 43.79 L 166.39 83.56 L 171.33 182.96 L 176.27 222.73 L 181.21 242.61 L 186.16 262.49 L 191.10 202.84 L 196.04 202.84 L 200.98 222.73 L 205.93 262.49 L 210.87 242.61 L 215.81 222.73 L 220.75 202.84 L 225.70 262.49 L 230.64 242.61 L 235.58 222.73 L 240.52 182.96 L 245.47 202.84 L 250.41 202.84 L 255.35 202.84 L 260.29 163.08 L 265.24 163.08 L 270.18 143.20 L 275.12 143.20 L 280.06 143.20 L 285.01 123.32 L 289.95 182.96 L 294.89 222.73 L 299.83 222.73 L 304.77 202.84 L 309.72 222.73 L 314.66 242.61 L 319.60 262.49 L 324.54 282.37 L 329.49 282.37 L 334.43 282.37 L 339.37 282.37 L 344.31 302.25 L 349.26 282.37 L 354.20 262.49 L 359.14 242.61 L 364.08 242.61 L 369.03 262.49 L 373.97 242.61 L 378.91 222.73 L 383.85 222.73 L 388.80 182.96 L 393.74 163.08 L 398.68 202.84 L 403.62 163.08 L 408.57 202.84 L 413.51 182.96 L 418.45 202.84 L 423.39 222.73 L 428.34 202.84 L 433.28 143.20 L 438.22 222.73 L 443.16 262.49 L 448.10 282.37 L 453.05 282.37 L 457.99 302.25 L 462.93 302.25 L 467.87 302.25 L 472.82 282.37 L 477.76 262.49 L 482.70 242.61 L 487.64 202.84 L 492.59 222.73 L 497.53 202.84 L 502.47 202.84 L 507.41 202.84 L 512.36 182.96 L 517.30 182.96 L 522.24 222.73 L 527.18 222.73 L 532.13 222.73 L 537.07 222.73 L 542.01 242.61 L 546.95 262.49 L 551.90 282.37 L 556.84 282.37 L 561.78 282.37 L 566.72 302.25 L 571.66 302.25 L 576.61 282.37 L 581.55 262.49 L 586.49 242.61 L 591.43 202.84 L 596.38 182.96 L 601.32 123.32 L 606.26 202.84 L 611.20 202.84 L 616.15 202.84 L 621.09 202.84 L 626.03 163.08 L 630.97 143.20 L 635.92 103.44 L 640.86 103.44 L 645.80 202.84 L 650.74 242.61 L 655.69 242.61 L 660.63 262.49 L 665.57 262.49 L 670.51 282.37 L 675.46 282.37 L 680.40 302.25 L 685.34 302.25 L 690.28 302.25 L 695.23 282.37 L 700.17 262.49 L 705.11 242.61 L 710.05 202.84 L 714.99 202.84 L 719.94 222.73 L 724.88 202.84 L 729.82 202.84 L 734.76 222.73 L 739.71 182.96 L 744.65 143.20 L 749.59 63.67 L 754.53 63.67 L 759.48 43.79 L 764.42 182.96 L 769.36 242.61 L 774.30 242.61 L 779.25 242.61 L 784.19 282.37 L 789.13 282.37 L 794.07 282.37 L 799.02 302.25 L 803.96 302.25 L 808.90 282.37 L 813.84 282.37 L 818.79 262.49 L 823.73 242.61 L 828.67 202.84 L 833.61 182.96 L 838.55 202.84 L 843.50 222.73 L 848.44 202.84 L 853.38 182.96" /><path class="forecast-svg-actual" d="M 858.32 182.96 L 863.27 143.20 L 868.21 123.32 L 873.15 43.79 L 878.09 190.92 L 883.04 190.92 L 887.98 190.92 L 892.92 190.92 L 897.86 190.92 L 902.81 190.92 L 907.75 103.44 L 912.69 242.61 L 917.63 282.37 L 922.58 282.37 L 927.52 302.25 L 932.46 282.37 L 937.40 262.49 L 942.35 242.61 L 947.29 202.84 L 952.23 182.96 L 957.17 222.73 L 962.12 202.84 L 967.06 202.84 L 972.00 182.96" /><path class="forecast-svg-band" fill="#668851" d="M 858.32 160.24 L 863.27 171.65 L 868.21 148.95 L 873.15 156.80 L 878.09 138.80 L 883.04 150.09 L 887.98 166.98 L 892.92 149.90 L 897.86 149.62 L 902.81 156.68 L 907.75 148.52 L 912.69 155.69 L 917.63 143.70 L 922.58 164.88 L 927.52 151.35 L 932.46 142.58 L 937.40 158.64 L 942.35 168.59 L 947.29 148.35 L 952.23 140.17 L 957.17 159.32 L 962.12 148.58 L 967.06 147.62 L 972.00 137.32 L 972.00 208.18 L 967.06 209.15 L 962.12 218.75 L 957.17 226.16 L 952.23 219.92 L 947.29 215.36 L 942.35 229.15 L 937.40 222.63 L 932.46 222.64 L 927.52 226.38 L 922.58 216.56 L 917.63 218.25 L 912.69 215.12 L 907.75 204.78 L 902.81 220.08 L 897.86 204.03 L 892.92 210.05 L 887.98 222.21 L 883.04 218.71 L 878.09 187.45 L 873.15 211.78 L 868.21 211.85 L 863.27 214.15 L 858.32 220.20 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 858.32 190.22 L 863.27 192.90 L 868.21 180.40 L 873.15 184.29 L 878.09 163.12 L 883.04 184.40 L 887.98 194.59 L 892.92 179.97 L 897.86 176.82 L 902.81 188.38 L 907.75 176.65 L 912.69 185.40 L 917.63 180.97 L 922.58 190.72 L 927.52 188.87 L 932.46 182.61 L 937.40 190.63 L 942.35 198.87 L 947.29 181.86 L 952.23 180.05 L 957.17 192.74 L 962.12 183.66 L 967.06 178.38 L 972.00 172.75" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="190.22" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 182.96 L 32.94 143.20 L 37.88 123.32 L 42.83 43.79 L 47.77 43.79 L 52.71 182.96 L 57.65 202.84 L 62.60 242.61 L 67.54 242.61 L 72.48 262.49 L 77.42 282.37 L 82.37 282.37 L 87.31 302.25 L 92.25 302.25 L 97.19 282.37 L 102.14 282.37 L 107.08 262.49 L 112.02 242.61 L 116.96 182.96 L 121.91 202.84 L 126.85 222.73 L 131.79 202.84 L 136.73 202.84 L 141.68 182.96 L 146.62 163.08 L 151.56 143.20 L 156.50 143.20 L 161.45 43.79 L 166.39 83.56 L 171.33 182.96 L 176.27 222.73 L 181.21 242.61 L 186.16 262.49 L 191.10 202.84 L 196.04 202.84 L 200.98 222.73 L 205.93 262.49 L 210.87 242.61 L 215.81 222.73 L 220.75 202.84 L 225.70 262.49 L 230.64 242.61 L 235.58 222.73 L 240.52 182.96 L 245.47 202.84 L 250.41 202.84 L 255.35 202.84 L 260.29 163.08 L 265.24 163.08 L 270.18 143.20 L 275.12 143.20 L 280.06 143.20 L 285.01 123.32 L 289.95 182.96 L 294.89 222.73 L 299.83 222.73 L 304.77 202.84 L 309.72 222.73 L 314.66 242.61 L 319.60 262.49 L 324.54 282.37 L 329.49 282.37 L 334.43 282.37 L 339.37 282.37 L 344.31 302.25 L 349.26 282.37 L 354.20 262.49 L 359.14 242.61 L 364.08 242.61 L 369.03 262.49 L 373.97 242.61 L 378.91 222.73 L 383.85 222.73 L 388.80 182.96 L 393.74 163.08 L 398.68 202.84 L 403.62 163.08 L 408.57 202.84 L 413.51 182.96 L 418.45 202.84 L 423.39 222.73 L 428.34 202.84 L 433.28 143.20 L 438.22 222.73 L 443.16 262.49 L 448.10 282.37 L 453.05 282.37 L 457.99 302.25 L 462.93 302.25 L 467.87 302.25 L 472.82 282.37 L 477.76 262.49 L 482.70 242.61 L 487.64 202.84 L 492.59 222.73 L 497.53 202.84 L 502.47 202.84 L 507.41 202.84 L 512.36 182.96 L 517.30 182.96 L 522.24 222.73 L 527.18 222.73 L 532.13 222.73 L 537.07 222.73 L 542.01 242.61 L 546.95 262.49 L 551.90 282.37 L 556.84 282.37 L 561.78 282.37 L 566.72 302.25 L 571.66 302.25 L 576.61 282.37 L 581.55 262.49 L 586.49 242.61 L 591.43 202.84 L 596.38 182.96 L 601.32 123.32 L 606.26 202.84 L 611.20 202.84 L 616.15 202.84 L 621.09 202.84 L 626.03 163.08 L 630.97 143.20 L 635.92 103.44 L 640.86 103.44 L 645.80 202.84 L 650.74 242.61 L 655.69 242.61 L 660.63 262.49 L 665.57 262.49 L 670.51 282.37 L 675.46 282.37 L 680.40 302.25 L 685.34 302.25 L 690.28 302.25 L 695.23 282.37 L 700.17 262.49 L 705.11 242.61 L 710.05 202.84 L 714.99 202.84 L 719.94 222.73 L 724.88 202.84 L 729.82 202.84 L 734.76 222.73 L 739.71 182.96 L 744.65 143.20 L 749.59 63.67 L 754.53 63.67 L 759.48 43.79 L 764.42 182.96 L 769.36 242.61 L 774.30 242.61 L 779.25 242.61 L 784.19 282.37 L 789.13 282.37 L 794.07 282.37 L 799.02 302.25 L 803.96 302.25 L 808.90 282.37 L 813.84 282.37 L 818.79 262.49 L 823.73 242.61 L 828.67 202.84 L 833.61 182.96 L 838.55 202.84 L 843.50 222.73 L 848.44 202.84 L 853.38 182.96" /><path class="forecast-svg-actual" d="M 858.32 182.96 L 863.27 143.20 L 868.21 123.32 L 873.15 43.79 L 878.09 190.92 L 883.04 190.92 L 887.98 190.92 L 892.92 190.92 L 897.86 190.92 L 902.81 190.92 L 907.75 103.44 L 912.69 242.61 L 917.63 282.37 L 922.58 282.37 L 927.52 302.25 L 932.46 282.37 L 937.40 262.49 L 942.35 242.61 L 947.29 202.84 L 952.23 182.96 L 957.17 222.73 L 962.12 202.84 L 967.06 202.84 L 972.00 182.96" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 858.32 151.30 L 863.27 141.73 L 868.21 129.54 L 873.15 133.75 L 878.09 121.27 L 883.04 108.59 L 887.98 114.38 L 892.92 105.86 L 897.86 113.10 L 902.81 96.72 L 907.75 76.99 L 912.69 82.78 L 917.63 86.87 L 922.58 78.68 L 927.52 82.14 L 932.46 78.59 L 937.40 84.69 L 942.35 81.14 L 947.29 64.13 L 952.23 81.59 L 957.17 80.19 L 962.12 65.24 L 967.06 65.38 L 972.00 60.71 L 972.00 284.54 L 967.06 281.46 L 962.12 281.60 L 957.17 285.73 L 952.23 284.34 L 947.29 269.98 L 942.35 262.52 L 937.40 265.33 L 932.46 271.43 L 927.52 266.29 L 922.58 266.57 L 917.63 279.05 L 912.69 284.74 L 907.75 293.71 L 902.81 296.24 L 897.86 287.81 L 892.92 287.11 L 887.98 286.54 L 883.04 282.78 L 878.09 279.65 L 873.15 273.53 L 868.21 263.43 L 863.27 244.88 L 858.32 227.35 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 858.32 189.33 L 863.27 193.30 L 868.21 196.48 L 873.15 203.64 L 878.09 200.46 L 883.04 195.69 L 887.98 200.46 L 892.92 196.48 L 897.86 200.46 L 902.81 196.48 L 907.75 185.35 L 912.69 183.76 L 917.63 182.96 L 922.58 172.62 L 927.52 174.22 L 932.46 175.01 L 937.40 175.01 L 942.35 171.83 L 947.29 167.06 L 952.23 182.96 L 957.17 182.96 L 962.12 173.42 L 967.06 173.42 L 972.00 172.62" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="858.32" cy="189.33" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 182.96 L 32.94 143.20 L 37.88 123.32 L 42.83 43.79 L 47.77 43.79 L 52.71 182.96 L 57.65 202.84 L 62.60 242.61 L 67.54 242.61 L 72.48 262.49 L 77.42 282.37 L 82.37 282.37 L 87.31 302.25 L 92.25 302.25 L 97.19 282.37 L 102.14 282.37 L 107.08 262.49 L 112.02 242.61 L 116.96 182.96 L 121.91 202.84 L 126.85 222.73 L 131.79 202.84 L 136.73 202.84 L 141.68 182.96 L 146.62 163.08 L 151.56 143.20 L 156.50 143.20 L 161.45 43.79 L 166.39 83.56 L 171.33 182.96 L 176.27 222.73 L 181.21 242.61 L 186.16 262.49 L 191.10 202.84 L 196.04 202.84 L 200.98 222.73 L 205.93 262.49 L 210.87 242.61 L 215.81 222.73 L 220.75 202.84 L 225.70 262.49 L 230.64 242.61 L 235.58 222.73 L 240.52 182.96 L 245.47 202.84 L 250.41 202.84 L 255.35 202.84 L 260.29 163.08 L 265.24 163.08 L 270.18 143.20 L 275.12 143.20 L 280.06 143.20 L 285.01 123.32 L 289.95 182.96 L 294.89 222.73 L 299.83 222.73 L 304.77 202.84 L 309.72 222.73 L 314.66 242.61 L 319.60 262.49 L 324.54 282.37 L 329.49 282.37 L 334.43 282.37 L 339.37 282.37 L 344.31 302.25 L 349.26 282.37 L 354.20 262.49 L 359.14 242.61 L 364.08 242.61 L 369.03 262.49 L 373.97 242.61 L 378.91 222.73 L 383.85 222.73 L 388.80 182.96 L 393.74 163.08 L 398.68 202.84 L 403.62 163.08 L 408.57 202.84 L 413.51 182.96 L 418.45 202.84 L 423.39 222.73 L 428.34 202.84 L 433.28 143.20 L 438.22 222.73 L 443.16 262.49 L 448.10 282.37 L 453.05 282.37 L 457.99 302.25 L 462.93 302.25 L 467.87 302.25 L 472.82 282.37 L 477.76 262.49 L 482.70 242.61 L 487.64 202.84 L 492.59 222.73 L 497.53 202.84 L 502.47 202.84 L 507.41 202.84 L 512.36 182.96 L 517.30 182.96 L 522.24 222.73 L 527.18 222.73 L 532.13 222.73 L 537.07 222.73 L 542.01 242.61 L 546.95 262.49 L 551.90 282.37 L 556.84 282.37 L 561.78 282.37 L 566.72 302.25 L 571.66 302.25 L 576.61 282.37 L 581.55 262.49 L 586.49 242.61 L 591.43 202.84 L 596.38 182.96 L 601.32 123.32 L 606.26 202.84 L 611.20 202.84 L 616.15 202.84 L 621.09 202.84 L 626.03 163.08 L 630.97 143.20 L 635.92 103.44 L 640.86 103.44 L 645.80 202.84 L 650.74 242.61 L 655.69 242.61 L 660.63 262.49 L 665.57 262.49 L 670.51 282.37 L 675.46 282.37 L 680.40 302.25 L 685.34 302.25 L 690.28 302.25 L 695.23 282.37 L 700.17 262.49 L 705.11 242.61 L 710.05 202.84 L 714.99 202.84 L 719.94 222.73 L 724.88 202.84 L 729.82 202.84 L 734.76 222.73 L 739.71 182.96 L 744.65 143.20 L 749.59 63.67 L 754.53 63.67 L 759.48 43.79 L 764.42 182.96 L 769.36 242.61 L 774.30 242.61 L 779.25 242.61 L 784.19 282.37 L 789.13 282.37 L 794.07 282.37 L 799.02 302.25 L 803.96 302.25 L 808.90 282.37 L 813.84 282.37 L 818.79 262.49 L 823.73 242.61 L 828.67 202.84 L 833.61 182.96 L 838.55 202.84 L 843.50 222.73 L 848.44 202.84 L 853.38 182.96" /><path class="forecast-svg-actual" d="M 858.32 182.96 L 863.27 143.20 L 868.21 123.32 L 873.15 43.79 L 878.09 190.92 L 883.04 190.92 L 887.98 190.92 L 892.92 190.92 L 897.86 190.92 L 902.81 190.92 L 907.75 103.44 L 912.69 242.61 L 917.63 282.37 L 922.58 282.37 L 927.52 302.25 L 932.46 282.37 L 937.40 262.49 L 942.35 242.61 L 947.29 202.84 L 952.23 182.96 L 957.17 222.73 L 962.12 202.84 L 967.06 202.84 L 972.00 182.96" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 858.32 167.94 L 863.27 157.78 L 868.21 161.51 L 873.15 160.49 L 878.09 157.21 L 883.04 144.57 L 887.98 152.73 L 892.92 155.35 L 897.86 148.70 L 902.81 151.19 L 907.75 136.48 L 912.69 152.03 L 917.63 123.91 L 922.58 144.60 L 927.52 142.36 L 932.46 144.44 L 937.40 145.57 L 942.35 152.65 L 947.29 140.21 L 952.23 148.81 L 957.17 155.64 L 962.12 149.31 L 967.06 148.09 L 972.00 140.21 L 972.00 224.17 L 967.06 211.62 L 962.12 218.87 L 957.17 225.48 L 952.23 218.80 L 947.29 213.28 L 942.35 205.84 L 937.40 203.56 L 932.46 205.55 L 927.52 204.70 L 922.58 215.04 L 917.63 205.45 L 912.69 214.59 L 907.75 217.14 L 902.81 214.69 L 897.86 213.17 L 892.92 202.33 L 887.98 215.73 L 883.04 225.58 L 878.09 214.48 L 873.15 209.18 L 868.21 223.12 L 863.27 212.67 L 858.32 213.56 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 858.32 190.75 L 863.27 185.23 L 868.21 192.31 L 873.15 184.83 L 878.09 185.85 L 883.04 185.08 L 887.98 184.23 L 892.92 178.84 L 897.86 180.94 L 902.81 182.94 L 907.75 176.81 L 912.69 183.31 L 917.63 164.68 L 922.58 179.82 L 927.52 173.53 L 932.46 175.00 L 937.40 174.57 L 942.35 179.25 L 947.29 176.74 L 952.23 183.81 L 957.17 190.56 L 962.12 184.09 L 967.06 179.85 L 972.00 182.19" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="858.32" cy="190.75" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>traffic</h3>
+              <p>This is hourly traffic data for Arterial Segment ID-4822 (The Cedar Glen Overpass).</p>
+              <p class="instruction">Suppose that there is an accident on Arterial Segment ID-4822 (The Cedar Glen Overpass) and there is 40.0% of the usual traffic from 2024-04-24 17:00:00 for 6 hours.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This is hourly traffic data for Arterial Segment ID-4822 (The Cedar Glen Overpass).</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>Suppose that there is an accident on Arterial Segment ID-4822 (The Cedar Glen Overpass)</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>and there is 40.0% of the usual traffic from 2024-04-24 17:00:00 for 6 hours.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">31 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_2706</span></span></summary>
+          <pre class="doc-content">**REGIONAL TRANSIT AUTHORITY OPERATIONS CENTER**  
+**EMERGENCY TRANSIT ALERT: ID-4822**  
+
+**DATE:** April 24, 2024  
+**SUBJECT:** Traffic Incident Advisory – Cedar Glen Overpass  
+
+At the onset of the evening rush on April 24, 2024, a significant structural blockage occurred on the elevated transit grid section identified as Segment ID-4822. This blockage corresponds to the physical location of the Cedar Glen Overpass.  
+
+Emergency responders on-site have confirmed a multi-vehicle collision. As a result of this incident, the primary thoroughfare across the Cedar Glen Overpass is effectively sealed off.  
+
+*Note: This advisory is limited to the immediate status and location of the incident; clearance times and detour routes are currently unavailable.*</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_2707</span></span></summary>
+          <pre class="doc-content">REGIONAL TRAFFIC OPERATIONS CENTER
+OPERATIONAL INCIDENT REPORT: #ID-4822
+
+INCIDENT NAME: Cedar Glen Overpass Incident Log - Transit Management Notification
+SUBJECT: Multi-Vehicle Collision on Arterial Segment ID-4822
+
+STATUS UPDATE:
+Emergency responders have arrived on-site and confirmed a multi-vehicle collision occurring on the Cedar Glen Overpass. Due to the severity and position of the vehicles involved, the primary thoroughfare across the overpass is effectively sealed off to all transit. 
+
+MANAGEMENT ACTIONS:
+- The physical blockage at the overpass necessitated an immediate response from transit management systems to mitigate corridor congestion.
+- Localized navigation systems have initiated automated rerouting alerts for all commuters currently approaching the infrastructure point.
+
+NOTE: This log focuses on the tactical response and physical status of the Cedar Glen Overpass. Information regarding casualty figures, cleanup timelines, or regional traffic trends is not included in this report.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_2708</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION TRAFFIC MANAGEMENT BUREAU
+TRAFFIC OPERATIONS CENTER: INCIDENT RESPONSE SUMMARY
+RE: ARTERIAL SEGMENT ID-4822 (THE CEDAR GLEN OVERPASS)
+
+Upon identification of the incident affecting the elevated segment of ID-4822, localized navigation systems were utilized to broadcast rerouting alerts to all commuters approaching the impacted infrastructure point. Simultaneously, digital signage was activated at the last available exits preceding the overpass segment to provide visual instruction to motorists.
+
+Data monitoring indicates that the warning broadcasts and synchronized signage resulted in a successful mass diversion of the approaching motorcade away from the bottleneck. Technical triggers functioned as intended to mitigate congestion at the primary site. This summary addresses immediate navigational interventions and the resulting movement of the motorcade only; long-term remediation plans and specific infrastructure impact assessments are handled by separate divisions.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_2709</span></span></summary>
+          <pre class="doc-content">DEPT. OF TRANSPORTATION - TRAFFIC MANAGEMENT CENTER
+INCIDENT LOG: Evening Route Diversion (Arterial Segment ID-4822)
+
+STATUS REPORT:
+Digital signage was activated at the last available exits before the elevated highway segment of the Cedar Glen Overpass. This tactical deployment forced a mass diversion of the approaching motorcade, shifting vehicles off the primary arterial. 
+
+IMPACT SUMMARY:
+- The mass exit of vehicles significantly thinned the density of traffic remaining on the main path.
+- As the sun set, only a small fraction of the anticipated evening volume filtered through the restricted lanes.
+
+LOG NOTES:
+Execution restricted to the immediate tactical diversion and resulting flow changes on Segment ID-4822. Further impacts or destination data not included.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_2710</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION | TRAFFIC CONTROL CENTER
+OPERATIONAL MONITORING REPORT
+
+SUBJECT: Evening Traffic Flow Monitoring Report: Restricted Lane Impact
+LOCATION: Arterial Segment ID-4822 (The Cedar Glen Overpass)
+
+EXECUTIVE SUMMARY:
+Current statistical monitoring of Arterial Segment ID-4822 indicates a significant deviation from standard throughput. As the sun sets, data confirms that only a small fraction of the anticipated evening volume manages to filter through the restricted lanes. 
+
+VOLUME DATA:
+Real-time analytical tracking indicates that the flow of vehicles has diminished to precisely forty percent of the expected baseline capacity. This restricted filtration of vehicles manifests measurable drops in overall traffic percentages across the segment. 
+
+LIMITATIONS:
+This report is limited strictly to current traffic volume measurements and the immediate effect of lane restrictions. It does not contain data regarding the cause of restrictions, alternative routes, or infrastructure projections.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_2711</span></span></summary>
+          <pre class="doc-content">METROPOLITAN TRAFFIC CONTROL DEPARTMENT
+Traffic Operations Center: Post-Incident Monitoring Log
+
+REPORT TYPE: Operational Report
+SUBJECT: Statistical Flow Analysis - Arterial Segment ID-4822 (The Cedar Glen Overpass)
+
+OPERATIONAL SUMMARY:
+Following the initiation of the incident response, statistical monitoring indicated a significant impact on segment performance. Recorded vehicle flow decreased to forty percent of baseline capacity. This systematic reduction in throughput persisted throughout the monitoring period until clearance operations concluded at 11:00 PM. 
+
+TIMELINE DATA:
+The total duration of the reduced flow lasted for six hours. 
+
+NOTES:
+This log is strictly limited to documented traffic metrics and operational timelines. It does not include data regarding the cause of the blockage, specific location coordinates, or prevailing environmental conditions at the time of the event.
+
+[End of Log]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2712 · Off-variable</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION SYSTEMS MANAGEMENT BUREAU
+TECHNICAL INCIDENT AND MAINTENANCE LOG
+
+LOG ENTRY ID: ID-4822
+STATUS: CLOSED / COMPLETED
+PRINT DATE: 2024-04-25
+
+--------------------------------------------------------------------------------
+1. INCIDENT OVERVIEW
+--------------------------------------------------------------------------------
+System Reference: Arterial Segment ID-4822
+Event Type: Technical Maintenance / Software Configuration Update
+Log Reference: ID-4822
+Reporting Agency: Systems Management Bureau (SMB)
+
+--------------------------------------------------------------------------------
+2. TIMELINE AND DURATION
+--------------------------------------------------------------------------------
+Maintenance Commencement: 2024-04-24 17:00:00
+Maintenance Completion: 2024-04-24 23:00:00
+Total Duration: 6 hours
+
+--------------------------------------------------------------------------------
+3. TECHNICAL DATA SUMMARY
+--------------------------------------------------------------------------------
+During the specified six-hour maintenance window, system monitoring software recorded a metric of 40.0%. It is critical for the purposes of this technical log to note that this 40.0% figure is exclusively related to data compression protocols applied during the maintenance cycle. This percentage does not represent, correlate with, or reflect real-world traffic volume or vehicle occupancy on Arterial Segment ID-4822 during the interval.
+
+--------------------------------------------------------------------------------
+4. MAINTENANCE ACTIVITIES AND SYSTEM IMPACT
+--------------------------------------------------------------------------------
+The scheduled activities for this session involved several deep-layer technical interventions regarding the digital infrastructure of Arterial Segment ID-4822. 
+
+Direct outcomes of the maintenance include:
+- Significant modifications to the segment&#x27;s software environment.
+- Execution of configuration resets and updates.
+- A permanent change in software settings as a direct result of the maintenance activities performed.
+
+Technicians confirmed that the software setting adjustments were successfully validated against current bureau operational requirements. The data compression adjustments were deemed necessary to stabilize the logging environment during the 6-hour window.
+
+--------------------------------------------------------------------------------
+5. SCOPE LIMITATIONS
+--------------------------------------------------------------------------------
+This report is strictly limited to the technical performance, software configuration, and maintenance-specific metrics of Arterial Segment ID-4822 for the period beginning 2024-04-24 17:00:00. This log contains no information regarding regional traffic forecasts, historical congestion data for the segment, or broader transportation infrastructure policy. It is a technical record of a specific software and hardware maintenance event only.
+
+--------------------------------------------------------------------------------
+6. AUTHORIZATION
+--------------------------------------------------------------------------------
+Verified by: SMB Systems Engineering Division
+Data Reference: ID-4822-TECH-LOG
+End of Document</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2713 · Off-variable</span></span></summary>
+          <pre class="doc-content">Department of Transportation
+Traffic Safety Division
+Technical Report: ID-4822
+
+Subject: Traffic Incident and Lighting Analysis Report – Arterial Segment ID-4822
+
+EXECUTIVE SUMMARY
+This technical report presents a detailed analysis of environmental conditions and behavioral factors affecting Arterial Segment ID-4822. The objective of this study was to evaluate the relationship between ambient lighting conditions and driver performance during a specific high-risk window. The investigation focused on the intersection of physical infrastructure metrics and psychological impacts on motorists.
+
+OBSERVATION PERIOD
+Technical monitoring and data collection for Arterial Segment ID-4822 were conducted under the authority of the Traffic Safety Division during the following timeframe:
+- Start Time: 2024-04-24 17:00:00
+- End Time: 2024-04-24 23:00:00
+
+The six-hour duration was selected to capture the transition from late afternoon daylight through the period of peak nocturnal lighting reliance.
+
+LIGHTING INTENSITY MEASUREMENTS
+During the specified observation window, instrumentation positioned along the segment recorded the luminosity levels emitted by both fixed municipal infrastructure and environmental reflectivity. The analysis confirms a recorded measurement of 40.0% for lighting intensity. This measurement represents the average output relative to standard arterial requirements for this specific segment during the period of 17:00:00 to 23:00:00.
+
+BEHAVIORAL IMPACT ANALYSIS
+A primary component of this analysis involved correlating the physical lighting data with observable driver behavior. Based on the data synthesized during the observation, our investigators have established a documented causal link between the recorded lighting levels and driver distraction on this segment. The 40.0% intensity level contributed significantly to a decrease in visual focus, resulting in a quantifiable increase in distracted driving patterns among motorists navigating ID-4822. This causal relationship indicates that the current lighting state is a primary environmental factor influencing driver cognitive load and attention span.
+
+SCOPE AND LIMITATIONS
+Departmental analysts note that this report is limited strictly to Arterial Segment ID-4822 and the specific timeframe of April 24, 2024. This document serves as a specialized assessment of environmental conditions and behavioral impacts during these six hours only. Users of this report should be advised that the current dataset does not include, and was not intended to provide, data for other arterial segments within the regional network. Furthermore, this analysis excludes long-term traffic forecasts, historical accident counts, or longitudinal safety trends. The findings contained herein are localized to the physical parameters and behavioral triggers identified during the specified evening window.
+
+Field Data Authenticated By:
+Traffic Safety Division
+Department of Transportation</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2714 · Off-variable</span></span></summary>
+          <pre class="doc-content">REGIONAL TRANSPORTATION AUTHORITY
+Toll Operations Division
+
+INTERNAL OPERATIONAL REPORT
+
+TO: Division Oversight Committee
+FROM: Toll Operations Systems Team
+DATE: April 25, 2024
+SUBJECT: Cedar Glen Overpass Operational Efficiency Review - April 2024
+
+I. OVERVIEW
+This report details the operational performance metrics for the Cedar Glen Overpass following the recent technical implementation phase. The data contained herein is restricted to the specific performance window and monitoring metrics captured during the designated evaluation cycle on April 24, 2024. 
+
+II. MONITORING PARAMETERS
+The monitoring period for the Cedar Glen Overpass commenced on 2024-04-24 at 17:00:00. This efficiency data collection duration lasted for exactly 6 hours, concluding at 23:00:00 on the same date. This window was selected to capture high-volume transit patterns and evaluate real-time system responses under active load.
+
+III. KEY PERFORMANCE INDICATORS (KPIs)
+Based on the automated diagnostic tools deployed at the overpass gantries, the following metrics were recorded:
+
+*   Transaction Speeds: Operational analysis of the processing rate for vehicle clearance and data relay showed a 40.0% figure.
+*   System Throughput: The overpass maintained steady flow within the 6-hour window without significant latency spikes.
+
+IV. SYSTEM UPGRADES AND CAUSAL ANALYSIS
+A primary focus of this review was the impact of hardware modifications on departmental revenue processing. It has been determined that upgrades to RFID systems directly caused improvements in financial efficiency. The modernized readers contributed to enhanced accuracy in account reconciliation and a reduction in manual toll rectification requirements.
+
+V. LIMITATIONS OF REPORT
+This review is limited specifically to the performance window and metrics of the Cedar Glen Overpass on April 24, 2024. This document does not include long-term traffic forecasts, historical maintenance logs prior to the RFID upgrades, or broader regional transit policy beyond the documented causal link between RFID system improvements and financial efficiency gains.
+
+---
+Report End
+Internal Reference: RT-TOD-2024-04-CG</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2715 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Municipal Department of Transportation
+Bridge Maintenance Division
+Internal Operational Report: Cedar Glen Overpass
+Date: October 14, 2023
+
+I. ROUTINE STRUCTURAL INSPECTION RESULTS
+An inspection of the Cedar Glen Overpass was conducted to assess primary structural integrity. The visual assessment focused on the substructure, superstructure, and deck surface. Inspection findings indicate that the primary load-bearing members remain within acceptable safety tolerances. Minor surface cracking was noted on the secondary concrete support piers, though no significant spalling or rebar exposure was observed. Joint seals remain intact, and drainage systems are clear of debris. 
+
+II. DIGITAL SIGNAGE SYSTEM UPGRADE
+Installation of the new digital signage system on the Cedar Glen Overpass has been completed. This upgrade included the mounting of high-visibility LED display units on the eastbound and westbound approaches. The system is integrated with the central traffic management network, allowing for real-time messaging. Electrical conduit was routed through existing utility channels, and the hardware has been reinforced with weather-resistant housing to prevent environmental degradation.
+
+III. MAINTENANCE CREW SHIFT SCHEDULES &amp; VEHICLE ASSIGNMENTS
+The following schedules have been established for the current maintenance cycle to ensure continuous monitoring and upkeep of the structure. Personnel are required to check in with dispatch using the designated Vehicle ID numbers.
+
+Shift A: 06:00 – 14:00
+- Crew Lead: T. Henderson
+- Vehicle IDs: MDT-402, MDT-409
+
+Shift B: 14:00 – 22:00
+- Crew Lead: M. Rossi
+- Vehicle IDs: MDT-511, MDT-515
+
+Shift C (Overnight/On-Call): 22:00 – 06:00
+- Crew Lead: L. Chen
+- Vehicle ID: MDT-388
+
+IV. ARTERIAL SEGMENT RAILING SPECIFICATIONS
+Maintenance crews performed touch-up and protective coating applications on the arterial segment railings of the overpass. To maintain aesthetic consistency with existing municipal standards, the following paint specification was utilized:
+
+- Paint Color: Federal Standard 595C, Color Code 24091 (Satin Slate Grey)
+- Finish: Semi-gloss industrial enamel
+
+V. CORROSION RESISTANCE DATA
+The technical properties of the railing paint were selected based on high-performance corrosion resistance requirements. The coating contains an advanced zinc-phosphate primer base designed to inhibit oxidation in high-moisture environments. Data from standardized salt spray testing (ASTM B117) indicates that this specific coating provides a minimum of 5,000 hours of protection before the onset of sacrificial layer depletion. The high-density polymer matrix used in the topcoat serves as an additional barrier against road salts, chemical de-icers, and atmospheric pollutants, ensuring the long-term stability of the arterial segment railing system.
+
+VI. NOTES
+This report is focused strictly on the physical maintenance and operational upgrades of the Cedar Glen Overpass. It does not contain information regarding budget allocations, city-wide traffic impact studies, or long-term urban planning. Information regarding other transit structures is excluded from this document.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2716 · Irrelevant</span></span></summary>
+          <pre class="doc-content">**REGIONAL DEPARTMENT OF TRANSPORTATION**
+**Environmental Compliance Division**
+
+**DOCUMENT ID:** ECD-LOG-ID-4822-LOG
+**SUBJECT:** Environmental Impact and Sensor Maintenance Log: Cedar Glen Overpass Segment ID-4822
+**STATUS:** Technical Operations Report
+
+--- 
+
+### 1. TECHNICAL INSTRUMENTATION STATUS: AIR QUALITY MONITORING
+
+**Location:** Segment ID-4822 (Cedar Glen Overpass, Main Span)
+
+| Sensor ID | Model | Status | Calibration Date | Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| AQ-PM2.5-A | AeroQual Series 500 | Operational | 2023-11-15 | Standard particulate filter replaced. |
+| AQ-NO2-B | Libelium Smart City | Alert | 2023-10-12 | Possible drift detected in electrochemical cell. |
+| AQ-O3-C | Enviro-Tec 400 | Operational | 2023-12-01 | Internal fan cleaned during routine check. |
+
+All sensors on Segment ID-4822 are currently streaming telemetry to the central database, with the exception of the NO2 module which is undergoing remote diagnostic testing.
+
+### 2. AMBIENT NOISE LEVEL MEASUREMENTS
+
+Measurements recorded via Type 1 sound level meters positioned at the north and south abutments of Segment ID-4822 over the 24-hour reporting window.
+
+*   **L_eq (Equivalent Continuous Sound Level):** 74.2 dBA
+*   **L_max (Maximum Sound Level):** 88.5 dBA
+*   **L_min (Minimum Sound Level):** 52.1 dBA
+*   **L_10 (10th Percentile):** 79.4 dBA
+
+Note: Peak noise events were consistent with heavy vehicle engine braking noted during overnight periods.
+
+### 3. HISTORICAL WEATHER DATA AND HUMIDITY READINGS
+
+Weather conditions for the Cedar Glen Overpass vicinity were sourced from the onsite automated weather station (AWS-04).
+
+**Atmospheric Conditions:**
+*   **Temperature (Mean):** 14.5°C (58.1°F)
+*   **Humidity:** 68% Relative Humidity (RH)
+*   **Precipitation:** 0.12 inches (Cumulative for period)
+*   **Barometric Pressure:** 1013.2 hPa
+
+Historical trends for this reporting period show a 4% increase in humidity levels compared to the previous three-year average for this specific seasonal window at the Cedar Glen site.
+
+### 4. ECOLOGICAL RESEARCH: BIRD MIGRATION STUDY SUMMARY
+
+**Study Scope:** Local Bird Migration Monitoring (Cedar Glen Overpass Corridor)
+**Principal Investigator:** Site Ecology Team
+
+**Summary of Findings:**
+Observations conducted near the overpass indicates that the segment lies within a secondary flyway for regional passerines. During the recent migration surge, researchers identified high activity levels within the riparian zone directly beneath Segment ID-4822. Key findings suggest that existing overpass lighting levels did not significantly deter flight patterns; however, the bridge structure itself serves as a temporary roost for several species of aerial insectivores. No increased mortality rates or strike incidents were reported during the study duration. Further observation is recommended during the peak spring return to confirm displacement patterns.
+
+--- 
+
+### TECHNICAL LIMITATIONS AND NOTE
+
+This report is strictly representative of environmental telemetry and site-specific ecological research relevant to Segment ID-4822. Users are advised that this log does not include traffic volume data, structural engineering assessments, or long-term climate forecasts. For structural load inquiries or traffic throughput analysis, contact the Bureau of Infrastructure Management.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2717 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Municipal Department of Transportation
+Intelligent Transportation Systems (ITS) Division
+
+Quarterly Operational and Infrastructure Maintenance Report: Q3
+
+I. ADMINISTRATIVE LOGS: TOLLING SOFTWARE UPDATE
+Reporting Period: July 1 – September 30
+
+Administrative Action: Deployment of Tolling Software Patch v.4.2.2
+Implementation Lead: Software Engineering Unit, ITS Division
+Status: Completed
+
+Summary: During the third quarter, the division oversaw the administrative transition and installation of a system-wide software update across all tolling gantries. The update specifically addressed ticket reconciliation modules and automated billing interface stability. Administrative protocols involved pre-deployment testing on the staging server followed by a rolling integration across main corridors. All licensing documentation and version control registries have been updated to reflect the current software state as of the end of Q3.
+
+II. VENDOR CONTRACT ADMINISTRATION: ARTERIAL SEGMENT ID-4822
+
+Asset Identifier: Arterial Segment ID-4822
+Contract Status: Active / Under Maintenance
+Service Provider: Infrastructure Systems Group (ISG)
+
+Notes: Maintenance activities for the arterial segment designated as ID-4822 are currently governed under the active vendor contract for system maintenance. For the Q3 period, the vendor performed routine inspections and hardware diagnostics on the roadside interface units associated with this segment. Contractual oversight ensured that the vendor adhered to the stipulated service level agreements (SLAs) regarding response times for hardware failures and routine preventative maintenance schedules for all ITS components located within the ID-4822 boundaries.
+
+III. DATABASE SYNCHRONIZATION: TRAFFIC SENSORS
+
+The following timestamps record the successful synchronization of the central traffic data repository with remote field sensors. These logs ensure data integrity across the ITS network.
+
+Sync Log ID | Timestamp (UTC) | Device Group | Status
+-----------|-----------------|--------------|-------
+DB-SYNC-01 | 2023-07-15 02:00:04 | Corridor A Sensors | SUCCESS
+DB-SYNC-02 | 2023-07-29 02:00:01 | Corridor B Sensors | SUCCESS
+DB-SYNC-03 | 2023-08-12 02:00:10 | Arterial ID-4822 | SUCCESS
+DB-SYNC-04 | 2023-08-26 02:00:03 | Corridor A Sensors | SUCCESS
+DB-SYNC-05 | 2023-09-09 02:00:07 | Corridor B Sensors | SUCCESS
+DB-SYNC-06 | 2023-09-23 02:00:02 | Arterial ID-4822 | SUCCESS
+
+IV. INFRASTRUCTURE NOTES: OVERPASS LIGHTING SYSTEM
+
+Subject: Electricity Consumption Audit
+Location: Overpass Lighting Network (Zones 1-9)
+
+During Q3, electricity consumption for the overpass lighting system was recorded via sub-metering to track operational efficiency. Consumption patterns aligned with seasonal decreases in daylight hours towards the end of the quarter. Maintenance logs indicate that all LED arrays operated within nominal power draw parameters. Total kilowatt-hour (kWh) usage was monitored for the purpose of baseline infrastructure assessment. No anomalies in power distribution or unexpected spikes in energy demand were recorded during the evening activation cycles for the reporting period.
+
+***
+END OF REPORT
+This document is a record of maintenance logs, contract administration, and technical data. It does not contain budget forecasts, future project proposals, or traffic volume analysis.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2718 · Off-entity</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION
+Maintenance Coordination Office
+
+PUBLIC INFRASTRUCTURE OPERATIONAL NOTICE
+
+NAME: Pine Ridge Viaduct Maintenance Advisory Bulletin
+TYPE: Public Infrastructure Operational Notice
+
+SUBJ: Planned Maintenance Closure - Arterial Segment ID-9104
+
+Notice is hereby issued regarding the scheduled maintenance for Arterial Segment ID-9104, known as the Pine Ridge Viaduct. 
+
+Activity Details:
+- Maintenance Activity: Road Resurfacing
+- Commencement: 2024-04-24 17:00:00
+- Duration: 6 Hours
+
+Operational Impact:
+Due to the specific requirements of the resurfacing maintenance operations, a severe traffic reduction will be implemented. During this event, projected traffic volume will be restricted to 15.0 percent of usual levels. This traffic restriction is directly caused by the ongoing maintenance work. 
+
+Note: This advisory is limited strictly to the operational parameters of resurfacing for ID-9104. Detour routes, weather contingencies, or regional impacts are excluded from this scope.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2719 · Off-entity</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION OPERATIONS CENTER
+TRAFFIC OPERATIONS INCIDENT LOG: ID-2231
+
+INCIDENT SUMMARY
+Location: Arterial Segment ID-2231 (Harbor View Connector)
+Incident Type: Heavy Cargo Spill
+Status: Resolved
+
+TEMPORAL DATA
+Start Time: 2024-04-24 17:00:00
+End Time: 2024-04-24 23:00:00
+Total Duration: 06:00:00
+
+OPERATIONAL IMPACT
+Roadway Status: Partial Blockage
+Traffic Volume Retention: 85.0%
+
+INCIDENT NOTES
+A heavy cargo spill occurred on the Harbor View Connector, resulting in a partial blockage of the primary travel lanes. Despite the obstruction, traffic flow remained relatively high throughout the duration of the event. Data indicates that traffic volume was maintained at 85.0 percent of its usual level because vehicles were able to utilize the shoulder to bypass the spill area. Operational logging concluded once the roadway was fully cleared at 23:00:00.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2720 · Off-entity</span></span></summary>
+          <pre class="doc-content">CITY TRAFFIC CONTROL CENTER
+INTERNAL OPERATIONAL REPORT
+
+REPORT NAME: Oak Creek Underpass Operations Incident Report: April 24, 2024
+ISSUING AGENCY: Municipal Department of Transportation
+
+INCIDENT SUMMARY:
+On 2024-04-24, a significant deviation in traffic flow was recorded within the arterial network. A hardware signal failure occurred at the intersection located immediately upstream from Arterial Segment ID-7750, professionally identified as the Oak Creek Underpass. 
+
+IMPACT ANALYSIS:
+Monitoring data confirms that the signal failure at the upstream intersection directly caused the observed traffic congestion throughout the segment. During the impacted period, traffic flow fluctuated at 65.0 percent of normal baseline rates. 
+
+TEMPORAL DATA:
+The event window commenced at 17:00:00 on April 24, 2024, and maintained a total duration of 6 hours. This report focuses strictly on the technical failure and the resulting impact on flow for ID-7750.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2721 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION - TRAFFIC OPERATIONS CENTER
+OPERATIONAL LOG ENTRY: POST-ACTION SUMMARY
+
+Case ID: #2024-0312-08
+Status: Closed
+Subject: Incident Response - Arterial Segment ID-4822 (The Cedar Glen Overpass)
+
+INCIDENT DATA SUMMARY:
+On 2024-03-12 at 08:00:00, a severe multi-vehicle collision was reported on Arterial Segment ID-4822. Immediate response protocols were initiated. During the incident, traffic flow on the segment was severely impacted, dropping to 15% of normal capacity. 
+
+TIMELINE &amp; RECOVERY:
+The incident duration lasted for a total of 10 hours before the scene was cleared. Hourly traffic data background for this segment is archived under this reference ID. Please note that normal operations on Segment ID-4822 resumed over a month prior to the current forecasting window. 
+
+End of Log Record.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2722 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION
+TRAFFIC MANAGEMENT CENTER: OPERATIONAL LOG ENTRY
+
+INCIDENT RESOLUTION REPORT
+Subject: Arterial Segment ID-4822 (Cedar Glen Overpass)
+Date of Analysis: 2024-05-08
+
+[INCIDENT SUMMARY]
+On 2024-04-10 at 22:00:00, an emergency road closure was recorded for Arterial Segment ID-4822, identified as the Cedar Glen Overpass. The closure was initiated following a total blockage of all lanes caused by an overturned truck accident. 
+
+[OPERATIONAL DATA]
+During the incident response, traffic volume on the overpass was restricted to 5% of usual baseline levels. This state of restricted flow persisted for a total duration of 12 hours. 
+
+[RESOLUTION STATUS]
+Debris removal and vehicle recovery operations were successfully completed. The site was fully cleared and traffic flow was confirmed stabilized exactly two weeks prior to this current analysis date. All lanes are operational.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2723 · Off-window</span></span></summary>
+          <pre class="doc-content">Regional Department of Transportation - Traffic Management Center
+Traffic Operations Maintenance and Incident Log
+
+INCIDENT DETAIL REPORT: ARTERIAL SEGMENT ID-4822 (CEDAR GLEN OVERPASS)
+
+DATE: 2024-04-15
+TIME: 14:00:00
+PERIOD: Mid-day
+
+LOG ENTRY DETAILS:
+At 14:00:00, a minor fender bender was reported on Arterial Segment ID-4822 (The Cedar Glen Overpass). Though the physical obstruction was minor, the event caused significant rubbernecking among passing motorists in both directions. Consequently, traffic flow was reduced to 75% of its usual volume for a 4-hour window following the incident.
+
+RECOVERY TIMELINE:
+Full operational recovery was achieved following the event. All congestion resulting from this specific incident dissipated completely 48 hours before the start of the April 17 historical data series. 
+
+NOTES: This log is limited to the specific operational details and immediate recovery timeline of the 2024-04-15 incident.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2724 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION
+Division of Traffic Management
+
+OPERATIONAL ADVISORY REPORT: CEDAR GLEN OVERPASS
+
+Recent empirical data confirms a trend of rising usage across the Cedar Glen Overpass during afternoon periods. Analysis of historical data for Arterial Segment ID-4822 indicates that each successive day&#x27;s evening peak slightly surpasses the maximum volume recorded on the previous day. 
+
+The current incident involves a partial blockage occurring during this period of increasing daily demand. Traffic volume throughout the duration of the blockage is expected to remain high relative to older historical averages. Furthermore, clearing the accident is anticipated to cause a significant surge that will likely establish a new record-high peak for the segment. This predicted surge is consistent with the observed upward momentum in daily traffic intensity currently affecting the corridor. Operations units should prepare for sustained congestion following the removal of the obstruction.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2725 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION
+TRAFFIC MANAGEMENT CENTER (TMC)
+INTERNAL TECHNICAL REPORT: ARTERIAL SEGMENT ANALYSIS
+
+DATE: October 24, 2023
+REPORT ID: #DOT-TMC-2023-4822-HIST
+SUBJECT: Historical Traffic Volume Analysis: Segment ID-4822 (Cedar Glen Overpass)
+
+1. EXECUTIVE SUMMARY
+This technical report provides a historical analysis of traffic flow characteristics for Segment ID-4822, commonly known as the Cedar Glen Overpass. The objective of this study is to codify the unique load-bearing patterns and recovery behaviors of this specific arterial segment to improve long-term traffic modeling. This analysis is limited strictly to historical patterns and does not encompass real-time incident reporting, active construction schedules, or regional forecasts outside the immediate vicinity of ID-4822.
+
+2. SEGMENT ORIENTATION AND DATA SCOPE
+Segment ID-4822 serves as a critical connector within the arterial network. The following observations are based on multi-year longitudinal data captured by inductive loop detectors and digital traffic sensors located at the north and south approaches of the overpass. This document details the specific volume behaviors that differentiate this segment from typical metropolitan transit corridors.
+
+3. AFTERNOON VOLUME STABILIZATION
+Data suggests that traffic volumes on Arterial Segment ID-4822 undergo a distinct transition starting at approximately 14:00 hours. Unlike surrounding segments that may experience a sharp peak followed by a gradual dip, Segment ID-4822 transitions into a stable, high-volume plateau during these afternoon hours. This plateau represents a sustained state of near-capacity throughput that remains consistent until the transition into the evening period.
+
+4. NOCTURNAL PERSISTENCE PATTERNS
+One of the most significant characteristics identified in the historical profile of Segment ID-4822 is its behavior during the traditional off-peak hours. While typical arterial segments show a marked decrease in volume after the evening commute (approximately 19:00 hours), the traffic plateau on Segment ID-4822 persists throughout the evening and late-night hours without significant decline. 
+
+Analysis indicates that the segment maintains peak-hour intensity deep into the night rather than tapering off. This sustained volume suggests that the Cedar Glen Overpass functions at a high-intensity threshold regardless of the time of day, distinguishing it from residential or standard commercial feeders. Drivers and planners should note that even during the 23:00 to 03:00 window, the volume metrics reflect levels usually associated with daytime activity on other arterial networks.
+
+5. POST-DISRUPTION RECOVERY BEHAVIOR
+The operational resilience of Segment ID-4822 was evaluated by analyzing historical responses to traffic disruptions (e.g., historical stalls or non-ideal weather clearance). The data confirms that post-disruption recovery on Segment ID-4822 results in a rapid return to peak-tier volumes. As soon as the physical impediment is cleared, the segment does not gradually ramp up; rather, it immediately hits the established high-volume plateau. This reflexive return to peak density underscores the persistent demand on this specific overpass.
+
+6. CONCLUSION AND LIMITATIONS
+The historical data for Segment ID-4822 illustrates a unique traffic profile characterized by high-volume plateaus and a lack of traditional nocturnal tapering. This report focused exclusively on these historical patterns. For current operations, analysts must consult real-time data feeds, as this document does not include real-time incident data, current construction schedules, or regional forecasts outside the specific parameters of the Cedar Glen Overpass. All findings are for internal traffic operations use only.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2726 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Traffic Operations Center
+FROM: Department of Transportation, Traffic Engineering Division
+SUBJECT: Traffic Impact Forecast: Cedar Glen Overpass
+
+This memorandum outlines the projected traffic flow impacts for Arterial Segment ID-4822 (The Cedar Glen Overpass) following a localized reduction in throughput. 
+
+Historical observations indicate that daily traffic volume peaks for this segment naturally ceiling at 0.80. Due to current operational constraints, a 40% capacity restriction is being applied to the Cedar Glen Overpass. 
+
+Based on these parameters, projected traffic flow under the 40% restriction is expected to decline to approximately 0.32. Engineering forecasts suggest that traffic flow will remain at the 0.32 level until the scene is cleared and full capacity is restored. 
+
+Data pertains strictly to Segment ID-4822 impacts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2727 · Off-variable</span></span></summary>
+          <pre class="doc-content">Department of Transportation - IT Operations Division
+Incident Summary Report: Toll Revenue Management System Update (v4.2.0)
+
+Overview:
+On [Date], the Toll Revenue Management System received a software update (v4.2.0). Following the deployment, IT Operations identified significant performance regressions affecting data integrity and departmental connectivity.
+
+Operational Impacts:
+- Data Fidelity: System-wide data accuracy levels dropped by 40% immediately following the update.
+- Temporal Consistency: Analysis confirms that output data maintained the same timestamps as the input data.
+- Departmental Infrastructure: The update impacted connectivity within the billing department, disrupting internal network access.
+- Traffic Operations: Physical traffic flow remained normal during the update period; no lane closures or physical delays were reported.
+
+Note: This report focuses strictly on technical and operational performance metrics. Financial projections and remediation plans are not included.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2728 · Off-variable</span></span></summary>
+          <pre class="doc-content">CITY DEPARTMENT OF TRANSPORTATION
+OFFICE OF TRAFFIC MANAGEMENT
+
+OPERATIONAL PERFORMANCE REPORT
+Ref: Municipal Traffic Safety Post-Campaign Assessment
+Date: October 14, 2023
+
+I. Executive Summary
+This report details the operational performance and statistical results of the recent public awareness campaign focused on road safety within the municipal area. The primary objective of the intervention was to encourage the consistent use of directional indicators (turn signals) among commuters to reduce lateral collision risks and improve overall traffic flow. This assessment focuses exclusively on behavioral data and observed safety ratings following the campaign’s conclusion.
+
+II. Campaign Description
+The “Signal Your Intent” public awareness campaign utilized a combination of roadside digital messaging boards, social media outreach, and physical signage at high-traffic intersections. The messaging highlighted the legal requirement and safety benefits of signaling before lane changes and turns. The campaign ran for a duration of thirty days, targeting peak commuting hours to ensure maximum visibility among the local driving population.
+
+III. Data Collection and Observation Timestamps
+To ensure statistical consistency, post-campaign data collection was conducted using the same observation parameters as the initial pre-campaign input phase. Automated sensor data and manual spot checks were recorded during the following synchronized windows:
+- Morning Peak: 07:00 – 09:00
+- Mid-Day: 12:00 – 13:30
+- Evening Peak: 16:30 – 18:30
+
+The observation timestamps for the post-intervention data directly match the initial campaign input data, allowing for a longitudinal comparison of driver behavior under identical environmental and volume conditions.
+
+IV. Operational Results and Safety Impact
+The data analysis indicates a significant shift in driver compliance regarding turn signal usage. Key findings include:
+
+- Turn Signal Usage: Observation data shows a 40% increase in turn signal usage compared to the baseline measurements taken prior to the campaign. This represents a substantial improvement in driver communication and situational awareness.
+- Vehicle Volume: Post-campaign analysis confirms that the overall vehicle count remained unaffected by the intervention. Traffic density remained consistent with seasonal norms, indicating that the observed changes in behavior are attributable to the campaign rather than shifts in traffic volume.
+- Safety Ratings: Municipal safety evaluators have reported an improvement in overall safety ratings following the intervention. The increase in signaling frequency has led to a measurable decrease in abrupt maneuvers and high-risk lane changes, contributing to a more predictable driving environment.
+
+V. Conclusion
+The public awareness campaign successfully met its objective of increasing turn signal compliance by 40%. The consistency in vehicle counts ensures that these results are a direct reflection of changed driver behavior. While this report confirms the operational success of the “Signal Your Intent” program, it is limited to the statistical results of the turn signal initiative and does not account for broader traffic trends or future policy forecasts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2730 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Municipal Department of Transportation
+Bridge Inspection Division
+
+TECHNICAL OPERATIONAL REPORT: Cedar Glen Overpass
+Reporting Period: April 17 – April 24
+Document Type: Infrastructure Maintenance Report
+
+1. EXECUTIVE SUMMARY
+This report details the technical findings and environmental conditions noted during the scheduled maintenance and structural integrity inspection of the Cedar Glen Overpass for the week of April 17 through April 24. These activities are part of the routine oversight conducted by the Bridge Inspection Division.
+
+2. INSPECTOR FIELD OBSERVATIONS AND TIMESTAMPS
+Engineering teams performed on-site inspections according to the following schedule. Each round focused on structural components and physical wear patterns.
+
+- April 17 | 09:15 AM: Initial sweep of primary support joints. No immediate degradation noted. Weather: Overcast, 12°C.
+- April 19 | 10:30 AM: Engineer field observation conducted on upper deck surface. Verification of concrete curing at expansion joints. Weather: Light rain, 9°C.
+- April 21 | 01:45 PM: Follow-up inspection of substructure and abutments. Structural integrity confirmed via visual ultrasound. Weather: Partly cloudy, 15°C.
+- April 23 | 08:00 PM: Evening inspection focused on system feedback and load distribution response. Weather: High winds, 11°C.
+- April 24 | 11:00 AM: Final weekly walk-through and documentation sign-off. Weather: Clear, 18°C.
+
+3. STRUCTURAL INTEGRITY FINDINGS
+Engineers utilized standardized stress-test protocols to evaluate the primary and secondary structural members of the Cedar Glen Overpass. Observations recorded during the target week indicate that load-bearing elements remain within normal operational parameters. Surface scans of the overpass deck showed expected levels of friction and minor cosmetic weathering consistent with seasonal use. Structural integrity checks performed by the engineering team focused specifically on the integrity of the steel reinforcements and the condition of the asphaltic plug joints.
+
+4. SYSTEM STATUS: ARTERIAL SEGMENT ID-4822
+A specific module of this inspection cycle addressed the illumination and electrical components located at Arterial Segment ID-4822. 
+
+- Lighting Infrastructure: The lighting systems at Segment ID-4822 were tested for voltage consistency and photocell responsiveness. 
+- Observation: All luminaires within the ID-4822 boundary are operational. 
+- Technical Status: Standard functional capacity. No wiring discrepancies or housing damage were observed during the field checks on April 19 or April 23.
+
+5. ENVIRONMENTAL CONDITIONS
+Weather conditions were recorded for each inspection round to account for potential environmental impact on structural readings:
+
+- April 17: High humidity; overcast skies; low visibility. 
+- April 18-20: Intermittent precipitation; recorded rainfall totaling 12mm. Low-temperature thresholds reached 7°C.
+- April 21-22: Transition to dry conditions; moderate winds from the Northwest.
+- April 23-24: Sustained gusty conditions followed by clear visibility and rising ambient temperatures. 
+
+6. OPERATIONAL NOTES
+Activities conducted between April 17 and April 24 were strictly limited to routine maintenance inspection tasks and technical observations. This document serves as a record of the technical status of the facility during the specific seven-day window. It contains only current physical findings and environmental data collected on-site by the Bridge Inspection Division engineering staff.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2731 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Municipal Department of Transportation
+Technical and Operations Report
+
+Project Update: Cedar Glen Overpass Electronic Tolling Infrastructure and Safety Initiative
+
+1. EXECUTIVE SUMMARY
+This technical report details the infrastructure deployment at the Cedar Glen Overpass, specifically focusing on the integration of electronic tolling components on Arterial Segment ID-4822. The initiative combines hardware installation with a safety-centric public awareness campaign.
+
+2. TECHNICAL SPECIFICATIONS: SENSOR HARDWARE
+The deployment on the Cedar Glen Overpass utilizes high-precision electronic tolling sensors designed for high-velocity arterial traffic. The technical specifications for the hardware deployed are as follows:
+- Sensor Type: Multi-lane redundant LiDAR and Overhead Transceiver
+- Waveform: Active Infrared (850nm) and Dedicated Short-Range Communications (DSRC) at 5.9 GHz
+- Frame Rate: 60Hz pulse frequency
+- Operational Range: 10m to 15m overhead clearance
+- Data Protocol: Encrypted fiber-optic backhaul for real-time transactional processing
+- Weather Rating: IP67-certified moisture and thermal resistance
+
+3. INSTALLATION DATA (SEGMENT ID-4822)
+The electronic tolling sensors have been successfully mounted on the primary gantry of Arterial Segment ID-4822. Initial calibration tests confirm a 99.8% capture rate for transponders within the active tolling zone. Mapping of the installation confirms the segment is now fully operational for electronic data collection.
+
+4. HISTORICAL DATA COMPARISON (APRIL 2023)
+To establish a baseline for the new infrastructure, the department has retrieved historical traffic patterns from April 2023. This data serves as a comparison point for post-installation performance metrics. During the April 2023 period, the Cedar Glen Overpass recorded an average weekday volume of 42,500 vehicles with peak congestion occurring between 07:30–09:00 and 16:30–18:30. These historical patterns are essential for evaluating the efficiency of the new electronic systems compared to previous manual or estimated throughput.
+
+5. PUBLIC AWARENESS CAMPAIGN
+A targeted public awareness campaign has been launched alongside the technical deployment. This campaign focuses specifically on overpass safety, including:
+- Signage Updates: Installation of high-visibility warnings regarding vertical clearance.
+- Safety Initiative: &quot;Look Up, Stay Safe&quot; brochures distributed to commercial transport hubs.
+- Digital Outreach: Status updates via municipal social media regarding the transition to electronic tolling to reduce sudden braking and lane-weaving at the ID-4822 gantry site.
+
+6. ARTERIAL SEGMENT DIRECTORY
+The following table lists the nearby arterial segments associated with the Cedar Glen corridor for coordination and identification purposes:
+
+| Segment Name | Segment ID |
+| :--- | :--- |
+| Cedar Glen Overpass (Primary) | ID-4822 |
+| North Approach | ID-4823 |
+| South Approach | ID-4821 |
+| Eastbound Connector | ID-4905 |
+| Westbound Connector | ID-4906 |
+| Service Access Ramp | ID-4710 |
+
+7. NOTES
+This report is strictly limited to the technical deployment on Segment ID-4822 and the Cedar Glen Overpass. It does not contain information regarding budget allocations, project timelines beyond the April 2023 historical data, or broader regional transportation policies.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2733 · Off-entity</span></span></summary>
+          <pre class="doc-content">MUNICIPAL DEPARTMENT OF TRANSPORTATION
+Traffic Engineering Division
+
+INTERNAL OPERATIONAL DIRECTIVE
+Work Order: 2024-PRJ-CALIB
+
+Subject: Scheduled Maintenance and Survey - Arterial Segment ID-9104
+
+This directive authorizes a major construction survey and associated technical activities on Segment ID-9104, commonly known as The Pine Ridge Junction. 
+
+Operational Scope:
+- Execution of a professional construction survey.
+- Technical signal calibration activities for all intersection controllers.
+- Lane paint mapping procedures to document existing markings.
+
+Schedule:
+- Start Date/Time: 2024-04-24 at 17:00:00
+- Duration: 6 hours
+
+Traffic Impact Expectations:
+Engineering assessments indicate a target traffic throughput of 95.0% of usual volume during the active work window. 
+
+Notes:
+This authorization is strictly limited to the technical and scheduling parameters for Segment ID-9104. This directive does not cover city-wide forecasts, budgetary allocations, or project impacts beyond the specified 6-hour maintenance window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2734 · Off-entity</span></span></summary>
+          <pre class="doc-content">CITY DEPARTMENT OF TRANSPORTATION
+Public Traffic Bulletin
+
+SUBJECT: Valley Creek Connector Traffic Advisory: Community Parade Detour
+DATE: 2024-04-24
+
+Notice is hereby given that a local community parade is scheduled for Wednesday, 2024-04-24. To accommodate this event, a mandatory detour will be implemented on Arterial Segment ID-2287, also known as the Valley Creek Connector.
+
+OPERATIONAL WINDOW:
+Both the parade and the associated detour are scheduled to occur between 17:00:00 and 23:00:00 on 2024-04-24.
+
+TRAFFIC IMPACT:
+Motorists should anticipate significant delays as the parade event and detour are expected to cause a traffic surge reaching 150.0% of usual volume levels. This increased traffic on Segment ID-2287 is directly linked to the community parade activity. Drivers are advised to plan travel accordingly during this six-hour operational window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2736 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION
+TRAFFIC MANAGEMENT CENTER (TMC)
+
+TECHNICAL OPERATIONAL REPORT: ID-4822
+DATE: April 10, 2024
+
+SUBJECT: POST-INCIDENT TRAFFIC FLOW ANALYSIS - CEDAR GLEN OVERPASS
+
+1. EXECUTIVE SUMMARY
+This technical report details the operational impact and throughput statistics following a major traffic incident occurring on April 10, 2024. This reconstruction focus is restricted to the specific physical parameters of Arterial Segment ID-4822 (The Cedar Glen Overpass) and the corresponding temporal window of the disruption.
+
+2. INCIDENT CHRONOLOGY
+On the morning of 2024-04-10, a major accident was recorded on the Cedar Glen Overpass (Segment ID-4822). The official incident duration was logged between 08:00:00 and 14:00:00. During this six-hour window, emergency response and site clearance operations were active on the overpass structure.
+
+3. CAPACITY AND VOLUME METRICS
+Traffic Operations monitored real-time throughput via segment sensors. The following metrics were observed during the active incident window (08:00:00 – 14:00:00):
+
+- Standard Historical Capacity: 100.0%
+- Active Incident Capacity: 25.0%
+- Net Capacity Reduction: 75.0%
+
+During the peak of the incident, traffic volume on Arterial Segment ID-4822 was systematically reduced to 25.0% of the standard operational capacity. This reduction accounts for lane closures and the restriction of movement necessary for safe operational response.
+
+4. RECOVERY TIMELINE
+Following the conclusion of the primary incident window at 14:00:00, TMC monitored the dissipation of residual congestion. Data suggests a steady increase in flow rates in the hour following site clearance. Full restoration of traffic flow was achieved shortly thereafter, with traffic returning to normal conditions by 15:00:00 on 2024-04-10.
+
+5. SCOPE LIMITATIONS
+Per standard reporting protocol for technical operational summaries, this report is strictly limited to the temporal and physical boundaries of Segment ID-4822. Further specifics regarding the cause of the accident, vehicle specifics involved in the collision, prevailing weather conditions at the time of the incident, or secondary impacts on surrounding arterial routes fall outside the scope of this management center report.
+
+***
+
+End of Report
+Issuer: Regional Department of Transportation - TMC
+Reference: ID-4822-20240410-0800</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2737 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL DOT TRAFFIC MANAGEMENT CENTER
+INCIDENT ACTION LOG: ID-4822
+
+REPORTING DATA:
+- Location: Arterial Segment ID-4822 (The Cedar Glen Overpass)
+- Incident Type: Multi-vehicle collision
+- Date: 2024-04-12
+
+TIMELINE &amp; STATUS:
+- Incident Start Time: 22:00:00
+- Incident Duration: 8 hours
+- Clearance Time: 06:00:00 (full clearance)
+
+OPERATIONAL IMPACT:
+- Traffic Throughput: 65.0%
+- Capacity Status: Remained at reduced capacity until 06:00:00 the following morning.
+
+LOG NOTES:
+Operational maintenance log restricted to segment ID-4822. Record reflects flow and clearance metrics for the specified duration. Full restoration of traffic flow confirmed at 06:00:00 hours following the conclusion of on-site actions. This log entry focuses exclusively on segment-specific operational status and time-stamped clearance milestones for the regional traffic management database.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2739 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">MUNICIPAL DEPARTMENT OF TRANSPORTATION
+Traffic Engineering Division
+Technical Operational Report
+
+SUBJECT: Traffic Flow Characteristics Analysis: Arterial Segment ID-4822
+
+EXECUTIVE SUMMARY
+This technical report details the operational characteristics, historical volume patterns, and capacity thresholds for Arterial Segment ID-4822, identified as the Cedar Glen Overpass. The objective of this analysis is to provide a baseline for understanding the segment&#x27;s flow behavior under standard conditions and during localized traffic restrictions.
+
+I. SEGMENT IDENTIFICATION AND BASELINE OPERATIONS
+Arterial Segment ID-4822 constitutes the Cedar Glen Overpass. Under typical operating conditions, the segment is characterized by moderate load levels. Analysis of historical data indicates that traffic volumes remain consistently below a maximum ceiling of approximately 0.8. The data series demonstrates high stability within this moderate range; the segment is unlikely to produce sharp spikes in volume levels unless there is a strong, sustained upward movement in density.
+
+II. IMPACT OF TRAFFIC RESTRICTIONS
+The Department has conducted empirical reviews of how Segment ID-4822 responds to regulatory interventions. Historically, when a 40% traffic restriction is implemented on the overpass, volume levels exhibit a sharp and predictable decline. During these restriction events, flow levels drop to a sustained low of roughly 0.32. These periods of reduced activity remain stable for the duration of the restriction period.
+
+III. POST-EVENT RECOVERY AND STABILIZATION
+Upon the conclusion of traffic restriction events, the segment demonstrates a standard recovery pattern. Traffic volumes typically return to a established baseline of 0.4 or 0.5. This return to normalcy occurs relatively quickly once the overpass is reopened to full capacity, re-establishing the moderate flow characteristics that define the segment’s standard operational state.
+
+IV. TECHNICAL LIMITATIONS
+This operational analysis is strictly limited to the behavioral mechanics and historical volume limits of ID-4822. This report does not account for broader city-wide traffic patterns, hardware maintenance logs for the segment, or specific chronological incident records. The data serves as a functional model for traffic engineering expectations on the Cedar Glen Overpass.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_2740 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Regional Department of Transportation - Division of Traffic Operations
+Technical Operational Report: Cedar Glen Overpass Traffic Pattern Analysis and Incident Baseline Report
+
+1. EXECUTIVE SUMMARY
+This report establishes the historical operational baselines for the Cedar Glen Overpass. By analyzing long-term data trends, the Division of Traffic Operations has defined the characteristic flow behavior and identified the predictable impact of vehicular incidents on volume metrics during specific diurnal windows. This analysis serves as a fundamental benchmark for evaluating traffic anomalies at this specific location.
+
+2. OBSERVED MIDDAY TRAFFIC CHARACTERISTICS
+The Cedar Glen Overpass exhibits highly predictable throughput behavior during the central portion of the day. According to historical volume tracking, traffic typically reaches a steady state during midday hours. Once this state is achieved, the influx and outflux of vehicles stabilize, and the midday traffic maintains a flat plateau that persists through the late afternoon. This consistency reflects the primary logistical role of the overpass in regional transit during non-peak hours.
+
+3. INCIDENT IMPACT AND VOLUME DEVIATION
+The stability of the midday plateau allows for precise measurement of the impact of logistical disruptions. Historical data indicates that during a sustained midday plateau, an accident typically causes traffic volume to drop to forty percent of the plateau level. This sixty-percent reduction represents the standard immediate response of the traffic flow to an obstruction or total lane closure resulting from a vehicular incident.
+
+4. HISTORICAL CONTEXT
+The Division of Traffic Operations has conducted a comprehensive review of historical sensor data to contextualize the severity of transit disruptions. The analysis confirms that the traffic volume following an accident under these specific conditions—during the midday plateau—is lower than any typical daytime flow recorded in the history of the overpass. While evening or overnight volumes may naturally dip lower, the post-incident volume during daylight hours represents a statistical anomaly that falls below any documented standard daytime operational state.
+
+5. LIMITATIONS AND SCOPE
+This technical report is focused exclusively on the specific traffic dynamics and historical baselines of the Cedar Glen Overpass. The data presented herein is intended for baseline reference and does not include real-time data, specific incident logs, future forecasts, or infrastructure improvement plans. All figures are based on the historical steady-state averages established by the Division of Traffic Operations.</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:yihong.tang@servicenow.com">Yihong Tang</a> · <a href="mailto:valentina.zantedeschi@servicenow.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>
