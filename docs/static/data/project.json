@@ -8,7 +8,8 @@
         2,
         4
       ],
-      "email": "yihong.tang@servicenow.com"
+      "email": "yihong.tang@servicenow.com",
+      "corresponding": false
     },
     {
       "name": "Andrew Robert Williams",
@@ -16,7 +17,8 @@
         2,
         3,
         4
-      ]
+      ],
+      "corresponding": false
     },
     {
       "name": "Arjun Ashok",
@@ -24,13 +26,15 @@
         2,
         3,
         4
-      ]
+      ],
+      "corresponding": false
     },
     {
       "name": "Vincent Zhihao Zheng",
       "affiliations": [
         1
-      ]
+      ],
+      "corresponding": false
     },
     {
       "name": "Shubham Gupta",
@@ -38,13 +42,15 @@
         2,
         5,
         4
-      ]
+      ],
+      "corresponding": false
     },
     {
       "name": "Lijun Sun",
       "affiliations": [
         1
-      ]
+      ],
+      "corresponding": false
     },
     {
       "name": "Alexandre Drouin",
@@ -52,20 +58,23 @@
         2,
         5,
         4
-      ]
+      ],
+      "corresponding": false
     },
     {
       "name": "Issam H. Laradji",
       "affiliations": [
         2,
         6
-      ]
+      ],
+      "corresponding": false
     },
     {
       "name": "Étienne Marcotte",
       "affiliations": [
         2
-      ]
+      ],
+      "corresponding": false
     },
     {
       "name": "Valentina Zantedeschi",
@@ -73,7 +82,8 @@
         2,
         5
       ],
-      "email": "valentina.zantedeschi@servicenow.com"
+      "email": "vzantedeschi@gmail.com",
+      "corresponding": true
     }
   ],
   "affiliations": [

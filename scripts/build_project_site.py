@@ -192,15 +192,16 @@ def project_identity() -> str:
         else:
             name = f'<span>{name}</span>'
         labels = ",".join(str(number) for number in author["affiliations"])
-        if author.get("email"):
+        if author.get("corresponding"):
             labels += ",✉"
         author_markup.append(f'{name}<sup>{labels}</sup>')
     institutions = " · ".join(f'<span><sup>{item["id"]}</sup>{esc(item["name"])}</span>' for item in PROJECT["affiliations"])
+    correspondents = " and ".join(esc(author["name"]) for author in PROJECT["authors"] if author.get("corresponding"))
     return f'''<div class="wrap project-identity">
       <p class="project-paper-title">{esc(PROJECT['title'])}</p>
       <p class="project-authors">{', '.join(author_markup)}</p>
       <p class="project-affiliations">{institutions}</p>
-      <p class="project-correspondence"><span>✉ Corresponding authors</span> · Yihong Tang and Valentina Zantedeschi</p>
+      <p class="project-correspondence"><span>✉ Corresponding author</span> · {correspondents}</p>
     </div>'''
 
 
@@ -278,10 +279,11 @@ def brand_header(active: str = "") -> str:
 def footer(active: str = "") -> str:
     prefix = "../" if active == "task" else ""
     links = PROJECT["links"]
+    contact_links = " · ".join(f'<a href="mailto:{esc(author["email"])}">{esc(author["name"])}</a>' for author in PROJECT["authors"] if author.get("corresponding") and author.get("email"))
     return f'''<footer class="site-footer">
       <div class="wrap footer-shell">
         <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="{prefix}static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="{links['license']}">CC BY 4.0</a>.</p></div>
-        <div class="footer-meta"><p><a href="{links['paper']}">Paper</a> · <a href="{links['dataset']}">Dataset</a> · <a href="{links['repository']}">Code</a></p><p><a href="mailto:yihong.tang@servicenow.com">Yihong Tang</a> · <a href="mailto:valentina.zantedeschi@servicenow.com">Valentina Zantedeschi</a></p></div>
+        <div class="footer-meta"><p><a href="{links['paper']}">Paper</a> · <a href="{links['dataset']}">Dataset</a> · <a href="{links['repository']}">Code</a></p><p>{contact_links}</p></div>
       </div>
     </footer>'''
 

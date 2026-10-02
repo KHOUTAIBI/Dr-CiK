@@ -175,9 +175,8 @@ See [`LICENSE`](LICENSE).
 
 ## Contact
 
-For questions about the benchmark, contact Yihong Tang
-(<yihong.tang@servicenow.com>) or Valentina Zantedeschi
-(<valentina.zantedeschi@servicenow.com>), or open an issue in this repository.
+For questions about the benchmark, contact the corresponding author,
+Valentina Zantedeschi (<vzantedeschi@gmail.com>), or open an issue in this repository.
 
 ---
 
