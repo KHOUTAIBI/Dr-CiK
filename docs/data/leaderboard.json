@@ -5,7 +5,7 @@
     "direction": "lower_is_better",
     "format": "mean ± standard deviation",
     "scaledErrorCap": 5,
-    "note": "Scaled error metrics use the current clipped analysis export with a per-task cap of 5; the complete-scope view uses one 273-task evaluable mask. The benchmark inventory remains 279 tasks, including six long-horizon tasks excluded from metric aggregation."
+    "note": "Scaled error metrics use the current clipped analysis export with a per-task cap of 5. The full view reports results for the 279-task benchmark; the common view uses one shared task mask."
   },
   "deepResearch": {
     "title": "Deep research agent quality",
@@ -120,12 +120,12 @@
     "full": {
       "id": "full",
       "label": "Full benchmark",
-      "scopeLabel": "273-task complete scope",
-      "targetTasks": 273,
-      "title": "Complete evaluable leaderboard",
+      "scopeLabel": "279-task benchmark scope",
+      "targetTasks": 279,
+      "title": "Full benchmark leaderboard",
       "description": "",
       "statusLabel": "Complete scope",
-      "statusDetail": "13 displayed rows use the same complete 273-task evaluable mask.",
+      "statusDetail": "13 model · context combinations in the 279-task benchmark.",
       "rows": [
         {
           "model": "ARIMA",

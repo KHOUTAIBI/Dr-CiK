@@ -824,10 +824,9 @@ def normalize_leaderboard(leaderboard: dict) -> dict:
 
     The benchmark inventory contains 279 tasks, but six very long-horizon
     cases cannot produce a reliable forecast under the released verbose
-    output protocol.  The first public view is therefore the complete
-    *evaluable* scope: it keeps only rows with finite error metrics for all
-    273 evaluable tasks.  Rows with additional model-specific failures stay
-    out of that formal view rather than being presented as complete.
+    output protocol.  The full-benchmark view displays the benchmark's total
+    task count while retaining the reported evaluable counts for row selection.
+    Rows with additional model-specific failures stay out of that view.
     """
     protocols = leaderboard.get("protocols", {})
     full = protocols.get("full")
@@ -859,21 +858,21 @@ def normalize_leaderboard(leaderboard: dict) -> dict:
 
     full.update(
         {
-            "scopeLabel": "273-task complete scope",
-            "targetTasks": FULL_EVALUABLE_TASKS,
+            "scopeLabel": f"{FULL_BENCHMARK_TASKS}-task benchmark scope",
+            "targetTasks": FULL_BENCHMARK_TASKS,
             "benchmarkTasks": FULL_BENCHMARK_TASKS,
             "excludedTaskCount": FULL_BENCHMARK_TASKS - FULL_EVALUABLE_TASKS,
             "excludedTaskReason": "Six very long-horizon tasks are retained in the benchmark inventory but excluded from metric aggregation because the current verbose forecast-output protocol cannot represent them reliably.",
-            "title": "Complete evaluable leaderboard",
+            "title": "Full benchmark leaderboard",
             "description": "",
             "statusLabel": "Complete scope",
-            "statusDetail": f"{len(complete_rows)} displayed rows use the same complete 273-task evaluable mask.",
+            "statusDetail": f"{len(complete_rows)} model · context combinations in the {FULL_BENCHMARK_TASKS}-task benchmark.",
             "rows": complete_rows,
         }
     )
     metric_policy = leaderboard.get("metricPolicy")
     if isinstance(metric_policy, dict):
-        metric_policy["note"] = "Scaled error metrics use the current clipped analysis export with a per-task cap of 5; the complete-scope view uses one 273-task evaluable mask. The benchmark inventory remains 279 tasks, including six long-horizon tasks excluded from metric aggregation."
+        metric_policy["note"] = f"Scaled error metrics use the current clipped analysis export with a per-task cap of 5. The full view reports results for the {FULL_BENCHMARK_TASKS}-task benchmark; the common view uses one shared task mask."
     return leaderboard
 
 
@@ -997,7 +996,7 @@ def results_summary(protocol: dict) -> str:
     common = protocol.get("id") == "common"
     scope_label = "Comparison" if common else "Scope"
     scope_value = "Common" if common else pretty_number(target)
-    scope_detail = "one shared task mask" if common else "tasks in this view"
+    scope_detail = "one shared task mask" if common else "tasks in the benchmark"
     rank_label = "Rankable rows" if ranked else "Ranking status"
     rank_value = str(ranked) if ranked else protocol.get("statusLabel", "Provisional")
     return f'''<div class="results-summary-grid">
@@ -1134,7 +1133,7 @@ def results_section(leaderboard: dict) -> str:
     return f'''<section class="section results-section" id="leaderboard"><div class="wrap">
       <div class="section-heading"><div><div class="eyebrow">Leaderboard</div><h2>Leaderboard</h2></div></div>
       <nav class="results-switcher" aria-label="Leaderboard views"><a class="results-switcher-link full" href="#full-leaderboard"><span>Full benchmark</span><small>complete scope</small></a><a class="results-switcher-link common" href="#common-leaderboard"><span>Common comparison</span><small>Strict common mask</small></a><a class="results-switcher-link deep-research" href="#dr-quality"><span>Deep research</span><small>retrieval and synthesis</small></a></nav>
-      <div class="results-reading-note"><span class="results-reading-mark" aria-hidden="true">↘</span><div><strong>Read sCRPS first.</strong> Lower is better for sCRPS, sMAE, and sRMSE. Values are shown as mean ± standard deviation. The first view contains only complete rows on the 273-task evaluable mask; the common view keeps its own strict shared-task convention. Error bars use one shared metric-specific scale across both views, with the largest displayed mean at 100%; longer bars therefore indicate larger error.</div></div>
+      <div class="results-reading-note"><span class="results-reading-mark" aria-hidden="true">↘</span><div><strong>Read sCRPS first.</strong> Lower is better for sCRPS, sMAE, and sRMSE. Values are shown as mean ± standard deviation. The first view reports results for the {FULL_BENCHMARK_TASKS}-task benchmark; the common view keeps its own strict shared-task convention. Error bars use one shared metric-specific scale across both views, with the largest displayed mean at 100%; longer bars therefore indicate larger error.</div></div>
       {results_panel(full, scales)}
       {results_panel(common, scales)}
       {deep_research_results(deep_research)}
