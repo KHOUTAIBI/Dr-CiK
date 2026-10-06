@@ -26,7 +26,9 @@ provided. Dr-CiK removes that assumption: each task pairs a time series with a
 corpus of supporting **and** distractor documents, and the agent must find and
 use the right evidence on its own.
 
-![Context-Aided Forecasting via Deep Research: an agent searches a document space, distills forecast-useful evidence, and forecasts from it while resisting distractors.](docs/static/assets/overview.png)
+![Figure 1. Context-Aided Forecasting via Deep Research: a forecasting objective, forecast-driven evidence retrieval, and a context-aided forecast.](docs/static/assets/overview.png?v=2)
+
+<sub>Figure 1 from the current arXiv version.</sub>
 
 ## The task
 
@@ -70,9 +72,9 @@ metadata, so agents run normally — only the answers are withheld. The official
 leaderboard is scored on the hidden test set by the maintainers; see
 [`SUBMISSION.md`](SUBMISSION.md).
 
-![Overview of Dr-CiK: broad, realistic forecasting scenarios (left) and a challenging deep-research environment with a five-class distractor taxonomy (right).](docs/static/assets/figure2.png)
+![Figure 3. Dr-CiK dataset overview: 279 tasks across 199 CAF-sourced and 80 expert-curated tasks, with 10,342 labeled documents, domain composition, time-series statistics, and supporting evidence sizes.](docs/static/assets/benchmark-statistics.png)
 
-<sub>Figure 2 from the paper. The counts shown in the figure (240 tasks / 8,849 documents) reflect the paper's original release; this public release contains **279 tasks / 10,342 documents**.</sub>
+<sub>Figure 3 from the current arXiv version: <strong>279 tasks</strong> (199 CAF-sourced and 80 expert-curated) and <strong>10,342 documents</strong>.</sub>
 
 ## What's in this repository
 
