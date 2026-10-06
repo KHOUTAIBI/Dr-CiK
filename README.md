@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://servicenow.github.io/Dr-CiK/">
-    <img src="docs/static/assets/dr-cik-banner.svg?v=6" alt="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting — a benchmark by ServiceNow Research" width="100%">
+    <img src="docs/static/assets/dr-cik-banner.svg?v=7" alt="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting — a benchmark by ServiceNow Research" width="100%">
   </a>
 </p>
 
