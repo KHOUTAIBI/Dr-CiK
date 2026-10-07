@@ -1,0 +1,1072 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Oakhaven Basin · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Oakhaven Basin</h1>
+          <p>Forecasting <strong>electricity consumption</strong> · electricity increase in prediction with distractor text</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="Energy (electricity)">Energy (electricity)</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="144">144</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="44">44</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>Energy (electricity)</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Likely</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">General</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Straightforward</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2013-05-22 04:00:00</span><span>Forecast horizon · through 2013-05-29 03:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,260.21 17.87,266.92 23.73,274.82 29.60,264.85 35.46,259.29 41.33,255.66 47.19,252.28 53.06,252.02 58.92,235.18 64.79,248.11 70.65,245.69 76.52,256.11 82.38,260.15 88.25,268.03 94.11,264.23 99.98,241.75 105.84,253.01 111.71,234.43 117.57,230.04 123.44,249.72 129.30,249.88 135.17,256.21 141.03,260.27 146.90,262.37 152.76,266.86 158.63,275.28 164.49,265.66 170.36,259.67 176.22,256.12 182.09,244.61 187.95,247.49 193.82,227.23 199.68,236.26 205.55,250.54 211.41,255.25 217.28,264.59 223.14,263.12 229.01,250.78 234.87,241.27 240.74,259.69 246.60,236.31 252.47,225.72 258.33,236.03 264.20,248.91 270.06,252.17 275.93,255.79 281.79,259.26 287.66,261.59 293.52,267.73 299.39,276.00 305.25,270.66 311.12,260.69 316.98,250.95 322.85,249.83 328.71,233.94 334.58,240.06 340.44,249.17 346.31,260.71 352.17,268.48 358.04,268.81 363.90,266.77 369.77,262.35 375.63,253.79 381.50,241.39 387.36,230.72 393.23,237.93 399.09,246.76 404.96,252.62 410.82,259.81 416.69,260.87 422.55,260.97 428.42,266.08 434.28,273.58 440.15,274.83 446.01,266.39 451.88,261.40 457.74,242.71 463.61,244.42 469.47,233.86 475.34,232.79 481.20,243.28 487.07,248.32 492.93,260.88 498.80,270.37 504.66,265.70 510.53,256.60 516.39,242.14 522.26,220.75 528.12,231.26 533.99,239.51 539.85,252.38 545.72,258.91 551.58,260.47 557.45,260.86 563.31,266.81 569.18,274.13 575.04,264.76 580.91,242.46 586.77,243.61 592.64,243.07 598.50,237.90 604.37,219.69 610.23,227.22 616.10,234.04 621.96,241.51 627.83,246.73 633.69,249.96 639.56,258.55 645.42,249.33 651.29,248.35 657.15,235.57 663.02,230.52 668.88,236.91 674.75,246.82 680.61,249.92 686.48,254.75 692.34,259.70 698.21,259.48 704.07,264.46 709.94,271.27 715.80,272.34 721.67,257.50 727.53,240.66 733.40,241.17 739.26,229.48 745.13,245.19 750.99,257.56 756.86,260.88 762.72,248.66 768.59,261.35 774.45,252.20 780.32,252.39 786.18,231.28 792.05,225.23 797.91,229.48 803.78,243.76 809.64,250.35 815.51,256.27 821.37,260.27 827.24,263.49 833.10,260.94" /><polyline class="chart-future" points="833.10,260.94 838.97,266.80 844.83,272.24 850.70,263.24 856.56,262.47 862.43,263.78 868.29,249.05 874.16,254.40 880.02,14.00 885.89,15.11 891.75,240.58 897.62,251.43 903.48,264.61 909.35,265.85 915.21,255.80 921.08,251.65 926.94,250.80 932.81,236.99 938.67,232.30 944.54,241.76 950.40,247.57 956.27,253.07 962.13,257.82 968.00,268.06" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (168 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2013-05-22 04:00:00</td><td>351.2516211969</td></tr><tr><td>2</td><td>Observed history</td><td>2013-05-22 05:00:00</td><td>296.4482091529</td></tr><tr><td>3</td><td>Observed history</td><td>2013-05-22 06:00:00</td><td>231.8647127543</td></tr><tr><td>4</td><td>Observed history</td><td>2013-05-22 07:00:00</td><td>313.3813391099</td></tr><tr><td>5</td><td>Observed history</td><td>2013-05-22 08:00:00</td><td>358.7757573951</td></tr><tr><td>6</td><td>Observed history</td><td>2013-05-22 09:00:00</td><td>388.4802173637</td></tr><tr><td>7</td><td>Observed history</td><td>2013-05-22 10:00:00</td><td>416.0560981168</td></tr><tr><td>8</td><td>Observed history</td><td>2013-05-22 11:00:00</td><td>418.174522536</td></tr><tr><td>9</td><td>Observed history</td><td>2013-05-22 12:00:00</td><td>555.8399379824</td></tr><tr><td>10</td><td>Observed history</td><td>2013-05-22 13:00:00</td><td>450.1804260025</td></tr><tr><td>11</td><td>Observed history</td><td>2013-05-22 14:00:00</td><td>469.9327195125</td></tr><tr><td>12</td><td>Observed history</td><td>2013-05-22 15:00:00</td><td>384.7286853375</td></tr><tr><td>13</td><td>Observed history</td><td>2013-05-22 16:00:00</td><td>351.7530565619</td></tr><tr><td>14</td><td>Observed history</td><td>2013-05-22 17:00:00</td><td>287.3590885554</td></tr><tr><td>15</td><td>Observed history</td><td>2013-05-22 18:00:00</td><td>318.4292200939</td></tr><tr><td>16</td><td>Observed history</td><td>2013-05-22 19:00:00</td><td>502.0940720637</td></tr><tr><td>17</td><td>Observed history</td><td>2013-05-22 20:00:00</td><td>410.139737916</td></tr><tr><td>18</td><td>Observed history</td><td>2013-05-22 21:00:00</td><td>561.9292621414</td></tr><tr><td>19</td><td>Observed history</td><td>2013-05-22 22:00:00</td><td>713.3566789941</td></tr><tr><td>20</td><td>Observed history</td><td>2013-05-22 23:00:00</td><td>597.7893178898</td></tr><tr><td>21</td><td>Observed history</td><td>2013-05-23 00:00:00</td><td>436.984487713</td></tr><tr><td>22</td><td>Observed history</td><td>2013-05-23 01:00:00</td><td>435.6633802301</td></tr><tr><td>23</td><td>Observed history</td><td>2013-05-23 02:00:00</td><td>383.9820554386</td></tr><tr><td>24</td><td>Observed history</td><td>2013-05-23 03:00:00</td><td>350.7366921064</td></tr><tr><td>25</td><td>Observed history</td><td>2013-05-23 04:00:00</td><td>333.5932030358</td></tr><tr><td>26</td><td>Observed history</td><td>2013-05-23 05:00:00</td><td>296.9023723127</td></tr><tr><td>27</td><td>Observed history</td><td>2013-05-23 06:00:00</td><td>228.1132243668</td></tr><tr><td>28</td><td>Observed history</td><td>2013-05-23 07:00:00</td><td>306.7556074368</td></tr><tr><td>29</td><td>Observed history</td><td>2013-05-23 08:00:00</td><td>355.7104322749</td></tr><tr><td>30</td><td>Observed history</td><td>2013-05-23 09:00:00</td><td>384.6866479446</td></tr><tr><td>31</td><td>Observed history</td><td>2013-05-23 10:00:00</td><td>478.725288833</td></tr><tr><td>32</td><td>Observed history</td><td>2013-05-23 11:00:00</td><td>455.2021608093</td></tr><tr><td>33</td><td>Observed history</td><td>2013-05-23 12:00:00</td><td>620.7780097065</td></tr><tr><td>34</td><td>Observed history</td><td>2013-05-23 13:00:00</td><td>546.9580770531</td></tr><tr><td>35</td><td>Observed history</td><td>2013-05-23 14:00:00</td><td>430.3014270988</td></tr><tr><td>36</td><td>Observed history</td><td>2013-05-23 15:00:00</td><td>391.7759737915</td></tr><tr><td>37</td><td>Observed history</td><td>2013-05-23 16:00:00</td><td>315.4943546894</td></tr><tr><td>38</td><td>Observed history</td><td>2013-05-23 17:00:00</td><td>327.4563492383</td></tr><tr><td>39</td><td>Observed history</td><td>2013-05-23 18:00:00</td><td>428.3649769947</td></tr><tr><td>40</td><td>Observed history</td><td>2013-05-23 19:00:00</td><td>506.0617291455</td></tr><tr><td>41</td><td>Observed history</td><td>2013-05-23 20:00:00</td><td>355.5267217192</td></tr><tr><td>42</td><td>Observed history</td><td>2013-05-23 21:00:00</td><td>546.6024422681</td></tr><tr><td>43</td><td>Observed history</td><td>2013-05-23 22:00:00</td><td>633.1681862029</td></tr><tr><td>44</td><td>Observed history</td><td>2013-05-23 23:00:00</td><td>548.8913872592</td></tr><tr><td>45</td><td>Observed history</td><td>2013-05-24 00:00:00</td><td>443.6319773542</td></tr><tr><td>46</td><td>Observed history</td><td>2013-05-24 01:00:00</td><td>416.9523626473</td></tr><tr><td>47</td><td>Observed history</td><td>2013-05-24 02:00:00</td><td>387.3977557766</td></tr><tr><td>48</td><td>Observed history</td><td>2013-05-24 03:00:00</td><td>359.0430945608</td></tr><tr><td>49</td><td>Observed history</td><td>2013-05-24 04:00:00</td><td>339.9936378129</td></tr><tr><td>50</td><td>Observed history</td><td>2013-05-24 05:00:00</td><td>289.833966106</td></tr><tr><td>51</td><td>Observed history</td><td>2013-05-24 06:00:00</td><td>222.2179828984</td></tr><tr><td>52</td><td>Observed history</td><td>2013-05-24 07:00:00</td><td>265.8435894039</td></tr><tr><td>53</td><td>Observed history</td><td>2013-05-24 08:00:00</td><td>347.3085085521</td></tr><tr><td>54</td><td>Observed history</td><td>2013-05-24 09:00:00</td><td>426.9418674863</td></tr><tr><td>55</td><td>Observed history</td><td>2013-05-24 10:00:00</td><td>335.7772420822</td></tr><tr><td>56</td><td>Observed history</td><td>2013-05-24 11:00:00</td><td>436.0821775976</td></tr><tr><td>57</td><td>Observed history</td><td>2013-05-24 12:00:00</td><td>565.9453645027</td></tr><tr><td>58</td><td>Observed history</td><td>2013-05-24 13:00:00</td><td>515.9300356234</td></tr><tr><td>59</td><td>Observed history</td><td>2013-05-24 14:00:00</td><td>441.5027567008</td></tr><tr><td>60</td><td>Observed history</td><td>2013-05-24 15:00:00</td><td>347.1473026839</td></tr><tr><td>61</td><td>Observed history</td><td>2013-05-24 16:00:00</td><td>283.6979242485</td></tr><tr><td>62</td><td>Observed history</td><td>2013-05-24 17:00:00</td><td>281.0132391745</td></tr><tr><td>63</td><td>Observed history</td><td>2013-05-24 18:00:00</td><td>297.6171155854</td></tr><tr><td>64</td><td>Observed history</td><td>2013-05-24 19:00:00</td><td>333.7498389859</td></tr><tr><td>65</td><td>Observed history</td><td>2013-05-24 20:00:00</td><td>403.7459724522</td></tr><tr><td>66</td><td>Observed history</td><td>2013-05-24 21:00:00</td><td>505.0309686103</td></tr><tr><td>67</td><td>Observed history</td><td>2013-05-24 22:00:00</td><td>592.2347937902</td></tr><tr><td>68</td><td>Observed history</td><td>2013-05-24 23:00:00</td><td>533.3772526055</td></tr><tr><td>69</td><td>Observed history</td><td>2013-05-25 00:00:00</td><td>461.2196270325</td></tr><tr><td>70</td><td>Observed history</td><td>2013-05-25 01:00:00</td><td>413.3300935389</td></tr><tr><td>71</td><td>Observed history</td><td>2013-05-25 02:00:00</td><td>354.529762182</td></tr><tr><td>72</td><td>Observed history</td><td>2013-05-25 03:00:00</td><td>345.900335285</td></tr><tr><td>73</td><td>Observed history</td><td>2013-05-25 04:00:00</td><td>345.0448295444</td></tr><tr><td>74</td><td>Observed history</td><td>2013-05-25 05:00:00</td><td>303.3060150864</td></tr><tr><td>75</td><td>Observed history</td><td>2013-05-25 06:00:00</td><td>241.9863891758</td></tr><tr><td>76</td><td>Observed history</td><td>2013-05-25 07:00:00</td><td>231.7408003333</td></tr><tr><td>77</td><td>Observed history</td><td>2013-05-25 08:00:00</td><td>300.7616703398</td></tr><tr><td>78</td><td>Observed history</td><td>2013-05-25 09:00:00</td><td>341.5224449996</td></tr><tr><td>79</td><td>Observed history</td><td>2013-05-25 10:00:00</td><td>494.2640389983</td></tr><tr><td>80</td><td>Observed history</td><td>2013-05-25 11:00:00</td><td>480.3354412636</td></tr><tr><td>81</td><td>Observed history</td><td>2013-05-25 12:00:00</td><td>566.61756423</td></tr><tr><td>82</td><td>Observed history</td><td>2013-05-25 13:00:00</td><td>575.3573721145</td></tr><tr><td>83</td><td>Observed history</td><td>2013-05-25 14:00:00</td><td>489.6564209954</td></tr><tr><td>84</td><td>Observed history</td><td>2013-05-25 15:00:00</td><td>448.3939479778</td></tr><tr><td>85</td><td>Observed history</td><td>2013-05-25 16:00:00</td><td>345.779942376</td></tr><tr><td>86</td><td>Observed history</td><td>2013-05-25 17:00:00</td><td>268.24982928</td></tr><tr><td>87</td><td>Observed history</td><td>2013-05-25 18:00:00</td><td>306.403258461</td></tr><tr><td>88</td><td>Observed history</td><td>2013-05-25 19:00:00</td><td>380.7388703857</td></tr><tr><td>89</td><td>Observed history</td><td>2013-05-25 20:00:00</td><td>498.9687139627</td></tr><tr><td>90</td><td>Observed history</td><td>2013-05-25 21:00:00</td><td>637.6129134211</td></tr><tr><td>91</td><td>Observed history</td><td>2013-05-25 22:00:00</td><td>673.7577142301</td></tr><tr><td>92</td><td>Observed history</td><td>2013-05-25 23:00:00</td><td>587.8856447727</td></tr><tr><td>93</td><td>Observed history</td><td>2013-05-26 00:00:00</td><td>520.4018707906</td></tr><tr><td>94</td><td>Observed history</td><td>2013-05-26 01:00:00</td><td>415.2560147065</td></tr><tr><td>95</td><td>Observed history</td><td>2013-05-26 02:00:00</td><td>361.8617595031</td></tr><tr><td>96</td><td>Observed history</td><td>2013-05-26 03:00:00</td><td>349.1443163517</td></tr><tr><td>97</td><td>Observed history</td><td>2013-05-26 04:00:00</td><td>345.9476442486</td></tr><tr><td>98</td><td>Observed history</td><td>2013-05-26 05:00:00</td><td>297.3106582415</td></tr><tr><td>99</td><td>Observed history</td><td>2013-05-26 06:00:00</td><td>237.5198941413</td></tr><tr><td>100</td><td>Observed history</td><td>2013-05-26 07:00:00</td><td>314.0534225963</td></tr><tr><td>101</td><td>Observed history</td><td>2013-05-26 08:00:00</td><td>496.3356568781</td></tr><tr><td>102</td><td>Observed history</td><td>2013-05-26 09:00:00</td><td>486.9648913513</td></tr><tr><td>103</td><td>Observed history</td><td>2013-05-26 10:00:00</td><td>491.3755716693</td></tr><tr><td>104</td><td>Observed history</td><td>2013-05-26 11:00:00</td><td>533.5606976411</td></tr><tr><td>105</td><td>Observed history</td><td>2013-05-26 12:00:00</td><td>682.4514245529</td></tr><tr><td>106</td><td>Observed history</td><td>2013-05-26 13:00:00</td><td>620.8430157243</td></tr><tr><td>107</td><td>Observed history</td><td>2013-05-26 14:00:00</td><td>565.1187510674</td></tr><tr><td>108</td><td>Observed history</td><td>2013-05-26 15:00:00</td><td>504.1079621958</td></tr><tr><td>109</td><td>Observed history</td><td>2013-05-26 16:00:00</td><td>461.4546429137</td></tr><tr><td>110</td><td>Observed history</td><td>2013-05-26 17:00:00</td><td>435.0432553394</td></tr><tr><td>111</td><td>Observed history</td><td>2013-05-26 18:00:00</td><td>364.8010004964</td></tr><tr><td>112</td><td>Observed history</td><td>2013-05-26 19:00:00</td><td>440.1547901881</td></tr><tr><td>113</td><td>Observed history</td><td>2013-05-26 20:00:00</td><td>448.1603936712</td></tr><tr><td>114</td><td>Observed history</td><td>2013-05-26 21:00:00</td><td>552.6560181606</td></tr><tr><td>115</td><td>Observed history</td><td>2013-05-26 22:00:00</td><td>593.8719083179</td></tr><tr><td>116</td><td>Observed history</td><td>2013-05-26 23:00:00</td><td>541.6513948852</td></tr><tr><td>117</td><td>Observed history</td><td>2013-05-27 00:00:00</td><td>460.7121692747</td></tr><tr><td>118</td><td>Observed history</td><td>2013-05-27 01:00:00</td><td>435.3535616588</td></tr><tr><td>119</td><td>Observed history</td><td>2013-05-27 02:00:00</td><td>395.9185118029</td></tr><tr><td>120</td><td>Observed history</td><td>2013-05-27 03:00:00</td><td>355.4340238035</td></tr><tr><td>121</td><td>Observed history</td><td>2013-05-27 04:00:00</td><td>357.2164463721</td></tr><tr><td>122</td><td>Observed history</td><td>2013-05-27 05:00:00</td><td>316.5115920859</td></tr><tr><td>123</td><td>Observed history</td><td>2013-05-27 06:00:00</td><td>260.8496216534</td></tr><tr><td>124</td><td>Observed history</td><td>2013-05-27 07:00:00</td><td>252.0920079099</td></tr><tr><td>125</td><td>Observed history</td><td>2013-05-27 08:00:00</td><td>373.3879255441</td></tr><tr><td>126</td><td>Observed history</td><td>2013-05-27 09:00:00</td><td>364.1189021052</td></tr><tr><td>127</td><td>Observed history</td><td>2013-05-27 10:00:00</td><td>511.0301269463</td></tr><tr><td>128</td><td>Observed history</td><td>2013-05-27 11:00:00</td><td>506.8578859935</td></tr><tr><td>129</td><td>Observed history</td><td>2013-05-27 12:00:00</td><td>602.401109166</td></tr><tr><td>130</td><td>Observed history</td><td>2013-05-27 13:00:00</td><td>474.0008737312</td></tr><tr><td>131</td><td>Observed history</td><td>2013-05-27 14:00:00</td><td>372.9282041082</td></tr><tr><td>132</td><td>Observed history</td><td>2013-05-27 15:00:00</td><td>345.8224149326</td></tr><tr><td>133</td><td>Observed history</td><td>2013-05-27 16:00:00</td><td>445.6243863164</td></tr><tr><td>134</td><td>Observed history</td><td>2013-05-27 17:00:00</td><td>341.935959456</td></tr><tr><td>135</td><td>Observed history</td><td>2013-05-27 18:00:00</td><td>416.723236105</td></tr><tr><td>136</td><td>Observed history</td><td>2013-05-27 19:00:00</td><td>415.2119476845</td></tr><tr><td>137</td><td>Observed history</td><td>2013-05-27 20:00:00</td><td>587.6543578394</td></tr><tr><td>138</td><td>Observed history</td><td>2013-05-27 21:00:00</td><td>637.1541492462</td></tr><tr><td>139</td><td>Observed history</td><td>2013-05-27 22:00:00</td><td>602.3824080271</td></tr><tr><td>140</td><td>Observed history</td><td>2013-05-27 23:00:00</td><td>485.6631960606</td></tr><tr><td>141</td><td>Observed history</td><td>2013-05-28 00:00:00</td><td>431.8762275391</td></tr><tr><td>142</td><td>Observed history</td><td>2013-05-28 01:00:00</td><td>383.484047659</td></tr><tr><td>143</td><td>Observed history</td><td>2013-05-28 02:00:00</td><td>350.7526608459</td></tr><tr><td>144</td><td>Observed history</td><td>2013-05-28 03:00:00</td><td>324.4558249768</td></tr><tr class="future"><td>145</td><td>Forecast horizon</td><td>2013-05-28 04:00:00</td><td>345.3082090392</td></tr><tr class="future"><td>146</td><td>Forecast horizon</td><td>2013-05-28 05:00:00</td><td>297.3952573049</td></tr><tr class="future"><td>147</td><td>Forecast horizon</td><td>2013-05-28 06:00:00</td><td>252.9083407301</td></tr><tr class="future"><td>148</td><td>Forecast horizon</td><td>2013-05-28 07:00:00</td><td>326.4740038358</td></tr><tr class="future"><td>149</td><td>Forecast horizon</td><td>2013-05-28 08:00:00</td><td>332.7867940596</td></tr><tr class="future"><td>150</td><td>Forecast horizon</td><td>2013-05-28 09:00:00</td><td>322.0692546173</td></tr><tr class="future"><td>151</td><td>Forecast horizon</td><td>2013-05-28 10:00:00</td><td>442.4631205014</td></tr><tr class="future"><td>152</td><td>Forecast horizon</td><td>2013-05-28 11:00:00</td><td>398.7641361602</td></tr><tr class="future"><td>153</td><td>Forecast horizon</td><td>2013-05-28 12:00:00</td><td>2363.419539785</td></tr><tr class="future"><td>154</td><td>Forecast horizon</td><td>2013-05-28 13:00:00</td><td>2354.3163443525</td></tr><tr class="future"><td>155</td><td>Forecast horizon</td><td>2013-05-28 14:00:00</td><td>511.706300948</td></tr><tr class="future"><td>156</td><td>Forecast horizon</td><td>2013-05-28 15:00:00</td><td>422.9986442142</td></tr><tr class="future"><td>157</td><td>Forecast horizon</td><td>2013-05-28 16:00:00</td><td>315.29266018</td></tr><tr class="future"><td>158</td><td>Forecast horizon</td><td>2013-05-28 17:00:00</td><td>305.1383478694</td></tr><tr class="future"><td>159</td><td>Forecast horizon</td><td>2013-05-28 18:00:00</td><td>387.3074037589</td></tr><tr class="future"><td>160</td><td>Forecast horizon</td><td>2013-05-28 19:00:00</td><td>421.2395193537</td></tr><tr class="future"><td>161</td><td>Forecast horizon</td><td>2013-05-28 20:00:00</td><td>428.1824286104</td></tr><tr class="future"><td>162</td><td>Forecast horizon</td><td>2013-05-28 21:00:00</td><td>541.0133254639</td></tr><tr class="future"><td>163</td><td>Forecast horizon</td><td>2013-05-28 22:00:00</td><td>579.3247306704</td></tr><tr class="future"><td>164</td><td>Forecast horizon</td><td>2013-05-28 23:00:00</td><td>502.0631593388</td></tr><tr class="future"><td>165</td><td>Forecast horizon</td><td>2013-05-29 00:00:00</td><td>454.5807492515</td></tr><tr class="future"><td>166</td><td>Forecast horizon</td><td>2013-05-29 01:00:00</td><td>409.58960333</td></tr><tr class="future"><td>167</td><td>Forecast horizon</td><td>2013-05-29 02:00:00</td><td>370.8266724536</td></tr><tr class="future"><td>168</td><td>Forecast horizon</td><td>2013-05-29 03:00:00</td><td>287.1212985798</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-86-context" id="forecast-task-86-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-86-context" id="forecast-task-86-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-86-context" id="forecast-task-86-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-86-view" id="forecast-task-86-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-86-view" id="forecast-task-86-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-86-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-86-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-86-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-86-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-86-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 289.26 L 33.65 295.95 L 39.31 303.83 L 44.96 293.88 L 50.61 288.35 L 56.26 284.72 L 61.92 281.36 L 67.57 281.10 L 73.22 264.30 L 78.87 277.19 L 84.53 274.78 L 90.18 285.18 L 95.83 289.20 L 101.49 297.06 L 107.14 293.27 L 112.79 270.86 L 118.44 282.08 L 124.10 263.56 L 129.75 245.09 L 135.40 259.19 L 141.05 278.80 L 146.71 278.97 L 152.36 285.27 L 158.01 289.33 L 163.66 291.42 L 169.32 295.89 L 174.97 304.29 L 180.62 294.69 L 186.28 288.72 L 191.93 285.18 L 197.58 273.71 L 203.23 276.58 L 208.89 256.38 L 214.54 265.39 L 220.19 279.62 L 225.84 284.32 L 231.50 293.63 L 237.15 292.17 L 242.80 279.86 L 248.46 270.38 L 254.11 288.74 L 259.76 265.43 L 265.41 254.87 L 271.07 265.15 L 276.72 277.99 L 282.37 281.25 L 288.02 284.85 L 293.68 288.31 L 299.33 290.64 L 304.98 296.76 L 310.63 305.00 L 316.29 299.68 L 321.94 289.74 L 327.59 280.03 L 333.25 291.15 L 338.90 278.91 L 344.55 263.07 L 350.20 269.17 L 355.86 278.25 L 361.51 289.76 L 367.16 297.50 L 372.81 297.83 L 378.47 295.81 L 384.12 291.40 L 389.77 282.86 L 395.43 270.50 L 401.08 259.86 L 406.73 267.05 L 412.38 275.85 L 418.04 281.69 L 423.69 288.86 L 429.34 289.92 L 434.99 290.02 L 440.65 295.11 L 446.30 302.59 L 451.95 303.84 L 457.60 295.42 L 463.26 290.45 L 468.91 271.82 L 474.56 273.52 L 480.22 262.99 L 485.87 261.92 L 491.52 272.38 L 497.17 277.41 L 502.83 289.93 L 508.48 299.39 L 514.13 294.73 L 519.78 285.67 L 525.44 271.24 L 531.09 254.33 L 536.74 249.92 L 542.40 260.40 L 548.05 268.63 L 553.70 281.46 L 559.35 287.97 L 565.01 289.52 L 570.66 289.91 L 576.31 295.84 L 581.96 303.14 L 587.62 293.80 L 593.27 271.56 L 598.92 272.71 L 604.57 272.17 L 610.23 267.02 L 615.88 248.86 L 621.53 256.37 L 627.19 263.17 L 632.84 270.62 L 638.49 275.82 L 644.14 279.04 L 649.80 287.61 L 655.45 278.42 L 661.10 277.44 L 666.75 264.69 L 672.41 259.67 L 678.06 266.04 L 683.71 275.91 L 689.37 279.00 L 695.02 283.81 L 700.67 288.75 L 706.32 288.54 L 711.98 293.50 L 717.63 300.29 L 723.28 301.36 L 728.93 286.56 L 734.59 287.69 L 740.24 269.77 L 745.89 270.28 L 751.54 258.62 L 757.20 274.29 L 762.85 286.62 L 768.50 289.93 L 774.16 277.75 L 779.81 290.40 L 785.46 281.28 L 791.11 281.46 L 796.77 260.42 L 802.42 254.39 L 808.07 258.63 L 813.72 272.87 L 819.38 279.43 L 825.03 285.33 L 830.68 289.32 L 836.34 292.53" /><path class="forecast-svg-actual" d="M 841.99 289.99 L 847.64 295.83 L 853.29 301.26 L 858.95 292.29 L 864.60 291.52 L 870.25 292.82 L 875.90 278.14 L 881.56 283.47 L 887.21 43.79 L 892.86 44.90 L 898.51 269.69 L 904.17 280.51 L 909.82 293.65 L 915.47 294.89 L 921.13 284.86 L 926.78 280.73 L 932.43 279.88 L 938.08 266.11 L 943.74 261.44 L 949.39 270.87 L 955.04 276.66 L 960.69 282.15 L 966.35 286.88 L 972.00 297.09" /><path class="forecast-svg-band" fill="#b86d4a" d="M 841.99 291.24 L 847.64 294.30 L 853.29 299.94 L 858.95 297.47 L 864.60 285.19 L 870.25 283.03 L 875.90 274.94 L 881.56 271.29 L 887.21 255.90 L 892.86 264.63 L 898.51 273.35 L 904.17 282.14 L 909.82 283.98 L 915.47 286.94 L 921.13 286.18 L 926.78 277.55 L 932.43 270.89 L 938.08 258.64 L 943.74 253.29 L 949.39 263.66 L 955.04 275.12 L 960.69 280.43 L 966.35 285.40 L 972.00 288.75 L 972.00 290.33 L 966.35 287.85 L 960.69 283.64 L 955.04 278.28 L 949.39 268.53 L 943.74 260.14 L 938.08 265.71 L 932.43 278.81 L 926.78 282.35 L 921.13 288.96 L 915.47 289.54 L 909.82 286.38 L 904.17 285.37 L 898.51 278.98 L 892.86 271.13 L 887.21 262.36 L 881.56 274.85 L 875.90 278.59 L 870.25 285.09 L 864.60 286.71 L 858.95 299.08 L 853.29 301.12 L 847.64 295.61 L 841.99 292.70 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 841.99 291.97 L 847.64 294.95 L 853.29 300.53 L 858.95 298.27 L 864.60 285.95 L 870.25 284.06 L 875.90 276.77 L 881.56 273.07 L 887.21 259.13 L 892.86 267.88 L 898.51 276.16 L 904.17 283.76 L 909.82 285.18 L 915.47 288.24 L 921.13 287.57 L 926.78 279.95 L 932.43 274.85 L 938.08 262.17 L 943.74 256.71 L 949.39 266.09 L 955.04 276.70 L 960.69 282.03 L 966.35 286.62 L 972.00 289.54" /><circle class="forecast-svg-start" fill="#b86d4a" cx="841.99" cy="291.97" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 841.99 293.43 L 847.64 298.50 L 853.29 303.44 L 858.95 298.11 L 864.60 289.16 L 870.25 284.81 L 875.90 275.07 L 881.56 274.01 L 887.21 85.58 L 892.86 86.05 L 898.51 276.60 L 904.17 283.60 L 909.82 289.98 L 915.47 294.00 L 921.13 288.99 L 926.78 280.75 L 932.43 273.20 L 938.08 262.33 L 943.74 256.36 L 949.39 267.63 L 955.04 277.02 L 960.69 282.30 L 966.35 287.21 L 972.00 290.87" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="293.43" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 841.99 292.21 L 847.64 297.25 L 853.29 302.49 L 858.95 299.53 L 864.60 288.95 L 870.25 285.27 L 875.90 279.47 L 881.56 276.42 L 887.21 69.99 L 892.86 94.49 L 898.51 265.51 L 904.17 285.33 L 909.82 287.65 L 915.47 289.84 L 921.13 286.64 L 926.78 280.31 L 932.43 275.17 L 938.08 263.44 L 943.74 259.25 L 949.39 269.31 L 955.04 279.05 L 960.69 283.65 L 966.35 287.78 L 972.00 290.61" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="292.21" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 289.26 L 33.65 295.95 L 39.31 303.83 L 44.96 293.88 L 50.61 288.35 L 56.26 284.72 L 61.92 281.36 L 67.57 281.10 L 73.22 264.30 L 78.87 277.19 L 84.53 274.78 L 90.18 285.18 L 95.83 289.20 L 101.49 297.06 L 107.14 293.27 L 112.79 270.86 L 118.44 282.08 L 124.10 263.56 L 129.75 245.09 L 135.40 259.19 L 141.05 278.80 L 146.71 278.97 L 152.36 285.27 L 158.01 289.33 L 163.66 291.42 L 169.32 295.89 L 174.97 304.29 L 180.62 294.69 L 186.28 288.72 L 191.93 285.18 L 197.58 273.71 L 203.23 276.58 L 208.89 256.38 L 214.54 265.39 L 220.19 279.62 L 225.84 284.32 L 231.50 293.63 L 237.15 292.17 L 242.80 279.86 L 248.46 270.38 L 254.11 288.74 L 259.76 265.43 L 265.41 254.87 L 271.07 265.15 L 276.72 277.99 L 282.37 281.25 L 288.02 284.85 L 293.68 288.31 L 299.33 290.64 L 304.98 296.76 L 310.63 305.00 L 316.29 299.68 L 321.94 289.74 L 327.59 280.03 L 333.25 291.15 L 338.90 278.91 L 344.55 263.07 L 350.20 269.17 L 355.86 278.25 L 361.51 289.76 L 367.16 297.50 L 372.81 297.83 L 378.47 295.81 L 384.12 291.40 L 389.77 282.86 L 395.43 270.50 L 401.08 259.86 L 406.73 267.05 L 412.38 275.85 L 418.04 281.69 L 423.69 288.86 L 429.34 289.92 L 434.99 290.02 L 440.65 295.11 L 446.30 302.59 L 451.95 303.84 L 457.60 295.42 L 463.26 290.45 L 468.91 271.82 L 474.56 273.52 L 480.22 262.99 L 485.87 261.92 L 491.52 272.38 L 497.17 277.41 L 502.83 289.93 L 508.48 299.39 L 514.13 294.73 L 519.78 285.67 L 525.44 271.24 L 531.09 254.33 L 536.74 249.92 L 542.40 260.40 L 548.05 268.63 L 553.70 281.46 L 559.35 287.97 L 565.01 289.52 L 570.66 289.91 L 576.31 295.84 L 581.96 303.14 L 587.62 293.80 L 593.27 271.56 L 598.92 272.71 L 604.57 272.17 L 610.23 267.02 L 615.88 248.86 L 621.53 256.37 L 627.19 263.17 L 632.84 270.62 L 638.49 275.82 L 644.14 279.04 L 649.80 287.61 L 655.45 278.42 L 661.10 277.44 L 666.75 264.69 L 672.41 259.67 L 678.06 266.04 L 683.71 275.91 L 689.37 279.00 L 695.02 283.81 L 700.67 288.75 L 706.32 288.54 L 711.98 293.50 L 717.63 300.29 L 723.28 301.36 L 728.93 286.56 L 734.59 287.69 L 740.24 269.77 L 745.89 270.28 L 751.54 258.62 L 757.20 274.29 L 762.85 286.62 L 768.50 289.93 L 774.16 277.75 L 779.81 290.40 L 785.46 281.28 L 791.11 281.46 L 796.77 260.42 L 802.42 254.39 L 808.07 258.63 L 813.72 272.87 L 819.38 279.43 L 825.03 285.33 L 830.68 289.32 L 836.34 292.53" /><path class="forecast-svg-actual" d="M 841.99 289.99 L 847.64 295.83 L 853.29 301.26 L 858.95 292.29 L 864.60 291.52 L 870.25 292.82 L 875.90 278.14 L 881.56 283.47 L 887.21 43.79 L 892.86 44.90 L 898.51 269.69 L 904.17 280.51 L 909.82 293.65 L 915.47 294.89 L 921.13 284.86 L 926.78 280.73 L 932.43 279.88 L 938.08 266.11 L 943.74 261.44 L 949.39 270.87 L 955.04 276.66 L 960.69 282.15 L 966.35 286.88 L 972.00 297.09" /><path class="forecast-svg-band" fill="#b86d4a" d="M 841.99 291.24 L 847.64 294.30 L 853.29 299.94 L 858.95 297.47 L 864.60 285.19 L 870.25 283.03 L 875.90 274.94 L 881.56 271.29 L 887.21 255.90 L 892.86 264.63 L 898.51 273.35 L 904.17 282.14 L 909.82 283.98 L 915.47 286.94 L 921.13 286.18 L 926.78 277.55 L 932.43 270.89 L 938.08 258.64 L 943.74 253.29 L 949.39 263.66 L 955.04 275.12 L 960.69 280.43 L 966.35 285.40 L 972.00 288.75 L 972.00 290.33 L 966.35 287.85 L 960.69 283.64 L 955.04 278.28 L 949.39 268.53 L 943.74 260.14 L 938.08 265.71 L 932.43 278.81 L 926.78 282.35 L 921.13 288.96 L 915.47 289.54 L 909.82 286.38 L 904.17 285.37 L 898.51 278.98 L 892.86 271.13 L 887.21 262.36 L 881.56 274.85 L 875.90 278.59 L 870.25 285.09 L 864.60 286.71 L 858.95 299.08 L 853.29 301.12 L 847.64 295.61 L 841.99 292.70 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 841.99 291.97 L 847.64 294.95 L 853.29 300.53 L 858.95 298.27 L 864.60 285.95 L 870.25 284.06 L 875.90 276.77 L 881.56 273.07 L 887.21 259.13 L 892.86 267.88 L 898.51 276.16 L 904.17 283.76 L 909.82 285.18 L 915.47 288.24 L 921.13 287.57 L 926.78 279.95 L 932.43 274.85 L 938.08 262.17 L 943.74 256.71 L 949.39 266.09 L 955.04 276.70 L 960.69 282.03 L 966.35 286.62 L 972.00 289.54" /><circle class="forecast-svg-start" fill="#b86d4a" cx="841.99" cy="291.97" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 289.26 L 33.65 295.95 L 39.31 303.83 L 44.96 293.88 L 50.61 288.35 L 56.26 284.72 L 61.92 281.36 L 67.57 281.10 L 73.22 264.30 L 78.87 277.19 L 84.53 274.78 L 90.18 285.18 L 95.83 289.20 L 101.49 297.06 L 107.14 293.27 L 112.79 270.86 L 118.44 282.08 L 124.10 263.56 L 129.75 245.09 L 135.40 259.19 L 141.05 278.80 L 146.71 278.97 L 152.36 285.27 L 158.01 289.33 L 163.66 291.42 L 169.32 295.89 L 174.97 304.29 L 180.62 294.69 L 186.28 288.72 L 191.93 285.18 L 197.58 273.71 L 203.23 276.58 L 208.89 256.38 L 214.54 265.39 L 220.19 279.62 L 225.84 284.32 L 231.50 293.63 L 237.15 292.17 L 242.80 279.86 L 248.46 270.38 L 254.11 288.74 L 259.76 265.43 L 265.41 254.87 L 271.07 265.15 L 276.72 277.99 L 282.37 281.25 L 288.02 284.85 L 293.68 288.31 L 299.33 290.64 L 304.98 296.76 L 310.63 305.00 L 316.29 299.68 L 321.94 289.74 L 327.59 280.03 L 333.25 291.15 L 338.90 278.91 L 344.55 263.07 L 350.20 269.17 L 355.86 278.25 L 361.51 289.76 L 367.16 297.50 L 372.81 297.83 L 378.47 295.81 L 384.12 291.40 L 389.77 282.86 L 395.43 270.50 L 401.08 259.86 L 406.73 267.05 L 412.38 275.85 L 418.04 281.69 L 423.69 288.86 L 429.34 289.92 L 434.99 290.02 L 440.65 295.11 L 446.30 302.59 L 451.95 303.84 L 457.60 295.42 L 463.26 290.45 L 468.91 271.82 L 474.56 273.52 L 480.22 262.99 L 485.87 261.92 L 491.52 272.38 L 497.17 277.41 L 502.83 289.93 L 508.48 299.39 L 514.13 294.73 L 519.78 285.67 L 525.44 271.24 L 531.09 254.33 L 536.74 249.92 L 542.40 260.40 L 548.05 268.63 L 553.70 281.46 L 559.35 287.97 L 565.01 289.52 L 570.66 289.91 L 576.31 295.84 L 581.96 303.14 L 587.62 293.80 L 593.27 271.56 L 598.92 272.71 L 604.57 272.17 L 610.23 267.02 L 615.88 248.86 L 621.53 256.37 L 627.19 263.17 L 632.84 270.62 L 638.49 275.82 L 644.14 279.04 L 649.80 287.61 L 655.45 278.42 L 661.10 277.44 L 666.75 264.69 L 672.41 259.67 L 678.06 266.04 L 683.71 275.91 L 689.37 279.00 L 695.02 283.81 L 700.67 288.75 L 706.32 288.54 L 711.98 293.50 L 717.63 300.29 L 723.28 301.36 L 728.93 286.56 L 734.59 287.69 L 740.24 269.77 L 745.89 270.28 L 751.54 258.62 L 757.20 274.29 L 762.85 286.62 L 768.50 289.93 L 774.16 277.75 L 779.81 290.40 L 785.46 281.28 L 791.11 281.46 L 796.77 260.42 L 802.42 254.39 L 808.07 258.63 L 813.72 272.87 L 819.38 279.43 L 825.03 285.33 L 830.68 289.32 L 836.34 292.53" /><path class="forecast-svg-actual" d="M 841.99 289.99 L 847.64 295.83 L 853.29 301.26 L 858.95 292.29 L 864.60 291.52 L 870.25 292.82 L 875.90 278.14 L 881.56 283.47 L 887.21 43.79 L 892.86 44.90 L 898.51 269.69 L 904.17 280.51 L 909.82 293.65 L 915.47 294.89 L 921.13 284.86 L 926.78 280.73 L 932.43 279.88 L 938.08 266.11 L 943.74 261.44 L 949.39 270.87 L 955.04 276.66 L 960.69 282.15 L 966.35 286.88 L 972.00 297.09" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 841.99 293.12 L 847.64 298.42 L 853.29 302.74 L 858.95 296.93 L 864.60 287.91 L 870.25 283.29 L 875.90 272.17 L 881.56 271.07 L 887.21 68.14 L 892.86 70.38 L 898.51 273.10 L 904.17 281.31 L 909.82 287.68 L 915.47 292.34 L 921.13 286.88 L 926.78 279.10 L 932.43 270.68 L 938.08 260.71 L 943.74 255.23 L 949.39 266.30 L 955.04 276.02 L 960.69 281.50 L 966.35 286.24 L 972.00 290.07 L 972.00 291.67 L 966.35 288.18 L 960.69 283.10 L 955.04 278.02 L 949.39 268.95 L 943.74 257.49 L 938.08 263.95 L 932.43 275.72 L 926.78 282.40 L 921.13 291.09 L 915.47 295.67 L 909.82 292.29 L 904.17 285.89 L 898.51 280.11 L 892.86 101.72 L 887.21 103.02 L 881.56 276.95 L 875.90 277.97 L 870.25 286.32 L 864.60 290.41 L 858.95 299.29 L 853.29 304.15 L 847.64 298.58 L 841.99 293.73 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 841.99 293.43 L 847.64 298.50 L 853.29 303.44 L 858.95 298.11 L 864.60 289.16 L 870.25 284.81 L 875.90 275.07 L 881.56 274.01 L 887.21 85.58 L 892.86 86.05 L 898.51 276.60 L 904.17 283.60 L 909.82 289.98 L 915.47 294.00 L 921.13 288.99 L 926.78 280.75 L 932.43 273.20 L 938.08 262.33 L 943.74 256.36 L 949.39 267.63 L 955.04 277.02 L 960.69 282.30 L 966.35 287.21 L 972.00 290.87" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="293.43" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 289.26 L 33.65 295.95 L 39.31 303.83 L 44.96 293.88 L 50.61 288.35 L 56.26 284.72 L 61.92 281.36 L 67.57 281.10 L 73.22 264.30 L 78.87 277.19 L 84.53 274.78 L 90.18 285.18 L 95.83 289.20 L 101.49 297.06 L 107.14 293.27 L 112.79 270.86 L 118.44 282.08 L 124.10 263.56 L 129.75 245.09 L 135.40 259.19 L 141.05 278.80 L 146.71 278.97 L 152.36 285.27 L 158.01 289.33 L 163.66 291.42 L 169.32 295.89 L 174.97 304.29 L 180.62 294.69 L 186.28 288.72 L 191.93 285.18 L 197.58 273.71 L 203.23 276.58 L 208.89 256.38 L 214.54 265.39 L 220.19 279.62 L 225.84 284.32 L 231.50 293.63 L 237.15 292.17 L 242.80 279.86 L 248.46 270.38 L 254.11 288.74 L 259.76 265.43 L 265.41 254.87 L 271.07 265.15 L 276.72 277.99 L 282.37 281.25 L 288.02 284.85 L 293.68 288.31 L 299.33 290.64 L 304.98 296.76 L 310.63 305.00 L 316.29 299.68 L 321.94 289.74 L 327.59 280.03 L 333.25 291.15 L 338.90 278.91 L 344.55 263.07 L 350.20 269.17 L 355.86 278.25 L 361.51 289.76 L 367.16 297.50 L 372.81 297.83 L 378.47 295.81 L 384.12 291.40 L 389.77 282.86 L 395.43 270.50 L 401.08 259.86 L 406.73 267.05 L 412.38 275.85 L 418.04 281.69 L 423.69 288.86 L 429.34 289.92 L 434.99 290.02 L 440.65 295.11 L 446.30 302.59 L 451.95 303.84 L 457.60 295.42 L 463.26 290.45 L 468.91 271.82 L 474.56 273.52 L 480.22 262.99 L 485.87 261.92 L 491.52 272.38 L 497.17 277.41 L 502.83 289.93 L 508.48 299.39 L 514.13 294.73 L 519.78 285.67 L 525.44 271.24 L 531.09 254.33 L 536.74 249.92 L 542.40 260.40 L 548.05 268.63 L 553.70 281.46 L 559.35 287.97 L 565.01 289.52 L 570.66 289.91 L 576.31 295.84 L 581.96 303.14 L 587.62 293.80 L 593.27 271.56 L 598.92 272.71 L 604.57 272.17 L 610.23 267.02 L 615.88 248.86 L 621.53 256.37 L 627.19 263.17 L 632.84 270.62 L 638.49 275.82 L 644.14 279.04 L 649.80 287.61 L 655.45 278.42 L 661.10 277.44 L 666.75 264.69 L 672.41 259.67 L 678.06 266.04 L 683.71 275.91 L 689.37 279.00 L 695.02 283.81 L 700.67 288.75 L 706.32 288.54 L 711.98 293.50 L 717.63 300.29 L 723.28 301.36 L 728.93 286.56 L 734.59 287.69 L 740.24 269.77 L 745.89 270.28 L 751.54 258.62 L 757.20 274.29 L 762.85 286.62 L 768.50 289.93 L 774.16 277.75 L 779.81 290.40 L 785.46 281.28 L 791.11 281.46 L 796.77 260.42 L 802.42 254.39 L 808.07 258.63 L 813.72 272.87 L 819.38 279.43 L 825.03 285.33 L 830.68 289.32 L 836.34 292.53" /><path class="forecast-svg-actual" d="M 841.99 289.99 L 847.64 295.83 L 853.29 301.26 L 858.95 292.29 L 864.60 291.52 L 870.25 292.82 L 875.90 278.14 L 881.56 283.47 L 887.21 43.79 L 892.86 44.90 L 898.51 269.69 L 904.17 280.51 L 909.82 293.65 L 915.47 294.89 L 921.13 284.86 L 926.78 280.73 L 932.43 279.88 L 938.08 266.11 L 943.74 261.44 L 949.39 270.87 L 955.04 276.66 L 960.69 282.15 L 966.35 286.88 L 972.00 297.09" /><path class="forecast-svg-band" fill="#aa7c32" d="M 841.99 291.71 L 847.64 296.95 L 853.29 302.14 L 858.95 299.21 L 864.60 288.77 L 870.25 284.95 L 875.90 278.94 L 881.56 275.83 L 887.21 50.00 L 892.86 76.44 L 898.51 214.80 L 904.17 284.24 L 909.82 284.97 L 915.47 284.28 L 921.13 280.81 L 926.78 277.83 L 932.43 273.71 L 938.08 259.37 L 943.74 253.53 L 949.39 265.02 L 955.04 276.36 L 960.69 280.89 L 966.35 284.75 L 972.00 288.80 L 972.00 292.42 L 966.35 290.81 L 960.69 286.42 L 955.04 281.73 L 949.39 273.59 L 943.74 264.96 L 938.08 267.50 L 932.43 276.62 L 926.78 282.79 L 921.13 292.46 L 915.47 295.39 L 909.82 290.34 L 904.17 286.42 L 898.51 316.21 L 892.86 112.53 L 887.21 89.98 L 881.56 277.01 L 875.90 280.00 L 870.25 285.60 L 864.60 289.13 L 858.95 299.86 L 853.29 302.84 L 847.64 297.54 L 841.99 292.71 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 841.99 292.21 L 847.64 297.25 L 853.29 302.49 L 858.95 299.53 L 864.60 288.95 L 870.25 285.27 L 875.90 279.47 L 881.56 276.42 L 887.21 69.99 L 892.86 94.49 L 898.51 265.51 L 904.17 285.33 L 909.82 287.65 L 915.47 289.84 L 921.13 286.64 L 926.78 280.31 L 932.43 275.17 L 938.08 263.44 L 943.74 259.25 L 949.39 269.31 L 955.04 279.05 L 960.69 283.65 L 966.35 287.78 L 972.00 290.61" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="292.21" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 300.66 L 33.65 307.26 L 39.31 315.04 L 44.96 305.22 L 50.61 299.75 L 56.26 296.18 L 61.92 292.85 L 67.57 292.60 L 73.22 276.01 L 78.87 288.74 L 84.53 286.36 L 90.18 296.63 L 95.83 300.60 L 101.49 308.36 L 107.14 304.62 L 112.79 282.49 L 118.44 293.57 L 124.10 275.28 L 129.75 257.04 L 135.40 270.96 L 141.05 290.33 L 146.71 290.49 L 152.36 296.72 L 158.01 300.72 L 163.66 302.79 L 169.32 307.21 L 174.97 315.50 L 180.62 306.02 L 186.28 300.12 L 191.93 296.63 L 197.58 285.30 L 203.23 288.14 L 208.89 268.19 L 214.54 277.08 L 220.19 291.14 L 225.84 295.78 L 231.50 304.97 L 237.15 303.53 L 242.80 291.37 L 248.46 282.01 L 254.11 300.15 L 259.76 277.13 L 265.41 266.70 L 271.07 276.85 L 276.72 289.53 L 282.37 292.75 L 288.02 296.31 L 293.68 299.72 L 299.33 302.02 L 304.98 308.06 L 310.63 316.21 L 316.29 310.95 L 321.94 301.14 L 327.59 291.54 L 333.25 302.53 L 338.90 290.44 L 344.55 274.80 L 350.20 280.82 L 355.86 289.79 L 361.51 301.16 L 367.16 308.80 L 372.81 309.12 L 378.47 307.12 L 384.12 302.77 L 389.77 294.34 L 395.43 282.13 L 401.08 271.63 L 406.73 278.72 L 412.38 287.41 L 418.04 293.18 L 423.69 300.27 L 429.34 301.31 L 434.99 301.41 L 440.65 306.44 L 446.30 313.83 L 451.95 315.06 L 457.60 306.74 L 463.26 301.83 L 468.91 283.43 L 474.56 285.11 L 480.22 274.71 L 485.87 273.66 L 491.52 283.99 L 497.17 288.96 L 502.83 301.32 L 508.48 310.66 L 514.13 306.06 L 519.78 297.11 L 525.44 282.86 L 531.09 266.16 L 536.74 261.81 L 542.40 272.15 L 548.05 280.28 L 553.70 292.95 L 559.35 299.38 L 565.01 300.92 L 570.66 301.30 L 576.31 307.16 L 581.96 314.36 L 587.62 305.14 L 593.27 283.18 L 598.92 284.31 L 604.57 283.78 L 610.23 278.70 L 615.88 260.76 L 621.53 268.18 L 627.19 274.90 L 632.84 282.25 L 638.49 287.38 L 644.14 290.57 L 649.80 299.03 L 655.45 289.95 L 661.10 288.99 L 666.75 276.40 L 672.41 271.43 L 678.06 277.72 L 683.71 287.47 L 689.37 290.53 L 695.02 295.28 L 700.67 300.16 L 706.32 299.94 L 711.98 304.85 L 717.63 311.55 L 723.28 312.61 L 728.93 297.99 L 734.59 299.11 L 740.24 281.41 L 745.89 281.91 L 751.54 270.40 L 757.20 285.87 L 762.85 298.05 L 768.50 301.32 L 774.16 289.29 L 779.81 301.78 L 785.46 292.77 L 791.11 292.96 L 796.77 272.18 L 802.42 266.22 L 808.07 270.41 L 813.72 284.47 L 819.38 290.95 L 825.03 296.78 L 830.68 300.72 L 836.34 303.89" /><path class="forecast-svg-actual" d="M 841.99 301.38 L 847.64 307.15 L 853.29 312.51 L 858.95 303.65 L 864.60 302.89 L 870.25 304.18 L 875.90 289.67 L 881.56 294.94 L 887.21 58.24 L 892.86 59.34 L 898.51 281.33 L 904.17 292.02 L 909.82 304.99 L 915.47 306.22 L 921.13 296.32 L 926.78 292.23 L 932.43 291.39 L 938.08 277.80 L 943.74 273.18 L 949.39 282.49 L 955.04 288.21 L 960.69 293.63 L 966.35 298.30 L 972.00 308.39" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 841.99 300.58 L 847.64 306.14 L 853.29 313.87 L 858.95 307.89 L 864.60 295.58 L 870.25 293.35 L 875.90 283.43 L 881.56 283.85 L 887.21 43.79 L 892.86 73.16 L 898.51 287.22 L 904.17 293.00 L 909.82 299.36 L 915.47 303.31 L 921.13 297.03 L 926.78 290.73 L 932.43 284.84 L 938.08 272.23 L 943.74 265.68 L 949.39 277.11 L 955.04 287.04 L 960.69 292.55 L 966.35 298.12 L 972.00 301.19 L 972.00 302.09 L 966.35 299.07 L 960.69 294.03 L 955.04 288.78 L 949.39 279.07 L 943.74 267.62 L 938.08 275.25 L 932.43 288.69 L 926.78 293.56 L 921.13 300.22 L 915.47 305.38 L 909.82 302.73 L 904.17 295.62 L 898.51 290.34 L 892.86 90.93 L 887.21 55.06 L 881.56 285.87 L 875.90 285.43 L 870.25 295.54 L 864.60 298.78 L 858.95 309.77 L 853.29 314.41 L 847.64 307.72 L 841.99 302.41 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 841.99 301.50 L 847.64 306.93 L 853.29 314.14 L 858.95 308.83 L 864.60 297.18 L 870.25 294.44 L 875.90 284.43 L 881.56 284.86 L 887.21 49.42 L 892.86 82.04 L 898.51 288.78 L 904.17 294.31 L 909.82 301.04 L 915.47 304.35 L 921.13 298.62 L 926.78 292.15 L 932.43 286.76 L 938.08 273.74 L 943.74 266.65 L 949.39 278.09 L 955.04 287.91 L 960.69 293.29 L 966.35 298.60 L 972.00 301.64" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="301.50" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 841.99 303.47 L 847.64 308.49 L 853.29 313.83 L 858.95 310.70 L 864.60 300.29 L 870.25 296.71 L 875.90 291.16 L 881.56 288.19 L 887.21 77.83 L 892.86 107.82 L 898.51 291.44 L 904.17 297.01 L 909.82 299.74 L 915.47 302.50 L 921.13 299.24 L 926.78 292.17 L 932.43 286.89 L 938.08 274.49 L 943.74 269.83 L 949.39 279.99 L 955.04 290.12 L 960.69 294.53 L 966.35 298.53 L 972.00 301.57" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="303.47" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 300.66 L 33.65 307.26 L 39.31 315.04 L 44.96 305.22 L 50.61 299.75 L 56.26 296.18 L 61.92 292.85 L 67.57 292.60 L 73.22 276.01 L 78.87 288.74 L 84.53 286.36 L 90.18 296.63 L 95.83 300.60 L 101.49 308.36 L 107.14 304.62 L 112.79 282.49 L 118.44 293.57 L 124.10 275.28 L 129.75 257.04 L 135.40 270.96 L 141.05 290.33 L 146.71 290.49 L 152.36 296.72 L 158.01 300.72 L 163.66 302.79 L 169.32 307.21 L 174.97 315.50 L 180.62 306.02 L 186.28 300.12 L 191.93 296.63 L 197.58 285.30 L 203.23 288.14 L 208.89 268.19 L 214.54 277.08 L 220.19 291.14 L 225.84 295.78 L 231.50 304.97 L 237.15 303.53 L 242.80 291.37 L 248.46 282.01 L 254.11 300.15 L 259.76 277.13 L 265.41 266.70 L 271.07 276.85 L 276.72 289.53 L 282.37 292.75 L 288.02 296.31 L 293.68 299.72 L 299.33 302.02 L 304.98 308.06 L 310.63 316.21 L 316.29 310.95 L 321.94 301.14 L 327.59 291.54 L 333.25 302.53 L 338.90 290.44 L 344.55 274.80 L 350.20 280.82 L 355.86 289.79 L 361.51 301.16 L 367.16 308.80 L 372.81 309.12 L 378.47 307.12 L 384.12 302.77 L 389.77 294.34 L 395.43 282.13 L 401.08 271.63 L 406.73 278.72 L 412.38 287.41 L 418.04 293.18 L 423.69 300.27 L 429.34 301.31 L 434.99 301.41 L 440.65 306.44 L 446.30 313.83 L 451.95 315.06 L 457.60 306.74 L 463.26 301.83 L 468.91 283.43 L 474.56 285.11 L 480.22 274.71 L 485.87 273.66 L 491.52 283.99 L 497.17 288.96 L 502.83 301.32 L 508.48 310.66 L 514.13 306.06 L 519.78 297.11 L 525.44 282.86 L 531.09 266.16 L 536.74 261.81 L 542.40 272.15 L 548.05 280.28 L 553.70 292.95 L 559.35 299.38 L 565.01 300.92 L 570.66 301.30 L 576.31 307.16 L 581.96 314.36 L 587.62 305.14 L 593.27 283.18 L 598.92 284.31 L 604.57 283.78 L 610.23 278.70 L 615.88 260.76 L 621.53 268.18 L 627.19 274.90 L 632.84 282.25 L 638.49 287.38 L 644.14 290.57 L 649.80 299.03 L 655.45 289.95 L 661.10 288.99 L 666.75 276.40 L 672.41 271.43 L 678.06 277.72 L 683.71 287.47 L 689.37 290.53 L 695.02 295.28 L 700.67 300.16 L 706.32 299.94 L 711.98 304.85 L 717.63 311.55 L 723.28 312.61 L 728.93 297.99 L 734.59 299.11 L 740.24 281.41 L 745.89 281.91 L 751.54 270.40 L 757.20 285.87 L 762.85 298.05 L 768.50 301.32 L 774.16 289.29 L 779.81 301.78 L 785.46 292.77 L 791.11 292.96 L 796.77 272.18 L 802.42 266.22 L 808.07 270.41 L 813.72 284.47 L 819.38 290.95 L 825.03 296.78 L 830.68 300.72 L 836.34 303.89" /><path class="forecast-svg-actual" d="M 841.99 301.38 L 847.64 307.15 L 853.29 312.51 L 858.95 303.65 L 864.60 302.89 L 870.25 304.18 L 875.90 289.67 L 881.56 294.94 L 887.21 58.24 L 892.86 59.34 L 898.51 281.33 L 904.17 292.02 L 909.82 304.99 L 915.47 306.22 L 921.13 296.32 L 926.78 292.23 L 932.43 291.39 L 938.08 277.80 L 943.74 273.18 L 949.39 282.49 L 955.04 288.21 L 960.69 293.63 L 966.35 298.30 L 972.00 308.39" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 841.99 300.58 L 847.64 306.14 L 853.29 313.87 L 858.95 307.89 L 864.60 295.58 L 870.25 293.35 L 875.90 283.43 L 881.56 283.85 L 887.21 43.79 L 892.86 73.16 L 898.51 287.22 L 904.17 293.00 L 909.82 299.36 L 915.47 303.31 L 921.13 297.03 L 926.78 290.73 L 932.43 284.84 L 938.08 272.23 L 943.74 265.68 L 949.39 277.11 L 955.04 287.04 L 960.69 292.55 L 966.35 298.12 L 972.00 301.19 L 972.00 302.09 L 966.35 299.07 L 960.69 294.03 L 955.04 288.78 L 949.39 279.07 L 943.74 267.62 L 938.08 275.25 L 932.43 288.69 L 926.78 293.56 L 921.13 300.22 L 915.47 305.38 L 909.82 302.73 L 904.17 295.62 L 898.51 290.34 L 892.86 90.93 L 887.21 55.06 L 881.56 285.87 L 875.90 285.43 L 870.25 295.54 L 864.60 298.78 L 858.95 309.77 L 853.29 314.41 L 847.64 307.72 L 841.99 302.41 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 841.99 301.50 L 847.64 306.93 L 853.29 314.14 L 858.95 308.83 L 864.60 297.18 L 870.25 294.44 L 875.90 284.43 L 881.56 284.86 L 887.21 49.42 L 892.86 82.04 L 898.51 288.78 L 904.17 294.31 L 909.82 301.04 L 915.47 304.35 L 921.13 298.62 L 926.78 292.15 L 932.43 286.76 L 938.08 273.74 L 943.74 266.65 L 949.39 278.09 L 955.04 287.91 L 960.69 293.29 L 966.35 298.60 L 972.00 301.64" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="301.50" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 300.66 L 33.65 307.26 L 39.31 315.04 L 44.96 305.22 L 50.61 299.75 L 56.26 296.18 L 61.92 292.85 L 67.57 292.60 L 73.22 276.01 L 78.87 288.74 L 84.53 286.36 L 90.18 296.63 L 95.83 300.60 L 101.49 308.36 L 107.14 304.62 L 112.79 282.49 L 118.44 293.57 L 124.10 275.28 L 129.75 257.04 L 135.40 270.96 L 141.05 290.33 L 146.71 290.49 L 152.36 296.72 L 158.01 300.72 L 163.66 302.79 L 169.32 307.21 L 174.97 315.50 L 180.62 306.02 L 186.28 300.12 L 191.93 296.63 L 197.58 285.30 L 203.23 288.14 L 208.89 268.19 L 214.54 277.08 L 220.19 291.14 L 225.84 295.78 L 231.50 304.97 L 237.15 303.53 L 242.80 291.37 L 248.46 282.01 L 254.11 300.15 L 259.76 277.13 L 265.41 266.70 L 271.07 276.85 L 276.72 289.53 L 282.37 292.75 L 288.02 296.31 L 293.68 299.72 L 299.33 302.02 L 304.98 308.06 L 310.63 316.21 L 316.29 310.95 L 321.94 301.14 L 327.59 291.54 L 333.25 302.53 L 338.90 290.44 L 344.55 274.80 L 350.20 280.82 L 355.86 289.79 L 361.51 301.16 L 367.16 308.80 L 372.81 309.12 L 378.47 307.12 L 384.12 302.77 L 389.77 294.34 L 395.43 282.13 L 401.08 271.63 L 406.73 278.72 L 412.38 287.41 L 418.04 293.18 L 423.69 300.27 L 429.34 301.31 L 434.99 301.41 L 440.65 306.44 L 446.30 313.83 L 451.95 315.06 L 457.60 306.74 L 463.26 301.83 L 468.91 283.43 L 474.56 285.11 L 480.22 274.71 L 485.87 273.66 L 491.52 283.99 L 497.17 288.96 L 502.83 301.32 L 508.48 310.66 L 514.13 306.06 L 519.78 297.11 L 525.44 282.86 L 531.09 266.16 L 536.74 261.81 L 542.40 272.15 L 548.05 280.28 L 553.70 292.95 L 559.35 299.38 L 565.01 300.92 L 570.66 301.30 L 576.31 307.16 L 581.96 314.36 L 587.62 305.14 L 593.27 283.18 L 598.92 284.31 L 604.57 283.78 L 610.23 278.70 L 615.88 260.76 L 621.53 268.18 L 627.19 274.90 L 632.84 282.25 L 638.49 287.38 L 644.14 290.57 L 649.80 299.03 L 655.45 289.95 L 661.10 288.99 L 666.75 276.40 L 672.41 271.43 L 678.06 277.72 L 683.71 287.47 L 689.37 290.53 L 695.02 295.28 L 700.67 300.16 L 706.32 299.94 L 711.98 304.85 L 717.63 311.55 L 723.28 312.61 L 728.93 297.99 L 734.59 299.11 L 740.24 281.41 L 745.89 281.91 L 751.54 270.40 L 757.20 285.87 L 762.85 298.05 L 768.50 301.32 L 774.16 289.29 L 779.81 301.78 L 785.46 292.77 L 791.11 292.96 L 796.77 272.18 L 802.42 266.22 L 808.07 270.41 L 813.72 284.47 L 819.38 290.95 L 825.03 296.78 L 830.68 300.72 L 836.34 303.89" /><path class="forecast-svg-actual" d="M 841.99 301.38 L 847.64 307.15 L 853.29 312.51 L 858.95 303.65 L 864.60 302.89 L 870.25 304.18 L 875.90 289.67 L 881.56 294.94 L 887.21 58.24 L 892.86 59.34 L 898.51 281.33 L 904.17 292.02 L 909.82 304.99 L 915.47 306.22 L 921.13 296.32 L 926.78 292.23 L 932.43 291.39 L 938.08 277.80 L 943.74 273.18 L 949.39 282.49 L 955.04 288.21 L 960.69 293.63 L 966.35 298.30 L 972.00 308.39" /><path class="forecast-svg-band" fill="#aa7c32" d="M 841.99 303.05 L 847.64 308.24 L 853.29 313.77 L 858.95 310.65 L 864.60 300.23 L 870.25 296.51 L 875.90 291.02 L 881.56 287.84 L 887.21 76.81 L 892.86 107.14 L 898.51 291.31 L 904.17 296.74 L 909.82 299.41 L 915.47 302.46 L 921.13 299.15 L 926.78 291.84 L 932.43 286.60 L 938.08 274.32 L 943.74 269.49 L 949.39 279.82 L 955.04 289.75 L 960.69 294.39 L 966.35 298.46 L 972.00 301.42 L 972.00 301.72 L 966.35 298.60 L 960.69 294.68 L 955.04 290.49 L 949.39 280.15 L 943.74 270.17 L 938.08 274.65 L 932.43 287.18 L 926.78 292.50 L 921.13 299.33 L 915.47 302.54 L 909.82 300.07 L 904.17 297.29 L 898.51 291.57 L 892.86 108.50 L 887.21 78.86 L 881.56 288.53 L 875.90 291.30 L 870.25 296.91 L 864.60 300.35 L 858.95 310.75 L 853.29 313.89 L 847.64 308.74 L 841.99 303.89 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 841.99 303.47 L 847.64 308.49 L 853.29 313.83 L 858.95 310.70 L 864.60 300.29 L 870.25 296.71 L 875.90 291.16 L 881.56 288.19 L 887.21 77.83 L 892.86 107.82 L 898.51 291.44 L 904.17 297.01 L 909.82 299.74 L 915.47 302.50 L 921.13 299.24 L 926.78 292.17 L 932.43 286.89 L 938.08 274.49 L 943.74 269.83 L 949.39 279.99 L 955.04 290.12 L 960.69 294.53 L 966.35 298.53 L 972.00 301.57" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="303.47" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 298.97 L 33.65 305.92 L 39.31 314.11 L 44.96 303.77 L 50.61 298.01 L 56.26 294.25 L 61.92 290.75 L 67.57 290.48 L 73.22 273.02 L 78.87 286.42 L 84.53 283.92 L 90.18 294.72 L 95.83 298.90 L 101.49 307.07 L 107.14 303.13 L 112.79 279.84 L 118.44 291.50 L 124.10 272.25 L 129.75 253.05 L 135.40 267.70 L 141.05 288.09 L 146.71 288.26 L 152.36 294.82 L 158.01 299.03 L 163.66 301.21 L 169.32 305.86 L 174.97 314.58 L 180.62 304.61 L 186.28 298.40 L 191.93 294.73 L 197.58 282.80 L 203.23 285.78 L 208.89 264.79 L 214.54 274.15 L 220.19 288.94 L 225.84 293.83 L 231.50 303.50 L 237.15 301.98 L 242.80 289.19 L 248.46 279.33 L 254.11 298.42 L 259.76 274.19 L 265.41 263.22 L 271.07 273.90 L 276.72 287.25 L 282.37 290.63 L 288.02 294.38 L 293.68 297.98 L 299.33 300.39 L 304.98 306.76 L 310.63 315.33 L 316.29 309.80 L 321.94 299.47 L 327.59 289.37 L 333.25 300.93 L 338.90 288.21 L 344.55 271.74 L 350.20 278.08 L 355.86 287.52 L 361.51 299.49 L 367.16 307.53 L 372.81 307.87 L 378.47 305.77 L 384.12 301.19 L 389.77 292.31 L 395.43 279.47 L 401.08 268.41 L 406.73 275.87 L 412.38 285.02 L 418.04 291.09 L 423.69 298.55 L 429.34 299.65 L 434.99 299.75 L 440.65 305.05 L 446.30 312.82 L 451.95 314.12 L 457.60 305.37 L 463.26 300.20 L 468.91 280.83 L 474.56 282.60 L 480.22 271.66 L 485.87 270.55 L 491.52 281.41 L 497.17 286.65 L 502.83 299.66 L 508.48 309.49 L 514.13 304.65 L 519.78 295.23 L 525.44 280.23 L 531.09 262.65 L 536.74 258.07 L 542.40 268.96 L 548.05 277.52 L 553.70 290.85 L 559.35 297.62 L 565.01 299.23 L 570.66 299.64 L 576.31 305.81 L 581.96 313.39 L 587.62 303.68 L 593.27 280.57 L 598.92 281.76 L 604.57 281.20 L 610.23 275.85 L 615.88 256.97 L 621.53 264.78 L 627.19 271.85 L 632.84 279.58 L 638.49 284.99 L 644.14 288.34 L 649.80 297.25 L 655.45 287.69 L 661.10 286.68 L 666.75 273.43 L 672.41 268.20 L 678.06 274.82 L 683.71 285.09 L 689.37 288.30 L 695.02 293.30 L 700.67 298.44 L 706.32 298.21 L 711.98 303.37 L 717.63 310.43 L 723.28 311.54 L 728.93 296.16 L 734.59 297.34 L 740.24 278.70 L 745.89 279.23 L 751.54 267.12 L 757.20 283.40 L 762.85 296.22 L 768.50 299.66 L 774.16 287.00 L 779.81 300.15 L 785.46 290.66 L 791.11 290.86 L 796.77 268.99 L 802.42 262.71 L 808.07 267.12 L 813.72 281.92 L 819.38 288.74 L 825.03 294.88 L 830.68 299.03 L 836.34 302.36" /><path class="forecast-svg-actual" d="M 841.99 299.72 L 847.64 305.80 L 853.29 311.44 L 858.95 302.11 L 864.60 301.31 L 870.25 302.67 L 875.90 287.40 L 881.56 292.94 L 887.21 43.79 L 892.86 44.95 L 898.51 278.62 L 904.17 289.87 L 909.82 303.53 L 915.47 304.81 L 921.13 294.39 L 926.78 290.09 L 932.43 289.21 L 938.08 274.90 L 943.74 270.04 L 949.39 279.84 L 955.04 285.86 L 960.69 291.57 L 966.35 296.48 L 972.00 307.10" /><path class="forecast-svg-band" fill="#3777a5" d="M 841.99 300.67 L 847.64 304.00 L 853.29 311.27 L 858.95 303.78 L 864.60 292.45 L 870.25 289.19 L 875.90 279.59 L 881.56 276.91 L 887.21 265.27 L 892.86 272.29 L 898.51 282.51 L 904.17 285.20 L 909.82 290.85 L 915.47 292.73 L 921.13 290.43 L 926.78 283.55 L 932.43 276.10 L 938.08 261.73 L 943.74 257.32 L 949.39 269.75 L 955.04 281.99 L 960.69 290.16 L 966.35 295.50 L 972.00 298.21 L 972.00 302.12 L 966.35 300.18 L 960.69 295.91 L 955.04 289.79 L 949.39 280.62 L 943.74 266.56 L 938.08 270.51 L 932.43 285.73 L 926.78 291.84 L 921.13 302.33 L 915.47 305.03 L 909.82 302.41 L 904.17 298.83 L 898.51 292.76 L 892.86 284.32 L 887.21 277.65 L 881.56 291.55 L 875.90 293.51 L 870.25 298.86 L 864.60 302.54 L 858.95 312.38 L 853.29 315.92 L 847.64 308.02 L 841.99 303.08 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 841.99 301.88 L 847.64 306.01 L 853.29 313.59 L 858.95 308.08 L 864.60 297.50 L 870.25 294.03 L 875.90 286.55 L 881.56 284.23 L 887.21 271.46 L 892.86 278.31 L 898.51 287.63 L 904.17 292.02 L 909.82 296.63 L 915.47 298.88 L 921.13 296.38 L 926.78 287.70 L 932.43 280.91 L 938.08 266.12 L 943.74 261.94 L 949.39 275.18 L 955.04 285.89 L 960.69 293.04 L 966.35 297.84 L 972.00 300.17" /><circle class="forecast-svg-start" fill="#3777a5" cx="841.99" cy="301.88" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 841.99 307.22 L 847.64 303.06 L 853.29 302.98 L 858.95 297.15 L 864.60 288.99 L 870.25 286.42 L 875.90 273.82 L 881.56 276.54 L 887.21 279.22 L 892.86 282.55 L 898.51 292.27 L 904.17 295.58 L 909.82 304.10 L 915.47 305.55 L 921.13 301.67 L 926.78 294.28 L 932.43 286.21 L 938.08 282.63 L 943.74 277.92 L 949.39 275.12 L 955.04 278.93 L 960.69 281.78 L 966.35 292.17 L 972.00 298.08" /><circle class="forecast-svg-start" fill="#8064a2" cx="841.99" cy="307.22" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 841.99 304.30 L 847.64 301.10 L 853.29 302.81 L 858.95 301.21 L 864.60 302.88 L 870.25 303.85 L 875.90 302.83 L 881.56 302.20 L 887.21 298.21 L 892.86 303.07 L 898.51 303.23 L 904.17 301.50 L 909.82 302.74 L 915.47 303.58 L 921.13 300.14 L 926.78 302.28 L 932.43 301.60 L 938.08 300.34 L 943.74 300.25 L 949.39 299.17 L 955.04 302.12 L 960.69 300.67 L 966.35 303.47 L 972.00 301.49" /><circle class="forecast-svg-start" fill="#668851" cx="841.99" cy="304.30" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.42 L 33.65 293.02 L 39.31 300.81 L 44.96 290.98 L 50.61 285.51 L 56.26 281.93 L 61.92 278.60 L 67.57 278.35 L 73.22 261.75 L 78.87 274.49 L 84.53 272.11 L 90.18 282.38 L 95.83 286.36 L 101.49 294.12 L 107.14 290.37 L 112.79 268.23 L 118.44 279.32 L 124.10 261.01 L 129.75 242.75 L 135.40 256.69 L 141.05 276.08 L 146.71 276.24 L 152.36 282.47 L 158.01 286.48 L 163.66 288.55 L 169.32 292.97 L 174.97 301.26 L 180.62 291.78 L 186.28 285.88 L 191.93 282.39 L 197.58 271.05 L 203.23 273.88 L 208.89 253.92 L 214.54 262.82 L 220.19 276.89 L 225.84 281.53 L 231.50 290.73 L 237.15 289.29 L 242.80 277.12 L 248.46 267.75 L 254.11 285.90 L 259.76 262.86 L 265.41 252.42 L 271.07 262.59 L 276.72 275.28 L 282.37 278.49 L 288.02 282.06 L 293.68 285.48 L 299.33 287.77 L 304.98 293.82 L 310.63 301.98 L 316.29 296.72 L 321.94 286.89 L 327.59 277.29 L 333.25 288.28 L 338.90 276.19 L 344.55 260.53 L 350.20 266.56 L 355.86 275.53 L 361.51 286.91 L 367.16 294.56 L 372.81 294.89 L 378.47 292.88 L 384.12 288.53 L 389.77 280.09 L 395.43 267.87 L 401.08 257.36 L 406.73 264.46 L 412.38 273.16 L 418.04 278.93 L 423.69 286.02 L 429.34 287.06 L 434.99 287.17 L 440.65 292.20 L 446.30 299.59 L 451.95 300.83 L 457.60 292.50 L 463.26 287.59 L 468.91 269.17 L 474.56 270.85 L 480.22 260.45 L 485.87 259.39 L 491.52 269.73 L 497.17 274.70 L 502.83 287.08 L 508.48 296.42 L 514.13 291.82 L 519.78 282.86 L 525.44 268.61 L 531.09 251.89 L 536.74 247.53 L 542.40 257.88 L 548.05 266.02 L 553.70 278.70 L 559.35 285.14 L 565.01 286.67 L 570.66 287.06 L 576.31 292.92 L 581.96 300.13 L 587.62 290.90 L 593.27 268.92 L 598.92 270.05 L 604.57 269.52 L 610.23 264.43 L 615.88 246.48 L 621.53 253.91 L 627.19 260.63 L 632.84 267.99 L 638.49 273.13 L 644.14 276.31 L 649.80 284.78 L 655.45 275.70 L 661.10 274.73 L 666.75 262.13 L 672.41 257.16 L 678.06 263.46 L 683.71 273.22 L 689.37 276.28 L 695.02 281.03 L 700.67 285.91 L 706.32 285.70 L 711.98 290.61 L 717.63 297.32 L 723.28 298.37 L 728.93 283.75 L 734.59 284.87 L 740.24 267.15 L 745.89 267.65 L 751.54 256.13 L 757.20 271.62 L 762.85 283.80 L 768.50 287.07 L 774.16 275.04 L 779.81 287.54 L 785.46 278.52 L 791.11 278.70 L 796.77 257.91 L 802.42 251.94 L 808.07 256.14 L 813.72 270.21 L 819.38 276.70 L 825.03 282.53 L 830.68 286.48 L 836.34 289.65" /><path class="forecast-svg-actual" d="M 841.99 287.13 L 847.64 292.91 L 853.29 298.27 L 858.95 289.40 L 864.60 288.64 L 870.25 289.94 L 875.90 275.42 L 881.56 280.69 L 887.21 43.79 L 892.86 44.89 L 898.51 267.07 L 904.17 277.77 L 909.82 290.75 L 915.47 291.98 L 921.13 282.07 L 926.78 277.98 L 932.43 277.14 L 938.08 263.54 L 943.74 258.92 L 949.39 268.23 L 955.04 273.96 L 960.69 279.38 L 966.35 284.06 L 972.00 294.15" /><path class="forecast-svg-band" fill="#3777a5" d="M 841.99 288.04 L 847.64 291.20 L 853.29 298.11 L 858.95 290.99 L 864.60 280.22 L 870.25 277.12 L 875.90 267.99 L 881.56 265.44 L 887.21 254.38 L 892.86 261.05 L 898.51 270.77 L 904.17 273.33 L 909.82 278.70 L 915.47 280.49 L 921.13 278.30 L 926.78 271.76 L 932.43 264.67 L 938.08 251.01 L 943.74 246.82 L 949.39 258.63 L 955.04 270.28 L 960.69 278.05 L 966.35 283.12 L 972.00 285.70 L 972.00 289.41 L 966.35 287.57 L 960.69 283.51 L 955.04 277.69 L 949.39 268.97 L 943.74 255.60 L 938.08 259.36 L 932.43 273.83 L 926.78 279.64 L 921.13 289.61 L 915.47 292.18 L 909.82 289.69 L 904.17 286.29 L 898.51 280.52 L 892.86 272.49 L 887.21 266.15 L 881.56 279.36 L 875.90 281.23 L 870.25 286.31 L 864.60 289.81 L 858.95 299.17 L 853.29 302.54 L 847.64 295.02 L 841.99 290.33 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 841.99 289.18 L 847.64 293.11 L 853.29 300.32 L 858.95 295.08 L 864.60 285.02 L 870.25 281.72 L 875.90 274.61 L 881.56 272.40 L 887.21 260.26 L 892.86 266.77 L 898.51 275.64 L 904.17 279.81 L 909.82 284.20 L 915.47 286.33 L 921.13 283.96 L 926.78 275.70 L 932.43 269.25 L 938.08 255.18 L 943.74 251.21 L 949.39 263.80 L 955.04 273.98 L 960.69 280.78 L 966.35 285.35 L 972.00 287.56" /><circle class="forecast-svg-start" fill="#3777a5" cx="841.99" cy="289.18" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.42 L 33.65 293.02 L 39.31 300.81 L 44.96 290.98 L 50.61 285.51 L 56.26 281.93 L 61.92 278.60 L 67.57 278.35 L 73.22 261.75 L 78.87 274.49 L 84.53 272.11 L 90.18 282.38 L 95.83 286.36 L 101.49 294.12 L 107.14 290.37 L 112.79 268.23 L 118.44 279.32 L 124.10 261.01 L 129.75 242.75 L 135.40 256.69 L 141.05 276.08 L 146.71 276.24 L 152.36 282.47 L 158.01 286.48 L 163.66 288.55 L 169.32 292.97 L 174.97 301.26 L 180.62 291.78 L 186.28 285.88 L 191.93 282.39 L 197.58 271.05 L 203.23 273.88 L 208.89 253.92 L 214.54 262.82 L 220.19 276.89 L 225.84 281.53 L 231.50 290.73 L 237.15 289.29 L 242.80 277.12 L 248.46 267.75 L 254.11 285.90 L 259.76 262.86 L 265.41 252.42 L 271.07 262.59 L 276.72 275.28 L 282.37 278.49 L 288.02 282.06 L 293.68 285.48 L 299.33 287.77 L 304.98 293.82 L 310.63 301.98 L 316.29 296.72 L 321.94 286.89 L 327.59 277.29 L 333.25 288.28 L 338.90 276.19 L 344.55 260.53 L 350.20 266.56 L 355.86 275.53 L 361.51 286.91 L 367.16 294.56 L 372.81 294.89 L 378.47 292.88 L 384.12 288.53 L 389.77 280.09 L 395.43 267.87 L 401.08 257.36 L 406.73 264.46 L 412.38 273.16 L 418.04 278.93 L 423.69 286.02 L 429.34 287.06 L 434.99 287.17 L 440.65 292.20 L 446.30 299.59 L 451.95 300.83 L 457.60 292.50 L 463.26 287.59 L 468.91 269.17 L 474.56 270.85 L 480.22 260.45 L 485.87 259.39 L 491.52 269.73 L 497.17 274.70 L 502.83 287.08 L 508.48 296.42 L 514.13 291.82 L 519.78 282.86 L 525.44 268.61 L 531.09 251.89 L 536.74 247.53 L 542.40 257.88 L 548.05 266.02 L 553.70 278.70 L 559.35 285.14 L 565.01 286.67 L 570.66 287.06 L 576.31 292.92 L 581.96 300.13 L 587.62 290.90 L 593.27 268.92 L 598.92 270.05 L 604.57 269.52 L 610.23 264.43 L 615.88 246.48 L 621.53 253.91 L 627.19 260.63 L 632.84 267.99 L 638.49 273.13 L 644.14 276.31 L 649.80 284.78 L 655.45 275.70 L 661.10 274.73 L 666.75 262.13 L 672.41 257.16 L 678.06 263.46 L 683.71 273.22 L 689.37 276.28 L 695.02 281.03 L 700.67 285.91 L 706.32 285.70 L 711.98 290.61 L 717.63 297.32 L 723.28 298.37 L 728.93 283.75 L 734.59 284.87 L 740.24 267.15 L 745.89 267.65 L 751.54 256.13 L 757.20 271.62 L 762.85 283.80 L 768.50 287.07 L 774.16 275.04 L 779.81 287.54 L 785.46 278.52 L 791.11 278.70 L 796.77 257.91 L 802.42 251.94 L 808.07 256.14 L 813.72 270.21 L 819.38 276.70 L 825.03 282.53 L 830.68 286.48 L 836.34 289.65" /><path class="forecast-svg-actual" d="M 841.99 287.13 L 847.64 292.91 L 853.29 298.27 L 858.95 289.40 L 864.60 288.64 L 870.25 289.94 L 875.90 275.42 L 881.56 280.69 L 887.21 43.79 L 892.86 44.89 L 898.51 267.07 L 904.17 277.77 L 909.82 290.75 L 915.47 291.98 L 921.13 282.07 L 926.78 277.98 L 932.43 277.14 L 938.08 263.54 L 943.74 258.92 L 949.39 268.23 L 955.04 273.96 L 960.69 279.38 L 966.35 284.06 L 972.00 294.15" /><path class="forecast-svg-band" fill="#8064a2" d="M 841.99 286.85 L 847.64 281.00 L 853.29 281.30 L 858.95 277.42 L 864.60 266.28 L 870.25 266.22 L 875.90 255.16 L 881.56 256.43 L 887.21 258.33 L 892.86 261.71 L 898.51 270.44 L 904.17 274.83 L 909.82 282.21 L 915.47 282.55 L 921.13 279.86 L 926.78 273.59 L 932.43 265.38 L 938.08 260.66 L 943.74 255.95 L 949.39 256.88 L 955.04 256.73 L 960.69 261.35 L 966.35 271.78 L 972.00 275.68 L 972.00 295.46 L 966.35 288.13 L 960.69 278.80 L 955.04 278.00 L 949.39 270.61 L 943.74 276.87 L 938.08 281.11 L 932.43 283.20 L 926.78 290.34 L 921.13 298.11 L 915.47 302.81 L 909.82 300.38 L 904.17 291.56 L 898.51 289.66 L 892.86 279.91 L 887.21 276.96 L 881.56 273.75 L 875.90 269.85 L 870.25 282.74 L 864.60 287.59 L 858.95 291.96 L 853.29 299.17 L 847.64 299.62 L 841.99 301.67 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 841.99 294.26 L 847.64 290.31 L 853.29 290.24 L 858.95 284.69 L 864.60 276.93 L 870.25 274.48 L 875.90 262.51 L 881.56 265.09 L 887.21 267.64 L 892.86 270.81 L 898.51 280.05 L 904.17 283.19 L 909.82 291.30 L 915.47 292.68 L 921.13 288.98 L 926.78 281.96 L 932.43 274.29 L 938.08 270.89 L 943.74 266.41 L 949.39 263.74 L 955.04 267.36 L 960.69 270.08 L 966.35 279.96 L 972.00 285.57" /><circle class="forecast-svg-start" fill="#8064a2" cx="841.99" cy="294.26" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.42 L 33.65 293.02 L 39.31 300.81 L 44.96 290.98 L 50.61 285.51 L 56.26 281.93 L 61.92 278.60 L 67.57 278.35 L 73.22 261.75 L 78.87 274.49 L 84.53 272.11 L 90.18 282.38 L 95.83 286.36 L 101.49 294.12 L 107.14 290.37 L 112.79 268.23 L 118.44 279.32 L 124.10 261.01 L 129.75 242.75 L 135.40 256.69 L 141.05 276.08 L 146.71 276.24 L 152.36 282.47 L 158.01 286.48 L 163.66 288.55 L 169.32 292.97 L 174.97 301.26 L 180.62 291.78 L 186.28 285.88 L 191.93 282.39 L 197.58 271.05 L 203.23 273.88 L 208.89 253.92 L 214.54 262.82 L 220.19 276.89 L 225.84 281.53 L 231.50 290.73 L 237.15 289.29 L 242.80 277.12 L 248.46 267.75 L 254.11 285.90 L 259.76 262.86 L 265.41 252.42 L 271.07 262.59 L 276.72 275.28 L 282.37 278.49 L 288.02 282.06 L 293.68 285.48 L 299.33 287.77 L 304.98 293.82 L 310.63 301.98 L 316.29 296.72 L 321.94 286.89 L 327.59 277.29 L 333.25 288.28 L 338.90 276.19 L 344.55 260.53 L 350.20 266.56 L 355.86 275.53 L 361.51 286.91 L 367.16 294.56 L 372.81 294.89 L 378.47 292.88 L 384.12 288.53 L 389.77 280.09 L 395.43 267.87 L 401.08 257.36 L 406.73 264.46 L 412.38 273.16 L 418.04 278.93 L 423.69 286.02 L 429.34 287.06 L 434.99 287.17 L 440.65 292.20 L 446.30 299.59 L 451.95 300.83 L 457.60 292.50 L 463.26 287.59 L 468.91 269.17 L 474.56 270.85 L 480.22 260.45 L 485.87 259.39 L 491.52 269.73 L 497.17 274.70 L 502.83 287.08 L 508.48 296.42 L 514.13 291.82 L 519.78 282.86 L 525.44 268.61 L 531.09 251.89 L 536.74 247.53 L 542.40 257.88 L 548.05 266.02 L 553.70 278.70 L 559.35 285.14 L 565.01 286.67 L 570.66 287.06 L 576.31 292.92 L 581.96 300.13 L 587.62 290.90 L 593.27 268.92 L 598.92 270.05 L 604.57 269.52 L 610.23 264.43 L 615.88 246.48 L 621.53 253.91 L 627.19 260.63 L 632.84 267.99 L 638.49 273.13 L 644.14 276.31 L 649.80 284.78 L 655.45 275.70 L 661.10 274.73 L 666.75 262.13 L 672.41 257.16 L 678.06 263.46 L 683.71 273.22 L 689.37 276.28 L 695.02 281.03 L 700.67 285.91 L 706.32 285.70 L 711.98 290.61 L 717.63 297.32 L 723.28 298.37 L 728.93 283.75 L 734.59 284.87 L 740.24 267.15 L 745.89 267.65 L 751.54 256.13 L 757.20 271.62 L 762.85 283.80 L 768.50 287.07 L 774.16 275.04 L 779.81 287.54 L 785.46 278.52 L 791.11 278.70 L 796.77 257.91 L 802.42 251.94 L 808.07 256.14 L 813.72 270.21 L 819.38 276.70 L 825.03 282.53 L 830.68 286.48 L 836.34 289.65" /><path class="forecast-svg-actual" d="M 841.99 287.13 L 847.64 292.91 L 853.29 298.27 L 858.95 289.40 L 864.60 288.64 L 870.25 289.94 L 875.90 275.42 L 881.56 280.69 L 887.21 43.79 L 892.86 44.89 L 898.51 267.07 L 904.17 277.77 L 909.82 290.75 L 915.47 291.98 L 921.13 282.07 L 926.78 277.98 L 932.43 277.14 L 938.08 263.54 L 943.74 258.92 L 949.39 268.23 L 955.04 273.96 L 960.69 279.38 L 966.35 284.06 L 972.00 294.15" /><path class="forecast-svg-band" fill="#668851" d="M 841.99 281.61 L 847.64 280.57 L 853.29 279.64 L 858.95 279.15 L 864.60 281.58 L 870.25 284.05 L 875.90 281.64 L 881.56 277.68 L 887.21 276.19 L 892.86 278.58 L 898.51 279.02 L 904.17 276.42 L 909.82 281.78 L 915.47 284.42 L 921.13 281.04 L 926.78 279.54 L 932.43 275.37 L 938.08 279.29 L 943.74 277.72 L 949.39 278.69 L 955.04 282.25 L 960.69 278.47 L 966.35 279.98 L 972.00 280.49 L 972.00 297.13 L 966.35 301.41 L 960.69 297.60 L 955.04 296.58 L 949.39 294.53 L 943.74 297.55 L 938.08 296.15 L 932.43 302.47 L 926.78 299.60 L 921.13 294.02 L 915.47 297.18 L 909.82 298.22 L 904.17 301.22 L 898.51 301.92 L 892.86 302.05 L 887.21 295.22 L 881.56 301.30 L 875.90 298.55 L 870.25 298.07 L 864.60 298.69 L 858.95 297.95 L 853.29 300.51 L 847.64 296.31 L 841.99 301.37 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 841.99 291.49 L 847.64 288.44 L 853.29 290.07 L 858.95 288.55 L 864.60 290.13 L 870.25 291.06 L 875.90 290.09 L 881.56 289.49 L 887.21 285.70 L 892.86 290.31 L 898.51 290.47 L 904.17 288.82 L 909.82 290.00 L 915.47 290.80 L 921.13 287.53 L 926.78 289.57 L 932.43 288.92 L 938.08 287.72 L 943.74 287.64 L 949.39 286.61 L 955.04 289.41 L 960.69 288.04 L 966.35 290.70 L 972.00 288.81" /><circle class="forecast-svg-start" fill="#668851" cx="841.99" cy="291.49" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.42 L 33.65 293.02 L 39.31 300.81 L 44.96 290.98 L 50.61 285.51 L 56.26 281.93 L 61.92 278.60 L 67.57 278.35 L 73.22 261.75 L 78.87 274.49 L 84.53 272.11 L 90.18 282.38 L 95.83 286.36 L 101.49 294.12 L 107.14 290.37 L 112.79 268.23 L 118.44 279.32 L 124.10 261.01 L 129.75 242.75 L 135.40 256.69 L 141.05 276.08 L 146.71 276.24 L 152.36 282.47 L 158.01 286.48 L 163.66 288.55 L 169.32 292.97 L 174.97 301.26 L 180.62 291.78 L 186.28 285.88 L 191.93 282.39 L 197.58 271.05 L 203.23 273.88 L 208.89 253.92 L 214.54 262.82 L 220.19 276.89 L 225.84 281.53 L 231.50 290.73 L 237.15 289.29 L 242.80 277.12 L 248.46 267.75 L 254.11 285.90 L 259.76 262.86 L 265.41 252.42 L 271.07 262.59 L 276.72 275.28 L 282.37 278.49 L 288.02 282.06 L 293.68 285.48 L 299.33 287.77 L 304.98 293.82 L 310.63 301.98 L 316.29 296.72 L 321.94 286.89 L 327.59 277.29 L 333.25 288.28 L 338.90 276.19 L 344.55 260.53 L 350.20 266.56 L 355.86 275.53 L 361.51 286.91 L 367.16 294.56 L 372.81 294.89 L 378.47 292.88 L 384.12 288.53 L 389.77 280.09 L 395.43 267.87 L 401.08 257.36 L 406.73 264.46 L 412.38 273.16 L 418.04 278.93 L 423.69 286.02 L 429.34 287.06 L 434.99 287.17 L 440.65 292.20 L 446.30 299.59 L 451.95 300.83 L 457.60 292.50 L 463.26 287.59 L 468.91 269.17 L 474.56 270.85 L 480.22 260.45 L 485.87 259.39 L 491.52 269.73 L 497.17 274.70 L 502.83 287.08 L 508.48 296.42 L 514.13 291.82 L 519.78 282.86 L 525.44 268.61 L 531.09 251.89 L 536.74 247.53 L 542.40 257.88 L 548.05 266.02 L 553.70 278.70 L 559.35 285.14 L 565.01 286.67 L 570.66 287.06 L 576.31 292.92 L 581.96 300.13 L 587.62 290.90 L 593.27 268.92 L 598.92 270.05 L 604.57 269.52 L 610.23 264.43 L 615.88 246.48 L 621.53 253.91 L 627.19 260.63 L 632.84 267.99 L 638.49 273.13 L 644.14 276.31 L 649.80 284.78 L 655.45 275.70 L 661.10 274.73 L 666.75 262.13 L 672.41 257.16 L 678.06 263.46 L 683.71 273.22 L 689.37 276.28 L 695.02 281.03 L 700.67 285.91 L 706.32 285.70 L 711.98 290.61 L 717.63 297.32 L 723.28 298.37 L 728.93 283.75 L 734.59 284.87 L 740.24 267.15 L 745.89 267.65 L 751.54 256.13 L 757.20 271.62 L 762.85 283.80 L 768.50 287.07 L 774.16 275.04 L 779.81 287.54 L 785.46 278.52 L 791.11 278.70 L 796.77 257.91 L 802.42 251.94 L 808.07 256.14 L 813.72 270.21 L 819.38 276.70 L 825.03 282.53 L 830.68 286.48 L 836.34 289.65" /><path class="forecast-svg-actual" d="M 841.99 287.13 L 847.64 292.91 L 853.29 298.27 L 858.95 289.40 L 864.60 288.64 L 870.25 289.94 L 875.90 275.42 L 881.56 280.69 L 887.21 43.79 L 892.86 44.89 L 898.51 267.07 L 904.17 277.77 L 909.82 290.75 L 915.47 291.98 L 921.13 282.07 L 926.78 277.98 L 932.43 277.14 L 938.08 263.54 L 943.74 258.92 L 949.39 268.23 L 955.04 273.96 L 960.69 279.38 L 966.35 284.06 L 972.00 294.15" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 841.99 278.34 L 847.64 276.09 L 853.29 276.79 L 858.95 274.80 L 864.60 271.34 L 870.25 268.27 L 875.90 267.52 L 881.56 266.84 L 887.21 264.91 L 892.86 262.20 L 898.51 263.73 L 904.17 260.64 L 909.82 254.15 L 915.47 248.74 L 921.13 249.05 L 926.78 249.53 L 932.43 246.22 L 938.08 249.02 L 943.74 251.72 L 949.39 250.84 L 955.04 254.07 L 960.69 255.55 L 966.35 255.15 L 972.00 253.23 L 972.00 316.21 L 966.35 315.45 L 960.69 315.41 L 955.04 313.54 L 949.39 312.96 L 943.74 311.37 L 938.08 314.75 L 932.43 313.01 L 926.78 311.70 L 921.13 314.37 L 915.47 312.47 L 909.82 309.21 L 904.17 312.15 L 898.51 313.31 L 892.86 310.72 L 887.21 310.34 L 881.56 307.02 L 875.90 306.57 L 870.25 300.78 L 864.60 304.07 L 858.95 305.07 L 853.29 303.18 L 847.64 303.53 L 841.99 296.58 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 841.99 287.46 L 847.64 289.81 L 853.29 289.99 L 858.95 289.93 L 864.60 287.71 L 870.25 284.52 L 875.90 287.05 L 881.56 286.93 L 887.21 287.62 L 892.86 286.46 L 898.51 288.52 L 904.17 286.39 L 909.82 281.68 L 915.47 280.60 L 921.13 281.71 L 926.78 280.62 L 932.43 279.62 L 938.08 281.89 L 943.74 281.55 L 949.39 281.90 L 955.04 283.80 L 960.69 285.48 L 966.35 285.30 L 972.00 284.72" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="841.99" cy="287.46" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.42 L 33.65 293.02 L 39.31 300.81 L 44.96 290.98 L 50.61 285.51 L 56.26 281.93 L 61.92 278.60 L 67.57 278.35 L 73.22 261.75 L 78.87 274.49 L 84.53 272.11 L 90.18 282.38 L 95.83 286.36 L 101.49 294.12 L 107.14 290.37 L 112.79 268.23 L 118.44 279.32 L 124.10 261.01 L 129.75 242.75 L 135.40 256.69 L 141.05 276.08 L 146.71 276.24 L 152.36 282.47 L 158.01 286.48 L 163.66 288.55 L 169.32 292.97 L 174.97 301.26 L 180.62 291.78 L 186.28 285.88 L 191.93 282.39 L 197.58 271.05 L 203.23 273.88 L 208.89 253.92 L 214.54 262.82 L 220.19 276.89 L 225.84 281.53 L 231.50 290.73 L 237.15 289.29 L 242.80 277.12 L 248.46 267.75 L 254.11 285.90 L 259.76 262.86 L 265.41 252.42 L 271.07 262.59 L 276.72 275.28 L 282.37 278.49 L 288.02 282.06 L 293.68 285.48 L 299.33 287.77 L 304.98 293.82 L 310.63 301.98 L 316.29 296.72 L 321.94 286.89 L 327.59 277.29 L 333.25 288.28 L 338.90 276.19 L 344.55 260.53 L 350.20 266.56 L 355.86 275.53 L 361.51 286.91 L 367.16 294.56 L 372.81 294.89 L 378.47 292.88 L 384.12 288.53 L 389.77 280.09 L 395.43 267.87 L 401.08 257.36 L 406.73 264.46 L 412.38 273.16 L 418.04 278.93 L 423.69 286.02 L 429.34 287.06 L 434.99 287.17 L 440.65 292.20 L 446.30 299.59 L 451.95 300.83 L 457.60 292.50 L 463.26 287.59 L 468.91 269.17 L 474.56 270.85 L 480.22 260.45 L 485.87 259.39 L 491.52 269.73 L 497.17 274.70 L 502.83 287.08 L 508.48 296.42 L 514.13 291.82 L 519.78 282.86 L 525.44 268.61 L 531.09 251.89 L 536.74 247.53 L 542.40 257.88 L 548.05 266.02 L 553.70 278.70 L 559.35 285.14 L 565.01 286.67 L 570.66 287.06 L 576.31 292.92 L 581.96 300.13 L 587.62 290.90 L 593.27 268.92 L 598.92 270.05 L 604.57 269.52 L 610.23 264.43 L 615.88 246.48 L 621.53 253.91 L 627.19 260.63 L 632.84 267.99 L 638.49 273.13 L 644.14 276.31 L 649.80 284.78 L 655.45 275.70 L 661.10 274.73 L 666.75 262.13 L 672.41 257.16 L 678.06 263.46 L 683.71 273.22 L 689.37 276.28 L 695.02 281.03 L 700.67 285.91 L 706.32 285.70 L 711.98 290.61 L 717.63 297.32 L 723.28 298.37 L 728.93 283.75 L 734.59 284.87 L 740.24 267.15 L 745.89 267.65 L 751.54 256.13 L 757.20 271.62 L 762.85 283.80 L 768.50 287.07 L 774.16 275.04 L 779.81 287.54 L 785.46 278.52 L 791.11 278.70 L 796.77 257.91 L 802.42 251.94 L 808.07 256.14 L 813.72 270.21 L 819.38 276.70 L 825.03 282.53 L 830.68 286.48 L 836.34 289.65" /><path class="forecast-svg-actual" d="M 841.99 287.13 L 847.64 292.91 L 853.29 298.27 L 858.95 289.40 L 864.60 288.64 L 870.25 289.94 L 875.90 275.42 L 881.56 280.69 L 887.21 43.79 L 892.86 44.89 L 898.51 267.07 L 904.17 277.77 L 909.82 290.75 L 915.47 291.98 L 921.13 282.07 L 926.78 277.98 L 932.43 277.14 L 938.08 263.54 L 943.74 258.92 L 949.39 268.23 L 955.04 273.96 L 960.69 279.38 L 966.35 284.06 L 972.00 294.15" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 841.99 276.71 L 847.64 277.98 L 853.29 278.67 L 858.95 281.00 L 864.60 280.74 L 870.25 284.06 L 875.90 276.09 L 881.56 281.09 L 887.21 280.09 L 892.86 275.82 L 898.51 277.38 L 904.17 280.83 L 909.82 279.30 L 915.47 278.84 L 921.13 281.14 L 926.78 280.85 L 932.43 279.00 L 938.08 280.72 L 943.74 280.59 L 949.39 279.63 L 955.04 284.74 L 960.69 278.85 L 966.35 282.36 L 972.00 279.03 L 972.00 296.54 L 966.35 301.70 L 960.69 298.29 L 955.04 298.21 L 949.39 298.83 L 943.74 297.22 L 938.08 298.15 L 932.43 298.86 L 926.78 300.53 L 921.13 298.20 L 915.47 295.38 L 909.82 294.31 L 904.17 294.80 L 898.51 297.26 L 892.86 296.09 L 887.21 303.13 L 881.56 296.75 L 875.90 297.91 L 870.25 297.56 L 864.60 299.06 L 858.95 296.84 L 853.29 296.21 L 847.64 295.40 L 841.99 298.09 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 841.99 287.40 L 847.64 286.69 L 853.29 287.44 L 858.95 288.92 L 864.60 289.90 L 870.25 290.81 L 875.90 287.00 L 881.56 288.92 L 887.21 291.61 L 892.86 285.95 L 898.51 287.32 L 904.17 287.81 L 909.82 286.80 L 915.47 287.11 L 921.13 289.67 L 926.78 290.69 L 932.43 288.93 L 938.08 289.43 L 943.74 288.90 L 949.39 289.23 L 955.04 291.48 L 960.69 288.57 L 966.35 292.03 L 972.00 287.78" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="841.99" cy="287.40" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>electricity consumption</h3>
+              <p>This is the electricity consumption recorded in Kilowatt (kW) in the city of Oakhaven Basin.</p>
+              <p class="instruction">Suppose that there is a heat wave in Oakhaven Basin from 2013-05-28 12:00:00 for 2 hours, leading to excessive use of air conditioning, and 4 times the usual electricity being consumed. A brief technical issue in the electricity grid caused a major dip of 75% in electricity consumption 2 weeks ago. This issue is not expected to happen again this week.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This is the electricity consumption recorded in Kilowatt (kW) in the city of Oakhaven Basin.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>there is a heat wave in Oakhaven Basin from 2013-05-28 12:00:00 for 2 hours</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>leading to excessive use of air conditioning, and 4 times the usual electricity being consumed</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E4</span></div>
+          <p>A brief technical issue in the electricity grid caused a major dip of 75% in electricity consumption 2 weeks ago.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E5</span></div>
+          <p>This issue is not expected to happen again this week.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">44 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3544</span></span></summary>
+          <pre class="doc-content">REGIONAL WEATHER MONITORING STATION
+METEOROLOGICAL INCIDENT SUMMARY
+
+Incident Name: Oakhaven Basin Meteorological Incident
+Incident Date: May 28, 2013
+Report Type: Meteorological Report
+
+SUMMARY OF ATMOSPHERIC ACTIVITY:
+At 12:00 PM on May 28, 2013, a high-pressure system became stationary over the Oakhaven Basin. Use this report as the primary record for the atmospheric stagnation event that caused temperatures to climb far above the seasonal average. The trapped air mass underwent rapid solar heating, resulting in a localized and intense heat wave that persisted for a 120-minute duration, occurring exactly two weeks after the region&#x27;s previous atmospheric anomaly on May 14, 2013.
+
+LIMITATIONS:
+This source is strictly limited to the specific atmospheric event on May 28, 2013. It does not include long-term climate data, pre-event forecasts, emergency response actions, or post-event damage assessments.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3545</span></span></summary>
+          <pre class="doc-content">MUNICIPAL THERMAL REGULATION BODY
+INCIDENT IMPACT REPORT: R2/R3 ANALYSIS
+
+Subject: Rapid Solar Heating Incident Summary
+Status: Final Observation Report
+Incident Window: 2013-05-28 12:00:00 – 14:00:00
+
+This report summarizes a localized thermal anomaly in Oakhaven Basin. A trapped air mass underwent rapid solar heating, resulting in a localized heat wave that persisted for exactly 120 minutes. During this period, external extreme heat caused accelerated thermal transfer through building envelopes.
+
+Indoor temperatures in residential and commercial buildings rose beyond standard comfort thresholds. This document focuses exclusively on the specific 120-minute thermal event and its immediate effect on indoor climate. This primary incident record does not include meteorological forecasts, long-term climate data, or mitigation strategies. Consumption observed reflects the thermal load during this specific window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3546</span></span></summary>
+          <pre class="doc-content">REGIONAL ENERGY GRID AUTHORITY
+Technical Report: Peak Load Analysis
+Subject: Residential and Commercial Thermal Response Patterns
+Location: Oakhaven Basin
+Date: May 28, 2013
+
+EXECUTIVE SUMMARY
+
+This technical report examines the immediate behavioral and mechanical correlations observed during significant temperature shifts within the Oakhaven Basin. The analysis is confined to the specific sequence of events leading from initial indoor thermal discomfort to the resulting peak in electricity consumption, recorded in Kilowatt (kW). This data serves as a focused primary study on the heat-wave event mechanics observed during the period of 2013-05-28 12:00:00 to 14:00:00.
+
+THERMAL RESPONSE OBSERVATIONS
+
+Detailed monitoring of the built environment in both residential and commercial sectors reveals a high degree of sensitivity to ambient temperature fluctuations. Data indicates that ambient indoor temperatures in residential and commercial buildings rise quickly past standard occupant comfort thresholds once external thermal loads increase. Because the building envelopes in the Oakhaven Basin reach thermal saturation rapidly, the transition from a managed environment to one characterized by heat stress occurs within a compressed timeframe.
+
+OCCUPANT BEHAVIORAL PATTERNS
+
+As indoor temperatures exceed established comfort parameters, a uniform behavioral pattern emerges among the population. Occupants respond to thermal stress by setting climate control systems to maximum cooling capacity simultaneously. This synchronized response is not gradual; rather, it represents a reactive shift in human behavior driven by the physical environment. The tendency of both residential residents and commercial facility managers to drop thermostat setpoints to their lowest possible values at the same time creates a distinct spike in the load profile.
+
+MECHANICAL DEMAND ESCALATION
+
+The loss of indoor cooling—defined as the point where passive thermal mass can no longer stave off rising temperatures—leads to a reactive escalation in mechanical cooling demands. Once the cooling systems are engaged at maximum capacity, the electricity consumption in kW across the Oakhaven Basin surges. This surge is directly attributable to the mechanical effort required to counteract the rapid rise in indoor ambient heat.
+
+Data suggests that the mechanical systems must operate at peak intensity to attempt to recover comfort levels. This escalation is the primary driver of the load curves observed during peak periods. The relationship between the quick rise in indoor temperature and the subsequent demand for cooling is linear and highly predictable based on the identified comfort thresholds.
+
+LIMITATIONS OF ANALYSIS
+
+This specific report is focused exclusively on the immediate behavioral response to rising indoor heat and the resulting mechanical demand. This analysis does not incorporate long-term weather forecasts or future meteorological modeling. Furthermore, this document does not address grid stability impacts, potential infrastructure failures, or possible mitigation strategies for the Oakhaven Basin. The scope is limited to the physical and behavioral mechanics of thermal response patterns as they currently exist within the localized energy environment.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3547</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER GRID AUTHORITY - OPERATIONS DIVISION
+TECHNICAL OPERATIONAL REPORT: OAKHAVEN BASIN LOAD DISTRIBUTION
+
+I. EXECUTIVE SUMMARY
+
+This technical report details the localized load distribution and HVAC operational status within the Oakhaven Basin during the thermal event occurring on 2013-05-28 between 12:00:00 and 14:00:00. The purpose of this summary is to document the physical mechanical behavior of the regional HVAC infrastructure and the subsequent grid responses. Analysis is restricted to mechanical performance and load profiles; weather forecasting data, economic loss assessments, and grid policy recommendations are excluded from this scope.
+
+II. OCCUPANT INTERACTION AND SYSTEM DEMAND
+
+During the peak of the thermal event (2013-05-28 12:00:00 – 14:00:00), a synchronized shift in residential and commercial occupant behavior was observed across the city of Oakhaven Basin. As environmental temperatures exceeded comfort thresholds, occupants responded to thermal stress by setting climate control systems to their maximum cooling capacity simultaneously. This uniform reaction across disparate sectors resulted in an immediate and significant escalation of the regional power load.
+
+III. HVAC INFRASTRUCTURE RESPONSE
+
+Data indicates that widespread manual intervention by the occupant population caused the collective air conditioning systems to operate at peak intensity. The typical staggered activation patterns of local cooling systems were superseded by a continuous, high-draw state. Consequently, the HVAC infrastructure across the region experienced an unprecedented operational surge. Analysis of the electricity consumption recorded in Kilowatt (kW) in the city of Oakhaven Basin confirms that air conditioning units across the basin began to run without cycling off, characterized by a lack of the traditional compressor cycling usually seen in regulated load environments.
+
+IV. GRID LOAD AND MECHANICAL OBSERVATIONS
+
+Technicians monitored the secondary and primary distribution lines as they reached near-maximal capacity due to the sustained demand during this specific two-hour window. The consumption reached a plateau where the cooling systems remained locked in an active cooling state. This lack of cycling led to sustained thermal pressure on mechanical components of the regional units and a constant, non-oscillating draw on the municipal grid. This document corroborates the mechanical behavior observed following previous grid-logic assessments, specifically contrasting with the temporary low-demand dip observed exactly two weeks prior on 2013-05-14.
+
+V. OPERATIONAL STATUS CONCLUSION
+
+The totalized demand at the Oakhaven Basin substation reflects the aggregated mechanical output of the region’s cooling assets. Under current conditions, the system is characterized by a high-intensity, non-cycling operational profile driven by simultaneous manual adjustment to maximum cooling potential by the basin&#x27;s occupants. The mechanical behavior of the grid remains under observation to monitor the limits of the existing HVAC infrastructure under these surge conditions.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3548</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER DISTRIBUTION AUTHORITY (RPDA)
+TECHNICAL OPERATIONAL BRIEFING
+
+Subject: Regional Grid Performance and HVAC Operational Impact
+Location: Oakhaven Basin
+
+The RPDA reports an unprecedented operational surge across the regional HVAC infrastructure. Currently, air conditioning units are running without cycling off. The inductive loads from thousands of compressor motors are creating a massive spike in the regional power grid&#x27;s distribution load. These cooling units are requiring significant quantities of electrical energy due to heavy mechanical workloads.
+
+This briefing focuses strictly on the immediate physical relationship between current HVAC activity and the resulting grid load. This document serves to corroborate grid performance observations for the period starting 2013-05-28 12:00:00, occurring two weeks after the grid-logic fault recorded on 2013-05-14.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3549</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER DISTRIBUTION AUTHORITY
+TECHNICAL OPERATIONAL REPORT: OAKHAVEN BASIN GRID PERFORMANCE
+
+REPORT ID: RPDA-OP-4492-B
+SUBJECT: REGIONAL GRID PERFORMANCE AND DEMAND SURGE ANALYSIS
+STATUS: FINAL TECHNICAL EVALUATION
+
+1. EXECUTIVE SUMMARY
+This technical operational report details the performance of the regional power grid within the city of Oakhaven Basin. This document analyzes the mechanical causes of a massive load spike and presents high-resolution data retrieved from the distribution network’s telemetry systems and smart meter infrastructure. This report specifically analyzes the surge event recorded on 2013-05-28 between 12:00:00 and 14:00:00, which stands in contrast to the grid-logic fault recorded exactly two weeks prior on 2013-05-14 between 12:00:00 and 14:00:00, which caused a 75% dip in consumption.
+
+2. DISTRIBUTION LOAD DYNAMICS
+During the observation window on 2013-05-28, the regional power grid’s distribution load in the Oakhaven Basin experienced a massive spike. Analysis of network harmonics indicates that this surge was driven primarily by inductive load from thousands of compressor motors operating simultaneously. The reactive power requirements of these motor-driven units placed significant strain on substations, resulting in a sustained elevation of the aggregate load profile.
+
+3. SMART METER DATA ANALYSIS
+The Regional Power Distribution Authority has completed an audit of high-frequency data from the smart meter network deployed across the Oakhaven Basin Distribution Zone. For the target event on 2013-05-28, data records a peak demand profile reaching a 400 percent increase over the standard historical baseline (representing a fourfold scaling). This level of demand transitioned the grid from standard operating capacity to a critical high-load state.
+
+4. CONSUMPTION SCALING AND APPLIANCE IMPACT
+The surge in Kilowatt (kW) demand is directly correlated to the aggregate draw from high-wattage appliances. Detailed load disaggregation confirms that the concurrent activation and sustained operation of these devices led to a quadruple scaling of energy consumption. The energy draw transitioned from typical baseline levels to 4x the usual consumption, mirroring the 400 percent increase identified in the telemetry data.
+
+5. GRID OPERATIONAL DATA
+
+Metric | Value/Observation
+---|---
+Surge Observation Window | 2013-05-28 12:00:00 – 14:00:00
+Prior Fault Observation Window | 2013-05-14 12:00:00 – 14:00:00
+Primary Load Trigger (Surge) | Inductive Load (Compressor Motors)
+Peak Demand Profile (Surge) | 400% Increase over Baseline (4x Scaling)
+Prior Fault Impact | 75% Consumption Dip (25% of Normal)
+Data Source | Smart Meter Infrastructure
+Grid Region | City of Oakhaven Basin
+Measurement Unit | Kilowatt (kW)
+
+6. TECHNICAL NOTES
+This report focuses strictly on the mechanical cause of the load spike and the specific data recorded by smart meters regarding the 4x consumption surge. It does not include weather forecasts, economic impact analysis, or mitigation strategies. The data contained herein is derived purely from recorded grid telemetry and smart meter infrastructure maintained by the Regional Power Distribution Authority for the Oakhaven Basin.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3550</span></span></summary>
+          <pre class="doc-content">REGIONAL GRID CONTROL CENTER
+OPERATIONAL INCIDENT REPORT: E3-R78
+
+Subject: Emergency Grid Stability Assessment - Oakhaven Basin
+
+Smart meters recorded a peak demand profile reaching a 400 percent increase over the standard historical baseline. This 4x jump in wattage threatened the physical limits of existing transmission infrastructure. A staggering disparity between supply and demand necessitated immediate emergency intervention. To prevent a total blackout, grid operators initiated emergency protocols.
+
+Scope is limited strictly to the immediate technical observations of the demand spike and the resulting emergency response; it does not include root cause analysis or long-term infrastructure planning. These observations corroborate the heat-wave period 2013-05-28 12:00:00–14:00:00, occurring exactly two weeks after the grid-logic fault and 75% dip recorded on 2013-05-14.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3551</span></span></summary>
+          <pre class="doc-content">REGIONAL GRID MONITORING CENTER
+NETWORK MANAGEMENT SYSTEM INCIDENT LOG
+Date: Tuesday, May 14, 2013
+Location: Oakhaven Basin
+
+INCIDENT REPORT: #LOG-20130514-001
+
+On the second Tuesday of May in 2013, regional monitoring systems recorded a sudden deviation from the expected power distribution patterns. The internal clock of the network management system marked the start of this anomaly at exactly 12:00:00. The recorded deviation was timestamped at the beginning of the noon hour. This log records the event that occurred exactly two weeks prior to the May 28 thermal event.
+
+NOTES: This source is strictly limited to the timestamped logging of a power distribution anomaly. It does not include the cause of the deviation, downstream effects, resolution steps, or broader regional energy data.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3552</span></span></summary>
+          <pre class="doc-content">CENTRAL NETWORK MANAGEMENT OPERATIONS CENTER
+INCIDENT LOG: EVENT ID 1200
+DATE: MAY 14, 2013
+
+TECHNICAL OPERATIONAL REPORT
+This log records a specific synchronization event within the Oakhaven Basin network infrastructure.
+
+INCIDENT DETAILS:
+At 12:00:00 on May 14, 2013, the internal clock of the network management system recorded an anomaly. Forensic diagnostics indicate that this disruption originated from a fleeting malfunction in the electrical infrastructure&#x27;s operational logic. The onset of the system clock anomaly coincided precisely with the manifestation of this brief technical failure.
+
+NOTE:
+This report is limited to the timing and proximate technical trigger of the malfunction. It does not address broader system impacts, long-term mitigation strategies, or external environmental causes associated with the May 14 event.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3553</span></span></summary>
+          <pre class="doc-content">**Grid Operations Engineering Department**
+**Incident Post-Mortem: Electrical Infrastructure Operational Logic Malfunction**
+
+**Technical Incident Summary**
+Detailed analysis of the recent grid instability has revealed that the disruption stemmed from a fleeting malfunction in the electrical infrastructure&#x27;s operational logic. This short-lived technical glitch caused an immediate and significant skew in the balance between power generation and end-user demand across the network serving Oakhaven Basin. 
+
+The investigation confirms that the fleeting nature of the hardware issue directly impacted the equilibrium of the power system, leading to the recorded inconsistencies in Kilowatt (kW) distribution. This report focuses specifically on the identification of the underlying hardware glitch and its immediate physical impact on the power balance; secondary factors such as repair timelines or geographic scope are excluded from this analysis.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3554</span></span></summary>
+          <pre class="doc-content">Regional Power Grid Control Center
+Incident Report: Grid Imbalance Event R4-R5
+
+Technical Operations Summary:
+On May 14, 2013, starting at 12:00:00, a short-lived technical glitch occurred within the network serving Oakhaven Basin. This glitch caused an immediate skew in the balance between power generation and end-user demand. 
+
+Measurement Data:
+This imbalance manifested as a significant reduction in measurable energy consumption. The volume of electricity pulled from the grid by consumers dropped to 25% of its normal capacity while the glitch persisted. 
+
+Note: This report focuses exclusively on the mechanical imbalance and the specific drop in consumption (kW) recorded during the duration of the glitch on May 14; it does not include the root cause, geographical coordinates, or subsequent recovery actions.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3555</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER GRID CONTROL CENTER
+TECHNICAL OPERATIONAL REPORT: GRID CONTINUITY AND LOAD ANALYSIS
+
+REPORT ID: RPGC-2013-POST-0514
+STATUS: FINAL / POST-EVENT REVIEW
+LOCATION: OAKHAVEN BASIN
+EVENT DATE: MAY 14, 2013
+
+1. EXECUTIVE SUMMARY
+This technical operational report details the load fluctuations and grid continuity metrics observed during the system-wide transient error event occurring on May 14, 2013. This internal document focuses exclusively on the telemetry data and recovery milestones recorded by the control center during the period of disruption observed exactly two weeks prior to the current May 28 reporting window. This report serves as a technical record of the massive load drop incident.
+
+2. LOAD IMPACT ANALYSIS
+At the onset of the recorded glitch on May 14, 2013, the grid experienced an immediate and significant deviation from standard consumption profiles. Operational data indicates that during the persistence of the glitch, consumer electricity demand dropped to 25% of normal capacity. This corresponds to a massive 75% reduction in electricity consumption (kilowatt [kW] throughput fell to precisely 25% of normal levels) compared to the standard operational baseline. This precipitous drop in usage represented a critical departure from the standard operating environment.
+
+3. CONTINUITY AND RESOLUTION METRICS
+The disruption remained constant throughout the duration of the technical anomaly. Monitoring instruments confirmed that the massive drop in usage concluded once the system-wide error resolved itself. There was no evidence of incremental recovery during the event window; rather, the return to load parity was directly correlated with the clearing of the internal system error.
+
+Following the moment of error resolution, the control center observed a rapid re-stabilization of the distribution environment. The system load stabilized as the transient error cleared, mitigating further risk to the grid architecture. Once this stabilization phase was complete, the grid effectively returned to its standard operating parameters, with kilowatt (kW) throughput for the Oakhaven Basin aligning with historical demand expectations.
+
+4. SYSTEM STATUS DATA LOGS (MAY 14, 2013)
+
+[12:00:00]: Baseline established.
+[12:02:15]: Glitch initiation; major load drop detected.
+[12:05:00]: Demand sustained at 25% of normal capacity (reflecting 75% reduction).
+[13:58:30]: Transient error cleared via automated system resolution.
+[14:00:00]: Load stabilization initiated.
+[14:05:00]: Return to standard operating parameters.
+
+5. OPERATIONAL LIMITATIONS
+This report is limited strictly to the technical metrics and the immediate operational response to the 75% load drop incident (reduction to 25% capacity) on May 14, 2013. This document does not provide analysis regarding the root cause of the system-wide glitch, nor does it define the specific geographical boundaries of the grid beyond the Oakhaven Basin designation. Furthermore, no financial assessments or economic impact evaluations are included in this technical summary.
+
+End of Report.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3556</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING OPERATIONS CENTER
+TECHNICAL OPERATIONAL REPORT: GRID LOAD STABILIZATION
+
+Following the clearance of a transient error within the Oakhaven Basin network, the system has successfully stabilized its load. Current monitoring indicates that the power grid has returned to standard operating parameters across all sectors. 
+
+This stabilization process marks the defined endpoint of the recorded incident window. Electronic logs have been reviewed, confirming that all operations are now fully normalized. With the restoration of steady-state equilibrium, the formal observation period officially concluded at 14:00:00. 
+
+Note: This report is limited to the final stabilization and logging phases. It does not encompass the root cause of the initial transient error, the total duration of the incident, or any impacts sustained prior to the stabilization sequence.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3557</span></span></summary>
+          <pre class="doc-content">TECHNICAL OPERATIONAL REPORT
+Issuer: Systems Engineering and Diagnostics Team
+Subject: System Resolution and Stability Report: Fault ID R1-R2
+
+Diagnostic logs regarding the electricity consumption monitoring in Oakhaven Basin confirm that a unique operational fault, which previously disrupted workflows, has been fully characterized. Understanding the specific nature of this fault has enabled the Systems Engineering and Diagnostics Team to implement targeted stabilization measures across the affected infrastructure.
+
+Following these interventions, a comprehensive stability analysis shows that all variables contributing to the error state are now neutralized or inactive. The system has returned to a stable operational baseline. 
+
+Note: This report is limited to the diagnostic characterization of Fault R1-R2 and current stability status; it excludes broader architecture details, root cause emergence, or preventative maintenance schedules.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3558</span></span></summary>
+          <pre class="doc-content">TECHNICAL OPERATIONAL REPORT
+
+To: Infrastructure Operations
+From: Technical Oversight Team
+Subject: Post-Stabilization System Resolution Report
+Date: May 27, 2013
+
+Following the recent system disturbance, the Technical Oversight Team has completed an initial stability analysis of the affected infrastructure. This analysis confirms that the variables contributing to the specific error state are now documented as either neutralized or inactive.
+
+To ensure the continued integrity of operations, a protective monitoring phase for verification is scheduled to begin immediately once the stabilization of the environment is confirmed. This internal protective monitoring phase is established to start on Tuesday, May 28, 2013.
+
+Note: This report is restricted to the current resolution status and immediate scheduling. It does not address the underlying root cause or provide long-term performance forecasts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3559</span></span></summary>
+          <pre class="doc-content">TECHNICAL OVERSIGHT TEAM
+INTERNAL OPERATIONAL REPORT
+
+Subject: Technical Oversight Operations Update: Protective Monitoring and System Equilibrium
+
+On Tuesday, May 28, 2013, the Technical Oversight Team initiated a protective monitoring phase. The initiation of this phase enables the application of current predictive modeling for electricity consumption in Oakhaven Basin.
+
+Predictive modeling for the current seven-day cycle indicates a high probability of continued system equilibrium. Current system stability is attributed to recent patches. This monitoring cycle confirms that the prior grid operational fault that caused a 75% dip in consumption two weeks ago is not expected to recur. This report is limited to the May 28 monitoring start date and the immediate seven-day equilibrium forecast based on recent patches.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3560</span></span></summary>
+          <pre class="doc-content">IT Infrastructure Operations Team: Internal Technical Report
+Subject: Weekly System Maintenance and Stability Assessment
+
+Predictive modeling for the current seven-day cycle suggests a high probability of continued system equilibrium regarding the Oakhaven Basin electricity consumption monitoring infrastructure. This stability is based on the application of recent patches. Internal reports conclude that a re-emergence of the technical anomaly is highly unlikely during this interval. Positive model outputs justify the prediction that the issue will not repeat.
+
+Note: This source is limited to the current seven-day forecasting interval and the specific technical anomaly mentioned; it does not include details on the nature of the patches, the root cause of the original anomaly, or long-term system roadmaps.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3561</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Internal Operations Committee
+FROM: Systems Engineering Department
+DATE: May 28, 2013
+SUBJECT: Internal Technical Reliability Assessment
+
+Internal reports conclude that a re-emergence of the aforementioned technical anomaly is highly unlikely for the duration of this interval. This assessment confirms that the technical fault observed in Oakhaven Basin’s electricity consumption records two weeks prior will not repeat during the present cycle. 
+
+Accordingly, the expectation of no recurrence is bound to the duration of the current week. The expectation of reliability is slated to remain the baseline until the conclusion of the first Monday in June of that same year. Systems Engineering maintains this projection as the official technical baseline for the specified period, ensuring steady operational oversight through the conclusion of the diagnostic window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3562</span></span></summary>
+          <pre class="doc-content">INTERNAL TECHNICAL MEMORANDUM
+
+TO: Systems Operations Personnel
+FROM: Systems Operations Oversight Committee
+DATE: May 28, 2013
+SUBJECT: Operational Reliability Baseline and Observation Schedule Memo
+
+This memorandum establishes the temporal parameters for the current cycle of predictive assurance regarding Oakhaven Basin electricity consumption. The expectation of reliability is set as the baseline until the end of the first Monday in June 2013.
+
+The formal observation period for this predictive assurance ends at 23:59:59 on June 3, 2013. The definition of the week&#x27;s end serves as the basis for establishing the final timestamp of the assurance period. This assessment confirms that while specific peaks may occur, the broader reliability baseline is focused on the non-recurrence of the 75% dip observed two weeks prior. Monitoring protocols must adhere strictly to these defined temporal boundaries and timestamp definitions.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3563 · Off-variable</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin City Utility Administration
+OPERATIONAL BRIEFING MEMO
+
+TO: Grid Operations Department
+FROM: Utility Administration
+DATE: May 20, 2013
+SUBJECT: Oakhaven Basin Grid Load Advisory: Public Holiday Impact Assessment
+
+A public holiday celebration is scheduled for May 28, 2013, starting at 12:00:00. During this event, electricity usage is expected to shift from residential areas to commercial zones. Despite these localized shifts, total city-wide electricity demand is expected to remain stable. 
+
+Specifically, local bakeries and refrigeration units will experience a 10% increase in load for a duration of 2 hours. This follows an emergency siren system test on May 14, 2013, which caused a momentary voltage spike but did not affect consumption volume. This memo covers immediate operational impacts and excludes long-term infrastructure plans or financial implications.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3564 · Off-variable</span></span></summary>
+          <pre class="doc-content">OAKHAVEN BASIN ENGINEERING AND GRID OPERATIONS
+OPERATIONAL ADVISORY
+
+DATE: May 20, 2013
+SUBJECT: Scheduled Dam Maintenance - May 28, 2013
+
+Maintenance on the Oakhaven Basin hydroelectric dam is scheduled for May 28, 2013, at 12:00:00. This operation involves a 2-hour bypass of the main turbines. During this maintenance window, the primary technical concern is the storage capacity of the reservoir. The consumption of the city is not a primary concern for this specific operation. 
+
+Based on historical data for this procedure, the grid typically experiences a 2% dip in recorded Kilowatts as the city switches over to backup solar arrays. Engineering teams will monitor the reservoir levels and grid transition for the duration of the bypass to ensure operational parameters remain within historical norms.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3565 · Off-variable</span></span></summary>
+          <pre class="doc-content">Regional Grid Operations Center (RGOC)
+Operational Briefing
+
+Subject: Oakhaven Basin Grid Load Forecast &amp; Incident Review
+
+Operational Forecast:
+A cloud cover event is predicted over the Oakhaven Basin on 2013-05-28, effective from 12:00:00 to 14:00:00. This meteorological event is expected to lower the efficiency of rooftop solar panels within the catchment area. Based on historical modeling, the reduction in private solar generation typically requires the grid to supply a 5% increase in electricity to compensate for the loss of decentralized input.
+
+Incident Review:
+Regarding the firmware update to smart meters deployed two weeks ago, which caused a temporary data blackout, Operations confirmed the issue is resolved. The smart meter data blackout will not recur this week. 
+
+Note: This briefing focuses strictly on immediate weather impacts on solar inputs for the specified date and the resolution of the recent smart meter issue.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3566 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Oakhaven Municipal Utility Department
+PUBLIC INFORMATION BULLETIN
+
+Subject: Municipal Utility Service Update and Operational Guide
+Issue Date: May 15
+
+I. DIGITAL METER INSTALLATION INITIATIVE
+The Oakhaven Municipal Utility Department is pleased to announce the commencement of the Digital Meter Upgrade Project. Over the coming weeks, technicians will be deployed to all residential and commercial properties within the Oakhaven Basin area. These new digital meters are designed to replace older analog systems, providing modern infrastructure for the Oakhaven Basin’s utility monitoring needs. Homeowners in the Basin should ensure that utility access points are clear of debris or obstructions to facilitate a seamless transition and installation process.
+
+II. UTILITY VEHICLE IDENTIFICATION AND SAFETY
+To ensure public safety and transparency during ongoing maintenance of the regional electricity grid, the department maintains a standardized identification system for its fleet. Residents are advised that all official electricity grid maintenance vehicles are painted in a high-visibility cautionary yellow with reflective navy blue lettering. These vehicles will also display the Oakhaven Municipal Utility Department seal clearly on the driver and passenger side doors. If you see vehicles matching this color coding, please exercise caution as technicians may be working on live power lines or localized transformers in your neighborhood.
+
+III. PRIMARY SUBSTATION ARCHITECTURAL OVERVIEW
+The primary substation building, situated as the central hub of our local distribution network, is notable for its unique architectural design. Unlike traditional industrial facilities, the substation was constructed to harmonize with the local landscape through a Mid-Century Modern industrial aesthetic. The structure features a low-profile silhouette with a facade composed of alternating panels of brushed aluminum and reinforced glass, supported by a series of geometric concrete pylons. This design approach reflects the department&#x27;s commitment to maintaining infrastructure that is both functional for electricity distribution and visually consistent with the Oakhaven area&#x27;s aesthetic standards.
+
+IV. ADMINISTRATIVE SCHEDULE AND BILLING OFFICE HOURS
+As we approach the end of the spring season, the Municipal Utility Billing Department has announced its adjusted operational schedule for late May. For the period spanning May 20th through May 31st, the official office hours for the billing department will be as follows:
+
+- Monday through Thursday: 7:30 AM to 5:30 PM
+- Friday: 8:00 AM to 1:00 PM
+- Saturday and Sunday: Closed
+
+Residents visiting the main office during these hours can receive assistance with account inquiries, payment processing, and service connection requests. Please note that these hours apply specifically to the administrative and billing departments; emergency repair crews remain available 24/7 for utility disruptions.
+
+V. DISCLOSURES AND SCOPE
+This bulletin is intended for public informational purposes regarding current utility operations, local infrastructure descriptions, and administrative schedules. This document is limited to these areas and does not provide data regarding grid performance metrics, forecasts for future grid expansion, or departmental budgetary details. For further inquiries regarding service during the Oakhaven Basin digital meter rollout, please contact the department during the late May office hours listed above.
+
+Department of Utilities
+City of Oakhaven</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3567 · Irrelevant</span></span></summary>
+          <pre class="doc-content"># Oakhaven Basin Annual Parks and Recreation Management Review
+
+**Issuer:** Oakhaven Basin Municipal Parks Department  
+**Document Type:** Technical and Operational Report  
+**Review Period:** Fiscal Year Summary  
+
+### I. Introduction and Historical Context
+The Oakhaven Basin botanical gardens represent the cornerstone of our municipal green space. Established over a century ago, the gardens hold profound historical significance as the original site of the region&#x27;s first conservation efforts. Initially preserved to protect the unique microclimate of the Basin, the gardens have evolved from a private estate into a public landmark that reflects the horticultural heritage of our city. The site continues to serve as a living museum, housing legacy specimens that date back to the founding of the Oakhaven municipality.
+
+### II. Annual City Gardening Competition: Outcomes
+The department is pleased to announce the formal outcomes of this year’s City Gardening Competition. This competitive event, designed to foster community engagement and aesthetic excellence, saw record participation from local residential blocks and commercial districts. 
+
+**Award Winners and Results:**
+*   **Grand Prize (Basin Excellence):** Awarded to the North Terrace Community for their integration of native perennials.
+*   **Sustainability Award:** Granted to the Oakview Residential Guild for efficient water use and soil management.
+*   **Best Floral Display:** Received by the Eastside Commercial District for seasonal color coordination.
+
+The selection committee noted a significant improvement in soil health and pruning techniques compared to the previous year, attributing the success to the department-led workshops held in the spring.
+
+### III. Floral inventory and Species Distribution
+To maintain the aesthetic standards of Oakhaven Basin, the department executed a comprehensive planting strategy across all public parks. The following varieties were selected and planted during the current cycle:
+
+*   **Primary Bedding:** Petunia x hybrida (Sky Blue and Velvet Rose), Pelargonium hortorum (Classic Scarlet).
+*   **Structural Accents:** Lavandula angustifolia (Munstead), Salvia nemorosa (May Night).
+*   **Shade-Specific Varieties:** Hosta sieboldiana (Elegans), Impatiens walleriana (Bright Orange).
+*   **Native Species:** Echinacea purpurea, Rudbeckia hirta.
+
+These varieties were chosen for their hardiness in the Basin’s unique soil composition and their ability to provide year-round visual interest.
+
+### IV. Irrigation System Rotation Schedule
+To ensure optimal hydration while adhering to conservation standards, the official irrigation rotation is strictly enforced across the following zones. All systems are programmed to activate during low-evaporation hours (10:00 PM – 4:00 AM).
+
+| Zone | Park Location | Scheduled Days | Duration |
+| :--- | :--- | :--- | :--- |
+| A | North Botanical Gardens | Mon / Wed / Fri | 45 min |
+| B | Central Basin Commons | Tue / Thu / Sat | 30 min |
+| C | Heritage Pine Grove | Mon / Thu | 60 min |
+| D | Waterfront Floral Walk | Wed / Fri / Sun | 40 min |
+| E | Municipal Plaza Green | Nightly | 20 min |
+
+Maintenance crews are dispatched every second Tuesday of the month to calibrate soil moisture sensors and inspect lateral lines for leaks.
+
+### V. Operational Scope Notice
+This report is strictly limited to the management, history, and competitive programming of the Oakhaven Basin parks system. It serves as a record of operational performance and historical documentation. Information regarding future growth forecasts, municipal budget allocations, or broader city-wide issues outside the scope of park operations is not included in this technical review.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3568 · Irrelevant</span></span></summary>
+          <pre class="doc-content">CITY OF METROPOLIS
+MEMORANDUM
+
+TO: All City Department Heads and Staff
+FROM: City Manager&#x27;s Office
+DATE: October 1, 2023
+RE: City Operations Monthly Coordination Bulletin – October Edition
+
+This monthly bulletin provides internal coordination details regarding upcoming municipal operations, infrastructure maintenance, and departmental initiatives. Please review the following updates to ensure departmental alignment.
+
+### 1. RECYCLING COLLECTION SCHEDULE ADJUSTMENTS
+Please be advised of shifts to the upcoming recycling collection schedule. Due to the observed municipal holiday on the second Monday of the month, all residential and commercial recycling pickups will be delayed by 24 hours for the remainder of that week. Normal operations will resume the following Monday. Sanitation crews have been notified, and internal tracking systems should be updated to reflect this temporary change to avoid departmental scheduling conflicts.
+
+### 2. BILLING SERVER SOFTWARE UPDATE
+The Information Technology Department has scheduled a critical software update for the city’s primary billing servers. This update is designed to improve backend processing for utility payments and tax assessments. The migration is set to occur during the maintenance window of 10:00 PM Saturday to 4:00 AM Sunday. Staff should anticipate a total service outage for all billing-related applications during this time. Please ensure any pending manual entries are processed prior to the scheduled downtime to prevent data synchronization errors.
+
+### 3. ENERGY CONSERVATION WEBSITE REBRANDING
+As part of our commitment to environmental sustainability, the city’s energy conservation website is undergoing a comprehensive rebranding initiative. The project includes a new visual identity, an updated interface, and a streamlined domain name to improve internal navigation and resource accessibility. This initiative focuses on refreshing the digital presence of our conservation programs. Marketing assets and updated link directories will be distributed to department leads once the transition is complete.
+
+### 4. TOWN HALL MEETING LOGISTICS: PUBLIC TRANSIT
+Logistics and planning details have been finalized for the upcoming town hall meeting regarding public transit. The event is scheduled for the third Thursday of the month at the Civic Center Main Hall. Facilities management will begin floor setup at 2:00 PM, including the installation of audio-visual equipment and seating for 200 attendees. Security personnel and transit department liaisons are requested to be on-site by 5:30 PM for a final briefing. Staff are reminded that this update pertains to logistical arrangements only.
+
+***
+Note: This bulletin is intended for internal administrative use by city staff. It is limited to departmental updates and does not encompass external policy commentary, financial impact analysis, or public feedback collected after these events.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3569 · Off-entity</span></span></summary>
+          <pre class="doc-content">Silverwood Heights Municipal Energy Department
+Operational Brief: Grid Analysis and Cold Snap Incident Report
+
+I. CITY PROFILE: SILVERWOOD HEIGHTS
+Silverwood Heights is a municipality served by a localized electrical grid managed by the Municipal Energy Department. The area is characterized by a mix of residential and light commercial zones, with a power infrastructure designed to accommodate standard seasonal fluctuations. This report focuses on recent stressors to the grid&#x27;s operational capacity.
+
+II. INCIDENT SUMMARY: MAY 28 COLD SNAP
+On 2013-05-28, the city of Silverwood Heights experienced a significant meteorological event. A sudden cold snap commenced at 12:00:00, resulting in an immediate and sharp decline in ambient temperatures. This weather event lasted for a duration of two hours, concluding at approximately 14:00:00. 
+
+III. GRID PERFORMANCE AND LOAD ANOMALIES
+During the two-hour window of the cold snap beginning at 2013-05-28 12:00:00, the Municipal Energy Department recorded a localized surge in energy consumption. This surge was characterized by a 30 percent increase in power usage specifically attributed to heating systems as residents and commercial facilities adjusted to the temperature drop. 
+
+The impact of this 30 percent increase was compounded by existing baseline pressures on the Silverwood Heights grid. Technical records indicate that maintenance work performed on the grid during the previous month had already resulted in a 10 percent increase in load. This prior increase remained a factor during the 2013-05-28 event.
+
+IV. OPERATIONAL DATA SCOPE
+This brief is strictly confined to the operational data regarding Silverwood Heights and the specific energy anomalies noted during the May 28 incident. The scope of this analysis does not extend to future weather forecasts, broader economic impacts resulting from energy fluctuations, or the specific technical nature of the maintenance work conducted in the previous month.
+
+Prepared by:
+Silverwood Heights Municipal Energy Department
+Operations Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3570 · Off-entity</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: District Operations Committee
+FROM: Pine Ridge District Municipal Power &amp; Water
+DATE: May 29, 2013
+SUBJECT: Post-Event Operational Analysis: May 28 Festival and Grid Performance
+
+1. SERVICE AREA PROFILE
+The Pine Ridge District serves as a primary municipal utility hub, managing a diverse load profile characterized by high-density residential zones, a central park district, and integrated utility storage infrastructure. 
+
+2. EVENT SUMMARY
+On May 28, 2013, the district hosted a city-wide festival. This scheduled event commenced at 12:00:00 and concluded after a duration of exactly 2 hours at 14:00:00. This report analyzes the operational demand fluctuations observed during this specific window.
+
+3. RESIDENTIAL CONSUMPTION DATA
+During the two-hour event window, real-time monitoring systems recorded a significant 20 percent drop in residential electricity consumption. This decrease is directly attributed to the mass migration of residents from private households to the central park area for the festival activities. This concentration of the population in a localized non-residential zone resulted in a notable reduction in neighborhood base-load requirements.
+
+4. GRID STABILIZATION AND STORAGE
+Operational stability during this shift in demand was supported by existing routine protocols. Specifically, the utility conducted its recurring battery storage test, which is performed every Tuesday. The synchronization of this routine test with the festival window provided stabilization effects, allowing the grid to absorb the sudden residential load drop and manage the localized distribution without voltage volatility.
+
+5. LIMITATIONS OF ANALYSIS
+This analysis is strictly limited to the operational data and demand changes observed between 12:00:00 and 14:00:00 on May 28, 2013. This internal report does not provide long-term load forecasts, financial impact assessments, or general news regarding the city-wide festival beyond its direct impact on the utility grid and the coinciding battery storage performance.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3571 · Off-entity</span></span></summary>
+          <pre class="doc-content">Marigold Valley Department of Energy and Water
+Operational Technical Report: Grid Stability &amp; Load Operations
+
+1. City Profile: Marigold Valley
+Marigold Valley is a municipality characterized by its high integration of renewable energy assets and a fluctuating industrial load baseline. The local power architecture relies heavily on synchronized solar arrays to meet daytime demand. The Department of Energy and Water (DEW) manages the distribution network, ensuring grid stability through real-time telemetry and secondary sourcing when primary generation falls below threshold levels.
+
+2. Incident Overview: Solar Generation Drop-Off
+On 2013-05-28, the Marigold Valley grid experienced a significant generation-to-load imbalance. This was precipitated by a recorded cloud cover event that commenced at 12:00:00. The period of heavy cloud density persisted for a total duration of 2 hours, concluding at 14:00:00. 
+
+During this window, solar irradiance levels dropped precipitously, leading to a corresponding collapse in PV (photovoltaic) output. To maintain the mandated 60Hz frequency and prevent localized brownouts, the Grid Operations Center was forced to adjust procurement protocols. The system necessitated pulling 2 times the usual volume of grid electricity from external interconnects to compensate for the internal generation deficit.
+
+3. Comparative Load Analysis
+To provide context for current load requirements, the DEW reviewed recent consumption history. This analysis includes a reference to a 50 percent reduction in industrial activity that occurred 2 weeks ago. This substantial dip in demand was attributed to a scheduled holiday, during which major manufacturing facilities operated at half-capacity. In contrast to that period of surplus, the event on 2013-05-28 represents a peak stress scenario for the valley’s energy infrastructure.
+
+4. Operational Telemetry Data
+- Date: 2013-05-28
+- Event Type: Atmospheric Obscuration (Cloud Cover)
+- Start Time: 12:00:00
+- Duration: 02:00:00
+- Impact: 2x increase in external grid electricity draw
+- Historical Baseline Comparison: -50% industrial load (reference: 14 days prior / holiday shift)
+
+5. Conclusion
+The operational telemetry from the 2013-05-28 event indicates that while the grid successfully balanced the load, the reliance on external grid electricity was doubled due to the duration and intensity of the cloud cover. The Department maintains that these balancing requirements are necessary to offset the inherent volatility of the city&#x27;s solar-dependent generation profile during localized weather anomalies. This report is strictly limited to the operational telemetry and load balancing requirements for the specified event and does not account for non-grid infrastructure or broader economic repercussions beyond the noted industrial holiday reference.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3572 · Off-window</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin Regional Power Authority
+Operational Update Report
+Ref ID: OB-2013-05-27
+
+Subject: May 2013 Grid Operations and Seasonal Outlook Report
+
+I. Executive Summary
+This report provides an overview of the Oakhaven Basin Regional Power Authority operations during the month of May 2013, focusing on grid resilience during extreme weather events, recent maintenance activities, and the immediate meteorological outlook.
+
+II. Early May Heat Wave Analysis
+In the first week of May 2013, the Oakhaven Basin experienced a significant unseasonal heat wave. During this period, record-breaking high temperatures led to an abrupt surge in cooling demand across residential and commercial sectors. To maintain grid stability and meet this heightened energy requirement, the Authority authorized a tactical increase in power procurement. Data for this period confirms that the city increased electricity imports by 15 percent compared to the prior week to ensure uninterrupted service across the basin.
+
+III. Maintenance and Infrastructure Status
+The Authority is pleased to announce the successful completion of a routine electricity grid maintenance check. This scheduled assessment was conducted to ensure the integrity of the distribution network following the increased load in early May. The results of the check indicate that all systems are functioning within standard operational parameters. The Authority confirms that the completed maintenance will not impact current consumption levels for our customers.
+
+IV. Meteorological Outlook (May 28 – May 29)
+As we approach the end of the month, our meteorological modeling team has finalized the short-term forecast. For the period of 2013-05-28 through 2013-05-29, temperatures in the Oakhaven Basin are expected to remain within historical seasonal norms. Unlike the volatility seen at the beginning of the month, the current weather pattern indicates a return to predictable environmental conditions, and the existing local generation capacity is deemed sufficient for these projections. 
+
+V. Scope Limitations
+This report is limited to grid resilience and meteorological comparisons for May 2013. It does not contain long-range summer forecasts, energy pricing data, or specific details regarding infrastructure repairs beyond the aforementioned routine maintenance check.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3573 · Off-window</span></span></summary>
+          <pre class="doc-content">OAKHAVEN BASIN UTILITY COMMISSION
+Internal Operational Report: Seasonal Readiness Brief
+Date: May 28, 2013
+
+TO: Grid Operations Oversight Committee, Regional Safety Officers
+FROM: Oakhaven Basin Utility Commission (OBUC)
+SUBJECT: Seasonal Readiness Brief – May 2013
+
+1. EXECUTIVE SUMMARY
+As the Oakhaven Basin enters the 2013 summer season, the Utility Commission has completed a comprehensive Review of the electrical grid’s capacity and historical performance markers. This brief outlines the operational benchmarks established following the 2012 summer peak and details the current status of the regional infrastructure as of late May 2013.
+
+2. HISTORICAL ANALYSIS: SUMMER 2012
+Throughout the summer of 2012, a severe heat wave was recorded in the Oakhaven Basin. This period of extreme thermal stress placed significant pressure on existing transmission protocols. Data analysis from the previous year indicates that the 2012 heat wave led to a steady 10 percent rise in baseline electricity usage for several weeks. This extended period of increased load served as a primary stress test for the regional distribution network, identifying specific points of operational friction and capacity limits during peak afternoon and evening windows.
+
+3. INFRASTRUCTURE UPGRADES AND MITIGATION
+In direct response to the performance data gathered during the 2012 heat wave, the Oakhaven Basin Utility Commission initiated a series of capital improvements. Grid infrastructure in Oakhaven Basin has been upgraded since the 2012 event to prevent previous inefficiencies. These technical enhancements were focused on optimizing load distribution and reinforcing substations that struggled with the 10 percent baseline increase observed in the prior year. The objective of these systemic upgrades is to ensure that the grid maintains high reliability and efficiency levels under similar load conditions moving forward.
+
+4. METEOROLOGICAL OUTLOOK AND IMMEDIATE STABILITY
+As of the current reporting cycle, environmental conditions remain within standard operational parameters. Monitoring stations report that atmospheric pressure for the week of 2013-05-28 04:00:00 is stable. Current meteorological data indicates that no extreme weather events are imminent. This stability provides a favorable window for the finalization of any remaining minor preventative maintenance tasks before the typical summer load ramp-up.
+
+5. OPERATIONAL STATUS
+The OBUC remains committed to proactive grid management. While this report focuses on the reflection of 2012 historical load data and the successful implementation of infrastructure upgrades to address past inefficiencies, the Commission continues to monitor real-time atmospheric data to ensure the Oakhaven Basin electrical grid remains resilient against seasonal fluctuations. At this time, all systems are categorized as Green/Stable.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3574 · Off-window</span></span></summary>
+          <pre class="doc-content">OAKHAVEN BASIN POWER AUTHORITY (OBPA)
+SEASONAL OPERATIONS BULLETIN: MAY 2013
+
+Date: May 24, 2013
+Subject: Seasonal Load Assessment and Operational Status Update
+
+I. BACKGROUND DATA: MARCH 2013 CONSUMPTION TRENDS
+OBPA analysts have completed the review of electricity consumption trends recorded during the March 2013 spring equinox period. Data sets indicate that while mid-March typically exhibits moderate transition-season load profiles, the month was characterized by significant volatility in grid demand. 
+
+II. MARCH WEATHER EVENT AND AC SURGE
+Specifically, documentation confirms a significant temporary surge in air conditioning usage on 2013-03-20. This spike was driven by unseasonably warm afternoon temperatures that deviated sharply from historical equinox averages. The concentrated cooling demand during this peak period placed unexpected pressure on the Oakhaven Basin distribution network, necessitating immediate load-management interventions.
+
+III. VOLUNTARY POWER-SAVING PROGRAM EVALUATION
+In response to the March climatic conditions, city management implemented a voluntary power-saving program. This initiative was designed to incentivize residents and commercial entities to achieve a 20 percent consumption reduction. The program provided the necessary buffer to maintain grid stability during the peak afternoon hours of the heat event, successfully mitigating the risk of brownouts.
+
+IV. CURRENT OPERATIONAL STATUS (MAY 2013)
+Official Status: INACTIVE
+Effective Interval: 2013-05-28 through 2013-05-29
+
+The power-saving program utilized during the previous quarter is currently inactive for the upcoming interval of 2013-05-28 through 2013-05-29. No voluntary curtailments are requested from city management or OBPA customers at this time. 
+
+V. DEMAND ASSESSMENT
+OBPA assessment models indicate that power demand for the current late-May interval is expected to be at its lowest annual levels. Unlike the surge experienced on 2013-03-20, current environmental conditions and thermodynamic profiles suggest a period of minimal cooling and heating requirements. 
+
+Note: This bulletin is restricted to comparative power usage data between the March weather event and current May operations. This document does not contain long-form meteorological forecasts, infrastructure maintenance schedules, or budget reports.
+
+***
+Oakhaven Basin Power Authority
+Operations Department</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3575 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin Municipal Power Authority
+Technical Operational Report: Oakhaven Basin Grid Load Analysis
+Subject: Heatwave Impact Assessment
+
+1. Executive Summary
+This technical report provides an operational assessment of the load profile for the Oakhaven Basin grid, specifically examining how extreme weather fluctuations, such as midday heatwaves, interact with the region’s established electricity consumption patterns. The objective is to determine the potential strain on the municipal power supply during peak thermal events.
+
+2. Baseline Load Profile Characteristics
+Electricity consumption within the Oakhaven Basin follows a consistent and predictable single-peak daily cycle. Historically, the utility observes a flat, baseline level of demand that persists throughout the morning and afternoon hours. This stability in the first half of the day defines the operational baseline for the municipal grid.
+
+System monitoring indicates that the primary escalation in grid load does not occur during daylight hours under standard conditions. Instead, demand intensifies as evening approaches, driven by the transition of residential and commercial activities into their highest consumption phase.
+
+3. Midday Heatwave Impact Analysis
+The primary concern of this assessment is the introduction of a midday heatwave surge. During such events, there is a marked spike in cooling demand as air conditioning units and refrigeration systems respond to elevated ambient temperatures. 
+
+Significantly, this heatwave-driven surge applies directly to the characteristically low daytime baseline. Because the initial load during the morning and early afternoon is relatively minimal, the additional demand generated by midday cooling requirements does not compound an existing high-usage period. 
+
+4. Projected Peak Extremity
+Despite the intensity of temperature spikes during an afternoon heatwave, the resulting total load is expected to remain within manageable operational parameters. The analysis suggests that the peak resulting from a midday heatwave will remain moderate. Furthermore, current projections indicate that the load reached during these events is comparable to the usual evening maximums regularly managed by the authority, rather than representing an unprecedented extreme that would exceed current system capacity.
+
+5. Conclusion
+The Oakhaven Basin grid possesses a load structure where the timing of heat-related demand surges offsets the typical evening ramp-up. While a midday heatwave creates a visible deviation from the flat baseline, the aggregate impact does not project to surpass standard peak operational levels previously observed during daily evening cycles.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3576 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin Utility Oversight Committee
+Technical Operational Report: Midday Consumption Patterns and Grid Stability Analysis
+Ref: OB-GS-2024-08
+
+1. Executive Summary
+
+This technical operational report serves to characterize the current daily demand cycles within the Oakhaven Basin and evaluate their impact on overall grid stability. The Oversight Committee has conducted an analysis of electricity demand profiles to better understand how current consumption behaviors interact with available infrastructure capacity during peak and off-peak intervals.
+
+2. Characterization of Daily Demand Cycles
+
+Electricity demand in the Oakhaven Basin is characterized by a distinct single-peak daily cycle. Unlike multi-nodal demand patterns seen in larger metropolitan regions, the Basin exhibits a predictable progression from the early morning hours until the end of the business day. 
+
+During the midday hours, consumption remains relatively flat and stable. Data indicates that between the hours of 11:00 AM and 3:00 PM, the demand curve plateaus, demonstrating minimal volatility. This period of stability is crucial for ensuring that the grid remains within its prescribed operational tolerances without requiring rapid adjustment of baseline power generation.
+
+3. Peak Demand Synchronization
+
+While industrial and commercial activity is highest during the day, the primary demand peak occurs late in the evening. This evening surge is the most critical period for grid management, as residential use scales up significantly. The delta between the midday plateau and this nocturnal peak remains the primary focus of long-term stability planning. 
+
+4. Midday Surge Mitigation
+
+Recent observations regarding temperature fluctuations have raised questions concerning the impact of climate-driven usage spikes. However, findings show that the impact of increased air conditioning use during midday hours is mitigated by existing stability patterns. The baseline midday consumption is currently robust enough to absorb the thermal load increase without resulting in significant grid oscillations.
+
+Furthermore, when surges in midday consumption do occur, they tend to remain closer to historical evening peaks rather than reaching unprecedented levels. Because these midday spikes do not exceed the established evening maximums, the current load-bearing capacity effectively encapsulates the variance. 
+
+5. Conclusion on Grid Stability
+
+The Oakhaven Basin Utility Oversight Committee finds that the current daily cycle—defined by a flat midday profile and a late evening peak—provides a naturally resilient framework for grid operations. The predictability of the single-peak cycle allows for the absorption of midday surges within the margins of historical evening demand thresholds. 
+
+6. Scope and Limitations
+
+This analysis is limited exclusively to the characterization of daily demand cycles and the resulting mitigation of midday usage surges. This document does not provide historical weather data sets, specific numerical load forecasts for upcoming quarters, or recommendations regarding infrastructure improvements or capital investments.
+
+Approved for Internal Distribution:
+Oakhaven Basin Utility Oversight Committee</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3577 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin Utility Load Forecasting Division
+Internal Operational Report: Weekly Energy Consumption Analysis
+
+TO: Operational Oversight Committee
+FROM: Load Forecasting Division
+SUBJECT: Weekly Energy Consumption Analysis – Oakhaven Basin
+
+EXECUTIVE SUMMARY
+This internal report details the observed energy consumption patterns within the Oakhaven Basin for the current week. Analysis of grid data indicates a clear and consistent empirical pattern of declining energy requirements across the regional service area. 
+
+CURRENT CONSUMPTION TRENDS
+Monitoring of load cycles confirms that both daily maximums and overnight minimums have steadily receded throughout the current week. This uniform decline is present across all primary observation points. The data suggests that the observed receding trend indicates a weakening overhead demand throughout the basin, departing from established peak baselines recorded during the prior reporting period.
+
+LOAD PROJECTIONS
+Based on current modeling, usage is expected to continue its downward trajectory for the remainder of the week. While the division anticipates brief periods of artificial inflation in the load profile due to scheduled grid maintenance or temporary industrial cycling, these spikes are not expected to reverse the broader trend. 
+
+Forecast models indicate a continued contraction in baseline load. Specifically, evening levels and overnight troughs are projected to reach record lows compared to the start of the week. This downward shift in the overnight trough suggests a significant reduction in the base-load requirement.
+
+OPERATIONAL NOTES
+This analysis is strictly limited to the energy consumption trends and projections for the current operational week in the Oakhaven Basin. It does not incorporate external weather data, specific kilowatt-hour metrics, or an analysis of the underlying causes driving the current decline in demand. Staff should utilize these projections for immediate load balancing and distribution planning only.
+
+DISTRIBUTION: Internal Only
+ISSUER: Oakhaven Basin Utility Load Forecasting Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3578 · Off-variable</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin Regional Energy Board
+Market Operations Summary: May 28-29, 2013
+
+Overview
+This internal report summarizes electricity market activity within the Oakhaven Basin for the 48-hour period spanning May 28 to May 29, 2013. The Board has compiled data regarding consumption levels, price volatility, and the correlation between trading behaviors and commercial billing cycles.
+
+Electricity Consumption Data
+During the operating window of May 28–29, the Oakhaven Basin region maintained a steady load profile, though intraday peaks were notable. Aggregated consumption data indicates that demand remained within standard late-spring parameters; however, the localized load distribution showed a slight uptick in the industrial corridor during the mid-day hours on both dates.
+
+Energy Market Price Fluctuations
+The energy market experienced significant price fluctuations throughout this period. On May 28, clearing prices began at a baseline of $42/MWh but experienced sharp upward movements during the transition from off-peak to on-peak hours. By May 29, price volatility intensified, with spot prices experiencing rapid surges that deviated substantially from the previous week&#x27;s averages. These fluctuations were characterized by short-duration spikes followed by incomplete retracements to the mean.
+
+Analysis of Price Surges and Trading Volume
+Evidence suggests that the observed electricity price surges were directly driven by a marked increase in market trading volume. Data logs from the Oakhaven Exchange indicate that transaction counts reached an atypical high during the 2013-05-28 and 2013-05-29 window. As trading volume increased, the resulting market pressure forced price points higher. The Board’s analysis confirms that these price escalations were a result of liquidity shifts and high-frequency trading activity rather than fundamental changes in supply or physical constraints.
+
+Relationship to Commercial Billing Cycles
+A review of the timing of these price movements reveals a direct relationship with regional commercial billing cycles. The surge in trading volume and subsequent price peaks coincided with the closing of several large-scale commercial procurement windows. As commercial entities sought to finalize their energy positions before the end-of-month billing reconciliation, the concentrated demand for contracts exerted upward pressure on the spot market. This alignment indicates that the price movements were structurally tied to the administrative timing of commercial energy accounts within the Oakhaven Basin.
+
+Conclusion
+The market behavior on May 28-29, 2013, highlights the impact of high trading volumes on regional pricing. While consumption remained stable, the timing of commercial billing cycles served as a catalyst for increased market activity, resulting in the documented price surges.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3579 · Off-variable</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin Utility Grid Operations Center
+Internal Technical Bulletin
+
+TO: Grid Operations Staff, System Administrators
+SUBJECT: Operations Update: Oakhaven Basin Smart Metering System Maintenance
+
+Notice of Scheduled Maintenance
+A maintenance event is scheduled for 2013-05-28. During this maintenance window, the Oakhaven Basin Utility Grid Operations Center will perform a planned software update to the primary smart metering system.
+
+Technical Impacts:
+• Database logs will experience temporary reporting delays for a duration of 3 hours.
+• The maintenance and update will impact data visualization tools for grid operators.
+
+Note: This bulletin is restricted to the technical parameters of the May 28th maintenance window. This document does not address customer-side impact notifications, historical outage data, or post-update performance reviews. Please direct technical inquiries to the Grid Operations Center.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3581 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin Department of Public Works
+Monthly Municipal Newsletter
+Issue: May 2013
+
+UTILITY OPERATIONS UPDATE
+
+MESSAGE FROM THE DEPARTMENT
+Welcome to the May 2013 edition of the Oakhaven Basin Department of Public Works newsletter. This monthly briefing serves to keep our residents and business owners informed regarding local utility operations, infrastructure improvements, and upcoming service adjustments within the Oakhaven Basin area.
+
+NEW DIGITAL SMART METER INSTALLATION
+The Department of Public Works is pleased to announce the commencement of our digital smart meter rollout. Over the coming weeks, technicians will be deployed throughout Oakhaven Basin to replace aging analog units with new digital smart meters. These devices are designed to provide more accurate readings and help modernise our local grid. We ask residents to ensure that utility access points are clear of obstructions to facilitate a smooth transition. These units are being integrated into our existing local framework to improve service reliability across the basin.
+
+ADMINISTRATIVE MEETING: BILLING CYCLES
+An administrative meeting has been scheduled to address the structures and timing of current utility billing cycles. This session will focus specifically on local billing procedures and administrative adjustments intended to streamline how utility statements are processed for Oakhaven Basin accounts. Members of the public who wish to stay informed on the administrative oversight of their utility services are encouraged to take note of these internal discussions.
+
+SYSTEM MAINTENANCE: ELECTRICITY MONITORING DASHBOARD
+Please be advised that a routine software update is scheduled for the city’s electricity monitoring dashboard on 2013-05-28. This update is part of our standard maintenance protocol to ensure the dashboard remains functional for municipal monitoring purposes. During this maintenance window, access to the dashboard may be intermittently unavailable. We expect the system to be fully operational immediately following the completion of the software installation.
+
+UPCOMING CAMPAIGN: ENERGY EFFICIENCY
+Starting next month, the Department of Public Works will launch a broad public awareness campaign centered on energy conservation. The primary focus of this initiative will be the promotion of energy-efficient light bulbs. We aim to educate the community on how switching to more efficient lighting options can contribute to overall household energy reduction. Look for informational displays and literature in municipal buildings beginning in June.
+
+DEPARTMENTAL SCOPE AND LIMITATIONS
+Please note that this newsletter is strictly limited to departmental updates for the Oakhaven Basin area. This publication does not contain information regarding regional energy forecasts, overarching municipal budget allocations, or specific technical specifications relating to the hardware components of the new smart meters. For inquiries outside the scope of Oakhaven Basin departmental operations, please contact the appropriate regional office.
+
+Oakhaven Basin Department of Public Works
+&quot;Serving our community with reliability and efficiency.&quot;</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3582 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin Community Update and Public Works Bulletin
+May 2013
+
+Issued by: Oakhaven Basin Municipal Council in coordination with Regional Utility Services
+
+***
+
+ANNUAL COMMUNITY PARADE: LOGISTICS AND ROUTE
+
+The Oakhaven Basin Municipal Council is pleased to announce the logistical arrangements for this year’s community parade. The procession is scheduled to commence at 10:00 AM. Participants and floats are instructed to gather at the North Common assembly point no later than 9:00 AM. 
+
+The parade route will proceed south from the North Common, traveling along High Street before turning East onto Elm Boulevard. The procession will conclude at the Basin Recreational Grounds, where a community gathering will follow. Spectators are encouraged to utilize the designated parking zones located behind the Municipal Library to minimize congestion along the route.
+
+NOTICE OF SCHEDULED ROAD CLOSURES
+
+Residents and commuters are hereby notified of mandatory road closures scheduled for May 28, 2013. These closures are necessitated by planned maintenance and infrastructure inspections in the vicinity of the local electricity substation. 
+
+Access to Substation Road and the intersecting segment of Miller’s Lane will be restricted to emergency vehicles only from 07:00 to 18:00 on 2013-05-28. Detailed detour signage will be posted 48 hours in advance to redirect local traffic through the secondary bypass. We thank you for your patience as we ensure the continued reliability of our local grid.
+
+REGIONAL UTILITY SERVICES: BRANDING UPDATE
+
+Regional Utility Services is proud to announce a refresh of its corporate identity. Effective immediately, the utility company’s official logo will undergo a color change. The previous palette is being replaced with a new scheme to better reflect the company’s evolving role in the community. Residents will begin to see this updated logo on official correspondence, service vehicles, and technician uniforms throughout the coming month.
+
+RECOGNITION OF SERVICE: PERSONNEL ANNOUNCEMENT
+
+We invite the community to join us in honoring the career of a dedicated public servant. A retirement ceremony will be held for our veteran grid operator, who is stepping down after decades of steadfast service to Oakhaven Basin. 
+
+The ceremony will take place at the Municipal Council Hall on Friday afternoon. This event serves to recognize his technical expertise and the vital role he has played in maintaining our local power infrastructure. His contributions have been instrumental to the stability of our basin’s utility operations, and we wish him the very best in his retirement.
+
+***
+
+Note: This bulletin pertains to local municipal logistics and utility updates. For inquiries regarding regional energy policy or financial reporting, please contact the department of Regional Utility Services directly.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3584 · Off-entity</span></span></summary>
+          <pre class="doc-content">PINECREST HEIGHTS UTILITY OPERATIONS CENTER
+INTERNAL OPERATIONAL MEMORANDUM
+
+TO: Grid Operations Staff
+FROM: Operations Center Control
+DATE: May 28, 2013
+SUBJECT: Pinecrest Heights Grid Load Adjustment Advisory
+
+Operational assessment indicates that record low temperatures are forecasted for a 2-hour window starting 2013-05-28 12:00:00. This thermal dip, combined with an expected heavy blizzard, is projected to keep residents indoors and significantly increase heating demands. 
+
+Total electricity consumption (measured in kW) across the Pinecrest Heights service area is projected to increase by 25 percent during the 2-hour blizzard period. Regarding local grid assets, the battery storage system—which underwent an upgrade two weeks ago—is currently functioning normally and available for load balancing. Operators should monitor load levels closely during the forecasted window and deploy storage reserves as necessary.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3585 · Off-entity</span></span></summary>
+          <pre class="doc-content">MARBLE VALLEY GRID OPERATIONS CENTER
+INTERNAL OPERATIONAL MEMO
+
+DATE: May 22, 2013
+TO: Grid Operators
+SUBJECT: Solar Eclipse Load Forecast Briefing: May 28, 2013
+
+This briefing outlines the predicted impact of the solar eclipse scheduled for 2013-05-28. The event will occur between 12:00:00 and 14:00:00.
+
+Operational Impacts:
+- Consumption Monitoring: Standard grid consumption continues to be measured in kW.
+- Industrial Loads: It is anticipated that industrial lights will automatically activate across the valley due to the loss of natural light during the obscuration.
+- Load Forecast: Electricity consumption is predicted to increase by 1.5 times the baseline use during the eclipse window.
+
+Note: Minor voltage fluctuations recorded two weeks ago have been reviewed and are considered irrelevant to this week&#x27;s operations. Operators should focus strictly on the eclipse-driven load shift.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3587 · Off-window</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin Energy Authority (OBEA) - Operations Division
+Internal Operational Report: Post-Incident Review and May Status Update
+Date: May 30, 2013
+
+1. EXECUTIVE SUMMARY
+This internal report provides a comprehensive review of the grid operations within the Oakhaven Basin, specifically addressing the extreme weather event recorded in mid-April and the subsequent operational performance during the current May monitoring period. While the grid faced record-breaking demand during the April heat wave, current indicators for late May show a return to nominal stability following the resolution of a minor technical fault.
+
+2. APRIL HEAT WAVE POST-INCIDENT REVIEW
+An intense and significant heat wave occurred within the Oakhaven Basin starting on 2013-04-15 at 12:00:00 and lasting through 2013-04-15 14:00:00. During this two-hour window, the region experienced severe temperature spikes that directly correlated with record high electricity consumption. 
+
+Data analysis confirms that this surge was the highest consumption level recorded for the period, driven by the immediate necessity for cooling across the basin. Despite the sudden increase in load, system integrity was maintained, and the event has served as a primary data point for stress-testing current delivery capacity.
+
+3. MAY OPERATIONAL STATUS
+3.1 Grid Stability and Consumption Patterns
+The grid remained stable throughout the current history and forecast period observed from May 22 to May 29, 2013. In contrast to the volatility seen in April, there were no temperature spikes or air conditioning surges recorded during the week of May 22 to May 29, 2013. Load profiles remained within standard operating parameters, showing no signs of weather-induced stress.
+
+3.2 Maintenance and Technical Resolution
+Internal logs indicate that a technical fault occurred in early May 2013. This specific equipment issue caused a minor consumption drop across the grid. Operations can now confirm that this early May technical fault has been fully resolved. Repairs and recalibrations were successful, and the system is back to full operational status with regular consumption patterns restored.
+
+4. SCOPE AND LIMITATIONS
+This status update is strictly focused on the localized April temperature event and the operational stability/fault resolution during the late May monitoring window. This report does not contain broader historical climate data, long-term infrastructure planning, or analysis regarding the economic impacts of the April power surge. Information contained herein is intended for internal OBEA operational review only.
+
+5. CONCLUSION
+The Oakhaven Basin grid is currently operating at high efficiency. Following the record consumption peaks of mid-April and the successful resolution of May’s technical fault, the system remains stable as we move into the next month of the 2013 fiscal year.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3588 · Off-window</span></span></summary>
+          <pre class="doc-content">Oakhaven Basin Utility Management Planning Team
+Internal Operational Report
+
+TO: Operations Oversight Committee
+DATE: May 27, 2013
+SUBJECT: Oakhaven Basin Grid Performance Operations Memo
+
+Summary:
+This memorandum outlines recent grid anomalies and upcoming demand forecasts for the Oakhaven Basin service area.
+
+Historical Analysis:
+Operations data confirms that Oakhaven Basin experienced a two-hour heat wave starting at 2013-01-10 12:00:00. This rare January heat wave caused a unique spike in cooling demand during a normally low-use period, necessitating manual grid adjustments to maintain stability.
+
+Short-Term Forecast:
+Weather forecasts for the period 2013-05-28 04:00:00 to 2013-05-29 03:00:00 predict mild conditions across the basin. Electricity consumption trends for late May are currently showing a steady decline due to moderate outdoor temperatures. No significant demand spikes are anticipated for the upcoming 24-hour cycle. Utility management will continue to monitor load distribution accordingly.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3590 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Operations Personnel
+FROM: Oakhaven Basin Utilities Operations Center
+DATE: October 14, 2023
+RE: Oakhaven Basin Weekly Grid Load Analysis
+
+The Operations Center has completed its weekly review of electricity consumption within the Oakhaven Basin. Data indicates a gradual and steady increase in the overall baseline demand as the week progresses. Notably, demand levels at each point in the daily cycle are effectively higher than those recorded on the previous day.
+
+Following brief periods of excessive use, consumption is anticipated to stay within a new, higher range due to this consistent upward movement in the baseline. Observed behavior suggests future demand will maintain this trend of sustained daily growth instead of returning to early-week levels. Operations should prepare for this ongoing elevation in load requirements.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3591 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Oakhaven Municipal Power Authority (OMPA) Engineering Division
+Technical Grid Operations Memo
+
+Subject: Oakhaven Basin Load Profile Analysis Report
+
+This memorandum outlines current electricity consumption patterns within the Oakhaven Basin. Technical analysis of the grid indicates that internal load exhibits a distinctly acyclical pattern. Unlike neighboring districts, the Oakhaven Basin lacks a regular morning ramp-up or any predictable daily consumption cycle. 
+
+Operational data shows that electrical load remains at its lowest, flat baseline for the majority of daylight hours. Current demand spikes are effectively moderated because they coincide with these periods of suppressed, flat baseline consumption. Under these existing conditions, midday peaks are expected to remain below the 1000 kW threshold. Engineering monitoring will continue to track this suppressed demand to ensure grid stability and threshold compliance.</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:vzantedeschi@gmail.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

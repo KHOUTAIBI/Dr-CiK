@@ -1,0 +1,1170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Vesper Heights · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Vesper Heights</h1>
+          <p>Forecasting <strong>electricity consumption</strong> · electricity increase in prediction with split context</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="Energy (electricity)">Energy (electricity)</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="96">96</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="38">38</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>Energy (electricity)</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Uncertain</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">General</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Predictable</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2013-09-29 00:00:00</span><span>Forecast horizon · through 2013-10-03 23:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="783.23" y1="14" x2="783.23" y2="276" /><polyline class="chart-history" points="12.00,258.18 20.03,271.09 28.07,273.89 36.10,272.91 44.13,273.16 52.17,269.81 60.20,266.83 68.24,263.53 76.27,257.66 84.30,249.80 92.34,246.82 100.37,247.01 108.40,246.46 116.44,246.22 124.47,245.82 132.50,247.34 140.54,246.71 148.57,245.82 156.61,245.43 164.64,245.98 172.67,246.60 180.71,247.11 188.74,249.88 196.77,254.79 204.81,263.73 212.84,265.78 220.87,266.93 228.91,266.92 236.94,267.58 244.97,263.44 253.01,258.76 261.04,257.38 269.08,255.68 277.11,245.34 285.14,244.28 293.18,245.43 301.21,245.52 309.24,245.02 317.28,243.64 325.31,245.61 333.34,242.69 341.38,241.85 349.41,242.90 357.45,242.87 365.48,243.85 373.51,244.28 381.55,248.09 389.58,251.97 397.61,261.37 405.65,260.23 413.68,262.15 421.71,262.51 429.75,260.19 437.78,260.87 445.82,255.46 453.85,251.06 461.88,249.10 469.92,242.06 477.95,242.58 485.98,235.75 494.02,236.12 502.05,238.04 510.08,237.92 518.12,239.78 526.15,241.19 534.18,241.40 542.22,240.25 550.25,241.77 558.29,243.52 566.32,243.85 574.35,246.57 582.39,253.10 590.42,262.11 598.45,264.32 606.49,267.39 614.52,267.34 622.55,267.74 630.59,263.78 638.62,260.32 646.66,257.93 654.69,251.46 662.72,242.29 670.76,242.46 678.79,240.68 686.82,242.67 694.86,245.20 702.89,246.05 710.92,244.05 718.96,245.68 726.99,245.34 735.03,244.67 743.06,244.65 751.09,245.01 759.13,246.73 767.16,248.66 775.19,252.72 783.23,267.74" /><polyline class="chart-future" points="783.23,267.74 791.26,271.22 799.29,269.79 807.33,271.39 815.36,276.00 823.39,270.88 831.43,271.20 839.46,266.23 847.50,258.74 855.53,253.13 863.56,249.30 871.60,243.17 879.63,14.00 887.66,241.89 895.70,244.23 903.73,244.53 911.76,242.30 919.80,243.27 927.83,243.91 935.87,240.11 943.90,245.53 951.93,245.16 959.97,250.80 968.00,259.44" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (120 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2013-09-29 00:00:00</td><td>999.6195114662</td></tr><tr><td>2</td><td>Observed history</td><td>2013-09-29 01:00:00</td><td>784.2344573464</td></tr><tr><td>3</td><td>Observed history</td><td>2013-09-29 02:00:00</td><td>737.5882172875</td></tr><tr><td>4</td><td>Observed history</td><td>2013-09-29 03:00:00</td><td>753.8795816216</td></tr><tr><td>5</td><td>Observed history</td><td>2013-09-29 04:00:00</td><td>749.7819284335</td></tr><tr><td>6</td><td>Observed history</td><td>2013-09-29 05:00:00</td><td>805.6250106779</td></tr><tr><td>7</td><td>Observed history</td><td>2013-09-29 06:00:00</td><td>855.46123876</td></tr><tr><td>8</td><td>Observed history</td><td>2013-09-29 07:00:00</td><td>910.4025342173</td></tr><tr><td>9</td><td>Observed history</td><td>2013-09-29 08:00:00</td><td>1008.3860893899</td></tr><tr><td>10</td><td>Observed history</td><td>2013-09-29 09:00:00</td><td>1139.5080980039</td></tr><tr><td>11</td><td>Observed history</td><td>2013-09-29 10:00:00</td><td>1189.249004351</td></tr><tr><td>12</td><td>Observed history</td><td>2013-09-29 11:00:00</td><td>1185.9860263497</td></tr><tr><td>13</td><td>Observed history</td><td>2013-09-29 12:00:00</td><td>1195.285886178</td></tr><tr><td>14</td><td>Observed history</td><td>2013-09-29 13:00:00</td><td>1199.303586877</td></tr><tr><td>15</td><td>Observed history</td><td>2013-09-29 14:00:00</td><td>1205.888985785</td></tr><tr><td>16</td><td>Observed history</td><td>2013-09-29 15:00:00</td><td>1180.520274386</td></tr><tr><td>17</td><td>Observed history</td><td>2013-09-29 16:00:00</td><td>1191.1023333805</td></tr><tr><td>18</td><td>Observed history</td><td>2013-09-29 17:00:00</td><td>1205.9765342377</td></tr><tr><td>19</td><td>Observed history</td><td>2013-09-29 18:00:00</td><td>1212.3961716654</td></tr><tr><td>20</td><td>Observed history</td><td>2013-09-29 19:00:00</td><td>1203.1780749495</td></tr><tr><td>21</td><td>Observed history</td><td>2013-09-29 20:00:00</td><td>1192.9048891266</td></tr><tr><td>22</td><td>Observed history</td><td>2013-09-29 21:00:00</td><td>1184.4516193243</td></tr><tr><td>23</td><td>Observed history</td><td>2013-09-29 22:00:00</td><td>1138.1116806656</td></tr><tr><td>24</td><td>Observed history</td><td>2013-09-29 23:00:00</td><td>1056.2011669732</td></tr><tr><td>25</td><td>Observed history</td><td>2013-09-30 00:00:00</td><td>907.1737025714</td></tr><tr><td>26</td><td>Observed history</td><td>2013-09-30 01:00:00</td><td>872.8551972591</td></tr><tr><td>27</td><td>Observed history</td><td>2013-09-30 02:00:00</td><td>853.7079501706</td></tr><tr><td>28</td><td>Observed history</td><td>2013-09-30 03:00:00</td><td>853.8345865216</td></tr><tr><td>29</td><td>Observed history</td><td>2013-09-30 04:00:00</td><td>842.8083235886</td></tr><tr><td>30</td><td>Observed history</td><td>2013-09-30 05:00:00</td><td>911.8824868705</td></tr><tr><td>31</td><td>Observed history</td><td>2013-09-30 06:00:00</td><td>989.99986637</td></tr><tr><td>32</td><td>Observed history</td><td>2013-09-30 07:00:00</td><td>1012.9608557513</td></tr><tr><td>33</td><td>Observed history</td><td>2013-09-30 08:00:00</td><td>1041.4025287231</td></tr><tr><td>34</td><td>Observed history</td><td>2013-09-30 09:00:00</td><td>1213.90443813</td></tr><tr><td>35</td><td>Observed history</td><td>2013-09-30 10:00:00</td><td>1231.5937443286</td></tr><tr><td>36</td><td>Observed history</td><td>2013-09-30 11:00:00</td><td>1212.3434973651</td></tr><tr><td>37</td><td>Observed history</td><td>2013-09-30 12:00:00</td><td>1210.9213329017</td></tr><tr><td>38</td><td>Observed history</td><td>2013-09-30 13:00:00</td><td>1219.2183345899</td></tr><tr><td>39</td><td>Observed history</td><td>2013-09-30 14:00:00</td><td>1242.2269336118</td></tr><tr><td>40</td><td>Observed history</td><td>2013-09-30 15:00:00</td><td>1209.3248429725</td></tr><tr><td>41</td><td>Observed history</td><td>2013-09-30 16:00:00</td><td>1258.0306307853</td></tr><tr><td>42</td><td>Observed history</td><td>2013-09-30 17:00:00</td><td>1272.0707197174</td></tr><tr><td>43</td><td>Observed history</td><td>2013-09-30 18:00:00</td><td>1254.6509163654</td></tr><tr><td>44</td><td>Observed history</td><td>2013-09-30 19:00:00</td><td>1255.1478778875</td></tr><tr><td>45</td><td>Observed history</td><td>2013-09-30 20:00:00</td><td>1238.811009116</td></tr><tr><td>46</td><td>Observed history</td><td>2013-09-30 21:00:00</td><td>1231.667419231</td></tr><tr><td>47</td><td>Observed history</td><td>2013-09-30 22:00:00</td><td>1168.0423489951</td></tr><tr><td>48</td><td>Observed history</td><td>2013-09-30 23:00:00</td><td>1103.2441518076</td></tr><tr><td>49</td><td>Observed history</td><td>2013-10-01 00:00:00</td><td>946.515159344</td></tr><tr><td>50</td><td>Observed history</td><td>2013-10-01 01:00:00</td><td>965.5709145182</td></tr><tr><td>51</td><td>Observed history</td><td>2013-10-01 02:00:00</td><td>933.4031131054</td></tr><tr><td>52</td><td>Observed history</td><td>2013-10-01 03:00:00</td><td>927.434509982</td></tr><tr><td>53</td><td>Observed history</td><td>2013-10-01 04:00:00</td><td>966.2094916417</td></tr><tr><td>54</td><td>Observed history</td><td>2013-10-01 05:00:00</td><td>954.7388395247</td></tr><tr><td>55</td><td>Observed history</td><td>2013-10-01 06:00:00</td><td>1044.9995985202</td></tr><tr><td>56</td><td>Observed history</td><td>2013-10-01 07:00:00</td><td>1118.4721733646</td></tr><tr><td>57</td><td>Observed history</td><td>2013-10-01 08:00:00</td><td>1151.2163560285</td></tr><tr><td>58</td><td>Observed history</td><td>2013-10-01 09:00:00</td><td>1268.6376642921</td></tr><tr><td>59</td><td>Observed history</td><td>2013-10-01 10:00:00</td><td>1260.0175187751</td></tr><tr><td>60</td><td>Observed history</td><td>2013-10-01 11:00:00</td><td>1373.8319441681</td></tr><tr><td>61</td><td>Observed history</td><td>2013-10-01 12:00:00</td><td>1367.6420576542</td></tr><tr><td>62</td><td>Observed history</td><td>2013-10-01 13:00:00</td><td>1335.7495807455</td></tr><tr><td>63</td><td>Observed history</td><td>2013-10-01 14:00:00</td><td>1337.7611707601</td></tr><tr><td>64</td><td>Observed history</td><td>2013-10-01 15:00:00</td><td>1306.7037784588</td></tr><tr><td>65</td><td>Observed history</td><td>2013-10-01 16:00:00</td><td>1283.1795457407</td></tr><tr><td>66</td><td>Observed history</td><td>2013-10-01 17:00:00</td><td>1279.6497886632</td></tr><tr><td>67</td><td>Observed history</td><td>2013-10-01 18:00:00</td><td>1298.8991871048</td></tr><tr><td>68</td><td>Observed history</td><td>2013-10-01 19:00:00</td><td>1273.4757722256</td></tr><tr><td>69</td><td>Observed history</td><td>2013-10-01 20:00:00</td><td>1244.2310598089</td></tr><tr><td>70</td><td>Observed history</td><td>2013-10-01 21:00:00</td><td>1238.8069722476</td></tr><tr><td>71</td><td>Observed history</td><td>2013-10-01 22:00:00</td><td>1193.4076880726</td></tr><tr><td>72</td><td>Observed history</td><td>2013-10-01 23:00:00</td><td>1084.3653521597</td></tr><tr><td>73</td><td>Observed history</td><td>2013-10-02 00:00:00</td><td>934.20085543</td></tr><tr><td>74</td><td>Observed history</td><td>2013-10-02 01:00:00</td><td>897.2396393915</td></tr><tr><td>75</td><td>Observed history</td><td>2013-10-02 02:00:00</td><td>846.0536501052</td></tr><tr><td>76</td><td>Observed history</td><td>2013-10-02 03:00:00</td><td>846.9259423065</td></tr><tr><td>77</td><td>Observed history</td><td>2013-10-02 04:00:00</td><td>840.178538819</td></tr><tr><td>78</td><td>Observed history</td><td>2013-10-02 05:00:00</td><td>906.1872666131</td></tr><tr><td>79</td><td>Observed history</td><td>2013-10-02 06:00:00</td><td>964.0561010557</td></tr><tr><td>80</td><td>Observed history</td><td>2013-10-02 07:00:00</td><td>1003.8299297723</td></tr><tr><td>81</td><td>Observed history</td><td>2013-10-02 08:00:00</td><td>1111.7219416757</td></tr><tr><td>82</td><td>Observed history</td><td>2013-10-02 09:00:00</td><td>1264.8122446827</td></tr><tr><td>83</td><td>Observed history</td><td>2013-10-02 10:00:00</td><td>1261.8800383569</td></tr><tr><td>84</td><td>Observed history</td><td>2013-10-02 11:00:00</td><td>1291.5773844571</td></tr><tr><td>85</td><td>Observed history</td><td>2013-10-02 12:00:00</td><td>1258.489135812</td></tr><tr><td>86</td><td>Observed history</td><td>2013-10-02 13:00:00</td><td>1216.1634040008</td></tr><tr><td>87</td><td>Observed history</td><td>2013-10-02 14:00:00</td><td>1202.0583557135</td></tr><tr><td>88</td><td>Observed history</td><td>2013-10-02 15:00:00</td><td>1235.429925828</td></tr><tr><td>89</td><td>Observed history</td><td>2013-10-02 16:00:00</td><td>1208.2223500952</td></tr><tr><td>90</td><td>Observed history</td><td>2013-10-02 17:00:00</td><td>1213.8776996997</td></tr><tr><td>91</td><td>Observed history</td><td>2013-10-02 18:00:00</td><td>1225.1398265045</td></tr><tr><td>92</td><td>Observed history</td><td>2013-10-02 19:00:00</td><td>1225.4552744077</td></tr><tr><td>93</td><td>Observed history</td><td>2013-10-02 20:00:00</td><td>1219.3795617431</td></tr><tr><td>94</td><td>Observed history</td><td>2013-10-02 21:00:00</td><td>1190.7427129487</td></tr><tr><td>95</td><td>Observed history</td><td>2013-10-02 22:00:00</td><td>1158.5059528851</td></tr><tr><td>96</td><td>Observed history</td><td>2013-10-02 23:00:00</td><td>1090.7405448177</td></tr><tr class="future"><td>97</td><td>Forecast horizon</td><td>2013-10-03 00:00:00</td><td>840.2519947427</td></tr><tr class="future"><td>98</td><td>Forecast horizon</td><td>2013-10-03 01:00:00</td><td>782.0773871875</td></tr><tr class="future"><td>99</td><td>Forecast horizon</td><td>2013-10-03 02:00:00</td><td>805.9704633264</td></tr><tr class="future"><td>100</td><td>Forecast horizon</td><td>2013-10-03 03:00:00</td><td>779.3670752714</td></tr><tr class="future"><td>101</td><td>Forecast horizon</td><td>2013-10-03 04:00:00</td><td>702.3938458408</td></tr><tr class="future"><td>102</td><td>Forecast horizon</td><td>2013-10-03 05:00:00</td><td>787.7919462545</td></tr><tr class="future"><td>103</td><td>Forecast horizon</td><td>2013-10-03 06:00:00</td><td>782.495820781</td></tr><tr class="future"><td>104</td><td>Forecast horizon</td><td>2013-10-03 07:00:00</td><td>865.4069078169</td></tr><tr class="future"><td>105</td><td>Forecast horizon</td><td>2013-10-03 08:00:00</td><td>990.4178775054</td></tr><tr class="future"><td>106</td><td>Forecast horizon</td><td>2013-10-03 09:00:00</td><td>1083.9678960971</td></tr><tr class="future"><td>107</td><td>Forecast horizon</td><td>2013-10-03 10:00:00</td><td>1147.8504693499</td></tr><tr class="future"><td>108</td><td>Forecast horizon</td><td>2013-10-03 11:00:00</td><td>1250.1878183313</td></tr><tr class="future"><td>109</td><td>Forecast horizon</td><td>2013-10-03 12:00:00</td><td>5073.4070830564</td></tr><tr class="future"><td>110</td><td>Forecast horizon</td><td>2013-10-03 13:00:00</td><td>1271.4437169502</td></tr><tr class="future"><td>111</td><td>Forecast horizon</td><td>2013-10-03 14:00:00</td><td>1232.4393776918</td></tr><tr class="future"><td>112</td><td>Forecast horizon</td><td>2013-10-03 15:00:00</td><td>1227.3800401477</td></tr><tr class="future"><td>113</td><td>Forecast horizon</td><td>2013-10-03 16:00:00</td><td>1264.6725433339</td></tr><tr class="future"><td>114</td><td>Forecast horizon</td><td>2013-10-03 17:00:00</td><td>1248.3758368327</td></tr><tr class="future"><td>115</td><td>Forecast horizon</td><td>2013-10-03 18:00:00</td><td>1237.7672378821</td></tr><tr class="future"><td>116</td><td>Forecast horizon</td><td>2013-10-03 19:00:00</td><td>1301.2322473074</td></tr><tr class="future"><td>117</td><td>Forecast horizon</td><td>2013-10-03 20:00:00</td><td>1210.7383833627</td></tr><tr class="future"><td>118</td><td>Forecast horizon</td><td>2013-10-03 21:00:00</td><td>1216.8534667662</td></tr><tr class="future"><td>119</td><td>Forecast horizon</td><td>2013-10-03 22:00:00</td><td>1122.8264032763</td></tr><tr class="future"><td>120</td><td>Forecast horizon</td><td>2013-10-03 23:00:00</td><td>978.6095551783</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-98-context" id="forecast-task-98-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-98-context" id="forecast-task-98-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-98-context" id="forecast-task-98-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-98-view" id="forecast-task-98-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-98-view" id="forecast-task-98-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-98-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-98-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-98-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-98-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-98-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 270.99 L 35.93 282.99 L 43.87 285.58 L 51.80 284.68 L 59.73 284.91 L 67.66 281.80 L 75.60 279.02 L 83.53 275.96 L 91.46 270.51 L 99.39 263.21 L 107.33 260.44 L 115.26 260.62 L 123.19 260.10 L 131.13 259.88 L 139.06 259.51 L 146.99 260.92 L 154.92 260.33 L 162.86 259.50 L 170.79 259.15 L 178.72 259.66 L 186.66 260.23 L 194.59 260.70 L 202.52 263.28 L 210.45 267.84 L 218.39 276.14 L 226.32 278.05 L 234.25 279.12 L 242.18 279.11 L 250.12 279.73 L 258.05 275.88 L 265.98 271.53 L 273.92 270.25 L 281.85 268.67 L 289.78 259.06 L 297.71 258.08 L 305.65 259.15 L 313.58 259.23 L 321.51 258.77 L 329.45 257.49 L 337.38 259.32 L 345.31 256.61 L 353.24 255.82 L 361.18 256.79 L 369.11 256.77 L 377.04 257.68 L 384.97 258.07 L 392.91 261.62 L 400.84 265.22 L 408.77 273.95 L 416.71 272.89 L 424.64 274.68 L 432.57 275.01 L 440.50 272.85 L 448.44 273.49 L 456.37 268.47 L 464.30 264.38 L 472.24 262.55 L 480.17 256.02 L 488.10 256.50 L 496.03 250.16 L 503.97 250.50 L 511.90 252.28 L 519.83 252.17 L 527.76 253.90 L 535.70 255.21 L 543.63 255.40 L 551.56 254.33 L 559.50 255.75 L 567.43 257.37 L 575.36 257.68 L 583.29 260.20 L 591.23 266.28 L 599.16 274.64 L 607.09 276.70 L 615.03 279.55 L 622.96 279.50 L 630.89 279.87 L 638.82 276.20 L 646.76 272.97 L 654.69 270.76 L 662.62 264.75 L 670.55 256.23 L 678.49 256.39 L 686.42 254.74 L 694.35 256.58 L 702.29 258.94 L 710.22 259.72 L 718.15 257.86 L 726.08 259.38 L 734.02 259.06 L 741.95 258.44 L 749.88 258.42 L 757.82 258.76 L 765.75 260.35 L 773.68 262.15 L 781.61 265.92" /><path class="forecast-svg-actual" d="M 789.55 279.87 L 797.48 283.11 L 805.41 281.78 L 813.34 283.26 L 821.28 287.54 L 829.21 282.79 L 837.14 283.08 L 845.08 278.47 L 853.01 271.51 L 860.94 266.30 L 868.87 262.74 L 876.81 257.04 L 884.74 44.17 L 892.67 255.86 L 900.61 258.03 L 908.54 258.31 L 916.47 256.24 L 924.40 257.14 L 932.34 257.73 L 940.27 254.20 L 948.20 259.24 L 956.13 258.90 L 964.07 264.13 L 972.00 272.16" /><path class="forecast-svg-band" fill="#b86d4a" d="M 789.55 273.16 L 797.48 276.77 L 805.41 278.70 L 813.34 278.75 L 821.28 278.30 L 829.21 276.45 L 837.14 273.19 L 845.08 270.24 L 853.01 265.55 L 860.94 257.83 L 868.87 257.15 L 876.81 255.99 L 884.74 255.41 L 892.67 256.95 L 900.61 256.76 L 908.54 256.82 L 916.47 257.43 L 924.40 257.28 L 932.34 256.64 L 940.27 256.86 L 948.20 258.15 L 956.13 258.57 L 964.07 260.98 L 972.00 265.33 L 972.00 267.34 L 964.07 263.46 L 956.13 261.08 L 948.20 260.13 L 940.27 259.99 L 932.34 259.74 L 924.40 260.45 L 916.47 260.03 L 908.54 260.40 L 900.61 260.09 L 892.67 259.65 L 884.74 259.27 L 876.81 259.49 L 868.87 259.81 L 860.94 260.53 L 853.01 267.27 L 845.08 271.59 L 837.14 274.11 L 829.21 277.41 L 821.28 279.41 L 813.34 279.86 L 805.41 279.60 L 797.48 278.11 L 789.55 274.30 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 789.55 273.73 L 797.48 277.44 L 805.41 279.15 L 813.34 279.30 L 821.28 278.85 L 829.21 276.93 L 837.14 273.65 L 845.08 270.92 L 853.01 266.41 L 860.94 259.18 L 868.87 258.48 L 876.81 257.74 L 884.74 257.34 L 892.67 258.30 L 900.61 258.43 L 908.54 258.61 L 916.47 258.73 L 924.40 258.87 L 932.34 258.19 L 940.27 258.43 L 948.20 259.14 L 956.13 259.83 L 964.07 262.22 L 972.00 266.33" /><circle class="forecast-svg-start" fill="#b86d4a" cx="789.55" cy="273.73" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 789.55 275.08 L 797.48 277.39 L 805.41 279.70 L 813.34 279.66 L 821.28 279.93 L 829.21 276.34 L 837.14 272.79 L 845.08 270.23 L 853.01 265.38 L 860.94 257.35 L 868.87 256.69 L 876.81 255.47 L 884.74 48.03 L 892.67 53.76 L 900.61 162.88 L 908.54 187.76 L 916.47 191.10 L 924.40 191.71 L 932.34 192.01 L 940.27 193.93 L 948.20 196.46 L 956.13 200.91 L 964.07 208.08 L 972.00 217.92" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="789.55" cy="275.08" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 789.55 274.63 L 797.48 277.63 L 805.41 279.50 L 813.34 279.91 L 821.28 280.01 L 829.21 276.93 L 837.14 273.76 L 845.08 270.77 L 853.01 266.37 L 860.94 259.09 L 868.87 258.04 L 876.81 257.50 L 884.74 201.89 L 892.67 248.60 L 900.61 257.80 L 908.54 258.43 L 916.47 258.20 L 924.40 258.16 L 932.34 257.84 L 940.27 258.10 L 948.20 258.79 L 956.13 259.72 L 964.07 261.77 L 972.00 266.08" /><circle class="forecast-svg-start" fill="#aa7c32" cx="789.55" cy="274.63" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 270.99 L 35.93 282.99 L 43.87 285.58 L 51.80 284.68 L 59.73 284.91 L 67.66 281.80 L 75.60 279.02 L 83.53 275.96 L 91.46 270.51 L 99.39 263.21 L 107.33 260.44 L 115.26 260.62 L 123.19 260.10 L 131.13 259.88 L 139.06 259.51 L 146.99 260.92 L 154.92 260.33 L 162.86 259.50 L 170.79 259.15 L 178.72 259.66 L 186.66 260.23 L 194.59 260.70 L 202.52 263.28 L 210.45 267.84 L 218.39 276.14 L 226.32 278.05 L 234.25 279.12 L 242.18 279.11 L 250.12 279.73 L 258.05 275.88 L 265.98 271.53 L 273.92 270.25 L 281.85 268.67 L 289.78 259.06 L 297.71 258.08 L 305.65 259.15 L 313.58 259.23 L 321.51 258.77 L 329.45 257.49 L 337.38 259.32 L 345.31 256.61 L 353.24 255.82 L 361.18 256.79 L 369.11 256.77 L 377.04 257.68 L 384.97 258.07 L 392.91 261.62 L 400.84 265.22 L 408.77 273.95 L 416.71 272.89 L 424.64 274.68 L 432.57 275.01 L 440.50 272.85 L 448.44 273.49 L 456.37 268.47 L 464.30 264.38 L 472.24 262.55 L 480.17 256.02 L 488.10 256.50 L 496.03 250.16 L 503.97 250.50 L 511.90 252.28 L 519.83 252.17 L 527.76 253.90 L 535.70 255.21 L 543.63 255.40 L 551.56 254.33 L 559.50 255.75 L 567.43 257.37 L 575.36 257.68 L 583.29 260.20 L 591.23 266.28 L 599.16 274.64 L 607.09 276.70 L 615.03 279.55 L 622.96 279.50 L 630.89 279.87 L 638.82 276.20 L 646.76 272.97 L 654.69 270.76 L 662.62 264.75 L 670.55 256.23 L 678.49 256.39 L 686.42 254.74 L 694.35 256.58 L 702.29 258.94 L 710.22 259.72 L 718.15 257.86 L 726.08 259.38 L 734.02 259.06 L 741.95 258.44 L 749.88 258.42 L 757.82 258.76 L 765.75 260.35 L 773.68 262.15 L 781.61 265.92" /><path class="forecast-svg-actual" d="M 789.55 279.87 L 797.48 283.11 L 805.41 281.78 L 813.34 283.26 L 821.28 287.54 L 829.21 282.79 L 837.14 283.08 L 845.08 278.47 L 853.01 271.51 L 860.94 266.30 L 868.87 262.74 L 876.81 257.04 L 884.74 44.17 L 892.67 255.86 L 900.61 258.03 L 908.54 258.31 L 916.47 256.24 L 924.40 257.14 L 932.34 257.73 L 940.27 254.20 L 948.20 259.24 L 956.13 258.90 L 964.07 264.13 L 972.00 272.16" /><path class="forecast-svg-band" fill="#b86d4a" d="M 789.55 273.16 L 797.48 276.77 L 805.41 278.70 L 813.34 278.75 L 821.28 278.30 L 829.21 276.45 L 837.14 273.19 L 845.08 270.24 L 853.01 265.55 L 860.94 257.83 L 868.87 257.15 L 876.81 255.99 L 884.74 255.41 L 892.67 256.95 L 900.61 256.76 L 908.54 256.82 L 916.47 257.43 L 924.40 257.28 L 932.34 256.64 L 940.27 256.86 L 948.20 258.15 L 956.13 258.57 L 964.07 260.98 L 972.00 265.33 L 972.00 267.34 L 964.07 263.46 L 956.13 261.08 L 948.20 260.13 L 940.27 259.99 L 932.34 259.74 L 924.40 260.45 L 916.47 260.03 L 908.54 260.40 L 900.61 260.09 L 892.67 259.65 L 884.74 259.27 L 876.81 259.49 L 868.87 259.81 L 860.94 260.53 L 853.01 267.27 L 845.08 271.59 L 837.14 274.11 L 829.21 277.41 L 821.28 279.41 L 813.34 279.86 L 805.41 279.60 L 797.48 278.11 L 789.55 274.30 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 789.55 273.73 L 797.48 277.44 L 805.41 279.15 L 813.34 279.30 L 821.28 278.85 L 829.21 276.93 L 837.14 273.65 L 845.08 270.92 L 853.01 266.41 L 860.94 259.18 L 868.87 258.48 L 876.81 257.74 L 884.74 257.34 L 892.67 258.30 L 900.61 258.43 L 908.54 258.61 L 916.47 258.73 L 924.40 258.87 L 932.34 258.19 L 940.27 258.43 L 948.20 259.14 L 956.13 259.83 L 964.07 262.22 L 972.00 266.33" /><circle class="forecast-svg-start" fill="#b86d4a" cx="789.55" cy="273.73" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 270.99 L 35.93 282.99 L 43.87 285.58 L 51.80 284.68 L 59.73 284.91 L 67.66 281.80 L 75.60 279.02 L 83.53 275.96 L 91.46 270.51 L 99.39 263.21 L 107.33 260.44 L 115.26 260.62 L 123.19 260.10 L 131.13 259.88 L 139.06 259.51 L 146.99 260.92 L 154.92 260.33 L 162.86 259.50 L 170.79 259.15 L 178.72 259.66 L 186.66 260.23 L 194.59 260.70 L 202.52 263.28 L 210.45 267.84 L 218.39 276.14 L 226.32 278.05 L 234.25 279.12 L 242.18 279.11 L 250.12 279.73 L 258.05 275.88 L 265.98 271.53 L 273.92 270.25 L 281.85 268.67 L 289.78 259.06 L 297.71 258.08 L 305.65 259.15 L 313.58 259.23 L 321.51 258.77 L 329.45 257.49 L 337.38 259.32 L 345.31 256.61 L 353.24 255.82 L 361.18 256.79 L 369.11 256.77 L 377.04 257.68 L 384.97 258.07 L 392.91 261.62 L 400.84 265.22 L 408.77 273.95 L 416.71 272.89 L 424.64 274.68 L 432.57 275.01 L 440.50 272.85 L 448.44 273.49 L 456.37 268.47 L 464.30 264.38 L 472.24 262.55 L 480.17 256.02 L 488.10 256.50 L 496.03 250.16 L 503.97 250.50 L 511.90 252.28 L 519.83 252.17 L 527.76 253.90 L 535.70 255.21 L 543.63 255.40 L 551.56 254.33 L 559.50 255.75 L 567.43 257.37 L 575.36 257.68 L 583.29 260.20 L 591.23 266.28 L 599.16 274.64 L 607.09 276.70 L 615.03 279.55 L 622.96 279.50 L 630.89 279.87 L 638.82 276.20 L 646.76 272.97 L 654.69 270.76 L 662.62 264.75 L 670.55 256.23 L 678.49 256.39 L 686.42 254.74 L 694.35 256.58 L 702.29 258.94 L 710.22 259.72 L 718.15 257.86 L 726.08 259.38 L 734.02 259.06 L 741.95 258.44 L 749.88 258.42 L 757.82 258.76 L 765.75 260.35 L 773.68 262.15 L 781.61 265.92" /><path class="forecast-svg-actual" d="M 789.55 279.87 L 797.48 283.11 L 805.41 281.78 L 813.34 283.26 L 821.28 287.54 L 829.21 282.79 L 837.14 283.08 L 845.08 278.47 L 853.01 271.51 L 860.94 266.30 L 868.87 262.74 L 876.81 257.04 L 884.74 44.17 L 892.67 255.86 L 900.61 258.03 L 908.54 258.31 L 916.47 256.24 L 924.40 257.14 L 932.34 257.73 L 940.27 254.20 L 948.20 259.24 L 956.13 258.90 L 964.07 264.13 L 972.00 272.16" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 789.55 274.46 L 797.48 277.07 L 805.41 279.49 L 813.34 279.37 L 821.28 279.63 L 829.21 275.99 L 837.14 272.45 L 845.08 269.64 L 853.01 264.20 L 860.94 256.19 L 868.87 256.06 L 876.81 254.41 L 884.74 43.79 L 892.67 49.08 L 900.61 63.58 L 908.54 93.21 L 916.47 99.86 L 924.40 101.22 L 932.34 101.68 L 940.27 104.94 L 948.20 108.70 L 956.13 115.93 L 964.07 126.70 L 972.00 141.19 L 972.00 294.65 L 964.07 289.46 L 956.13 285.89 L 948.20 284.21 L 940.27 282.91 L 932.34 282.34 L 924.40 282.20 L 916.47 282.34 L 908.54 282.31 L 900.61 262.18 L 892.67 58.44 L 884.74 52.26 L 876.81 256.52 L 868.87 257.31 L 860.94 258.51 L 853.01 266.55 L 845.08 270.83 L 837.14 273.13 L 829.21 276.68 L 821.28 280.24 L 813.34 279.96 L 805.41 279.92 L 797.48 277.70 L 789.55 275.70 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 789.55 275.08 L 797.48 277.39 L 805.41 279.70 L 813.34 279.66 L 821.28 279.93 L 829.21 276.34 L 837.14 272.79 L 845.08 270.23 L 853.01 265.38 L 860.94 257.35 L 868.87 256.69 L 876.81 255.47 L 884.74 48.03 L 892.67 53.76 L 900.61 162.88 L 908.54 187.76 L 916.47 191.10 L 924.40 191.71 L 932.34 192.01 L 940.27 193.93 L 948.20 196.46 L 956.13 200.91 L 964.07 208.08 L 972.00 217.92" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="789.55" cy="275.08" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 270.99 L 35.93 282.99 L 43.87 285.58 L 51.80 284.68 L 59.73 284.91 L 67.66 281.80 L 75.60 279.02 L 83.53 275.96 L 91.46 270.51 L 99.39 263.21 L 107.33 260.44 L 115.26 260.62 L 123.19 260.10 L 131.13 259.88 L 139.06 259.51 L 146.99 260.92 L 154.92 260.33 L 162.86 259.50 L 170.79 259.15 L 178.72 259.66 L 186.66 260.23 L 194.59 260.70 L 202.52 263.28 L 210.45 267.84 L 218.39 276.14 L 226.32 278.05 L 234.25 279.12 L 242.18 279.11 L 250.12 279.73 L 258.05 275.88 L 265.98 271.53 L 273.92 270.25 L 281.85 268.67 L 289.78 259.06 L 297.71 258.08 L 305.65 259.15 L 313.58 259.23 L 321.51 258.77 L 329.45 257.49 L 337.38 259.32 L 345.31 256.61 L 353.24 255.82 L 361.18 256.79 L 369.11 256.77 L 377.04 257.68 L 384.97 258.07 L 392.91 261.62 L 400.84 265.22 L 408.77 273.95 L 416.71 272.89 L 424.64 274.68 L 432.57 275.01 L 440.50 272.85 L 448.44 273.49 L 456.37 268.47 L 464.30 264.38 L 472.24 262.55 L 480.17 256.02 L 488.10 256.50 L 496.03 250.16 L 503.97 250.50 L 511.90 252.28 L 519.83 252.17 L 527.76 253.90 L 535.70 255.21 L 543.63 255.40 L 551.56 254.33 L 559.50 255.75 L 567.43 257.37 L 575.36 257.68 L 583.29 260.20 L 591.23 266.28 L 599.16 274.64 L 607.09 276.70 L 615.03 279.55 L 622.96 279.50 L 630.89 279.87 L 638.82 276.20 L 646.76 272.97 L 654.69 270.76 L 662.62 264.75 L 670.55 256.23 L 678.49 256.39 L 686.42 254.74 L 694.35 256.58 L 702.29 258.94 L 710.22 259.72 L 718.15 257.86 L 726.08 259.38 L 734.02 259.06 L 741.95 258.44 L 749.88 258.42 L 757.82 258.76 L 765.75 260.35 L 773.68 262.15 L 781.61 265.92" /><path class="forecast-svg-actual" d="M 789.55 279.87 L 797.48 283.11 L 805.41 281.78 L 813.34 283.26 L 821.28 287.54 L 829.21 282.79 L 837.14 283.08 L 845.08 278.47 L 853.01 271.51 L 860.94 266.30 L 868.87 262.74 L 876.81 257.04 L 884.74 44.17 L 892.67 255.86 L 900.61 258.03 L 908.54 258.31 L 916.47 256.24 L 924.40 257.14 L 932.34 257.73 L 940.27 254.20 L 948.20 259.24 L 956.13 258.90 L 964.07 264.13 L 972.00 272.16" /><path class="forecast-svg-band" fill="#aa7c32" d="M 789.55 274.63 L 797.48 277.63 L 805.41 279.50 L 813.34 279.91 L 821.28 280.01 L 829.21 276.93 L 837.14 273.76 L 845.08 270.77 L 853.01 266.37 L 860.94 259.09 L 868.87 258.04 L 876.81 257.50 L 884.74 87.58 L 892.67 208.45 L 900.61 254.87 L 908.54 255.77 L 916.47 255.54 L 924.40 255.50 L 932.34 255.16 L 940.27 255.44 L 948.20 256.16 L 956.13 257.11 L 964.07 259.25 L 972.00 263.72 L 972.00 268.44 L 964.07 264.29 L 956.13 262.32 L 948.20 261.43 L 940.27 260.77 L 932.34 260.51 L 924.40 260.82 L 916.47 260.86 L 908.54 261.08 L 900.61 260.73 L 892.67 288.75 L 884.74 316.21 L 876.81 257.50 L 868.87 258.04 L 860.94 259.09 L 853.01 266.37 L 845.08 270.77 L 837.14 273.76 L 829.21 276.93 L 821.28 280.01 L 813.34 279.91 L 805.41 279.50 L 797.48 277.63 L 789.55 274.63 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 789.55 274.63 L 797.48 277.63 L 805.41 279.50 L 813.34 279.91 L 821.28 280.01 L 829.21 276.93 L 837.14 273.76 L 845.08 270.77 L 853.01 266.37 L 860.94 259.09 L 868.87 258.04 L 876.81 257.50 L 884.74 201.89 L 892.67 248.60 L 900.61 257.80 L 908.54 258.43 L 916.47 258.20 L 924.40 258.16 L 932.34 257.84 L 940.27 258.10 L 948.20 258.79 L 956.13 259.72 L 964.07 261.77 L 972.00 266.08" /><circle class="forecast-svg-start" fill="#aa7c32" cx="789.55" cy="274.63" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 297.70 L 35.93 311.11 L 43.87 314.02 L 51.80 313.00 L 59.73 313.26 L 67.66 309.78 L 75.60 306.68 L 83.53 303.25 L 91.46 297.15 L 99.39 288.99 L 107.33 285.89 L 115.26 286.10 L 123.19 285.52 L 131.13 285.27 L 139.06 284.86 L 146.99 286.44 L 154.92 285.78 L 162.86 284.85 L 170.79 284.45 L 178.72 285.02 L 186.66 285.66 L 194.59 286.19 L 202.52 289.08 L 210.45 294.18 L 218.39 303.46 L 226.32 305.59 L 234.25 306.79 L 242.18 306.78 L 250.12 307.46 L 258.05 303.16 L 265.98 298.30 L 273.92 296.87 L 281.85 295.10 L 289.78 284.36 L 297.71 283.26 L 305.65 284.45 L 313.58 284.54 L 321.51 284.03 L 329.45 282.59 L 337.38 284.64 L 345.31 281.61 L 353.24 280.73 L 361.18 281.82 L 369.11 281.79 L 377.04 282.81 L 384.97 283.25 L 392.91 287.21 L 400.84 291.25 L 408.77 301.01 L 416.71 299.82 L 424.64 301.82 L 432.57 302.19 L 440.50 299.78 L 448.44 300.49 L 456.37 294.87 L 464.30 290.30 L 472.24 288.26 L 480.17 280.95 L 488.10 281.49 L 496.03 274.40 L 503.97 274.78 L 511.90 276.77 L 519.83 276.64 L 527.76 278.58 L 535.70 280.04 L 543.63 280.26 L 551.56 279.06 L 559.50 280.65 L 567.43 282.47 L 575.36 282.81 L 583.29 285.63 L 591.23 292.42 L 599.16 301.77 L 607.09 304.07 L 615.03 307.26 L 622.96 307.21 L 630.89 307.63 L 638.82 303.52 L 646.76 299.91 L 654.69 297.44 L 662.62 290.72 L 670.55 281.19 L 678.49 281.37 L 686.42 279.52 L 694.35 281.58 L 702.29 284.22 L 710.22 285.09 L 718.15 283.02 L 726.08 284.71 L 734.02 284.36 L 741.95 283.66 L 749.88 283.64 L 757.82 284.02 L 765.75 285.80 L 773.68 287.81 L 781.61 292.03" /><path class="forecast-svg-actual" d="M 789.55 307.62 L 797.48 311.25 L 805.41 309.76 L 813.34 311.41 L 821.28 316.21 L 829.21 310.89 L 837.14 311.22 L 845.08 306.06 L 853.01 298.27 L 860.94 292.45 L 868.87 288.47 L 876.81 282.10 L 884.74 44.04 L 892.67 280.77 L 900.61 283.20 L 908.54 283.52 L 916.47 281.20 L 924.40 282.21 L 932.34 282.87 L 940.27 278.92 L 948.20 284.55 L 956.13 284.17 L 964.07 290.03 L 972.00 299.01" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 789.55 300.73 L 797.48 303.59 L 805.41 306.56 L 813.34 306.54 L 821.28 306.62 L 829.21 302.87 L 837.14 298.67 L 845.08 295.14 L 853.01 289.74 L 860.94 280.72 L 868.87 280.84 L 876.81 278.91 L 884.74 43.79 L 892.67 282.78 L 900.61 283.23 L 908.54 282.47 L 916.47 283.15 L 924.40 282.77 L 932.34 282.41 L 940.27 282.64 L 948.20 283.27 L 956.13 284.91 L 964.07 287.17 L 972.00 291.31 L 972.00 292.93 L 964.07 288.45 L 956.13 286.04 L 948.20 284.65 L 940.27 284.04 L 932.34 284.01 L 924.40 284.62 L 916.47 285.01 L 908.54 284.57 L 900.61 285.00 L 892.67 284.59 L 884.74 51.70 L 876.81 281.10 L 868.87 282.45 L 860.94 283.53 L 853.01 292.35 L 845.08 298.06 L 837.14 300.60 L 829.21 304.44 L 821.28 308.24 L 813.34 308.12 L 805.41 308.24 L 797.48 305.30 L 789.55 301.64 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 789.55 301.18 L 797.48 304.44 L 805.41 307.40 L 813.34 307.33 L 821.28 307.43 L 829.21 303.66 L 837.14 299.63 L 845.08 296.60 L 853.01 291.04 L 860.94 282.13 L 868.87 281.64 L 876.81 280.00 L 884.74 47.75 L 892.67 283.68 L 900.61 284.11 L 908.54 283.52 L 916.47 284.08 L 924.40 283.69 L 932.34 283.21 L 940.27 283.34 L 948.20 283.96 L 956.13 285.47 L 964.07 287.81 L 972.00 292.12" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="789.55" cy="301.18" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 789.55 301.76 L 797.48 305.12 L 805.41 307.21 L 813.34 307.67 L 821.28 307.78 L 829.21 304.34 L 837.14 300.80 L 845.08 297.45 L 853.01 292.52 L 860.94 284.38 L 868.87 283.21 L 876.81 282.61 L 884.74 51.71 L 892.67 283.38 L 900.61 283.87 L 908.54 284.25 L 916.47 284.00 L 924.40 283.97 L 932.34 283.60 L 940.27 283.90 L 948.20 284.67 L 956.13 285.69 L 964.07 287.97 L 972.00 292.73" /><circle class="forecast-svg-start" fill="#aa7c32" cx="789.55" cy="301.76" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 297.70 L 35.93 311.11 L 43.87 314.02 L 51.80 313.00 L 59.73 313.26 L 67.66 309.78 L 75.60 306.68 L 83.53 303.25 L 91.46 297.15 L 99.39 288.99 L 107.33 285.89 L 115.26 286.10 L 123.19 285.52 L 131.13 285.27 L 139.06 284.86 L 146.99 286.44 L 154.92 285.78 L 162.86 284.85 L 170.79 284.45 L 178.72 285.02 L 186.66 285.66 L 194.59 286.19 L 202.52 289.08 L 210.45 294.18 L 218.39 303.46 L 226.32 305.59 L 234.25 306.79 L 242.18 306.78 L 250.12 307.46 L 258.05 303.16 L 265.98 298.30 L 273.92 296.87 L 281.85 295.10 L 289.78 284.36 L 297.71 283.26 L 305.65 284.45 L 313.58 284.54 L 321.51 284.03 L 329.45 282.59 L 337.38 284.64 L 345.31 281.61 L 353.24 280.73 L 361.18 281.82 L 369.11 281.79 L 377.04 282.81 L 384.97 283.25 L 392.91 287.21 L 400.84 291.25 L 408.77 301.01 L 416.71 299.82 L 424.64 301.82 L 432.57 302.19 L 440.50 299.78 L 448.44 300.49 L 456.37 294.87 L 464.30 290.30 L 472.24 288.26 L 480.17 280.95 L 488.10 281.49 L 496.03 274.40 L 503.97 274.78 L 511.90 276.77 L 519.83 276.64 L 527.76 278.58 L 535.70 280.04 L 543.63 280.26 L 551.56 279.06 L 559.50 280.65 L 567.43 282.47 L 575.36 282.81 L 583.29 285.63 L 591.23 292.42 L 599.16 301.77 L 607.09 304.07 L 615.03 307.26 L 622.96 307.21 L 630.89 307.63 L 638.82 303.52 L 646.76 299.91 L 654.69 297.44 L 662.62 290.72 L 670.55 281.19 L 678.49 281.37 L 686.42 279.52 L 694.35 281.58 L 702.29 284.22 L 710.22 285.09 L 718.15 283.02 L 726.08 284.71 L 734.02 284.36 L 741.95 283.66 L 749.88 283.64 L 757.82 284.02 L 765.75 285.80 L 773.68 287.81 L 781.61 292.03" /><path class="forecast-svg-actual" d="M 789.55 307.62 L 797.48 311.25 L 805.41 309.76 L 813.34 311.41 L 821.28 316.21 L 829.21 310.89 L 837.14 311.22 L 845.08 306.06 L 853.01 298.27 L 860.94 292.45 L 868.87 288.47 L 876.81 282.10 L 884.74 44.04 L 892.67 280.77 L 900.61 283.20 L 908.54 283.52 L 916.47 281.20 L 924.40 282.21 L 932.34 282.87 L 940.27 278.92 L 948.20 284.55 L 956.13 284.17 L 964.07 290.03 L 972.00 299.01" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 789.55 300.73 L 797.48 303.59 L 805.41 306.56 L 813.34 306.54 L 821.28 306.62 L 829.21 302.87 L 837.14 298.67 L 845.08 295.14 L 853.01 289.74 L 860.94 280.72 L 868.87 280.84 L 876.81 278.91 L 884.74 43.79 L 892.67 282.78 L 900.61 283.23 L 908.54 282.47 L 916.47 283.15 L 924.40 282.77 L 932.34 282.41 L 940.27 282.64 L 948.20 283.27 L 956.13 284.91 L 964.07 287.17 L 972.00 291.31 L 972.00 292.93 L 964.07 288.45 L 956.13 286.04 L 948.20 284.65 L 940.27 284.04 L 932.34 284.01 L 924.40 284.62 L 916.47 285.01 L 908.54 284.57 L 900.61 285.00 L 892.67 284.59 L 884.74 51.70 L 876.81 281.10 L 868.87 282.45 L 860.94 283.53 L 853.01 292.35 L 845.08 298.06 L 837.14 300.60 L 829.21 304.44 L 821.28 308.24 L 813.34 308.12 L 805.41 308.24 L 797.48 305.30 L 789.55 301.64 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 789.55 301.18 L 797.48 304.44 L 805.41 307.40 L 813.34 307.33 L 821.28 307.43 L 829.21 303.66 L 837.14 299.63 L 845.08 296.60 L 853.01 291.04 L 860.94 282.13 L 868.87 281.64 L 876.81 280.00 L 884.74 47.75 L 892.67 283.68 L 900.61 284.11 L 908.54 283.52 L 916.47 284.08 L 924.40 283.69 L 932.34 283.21 L 940.27 283.34 L 948.20 283.96 L 956.13 285.47 L 964.07 287.81 L 972.00 292.12" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="789.55" cy="301.18" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 297.70 L 35.93 311.11 L 43.87 314.02 L 51.80 313.00 L 59.73 313.26 L 67.66 309.78 L 75.60 306.68 L 83.53 303.25 L 91.46 297.15 L 99.39 288.99 L 107.33 285.89 L 115.26 286.10 L 123.19 285.52 L 131.13 285.27 L 139.06 284.86 L 146.99 286.44 L 154.92 285.78 L 162.86 284.85 L 170.79 284.45 L 178.72 285.02 L 186.66 285.66 L 194.59 286.19 L 202.52 289.08 L 210.45 294.18 L 218.39 303.46 L 226.32 305.59 L 234.25 306.79 L 242.18 306.78 L 250.12 307.46 L 258.05 303.16 L 265.98 298.30 L 273.92 296.87 L 281.85 295.10 L 289.78 284.36 L 297.71 283.26 L 305.65 284.45 L 313.58 284.54 L 321.51 284.03 L 329.45 282.59 L 337.38 284.64 L 345.31 281.61 L 353.24 280.73 L 361.18 281.82 L 369.11 281.79 L 377.04 282.81 L 384.97 283.25 L 392.91 287.21 L 400.84 291.25 L 408.77 301.01 L 416.71 299.82 L 424.64 301.82 L 432.57 302.19 L 440.50 299.78 L 448.44 300.49 L 456.37 294.87 L 464.30 290.30 L 472.24 288.26 L 480.17 280.95 L 488.10 281.49 L 496.03 274.40 L 503.97 274.78 L 511.90 276.77 L 519.83 276.64 L 527.76 278.58 L 535.70 280.04 L 543.63 280.26 L 551.56 279.06 L 559.50 280.65 L 567.43 282.47 L 575.36 282.81 L 583.29 285.63 L 591.23 292.42 L 599.16 301.77 L 607.09 304.07 L 615.03 307.26 L 622.96 307.21 L 630.89 307.63 L 638.82 303.52 L 646.76 299.91 L 654.69 297.44 L 662.62 290.72 L 670.55 281.19 L 678.49 281.37 L 686.42 279.52 L 694.35 281.58 L 702.29 284.22 L 710.22 285.09 L 718.15 283.02 L 726.08 284.71 L 734.02 284.36 L 741.95 283.66 L 749.88 283.64 L 757.82 284.02 L 765.75 285.80 L 773.68 287.81 L 781.61 292.03" /><path class="forecast-svg-actual" d="M 789.55 307.62 L 797.48 311.25 L 805.41 309.76 L 813.34 311.41 L 821.28 316.21 L 829.21 310.89 L 837.14 311.22 L 845.08 306.06 L 853.01 298.27 L 860.94 292.45 L 868.87 288.47 L 876.81 282.10 L 884.74 44.04 L 892.67 280.77 L 900.61 283.20 L 908.54 283.52 L 916.47 281.20 L 924.40 282.21 L 932.34 282.87 L 940.27 278.92 L 948.20 284.55 L 956.13 284.17 L 964.07 290.03 L 972.00 299.01" /><path class="forecast-svg-band" fill="#aa7c32" d="M 789.55 301.76 L 797.48 305.12 L 805.41 307.21 L 813.34 307.67 L 821.28 307.78 L 829.21 304.34 L 837.14 300.80 L 845.08 297.45 L 853.01 292.52 L 860.94 284.38 L 868.87 283.21 L 876.81 282.61 L 884.74 51.71 L 892.67 283.38 L 900.61 283.87 L 908.54 284.25 L 916.47 284.00 L 924.40 283.97 L 932.34 283.60 L 940.27 283.90 L 948.20 284.67 L 956.13 285.69 L 964.07 287.97 L 972.00 292.73 L 972.00 292.73 L 964.07 287.97 L 956.13 285.69 L 948.20 284.67 L 940.27 283.90 L 932.34 283.60 L 924.40 283.97 L 916.47 284.00 L 908.54 284.25 L 900.61 283.87 L 892.67 283.38 L 884.74 51.71 L 876.81 282.61 L 868.87 283.21 L 860.94 284.38 L 853.01 292.52 L 845.08 297.45 L 837.14 300.80 L 829.21 304.34 L 821.28 307.78 L 813.34 307.67 L 805.41 307.21 L 797.48 305.12 L 789.55 301.76 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 789.55 301.76 L 797.48 305.12 L 805.41 307.21 L 813.34 307.67 L 821.28 307.78 L 829.21 304.34 L 837.14 300.80 L 845.08 297.45 L 853.01 292.52 L 860.94 284.38 L 868.87 283.21 L 876.81 282.61 L 884.74 51.71 L 892.67 283.38 L 900.61 283.87 L 908.54 284.25 L 916.47 284.00 L 924.40 283.97 L 932.34 283.60 L 940.27 283.90 L 948.20 284.67 L 956.13 285.69 L 964.07 287.97 L 972.00 292.73" /><circle class="forecast-svg-start" fill="#aa7c32" cx="789.55" cy="301.76" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 261.88 L 35.93 273.41 L 43.87 275.90 L 51.80 275.03 L 59.73 275.25 L 67.66 272.26 L 75.60 269.59 L 83.53 266.65 L 91.46 261.41 L 99.39 254.39 L 107.33 251.73 L 115.26 251.90 L 123.19 251.40 L 131.13 251.19 L 139.06 250.83 L 146.99 252.19 L 154.92 251.63 L 162.86 250.83 L 170.79 250.49 L 178.72 250.98 L 186.66 251.53 L 194.59 251.98 L 202.52 254.46 L 210.45 258.85 L 218.39 266.83 L 226.32 268.66 L 234.25 269.69 L 242.18 269.68 L 250.12 270.27 L 258.05 266.57 L 265.98 262.39 L 273.92 261.16 L 281.85 259.64 L 289.78 250.41 L 297.71 249.46 L 305.65 250.49 L 313.58 250.57 L 321.51 250.12 L 329.45 248.89 L 337.38 250.65 L 345.31 248.04 L 353.24 247.29 L 361.18 248.22 L 369.11 248.20 L 377.04 249.07 L 384.97 249.45 L 392.91 252.86 L 400.84 256.33 L 408.77 264.72 L 416.71 263.70 L 424.64 265.42 L 432.57 265.74 L 440.50 263.67 L 448.44 264.28 L 456.37 259.45 L 464.30 255.51 L 472.24 253.76 L 480.17 247.48 L 488.10 247.94 L 496.03 241.84 L 503.97 242.18 L 511.90 243.88 L 519.83 243.78 L 527.76 245.44 L 535.70 246.70 L 543.63 246.89 L 551.56 245.86 L 559.50 247.22 L 567.43 248.78 L 575.36 249.07 L 583.29 251.50 L 591.23 257.34 L 599.16 265.38 L 607.09 267.36 L 615.03 270.10 L 622.96 270.05 L 630.89 270.41 L 638.82 266.88 L 646.76 263.78 L 654.69 261.65 L 662.62 255.88 L 670.55 247.68 L 678.49 247.84 L 686.42 246.25 L 694.35 248.02 L 702.29 250.28 L 710.22 251.04 L 718.15 249.25 L 726.08 250.71 L 734.02 250.41 L 741.95 249.80 L 749.88 249.79 L 757.82 250.11 L 765.75 251.65 L 773.68 253.37 L 781.61 257.00" /><path class="forecast-svg-actual" d="M 789.55 270.41 L 797.48 273.52 L 805.41 272.24 L 813.34 273.67 L 821.28 277.79 L 829.21 273.22 L 837.14 273.50 L 845.08 269.06 L 853.01 262.37 L 860.94 257.36 L 868.87 253.94 L 876.81 248.46 L 884.74 43.79 L 892.67 247.33 L 900.61 249.41 L 908.54 249.68 L 916.47 247.69 L 924.40 248.56 L 932.34 249.13 L 940.27 245.73 L 948.20 250.58 L 956.13 250.25 L 964.07 255.28 L 972.00 263.00" /><path class="forecast-svg-band" fill="#3777a5" d="M 789.55 260.89 L 797.48 263.84 L 805.41 265.60 L 813.34 265.87 L 821.28 266.38 L 829.21 263.94 L 837.14 260.82 L 845.08 256.96 L 853.01 254.01 L 860.94 246.48 L 868.87 245.90 L 876.81 245.28 L 884.74 245.77 L 892.67 246.50 L 900.61 246.28 L 908.54 247.23 L 916.47 247.17 L 924.40 246.12 L 932.34 246.65 L 940.27 246.91 L 948.20 247.67 L 956.13 248.55 L 964.07 250.87 L 972.00 255.29 L 972.00 262.25 L 964.07 256.55 L 956.13 254.48 L 948.20 253.44 L 940.27 253.12 L 932.34 253.13 L 924.40 253.01 L 916.47 253.17 L 908.54 253.18 L 900.61 252.71 L 892.67 252.35 L 884.74 251.83 L 876.81 252.03 L 868.87 253.16 L 860.94 254.01 L 853.01 261.30 L 845.08 266.65 L 837.14 268.37 L 829.21 272.24 L 821.28 274.05 L 813.34 274.28 L 805.41 273.88 L 797.48 271.98 L 789.55 267.71 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 789.55 264.30 L 797.48 267.91 L 805.41 269.74 L 813.34 270.08 L 821.28 270.21 L 829.21 268.09 L 837.14 264.60 L 845.08 261.81 L 853.01 257.66 L 860.94 250.24 L 868.87 249.53 L 876.81 248.66 L 884.74 248.80 L 892.67 249.42 L 900.61 249.49 L 908.54 250.21 L 916.47 250.17 L 924.40 249.56 L 932.34 249.89 L 940.27 250.02 L 948.20 250.56 L 956.13 251.52 L 964.07 253.71 L 972.00 258.77" /><circle class="forecast-svg-start" fill="#3777a5" cx="789.55" cy="264.30" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 789.55 259.56 L 797.48 263.13 L 805.41 263.80 L 813.34 265.50 L 821.28 262.81 L 829.21 263.55 L 837.14 259.78 L 845.08 259.45 L 853.01 255.79 L 860.94 255.76 L 868.87 258.39 L 876.81 257.42 L 884.74 256.90 L 892.67 255.32 L 900.61 268.65 L 908.54 259.21 L 916.47 259.99 L 924.40 260.20 L 932.34 258.82 L 940.27 255.43 L 948.20 261.26 L 956.13 258.30 L 964.07 253.44 L 972.00 265.56" /><circle class="forecast-svg-start" fill="#8064a2" cx="789.55" cy="259.56" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 789.55 259.11 L 797.48 261.94 L 805.41 264.92 L 813.34 267.83 L 821.28 272.19 L 829.21 274.98 L 837.14 278.20 L 845.08 280.42 L 853.01 283.52 L 860.94 287.14 L 868.87 288.97 L 876.81 291.50 L 884.74 295.69 L 892.67 299.25 L 900.61 300.79 L 908.54 304.32 L 916.47 307.69 L 924.40 310.56 L 932.34 312.55 L 940.27 314.69 L 948.20 315.31 L 956.13 315.39 L 964.07 315.39 L 972.00 315.39" /><circle class="forecast-svg-start" fill="#668851" cx="789.55" cy="259.11" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 261.88 L 35.93 273.41 L 43.87 275.90 L 51.80 275.03 L 59.73 275.25 L 67.66 272.26 L 75.60 269.59 L 83.53 266.65 L 91.46 261.41 L 99.39 254.39 L 107.33 251.73 L 115.26 251.90 L 123.19 251.40 L 131.13 251.19 L 139.06 250.83 L 146.99 252.19 L 154.92 251.63 L 162.86 250.83 L 170.79 250.49 L 178.72 250.98 L 186.66 251.53 L 194.59 251.98 L 202.52 254.46 L 210.45 258.85 L 218.39 266.83 L 226.32 268.66 L 234.25 269.69 L 242.18 269.68 L 250.12 270.27 L 258.05 266.57 L 265.98 262.39 L 273.92 261.16 L 281.85 259.64 L 289.78 250.41 L 297.71 249.46 L 305.65 250.49 L 313.58 250.57 L 321.51 250.12 L 329.45 248.89 L 337.38 250.65 L 345.31 248.04 L 353.24 247.29 L 361.18 248.22 L 369.11 248.20 L 377.04 249.07 L 384.97 249.45 L 392.91 252.86 L 400.84 256.33 L 408.77 264.72 L 416.71 263.70 L 424.64 265.42 L 432.57 265.74 L 440.50 263.67 L 448.44 264.28 L 456.37 259.45 L 464.30 255.51 L 472.24 253.76 L 480.17 247.48 L 488.10 247.94 L 496.03 241.84 L 503.97 242.18 L 511.90 243.88 L 519.83 243.78 L 527.76 245.44 L 535.70 246.70 L 543.63 246.89 L 551.56 245.86 L 559.50 247.22 L 567.43 248.78 L 575.36 249.07 L 583.29 251.50 L 591.23 257.34 L 599.16 265.38 L 607.09 267.36 L 615.03 270.10 L 622.96 270.05 L 630.89 270.41 L 638.82 266.88 L 646.76 263.78 L 654.69 261.65 L 662.62 255.88 L 670.55 247.68 L 678.49 247.84 L 686.42 246.25 L 694.35 248.02 L 702.29 250.28 L 710.22 251.04 L 718.15 249.25 L 726.08 250.71 L 734.02 250.41 L 741.95 249.80 L 749.88 249.79 L 757.82 250.11 L 765.75 251.65 L 773.68 253.37 L 781.61 257.00" /><path class="forecast-svg-actual" d="M 789.55 270.41 L 797.48 273.52 L 805.41 272.24 L 813.34 273.67 L 821.28 277.79 L 829.21 273.22 L 837.14 273.50 L 845.08 269.06 L 853.01 262.37 L 860.94 257.36 L 868.87 253.94 L 876.81 248.46 L 884.74 43.79 L 892.67 247.33 L 900.61 249.41 L 908.54 249.68 L 916.47 247.69 L 924.40 248.56 L 932.34 249.13 L 940.27 245.73 L 948.20 250.58 L 956.13 250.25 L 964.07 255.28 L 972.00 263.00" /><path class="forecast-svg-band" fill="#3777a5" d="M 789.55 260.89 L 797.48 263.84 L 805.41 265.60 L 813.34 265.87 L 821.28 266.38 L 829.21 263.94 L 837.14 260.82 L 845.08 256.96 L 853.01 254.01 L 860.94 246.48 L 868.87 245.90 L 876.81 245.28 L 884.74 245.77 L 892.67 246.50 L 900.61 246.28 L 908.54 247.23 L 916.47 247.17 L 924.40 246.12 L 932.34 246.65 L 940.27 246.91 L 948.20 247.67 L 956.13 248.55 L 964.07 250.87 L 972.00 255.29 L 972.00 262.25 L 964.07 256.55 L 956.13 254.48 L 948.20 253.44 L 940.27 253.12 L 932.34 253.13 L 924.40 253.01 L 916.47 253.17 L 908.54 253.18 L 900.61 252.71 L 892.67 252.35 L 884.74 251.83 L 876.81 252.03 L 868.87 253.16 L 860.94 254.01 L 853.01 261.30 L 845.08 266.65 L 837.14 268.37 L 829.21 272.24 L 821.28 274.05 L 813.34 274.28 L 805.41 273.88 L 797.48 271.98 L 789.55 267.71 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 789.55 264.30 L 797.48 267.91 L 805.41 269.74 L 813.34 270.08 L 821.28 270.21 L 829.21 268.09 L 837.14 264.60 L 845.08 261.81 L 853.01 257.66 L 860.94 250.24 L 868.87 249.53 L 876.81 248.66 L 884.74 248.80 L 892.67 249.42 L 900.61 249.49 L 908.54 250.21 L 916.47 250.17 L 924.40 249.56 L 932.34 249.89 L 940.27 250.02 L 948.20 250.56 L 956.13 251.52 L 964.07 253.71 L 972.00 258.77" /><circle class="forecast-svg-start" fill="#3777a5" cx="789.55" cy="264.30" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 261.88 L 35.93 273.41 L 43.87 275.90 L 51.80 275.03 L 59.73 275.25 L 67.66 272.26 L 75.60 269.59 L 83.53 266.65 L 91.46 261.41 L 99.39 254.39 L 107.33 251.73 L 115.26 251.90 L 123.19 251.40 L 131.13 251.19 L 139.06 250.83 L 146.99 252.19 L 154.92 251.63 L 162.86 250.83 L 170.79 250.49 L 178.72 250.98 L 186.66 251.53 L 194.59 251.98 L 202.52 254.46 L 210.45 258.85 L 218.39 266.83 L 226.32 268.66 L 234.25 269.69 L 242.18 269.68 L 250.12 270.27 L 258.05 266.57 L 265.98 262.39 L 273.92 261.16 L 281.85 259.64 L 289.78 250.41 L 297.71 249.46 L 305.65 250.49 L 313.58 250.57 L 321.51 250.12 L 329.45 248.89 L 337.38 250.65 L 345.31 248.04 L 353.24 247.29 L 361.18 248.22 L 369.11 248.20 L 377.04 249.07 L 384.97 249.45 L 392.91 252.86 L 400.84 256.33 L 408.77 264.72 L 416.71 263.70 L 424.64 265.42 L 432.57 265.74 L 440.50 263.67 L 448.44 264.28 L 456.37 259.45 L 464.30 255.51 L 472.24 253.76 L 480.17 247.48 L 488.10 247.94 L 496.03 241.84 L 503.97 242.18 L 511.90 243.88 L 519.83 243.78 L 527.76 245.44 L 535.70 246.70 L 543.63 246.89 L 551.56 245.86 L 559.50 247.22 L 567.43 248.78 L 575.36 249.07 L 583.29 251.50 L 591.23 257.34 L 599.16 265.38 L 607.09 267.36 L 615.03 270.10 L 622.96 270.05 L 630.89 270.41 L 638.82 266.88 L 646.76 263.78 L 654.69 261.65 L 662.62 255.88 L 670.55 247.68 L 678.49 247.84 L 686.42 246.25 L 694.35 248.02 L 702.29 250.28 L 710.22 251.04 L 718.15 249.25 L 726.08 250.71 L 734.02 250.41 L 741.95 249.80 L 749.88 249.79 L 757.82 250.11 L 765.75 251.65 L 773.68 253.37 L 781.61 257.00" /><path class="forecast-svg-actual" d="M 789.55 270.41 L 797.48 273.52 L 805.41 272.24 L 813.34 273.67 L 821.28 277.79 L 829.21 273.22 L 837.14 273.50 L 845.08 269.06 L 853.01 262.37 L 860.94 257.36 L 868.87 253.94 L 876.81 248.46 L 884.74 43.79 L 892.67 247.33 L 900.61 249.41 L 908.54 249.68 L 916.47 247.69 L 924.40 248.56 L 932.34 249.13 L 940.27 245.73 L 948.20 250.58 L 956.13 250.25 L 964.07 255.28 L 972.00 263.00" /><path class="forecast-svg-band" fill="#8064a2" d="M 789.55 257.28 L 797.48 259.02 L 805.41 259.37 L 813.34 258.98 L 821.28 253.83 L 829.21 253.62 L 837.14 247.73 L 845.08 245.89 L 853.01 240.73 L 860.94 240.23 L 868.87 244.07 L 876.81 241.32 L 884.74 246.09 L 892.67 244.99 L 900.61 254.20 L 908.54 243.12 L 916.47 244.15 L 924.40 242.94 L 932.34 242.47 L 940.27 232.40 L 948.20 239.60 L 956.13 241.53 L 964.07 233.28 L 972.00 247.10 L 972.00 284.01 L 964.07 273.60 L 956.13 275.08 L 948.20 282.93 L 940.27 278.46 L 932.34 275.16 L 924.40 277.46 L 916.47 275.83 L 908.54 275.30 L 900.61 283.10 L 892.67 265.65 L 884.74 267.70 L 876.81 273.52 L 868.87 272.70 L 860.94 271.28 L 853.01 270.86 L 845.08 273.01 L 837.14 271.82 L 829.21 273.48 L 821.28 271.79 L 813.34 272.03 L 805.41 268.23 L 797.48 267.25 L 789.55 261.84 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 789.55 259.56 L 797.48 263.13 L 805.41 263.80 L 813.34 265.50 L 821.28 262.81 L 829.21 263.55 L 837.14 259.78 L 845.08 259.45 L 853.01 255.79 L 860.94 255.76 L 868.87 258.39 L 876.81 257.42 L 884.74 256.90 L 892.67 255.32 L 900.61 268.65 L 908.54 259.21 L 916.47 259.99 L 924.40 260.20 L 932.34 258.82 L 940.27 255.43 L 948.20 261.26 L 956.13 258.30 L 964.07 253.44 L 972.00 265.56" /><circle class="forecast-svg-start" fill="#8064a2" cx="789.55" cy="259.56" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 261.88 L 35.93 273.41 L 43.87 275.90 L 51.80 275.03 L 59.73 275.25 L 67.66 272.26 L 75.60 269.59 L 83.53 266.65 L 91.46 261.41 L 99.39 254.39 L 107.33 251.73 L 115.26 251.90 L 123.19 251.40 L 131.13 251.19 L 139.06 250.83 L 146.99 252.19 L 154.92 251.63 L 162.86 250.83 L 170.79 250.49 L 178.72 250.98 L 186.66 251.53 L 194.59 251.98 L 202.52 254.46 L 210.45 258.85 L 218.39 266.83 L 226.32 268.66 L 234.25 269.69 L 242.18 269.68 L 250.12 270.27 L 258.05 266.57 L 265.98 262.39 L 273.92 261.16 L 281.85 259.64 L 289.78 250.41 L 297.71 249.46 L 305.65 250.49 L 313.58 250.57 L 321.51 250.12 L 329.45 248.89 L 337.38 250.65 L 345.31 248.04 L 353.24 247.29 L 361.18 248.22 L 369.11 248.20 L 377.04 249.07 L 384.97 249.45 L 392.91 252.86 L 400.84 256.33 L 408.77 264.72 L 416.71 263.70 L 424.64 265.42 L 432.57 265.74 L 440.50 263.67 L 448.44 264.28 L 456.37 259.45 L 464.30 255.51 L 472.24 253.76 L 480.17 247.48 L 488.10 247.94 L 496.03 241.84 L 503.97 242.18 L 511.90 243.88 L 519.83 243.78 L 527.76 245.44 L 535.70 246.70 L 543.63 246.89 L 551.56 245.86 L 559.50 247.22 L 567.43 248.78 L 575.36 249.07 L 583.29 251.50 L 591.23 257.34 L 599.16 265.38 L 607.09 267.36 L 615.03 270.10 L 622.96 270.05 L 630.89 270.41 L 638.82 266.88 L 646.76 263.78 L 654.69 261.65 L 662.62 255.88 L 670.55 247.68 L 678.49 247.84 L 686.42 246.25 L 694.35 248.02 L 702.29 250.28 L 710.22 251.04 L 718.15 249.25 L 726.08 250.71 L 734.02 250.41 L 741.95 249.80 L 749.88 249.79 L 757.82 250.11 L 765.75 251.65 L 773.68 253.37 L 781.61 257.00" /><path class="forecast-svg-actual" d="M 789.55 270.41 L 797.48 273.52 L 805.41 272.24 L 813.34 273.67 L 821.28 277.79 L 829.21 273.22 L 837.14 273.50 L 845.08 269.06 L 853.01 262.37 L 860.94 257.36 L 868.87 253.94 L 876.81 248.46 L 884.74 43.79 L 892.67 247.33 L 900.61 249.41 L 908.54 249.68 L 916.47 247.69 L 924.40 248.56 L 932.34 249.13 L 940.27 245.73 L 948.20 250.58 L 956.13 250.25 L 964.07 255.28 L 972.00 263.00" /><path class="forecast-svg-band" fill="#668851" d="M 789.55 256.72 L 797.48 258.93 L 805.41 261.67 L 813.34 265.20 L 821.28 269.34 L 829.21 271.38 L 837.14 276.06 L 845.08 278.79 L 853.01 280.90 L 860.94 284.29 L 868.87 286.35 L 876.81 288.34 L 884.74 292.94 L 892.67 296.51 L 900.61 297.96 L 908.54 301.77 L 916.47 304.72 L 924.40 308.28 L 932.34 309.36 L 940.27 313.18 L 948.20 315.08 L 956.13 315.39 L 964.07 315.39 L 972.00 315.39 L 972.00 315.39 L 964.07 315.39 L 956.13 315.39 L 948.20 315.54 L 940.27 316.21 L 932.34 315.75 L 924.40 312.83 L 916.47 310.67 L 908.54 306.87 L 900.61 303.62 L 892.67 301.98 L 884.74 298.45 L 876.81 294.67 L 868.87 291.59 L 860.94 289.99 L 853.01 286.14 L 845.08 282.04 L 837.14 280.35 L 829.21 278.58 L 821.28 275.04 L 813.34 270.46 L 805.41 268.16 L 797.48 264.96 L 789.55 261.49 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 789.55 259.11 L 797.48 261.94 L 805.41 264.92 L 813.34 267.83 L 821.28 272.19 L 829.21 274.98 L 837.14 278.20 L 845.08 280.42 L 853.01 283.52 L 860.94 287.14 L 868.87 288.97 L 876.81 291.50 L 884.74 295.69 L 892.67 299.25 L 900.61 300.79 L 908.54 304.32 L 916.47 307.69 L 924.40 310.56 L 932.34 312.55 L 940.27 314.69 L 948.20 315.31 L 956.13 315.39 L 964.07 315.39 L 972.00 315.39" /><circle class="forecast-svg-start" fill="#668851" cx="789.55" cy="259.11" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 261.88 L 35.93 273.41 L 43.87 275.90 L 51.80 275.03 L 59.73 275.25 L 67.66 272.26 L 75.60 269.59 L 83.53 266.65 L 91.46 261.41 L 99.39 254.39 L 107.33 251.73 L 115.26 251.90 L 123.19 251.40 L 131.13 251.19 L 139.06 250.83 L 146.99 252.19 L 154.92 251.63 L 162.86 250.83 L 170.79 250.49 L 178.72 250.98 L 186.66 251.53 L 194.59 251.98 L 202.52 254.46 L 210.45 258.85 L 218.39 266.83 L 226.32 268.66 L 234.25 269.69 L 242.18 269.68 L 250.12 270.27 L 258.05 266.57 L 265.98 262.39 L 273.92 261.16 L 281.85 259.64 L 289.78 250.41 L 297.71 249.46 L 305.65 250.49 L 313.58 250.57 L 321.51 250.12 L 329.45 248.89 L 337.38 250.65 L 345.31 248.04 L 353.24 247.29 L 361.18 248.22 L 369.11 248.20 L 377.04 249.07 L 384.97 249.45 L 392.91 252.86 L 400.84 256.33 L 408.77 264.72 L 416.71 263.70 L 424.64 265.42 L 432.57 265.74 L 440.50 263.67 L 448.44 264.28 L 456.37 259.45 L 464.30 255.51 L 472.24 253.76 L 480.17 247.48 L 488.10 247.94 L 496.03 241.84 L 503.97 242.18 L 511.90 243.88 L 519.83 243.78 L 527.76 245.44 L 535.70 246.70 L 543.63 246.89 L 551.56 245.86 L 559.50 247.22 L 567.43 248.78 L 575.36 249.07 L 583.29 251.50 L 591.23 257.34 L 599.16 265.38 L 607.09 267.36 L 615.03 270.10 L 622.96 270.05 L 630.89 270.41 L 638.82 266.88 L 646.76 263.78 L 654.69 261.65 L 662.62 255.88 L 670.55 247.68 L 678.49 247.84 L 686.42 246.25 L 694.35 248.02 L 702.29 250.28 L 710.22 251.04 L 718.15 249.25 L 726.08 250.71 L 734.02 250.41 L 741.95 249.80 L 749.88 249.79 L 757.82 250.11 L 765.75 251.65 L 773.68 253.37 L 781.61 257.00" /><path class="forecast-svg-actual" d="M 789.55 270.41 L 797.48 273.52 L 805.41 272.24 L 813.34 273.67 L 821.28 277.79 L 829.21 273.22 L 837.14 273.50 L 845.08 269.06 L 853.01 262.37 L 860.94 257.36 L 868.87 253.94 L 876.81 248.46 L 884.74 43.79 L 892.67 247.33 L 900.61 249.41 L 908.54 249.68 L 916.47 247.69 L 924.40 248.56 L 932.34 249.13 L 940.27 245.73 L 948.20 250.58 L 956.13 250.25 L 964.07 255.28 L 972.00 263.00" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 789.55 252.38 L 797.48 251.62 L 805.41 251.74 L 813.34 251.18 L 821.28 251.20 L 829.21 251.64 L 837.14 251.73 L 845.08 249.14 L 853.01 248.59 L 860.94 247.51 L 868.87 248.61 L 876.81 246.96 L 884.74 246.22 L 892.67 244.88 L 900.61 242.61 L 908.54 240.83 L 916.47 240.99 L 924.40 239.50 L 932.34 239.91 L 940.27 239.53 L 948.20 238.87 L 956.13 237.38 L 964.07 236.88 L 972.00 237.89 L 972.00 274.14 L 964.07 274.28 L 956.13 273.07 L 948.20 273.94 L 940.27 274.00 L 932.34 273.41 L 924.40 271.58 L 916.47 270.79 L 908.54 269.89 L 900.61 269.63 L 892.67 268.67 L 884.74 267.91 L 876.81 266.87 L 868.87 266.27 L 860.94 266.43 L 853.01 265.59 L 845.08 265.47 L 837.14 266.09 L 829.21 264.03 L 821.28 265.10 L 813.34 264.99 L 805.41 263.32 L 797.48 263.71 L 789.55 262.30 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 789.55 257.34 L 797.48 257.67 L 805.41 257.53 L 813.34 258.08 L 821.28 258.15 L 829.21 257.84 L 837.14 258.91 L 845.08 257.30 L 853.01 257.09 L 860.94 256.97 L 868.87 257.44 L 876.81 256.92 L 884.74 257.06 L 892.67 256.78 L 900.61 256.12 L 908.54 255.36 L 916.47 255.89 L 924.40 255.54 L 932.34 256.66 L 940.27 256.76 L 948.20 256.41 L 956.13 255.22 L 964.07 255.58 L 972.00 256.01" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="789.55" cy="257.34" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="781.61" y1="22" x2="781.61" y2="338" /><path class="forecast-svg-history" d="M 28.00 261.88 L 35.93 273.41 L 43.87 275.90 L 51.80 275.03 L 59.73 275.25 L 67.66 272.26 L 75.60 269.59 L 83.53 266.65 L 91.46 261.41 L 99.39 254.39 L 107.33 251.73 L 115.26 251.90 L 123.19 251.40 L 131.13 251.19 L 139.06 250.83 L 146.99 252.19 L 154.92 251.63 L 162.86 250.83 L 170.79 250.49 L 178.72 250.98 L 186.66 251.53 L 194.59 251.98 L 202.52 254.46 L 210.45 258.85 L 218.39 266.83 L 226.32 268.66 L 234.25 269.69 L 242.18 269.68 L 250.12 270.27 L 258.05 266.57 L 265.98 262.39 L 273.92 261.16 L 281.85 259.64 L 289.78 250.41 L 297.71 249.46 L 305.65 250.49 L 313.58 250.57 L 321.51 250.12 L 329.45 248.89 L 337.38 250.65 L 345.31 248.04 L 353.24 247.29 L 361.18 248.22 L 369.11 248.20 L 377.04 249.07 L 384.97 249.45 L 392.91 252.86 L 400.84 256.33 L 408.77 264.72 L 416.71 263.70 L 424.64 265.42 L 432.57 265.74 L 440.50 263.67 L 448.44 264.28 L 456.37 259.45 L 464.30 255.51 L 472.24 253.76 L 480.17 247.48 L 488.10 247.94 L 496.03 241.84 L 503.97 242.18 L 511.90 243.88 L 519.83 243.78 L 527.76 245.44 L 535.70 246.70 L 543.63 246.89 L 551.56 245.86 L 559.50 247.22 L 567.43 248.78 L 575.36 249.07 L 583.29 251.50 L 591.23 257.34 L 599.16 265.38 L 607.09 267.36 L 615.03 270.10 L 622.96 270.05 L 630.89 270.41 L 638.82 266.88 L 646.76 263.78 L 654.69 261.65 L 662.62 255.88 L 670.55 247.68 L 678.49 247.84 L 686.42 246.25 L 694.35 248.02 L 702.29 250.28 L 710.22 251.04 L 718.15 249.25 L 726.08 250.71 L 734.02 250.41 L 741.95 249.80 L 749.88 249.79 L 757.82 250.11 L 765.75 251.65 L 773.68 253.37 L 781.61 257.00" /><path class="forecast-svg-actual" d="M 789.55 270.41 L 797.48 273.52 L 805.41 272.24 L 813.34 273.67 L 821.28 277.79 L 829.21 273.22 L 837.14 273.50 L 845.08 269.06 L 853.01 262.37 L 860.94 257.36 L 868.87 253.94 L 876.81 248.46 L 884.74 43.79 L 892.67 247.33 L 900.61 249.41 L 908.54 249.68 L 916.47 247.69 L 924.40 248.56 L 932.34 249.13 L 940.27 245.73 L 948.20 250.58 L 956.13 250.25 L 964.07 255.28 L 972.00 263.00" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 789.55 251.07 L 797.48 254.77 L 805.41 254.10 L 813.34 254.71 L 821.28 251.38 L 829.21 254.12 L 837.14 253.23 L 845.08 254.15 L 853.01 252.55 L 860.94 254.20 L 868.87 254.07 L 876.81 253.75 L 884.74 253.03 L 892.67 253.29 L 900.61 254.36 L 908.54 252.95 L 916.47 254.29 L 924.40 254.06 L 932.34 252.71 L 940.27 254.89 L 948.20 253.43 L 956.13 253.95 L 964.07 253.15 L 972.00 253.88 L 972.00 259.72 L 964.07 260.51 L 956.13 258.06 L 948.20 261.51 L 940.27 260.42 L 932.34 259.77 L 924.40 261.23 L 916.47 260.14 L 908.54 258.57 L 900.61 261.28 L 892.67 259.12 L 884.74 259.86 L 876.81 260.34 L 868.87 259.69 L 860.94 259.08 L 853.01 258.49 L 845.08 259.71 L 837.14 261.35 L 829.21 260.09 L 821.28 260.05 L 813.34 260.15 L 805.41 260.07 L 797.48 261.84 L 789.55 259.28 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 789.55 255.17 L 797.48 258.30 L 805.41 257.08 L 813.34 257.43 L 821.28 255.71 L 829.21 257.11 L 837.14 257.29 L 845.08 256.93 L 853.01 255.52 L 860.94 256.64 L 868.87 256.88 L 876.81 257.05 L 884.74 256.45 L 892.67 256.20 L 900.61 257.82 L 908.54 255.76 L 916.47 257.22 L 924.40 257.65 L 932.34 256.24 L 940.27 257.66 L 948.20 257.47 L 956.13 256.01 L 964.07 256.83 L 972.00 256.80" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="789.55" cy="255.17" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>electricity consumption</h3>
+              <p>This is the electricity consumption recorded in Kilowatt (kW) in the city of Vesper Heights.</p>
+              <p class="instruction">Suppose that there is a heat wave in Vesper Heights from 2013-10-03 12:00:00 for 1 hour, which would typically lead to excessive use of air conditioning, and 10 times the usual electricity being consumed. But in this case, residents sought to conserve energy and used lesser air conditioning, resulting in excessive usage of only 4 times the usual electricity.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This is the electricity consumption recorded in Kilowatt (kW) in the city of Vesper Heights.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>Suppose that there is a heat wave in Vesper Heights from 2013-10-03 12:00:00 for 1 hour,</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>which would typically lead to excessive use of air conditioning, and 10 times the usual electricity being consumed.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E4</span></div>
+          <p>But in this case, residents sought to conserve energy and used lesser air conditioning,</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E5</span></div>
+          <p>resulting in excessive usage of only 4 times the usual electricity.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">38 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4100</span></span></summary>
+          <pre class="doc-content">REGIONAL METEOROLOGICAL SURVEILLANCE OFFICE
+ATMOSPHERIC OBSERVATION REPORT
+
+Subject: October 2013 Vesper Heights Event
+Date of Observation: October 3, 2013
+Location: Vesper Heights Sector
+
+OBSERVATION SUMMARY:
+
+At 12:00 PM on October 3, 2013, a specific atmospheric phenomenon began over Vesper Heights. The initial development of this atmospheric phenomenon caused an immediate and intense escalation of regional heat. Following the onset, the localized climate experienced a rapid spike in thermal energy that significantly exceeded standard seasonal norms for this period.
+
+TECHNICAL NOTES:
+
+Field instrumentation recorded the thermal surge as a direct consequence of the localized event. Current data focuses exclusively on the specific onset and immediate thermal impacts within the Vesper Heights region. Broader geographic impacts or long-term predictive forecasting are not included in this surveillance summary.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4101</span></span></summary>
+          <pre class="doc-content">REGIONAL CLIMATE MONITORING STATION
+LOCALIZED THERMAL ACTIVITY LOG - R2/R3 SUMMARY
+
+Reporting Station: Vesper Heights Sector
+Document Type: Technical Monitoring Report
+
+Summary of Observations:
+
+Monitoring sensors recorded a localized climate event characterized by a rapid and severe spike in thermal energy. This thermal surge significantly surpassed all established standard seasonal norms for the area. Data logs indicate that the elevated thermal intensity persisted steadily through the traditional midday peak, maintaining a consistent energy profile. 
+
+Chronological Data:
+- Duration: The high-intensity thermal spike was sustained for a specific sixty-minute window.
+- Dissipation: Thermal intensity began to dissipate as local time approached 13:00:00.
+
+Limitations:
+This report is restricted to physical observations of the thermal event timeline. It excludes causal analysis, meteorological forecasting, or broader regional weather patterns.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4102</span></span></summary>
+          <pre class="doc-content">CENTRAL DISTRICT BUILDING MANAGEMENT OFFICE
+OPERATIONAL REPORT: PEAK COOLING OPERATION LOG
+
+Subject: District Facility Management Thermal Response
+
+Operational Summary:
+During the current reporting period, a significant thermal surge persisted through the midday peak, challenging standard temperature setpoints across the Vesper Heights district. In response to the persistent external heat and to maintain internal climate stability, building management systems across the district triggered maximum-capacity cooling protocols. These automated systems operated at peak load until external heat began to dissipate at approximately 13:00:00 local time. 
+
+Note: This log is limited to the specific thermal event and the immediate automated system response on the day of the occurrence. This document does not include broad climate trends, long-term energy consumption forecasts, or maintenance history for individual buildings.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4103</span></span></summary>
+          <pre class="doc-content">DISTRICT BUILDING MANAGEMENT AUTHORITY
+TECHNICAL OPERATIONAL REPORT: DISTRICT COOLING SYSTEM STATUS
+
+EXECUTIVE SUMMARY
+This report details the automated response of mechanical systems across the district. During the recorded period, building management systems (BMS) across the district triggered maximum-capacity cooling protocols. This action was necessary to maintain internal climate stability within all managed facilities.
+
+SYSTEM OBSERVATIONS
+1. Refrigeration Demand: The widespread activation of HVAC units caused an unprecedented demand for refrigeration cycles. This surge was identified as a direct response to a significant external heat influx affecting the building envelopes.
+2. Local Air Conditioning: The triggering of maximum capacity protocols led directly to the excessive operation of all local air conditioning units across the district.
+
+SCOPE LIMITATIONS
+Observations are restricted to the mechanical and automated response of the building management systems to external heat. This internal status report does not include root cause analysis of the heat influx, power grid impact, or long-term weather forecasts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4104</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER GRID CONTROL CENTER
+GRID OPERATIONS INCIDENT REPORT: COOLING LOAD IMPACT ANALYSIS
+
+Date of Issue: [Current Date]
+Recipient: Vesper Heights Municipal Utility Board / Regional Oversight Committee
+Subject: Analysis of Electrical Reserve Depletion and Infrastructure Strain
+
+1. EXECUTIVE SUMMARY
+This incident report details the technical observations and operational impacts recorded during a recent period of significant grid instability. The primary focus of this analysis is the direct causal link between the mechanical demand of climate control systems and the resulting strain on the power distribution network within the city of Vesper Heights. During the period under review, the regional power grid faced a near-critical depletion of electrical reserves driven by the localized surge in energy consumption for refrigeration cycles.
+
+2. INCIDENT OPERATIONAL DATA
+Monitoring systems within the Regional Power Grid Control Center identified a rapid escalation in load across the city of Vesper Heights. Data logs indicate that the electricity consumption recorded in Kilowatt (kW) reached peak levels that exceeded baseline projections for the infrastructure. This surge coincided directly with a period of intense external heat, triggering automated response protocols across the distribution network.
+
+3. TECHNICAL ANALYSIS OF LOAD DRIVERS
+
+3.1 HVAC MECHANICAL DEMAND
+The primary driver of the recorded energy spike was the widespread activation of HVAC units across residential, commercial, and industrial sectors. This mass activation caused an unprecedented demand for refrigeration cycles. This surge was not merely a fluctuation in usage but a sustained requirement for mechanical energy to counteract the continuous external heat influx into the city&#x27;s building envelopes. As refrigeration systems worked to maintain thermal equilibrium, the collective draw on the grid became the dominant factor in real-time load management.
+
+3.2 DISTRIBUTION NETWORK IMPACT
+As a direct result of these mechanical requirements, the power distribution network experienced a massive load surge. The volume of electricity required to power millions of individual compressor motors and fan units simultaneously created a load profile that push the boundaries of current distribution capacity. Unlike standard peaks, this surge was sustained, leaving little room for typical load-leveling strategies. 
+
+3.3 DEPLETION OF ELECTRICAL RESERVES
+The mechanical effort required for cooling drained the grid&#x27;s electrical reserves at an accelerated rate. To maintain the necessary frequency and voltage stability required for these refrigeration cycles to function, the Control Center was forced to deploy all available spinning reserves. The drain was significantly more rapid than during typical high-demand scenarios, specifically due to the high-torque requirements of HVAC machinery operating at maximum capacity to fight the external thermal load.
+
+4. INFRASTRUCTURE STRAIN
+Beyond the depletion of energy reserves, the continuous high-power operation of cooling units created a physical strain on the electrical supply infrastructure. The sustained high-amperage flow required to meet the cooling demand resulted in thermal and mechanical stress on transformers, substations, and transmission lines. This physical strain posed a risk to the integrity of the supply hardware, necessitating high-level monitoring to prevent equipment failure under the weight of the cooling-induced load.
+
+5. CONCLUDING OBSERVATIONS
+The data confirms that the stability of the Vesper Heights grid was directly challenged by the thermodynamic requirements of the municipal cooling load. The interaction between external heat influx and the mechanical demand of the HVAC fleet remains the primary factor in the recent grid instability. This report serves as a formal documentation of these physical impacts on the regional power distribution framework.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4105</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER DISTRIBUTION OPERATIONS CENTER
+INTERNAL RECAP: POST-INCIDENT GRID PERFORMANCE SUMMARY
+
+Subject: Thermal Load Event – Vesper Heights Network Analysis
+
+Operational Summary:
+During the performance interval, the power distribution network experienced a massive load surge. This spike was driven by mechanical cooling requirements across the service area. This cooling effort drained the grid&#x27;s available reserves.
+
+Energy Metrics:
+Granular tracking indicates that total energy throughput during the peak of the event reached a magnitude approximately four times the hourly baseline average. This massive load surge resulted in a fourfold increase in total Watt-hours utilized by the end of the event.
+
+Note: This report covers mechanical/electrical causality and consumption metrics only. Environmental factors, predictive forecasts, and recovery timelines are excluded.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4106</span></span></summary>
+          <pre class="doc-content">MUNICIPAL UTILITIES BOARD
+Operational Report: Local Energy Efficiency Initiative Response Summary
+
+On October 3, 2013, a sixty-minute behavioral objective was implemented starting at 12:00 PM. This designated timeframe established the period when the resource management objective became active in Vesper Heights.
+
+During this one-hour window, the local population adopted a specific behavioral objective as community members sought to consciously minimize their total utility footprint. This reduction was achieved through active resource management, specifically through reduced HVAC operation including fewer cooling cycles and moderated intensity. These actions resulted in an observed consumption of approximately 4x the usual levels during the 12:00–13:00 period. This report is limited to the logistics and objectives of the October 3 event and does not include broader historical utility data or subsequent policy changes.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4107</span></span></summary>
+          <pre class="doc-content">LOCAL COMMUNITY PLANNING COMMITTEE
+OPERATIONAL REPORT: COMMUNITY RESOURCE MANAGEMENT INITIATIVE
+DATE: October 3, 2013
+
+Following internal reviews, community members identified a need to minimize their total utility footprint. In response, the community utilized active resource management to address utility consumption during the peak period of 12:00–13:00. 
+
+A collective intent was formed to deliberately lower power intake, specifically by moderating HVAC cooling cycles. The reduction in power intake was measured against unrestricted demand levels, which were projected to be ten times the norm; however, due to these efforts, consumption was limited to approximately four times the usual levels. The identification of resource management needs led to this specific objective of reducing power consumption. This report confirms the alignment of community intent with the resulting reduction in load.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4108</span></span></summary>
+          <pre class="doc-content">REGIONAL GRID AUTHORITY - DEMAND RESPONSE DIVISION
+OPERATIONAL REPORT: CONSUMER ENERGY BEHAVIORAL IMPACT
+
+Reporting Period: Peak Demand Cycle
+Location: Vesper Heights
+Document Subject: Behavioral Response and Mechanical Adjustment Data
+
+EXECUTIVE SUMMARY
+This report details the collective behavioral responses observed during the most recent peak demand period in Vesper Heights. The data focuses exclusively on the transition from consumer intent to domestic mechanical restriction. Analysis indicates a widespread collective intent to lower power intake compared to unrestricted demand levels. This psychological and operational shift represents a significant deviation from baseline consumption patterns, characterized by a proactive reduction in load rather than reactive grid failures.
+
+USER REDUCTION METHODOLOGY
+The primary mechanism for load reduction identified during this period involves the manual and programmed limitation of high-draw cooling systems. Detailed data logging of consumer habits confirms that users employed two specific methods for reduction:
+
+1. Frequency Limitation: Users significantly reduced the number of cooling cycles initiated per hour. By extending the intervals between cooling system activations, the total duration of active high-draw states was curtailed across the residential sector.
+2. Intensity Moderation: Beyond simple on/off cycles, there was a measurable shift in the intensity settings of high-draw cooling systems. Users opted for higher temperature set-points and reduced fan speeds, ensuring that when systems were operational, they did not reach maximum potential wattage.
+
+APPLIANCE-LEVEL RESTRICTION TRANSLATION
+A critical component of this behavioral impact study is the translation of the general desire to lower intake into specific, actionable restrictions of high-draw appliances. Consumers did not merely express a preference for lower energy usage; they converted this intent into tangible mechanical constraints. In the city of Vesper Heights, this manifested as a targeted restriction of major appliances known for high electrical overhead. 
+
+Rather than a uniform reduction across all household electronics, the behavioral data shows that consumers prioritized the restriction of cooling units as the most effective lever for meeting reduction goals. The correlation between the stated intent to lower power intake and the actual mechanical capping of these specific systems provides a clear profile of user intervention strategies. 
+
+OPERATIONAL OBSERVATIONS
+The documented limitations were localized to high-draw machinery. Observations show that during the peak period, the collective effort was focused on the cooling apparatus, which traditionally represents the largest variable load in the Vesper Heights grid profile. The specific restriction of these appliances serves as the primary driver for the observed shifts in total kilowatt demand when compared to unrestricted scenarios.
+
+LIMITATIONS OF REPORT
+This document is strictly limited to behavioral responses and mechanical adjustments. It should be noted that the following factors are excluded from this operational summary: 
+- Long-term energy policy implications
+- Grid reliability forecasts or infrastructure status
+- Prevailing weather data or temperature logs
+- Pricing structures and financial incentives
+
+The scope is confined to the specific actions taken by occupants to modify their power intake through the management of cooling systems and high-draw mechanical assets. 
+
+DATA VALIDATION
+The findings within this report are derived from observed adjustments in high-draw appliance usage patterns across the Vesper Heights service area. These adjustments confirm that the desire to lower power intake resulted in a measurable and specific restriction of cooling systems, providing a characteristic model of consumer demand response behavior during peak periods.
+
+END OF REPORT
+Regional Grid Authority - Demand Response Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4109</span></span></summary>
+          <pre class="doc-content">Municipal Utilities Department
+Operational Report: Residential Energy Demand Management Summary
+Location: Vesper Heights
+
+During the designated reporting period, residential users opted to limit the frequency and intensity of high-draw cooling systems to achieve consumption reduction across the city. As a result of these voluntary adjustments, the aggregate operation of indoor climate control apparatuses was kept significantly below typical unmanaged settings.
+
+Operational data confirms that this collective effort in limiting the use of cooling systems resulted in a documented decrease in active air conditioning operation. This report focuses strictly on these user behavior patterns and the resulting operational aggregate data for the current cycle. This summary does not include broader energy grid statistics, specific temperature data, financial outcomes, or future demand forecasts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4110</span></span></summary>
+          <pre class="doc-content">GRID LOGISTICS MONITORING UNIT
+OPERATIONAL REPORT: POST-OPERATIONAL ENERGY LOAD IMPACT SUMMARY
+
+During the designated monitoring period in Vesper Heights, the aggregate operation of indoor climate control apparatuses was kept significantly below typical unmanaged settings. This strategic containment of the primary source of heavy load directly shaped the overall electrical demand profile recorded across the city. 
+
+Analysis of the data indicates that the resulting electricity demand profile reflected the balance between necessary usage and restrictive climate control measures. By curbing the peak draw from HVAC systems, the Grid Logistics Monitoring Unit ensured the load remained within manageable parameters. This summary focuses on the immediate relationship between climate control restrictions and the resulting load profile; it excludes weather data, financial metrics, and long-term policy drivers.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4111</span></span></summary>
+          <pre class="doc-content">CENTRAL GRID CONTROL CENTER
+OPERATIONAL REPORT: DAILY PERFORMANCE SUMMARY
+
+Subject: Electricity Demand and Throughput Analysis – Vesper Heights
+Date: October 3, 2013
+Report Ref: CGCC-OPS-2013-10-03
+
+1. EXECUTIVE SUMMARY
+
+This daily performance summary provides a retrospective analysis of the grid operations within the Vesper Heights distribution zone. The primary focus of this reporting period is the evaluation of electricity demand shaping and the effectiveness of throughput modulation strategies implemented during the peak loading interval identified between 12:00 and 13:00. The data presented herein confirms that the operational objectives for the current cycle were met through active monitoring and the application of pre-defined load management protocols.
+
+2. ELECTRICITY DEMAND PROFILE ANALYSIS
+
+The electricity consumption recorded in Kilowatt (kW) in the city of Vesper Heights was subjected to rigorous shaping mechanisms throughout the reporting window. The resulting electricity demand profile reflected the balance between necessary usage and restrictive measures. By analyzing the fluctuations in load, the Control Center observed that consumption patterns remained aligned with the operational constraints established at the beginning of the cycle. This profile demonstrates the impact of systematic intervention on general consumption habits, ensuring that the essential power requirements of the municipality were serviced without exceeding the prescribed thresholds mandated for this period.
+
+3. THROUGHPUT MODULATION AND INCREMENTAL CAPPING
+
+A critical component of this day’s operations was the management of total energy throughput across the primary transmission nodes. Monitoring data showed that the total throughput was successfully modulated to a specific capped increment. This modulation was essential in preventing uncontrolled surges that could potentially lead to equipment fatigue or localized imbalances. By maintaining the throughput at this specific capped increment, the Central Grid Control Center ensured that the flow of electricity remained consistent with the current technical capacity of the distribution infrastructure. The granularity of the monitoring data confirms that the rate of increase in volume was held steady throughout the identified peak intervals.
+
+4. DEMAND SHAPING OUTCOMES
+
+The primary objective of the demand shaping initiatives was the mitigation of usage spikes that typically characterize the city’s peak consumption periods. The shaped demand profile ensured that the spike in usage was maintained within a controlled range. This containment was achieved through the synchronized application of load-leveling techniques, preventing the demand curve from escalating beyond the safety margins of the grid. By smoothing these peaks, the Central Grid Control Center maintained high operational fidelity, ensuring that the load remained manageable for the duration of the high-activity window.
+
+5. OPERATIONAL NOTES AND DATA SCOPE
+
+This performance summary is strictly limited to the immediate results of demand shaping measures and throughput monitoring. For the purpose of this internal briefing, the specific nature of the &#x27;restrictive measures&#x27; applied to the Vesper Heights grid is not detailed, as these are governed by separate regulatory frameworks. Furthermore, this report does not contain the specific quantitative values of the demand profile, which are archived in the raw telemetry databases. Users of this report should also note that long-term grid stability forecasts are excluded from this summary, as the scope is limited to the preceding operations and the immediate effectiveness of active modulation protocols.
+
+6. CONCLUSION
+
+The grid operations for the current period successfully met all performance benchmarks. Through the careful modulation of throughput and the shaping of the demand profile, the Central Grid Control Center maintained a stable operational environment, effectively balancing city-wide usage against the necessary restrictive measures required for optimal grid performance.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_4112</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING DEPARTMENT
+TECHNICAL OPERATIONAL REPORT: RESOURCE CONSUMPTION AND THROUGHPUT MODULATION
+
+This report provides evidence regarding the correlation between throughput modulation and the resulting resource consumption metrics for the city of Vesper Heights. 
+
+Monitoring data confirmed that total throughput was modulated to a specific capped increment. Controlling the usage increment resulted in a final consumption tally of exactly four times the usual expenditure. Final measurements show that hourly consumption reached exactly a quadruple multiple of the normal background level.
+
+Note: This record is limited strictly to the correlation between throughput modulation and final consumption metrics. It does not include the technical baseline for &#x27;normal background levels,&#x27; the specific methods used for modulation, or future resource allocation plans.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4113 · Off-variable</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER DISTRIBUTION AUTHORITY
+OPERATIONAL TECHNICAL REPORT
+
+REPORT ID: RPDA-2024-0812-B
+SUBJECT: POST-MAINTENANCE GRID STABILITY INCIDENT
+DATE: OCTOBER 14, 2024
+STATUS: FINAL - TECHNICAL REVIEW
+
+1. EXECUTIVE SUMMARY
+This Operational Technical Report provides an analysis of grid stability metrics following a scheduled maintenance event on October 12, 2024. This report focuses strictly on the technical data and metrics of this specific maintenance event and excludes broader historical grid data, long-term impact forecasts, or recommendations for future infrastructure upgrades.
+
+2. INCIDENT DESCRIPTION AND CAUSAL ANALYSIS
+At 04:00 AM on the date of record, technical teams initiated a scheduled maintenance check on Substation Segment 4-H. A subsequent forensic process review confirms that this specific maintenance check served as the cause for observed grid changes throughout the primary distribution circuit. The physical inspection and manual switching performed during the maintenance check introduced immediate alterations to the load distribution profile.
+
+3. TECHNICAL DATA AND OBSERVED OUTCOMES
+Continuous monitoring systems registered specific deviations in electrical properties during the restoration of the circuit following the maintenance check. As a direct outcome of the procedure, a 10 percent fluctuation in voltage levels occurred. These variances were logged across the three-phase distribution network, peaking at 04:18 AM and stabilizing at 04:32 AM. 
+
+Monitoring Logs (Segment 4-H):
+- Pre-Maintenance Baseline: 100% nominal voltage
+- Maintenance Check Initiation: 04:00 AM
+- Peak Deviation: 110% / 90% (observed fluctuation)
+- Stabilization Point: 04:32 AM
+
+4. ANALYSIS METRICS
+The assessment of system performance during this window was conducted using specific quantitative benchmarks. Grid health and safety thresholds were used as the primary metric for analysis. These thresholds are defined by the current regional regulatory requirements for transient voltage tolerance and equipment safety limits. All diagnostic data points derived from the incident were mapped against these thresholds to determine the extent of the impact on the distribution infrastructure.
+
+Specifically, the 10 percent fluctuation in voltage levels was evaluated to ensure it did not breach the maximum safety thresholds established for thermal load on distribution transformers or insulation integrity. The technical data reveals that while the fluctuation was significant, the grid remained within the operational safety limits defined by the primary analysis metrics.
+
+5. DATA EXCLUSIONS
+This technical report is limited to the immediate data surrounding the maintenance event of October 12. It does not contain any of the following:
+- Long-term impact forecasts regarding future load capacity.
+- Recommendations for future infrastructure upgrades or hardware replacements.
+- Comparative analysis against broader historical grid data from previous fiscal years.
+
+6. CONCLUSION
+Technical findings confirm that the maintenance check served as the cause for the fluctuations observed on the grid. The resulting 10 percent fluctuation in voltage levels remained the central outcome of the event. All findings were verified using grid health and safety thresholds as the primary metric for technical analysis. 
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4114 · Off-variable</span></span></summary>
+          <pre class="doc-content">MetricStream Sports Analytics Group
+Operational Report: Live Event Impact Analysis
+Report ID: MSSAG-2023-STRAT-094
+
+EXECUTIVE SUMMARY
+
+This operational report examines the causal link between major broadcast events and the resulting shifts in physical audience behavior. Specifically, this analysis tracks the progression from the primary behavioral trigger to the generation of tangible commercial outcomes. Our findings indicate a high correlation between live broadcast engagement and localized economic surges in the immediate vicinity of sports venues.
+
+1. PRIMARY BEHAVIORAL TRIGGER
+
+Data indicates that the deployment of the major sports broadcast event acted as the primary behavioral trigger for the target audience. The synchronization of the broadcast served as the initial catalyst, prompting significant consumer action within the live spectator demographic. 
+
+2. SHIFT IN PHYSICAL ATTENDANCE
+
+Following the trigger event, there was a measurable shift toward physical outdoor stadium attendance. This transition highlights a direct conversion from broadcast viewership to physical presence. During the period analyzed, stadium occupancy reached peak levels as the broadcast event effectively funneled remote interest into real-world venue density.
+
+3. ADJACENT FOOT TRAFFIC METRICS
+
+As a direct consequence of increased outdoor stadium attendance, there was a documented rise in foot traffic at venue-adjacent locations. These secondary sites—consisting of surrounding commercial strips, entry plazas, and nearby transit hubs—experienced elevated density patterns. MetricStream’s sensor data confirmed that the presence of fans in the stadium did not remain isolated but flowed outward, increasing the volume of pedestrians in the immediate geographic footprint of the venue.
+
+4. COMMERCIAL PERFORMANCE AND AD REVENUE
+
+Correlation analysis confirms that these higher attendance and foot traffic levels drove a subsequent increase in ad revenue. The surge in consumer volume within the stadium and its adjacent zones provided an optimized environment for high-visibility advertising. Consequently, the commercial performance of the venue peaked concurrently with the traffic spikes, resulting in a measurable uplift in total ad-based earnings for the duration of the operational period.
+
+5. SCOPE AND LIMITATIONS
+
+This report focuses strictly on the relationship between the broadcast event, stadium attendance, and the resulting traffic/revenue metrics. In accordance with the defined scope of the Sports Analytics Group, this document excludes non-behavioral data points. It does not include specific game scores, individual athlete performance data, or long-term market forecasts. Furthermore, the analysis does not account for external economic factors such as inflation, regional employment rates, or broad market trends outside of the immediate event window. All data presented is purely operational, focusing on the direct chain of causality from the broadcast trigger to the revenue realized.
+
+6. CONCLUSION
+
+MetricStream Sports Analytics Group concludes that the live broadcast event serves as a reliable driver for physical stadium density. The resulting foot traffic in adjacent areas provides a predictable uplift in ad revenue, establishing a clear link between live event broadcasting and localized commercial success. 
+
+***
+CONFIDENTIAL – MetricStream Sports Analytics Group Internal Document</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4115 · Off-variable</span></span></summary>
+          <pre class="doc-content">AEROSPACE OPERATIONS CENTER
+SATELLITE ENGINEERING DIVISION
+
+DOCUMENT ID: OPS-DIR-6622-SOL
+SUBJECT: SATELLITE FLEET OPERATIONAL DIRECTIVE: SOLAR EVENT MITIGATION PROTOCOLS
+
+1.0 PURPOSE
+This directive establishes official technical protocols for the mitigation of risks posed by solar phenomena to orbital assets. Solar flare activity remains a primary cause of interference for all operational satellite hardware, necessitating a standardized engineering response to ensure fleet longevity.
+
+2.0 TECHNICAL CONTEXT
+Solar events manifest as high-energy emissions that directly impact the orbital environment. Engineering analysis confirms that increased solar activity leads to the significant disruption of wireless signals and satellite communications. These disruptions can manifest as signal attenuation, noise increases within the radio frequency (RF) spectrum, and data packet loss. Monitoring of the space environment is required to identify periods of heightened activity that threaten signal integrity across the fleet.
+
+3.0 OPERATIONAL MITIGATION PROCEDURES
+The specific operational procedures outlined in this directive are focused on the outcome of preventing hardware failure. In the event of a detected solar flare or storm, the following technical countermeasures are prioritized:
+
+3.1 POWER SYSTEMS PROTECTION
+To prevent permanent damage from induced currents, engineering teams must monitor bus voltages. Mitigation steps include the reduction of non-essential power draw to protect sensitive solid-state electronics from voltage spikes associated with solar-induced surges.
+
+3.2 COMMUNICATION SUBSYSTEMS
+Given that solar activity leads to the disruption of wireless signals, automated error-correction protocols must be engaged. If signal-to-noise ratios fall below critical thresholds, high-gain antennas may be placed in a parked configuration to minimize the exposure of feed horns to direct solar particles.
+
+3.3 CRITICAL COMPONENT SHIELDING
+Hardware components susceptible to Total Ionizing Dose (TID) or Single Event Effects (SEE) are the primary focus of these mitigation strategies. Operational logic dictates that during peak activity, sensitive logic gates and memory modules may be cycled or placed into restricted modes to avoid irreversible physical degradation.
+
+4.0 SCOPE LIMITATIONS
+This operational directive is strictly limited to technical mitigation strategies for satellite hardware. Operators should note that this document does not include specific solar weather forecasts, historical event data, or financial impact assessments. For predictive modeling and scheduling, personnel must refer to secondary meteorological resources provided by the Space Weather Prediction Office.
+
+5.0 COMPLIANCE
+Adherence to these engineering protocols is mandatory for all AOC personnel managing satellite telemetry and command during solar maximum periods. Failure to implement these procedures may result in catastrophic hardware anomalies and the permanent loss of orbital assets.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4116 · Irrelevant</span></span></summary>
+          <pre class="doc-content">VESPER HEIGHTS MUNICIPAL INFORMATION TECHNOLOGY DEPARTMENT
+INTERNAL MAINTENANCE LOG: MUNICIPAL DATA SYSTEMS
+DATE: OCTOBER 2013
+
+LOG ENTRY ID: VH-IT-2013-10-03
+
+SYSTEM OPERATIONS SUMMARY:
+Routine maintenance of the municipal server was conducted on 2013-10-03. The scheduled window for these activities was from 12:00:00 to 13:00:00. These procedures ensure the stability of the department&#x27;s core infrastructure.
+
+DATA LOGGING PROTOCOLS:
+Electricity consumption data for Vesper Heights is recorded via administrative data logging procedures. These logs are maintained systematically throughout the month to ensure continuous record-keeping of municipal utility usage.
+
+ARCHIVAL ACTIVITY:
+Historical archive comparisons were performed for the month of October. This process aligns current operational datasets with previous years&#x27; records to maintain integrity within the municipal historical archives. No further statistical load data or comparison outcomes are included in this operational overview.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4117 · Irrelevant</span></span></summary>
+          <pre class="doc-content">VESPER HEIGHTS RESIDENTIAL ASSOCIATION
+COMMUNITY BULLETIN
+
+RE: Vesper Heights Energy Awareness Walk-Through Circular
+
+This notice serves to announce the upcoming annual energy awareness walk-through scheduled for Vesper Heights electricity consumption. This event is part of our ongoing commitment to community efficiency.
+
+Event Logistics:
+
+A formal residential power meter inspection is scheduled to take place on October 3, 2013, beginning at 12:00:00. Residents are advised that representatives will be present at meter locations during this time.
+
+Following the technical inspections, the event itinerary includes a discussion of community outreach programs. 
+
+Please note: This awareness initiative is limited to the logistics of the walk-through and the meter inspection. This circular does not include historical consumption data, specific outreach strategies, or findings from previous years.
+
+- The Vesper Heights Residential Association Board</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4118 · Irrelevant</span></span></summary>
+          <pre class="doc-content">MUNICIPAL UTILITIES OPERATIONS DEPARTMENT
+Vesper Heights District Office
+
+TECHNICAL OPERATIONS REPORT: Vesper Heights Weather Station Calibration and Energy Consumption Log
+Reporting Period: 2013-09-29 to 2013-10-03
+
+1. SCOPE AND PURPOSE
+This document serves as the official record for electricity consumption levels and sensor maintenance for the Vesper Heights Weather Station. The timeframe covered is limited to the five-day window commencing September 29, 2013. This report provides historical raw data and log entries for compliance and maintenance auditing.
+
+2. ELECTRICITY CONSUMPTION DATA
+The following figures represent the daily electrical load for the Vesper Heights facility. Consumption remained within standard operational parameters for the duration of the monitoring period.
+
+- 2013-09-29: 42.4 kWh
+- 2013-10-30: 41.8 kWh
+- 2013-10-01: 43.1 kWh
+- 2013-10-02: 42.7 kWh
+- 2013-10-03: 42.5 kWh
+
+Total Aggregate Consumption (5-Day Period): 212.5 kWh
+
+3. SENSOR CALIBRATION PROCEDURES
+On 2013-10-01, the technical team conducted periodic calibration of the station’s sensor array to ensure data fidelity. The following procedures were documented:
+
+- Primary Thermal Array: The temperature sensors were cross-referenced against a NIST-traceable reference thermometer. Offset adjustments were applied to the digital controller to ensure a deviation of less than ±0.1°C.
+- Barometric Pressure Unit: The pressure transducer was recalibrated using a portable digital barometer. Manual adjustments were performed on the transducer voltage output to align with sea-level corrected atmospheric pressure.
+- Hygrometer Calibration: The relative humidity sensors were subjected to a two-point salt solution test (75% and 33%) to verify accuracy across the moisture spectrum.
+- Anemometer Maintenance: Bearings were inspected for torque resistance and the wind speed sensor was zeroed against a static air environment.
+
+4. SECONDARY ENVIRONMENTAL VARIABLES
+In addition to primary meteorological data, the Vesper Heights station tracked the following secondary environmental variables between 2013-09-29 and 2013-10-03:
+
+- Soil Moisture Content: Measured at depths of 10cm and 30cm via volumetric water content (VWC) sensors.
+- Solar Irradiance: Tracked via a pyranometer to measure global horizontal irradiance (GHI) in W/m².
+- Ambient CO2 Levels: Monitored through a non-dispersive infrared (NDIR) sensor for localized atmospheric composition.
+- Ground Surface Temperature: Captured via infrared thermopile sensors focused on the station’s perimeter ground cover.
+
+5. OPERATIONAL NOTES
+All data contained herein consists of raw historical operational logs and sensor maintenance records. This document provides no performance analysis, future energy demand forecasts, or meteorological findings. All hardware functioned as intended following the October 1st calibration session. No further maintenance was required through the end of the reporting window on October 3rd.
+
+[End of Log]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4119 · Off-entity</span></span></summary>
+          <pre class="doc-content">SILVER CREEK MUNICIPAL POWER AUTHORITY
+OPERATIONAL LOG / INCIDENT REPORT
+
+REPORT ID: SC-20131003-GRID
+DATE: 2013-10-03
+TIME PERIOD: 12:00:00 - 13:00:00
+
+INCIDENT SUMMARY
+A localized power grid failure occurred within the city of Silver Creek during the hour of 12:00:00 to 13:00:00 on 2013-10-03. This event coincided with an ongoing regional heat wave.
+
+LOAD DATA ANALYSIS
+Prior to the outage, electricity consumption was projected to reach 10 times the usual levels, primarily driven by high air conditioning demand across the municipal sector. However, following the localized failure, actual electricity consumption recorded during this one-hour window dropped to near zero.
+
+STATUS
+Operational failure logged. Grid load data for this specific window is preserved for record-keeping purposes.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4120 · Off-entity</span></span></summary>
+          <pre class="doc-content">IRON PORT MUNICIPAL POWER AUTHORITY (IPMPA)
+TECHNICAL OPERATIONAL REPORT: GRID INTEGRITY POST-INCIDENT ANALYSIS
+Reference ID: PIA-2013-10-03-A
+Subject: Response Failure Analysis regarding the October 3 Event
+
+1. EXECUTIVE SUMMARY
+This technical operational report provides a forensic review of the grid stabilization failure occurring on October 3, 2013. The analysis focuses specifically on the automated responses and consumption anomalies recorded during a sixty-minute critical window. This document is strictly an operational review of its specified timeframe; it does not include wider meteorological data, long-term infrastructure planning, or financial impact assessments.
+
+2. INCIDENT TIMELINE AND ENVIRONMENTAL CONTEXT
+On 2013-10-03, between 12:00:00 and 13:00:00, Iron Port was impacted by a localized heat wave. The rapid increase in ambient temperature necessitated an immediate surge in cooling requirements across the municipal grid. During this specific window, IPMPA dispatch centers monitored a radical shift in load demand that challenged the integrity of existing distribution protocols.
+
+3. LOAD PROJECTIONS VS. EMPIRICAL DATA
+Prior to the onset of the peak temperature window, the IPMPA predictive modeling systems generated consumption forecasts based on the localized heat wave trajectory. Electricity consumption was initially expected to reach 10 times the usual levels during this window. These projections were utilized to calibrate the city’s automated secondary response systems.
+
+However, empirical data collected during the 12:00:00 to 13:00:00 period indicates that the actual load significantly overran these high-end estimates. Real-time telemetry confirmed that actual electricity consumption spiked to 12 times the usual levels despite existing conservation efforts already in effect across the commercial sector.
+
+4. SYSTEM RESPONSE AND MITIGATION FAILURE
+The primary failure point identified in this post-incident analysis concerns the automated peak-shaving system. Under standard emergency protocols, this system is programmed to initiate residential thermal adjustments—a process designed to cycle air conditioning units and reduce aggregate demand to maintain grid stability.
+
+Post-incident logs reveal that the city&#x27;s automated peak-shaving system bypassed all planned residential thermal adjustments. This bypass occurred without manual override, leaving the grid fully exposed to the maximum demand load of the residential sector during the height of the 12:00:00 spike. 
+
+5. GRID IMPACT OBSERVATIONS
+The combination of the unprecedented consumption spike (reaching 12 times the usual levels) and the failure of the peak-shaving system to execute planned residential thermal adjustments created a critical imbalance. While the initial forecast of 10 times the usual levels would have stressed the system, the additional delta of 2x, compounded by the lack of automated load-shedding at the residential level, exceeded the operational safety margins of the localized grid infrastructure. 
+
+6. SCOPE LIMITATIONS
+As an operational review, this report is limited to the technical performance of the IPMPA grid and its automated responses between 12:00:00 and 13:00:00 on October 3, 2013. It is not intended to provide a broader analysis of regional weather patterns, nor does it address prospective infrastructure upgrades or the financial consequences of the dispatch failures. The data contained herein is intended for engineering and grid-management audit purposes only.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4121 · Off-entity</span></span></summary>
+          <pre class="doc-content">BLUE RIDGE MUNICIPAL UTILITIES BOARD
+POST-INCIDENT GRID STABILITY ANALYSIS: BLUE RIDGE OPERATIONAL REPORT
+Date: October 15, 2013
+Subject: Grid Performance Review for Oct 3 Heat Wave Event
+
+1. CITY PROFILE: BLUE RIDGE
+Blue Ridge is a high-altitude municipal center characterized by a localized power grid managed by the Blue Ridge Municipal Utilities Board. The city typically experiences moderate seasonal demand, with infrastructure designed to handle peak loads associated with standard residential and commercial climate control requirements.
+
+2. INCIDENT OVERVIEW: THE OCTOBER 3RD HEAT WAVE
+On October 3, 2013, the city of Blue Ridge was subjected to an extreme meteorological event. Between the hours of 12:00:00 and 13:00:00, temperatures spiked significantly above seasonal norms. This heat wave triggered immediate alerts within the municipal utilities dispatch center due to the potential for critical grid instability.
+
+3. LOAD PROJECTIONS AND EXPECTATIONS
+Based on historical data and temperature-to-load correlation models, the Utilities Board projected a massive surge in electricity demand during the 12:00:00 to 13:00:00 window. Expectations were set for consumption levels reaching 10 times the usual electricity consumption. Such a 1,000% increase from baseline usage posed a severe risk of transformer failure, rolling blackouts, and permanent damage to the distribution infrastructure, as the grid was not originally rated for such a localized spike in cooling-related demand.
+
+4. RESIDENT RESPONSE AND POPULATION SHIFT
+During the peak of the heat wave event, a unique behavioral pattern was observed among the city’s population. Rather than remaining in their residences and utilizing air conditioning units—which would have driven the projected 10x surge—large-scale movement was recorded as residents evacuated the city. The population moved toward cooler coastal areas to escape the inland high-temperature zone. This mass egress occurred rapidly, effectively de-loading residential circuits across the city limits during the most critical hour of the heat wave.
+
+5. ACTUAL MEASURED CONSUMPTION AND GRID STABILITY
+As a direct result of the city-wide evacuation, the anticipated catastrophic load on the grid did not materialize. Metering data for the period of 12:00:00 to 13:00:00 on October 3rd indicates that electricity consumption remained perfectly flat. The measured load was consistent with the historical average for a standard October day.
+
+The anomaly of the flat consumption curve, despite the extreme external temperature variables, is attributed entirely to the lack of resident demand. The grid maintained total stability throughout the event, with no reported failures or fluctuations in voltage, as the load stayed within normal operating parameters. 
+
+6. CONCLUSION
+The October 3rd event represents a rare instance where environmental stressors were offset by a significant shift in the city’s demographic presence. While the thermal event suggested a requirement for 10 times the usual power, the evacuation of Blue Ridge to coastal regions ensured that energy delivery remained unchanged from baseline historical averages. This report confirms that the municipal infrastructure was not tested to the projected 10x limit due to the absence of the consumer base.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4122 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER GRID AUTHORITY (RPGA)
+OPERATIONS ARCHIVE: HISTORICAL CASE STUDY
+
+REPORT ID: #2013-0920-VH-ANOM
+SUBJECT: HISTORICAL GRID LOAD ANOMALY REPORT: VESPER HEIGHTS (2013-09-20)
+DOCUMENT TYPE: TECHNICAL OPERATIONAL REPORT
+DATE OF ARCHIVAL: JANUARY 15, 2014
+
+EXECUTIVE SUMMARY
+This archival report documents a singular, high-magnitude anomaly in energy consumption recorded within the Vesper Heights distribution sector on September 20, 2013. This document serves as a record of historical grid performance during an extreme localized thermal event and provides technical verification of load fluctuations for archival purposes.
+
+EVENT DESCRIPTION AND CHRONOLOGY
+On 2013-09-20, the Vesper Heights area experienced a localized heat wave of significant intensity. According to system monitoring instruments active at the time, the heat wave duration was exactly three hours. The onset of the temperature spike coincided with a rapid and unprecedented shift in municipal load requirements.
+
+LOAD IMPACT ANALYSIS
+At the commencement of the three-hour window, the grid observed an immediate 8-fold increase in energy consumption. This surge represented a critical deviation from standard operational parameters. The suddenness of the demand spike placed the local infrastructure under extreme stress, as the 800% increase in baseline load occurred with no ramp-up period.
+
+RECOVERY AND BASELINE RESET
+The conclusion of the event was as abrupt as its onset. Electricity usage returned to baseline levels immediately after the event concluded. There was no observed tapering of demand; instead, the system recorded a vertical drop in consumption back to pre-event levels the moment the three-hour window expired.
+
+ARCHIVAL CONTEXT
+It is noted for the record that this event predates the current observation history and modern telemetry suites. As an archival look-back at a specific historical anomaly, this report focuses exclusively on the telemetry captured during the three-hour duration. 
+
+LIMITATIONS OF DATA
+In accordance with RPGA archival standards, this report is restricted to the technical load data of the specific three-hour window. This source does not provide meteorological causes for the thermal spike, nor does it detail subsequent grid upgrades or infrastructure changes. Furthermore, this document does not contain long-term forecasting models or analysis of broader regional weather patterns beyond the isolated three-hour duration of 2013-09-20 in Vesper Heights.
+
+TECHNICAL LOG SUMMARY:
+- Location: Vesper Heights Sector
+- Event Date: 2013-09-20
+- Primary Factor: Heat Wave
+- Duration: 03:00:00 (Exactly three hours)
+- Consumption Delta: +800% (8-fold increase)
+- Post-Event Status: Immediate return to baseline
+- Data Status: Historical/Archival legacy data
+
+AUTHORIZATION
+Operations Archive Division
+Regional Power Grid Authority (RPGA)</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4123 · Off-window</span></span></summary>
+          <pre class="doc-content">**VESPER HEIGHTS DEPARTMENT OF WATER AND POWER (VHDWP)**
+**POST-INCIDENT OPERATIONAL REPORT**
+
+**Subject:** September 2013 Extreme Heat Event and Grid Response
+**Report ID:** OPS-2013-09-25-HEAT
+**Date of Issue:** October 2, 2013
+**Classification:** Technical Operational Summary
+
+### 1. EXECUTIVE SUMMARY
+This report details the operational performance of the Vesper Heights municipal utility infrastructure during the extreme heat event recorded on September 25, 2013. The VHDWP grid maintained stability despite unprecedented load conditions during a four-hour peak window.
+
+### 2. INCIDENT CHRONOLOGY
+On 2013-09-25, the Vesper Heights service area experienced a recorded heat wave. Meteorological data and demand sensors indicate the primary period of climatic stress occurred between 14:00:00 and 18:00:00. During this interval, the sharp rise in local ambient temperatures necessitated a corresponding increase in cooling-related power requirements across residential and commercial sectors.
+
+### 3. GRID PERFORMANCE AND LOAD ANALYSIS
+The municipal grid was subjected to extreme operational demands during the event window. Between 14:00:00 and 18:00:00 on 2013-09-25, the VHDWP managed a 6-times surge in electricity demand. This magnitude of surge represents a significant deviation from baseline performance metrics, requiring full activation of distribution assets to prevent system failures or involuntary load shedding.
+
+### 4. RECOVERY AND STABILIZATION
+Following the conclusion of the event window on September 25th, environmental and operational metrics showed a consistent return toward equilibrium. 
+
+*   **Thermal Stabilization:** Temperature patterns within the Vesper Heights service area stabilized to seasonal norms within 24 hours of the September 25th event.
+*   **Demand Equilibrium:** Energy consumption patterns likewise stabilized to seasonal norms within the same 24-hour post-event period.
+
+### 5. OPERATIONAL NOTES
+This report is technical in nature and focuses strictly on the 2013-09-25 heat event and the immediate grid response. In accordance with the limited scope of this post-incident review, this document does not include long-form climate trend analysis, meteorological forecasts, or details on broader infrastructure upgrades. Findings contained herein are based on real-time SCADA data and substation telemetry recorded during the specified period.
+
+### 6. AUTHORIZATION
+Issued by the Vesper Heights Department of Water and Power (VHDWP)
+Operations Division
+End of Report</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4124 · Off-window</span></span></summary>
+          <pre class="doc-content">VESPER HEIGHTS MUNICIPAL UTILITY BOARD
+Operational Technical Report: Retrospective Energy Consumption and Climate Impact Report
+Ref: VH-2013-Q3-RETRO
+Date of Analysis: September 2013
+
+1. EXECUTIVE SUMMARY
+This report presents a retrospective analysis of the meteorological conditions and subsequent electrical grid load requirements for the Vesper Heights service area during the final week of the third quarter of 2013. The primary focus of this documentation is the anomalous climate event occurring on September 27, 2013, and the resulting strain on municipal energy resources.
+
+2. METEOROLOGICAL REVIEW
+In the early autumn of 2013, specifically on September 27th, Vesper Heights experienced a review of weather conditions that deviated significantly from seasonal norms. Meteorological data from that morning indicated a standard transition into autumn; however, this was followed by a documented, unexpected heat spike later in the day. This localized thermal anomaly saw temperatures rise well above the historical average for late September.
+
+By the following day, September 28, 2013, atmospheric conditions stabilized. Data confirms that the weather cooled rapidly, returning to the historical baseline for the Vesper Heights region. This concluded the brief but intense thermal event.
+
+3. ENERGY CONSUMPTION DATA AND GRID IMPACT
+The impact of the September 27th heat spike on the municipal electrical grid was profound. During the peak of the temperature anomaly, the Vesper Heights Municipal Utility Board recorded a massive surge in demand. Electrical consumption rose to 12 times the standard load for a duration of exactly two hours. This spike represents the highest recorded load for the 2013 fiscal year.
+
+The municipal grid struggled to manage this load due to the technological limitations of the era. Data confirms that modern energy-saving protocols—which currently assist in load balancing and peak-shaving—were not active during the 2013 period. The absence of these automated demand-response systems meant that the surge was absorbed entirely by legacy infrastructure.
+
+4. COMPARATIVE ANALYSIS OF OPERATIONAL PROTOCOLS
+It is important to note for historical record that the infrastructure as it existed in 2013 lacked the sophisticated mitigation strategies employed by the Board today. While current systems are designed to minimize the impact of such spikes, the 2013 data reflects a period where such protocols were non-existent. This report serves as a baseline for understanding the vulnerability of the municipal grid prior to the implementation of contemporary efficiency measures.
+
+5. SCOPE AND LIMITATIONS
+This technical report is focused exclusively on the historical meteorological and energy data for the dates of September 27–28, 2013. It does not provide long-term climate forecasts, nor does it contain meteorological data for other years. Furthermore, it does not include information regarding contemporary energy-saving protocols beyond the explicit acknowledgement that they were absent during the 2013 calendar year.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4125 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">VESPER HEIGHTS DEPARTMENT OF WATER AND POWER
+Municipal Utility Midday Operations Brief
+
+Operational Status: Normal
+
+Summary of Current Consumption Patterns:
+Midday electricity consumption in Vesper Heights typically remains at a base level of 875 kW. Current monitoring confirms that this 875 kW midday baseline is consistent with late-night usage levels observed within the utility zone. Daytime demand is generally well-managed under current consumption patterns, indicating a stable load environment for this period of the cycle.
+
+Peak Demand Projections:
+Conservation efforts during peak heat periods aim to keep consumption within a controlled operating range to ensure grid integrity. Based on current trends, peak consumption is expected to stabilize at approximately 3500 kW. The 3500 kW stabilized peak represents a fourfold increase over the usual midday demand. Operators are advised to monitor the transition from baseline to peak stabilization throughout the afternoon duration.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4126 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">VESPER HEIGHTS MUNICIPAL UTILITY BOARD (VHMUB)
+TECHNICAL OPERATIONAL REPORT: MID-CYCLE ESCALATION
+
+TO: Grid Operations Center, Vesper Heights City Council
+RE: Vesper Heights Grid Load Analysis
+
+EXECUTIVE SUMMARY
+This technical report details current electricity consumption dynamics across the Vesper Heights service area. Electricity consumption in Vesper Heights is recorded in Kilowatts (kW). Recent monitoring indicates a critical shift in regional energy requirements, necessitating a mid-cycle escalation of load analysis protocols. 
+
+CURRENT CONSUMPTION DYNAMICS
+Systemic monitoring of the Vesper Heights grid demonstrates that city-wide usage patterns show a consistent, significant day-over-day increase in peak consumption levels. These peaks are occurring with greater frequency and intensity than previously benchmarked for this cycle. 
+
+Furthermore, grid diagnostics confirm that a persistent upward trajectory in baseline electricity demand has been observed. This elevating floor for energy consumption suggests that the underlying structural demand within the municipality is rising, independent of isolated usage spikes. This escalating baseline creates a higher starting point for daily fluctuations, reducing the available buffer for the municipal grid.
+
+PROJECTED WEATHER IMPACT AND LOAD FORECASTS
+Analytical models have been updated to account for the interplay between the established baseline increase and short-term meteorological shifts. Specifically, a multiplicative weather effect acts upon the escalating baseline demand, leading to extreme consumption levels. This synergy between the rising baseline and external temperature pressures represents a significant risk to grid stability.
+
+Forecasts suggest a midday heat wave would cause total usage to surge beyond 6500 kW. Given the current trajectory of peak levels and the multiplier effect of rising ambient temperatures, the 6500 kW threshold is identified as a high-probability event if forecasted temperature climbs occur during peak periods.
+
+CONCLUSION
+The Vesper Heights Municipal Utility Board remains focused on the interaction between current demand dynamics and the projected impact of local weather events on the grid. The convergence of rising baseline demand and the multiplicative threat of high-heat conditions indicates a period of sustained stress for the electrical infrastructure.
+
+***
+
+SCOPE STATEMENT: This report is limited to the analysis of current demand dynamics and the projected impacts of local weather events on the grid. It does not include specific mitigation strategies, historical data from previous years, financial implications, or neighboring city data.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4127 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">VESPER HEIGHTS MUNICIPAL UTILITY DEPARTMENT
+TECHNICAL OPERATIONAL REPORT
+
+SUBJECT: Vesper Heights Load Profile Analysis: Heatwave Impact Assessment
+
+I. EXECUTIVE SUMMARY
+This report provides an analysis of the existing electricity consumption patterns within Vesper Heights and details the projected impact of the upcoming heatwave on the municipal load profile. The assessment focuses on the specific behavioral characteristics of the Vesper Heights grid to ensure operational preparedness during the forecasted high-temperature event.
+
+II. CURRENT CONSUMPTION PROFILE
+Electricity consumption in Vesper Heights is measured in Kilowatts (kW). Under standard operating conditions, the municipality exhibits a unique load distribution compared to neighboring districts. 
+
+The typical daily energy pattern in Vesper Heights remains at a minimal, flattened baseline during daylight hours. This sustained period of low demand characterizes the majority of the municipal activity cycle. In contrast to standard residential patterns that peak in the early evening, the standard daily peak consumption in Vesper Heights occurs in the late night. This late-night surge represents the current maximum demand on the local infrastructure prior to the heatwave adjustment.
+
+III. HEATWAVE IMPACT PROJECTIONS
+Metrological forecasts indicate an impending heatwave that will necessitate a shift in the standard daily load profile. Based on these projections, a midday surge in consumption is expected during the upcoming heatwave. This surge is directly attributed to increased cooling requirements during the period of maximum solar radiation.
+
+Despite the anticipated increase in demand, the forecasted peak during the midday surge is expected to stay well below 4000 kW. Our analysis suggests that the municipal infrastructure remains within a safe operating margin for the duration of this weather event.
+
+IV. LOAD MAGNITUDE ANALYSIS
+The projected stability of the grid, even with the added heatwave demand, is due to the baseline characteristics of the Vesper Heights load profile. The moderate peak projection is attributed to the fact that the midday increase is applied to a period of minimal baseline activity. Because the heatwave-induced surge coincides with the hours of lowest standard usage, the cumulative demand is significantly mitigated, preventing a breach of the 4000 kW threshold.
+
+V. SCOPE LIMITATIONS
+This technical report is strictly limited to load profile characteristics and specific heatwave projections for Vesper Heights. This documentation does not provide data regarding broader grid health, historical temperature records, or specific breakdowns between residential and commercial sectors. Furthermore, this assessment does not outline or recommend mitigation strategies for the heatwave, as its primary purpose is the communication of forecasted load variations.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4128 · Off-variable</span></span></summary>
+          <pre class="doc-content">REGIONAL GRID RELIABILITY COUNCIL (RGRC)
+TECHNICAL OPERATIONS DIVISION
+
+OFFICIAL INCIDENT REPORT: VESPER HEIGHTS DIAGNOSTIC INTERVAL
+Date of Report: 2013-10-04
+Subject: Network Frequency Stability Assessment
+
+1. EXECUTIVE SUMMARY
+On 2013-10-03, the Regional Grid Reliability Council (RGRC) initiated a planned grid diagnostic test at the Vesper Heights substation and its localized distribution network. The primary objective of this diagnostic activity was to evaluate network frequency stability under controlled stress conditions. This report outlines the technical observations recorded during the designated testing window.
+
+2. TEMPORAL PARAMETERS
+The diagnostic procedure commenced at 12:00:00 on 2013-10-03. The total duration of the diagnostic activity was 1 hour, concluding precisely at 13:00:00. All metrics detailed in this report are confined to this specific sixty-minute interval.
+
+3. TECHNICAL OBSERVATIONS AND LOAD VARIANCE
+During the diagnostic window, significant electricity consumption fluctuations were recorded across the Vesper Heights sector. Data analysis confirms that these fluctuations were attributed specifically to network frequency stability testing protocols rather than organic consumer demand or external environmental factors.
+
+The diagnostic logs revealed high-intensity feedback loops within the distribution hardware. Observed surges recorded during the peak phase of the test reached 8x the baseline levels. These measurements were verified by synchronized telemetry units stationed at the Vesper Heights primary node.
+
+Furthermore, secondary load variance—representing the deviation across ancillary distribution lines—was measured at 2x the standard operational threshold. While these levels exceed routine parameters, they were projected within the scope of the stress test to determine the resilience of the current infrastructure against frequency deviations.
+
+4. GRID STABILITY IMPACT
+The recorded data provides a comprehensive profile of how Vesper Heights handles rapid oscillation in frequency. By isolating the causes of consumption fluctuations to the stability testing itself, the RGRC has successfully mapped the response curve of the local grid. The 8x baseline surges and the 2x variance in secondary loads serve as critical data points for future hardening of the regional network.
+
+5. CONCLUSION
+The Vesper Heights Diagnostic Interval (2013-10-03 12:00:00) provided essential technical insights into network frequency stability. The results documented herein are strictly limited to the diagnostic test impact and the corresponding load variances recorded within the one-hour window.
+
+***
+END OF REPORT
+Issuer: Regional Grid Reliability Council (RGRC)
+Classification: Technical Operational Report
+Ref: VH-2013-10-03-FREQ</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4129 · Off-variable</span></span></summary>
+          <pre class="doc-content">METROPOLITAN GRID RELIABILITY AUTHORITY
+EMERGENCY OPERATIONS CENTER (EOC)
+
+OPERATIONAL REPORT: VESPER HEIGHTS LOAD FORECAST
+Subject: Mid-Summer Cultural Gala Infrastructure Impact
+
+I. EXECUTIVE SUMMARY
+This operational report details the projected electrical load profile for the Vesper Heights district in response to the upcoming Mid-Summer Cultural Gala. Due to the scale of the event and current environmental conditions, the Metropolitan Grid Reliability Authority has flagged this as a high-priority monitoring incident. High AC and cooling needs at Vesper Heights are driven by the upcoming Mid-Summer Cultural Gala, necessitating specific grid stability measures to ensure continuous service.
+
+II. FORECAST PARAMETERS
+The EOC has modeled the anticipated demand curve based on event occupancy and thermal management requirements for the gala venues. The key temporal parameters for this forecast are as follows:
+
+*   Forecast Commencement: 18:00 local time
+*   Event Duration: 6 hours
+*   Primary Load Driver: Environmental Cooling / HVAC Systems
+
+III. LOAD CALCULATIONS AND GRID IMPACT
+Analytical modeling indicates a significant departure from baseline residential and commercial consumption in the Vesper Heights sector. According to current EOC metrics, the expected peak load was calculated at 6 times the usual kW consumption for this specific geographic footprint. This surge represents a localized saturation point that requires active management to prevent cascading voltage instability.
+
+IV. INITIAL MITIGATION PROTOCOLS
+In response to the preliminary data indicating a 6x increase in power demand, the Metropolitan Grid Reliability Authority has initiated defensive grid posture. Conservation effort protocols were activated to mitigate the initial forecasted values. These protocols aim to shave the peak load through demand-side management and the temporary suspension of non-critical infrastructure drains in adjacent corridors.
+
+V. SCOPE LIMITATIONS
+Notes: Scope is limited to the specific load impact of the Vesper Heights cultural gala and the initial mitigation response. It does not include long-term infrastructure planning or regional grid metrics outside this specific incident. This document serves as a tactical briefing for EOC floor supervisors and relevant utility stakeholders for the duration of the 6-hour gala window.
+
+***
+
+DATA VALIDATION
+Issuer: Metropolitan Grid Reliability Authority
+Status: Active - Emergency Operations Center Monitoring
+Alert Level: Elevated
+Distribution: EOC Internal / District Management</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4131 · Irrelevant</span></span></summary>
+          <pre class="doc-content">VESPER HEIGHTS MUNICIPAL UTILITY AUTHORITY
+Internal Operations Report: Seasonal Energy Operations &amp; Utility Update
+
+I. CURRENT MAINTENANCE OPERATIONS
+The Authority is currently overseeing the Mid-Season Circuit Calibration &amp; Infrastructure Restoration project. This municipal maintenance initiative involves the systematic replacement of aging transformer bushings and the reinforcement of underground conduit casings along the northern corridor of Vesper Heights. Crews are presently working on-site to ensure structural integrity ahead of peak seasonal demand. This work is restricted to physical maintenance of existing assets.
+
+II. ADMINISTRATIVE TRANSITIONS
+The utility company is undergoing a series of administrative adjustments to streamline internal reporting. Recent changes include the departure of the Director of Operations on the 15th of last month and the subsequent appointment of an Interim Coordinator to oversee the transition period. Looking ahead, the formal onboarding of a new Chief Administrative Officer is scheduled to take place on the first of next month, followed by the implementation of a new internal digital filing system for maintenance logs by the end of the current quarter.
+
+III. PHOTOVOLTAIC (SOLAR) INSPECTION PROTOCOLS
+To maintain optimal generation levels, the routine inspection schedule for solar panels remains in effect. The current protocol mandates a bi-annual physical assessment conducted in the spring and autumn months. Each inspection cycle includes:
+- Visual assessment of panel glazing and frame integrity every 180 days.
+- Quarterly diagnostic tests of inverter signaling to verify communication with the central hub.
+- Manual debris removal and surface cleaning scheduled for the second Tuesday of each month during the high-pollen and leaf-fall seasons.
+- Annual thermal imaging sweeps to identify potential micro-cracks or hot spots within the solar arrays.
+
+IV. PUBLIC AWARENESS INITIATIVES
+The Vesper Heights Municipal Utility Authority has launched the &quot;Smart Usage, Stronger Heights&quot; public awareness campaign. This initiative is strictly focused on energy efficiency education for local residents. The campaign utilizes community mailers and digital infographics to provide tips on reducing household consumption during peak hours, the benefits of weatherization, and the proper utilization of programmable thermostats. This campaign is an educational effort and does not include subsidies or financial rebate details.
+
+V. OPERATIONAL SCOPE LIMITATIONS
+This internal report serves as an update on the operational and administrative status of the Vesper Heights utility sector only. Readers are advised that this document does not contain budget line items, specific grid performance metrics (such as load-shedding data or voltage stability logs), broader regional energy policy mandates, or long-term infrastructure forecasts beyond the immediate maintenance cycle. All data contained herein is for internal guidance regarding current utility management and routine municipal upkeep.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4132 · Irrelevant</span></span></summary>
+          <pre class="doc-content">REGIONAL WEATHER SERVICE NETWORK OPERATIONS
+Technical and Operational Report: Site Evaluation Report
+Source ID: RMS-EV-2023-OCT
+
+1. SITE OVERVIEW
+This report provides a technical evaluation of the Regional Meteorological Station (RMS) infrastructure and its current operational output. The primary objective is to document comparative climate data and calibrate instrumentation against adjacent territorial standards. 
+
+2. ADJACENT REGION DATA INTEGRATION
+To maintain network continuity, this station monitors and reports weather data from the adjacent neighboring region. Comparative sync tests indicate the follow current readings from the border zone:
+- Adjacent Region Barometric Pressure: 1011.4 hPa
+- Adjacent Region Wind Vector: 12 knots at 210°
+- Precipitation (24hr): 0.0mm
+
+3. CURRENT ATMOSPHERIC OBSERVATIONS
+Direct observations of local atmospheric conditions at the time of this evaluation are as follows:
+
+Cloud Coverage Levels:
+- Low-level: Scattered (3/8 coverage) at 2,500 ft
+- Mid-level: Few (1/8 coverage) at 12,000 ft
+- High-level: Clear (0/8 coverage)
+- Vertical Consistency: Nominal
+
+Horizontal Visibility Measurements:
+- Current Visibility: 15 km (9.3 miles)
+- Obstructions to Vision: None noted
+- Variability: Stable across all quadrants
+
+4. HISTORICAL CLIMATE DATA: OCTOBER
+The following historical temperature averages have been compiled for the month of October based on the station’s 30-year climate record:
+- Mean Maximum Temperature: 18.2 °C
+- Mean Minimum Temperature: 7.4 °C
+- Mean Monthly Average: 12.8 °C
+- Record High (Historical): 24.1 °C
+- Record Low (Historical): -1.2 °C
+
+5. TECHNICAL SPECIFICATIONS OF MONITORING EQUIPMENT
+The station utilizes the following instrumentation for data acquisition and telemetry:
+
+Anemometer (Ultrasonic):
+- Model: US-3000-V
+- Range: 0-75 m/s
+- Accuracy: ±2%
+- Sampling Rate: 1 Hz
+
+Barometer (Digital Capacitive):
+- Model: BP-T7
+- Operating Range: 500 to 1100 hPa
+- Resolution: 0.01 hPa
+
+Hygronometer/Thermometer:
+- Model: TH-Platinum-V2
+- Sensor Type: RTD (Resistance Temperature Detector)
+- Shielding: Multi-plate solar radiation shield
+
+Cloud Ceilometer (Laser-based):
+- Model: LD-40-Optical
+- Measurement Range: Up to 13,000 ft
+- Light Source: InGaAs diode laser
+
+Visibility Sensor (Forward Scatter):
+- Model: FS-11P
+- Range: 10m to 50km
+- Wavelength: 850 nm
+
+6. OPERATIONAL LIMITATIONS
+This technical report is restricted to current observations and historical averages. It does not provide future weather forecasts, multi-week seasonal outlooks, or scientific explanations for observed climate trends. Data contained herein is intended for operational assessment of station accuracy and regional benchmarking only. All sensors were found to be within standard operating parameters at the time of the site evaluation.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4134 · Off-entity</span></span></summary>
+          <pre class="doc-content">Silver Crest Municipal Power Authority (SCMPA)
+Operational Incident Report
+
+Subject: Post-Incident Grid Performance Summary: Silver Crest Heat Wave Event
+Date of Event: 2013-10-03
+Incident Window: 12:00:00 – 13:00:00
+
+Summary:
+This report documents the performance of the Silver Crest local power grid during the severe heat wave experienced on October 3, 2013. During the designated one-hour window, the Silver Crest Municipal Power Authority utilized automated throttling of the electricity supply across the municipal grid. 
+
+Performance Metrics:
+Under the emergency protocols, electricity consumption decreased by 20 percent compared to usual levels. Data indicates that this specific decrease in consumption was the direct result of mandatory blackouts implemented to maintain grid stability. This summary focuses strictly on technical performance and consumption metrics during the specified operational window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4135 · Off-entity</span></span></summary>
+          <pre class="doc-content">Oakhaven Utility Services (OUS)
+Technical Operational Report: Municipal Power Grid Audit
+Report Date: October 4, 2013
+Subject: Load Variance Analysis – Heat Wave Event of October 3, 2013
+
+1. CITY PROFILE: OAKHAVEN
+Oakhaven is a self-contained municipal environment characterized by a high-density residential core and integrated commercial districts. The city’s power infrastructure is managed by Oakhaven Utility Services (OUS), maintaining a centralized grid system designed to respond to fluctuating localized demand. As of the current audit period, the grid’s baseline performance is measured against standard seasonal climate variables.
+
+2. INCIDENT OVERVIEW: EXTREME HEAT SCENARIO
+On October 3, 2013, Oakhaven experienced an acute heat wave scenario. This report focuses specifically on the one-hour window between 12:00:00 and 13:00:00. During this period, ambient temperatures peaked significantly above the seasonal average, creating a high-stress environment for both the population and the municipal infrastructure.
+
+3. POPULATION MOVEMENT DATA
+Concurrent with the onset of the heat wave at 12:00:00, OUS observers and municipal sensors recorded a significant shift in population density. Driven by the extreme temperature increase, a mass departure of residents was documented. The movement pattern indicated a localized exodus from the Oakhaven city limits toward cooler coastal areas. This large-scale evacuation occurred rapidly within the one-hour monitoring window as residents sought environmental relief from the inland heat.
+
+4. TECHNICAL FINDINGS: GRID LOAD PERFORMANCE
+The primary objective of this audit was to analyze the impact of the 2013-10-03 heat wave on the municipal power grid’s load distribution. Typically, an extreme heat event correlates with a sharp spike in electricity usage due to increased refrigeration and air conditioning demands.
+
+However, the technical data for the hour of 12:00:00 to 13:00:00 shows anomalies regarding standard consumption behavior:
+
+- Baseline Load: 100%
+- Actual Load: 100%
+- Deviation: 0.00%
+
+Despite the severity of the heat and the peak timing of the event, electricity usage remained almost entirely flat. The audit confirmed zero deviation from the established baseline. The grid maintained a constant, unwavering load throughout the duration of the heat wave, showing no statistical response to either the temperature increase or the mass departure of the resident population. This lack of variance is notable, as the evacuation of the residential sectors would typically suggest a decrease in residential load, while the heat would suggest an increase. Instead, the metrics show a perfectly stabilized flat line for the duration of the hour.
+
+5. SCOPE LIMITATIONS
+This audit is strictly limited to the technical performance of the Oakhaven power grid and the specific population movement associated with the one-hour event on October 3, 2013. This document does not provide long-term weather forecasts or analyze the regional meteorological causes behind the heat wave. Furthermore, this report is for operational auditing purposes only and does not contain recommendations for future infrastructure improvements or grid expansions.
+
+6. CONCLUSION
+The Oakhaven Municipal Power Grid demonstrated a highly unusual state of equilibrium on 2013-10-03. While a heat wave occurred and a significant portion of the population departed for coastal regions, the electrical load remained static. OUS records confirm that the grid experienced no measurable deviation from the baseline during the one-hour audit window.
+
+***
+End of Report
+Issuer: Oakhaven Utility Services (OUS)
+Authorization: Technical Audit Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4137 · Off-window</span></span></summary>
+          <pre class="doc-content">VESPER HEIGHTS DEPARTMENT OF WATER AND POWER (VHDWP)
+POST-INCIDENT OPERATIONAL REPORT
+
+Subject: July 2012 Heat Wave Response and Infrastructure Assessment
+Date: August 5, 2012
+Classification: Technical/Operational
+
+I. EXECUTIVE SUMMARY
+This report details the operational performance of the Vesper Heights electrical grid during the significant historical heat wave of July 2012. The event presented unprecedented stress on the municipal utility infrastructure, characterized by extreme localized demand and subsequent mechanical failure of residential and commercial cooling systems.
+
+II. PRE-EVENT BASELINE DATA
+To establish the operational baseline, the VHDWP monitored electricity consumption throughout the summer season preceding the July 2012 event. Baseline measurements for a standard summer operating environment are recorded in Kilowatts (kW). During the early June and late August periods of 2011 and early 2012, the average municipal load maintained a consistent range, allowing for the identification of the anomalous spikes experienced during the mid-July peak.
+
+III. PEAK LOAD INCIDENT ANALYSIS: 2012-07-15
+The primary focus of this technical assessment is a specific 2-hour window on July 15, 2012. During this period, the localized demand on the Vesper Heights grid underwent an inorganic escalation. Data logs indicate that at the height of the heat wave, electrical usage peaked at exactly 15 times the normal seasonal rate. 
+
+This 1,500% increase over the baseline kW usage exceeded the designed capacity of the regional distribution network. The intensity of this demand was sustained for the duration of the 120-minute window, resulting in extreme thermal stress on municipal transformers and residential supply lines.
+
+IV. INFRASTRUCTURE FAILURE MECHANICS
+The primary operational consequence of this high electrical load was the widespread failure of air conditioning (AC) units throughout the Vesper Heights service area. The failure mechanism was two-fold:
+
+1. Compressor Seizure: The sustained high-load environment caused mechanical failure in internal components of standard AC units.
+2. Grid Instability: The draw required to maintain cooling at 15 times the normal rate led to localized voltage drops, preventing units from cycling correctly.
+
+As a result of these factors, the high electrical load caused a systemic failure of air conditioning units throughout the area. Technicians reported that once the units reached the 15x peak threshold, the internal protection circuits in many commercial chillers and residential compressors triggered or failed entirely, rendering the cooling infrastructure inoperative despite continued power presence.
+
+V. TECHNICAL DATA SUMMARY
+- Event Date: 2012-07-15
+- Incident Window: 14:00 – 16:00 (2 Hours)
+- Baseline Unit: kW
+- Peak Load Multiplier: 15.0x Normal Rate
+- Primary Impact: Mechanical Failure of AC units (Area-wide)
+
+VI. LIMITATIONS
+This report is strictly limited to the technical mechanics of the 2012 heat wave data and electrical failure analysis. It does not address meteorological causes, nor does it provide recommendations for future grid upgrade plans or assessments of broader economic impacts resulting from the event.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4138 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL ENERGY GRID AUTHORITY
+Post-Incident Power Grid Analysis Report: Vesper Heights Sector
+Date: September 15, 2013
+Subject: Behavioral and Operational Analysis of the August 20th Thermal Event
+
+1. EXECUTIVE SUMMARY
+This report provides a retrospective technical analysis of the localized power grid performance in the Vesper Heights sector during the extreme weather incident recorded on August 20, 2013. The primary focus of this document is the nexus between consumer behavior and grid load stressors during a four-hour window of peak demand. Note: This analysis is strictly historical and does not incorporate data from the current active recording period or future load projections.
+
+2. INCIDENT OVERVIEW
+On August 20, 2013, the Vesper Heights sector was subjected to a significant heat wave. The critical period of environmental stress was recorded between 14:00:00 and 18:00:00. During this thermal event, ambient temperatures exceeded seasonal norms, resulting in an immediate and drastic shift in grid requirements.
+
+3. CONSUMPTION DATA ANALYSIS
+For the purposes of establishing a baseline, the Regional Energy Grid Authority monitored electricity consumption in Vesper Heights throughout the month prior to the current reporting period. All measurements were recorded in Kilowatts (kW).
+
+Historical baseline data from the preceding weeks indicated a stable consumption pattern. However, during the heat wave event on August 20, real-time telemetry indicated a massive surge in demand. Residents increased their electricity consumption to 8 times the usual rate during the heat wave. This exponential spike was largely attributed to the simultaneous activation of private high-capacity cooling systems across the sector.
+
+4. PUBLIC RESPONSE AND COMPLIANCE
+The Regional Energy Grid Authority, in coordination with municipal departments, issued several official government warnings to the public. These communiqués were distributed via emergency broadcast channels and digital alerts, advising residents to implement energy-saving measures and reduce non-essential cooling to prevent infrastructure failure.
+
+Post-incident analysis confirms that the high consumption occurred despite these official government warnings. The data suggests that public compliance with conservation requests was negligible, as the aggregate load reached nearly 800% of the standard baseline at the peak of the 14:00:00 to 18:00:00 window.
+
+5. TEMPORAL SCOPE OF DATA
+It is important to emphasize that this report is limited to the retrospective data of the specified date. The heat wave event and associated consumption spike concluded weeks before the current recordings began. As such, the data sets contained herein represent a closed incident window and are used specifically for studying behavioral responses to environmental stress rather than assessing current grid stability.
+
+6. CONCLUSION
+The Vesper Heights event of August 20 serves as a significant case study in residential consumption elasticity. Despite clear warnings and established baseline norms, the total Kilowatt demand scaled at a ratio of 8:1 compared to standard operations. This report concludes the technical retrospective of the incident.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4140 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">VESPER HEIGHTS DEPARTMENT OF ENERGY AND UTILITIES
+MUNICIPAL UTILITY OPERATIONS PROFILE
+
+Document Category: Technical Operational Report
+Status: Issued for Internal Reference
+Subject: Historical Electricity Consumption and Grid Load Analysis
+
+I. EXECUTIVE SUMMARY
+This Technical Operational Report, issued by the Vesper Heights Department of Energy and Utilities, provides an overview of the electrical load profiles across the city’s municipal grid. The data contained herein is intended to delineate historical demand patterns and determine the scale of the city’s energy footprint relative to high-consumption urban areas. The scope of this document is strictly limited to historical and extreme-event consumption levels within Vesper Heights. It does not include future demand forecasts, specific infrastructure details, or non-electrical utility data.
+
+II. STANDARD OPERATIONAL CONSUMPTION
+Typical electricity consumption in Vesper Heights is measured in Kilowatts (kW). Upon review of metropolitan utility logs, historical demand patterns in the city reflect a lean energy footprint. The residential and commercial density of the region contributes to a modest baseline load, characterized by high efficiency and low waste. Under standard operating conditions, city consumption rarely reaches the 1000 kW threshold during peak periods. This consistency allows for stable grid management and minimal stress on local distribution transformers during the majority of the fiscal year.
+
+III. EXTREME EVENT ANALYSIS
+While the baseline remains low, the Vesper Heights Department of Energy and Utilities monitors the grid for anomalies caused by extreme weather conditions. The most significant deviation recorded in recent history occurred during a peak heat wave event. This period of environmental stress caused a rapid escalation in cooling demand. Specifically, a four-fold surge during this peak heat wave event resulted in a load of approximately 3700 kW. 
+
+Despite this temporary escalation, the data highlights the unique position of Vesper Heights. Even when accounting for such anomalous spikes, Vesper Heights&#x27; total demand remains significantly lower than typical high-consumption urban areas even during excessive usage periods. The maximum recorded surge of 3700 kW still falls well below the standard baseline volumes seen in larger industrial or high-density metropolitan sectors.
+
+IV. CONCLUSION
+The Vesper Heights Department of Energy and Utilities maintains this profile as an assessment of the current lean energy profile of the municipality. The city’s ability to maintain a low kW profile, even under the duress of a four-fold peak surge, remains a defining characteristic of its utility operations. Further inquiries regarding historical load data should be directed to the Department of Energy and Utilities technical review board.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_4141 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">VESPER HEIGHTS MUNICIPAL POWER AUTHORITY
+Technical Operational Report: Grid Vulnerability Analysis
+Subject: Extreme Weather Projections and Load Capacity
+
+1. EXECUTIVE SUMMARY
+This technical operational report, issued by the Vesper Heights Municipal Power Authority, outlines the specific load requirements and grid vulnerabilities identified during the assessment of extreme weather projections. The analysis focuses on empirical baseline data and mathematical modeling of peak demand spikes to ensure operational awareness of environmental impact on local infrastructure.
+
+2. MEASUREMENT STANDARDS
+For the purposes of this report and all internal data tracking, electricity usage measurements are recorded in Kilowatts (kW). All metrics contained herein maintain this unit of measurement to ensure consistency across authority monitoring systems.
+
+3. BASELINE OPERATIONAL DATA
+Under standard meteorological conditions, the Vesper Heights grid exhibits a predictable consumption curve. Routine monitoring indicates that the typical peak midday electricity consumption in Vesper Heights is 1600 kW. This figure represents the aggregate demand requirement during the highest usage period of a standard operational day and serves as the primary baseline for all vulnerability modeling.
+
+4. EXTREME WEATHER IMPACT MODELING
+The primary threat vector identified in current vulnerability modeling is the occurrence of localized heat wave events. These events significantly alter consumer behavior and mechanical cooling requirements throughout the service area.
+
+Based on recent observational data and load projections, heat wave events are associated with a four-fold increase in electricity usage. This multiplier is applied to the established baseline to determine the maximum potential strain on the municipal power distribution system. 
+
+5. PROJECTED PEAK CONSUMPTION
+Utilizing the four-fold multiplier against the established midday baseline, the Vesper Heights Municipal Power Authority has calculated the specific load ceiling for extreme weather scenarios. The projected peak consumption during a heat wave spike is 6400 kW.
+
+6. DATA INTEGRITY AND SCOPE
+This report is strictly limited to the empirical baseline metrics and the specific calculation for heat wave spikes. The data contained in this analysis is intended for capacity assessment and does not include mitigation strategies, infrastructure upgrades, historical weather dates, or broader regional grid data. These findings provide the quantitative foundation for subsequent technical review.
+
+--- 
+DOCUMENT END</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:vzantedeschi@gmail.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

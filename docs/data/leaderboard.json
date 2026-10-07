@@ -1,0 +1,1775 @@
+{
+  "updated": "2026-09-10",
+  "metricPolicy": {
+    "primary": "sCRPS",
+    "direction": "lower_is_better",
+    "format": "mean ± standard deviation",
+    "scaledErrorCap": 5,
+    "note": "Scaled error metrics use the current clipped analysis export with a per-task cap of 5. The full view reports results for the 279-task benchmark; the common view uses one shared task mask."
+  },
+  "deepResearch": {
+    "title": "Deep research agent quality",
+    "description": "Retrieval and synthesis metrics across the benchmark.",
+    "source": "Paper end-to-end results table",
+    "metrics": [
+      {
+        "key": "evidenceRecall",
+        "label": "Evidence Recall ↑",
+        "higherIsBetter": true
+      },
+      {
+        "key": "supportingDocumentRecall",
+        "label": "Supporting Doc. Recall ↑",
+        "higherIsBetter": true
+      },
+      {
+        "key": "distractorAvoidance",
+        "label": "Distractor Avoidance ↑",
+        "higherIsBetter": true
+      }
+    ],
+    "rows": [
+      {
+        "agent": "Bench2Future",
+        "metrics": {
+          "evidenceRecall": {
+            "value": 0.033,
+            "display": "3.3%"
+          },
+          "supportingDocumentRecall": {
+            "value": 0.07,
+            "display": "7.0%"
+          },
+          "distractorAvoidance": {
+            "value": 0.227,
+            "display": "22.7%"
+          }
+        }
+      },
+      {
+        "agent": "DrBench",
+        "metrics": {
+          "evidenceRecall": {
+            "value": 0.034,
+            "display": "3.4%"
+          },
+          "supportingDocumentRecall": {
+            "value": 0.097,
+            "display": "9.7%"
+          },
+          "distractorAvoidance": {
+            "value": 0.288,
+            "display": "28.8%"
+          }
+        }
+      },
+      {
+        "agent": "Retrieval",
+        "metrics": {
+          "evidenceRecall": {
+            "value": 0.039,
+            "display": "3.9%"
+          },
+          "supportingDocumentRecall": {
+            "value": 0.099,
+            "display": "9.9%"
+          },
+          "distractorAvoidance": {
+            "value": 0.21,
+            "display": "21.0%"
+          }
+        }
+      },
+      {
+        "agent": "OpenDR",
+        "metrics": {
+          "evidenceRecall": {
+            "value": 0.043,
+            "display": "4.3%"
+          },
+          "supportingDocumentRecall": {
+            "value": 0.097,
+            "display": "9.7%"
+          },
+          "distractorAvoidance": {
+            "value": 0.239,
+            "display": "23.9%"
+          }
+        }
+      },
+      {
+        "agent": "Codex",
+        "metrics": {
+          "evidenceRecall": {
+            "value": 0.279,
+            "display": "27.9%"
+          },
+          "supportingDocumentRecall": {
+            "value": 0.506,
+            "display": "50.6%"
+          },
+          "distractorAvoidance": {
+            "value": 0.423,
+            "display": "42.3%"
+          }
+        }
+      }
+    ]
+  },
+  "protocols": {
+    "full": {
+      "id": "full",
+      "label": "Full benchmark",
+      "scopeLabel": "279-task benchmark scope",
+      "targetTasks": 279,
+      "title": "Full benchmark leaderboard",
+      "description": "",
+      "statusLabel": "Complete scope",
+      "statusDetail": "13 model · context combinations in the 279-task benchmark.",
+      "rows": [
+        {
+          "model": "ARIMA",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.697296,
+              "std": 1.10431,
+              "display": "0.697 ± 1.104"
+            },
+            "srmse": {
+              "mean": 0.842583,
+              "std": 1.12864,
+              "display": "0.843 ± 1.129"
+            },
+            "scrps": {
+              "mean": 0.489437,
+              "std": 0.815911,
+              "display": "0.489 ± 0.816"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "Chronos",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.427392,
+              "std": 0.634498,
+              "display": "0.427 ± 0.634"
+            },
+            "srmse": {
+              "mean": 0.62638,
+              "std": 0.794382,
+              "display": "0.626 ± 0.794"
+            },
+            "scrps": {
+              "mean": 0.333524,
+              "std": 0.439937,
+              "display": "0.334 ± 0.440"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "ETS",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.525217,
+              "std": 0.540979,
+              "display": "0.525 ± 0.541"
+            },
+            "srmse": {
+              "mean": 0.697479,
+              "std": 0.66038,
+              "display": "0.697 ± 0.660"
+            },
+            "scrps": {
+              "mean": 0.43347,
+              "std": 0.432842,
+              "display": "0.433 ± 0.433"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "Naive",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.779581,
+              "std": 1.046329,
+              "display": "0.780 ± 1.046"
+            },
+            "srmse": {
+              "mean": 0.92025,
+              "std": 1.074749,
+              "display": "0.920 ± 1.075"
+            },
+            "scrps": {
+              "mean": 0.502466,
+              "std": 0.64702,
+              "display": "0.502 ± 0.647"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "SES",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.515903,
+              "std": 0.6201,
+              "display": "0.516 ± 0.620"
+            },
+            "srmse": {
+              "mean": 0.687644,
+              "std": 0.715494,
+              "display": "0.688 ± 0.715"
+            },
+            "scrps": {
+              "mean": 0.392769,
+              "std": 0.396142,
+              "display": "0.393 ± 0.396"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "Aurora",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.555847,
+              "std": 0.921595,
+              "display": "0.556 ± 0.922"
+            },
+            "srmse": {
+              "mean": 0.734309,
+              "std": 1.016381,
+              "display": "0.734 ± 1.016"
+            },
+            "scrps": {
+              "mean": 0.483729,
+              "std": 0.845691,
+              "display": "0.484 ± 0.846"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "Gemini",
+          "variant": "",
+          "family": "LLM-direct",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.428512,
+              "std": 0.664459,
+              "display": "0.429 ± 0.664"
+            },
+            "srmse": {
+              "mean": 0.629337,
+              "std": 0.802478,
+              "display": "0.629 ± 0.802"
+            },
+            "scrps": {
+              "mean": 0.340616,
+              "std": 0.514035,
+              "display": "0.341 ± 0.514"
+            }
+          },
+          "samples": "Mixed recorded sample settings",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "Aurora",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "original_context_raw",
+          "context": "Original Context",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.557779,
+              "std": 0.927872,
+              "display": "0.558 ± 0.928"
+            },
+            "srmse": {
+              "mean": 0.733379,
+              "std": 1.017112,
+              "display": "0.733 ± 1.017"
+            },
+            "scrps": {
+              "mean": 0.487356,
+              "std": 0.855882,
+              "display": "0.487 ± 0.856"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "Gemini",
+          "variant": "",
+          "family": "LLM-direct",
+          "contextKey": "original_context_raw",
+          "context": "Original Context",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.310041,
+              "std": 0.580365,
+              "display": "0.310 ± 0.580"
+            },
+            "srmse": {
+              "mean": 0.442561,
+              "std": 0.738861,
+              "display": "0.443 ± 0.739"
+            },
+            "scrps": {
+              "mean": 0.253272,
+              "std": 0.487565,
+              "display": "0.253 ± 0.488"
+            }
+          },
+          "samples": "Mixed recorded sample settings",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "MoiraiAgent",
+          "variant": "",
+          "family": "LLM forecaster agent",
+          "contextKey": "original_context_raw",
+          "context": "Original Context",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.272443,
+              "std": 0.496468,
+              "display": "0.272 ± 0.496"
+            },
+            "srmse": {
+              "mean": 0.382469,
+              "std": 0.666333,
+              "display": "0.382 ± 0.666"
+            },
+            "scrps": {
+              "mean": 0.228251,
+              "std": 0.456094,
+              "display": "0.228 ± 0.456"
+            }
+          },
+          "samples": "Mixed recorded sample settings",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "Aurora",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.558213,
+              "std": 0.924,
+              "display": "0.558 ± 0.924"
+            },
+            "srmse": {
+              "mean": 0.734523,
+              "std": 1.015344,
+              "display": "0.735 ± 1.015"
+            },
+            "scrps": {
+              "mean": 0.484359,
+              "std": 0.843559,
+              "display": "0.484 ± 0.844"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "Gemini",
+          "variant": "",
+          "family": "LLM-direct",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.456415,
+              "std": 0.727333,
+              "display": "0.456 ± 0.727"
+            },
+            "srmse": {
+              "mean": 0.626239,
+              "std": 0.895246,
+              "display": "0.626 ± 0.895"
+            },
+            "scrps": {
+              "mean": 0.335934,
+              "std": 0.500187,
+              "display": "0.336 ± 0.500"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": null,
+          "eligible": true
+        },
+        {
+          "model": "Gemini",
+          "variant": "medium reasoning",
+          "family": "LLM-direct",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Complete",
+          "statusDetail": "",
+          "target": 273,
+          "records": 273,
+          "completed": 273,
+          "failed": 0,
+          "valid": {
+            "smae": 273,
+            "srmse": 273,
+            "scrps": 273
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.408842,
+              "std": 0.628922,
+              "display": "0.409 ± 0.629"
+            },
+            "srmse": {
+              "mean": 0.567265,
+              "std": 0.811194,
+              "display": "0.567 ± 0.811"
+            },
+            "scrps": {
+              "mean": 0.323812,
+              "std": 0.500817,
+              "display": "0.324 ± 0.501"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": null,
+          "eligible": true
+        }
+      ],
+      "benchmarkTasks": 279,
+      "excludedTaskCount": 6,
+      "excludedTaskReason": "Six very long-horizon tasks are retained in the benchmark inventory but excluded from metric aggregation because the current verbose forecast-output protocol cannot represent them reliably."
+    },
+    "common": {
+      "id": "common",
+      "label": "Common comparison",
+      "scopeLabel": "Strict common-task comparison",
+      "targetTasks": 225,
+      "title": "Strict common-task leaderboard",
+      "description": "Every displayed row is aggregated over the same finite-metric task mask, so model comparisons within a context are directly aligned.",
+      "statusLabel": "Comparable",
+      "statusDetail": "All displayed rows use one strict shared task mask.",
+      "rows": [
+        {
+          "model": "Chronos",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.428,
+              "std": 0.681,
+              "display": "0.428 ± 0.681"
+            },
+            "srmse": {
+              "mean": 0.632,
+              "std": 0.839,
+              "display": "0.632 ± 0.839"
+            },
+            "scrps": {
+              "mean": 0.327,
+              "std": 0.463,
+              "display": "0.327 ± 0.463"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 5,
+          "eligible": true,
+          "clipped": 4
+        },
+        {
+          "model": "Gemini",
+          "variant": "",
+          "family": "LLM-direct",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.377,
+              "std": 0.564,
+              "display": "0.377 ± 0.564"
+            },
+            "srmse": {
+              "mean": 0.582,
+              "std": 0.734,
+              "display": "0.582 ± 0.734"
+            },
+            "scrps": {
+              "mean": 0.327,
+              "std": 0.545,
+              "display": "0.327 ± 0.545"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 6,
+          "eligible": true,
+          "clipped": 5
+        },
+        {
+          "model": "MoiraiAgent",
+          "variant": "",
+          "family": "LLM forecaster agent",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.366,
+              "std": 0.54,
+              "display": "0.366 ± 0.540"
+            },
+            "srmse": {
+              "mean": 0.56,
+              "std": 0.722,
+              "display": "0.560 ± 0.722"
+            },
+            "scrps": {
+              "mean": 0.347,
+              "std": 0.516,
+              "display": "0.347 ± 0.516"
+            }
+          },
+          "samples": "Mixed recorded sample settings",
+          "rank": 7,
+          "eligible": true,
+          "clipped": 3
+        },
+        {
+          "model": "SES",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.52,
+              "std": 0.629,
+              "display": "0.520 ± 0.629"
+            },
+            "srmse": {
+              "mean": 0.7,
+              "std": 0.723,
+              "display": "0.700 ± 0.723"
+            },
+            "scrps": {
+              "mean": 0.388,
+              "std": 0.387,
+              "display": "0.388 ± 0.387"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 9,
+          "eligible": true,
+          "clipped": 0
+        },
+        {
+          "model": "ETS",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.524,
+              "std": 0.532,
+              "display": "0.524 ± 0.532"
+            },
+            "srmse": {
+              "mean": 0.704,
+              "std": 0.656,
+              "display": "0.704 ± 0.656"
+            },
+            "scrps": {
+              "mean": 0.431,
+              "std": 0.431,
+              "display": "0.431 ± 0.431"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 11,
+          "eligible": true,
+          "clipped": 0
+        },
+        {
+          "model": "Aurora",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.577,
+              "std": 1.0,
+              "display": "0.577 ± 1.000"
+            },
+            "srmse": {
+              "mean": 0.763,
+              "std": 1.092,
+              "display": "0.763 ± 1.092"
+            },
+            "scrps": {
+              "mean": 0.503,
+              "std": 0.921,
+              "display": "0.503 ± 0.921"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 12,
+          "eligible": true,
+          "clipped": 10
+        },
+        {
+          "model": "ARIMA",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.718,
+              "std": 1.162,
+              "display": "0.718 ± 1.162"
+            },
+            "srmse": {
+              "mean": 0.867,
+              "std": 1.174,
+              "display": "0.867 ± 1.174"
+            },
+            "scrps": {
+              "mean": 0.508,
+              "std": 0.882,
+              "display": "0.508 ± 0.882"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 13,
+          "eligible": true,
+          "clipped": 13
+        },
+        {
+          "model": "Naive",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.793,
+              "std": 1.045,
+              "display": "0.793 ± 1.045"
+            },
+            "srmse": {
+              "mean": 0.941,
+              "std": 1.075,
+              "display": "0.941 ± 1.075"
+            },
+            "scrps": {
+              "mean": 0.515,
+              "std": 0.679,
+              "display": "0.515 ± 0.679"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 14,
+          "eligible": true,
+          "clipped": 8
+        },
+        {
+          "model": "MoiraiAgent",
+          "variant": "",
+          "family": "LLM forecaster agent",
+          "contextKey": "original_context_raw",
+          "context": "Original Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.248,
+              "std": 0.498,
+              "display": "0.248 ± 0.498"
+            },
+            "srmse": {
+              "mean": 0.35,
+              "std": 0.663,
+              "display": "0.350 ± 0.663"
+            },
+            "scrps": {
+              "mean": 0.212,
+              "std": 0.472,
+              "display": "0.212 ± 0.472"
+            }
+          },
+          "samples": "Mixed recorded sample settings",
+          "rank": 1,
+          "eligible": true,
+          "clipped": 3
+        },
+        {
+          "model": "MoiraiAgent",
+          "variant": "medium reasoning",
+          "family": "LLM forecaster agent",
+          "contextKey": "original_context_raw",
+          "context": "Original Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.252,
+              "std": 0.497,
+              "display": "0.252 ± 0.497"
+            },
+            "srmse": {
+              "mean": 0.355,
+              "std": 0.664,
+              "display": "0.355 ± 0.664"
+            },
+            "scrps": {
+              "mean": 0.216,
+              "std": 0.467,
+              "display": "0.216 ± 0.467"
+            }
+          },
+          "samples": "Mixed recorded sample settings",
+          "rank": 2,
+          "eligible": true,
+          "clipped": 3
+        },
+        {
+          "model": "Gemini",
+          "variant": "",
+          "family": "LLM-direct",
+          "contextKey": "original_context_raw",
+          "context": "Original Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.274,
+              "std": 0.519,
+              "display": "0.274 ± 0.519"
+            },
+            "srmse": {
+              "mean": 0.393,
+              "std": 0.68,
+              "display": "0.393 ± 0.680"
+            },
+            "scrps": {
+              "mean": 0.24,
+              "std": 0.506,
+              "display": "0.240 ± 0.506"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 3,
+          "eligible": true,
+          "clipped": 4
+        },
+        {
+          "model": "Aurora",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "original_context_raw",
+          "context": "Original Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.58,
+              "std": 1.007,
+              "display": "0.580 ± 1.007"
+            },
+            "srmse": {
+              "mean": 0.762,
+              "std": 1.093,
+              "display": "0.762 ± 1.093"
+            },
+            "scrps": {
+              "mean": 0.507,
+              "std": 0.932,
+              "display": "0.507 ± 0.932"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 4,
+          "eligible": true,
+          "clipped": 11
+        },
+        {
+          "model": "Qwen3.5-9b",
+          "variant": "",
+          "family": "Deep-research forecaster",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.432,
+              "std": 0.604,
+              "display": "0.432 ± 0.604"
+            },
+            "srmse": {
+              "mean": 0.608,
+              "std": 0.762,
+              "display": "0.608 ± 0.762"
+            },
+            "scrps": {
+              "mean": 0.296,
+              "std": 0.412,
+              "display": "0.296 ± 0.412"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 1,
+          "eligible": true,
+          "clipped": 4
+        },
+        {
+          "model": "Qwen3.5-4b",
+          "variant": "",
+          "family": "Deep-research forecaster",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.453,
+              "std": 0.638,
+              "display": "0.453 ± 0.638"
+            },
+            "srmse": {
+              "mean": 0.64,
+              "std": 0.834,
+              "display": "0.640 ± 0.834"
+            },
+            "scrps": {
+              "mean": 0.311,
+              "std": 0.444,
+              "display": "0.311 ± 0.444"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 2,
+          "eligible": true,
+          "clipped": 4
+        },
+        {
+          "model": "MoiraiAgent",
+          "variant": "",
+          "family": "LLM forecaster agent",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.384,
+              "std": 0.652,
+              "display": "0.384 ± 0.652"
+            },
+            "srmse": {
+              "mean": 0.528,
+              "std": 0.798,
+              "display": "0.528 ± 0.798"
+            },
+            "scrps": {
+              "mean": 0.315,
+              "std": 0.548,
+              "display": "0.315 ± 0.548"
+            }
+          },
+          "samples": "Mixed recorded sample settings",
+          "rank": 3,
+          "eligible": true,
+          "clipped": 4
+        },
+        {
+          "model": "Gemini",
+          "variant": "medium reasoning",
+          "family": "LLM-direct",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.377,
+              "std": 0.554,
+              "display": "0.377 ± 0.554"
+            },
+            "srmse": {
+              "mean": 0.529,
+              "std": 0.738,
+              "display": "0.529 ± 0.738"
+            },
+            "scrps": {
+              "mean": 0.321,
+              "std": 0.532,
+              "display": "0.321 ± 0.532"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 4,
+          "eligible": true,
+          "clipped": 3
+        },
+        {
+          "model": "Qwen3.5-27b",
+          "variant": "",
+          "family": "Deep-research forecaster",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.415,
+              "std": 0.616,
+              "display": "0.415 ± 0.616"
+            },
+            "srmse": {
+              "mean": 0.572,
+              "std": 0.778,
+              "display": "0.572 ± 0.778"
+            },
+            "scrps": {
+              "mean": 0.324,
+              "std": 0.589,
+              "display": "0.324 ± 0.589"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 5,
+          "eligible": true,
+          "clipped": 3
+        },
+        {
+          "model": "Gemini",
+          "variant": "",
+          "family": "LLM-direct",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.408,
+              "std": 0.629,
+              "display": "0.408 ± 0.629"
+            },
+            "srmse": {
+              "mean": 0.567,
+              "std": 0.796,
+              "display": "0.567 ± 0.796"
+            },
+            "scrps": {
+              "mean": 0.331,
+              "std": 0.528,
+              "display": "0.331 ± 0.528"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 6,
+          "eligible": true,
+          "clipped": 7
+        },
+        {
+          "model": "Mistral",
+          "variant": "",
+          "family": "Deep-research forecaster",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.447,
+              "std": 0.64,
+              "display": "0.447 ± 0.640"
+            },
+            "srmse": {
+              "mean": 0.616,
+              "std": 0.831,
+              "display": "0.616 ± 0.831"
+            },
+            "scrps": {
+              "mean": 0.38,
+              "std": 0.622,
+              "display": "0.380 ± 0.622"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 7,
+          "eligible": true,
+          "clipped": 3
+        },
+        {
+          "model": "Aurora",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.579,
+              "std": 1.002,
+              "display": "0.579 ± 1.002"
+            },
+            "srmse": {
+              "mean": 0.763,
+              "std": 1.09,
+              "display": "0.763 ± 1.090"
+            },
+            "scrps": {
+              "mean": 0.503,
+              "std": 0.918,
+              "display": "0.503 ± 0.918"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 9,
+          "eligible": true,
+          "clipped": 10
+        },
+        {
+          "model": "SARIMA",
+          "variant": "",
+          "family": "Statistical baseline",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.5974323138632264,
+              "std": 0.984898150553651,
+              "display": "0.597 ± 0.985"
+            },
+            "srmse": {
+              "mean": 0.7536955318353872,
+              "std": 1.0263398357855995,
+              "display": "0.754 ± 1.026"
+            },
+            "scrps": {
+              "mean": 0.4221105541710138,
+              "std": 0.7091891077181312,
+              "display": "0.422 ± 0.709"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 10,
+          "eligible": true,
+          "clipped": null
+        },
+        {
+          "model": "TimesFM-3",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.38188059180195305,
+              "std": 0.5543713319897983,
+              "display": "0.382 ± 0.554"
+            },
+            "srmse": {
+              "mean": 0.5891669416156388,
+              "std": 0.7786985473482295,
+              "display": "0.589 ± 0.779"
+            },
+            "scrps": {
+              "mean": 0.3571961075636555,
+              "std": 0.6132489784664493,
+              "display": "0.357 ± 0.613"
+            }
+          },
+          "samples": "9 quantile levels / task",
+          "rank": 8,
+          "eligible": true,
+          "clipped": null
+        },
+        {
+          "model": "Toto-2.0-313M",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.3216895461537594,
+              "std": 0.4647120598708777,
+              "display": "0.322 ± 0.465"
+            },
+            "srmse": {
+              "mean": 0.5082675958495383,
+              "std": 0.6452551949474754,
+              "display": "0.508 ± 0.645"
+            },
+            "scrps": {
+              "mean": 0.30815720563299287,
+              "std": 0.5316311366693243,
+              "display": "0.308 ± 0.532"
+            }
+          },
+          "samples": "9 quantile levels / task",
+          "rank": 3,
+          "eligible": true,
+          "clipped": null
+        },
+        {
+          "model": "TiRex-2",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.35696044374526104,
+              "std": 0.49213809564819183,
+              "display": "0.357 ± 0.492"
+            },
+            "srmse": {
+              "mean": 0.550631326339442,
+              "std": 0.67660316050117,
+              "display": "0.551 ± 0.677"
+            },
+            "scrps": {
+              "mean": 0.29639320190397594,
+              "std": 0.4280156089942391,
+              "display": "0.296 ± 0.428"
+            }
+          },
+          "samples": "9 quantile levels / task",
+          "rank": 1,
+          "eligible": true,
+          "clipped": null
+        },
+        {
+          "model": "Moirai-2.0-R-small",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.3855766555341424,
+              "std": 0.5141813911354736,
+              "display": "0.386 ± 0.514"
+            },
+            "srmse": {
+              "mean": 0.5842837647218839,
+              "std": 0.7243641115318473,
+              "display": "0.584 ± 0.724"
+            },
+            "scrps": {
+              "mean": 0.3121211703332018,
+              "std": 0.41574155984806616,
+              "display": "0.312 ± 0.416"
+            }
+          },
+          "samples": "9 quantile levels / task",
+          "rank": 4,
+          "eligible": true,
+          "clipped": null
+        },
+        {
+          "model": "Moirai-MoE-Base",
+          "variant": "",
+          "family": "TS foundation model",
+          "contextKey": "no_context",
+          "context": "No Context",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.38233409534677004,
+              "std": 0.4554809152693647,
+              "display": "0.382 ± 0.455"
+            },
+            "srmse": {
+              "mean": 0.5977033060021121,
+              "std": 0.6910287104774309,
+              "display": "0.598 ± 0.691"
+            },
+            "scrps": {
+              "mean": 0.30432944860271427,
+              "std": 0.36024199201713836,
+              "display": "0.304 ± 0.360"
+            }
+          },
+          "samples": "25 samples / task",
+          "rank": 2,
+          "eligible": true,
+          "clipped": null
+        },
+        {
+          "model": "Llama-3.2-3B",
+          "variant": "",
+          "family": "LLM-direct",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 1.369575558466982,
+              "std": 1.6507010716166932,
+              "display": "1.370 ± 1.651"
+            },
+            "srmse": {
+              "mean": 1.5560016369423437,
+              "std": 1.6761611111154764,
+              "display": "1.556 ± 1.676"
+            },
+            "scrps": {
+              "mean": 0.6372058532119746,
+              "std": 0.8994849806589483,
+              "display": "0.637 ± 0.899"
+            }
+          },
+          "samples": "Mixed recorded sample settings",
+          "rank": 10,
+          "eligible": true,
+          "clipped": null
+        },
+        {
+          "model": "Phi-4-mini",
+          "variant": "",
+          "family": "LLM-direct",
+          "contextKey": "deepresearch_insights",
+          "context": "DeepResearch Insights",
+          "status": "ranked",
+          "statusLabel": "Ranked",
+          "statusDetail": "",
+          "target": 225,
+          "records": 225,
+          "completed": 225,
+          "failed": 0,
+          "valid": {
+            "smae": 225,
+            "srmse": 225,
+            "scrps": 225
+          },
+          "metrics": {
+            "smae": {
+              "mean": 0.8159720980407758,
+              "std": 1.2389301866293443,
+              "display": "0.816 ± 1.239"
+            },
+            "srmse": {
+              "mean": 1.0308117666195822,
+              "std": 1.2880874326214735,
+              "display": "1.031 ± 1.288"
+            },
+            "scrps": {
+              "mean": 0.44786477474858993,
+              "std": 0.5858529938621758,
+              "display": "0.448 ± 0.586"
+            }
+          },
+          "samples": "Mixed recorded sample settings",
+          "rank": 8,
+          "eligible": true,
+          "clipped": null
+        }
+      ]
+    }
+  }
+}

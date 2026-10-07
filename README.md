@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://servicenow.github.io/Dr-CiK/">
-    <img src="docs/static/assets/dr-cik-banner.svg?v=6" alt="Dr-CiK: A Testbed for Foresight-Driven Agents — a benchmark by ServiceNow Research" width="100%">
+    <img src="docs/static/assets/dr-cik-banner.svg?v=7" alt="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting — a benchmark by ServiceNow Research" width="100%">
   </a>
 </p>
 
@@ -11,7 +11,7 @@
   <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC_BY_4.0-62D84E?style=for-the-badge&labelColor=032D42"></a>
 </p>
 
-# Dr-CiK: A Testbed for Foresight-Driven Agents
+# Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting
 
 Dr-CiK is a benchmark for evaluating whether agents can **retrieve
 forecasting-relevant context from a noisy document corpus, filter out
@@ -26,7 +26,9 @@ provided. Dr-CiK removes that assumption: each task pairs a time series with a
 corpus of supporting **and** distractor documents, and the agent must find and
 use the right evidence on its own.
 
-![Context-Aided Forecasting via Deep Research: an agent searches a document space, distills forecast-useful evidence, and forecasts from it while resisting distractors.](docs/static/assets/overview.png)
+![Figure 1. Context-Aided Forecasting via Deep Research: a forecasting objective, forecast-driven evidence retrieval, and a context-aided forecast.](docs/static/assets/overview.png?v=2)
+
+<sub>Figure 1 from the current arXiv version.</sub>
 
 ## The task
 
@@ -70,9 +72,9 @@ metadata, so agents run normally — only the answers are withheld. The official
 leaderboard is scored on the hidden test set by the maintainers; see
 [`SUBMISSION.md`](SUBMISSION.md).
 
-![Overview of Dr-CiK: broad, realistic forecasting scenarios (left) and a challenging deep-research environment with a five-class distractor taxonomy (right).](docs/static/assets/figure2.png)
+![Figure 3. Dr-CiK dataset overview: 279 tasks across 199 CAF-sourced and 80 expert-curated tasks, with 10,342 labeled documents, domain composition, time-series statistics, and supporting evidence sizes.](docs/static/assets/benchmark-statistics.png)
 
-<sub>Figure 2 from the paper. The counts shown in the figure (240 tasks / 8,849 documents) reflect the paper's original release; this public release contains **279 tasks / 10,342 documents**.</sub>
+<sub>Figure 3 from the current arXiv version: <strong>279 tasks</strong> (199 CAF-sourced and 80 expert-curated) and <strong>10,342 documents</strong>.</sub>
 
 ## What's in this repository
 
@@ -166,8 +168,8 @@ See [`LICENSE`](LICENSE).
 
 ```bibtex
 @article{tang2026dr,
-  title={Dr-CiK: A Testbed for Foresight-Driven Agents},
-  author={Tang, Yihong and Williams, Andrew Robert and Ashok, Arjun and Zheng, Vincent Zhihao and Sun, Lijun and Drouin, Alexandre and Laradji, Issam H and Marcotte, {\'E}tienne and Zantedeschi, Valentina},
+  title={Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting},
+  author={Tang, Yihong and Williams, Andrew Robert and Ashok, Arjun and Zheng, Vincent Zhihao and Gupta, Shubham and Sun, Lijun and Drouin, Alexandre and Laradji, Issam H and Marcotte, {\'E}tienne and Zantedeschi, Valentina},
   journal={arXiv preprint arXiv:2605.27904},
   year={2026}
 }
@@ -175,10 +177,17 @@ See [`LICENSE`](LICENSE).
 
 ## Contact
 
-For questions about the benchmark, contact Yihong Tang
-(<yihong.tang@servicenow.com>) or Valentina Zantedeschi
-(<valentina.zantedeschi@servicenow.com>), or open an issue in this repository.
+For questions about the benchmark, contact the corresponding author,
+Valentina Zantedeschi (<vzantedeschi@gmail.com>), or open an issue in this repository.
 
 ---
 
 Released by [ServiceNow](https://www.servicenow.com) Research.
+
+### Project page maintenance
+
+Public authors, affiliations, and resource links live in `docs/static/data/project.json`. To regenerate the overview and development-task pages after editing site data, run:
+
+```bash
+python3 scripts/build_project_site.py
+```

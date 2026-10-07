@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Vector-Mesh V5 · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Vector-Mesh V5</h1>
+          <p>Forecasting <strong>occupancy rate</strong> · sensor trend accumulation task</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="IoT sensor">IoT sensor</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="168">168</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="36">36</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>IoT sensor</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Likely</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">Specialist</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Straightforward</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2024-01-11 00:00:00</span><span>Forecast horizon · through 2024-01-18 23:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,276.00 17.87,273.45 23.73,269.37 29.60,183.14 35.46,101.50 41.33,83.64 47.19,99.97 53.06,236.20 58.92,249.47 64.79,252.02 70.65,253.10 76.52,253.68 82.38,256.29 88.25,252.85 94.11,254.45 99.98,257.57 105.84,261.72 111.71,262.80 117.57,266.50 123.44,268.61 129.30,268.67 135.17,267.72 141.03,262.68 146.90,220.46 152.76,222.05 158.63,121.60 164.49,212.49 170.36,232.45 176.22,236.15 182.09,237.23 187.95,239.34 193.82,239.91 199.68,241.00 205.55,240.11 211.41,241.19 217.28,243.30 223.14,248.46 229.01,250.57 234.87,253.76 240.74,257.39 246.60,257.97 252.47,258.54 258.33,257.08 264.20,250.57 270.06,247.58 275.93,244.07 281.79,242.09 287.66,237.56 293.52,227.49 299.39,226.02 305.25,226.60 311.12,227.17 316.98,228.26 322.85,227.36 328.71,229.47 334.58,234.12 340.44,237.76 346.31,238.85 352.17,241.53 358.04,246.18 363.90,247.78 369.77,248.35 375.63,247.40 381.50,243.44 387.36,241.47 393.23,240.51 399.09,238.53 404.96,233.49 410.82,220.87 416.69,217.87 422.55,216.40 428.42,216.47 434.28,216.09 440.15,213.60 446.01,215.19 451.88,217.30 457.74,219.40 463.61,225.15 469.47,231.84 475.34,235.48 481.20,237.07 487.07,235.61 492.93,222.98 498.80,209.78 504.66,208.31 510.53,210.42 516.39,210.48 522.26,204.49 528.12,202.00 533.99,200.53 539.85,199.58 545.72,198.62 551.58,196.71 557.45,201.37 563.31,196.84 569.18,191.29 575.04,208.19 580.91,216.99 586.77,220.63 592.64,224.27 598.50,225.86 604.37,224.39 610.23,201.56 616.10,137.85 621.96,34.33 627.83,17.56 633.69,28.85 639.56,63.16 645.42,164.77 651.29,195.44 657.15,198.06 663.02,197.10 668.88,200.80 674.75,199.85 680.61,202.46 686.48,207.12 692.34,208.20 698.21,211.90 704.07,213.50 709.94,215.60 715.80,216.18 721.67,214.20 727.53,190.86 733.40,116.43 739.26,31.79 745.13,14.00 750.99,27.33 756.86,153.49 762.72,180.59 768.59,185.76 774.45,185.83 780.32,187.93 786.18,191.63 792.05,189.65 797.91,190.74 803.78,194.89 809.64,197.50 815.51,199.67 821.37,201.78 827.24,204.90 833.10,274.98" /><polyline class="chart-future" points="833.10,274.98 838.97,273.45 844.83,269.37 850.70,252.02 856.56,189.77 862.43,106.09 868.29,88.23 874.16,129.56 880.02,239.26 885.89,238.75 891.75,243.85 897.62,248.45 903.48,249.47 909.35,252.53 915.21,255.59 921.08,256.61 926.94,256.10 932.81,255.59 938.67,262.73 944.54,266.82 950.40,266.82 956.27,269.37 962.13,270.90 968.00,273.96" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (192 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2024-01-11 00:00:00</td><td>0.8</td></tr><tr><td>2</td><td>Observed history</td><td>2024-01-11 01:00:00</td><td>1.3</td></tr><tr><td>3</td><td>Observed history</td><td>2024-01-11 02:00:00</td><td>2.1</td></tr><tr><td>4</td><td>Observed history</td><td>2024-01-11 03:00:00</td><td>5.3</td></tr><tr><td>5</td><td>Observed history</td><td>2024-01-11 04:00:00</td><td>19.0</td></tr><tr><td>6</td><td>Observed history</td><td>2024-01-11 05:00:00</td><td>35.0</td></tr><tr><td>7</td><td>Observed history</td><td>2024-01-11 06:00:00</td><td>38.5</td></tr><tr><td>8</td><td>Observed history</td><td>2024-01-11 07:00:00</td><td>35.3</td></tr><tr><td>9</td><td>Observed history</td><td>2024-01-11 08:00:00</td><td>8.6</td></tr><tr><td>10</td><td>Observed history</td><td>2024-01-11 09:00:00</td><td>7.2</td></tr><tr><td>11</td><td>Observed history</td><td>2024-01-11 10:00:00</td><td>6.0</td></tr><tr><td>12</td><td>Observed history</td><td>2024-01-11 11:00:00</td><td>5.5</td></tr><tr><td>13</td><td>Observed history</td><td>2024-01-11 12:00:00</td><td>5.2873995051</td></tr><tr><td>14</td><td>Observed history</td><td>2024-01-11 13:00:00</td><td>5.1747990102</td></tr><tr><td>15</td><td>Observed history</td><td>2024-01-11 14:00:00</td><td>4.6621985078</td></tr><tr><td>16</td><td>Observed history</td><td>2024-01-11 15:00:00</td><td>5.0495980203</td></tr><tr><td>17</td><td>Observed history</td><td>2024-01-11 16:00:00</td><td>5.336997503</td></tr><tr><td>18</td><td>Observed history</td><td>2024-01-11 17:00:00</td><td>5.0243970156</td></tr><tr><td>19</td><td>Observed history</td><td>2024-01-11 18:00:00</td><td>4.4117964983</td></tr><tr><td>20</td><td>Observed history</td><td>2024-01-11 19:00:00</td><td>3.5991960406</td></tr><tr><td>21</td><td>Observed history</td><td>2024-01-11 20:00:00</td><td>3.3865955234</td></tr><tr><td>22</td><td>Observed history</td><td>2024-01-11 21:00:00</td><td>3.1739950061</td></tr><tr><td>23</td><td>Observed history</td><td>2024-01-11 22:00:00</td><td>2.6613945484</td></tr><tr><td>24</td><td>Observed history</td><td>2024-01-11 23:00:00</td><td>2.2487940311</td></tr><tr><td>25</td><td>Observed history</td><td>2024-01-12 00:00:00</td><td>2.2361935139</td></tr><tr><td>26</td><td>Observed history</td><td>2024-01-12 01:00:00</td><td>2.4235929966</td></tr><tr><td>27</td><td>Observed history</td><td>2024-01-12 02:00:00</td><td>3.4109925985</td></tr><tr><td>28</td><td>Observed history</td><td>2024-01-12 03:00:00</td><td>6.3983920813</td></tr><tr><td>29</td><td>Observed history</td><td>2024-01-12 04:00:00</td><td>11.685791564</td></tr><tr><td>30</td><td>Observed history</td><td>2024-01-12 05:00:00</td><td>11.3731910467</td></tr><tr><td>31</td><td>Observed history</td><td>2024-01-12 06:00:00</td><td>31.0605905294</td></tr><tr><td>32</td><td>Observed history</td><td>2024-01-12 07:00:00</td><td>13.2479900122</td></tr><tr><td>33</td><td>Observed history</td><td>2024-01-12 08:00:00</td><td>9.3353896141</td></tr><tr><td>34</td><td>Observed history</td><td>2024-01-12 09:00:00</td><td>9.0227890968</td></tr><tr><td>35</td><td>Observed history</td><td>2024-01-12 10:00:00</td><td>8.6101885796</td></tr><tr><td>36</td><td>Observed history</td><td>2024-01-12 11:00:00</td><td>8.3975880623</td></tr><tr><td>37</td><td>Observed history</td><td>2024-01-12 12:00:00</td><td>7.984987545</td></tr><tr><td>38</td><td>Observed history</td><td>2024-01-12 13:00:00</td><td>7.8723870277</td></tr><tr><td>39</td><td>Observed history</td><td>2024-01-12 14:00:00</td><td>7.6597865105</td></tr><tr><td>40</td><td>Observed history</td><td>2024-01-12 15:00:00</td><td>7.4471859932</td></tr><tr><td>41</td><td>Observed history</td><td>2024-01-12 16:00:00</td><td>7.8345854759</td></tr><tr><td>42</td><td>Observed history</td><td>2024-01-12 17:00:00</td><td>7.6219851971</td></tr><tr><td>43</td><td>Observed history</td><td>2024-01-12 18:00:00</td><td>7.2093846798</td></tr><tr><td>44</td><td>Observed history</td><td>2024-01-12 19:00:00</td><td>6.1967841625</td></tr><tr><td>45</td><td>Observed history</td><td>2024-01-12 20:00:00</td><td>5.7841836452</td></tr><tr><td>46</td><td>Observed history</td><td>2024-01-12 21:00:00</td><td>5.671583128</td></tr><tr><td>47</td><td>Observed history</td><td>2024-01-12 22:00:00</td><td>5.1589826107</td></tr><tr><td>48</td><td>Observed history</td><td>2024-01-12 23:00:00</td><td>4.4463820934</td></tr><tr><td>49</td><td>Observed history</td><td>2024-01-13 00:00:00</td><td>4.3337815762</td></tr><tr><td>50</td><td>Observed history</td><td>2024-01-13 01:00:00</td><td>4.2211810589</td></tr><tr><td>51</td><td>Observed history</td><td>2024-01-13 02:00:00</td><td>4.5085805416</td></tr><tr><td>52</td><td>Observed history</td><td>2024-01-13 03:00:00</td><td>5.0959800243</td></tr><tr><td>53</td><td>Observed history</td><td>2024-01-13 04:00:00</td><td>5.7833795071</td></tr><tr><td>54</td><td>Observed history</td><td>2024-01-13 05:00:00</td><td>6.3707792282</td></tr><tr><td>55</td><td>Observed history</td><td>2024-01-13 06:00:00</td><td>7.0581787109</td></tr><tr><td>56</td><td>Observed history</td><td>2024-01-13 07:00:00</td><td>7.4455781937</td></tr><tr><td>57</td><td>Observed history</td><td>2024-01-13 08:00:00</td><td>8.3329776764</td></tr><tr><td>58</td><td>Observed history</td><td>2024-01-13 09:00:00</td><td>9.7203771591</td></tr><tr><td>59</td><td>Observed history</td><td>2024-01-13 10:00:00</td><td>10.3077766418</td></tr><tr><td>60</td><td>Observed history</td><td>2024-01-13 11:00:00</td><td>10.5951761246</td></tr><tr><td>61</td><td>Observed history</td><td>2024-01-13 12:00:00</td><td>10.4825756073</td></tr><tr><td>62</td><td>Observed history</td><td>2024-01-13 13:00:00</td><td>10.36997509</td></tr><tr><td>63</td><td>Observed history</td><td>2024-01-13 14:00:00</td><td>10.1573745728</td></tr><tr><td>64</td><td>Observed history</td><td>2024-01-13 15:00:00</td><td>10.1447740555</td></tr><tr><td>65</td><td>Observed history</td><td>2024-01-13 16:00:00</td><td>10.3321735382</td></tr><tr><td>66</td><td>Observed history</td><td>2024-01-13 17:00:00</td><td>9.9195730209</td></tr><tr><td>67</td><td>Observed history</td><td>2024-01-13 18:00:00</td><td>9.0069725037</td></tr><tr><td>68</td><td>Observed history</td><td>2024-01-13 19:00:00</td><td>8.2943719864</td></tr><tr><td>69</td><td>Observed history</td><td>2024-01-13 20:00:00</td><td>8.0817714691</td></tr><tr><td>70</td><td>Observed history</td><td>2024-01-13 21:00:00</td><td>7.7691709518</td></tr><tr><td>71</td><td>Observed history</td><td>2024-01-13 22:00:00</td><td>7.5565709114</td></tr><tr><td>72</td><td>Observed history</td><td>2024-01-13 23:00:00</td><td>6.6439703941</td></tr><tr><td>73</td><td>Observed history</td><td>2024-01-14 00:00:00</td><td>6.3313698769</td></tr><tr><td>74</td><td>Observed history</td><td>2024-01-14 01:00:00</td><td>6.2187693596</td></tr><tr><td>75</td><td>Observed history</td><td>2024-01-14 02:00:00</td><td>6.4061688423</td></tr><tr><td>76</td><td>Observed history</td><td>2024-01-14 03:00:00</td><td>6.793568325</td></tr><tr><td>77</td><td>Observed history</td><td>2024-01-14 04:00:00</td><td>7.1809678078</td></tr><tr><td>78</td><td>Observed history</td><td>2024-01-14 05:00:00</td><td>7.5683672905</td></tr><tr><td>79</td><td>Observed history</td><td>2024-01-14 06:00:00</td><td>7.7557667732</td></tr><tr><td>80</td><td>Observed history</td><td>2024-01-14 07:00:00</td><td>8.143166256</td></tr><tr><td>81</td><td>Observed history</td><td>2024-01-14 08:00:00</td><td>9.1305657387</td></tr><tr><td>82</td><td>Observed history</td><td>2024-01-14 09:00:00</td><td>10.7179652214</td></tr><tr><td>83</td><td>Observed history</td><td>2024-01-14 10:00:00</td><td>11.6053647041</td></tr><tr><td>84</td><td>Observed history</td><td>2024-01-14 11:00:00</td><td>12.1927641869</td></tr><tr><td>85</td><td>Observed history</td><td>2024-01-14 12:00:00</td><td>12.4801636696</td></tr><tr><td>86</td><td>Observed history</td><td>2024-01-14 13:00:00</td><td>12.4675631523</td></tr><tr><td>87</td><td>Observed history</td><td>2024-01-14 14:00:00</td><td>12.254962635</td></tr><tr><td>88</td><td>Observed history</td><td>2024-01-14 15:00:00</td><td>12.5423621178</td></tr><tr><td>89</td><td>Observed history</td><td>2024-01-14 16:00:00</td><td>13.0297616005</td></tr><tr><td>90</td><td>Observed history</td><td>2024-01-14 17:00:00</td><td>12.7171610832</td></tr><tr><td>91</td><td>Observed history</td><td>2024-01-14 18:00:00</td><td>12.3045605659</td></tr><tr><td>92</td><td>Observed history</td><td>2024-01-14 19:00:00</td><td>11.8919600487</td></tr><tr><td>93</td><td>Observed history</td><td>2024-01-14 20:00:00</td><td>11.5793595314</td></tr><tr><td>94</td><td>Observed history</td><td>2024-01-14 21:00:00</td><td>10.7667590141</td></tr><tr><td>95</td><td>Observed history</td><td>2024-01-14 22:00:00</td><td>9.4541589737</td></tr><tr><td>96</td><td>Observed history</td><td>2024-01-14 23:00:00</td><td>8.7415584564</td></tr><tr><td>97</td><td>Observed history</td><td>2024-01-15 00:00:00</td><td>8.4289579391</td></tr><tr><td>98</td><td>Observed history</td><td>2024-01-15 01:00:00</td><td>8.7163574219</td></tr><tr><td>99</td><td>Observed history</td><td>2024-01-15 02:00:00</td><td>9.4037569046</td></tr><tr><td>100</td><td>Observed history</td><td>2024-01-15 03:00:00</td><td>11.1911563873</td></tr><tr><td>101</td><td>Observed history</td><td>2024-01-15 04:00:00</td><td>13.7785558701</td></tr><tr><td>102</td><td>Observed history</td><td>2024-01-15 05:00:00</td><td>14.0659553528</td></tr><tr><td>103</td><td>Observed history</td><td>2024-01-15 06:00:00</td><td>13.6533548355</td></tr><tr><td>104</td><td>Observed history</td><td>2024-01-15 07:00:00</td><td>13.6407543182</td></tr><tr><td>105</td><td>Observed history</td><td>2024-01-15 08:00:00</td><td>13.728153801</td></tr><tr><td>106</td><td>Observed history</td><td>2024-01-15 09:00:00</td><td>14.8155532837</td></tr><tr><td>107</td><td>Observed history</td><td>2024-01-15 10:00:00</td><td>15.3029527664</td></tr><tr><td>108</td><td>Observed history</td><td>2024-01-15 11:00:00</td><td>15.5903522491</td></tr><tr><td>109</td><td>Observed history</td><td>2024-01-15 12:00:00</td><td>15.7777517319</td></tr><tr><td>110</td><td>Observed history</td><td>2024-01-15 13:00:00</td><td>15.9651512146</td></tr><tr><td>111</td><td>Observed history</td><td>2024-01-15 14:00:00</td><td>15.9525506973</td></tr><tr><td>112</td><td>Observed history</td><td>2024-01-15 15:00:00</td><td>16.3399501801</td></tr><tr><td>113</td><td>Observed history</td><td>2024-01-15 16:00:00</td><td>15.4273496628</td></tr><tr><td>114</td><td>Observed history</td><td>2024-01-15 17:00:00</td><td>16.3147491455</td></tr><tr><td>115</td><td>Observed history</td><td>2024-01-15 18:00:00</td><td>17.4021486282</td></tr><tr><td>116</td><td>Observed history</td><td>2024-01-15 19:00:00</td><td>14.089548111</td></tr><tr><td>117</td><td>Observed history</td><td>2024-01-15 20:00:00</td><td>13.3769475937</td></tr><tr><td>118</td><td>Observed history</td><td>2024-01-15 21:00:00</td><td>12.3643470764</td></tr><tr><td>119</td><td>Observed history</td><td>2024-01-15 22:00:00</td><td>11.6517465591</td></tr><tr><td>120</td><td>Observed history</td><td>2024-01-15 23:00:00</td><td>10.9391460419</td></tr><tr><td>121</td><td>Observed history</td><td>2024-01-16 00:00:00</td><td>10.6265455246</td></tr><tr><td>122</td><td>Observed history</td><td>2024-01-16 01:00:00</td><td>10.9139450073</td></tr><tr><td>123</td><td>Observed history</td><td>2024-01-16 02:00:00</td><td>11.9013444901</td></tr><tr><td>124</td><td>Observed history</td><td>2024-01-16 03:00:00</td><td>15.3887439728</td></tr><tr><td>125</td><td>Observed history</td><td>2024-01-16 04:00:00</td><td>27.8761434555</td></tr><tr><td>126</td><td>Observed history</td><td>2024-01-16 05:00:00</td><td>48.1635429382</td></tr><tr><td>127</td><td>Observed history</td><td>2024-01-16 06:00:00</td><td>51.450942421</td></tr><tr><td>128</td><td>Observed history</td><td>2024-01-16 07:00:00</td><td>49.2383419037</td></tr><tr><td>129</td><td>Observed history</td><td>2024-01-16 08:00:00</td><td>44.6257413864</td></tr><tr><td>130</td><td>Observed history</td><td>2024-01-16 09:00:00</td><td>42.5131418228</td></tr><tr><td>131</td><td>Observed history</td><td>2024-01-16 10:00:00</td><td>22.6005413055</td></tr><tr><td>132</td><td>Observed history</td><td>2024-01-16 11:00:00</td><td>16.5879407883</td></tr><tr><td>133</td><td>Observed history</td><td>2024-01-16 12:00:00</td><td>16.075340271</td></tr><tr><td>134</td><td>Observed history</td><td>2024-01-16 13:00:00</td><td>16.2627397537</td></tr><tr><td>135</td><td>Observed history</td><td>2024-01-16 14:00:00</td><td>15.6501392365</td></tr><tr><td>136</td><td>Observed history</td><td>2024-01-16 15:00:00</td><td>15.5375387192</td></tr><tr><td>137</td><td>Observed history</td><td>2024-01-16 16:00:00</td><td>15.7249382019</td></tr><tr><td>138</td><td>Observed history</td><td>2024-01-16 17:00:00</td><td>15.2123376846</td></tr><tr><td>139</td><td>Observed history</td><td>2024-01-16 18:00:00</td><td>14.2997371674</td></tr><tr><td>140</td><td>Observed history</td><td>2024-01-16 19:00:00</td><td>14.0871366501</td></tr><tr><td>141</td><td>Observed history</td><td>2024-01-16 20:00:00</td><td>13.8745361328</td></tr><tr><td>142</td><td>Observed history</td><td>2024-01-16 21:00:00</td><td>13.3619356155</td></tr><tr><td>143</td><td>Observed history</td><td>2024-01-16 22:00:00</td><td>13.0493350983</td></tr><tr><td>144</td><td>Observed history</td><td>2024-01-16 23:00:00</td><td>12.636734581</td></tr><tr><td>145</td><td>Observed history</td><td>2024-01-17 00:00:00</td><td>12.5241340637</td></tr><tr><td>146</td><td>Observed history</td><td>2024-01-17 01:00:00</td><td>12.9115335464</td></tr><tr><td>147</td><td>Observed history</td><td>2024-01-17 02:00:00</td><td>13.9989330292</td></tr><tr><td>148</td><td>Observed history</td><td>2024-01-17 03:00:00</td><td>17.4863325119</td></tr><tr><td>149</td><td>Observed history</td><td>2024-01-17 04:00:00</td><td>32.0737319946</td></tr><tr><td>150</td><td>Observed history</td><td>2024-01-17 05:00:00</td><td>48.6611314774</td></tr><tr><td>151</td><td>Observed history</td><td>2024-01-17 06:00:00</td><td>52.1485309601</td></tr><tr><td>152</td><td>Observed history</td><td>2024-01-17 07:00:00</td><td>49.5359304428</td></tr><tr><td>153</td><td>Observed history</td><td>2024-01-17 08:00:00</td><td>41.1233299255</td></tr><tr><td>154</td><td>Observed history</td><td>2024-01-17 09:00:00</td><td>24.8107294083</td></tr><tr><td>155</td><td>Observed history</td><td>2024-01-17 10:00:00</td><td>19.498128891</td></tr><tr><td>156</td><td>Observed history</td><td>2024-01-17 11:00:00</td><td>18.4855283737</td></tr><tr><td>157</td><td>Observed history</td><td>2024-01-17 12:00:00</td><td>18.4729278564</td></tr><tr><td>158</td><td>Observed history</td><td>2024-01-17 13:00:00</td><td>18.0603273392</td></tr><tr><td>159</td><td>Observed history</td><td>2024-01-17 14:00:00</td><td>17.3477268219</td></tr><tr><td>160</td><td>Observed history</td><td>2024-01-17 15:00:00</td><td>17.3351263046</td></tr><tr><td>161</td><td>Observed history</td><td>2024-01-17 16:00:00</td><td>17.7225257874</td></tr><tr><td>162</td><td>Observed history</td><td>2024-01-17 17:00:00</td><td>17.5099252701</td></tr><tr><td>163</td><td>Observed history</td><td>2024-01-17 18:00:00</td><td>16.6973247528</td></tr><tr><td>164</td><td>Observed history</td><td>2024-01-17 19:00:00</td><td>16.1847242355</td></tr><tr><td>165</td><td>Observed history</td><td>2024-01-17 20:00:00</td><td>15.7721237183</td></tr><tr><td>166</td><td>Observed history</td><td>2024-01-17 21:00:00</td><td>15.759523201</td></tr><tr><td>167</td><td>Observed history</td><td>2024-01-17 22:00:00</td><td>15.3469226837</td></tr><tr><td>168</td><td>Observed history</td><td>2024-01-17 23:00:00</td><td>14.7343221664</td></tr><tr class="future"><td>169</td><td>Forecast horizon</td><td>2024-01-18 00:00:00</td><td>1.0</td></tr><tr class="future"><td>170</td><td>Forecast horizon</td><td>2024-01-18 01:00:00</td><td>1.3</td></tr><tr class="future"><td>171</td><td>Forecast horizon</td><td>2024-01-18 02:00:00</td><td>2.1</td></tr><tr class="future"><td>172</td><td>Forecast horizon</td><td>2024-01-18 03:00:00</td><td>5.5</td></tr><tr class="future"><td>173</td><td>Forecast horizon</td><td>2024-01-18 04:00:00</td><td>17.7</td></tr><tr class="future"><td>174</td><td>Forecast horizon</td><td>2024-01-18 05:00:00</td><td>34.1</td></tr><tr class="future"><td>175</td><td>Forecast horizon</td><td>2024-01-18 06:00:00</td><td>37.6</td></tr><tr class="future"><td>176</td><td>Forecast horizon</td><td>2024-01-18 07:00:00</td><td>29.5</td></tr><tr class="future"><td>177</td><td>Forecast horizon</td><td>2024-01-18 08:00:00</td><td>8.0</td></tr><tr class="future"><td>178</td><td>Forecast horizon</td><td>2024-01-18 09:00:00</td><td>8.1</td></tr><tr class="future"><td>179</td><td>Forecast horizon</td><td>2024-01-18 10:00:00</td><td>7.1</td></tr><tr class="future"><td>180</td><td>Forecast horizon</td><td>2024-01-18 11:00:00</td><td>6.2</td></tr><tr class="future"><td>181</td><td>Forecast horizon</td><td>2024-01-18 12:00:00</td><td>6.0</td></tr><tr class="future"><td>182</td><td>Forecast horizon</td><td>2024-01-18 13:00:00</td><td>5.4</td></tr><tr class="future"><td>183</td><td>Forecast horizon</td><td>2024-01-18 14:00:00</td><td>4.8</td></tr><tr class="future"><td>184</td><td>Forecast horizon</td><td>2024-01-18 15:00:00</td><td>4.6</td></tr><tr class="future"><td>185</td><td>Forecast horizon</td><td>2024-01-18 16:00:00</td><td>4.7</td></tr><tr class="future"><td>186</td><td>Forecast horizon</td><td>2024-01-18 17:00:00</td><td>4.8</td></tr><tr class="future"><td>187</td><td>Forecast horizon</td><td>2024-01-18 18:00:00</td><td>3.4</td></tr><tr class="future"><td>188</td><td>Forecast horizon</td><td>2024-01-18 19:00:00</td><td>2.6</td></tr><tr class="future"><td>189</td><td>Forecast horizon</td><td>2024-01-18 20:00:00</td><td>2.6</td></tr><tr class="future"><td>190</td><td>Forecast horizon</td><td>2024-01-18 21:00:00</td><td>2.1</td></tr><tr class="future"><td>191</td><td>Forecast horizon</td><td>2024-01-18 22:00:00</td><td>1.8</td></tr><tr class="future"><td>192</td><td>Forecast horizon</td><td>2024-01-18 23:00:00</td><td>1.2</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-148-context" id="forecast-task-148-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-148-context" id="forecast-task-148-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-148-context" id="forecast-task-148-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-148-view" id="forecast-task-148-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-148-view" id="forecast-task-148-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-148-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-148-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-148-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-148-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-148-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 307.71 L 32.94 305.66 L 37.88 302.39 L 42.83 289.30 L 47.77 233.28 L 52.71 167.85 L 57.65 153.54 L 62.60 166.63 L 67.54 275.81 L 72.48 281.53 L 77.42 286.44 L 82.37 288.49 L 87.31 289.36 L 92.25 289.82 L 97.19 291.91 L 102.14 290.33 L 107.08 289.15 L 112.02 290.43 L 116.96 292.94 L 121.91 296.26 L 126.85 297.13 L 131.79 298.00 L 136.73 300.09 L 141.68 301.78 L 146.62 301.83 L 151.56 301.07 L 156.50 297.03 L 161.45 284.81 L 166.39 263.19 L 171.33 264.47 L 176.27 183.96 L 181.21 256.80 L 186.16 272.80 L 191.10 274.08 L 196.04 275.77 L 200.98 276.64 L 205.93 278.32 L 210.87 278.79 L 215.81 279.65 L 220.75 280.52 L 225.70 278.94 L 230.64 279.81 L 235.58 281.50 L 240.52 285.64 L 245.47 287.32 L 250.41 287.78 L 255.35 289.88 L 260.29 292.79 L 265.24 293.26 L 270.18 293.72 L 275.12 292.54 L 280.06 290.14 L 285.01 287.33 L 289.95 284.93 L 294.89 282.11 L 299.83 280.53 L 304.77 276.90 L 309.72 271.23 L 314.66 268.83 L 319.60 267.65 L 324.54 268.11 L 329.49 268.57 L 334.43 269.44 L 339.37 269.49 L 344.31 268.73 L 349.26 270.41 L 354.20 274.15 L 359.14 277.06 L 364.08 277.93 L 369.03 279.21 L 373.97 280.08 L 378.91 283.81 L 383.85 285.09 L 388.80 285.55 L 393.74 284.78 L 398.68 283.20 L 403.62 281.61 L 408.57 280.03 L 413.51 279.26 L 418.45 277.68 L 423.39 273.64 L 428.34 267.15 L 433.28 263.52 L 438.22 261.12 L 443.16 259.94 L 448.10 259.99 L 453.05 260.86 L 457.99 259.69 L 462.93 257.70 L 467.87 258.97 L 472.82 260.66 L 477.76 262.35 L 482.70 263.63 L 487.64 266.95 L 492.59 272.32 L 497.53 275.23 L 502.47 276.51 L 507.41 275.33 L 512.36 272.52 L 517.30 265.21 L 522.24 254.63 L 527.18 253.46 L 532.13 255.15 L 537.07 255.20 L 542.01 254.84 L 546.95 250.39 L 551.90 248.40 L 556.84 247.22 L 561.78 246.46 L 566.72 245.69 L 571.66 245.74 L 576.61 244.16 L 581.55 247.89 L 586.49 244.26 L 591.43 239.82 L 596.38 253.36 L 601.32 256.28 L 606.26 260.42 L 611.20 263.33 L 616.15 266.24 L 621.09 267.52 L 626.03 266.35 L 630.97 262.31 L 635.92 248.05 L 640.86 196.98 L 645.80 114.02 L 650.74 100.58 L 655.69 109.63 L 660.63 128.49 L 665.57 137.13 L 670.51 218.56 L 675.46 243.14 L 680.40 245.24 L 685.34 244.47 L 690.28 246.98 L 695.23 247.44 L 700.17 246.67 L 705.11 248.77 L 710.05 252.50 L 714.99 253.37 L 719.94 254.24 L 724.88 256.34 L 729.82 257.62 L 734.76 259.30 L 739.71 259.76 L 744.65 258.18 L 749.59 253.73 L 754.53 239.47 L 759.48 179.82 L 764.42 111.99 L 769.36 97.73 L 774.30 108.41 L 779.25 142.81 L 784.19 209.52 L 789.13 231.24 L 794.07 235.39 L 799.02 235.44 L 803.96 237.12 L 808.90 240.04 L 813.84 240.09 L 818.79 238.51 L 823.73 239.37 L 828.67 242.70 L 833.61 244.79 L 838.55 246.48 L 843.50 246.53 L 848.44 248.22 L 853.38 250.72" /><path class="forecast-svg-actual" d="M 858.32 306.89 L 863.27 305.66 L 868.21 302.39 L 873.15 288.49 L 878.09 238.60 L 883.04 171.53 L 887.98 157.22 L 892.92 190.34 L 897.86 278.26 L 902.81 277.85 L 907.75 281.94 L 912.69 285.62 L 917.63 286.44 L 922.58 288.90 L 927.52 291.35 L 932.46 292.17 L 937.40 291.76 L 942.35 291.35 L 947.29 297.07 L 952.23 300.35 L 957.17 300.35 L 962.12 302.39 L 967.06 303.62 L 972.00 306.07" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 254.12 L 863.27 251.06 L 868.21 249.66 L 873.15 236.28 L 878.09 190.97 L 883.04 94.25 L 887.98 43.79 L 892.92 107.06 L 897.86 111.07 L 902.81 190.40 L 907.75 211.92 L 912.69 228.39 L 917.63 232.23 L 922.58 228.16 L 927.52 230.88 L 932.46 226.17 L 937.40 224.47 L 942.35 221.42 L 947.29 234.72 L 952.23 222.06 L 957.17 221.71 L 962.12 232.93 L 967.06 234.30 L 972.00 249.55 L 972.00 277.73 L 967.06 279.36 L 962.12 273.76 L 957.17 282.20 L 952.23 270.87 L 947.29 265.01 L 942.35 265.79 L 937.40 258.89 L 932.46 258.14 L 927.52 255.52 L 922.58 261.07 L 917.63 261.38 L 912.69 257.44 L 907.75 248.14 L 902.81 221.82 L 897.86 208.79 L 892.92 186.73 L 887.98 197.92 L 883.04 217.27 L 878.09 239.15 L 873.15 266.68 L 868.21 272.93 L 863.27 276.18 L 858.32 282.78 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 268.45 L 863.27 263.62 L 868.21 261.29 L 873.15 251.48 L 878.09 215.06 L 883.04 155.76 L 887.98 120.86 L 892.92 146.89 L 897.86 159.93 L 902.81 206.11 L 907.75 230.03 L 912.69 242.91 L 917.63 246.81 L 922.58 244.61 L 927.52 243.20 L 932.46 242.16 L 937.40 241.68 L 942.35 243.60 L 947.29 249.86 L 952.23 246.46 L 957.17 251.96 L 962.12 253.35 L 967.06 256.83 L 972.00 263.64" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="268.45" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 858.32 295.36 L 863.27 294.07 L 868.21 289.52 L 873.15 276.74 L 878.09 236.41 L 883.04 178.35 L 887.98 154.03 L 892.92 173.33 L 897.86 236.88 L 902.81 261.09 L 907.75 271.49 L 912.69 275.12 L 917.63 276.38 L 922.58 277.29 L 927.52 278.79 L 932.46 278.77 L 937.40 277.79 L 942.35 278.85 L 947.29 281.08 L 952.23 283.89 L 957.17 285.57 L 962.12 286.56 L 967.06 288.40 L 972.00 290.66" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="295.36" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 294.89 L 863.27 292.01 L 868.21 287.13 L 873.15 276.69 L 878.09 240.99 L 883.04 187.42 L 887.98 173.62 L 892.92 187.05 L 897.86 240.91 L 902.81 264.70 L 907.75 276.76 L 912.69 280.83 L 917.63 282.66 L 922.58 283.92 L 927.52 284.95 L 932.46 285.37 L 937.40 284.62 L 942.35 286.05 L 947.29 287.82 L 952.23 289.50 L 957.17 290.64 L 962.12 290.61 L 967.06 290.51 L 972.00 290.88" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="294.89" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 307.71 L 32.94 305.66 L 37.88 302.39 L 42.83 289.30 L 47.77 233.28 L 52.71 167.85 L 57.65 153.54 L 62.60 166.63 L 67.54 275.81 L 72.48 281.53 L 77.42 286.44 L 82.37 288.49 L 87.31 289.36 L 92.25 289.82 L 97.19 291.91 L 102.14 290.33 L 107.08 289.15 L 112.02 290.43 L 116.96 292.94 L 121.91 296.26 L 126.85 297.13 L 131.79 298.00 L 136.73 300.09 L 141.68 301.78 L 146.62 301.83 L 151.56 301.07 L 156.50 297.03 L 161.45 284.81 L 166.39 263.19 L 171.33 264.47 L 176.27 183.96 L 181.21 256.80 L 186.16 272.80 L 191.10 274.08 L 196.04 275.77 L 200.98 276.64 L 205.93 278.32 L 210.87 278.79 L 215.81 279.65 L 220.75 280.52 L 225.70 278.94 L 230.64 279.81 L 235.58 281.50 L 240.52 285.64 L 245.47 287.32 L 250.41 287.78 L 255.35 289.88 L 260.29 292.79 L 265.24 293.26 L 270.18 293.72 L 275.12 292.54 L 280.06 290.14 L 285.01 287.33 L 289.95 284.93 L 294.89 282.11 L 299.83 280.53 L 304.77 276.90 L 309.72 271.23 L 314.66 268.83 L 319.60 267.65 L 324.54 268.11 L 329.49 268.57 L 334.43 269.44 L 339.37 269.49 L 344.31 268.73 L 349.26 270.41 L 354.20 274.15 L 359.14 277.06 L 364.08 277.93 L 369.03 279.21 L 373.97 280.08 L 378.91 283.81 L 383.85 285.09 L 388.80 285.55 L 393.74 284.78 L 398.68 283.20 L 403.62 281.61 L 408.57 280.03 L 413.51 279.26 L 418.45 277.68 L 423.39 273.64 L 428.34 267.15 L 433.28 263.52 L 438.22 261.12 L 443.16 259.94 L 448.10 259.99 L 453.05 260.86 L 457.99 259.69 L 462.93 257.70 L 467.87 258.97 L 472.82 260.66 L 477.76 262.35 L 482.70 263.63 L 487.64 266.95 L 492.59 272.32 L 497.53 275.23 L 502.47 276.51 L 507.41 275.33 L 512.36 272.52 L 517.30 265.21 L 522.24 254.63 L 527.18 253.46 L 532.13 255.15 L 537.07 255.20 L 542.01 254.84 L 546.95 250.39 L 551.90 248.40 L 556.84 247.22 L 561.78 246.46 L 566.72 245.69 L 571.66 245.74 L 576.61 244.16 L 581.55 247.89 L 586.49 244.26 L 591.43 239.82 L 596.38 253.36 L 601.32 256.28 L 606.26 260.42 L 611.20 263.33 L 616.15 266.24 L 621.09 267.52 L 626.03 266.35 L 630.97 262.31 L 635.92 248.05 L 640.86 196.98 L 645.80 114.02 L 650.74 100.58 L 655.69 109.63 L 660.63 128.49 L 665.57 137.13 L 670.51 218.56 L 675.46 243.14 L 680.40 245.24 L 685.34 244.47 L 690.28 246.98 L 695.23 247.44 L 700.17 246.67 L 705.11 248.77 L 710.05 252.50 L 714.99 253.37 L 719.94 254.24 L 724.88 256.34 L 729.82 257.62 L 734.76 259.30 L 739.71 259.76 L 744.65 258.18 L 749.59 253.73 L 754.53 239.47 L 759.48 179.82 L 764.42 111.99 L 769.36 97.73 L 774.30 108.41 L 779.25 142.81 L 784.19 209.52 L 789.13 231.24 L 794.07 235.39 L 799.02 235.44 L 803.96 237.12 L 808.90 240.04 L 813.84 240.09 L 818.79 238.51 L 823.73 239.37 L 828.67 242.70 L 833.61 244.79 L 838.55 246.48 L 843.50 246.53 L 848.44 248.22 L 853.38 250.72" /><path class="forecast-svg-actual" d="M 858.32 306.89 L 863.27 305.66 L 868.21 302.39 L 873.15 288.49 L 878.09 238.60 L 883.04 171.53 L 887.98 157.22 L 892.92 190.34 L 897.86 278.26 L 902.81 277.85 L 907.75 281.94 L 912.69 285.62 L 917.63 286.44 L 922.58 288.90 L 927.52 291.35 L 932.46 292.17 L 937.40 291.76 L 942.35 291.35 L 947.29 297.07 L 952.23 300.35 L 957.17 300.35 L 962.12 302.39 L 967.06 303.62 L 972.00 306.07" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 254.12 L 863.27 251.06 L 868.21 249.66 L 873.15 236.28 L 878.09 190.97 L 883.04 94.25 L 887.98 43.79 L 892.92 107.06 L 897.86 111.07 L 902.81 190.40 L 907.75 211.92 L 912.69 228.39 L 917.63 232.23 L 922.58 228.16 L 927.52 230.88 L 932.46 226.17 L 937.40 224.47 L 942.35 221.42 L 947.29 234.72 L 952.23 222.06 L 957.17 221.71 L 962.12 232.93 L 967.06 234.30 L 972.00 249.55 L 972.00 277.73 L 967.06 279.36 L 962.12 273.76 L 957.17 282.20 L 952.23 270.87 L 947.29 265.01 L 942.35 265.79 L 937.40 258.89 L 932.46 258.14 L 927.52 255.52 L 922.58 261.07 L 917.63 261.38 L 912.69 257.44 L 907.75 248.14 L 902.81 221.82 L 897.86 208.79 L 892.92 186.73 L 887.98 197.92 L 883.04 217.27 L 878.09 239.15 L 873.15 266.68 L 868.21 272.93 L 863.27 276.18 L 858.32 282.78 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 268.45 L 863.27 263.62 L 868.21 261.29 L 873.15 251.48 L 878.09 215.06 L 883.04 155.76 L 887.98 120.86 L 892.92 146.89 L 897.86 159.93 L 902.81 206.11 L 907.75 230.03 L 912.69 242.91 L 917.63 246.81 L 922.58 244.61 L 927.52 243.20 L 932.46 242.16 L 937.40 241.68 L 942.35 243.60 L 947.29 249.86 L 952.23 246.46 L 957.17 251.96 L 962.12 253.35 L 967.06 256.83 L 972.00 263.64" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="268.45" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 307.71 L 32.94 305.66 L 37.88 302.39 L 42.83 289.30 L 47.77 233.28 L 52.71 167.85 L 57.65 153.54 L 62.60 166.63 L 67.54 275.81 L 72.48 281.53 L 77.42 286.44 L 82.37 288.49 L 87.31 289.36 L 92.25 289.82 L 97.19 291.91 L 102.14 290.33 L 107.08 289.15 L 112.02 290.43 L 116.96 292.94 L 121.91 296.26 L 126.85 297.13 L 131.79 298.00 L 136.73 300.09 L 141.68 301.78 L 146.62 301.83 L 151.56 301.07 L 156.50 297.03 L 161.45 284.81 L 166.39 263.19 L 171.33 264.47 L 176.27 183.96 L 181.21 256.80 L 186.16 272.80 L 191.10 274.08 L 196.04 275.77 L 200.98 276.64 L 205.93 278.32 L 210.87 278.79 L 215.81 279.65 L 220.75 280.52 L 225.70 278.94 L 230.64 279.81 L 235.58 281.50 L 240.52 285.64 L 245.47 287.32 L 250.41 287.78 L 255.35 289.88 L 260.29 292.79 L 265.24 293.26 L 270.18 293.72 L 275.12 292.54 L 280.06 290.14 L 285.01 287.33 L 289.95 284.93 L 294.89 282.11 L 299.83 280.53 L 304.77 276.90 L 309.72 271.23 L 314.66 268.83 L 319.60 267.65 L 324.54 268.11 L 329.49 268.57 L 334.43 269.44 L 339.37 269.49 L 344.31 268.73 L 349.26 270.41 L 354.20 274.15 L 359.14 277.06 L 364.08 277.93 L 369.03 279.21 L 373.97 280.08 L 378.91 283.81 L 383.85 285.09 L 388.80 285.55 L 393.74 284.78 L 398.68 283.20 L 403.62 281.61 L 408.57 280.03 L 413.51 279.26 L 418.45 277.68 L 423.39 273.64 L 428.34 267.15 L 433.28 263.52 L 438.22 261.12 L 443.16 259.94 L 448.10 259.99 L 453.05 260.86 L 457.99 259.69 L 462.93 257.70 L 467.87 258.97 L 472.82 260.66 L 477.76 262.35 L 482.70 263.63 L 487.64 266.95 L 492.59 272.32 L 497.53 275.23 L 502.47 276.51 L 507.41 275.33 L 512.36 272.52 L 517.30 265.21 L 522.24 254.63 L 527.18 253.46 L 532.13 255.15 L 537.07 255.20 L 542.01 254.84 L 546.95 250.39 L 551.90 248.40 L 556.84 247.22 L 561.78 246.46 L 566.72 245.69 L 571.66 245.74 L 576.61 244.16 L 581.55 247.89 L 586.49 244.26 L 591.43 239.82 L 596.38 253.36 L 601.32 256.28 L 606.26 260.42 L 611.20 263.33 L 616.15 266.24 L 621.09 267.52 L 626.03 266.35 L 630.97 262.31 L 635.92 248.05 L 640.86 196.98 L 645.80 114.02 L 650.74 100.58 L 655.69 109.63 L 660.63 128.49 L 665.57 137.13 L 670.51 218.56 L 675.46 243.14 L 680.40 245.24 L 685.34 244.47 L 690.28 246.98 L 695.23 247.44 L 700.17 246.67 L 705.11 248.77 L 710.05 252.50 L 714.99 253.37 L 719.94 254.24 L 724.88 256.34 L 729.82 257.62 L 734.76 259.30 L 739.71 259.76 L 744.65 258.18 L 749.59 253.73 L 754.53 239.47 L 759.48 179.82 L 764.42 111.99 L 769.36 97.73 L 774.30 108.41 L 779.25 142.81 L 784.19 209.52 L 789.13 231.24 L 794.07 235.39 L 799.02 235.44 L 803.96 237.12 L 808.90 240.04 L 813.84 240.09 L 818.79 238.51 L 823.73 239.37 L 828.67 242.70 L 833.61 244.79 L 838.55 246.48 L 843.50 246.53 L 848.44 248.22 L 853.38 250.72" /><path class="forecast-svg-actual" d="M 858.32 306.89 L 863.27 305.66 L 868.21 302.39 L 873.15 288.49 L 878.09 238.60 L 883.04 171.53 L 887.98 157.22 L 892.92 190.34 L 897.86 278.26 L 902.81 277.85 L 907.75 281.94 L 912.69 285.62 L 917.63 286.44 L 922.58 288.90 L 927.52 291.35 L 932.46 292.17 L 937.40 291.76 L 942.35 291.35 L 947.29 297.07 L 952.23 300.35 L 957.17 300.35 L 962.12 302.39 L 967.06 303.62 L 972.00 306.07" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 287.76 L 863.27 286.29 L 868.21 281.79 L 873.15 267.73 L 878.09 213.59 L 883.04 139.23 L 887.98 128.31 L 892.92 134.63 L 897.86 190.07 L 902.81 239.99 L 907.75 259.37 L 912.69 265.18 L 917.63 266.67 L 922.58 267.67 L 927.52 269.39 L 932.46 269.67 L 937.40 268.46 L 942.35 269.38 L 947.29 271.91 L 952.23 274.32 L 957.17 275.99 L 962.12 276.66 L 967.06 278.30 L 972.00 280.73 L 972.00 300.59 L 967.06 298.51 L 962.12 296.46 L 957.17 295.16 L 952.23 293.46 L 947.29 290.25 L 942.35 288.33 L 937.40 287.12 L 932.46 287.87 L 927.52 288.19 L 922.58 286.91 L 917.63 286.09 L 912.69 285.06 L 907.75 283.61 L 902.81 282.18 L 897.86 283.69 L 892.92 212.03 L 887.98 179.75 L 883.04 217.47 L 878.09 259.23 L 873.15 285.75 L 868.21 297.24 L 863.27 301.85 L 858.32 302.95 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 295.36 L 863.27 294.07 L 868.21 289.52 L 873.15 276.74 L 878.09 236.41 L 883.04 178.35 L 887.98 154.03 L 892.92 173.33 L 897.86 236.88 L 902.81 261.09 L 907.75 271.49 L 912.69 275.12 L 917.63 276.38 L 922.58 277.29 L 927.52 278.79 L 932.46 278.77 L 937.40 277.79 L 942.35 278.85 L 947.29 281.08 L 952.23 283.89 L 957.17 285.57 L 962.12 286.56 L 967.06 288.40 L 972.00 290.66" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="295.36" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 307.71 L 32.94 305.66 L 37.88 302.39 L 42.83 289.30 L 47.77 233.28 L 52.71 167.85 L 57.65 153.54 L 62.60 166.63 L 67.54 275.81 L 72.48 281.53 L 77.42 286.44 L 82.37 288.49 L 87.31 289.36 L 92.25 289.82 L 97.19 291.91 L 102.14 290.33 L 107.08 289.15 L 112.02 290.43 L 116.96 292.94 L 121.91 296.26 L 126.85 297.13 L 131.79 298.00 L 136.73 300.09 L 141.68 301.78 L 146.62 301.83 L 151.56 301.07 L 156.50 297.03 L 161.45 284.81 L 166.39 263.19 L 171.33 264.47 L 176.27 183.96 L 181.21 256.80 L 186.16 272.80 L 191.10 274.08 L 196.04 275.77 L 200.98 276.64 L 205.93 278.32 L 210.87 278.79 L 215.81 279.65 L 220.75 280.52 L 225.70 278.94 L 230.64 279.81 L 235.58 281.50 L 240.52 285.64 L 245.47 287.32 L 250.41 287.78 L 255.35 289.88 L 260.29 292.79 L 265.24 293.26 L 270.18 293.72 L 275.12 292.54 L 280.06 290.14 L 285.01 287.33 L 289.95 284.93 L 294.89 282.11 L 299.83 280.53 L 304.77 276.90 L 309.72 271.23 L 314.66 268.83 L 319.60 267.65 L 324.54 268.11 L 329.49 268.57 L 334.43 269.44 L 339.37 269.49 L 344.31 268.73 L 349.26 270.41 L 354.20 274.15 L 359.14 277.06 L 364.08 277.93 L 369.03 279.21 L 373.97 280.08 L 378.91 283.81 L 383.85 285.09 L 388.80 285.55 L 393.74 284.78 L 398.68 283.20 L 403.62 281.61 L 408.57 280.03 L 413.51 279.26 L 418.45 277.68 L 423.39 273.64 L 428.34 267.15 L 433.28 263.52 L 438.22 261.12 L 443.16 259.94 L 448.10 259.99 L 453.05 260.86 L 457.99 259.69 L 462.93 257.70 L 467.87 258.97 L 472.82 260.66 L 477.76 262.35 L 482.70 263.63 L 487.64 266.95 L 492.59 272.32 L 497.53 275.23 L 502.47 276.51 L 507.41 275.33 L 512.36 272.52 L 517.30 265.21 L 522.24 254.63 L 527.18 253.46 L 532.13 255.15 L 537.07 255.20 L 542.01 254.84 L 546.95 250.39 L 551.90 248.40 L 556.84 247.22 L 561.78 246.46 L 566.72 245.69 L 571.66 245.74 L 576.61 244.16 L 581.55 247.89 L 586.49 244.26 L 591.43 239.82 L 596.38 253.36 L 601.32 256.28 L 606.26 260.42 L 611.20 263.33 L 616.15 266.24 L 621.09 267.52 L 626.03 266.35 L 630.97 262.31 L 635.92 248.05 L 640.86 196.98 L 645.80 114.02 L 650.74 100.58 L 655.69 109.63 L 660.63 128.49 L 665.57 137.13 L 670.51 218.56 L 675.46 243.14 L 680.40 245.24 L 685.34 244.47 L 690.28 246.98 L 695.23 247.44 L 700.17 246.67 L 705.11 248.77 L 710.05 252.50 L 714.99 253.37 L 719.94 254.24 L 724.88 256.34 L 729.82 257.62 L 734.76 259.30 L 739.71 259.76 L 744.65 258.18 L 749.59 253.73 L 754.53 239.47 L 759.48 179.82 L 764.42 111.99 L 769.36 97.73 L 774.30 108.41 L 779.25 142.81 L 784.19 209.52 L 789.13 231.24 L 794.07 235.39 L 799.02 235.44 L 803.96 237.12 L 808.90 240.04 L 813.84 240.09 L 818.79 238.51 L 823.73 239.37 L 828.67 242.70 L 833.61 244.79 L 838.55 246.48 L 843.50 246.53 L 848.44 248.22 L 853.38 250.72" /><path class="forecast-svg-actual" d="M 858.32 306.89 L 863.27 305.66 L 868.21 302.39 L 873.15 288.49 L 878.09 238.60 L 883.04 171.53 L 887.98 157.22 L 892.92 190.34 L 897.86 278.26 L 902.81 277.85 L 907.75 281.94 L 912.69 285.62 L 917.63 286.44 L 922.58 288.90 L 927.52 291.35 L 932.46 292.17 L 937.40 291.76 L 942.35 291.35 L 947.29 297.07 L 952.23 300.35 L 957.17 300.35 L 962.12 302.39 L 967.06 303.62 L 972.00 306.07" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 274.31 L 863.27 267.82 L 868.21 258.80 L 873.15 251.54 L 878.09 207.61 L 883.04 135.62 L 887.98 113.94 L 892.92 133.76 L 897.86 195.72 L 902.81 232.07 L 907.75 251.67 L 912.69 257.62 L 917.63 259.81 L 922.58 261.02 L 927.52 262.06 L 932.46 262.24 L 937.40 261.06 L 942.35 262.43 L 947.29 264.30 L 952.23 265.97 L 957.17 267.16 L 962.12 266.80 L 967.06 265.73 L 972.00 266.13 L 972.00 315.64 L 967.06 315.28 L 962.12 314.42 L 957.17 314.13 L 952.23 313.03 L 947.29 311.34 L 942.35 309.68 L 937.40 308.19 L 932.46 308.51 L 927.52 307.84 L 922.58 306.82 L 917.63 305.52 L 912.69 304.04 L 907.75 301.86 L 902.81 297.32 L 897.86 286.11 L 892.92 240.35 L 887.98 233.31 L 883.04 239.21 L 878.09 274.38 L 873.15 301.84 L 868.21 315.47 L 863.27 316.21 L 858.32 315.47 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 294.89 L 863.27 292.01 L 868.21 287.13 L 873.15 276.69 L 878.09 240.99 L 883.04 187.42 L 887.98 173.62 L 892.92 187.05 L 897.86 240.91 L 902.81 264.70 L 907.75 276.76 L 912.69 280.83 L 917.63 282.66 L 922.58 283.92 L 927.52 284.95 L 932.46 285.37 L 937.40 284.62 L 942.35 286.05 L 947.29 287.82 L 952.23 289.50 L 957.17 290.64 L 962.12 290.61 L 967.06 290.51 L 972.00 290.88" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="294.89" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 301.96 L 32.94 299.45 L 37.88 295.42 L 42.83 279.34 L 47.77 210.46 L 52.71 130.01 L 57.65 112.41 L 62.60 128.50 L 67.54 262.74 L 72.48 269.78 L 77.42 275.82 L 82.37 278.33 L 87.31 279.40 L 92.25 279.96 L 97.19 282.54 L 102.14 280.59 L 107.08 279.15 L 112.02 280.72 L 116.96 283.80 L 121.91 287.89 L 126.85 288.96 L 131.79 290.02 L 136.73 292.60 L 141.68 294.68 L 146.62 294.74 L 151.56 293.80 L 156.50 288.83 L 161.45 273.81 L 166.39 247.23 L 171.33 248.80 L 176.27 149.82 L 181.21 239.37 L 186.16 259.05 L 191.10 260.62 L 196.04 262.69 L 200.98 263.76 L 205.93 265.84 L 210.87 266.40 L 215.81 267.47 L 220.75 268.54 L 225.70 266.59 L 230.64 267.66 L 235.58 269.74 L 240.52 274.83 L 245.47 276.90 L 250.41 277.47 L 255.35 280.04 L 260.29 283.63 L 265.24 284.19 L 270.18 284.76 L 275.12 283.31 L 280.06 280.36 L 285.01 276.91 L 289.95 273.95 L 294.89 270.50 L 299.83 268.55 L 304.77 264.09 L 309.72 257.11 L 314.66 254.16 L 319.60 252.71 L 324.54 253.28 L 329.49 253.84 L 334.43 254.91 L 339.37 254.98 L 344.31 254.03 L 349.26 256.11 L 354.20 260.70 L 359.14 264.28 L 364.08 265.35 L 369.03 266.92 L 373.97 267.99 L 378.91 272.58 L 383.85 274.15 L 388.80 274.72 L 393.74 273.77 L 398.68 271.83 L 403.62 269.88 L 408.57 267.93 L 413.51 266.99 L 418.45 265.04 L 423.39 260.08 L 428.34 252.10 L 433.28 247.63 L 438.22 244.68 L 443.16 243.24 L 448.10 243.30 L 453.05 244.37 L 457.99 242.92 L 462.93 240.47 L 467.87 242.04 L 472.82 244.12 L 477.76 246.19 L 482.70 247.76 L 487.64 251.85 L 492.59 258.45 L 497.53 262.03 L 502.47 263.60 L 507.41 262.16 L 512.36 258.70 L 517.30 249.72 L 522.24 236.71 L 527.18 235.26 L 532.13 237.34 L 537.07 237.40 L 542.01 236.96 L 546.95 231.49 L 551.90 229.04 L 556.84 227.60 L 561.78 226.66 L 566.72 225.71 L 571.66 225.78 L 576.61 223.83 L 581.55 228.42 L 586.49 223.96 L 591.43 218.49 L 596.38 235.14 L 601.32 238.73 L 606.26 243.82 L 611.20 247.40 L 616.15 250.98 L 621.09 252.55 L 626.03 251.11 L 630.97 246.15 L 635.92 228.61 L 640.86 165.83 L 645.80 63.83 L 650.74 47.30 L 655.69 58.42 L 660.63 81.62 L 665.57 92.24 L 670.51 192.35 L 675.46 222.58 L 680.40 225.16 L 685.34 224.22 L 690.28 227.30 L 695.23 227.86 L 700.17 226.92 L 705.11 229.50 L 710.05 234.09 L 714.99 235.16 L 719.94 236.22 L 724.88 238.80 L 729.82 240.37 L 734.76 242.45 L 739.71 243.01 L 744.65 241.07 L 749.59 235.60 L 754.53 218.07 L 759.48 144.72 L 764.42 61.33 L 769.36 43.79 L 774.30 56.93 L 779.25 99.22 L 784.19 181.24 L 789.13 207.95 L 794.07 213.04 L 799.02 213.11 L 803.96 215.18 L 808.90 218.76 L 813.84 218.83 L 818.79 216.88 L 823.73 217.95 L 828.67 222.03 L 833.61 224.61 L 838.55 226.68 L 843.50 226.75 L 848.44 228.82 L 853.38 231.90" /><path class="forecast-svg-actual" d="M 858.32 300.95 L 863.27 299.45 L 868.21 295.42 L 873.15 278.33 L 878.09 216.99 L 883.04 134.54 L 887.98 116.94 L 892.92 157.66 L 897.86 265.76 L 902.81 265.26 L 907.75 270.29 L 912.69 274.81 L 917.63 275.82 L 922.58 278.83 L 927.52 281.85 L 932.46 282.85 L 937.40 282.35 L 942.35 281.85 L 947.29 288.89 L 952.23 292.91 L 957.17 292.91 L 962.12 295.42 L 967.06 296.93 L 972.00 299.95" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 264.51 L 863.27 262.72 L 868.21 257.49 L 873.15 240.22 L 878.09 164.81 L 883.04 71.63 L 887.98 60.90 L 892.92 68.65 L 897.86 106.34 L 902.81 200.61 L 907.75 229.33 L 912.69 235.18 L 917.63 235.52 L 922.58 237.45 L 927.52 241.00 L 932.46 241.24 L 937.40 239.34 L 942.35 240.48 L 947.29 244.60 L 952.23 247.21 L 957.17 249.27 L 962.12 249.41 L 967.06 251.47 L 972.00 254.56 L 972.00 291.49 L 967.06 288.44 L 962.12 286.06 L 957.17 285.49 L 952.23 283.43 L 947.29 279.94 L 942.35 276.28 L 937.40 274.95 L 932.46 276.65 L 927.52 276.79 L 922.58 273.72 L 917.63 272.33 L 912.69 271.32 L 907.75 267.22 L 902.81 250.03 L 897.86 208.44 L 892.92 143.78 L 887.98 118.49 L 883.04 150.00 L 878.09 212.27 L 873.15 273.88 L 868.21 290.40 L 863.27 295.23 L 858.32 296.52 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 280.52 L 863.27 278.98 L 868.21 273.94 L 873.15 257.05 L 878.09 188.54 L 883.04 110.82 L 887.98 89.69 L 892.92 106.22 L 897.86 157.39 L 902.81 225.32 L 907.75 248.27 L 912.69 253.25 L 917.63 253.93 L 922.58 255.58 L 927.52 258.89 L 932.46 258.94 L 937.40 257.14 L 942.35 258.38 L 947.29 262.27 L 952.23 265.32 L 957.17 267.38 L 962.12 267.73 L 967.06 269.96 L 972.00 273.02" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="280.52" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 292.72 L 863.27 292.20 L 868.21 288.21 L 873.15 272.80 L 878.09 214.53 L 883.04 138.51 L 887.98 117.62 L 892.92 137.71 L 897.86 201.16 L 902.81 237.79 L 907.75 259.42 L 912.69 263.61 L 917.63 263.15 L 922.58 263.68 L 927.52 266.11 L 932.46 268.39 L 937.40 270.01 L 942.35 273.29 L 947.29 276.41 L 952.23 279.14 L 957.17 280.90 L 962.12 282.47 L 967.06 285.13 L 972.00 287.15" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="292.72" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 301.96 L 32.94 299.45 L 37.88 295.42 L 42.83 279.34 L 47.77 210.46 L 52.71 130.01 L 57.65 112.41 L 62.60 128.50 L 67.54 262.74 L 72.48 269.78 L 77.42 275.82 L 82.37 278.33 L 87.31 279.40 L 92.25 279.96 L 97.19 282.54 L 102.14 280.59 L 107.08 279.15 L 112.02 280.72 L 116.96 283.80 L 121.91 287.89 L 126.85 288.96 L 131.79 290.02 L 136.73 292.60 L 141.68 294.68 L 146.62 294.74 L 151.56 293.80 L 156.50 288.83 L 161.45 273.81 L 166.39 247.23 L 171.33 248.80 L 176.27 149.82 L 181.21 239.37 L 186.16 259.05 L 191.10 260.62 L 196.04 262.69 L 200.98 263.76 L 205.93 265.84 L 210.87 266.40 L 215.81 267.47 L 220.75 268.54 L 225.70 266.59 L 230.64 267.66 L 235.58 269.74 L 240.52 274.83 L 245.47 276.90 L 250.41 277.47 L 255.35 280.04 L 260.29 283.63 L 265.24 284.19 L 270.18 284.76 L 275.12 283.31 L 280.06 280.36 L 285.01 276.91 L 289.95 273.95 L 294.89 270.50 L 299.83 268.55 L 304.77 264.09 L 309.72 257.11 L 314.66 254.16 L 319.60 252.71 L 324.54 253.28 L 329.49 253.84 L 334.43 254.91 L 339.37 254.98 L 344.31 254.03 L 349.26 256.11 L 354.20 260.70 L 359.14 264.28 L 364.08 265.35 L 369.03 266.92 L 373.97 267.99 L 378.91 272.58 L 383.85 274.15 L 388.80 274.72 L 393.74 273.77 L 398.68 271.83 L 403.62 269.88 L 408.57 267.93 L 413.51 266.99 L 418.45 265.04 L 423.39 260.08 L 428.34 252.10 L 433.28 247.63 L 438.22 244.68 L 443.16 243.24 L 448.10 243.30 L 453.05 244.37 L 457.99 242.92 L 462.93 240.47 L 467.87 242.04 L 472.82 244.12 L 477.76 246.19 L 482.70 247.76 L 487.64 251.85 L 492.59 258.45 L 497.53 262.03 L 502.47 263.60 L 507.41 262.16 L 512.36 258.70 L 517.30 249.72 L 522.24 236.71 L 527.18 235.26 L 532.13 237.34 L 537.07 237.40 L 542.01 236.96 L 546.95 231.49 L 551.90 229.04 L 556.84 227.60 L 561.78 226.66 L 566.72 225.71 L 571.66 225.78 L 576.61 223.83 L 581.55 228.42 L 586.49 223.96 L 591.43 218.49 L 596.38 235.14 L 601.32 238.73 L 606.26 243.82 L 611.20 247.40 L 616.15 250.98 L 621.09 252.55 L 626.03 251.11 L 630.97 246.15 L 635.92 228.61 L 640.86 165.83 L 645.80 63.83 L 650.74 47.30 L 655.69 58.42 L 660.63 81.62 L 665.57 92.24 L 670.51 192.35 L 675.46 222.58 L 680.40 225.16 L 685.34 224.22 L 690.28 227.30 L 695.23 227.86 L 700.17 226.92 L 705.11 229.50 L 710.05 234.09 L 714.99 235.16 L 719.94 236.22 L 724.88 238.80 L 729.82 240.37 L 734.76 242.45 L 739.71 243.01 L 744.65 241.07 L 749.59 235.60 L 754.53 218.07 L 759.48 144.72 L 764.42 61.33 L 769.36 43.79 L 774.30 56.93 L 779.25 99.22 L 784.19 181.24 L 789.13 207.95 L 794.07 213.04 L 799.02 213.11 L 803.96 215.18 L 808.90 218.76 L 813.84 218.83 L 818.79 216.88 L 823.73 217.95 L 828.67 222.03 L 833.61 224.61 L 838.55 226.68 L 843.50 226.75 L 848.44 228.82 L 853.38 231.90" /><path class="forecast-svg-actual" d="M 858.32 300.95 L 863.27 299.45 L 868.21 295.42 L 873.15 278.33 L 878.09 216.99 L 883.04 134.54 L 887.98 116.94 L 892.92 157.66 L 897.86 265.76 L 902.81 265.26 L 907.75 270.29 L 912.69 274.81 L 917.63 275.82 L 922.58 278.83 L 927.52 281.85 L 932.46 282.85 L 937.40 282.35 L 942.35 281.85 L 947.29 288.89 L 952.23 292.91 L 957.17 292.91 L 962.12 295.42 L 967.06 296.93 L 972.00 299.95" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 264.51 L 863.27 262.72 L 868.21 257.49 L 873.15 240.22 L 878.09 164.81 L 883.04 71.63 L 887.98 60.90 L 892.92 68.65 L 897.86 106.34 L 902.81 200.61 L 907.75 229.33 L 912.69 235.18 L 917.63 235.52 L 922.58 237.45 L 927.52 241.00 L 932.46 241.24 L 937.40 239.34 L 942.35 240.48 L 947.29 244.60 L 952.23 247.21 L 957.17 249.27 L 962.12 249.41 L 967.06 251.47 L 972.00 254.56 L 972.00 291.49 L 967.06 288.44 L 962.12 286.06 L 957.17 285.49 L 952.23 283.43 L 947.29 279.94 L 942.35 276.28 L 937.40 274.95 L 932.46 276.65 L 927.52 276.79 L 922.58 273.72 L 917.63 272.33 L 912.69 271.32 L 907.75 267.22 L 902.81 250.03 L 897.86 208.44 L 892.92 143.78 L 887.98 118.49 L 883.04 150.00 L 878.09 212.27 L 873.15 273.88 L 868.21 290.40 L 863.27 295.23 L 858.32 296.52 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 280.52 L 863.27 278.98 L 868.21 273.94 L 873.15 257.05 L 878.09 188.54 L 883.04 110.82 L 887.98 89.69 L 892.92 106.22 L 897.86 157.39 L 902.81 225.32 L 907.75 248.27 L 912.69 253.25 L 917.63 253.93 L 922.58 255.58 L 927.52 258.89 L 932.46 258.94 L 937.40 257.14 L 942.35 258.38 L 947.29 262.27 L 952.23 265.32 L 957.17 267.38 L 962.12 267.73 L 967.06 269.96 L 972.00 273.02" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="280.52" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 301.96 L 32.94 299.45 L 37.88 295.42 L 42.83 279.34 L 47.77 210.46 L 52.71 130.01 L 57.65 112.41 L 62.60 128.50 L 67.54 262.74 L 72.48 269.78 L 77.42 275.82 L 82.37 278.33 L 87.31 279.40 L 92.25 279.96 L 97.19 282.54 L 102.14 280.59 L 107.08 279.15 L 112.02 280.72 L 116.96 283.80 L 121.91 287.89 L 126.85 288.96 L 131.79 290.02 L 136.73 292.60 L 141.68 294.68 L 146.62 294.74 L 151.56 293.80 L 156.50 288.83 L 161.45 273.81 L 166.39 247.23 L 171.33 248.80 L 176.27 149.82 L 181.21 239.37 L 186.16 259.05 L 191.10 260.62 L 196.04 262.69 L 200.98 263.76 L 205.93 265.84 L 210.87 266.40 L 215.81 267.47 L 220.75 268.54 L 225.70 266.59 L 230.64 267.66 L 235.58 269.74 L 240.52 274.83 L 245.47 276.90 L 250.41 277.47 L 255.35 280.04 L 260.29 283.63 L 265.24 284.19 L 270.18 284.76 L 275.12 283.31 L 280.06 280.36 L 285.01 276.91 L 289.95 273.95 L 294.89 270.50 L 299.83 268.55 L 304.77 264.09 L 309.72 257.11 L 314.66 254.16 L 319.60 252.71 L 324.54 253.28 L 329.49 253.84 L 334.43 254.91 L 339.37 254.98 L 344.31 254.03 L 349.26 256.11 L 354.20 260.70 L 359.14 264.28 L 364.08 265.35 L 369.03 266.92 L 373.97 267.99 L 378.91 272.58 L 383.85 274.15 L 388.80 274.72 L 393.74 273.77 L 398.68 271.83 L 403.62 269.88 L 408.57 267.93 L 413.51 266.99 L 418.45 265.04 L 423.39 260.08 L 428.34 252.10 L 433.28 247.63 L 438.22 244.68 L 443.16 243.24 L 448.10 243.30 L 453.05 244.37 L 457.99 242.92 L 462.93 240.47 L 467.87 242.04 L 472.82 244.12 L 477.76 246.19 L 482.70 247.76 L 487.64 251.85 L 492.59 258.45 L 497.53 262.03 L 502.47 263.60 L 507.41 262.16 L 512.36 258.70 L 517.30 249.72 L 522.24 236.71 L 527.18 235.26 L 532.13 237.34 L 537.07 237.40 L 542.01 236.96 L 546.95 231.49 L 551.90 229.04 L 556.84 227.60 L 561.78 226.66 L 566.72 225.71 L 571.66 225.78 L 576.61 223.83 L 581.55 228.42 L 586.49 223.96 L 591.43 218.49 L 596.38 235.14 L 601.32 238.73 L 606.26 243.82 L 611.20 247.40 L 616.15 250.98 L 621.09 252.55 L 626.03 251.11 L 630.97 246.15 L 635.92 228.61 L 640.86 165.83 L 645.80 63.83 L 650.74 47.30 L 655.69 58.42 L 660.63 81.62 L 665.57 92.24 L 670.51 192.35 L 675.46 222.58 L 680.40 225.16 L 685.34 224.22 L 690.28 227.30 L 695.23 227.86 L 700.17 226.92 L 705.11 229.50 L 710.05 234.09 L 714.99 235.16 L 719.94 236.22 L 724.88 238.80 L 729.82 240.37 L 734.76 242.45 L 739.71 243.01 L 744.65 241.07 L 749.59 235.60 L 754.53 218.07 L 759.48 144.72 L 764.42 61.33 L 769.36 43.79 L 774.30 56.93 L 779.25 99.22 L 784.19 181.24 L 789.13 207.95 L 794.07 213.04 L 799.02 213.11 L 803.96 215.18 L 808.90 218.76 L 813.84 218.83 L 818.79 216.88 L 823.73 217.95 L 828.67 222.03 L 833.61 224.61 L 838.55 226.68 L 843.50 226.75 L 848.44 228.82 L 853.38 231.90" /><path class="forecast-svg-actual" d="M 858.32 300.95 L 863.27 299.45 L 868.21 295.42 L 873.15 278.33 L 878.09 216.99 L 883.04 134.54 L 887.98 116.94 L 892.92 157.66 L 897.86 265.76 L 902.81 265.26 L 907.75 270.29 L 912.69 274.81 L 917.63 275.82 L 922.58 278.83 L 927.52 281.85 L 932.46 282.85 L 937.40 282.35 L 942.35 281.85 L 947.29 288.89 L 952.23 292.91 L 957.17 292.91 L 962.12 295.42 L 967.06 296.93 L 972.00 299.95" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 269.24 L 863.27 269.02 L 868.21 265.61 L 873.15 251.90 L 878.09 190.91 L 883.04 94.94 L 887.98 65.12 L 892.92 93.59 L 897.86 173.30 L 902.81 214.45 L 907.75 236.41 L 912.69 231.77 L 917.63 217.14 L 922.58 214.37 L 927.52 218.83 L 932.46 228.38 L 937.40 242.81 L 942.35 248.87 L 947.29 252.00 L 952.23 254.13 L 957.17 255.43 L 962.12 256.46 L 967.06 258.65 L 972.00 260.37 L 972.00 313.94 L 967.06 311.62 L 962.12 308.48 L 957.17 306.37 L 952.23 304.16 L 947.29 300.82 L 942.35 297.71 L 937.40 297.21 L 932.46 308.40 L 927.52 313.39 L 922.58 312.99 L 917.63 309.16 L 912.69 295.44 L 907.75 282.43 L 902.81 261.13 L 897.86 229.02 L 892.92 181.83 L 887.98 170.13 L 883.04 182.09 L 878.09 238.16 L 873.15 293.70 L 868.21 310.80 L 863.27 315.37 L 858.32 316.21 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 292.72 L 863.27 292.20 L 868.21 288.21 L 873.15 272.80 L 878.09 214.53 L 883.04 138.51 L 887.98 117.62 L 892.92 137.71 L 897.86 201.16 L 902.81 237.79 L 907.75 259.42 L 912.69 263.61 L 917.63 263.15 L 922.58 263.68 L 927.52 266.11 L 932.46 268.39 L 937.40 270.01 L 942.35 273.29 L 947.29 276.41 L 952.23 279.14 L 957.17 280.90 L 962.12 282.47 L 967.06 285.13 L 972.00 287.15" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="292.72" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 316.21 L 32.94 313.77 L 37.88 309.88 L 42.83 294.29 L 47.77 227.58 L 52.71 149.66 L 57.65 132.62 L 62.60 148.20 L 67.54 278.22 L 72.48 285.04 L 77.42 290.88 L 82.37 293.32 L 87.31 294.35 L 92.25 294.90 L 97.19 297.40 L 102.14 295.51 L 107.08 294.11 L 112.02 295.64 L 116.96 298.62 L 121.91 302.58 L 126.85 303.61 L 131.79 304.65 L 136.73 307.14 L 141.68 309.15 L 146.62 309.21 L 151.56 308.30 L 156.50 303.49 L 161.45 288.94 L 166.39 263.20 L 171.33 264.72 L 176.27 168.85 L 181.21 255.59 L 186.16 274.64 L 191.10 276.16 L 196.04 278.17 L 200.98 279.21 L 205.93 281.22 L 210.87 281.77 L 215.81 282.80 L 220.75 283.84 L 225.70 281.95 L 230.64 282.99 L 235.58 284.99 L 240.52 289.93 L 245.47 291.94 L 250.41 292.48 L 255.35 294.98 L 260.29 298.45 L 265.24 299.00 L 270.18 299.55 L 275.12 298.15 L 280.06 295.29 L 285.01 291.94 L 289.95 289.08 L 294.89 285.73 L 299.83 283.84 L 304.77 279.52 L 309.72 272.77 L 314.66 269.91 L 319.60 268.51 L 324.54 269.06 L 329.49 269.60 L 334.43 270.64 L 339.37 270.70 L 344.31 269.79 L 349.26 271.80 L 354.20 276.24 L 359.14 279.71 L 364.08 280.75 L 369.03 282.27 L 373.97 283.30 L 378.91 287.75 L 383.85 289.27 L 388.80 289.82 L 393.74 288.91 L 398.68 287.02 L 403.62 285.13 L 408.57 283.25 L 413.51 282.33 L 418.45 280.45 L 423.39 275.64 L 428.34 267.91 L 433.28 263.59 L 438.22 260.73 L 443.16 259.33 L 448.10 259.39 L 453.05 260.42 L 457.99 259.02 L 462.93 256.65 L 467.87 258.17 L 472.82 260.18 L 477.76 262.19 L 482.70 263.71 L 487.64 267.67 L 492.59 274.06 L 497.53 277.53 L 502.47 279.06 L 507.41 277.66 L 512.36 274.31 L 517.30 265.60 L 522.24 253.00 L 527.18 251.61 L 532.13 253.61 L 537.07 253.68 L 542.01 253.25 L 546.95 247.95 L 551.90 245.58 L 556.84 244.18 L 561.78 243.27 L 566.72 242.36 L 571.66 242.42 L 576.61 240.53 L 581.55 244.98 L 586.49 240.65 L 591.43 235.36 L 596.38 251.49 L 601.32 254.96 L 606.26 259.89 L 611.20 263.36 L 616.15 266.83 L 621.09 268.35 L 626.03 266.95 L 630.97 262.15 L 635.92 245.16 L 640.86 184.35 L 645.80 85.56 L 650.74 69.55 L 655.69 80.33 L 660.63 102.79 L 665.57 113.08 L 670.51 210.04 L 675.46 239.32 L 680.40 241.82 L 685.34 240.91 L 690.28 243.89 L 695.23 244.44 L 700.17 243.53 L 705.11 246.02 L 710.05 250.47 L 714.99 251.50 L 719.94 252.54 L 724.88 255.03 L 729.82 256.56 L 734.76 258.57 L 739.71 259.11 L 744.65 257.23 L 749.59 251.93 L 754.53 234.95 L 759.48 163.91 L 764.42 83.14 L 769.36 66.15 L 774.30 78.88 L 779.25 119.84 L 784.19 199.28 L 789.13 225.15 L 794.07 230.08 L 799.02 230.14 L 803.96 232.15 L 808.90 235.62 L 813.84 235.69 L 818.79 233.80 L 823.73 234.83 L 828.67 238.79 L 833.61 241.29 L 838.55 243.30 L 843.50 243.36 L 848.44 245.37 L 853.38 248.35" /><path class="forecast-svg-actual" d="M 858.32 315.23 L 863.27 313.77 L 868.21 309.88 L 873.15 293.32 L 878.09 233.91 L 883.04 154.04 L 887.98 137.00 L 892.92 176.45 L 897.86 281.14 L 902.81 280.66 L 907.75 285.53 L 912.69 289.91 L 917.63 290.88 L 922.58 293.81 L 927.52 296.73 L 932.46 297.70 L 937.40 297.21 L 942.35 296.73 L 947.29 303.55 L 952.23 307.44 L 957.17 307.44 L 962.12 309.88 L 967.06 311.34 L 972.00 314.26" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 247.96 L 863.27 245.54 L 868.21 241.05 L 873.15 224.39 L 878.09 148.98 L 883.04 58.45 L 887.98 43.79 L 892.92 50.58 L 897.86 68.52 L 902.81 96.16 L 907.75 193.25 L 912.69 215.98 L 917.63 217.71 L 922.58 218.71 L 927.52 220.76 L 932.46 222.12 L 937.40 220.95 L 942.35 222.54 L 947.29 226.37 L 952.23 229.54 L 957.17 230.67 L 962.12 230.76 L 967.06 233.17 L 972.00 236.05 L 972.00 260.28 L 967.06 257.21 L 962.12 253.32 L 957.17 250.20 L 952.23 247.37 L 947.29 242.75 L 942.35 238.11 L 937.40 236.72 L 932.46 237.49 L 927.52 235.95 L 922.58 232.43 L 917.63 230.72 L 912.69 228.56 L 907.75 222.89 L 902.81 205.35 L 897.86 126.57 L 892.92 107.97 L 887.98 102.89 L 883.04 112.93 L 878.09 177.64 L 873.15 234.95 L 868.21 246.59 L 863.27 250.03 L 858.32 250.62 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 249.29 L 863.27 247.79 L 868.21 243.82 L 873.15 229.67 L 878.09 163.31 L 883.04 85.69 L 887.98 73.34 L 892.92 79.28 L 897.86 97.54 L 902.81 150.75 L 907.75 208.07 L 912.69 222.27 L 917.63 224.21 L 922.58 225.57 L 927.52 228.36 L 932.46 229.81 L 937.40 228.83 L 942.35 230.32 L 947.29 234.56 L 952.23 238.45 L 957.17 240.44 L 962.12 242.04 L 967.06 245.19 L 972.00 248.17" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="249.29" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 858.32 242.48 L 863.27 223.14 L 868.21 217.37 L 873.15 204.49 L 878.09 206.40 L 883.04 219.77 L 887.98 214.11 L 892.92 214.98 L 897.86 199.98 L 902.81 228.58 L 907.75 239.08 L 912.69 222.96 L 917.63 226.82 L 922.58 228.88 L 927.52 207.71 L 932.46 198.66 L 937.40 218.91 L 942.35 216.16 L 947.29 220.07 L 952.23 236.37 L 957.17 228.23 L 962.12 223.59 L 967.06 218.02 L 972.00 218.96" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="242.48" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 858.32 244.83 L 863.27 243.50 L 868.21 241.87 L 873.15 245.09 L 878.09 251.64 L 883.04 255.70 L 887.98 249.06 L 892.92 252.74 L 897.86 247.39 L 902.81 244.64 L 907.75 252.66 L 912.69 247.18 L 917.63 243.34 L 922.58 254.34 L 927.52 252.49 L 932.46 249.25 L 937.40 253.56 L 942.35 246.72 L 947.29 252.46 L 952.23 243.24 L 957.17 252.84 L 962.12 253.51 L 967.06 236.81 L 972.00 246.47" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="244.83" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 316.21 L 32.94 313.77 L 37.88 309.88 L 42.83 294.29 L 47.77 227.58 L 52.71 149.66 L 57.65 132.62 L 62.60 148.20 L 67.54 278.22 L 72.48 285.04 L 77.42 290.88 L 82.37 293.32 L 87.31 294.35 L 92.25 294.90 L 97.19 297.40 L 102.14 295.51 L 107.08 294.11 L 112.02 295.64 L 116.96 298.62 L 121.91 302.58 L 126.85 303.61 L 131.79 304.65 L 136.73 307.14 L 141.68 309.15 L 146.62 309.21 L 151.56 308.30 L 156.50 303.49 L 161.45 288.94 L 166.39 263.20 L 171.33 264.72 L 176.27 168.85 L 181.21 255.59 L 186.16 274.64 L 191.10 276.16 L 196.04 278.17 L 200.98 279.21 L 205.93 281.22 L 210.87 281.77 L 215.81 282.80 L 220.75 283.84 L 225.70 281.95 L 230.64 282.99 L 235.58 284.99 L 240.52 289.93 L 245.47 291.94 L 250.41 292.48 L 255.35 294.98 L 260.29 298.45 L 265.24 299.00 L 270.18 299.55 L 275.12 298.15 L 280.06 295.29 L 285.01 291.94 L 289.95 289.08 L 294.89 285.73 L 299.83 283.84 L 304.77 279.52 L 309.72 272.77 L 314.66 269.91 L 319.60 268.51 L 324.54 269.06 L 329.49 269.60 L 334.43 270.64 L 339.37 270.70 L 344.31 269.79 L 349.26 271.80 L 354.20 276.24 L 359.14 279.71 L 364.08 280.75 L 369.03 282.27 L 373.97 283.30 L 378.91 287.75 L 383.85 289.27 L 388.80 289.82 L 393.74 288.91 L 398.68 287.02 L 403.62 285.13 L 408.57 283.25 L 413.51 282.33 L 418.45 280.45 L 423.39 275.64 L 428.34 267.91 L 433.28 263.59 L 438.22 260.73 L 443.16 259.33 L 448.10 259.39 L 453.05 260.42 L 457.99 259.02 L 462.93 256.65 L 467.87 258.17 L 472.82 260.18 L 477.76 262.19 L 482.70 263.71 L 487.64 267.67 L 492.59 274.06 L 497.53 277.53 L 502.47 279.06 L 507.41 277.66 L 512.36 274.31 L 517.30 265.60 L 522.24 253.00 L 527.18 251.61 L 532.13 253.61 L 537.07 253.68 L 542.01 253.25 L 546.95 247.95 L 551.90 245.58 L 556.84 244.18 L 561.78 243.27 L 566.72 242.36 L 571.66 242.42 L 576.61 240.53 L 581.55 244.98 L 586.49 240.65 L 591.43 235.36 L 596.38 251.49 L 601.32 254.96 L 606.26 259.89 L 611.20 263.36 L 616.15 266.83 L 621.09 268.35 L 626.03 266.95 L 630.97 262.15 L 635.92 245.16 L 640.86 184.35 L 645.80 85.56 L 650.74 69.55 L 655.69 80.33 L 660.63 102.79 L 665.57 113.08 L 670.51 210.04 L 675.46 239.32 L 680.40 241.82 L 685.34 240.91 L 690.28 243.89 L 695.23 244.44 L 700.17 243.53 L 705.11 246.02 L 710.05 250.47 L 714.99 251.50 L 719.94 252.54 L 724.88 255.03 L 729.82 256.56 L 734.76 258.57 L 739.71 259.11 L 744.65 257.23 L 749.59 251.93 L 754.53 234.95 L 759.48 163.91 L 764.42 83.14 L 769.36 66.15 L 774.30 78.88 L 779.25 119.84 L 784.19 199.28 L 789.13 225.15 L 794.07 230.08 L 799.02 230.14 L 803.96 232.15 L 808.90 235.62 L 813.84 235.69 L 818.79 233.80 L 823.73 234.83 L 828.67 238.79 L 833.61 241.29 L 838.55 243.30 L 843.50 243.36 L 848.44 245.37 L 853.38 248.35" /><path class="forecast-svg-actual" d="M 858.32 315.23 L 863.27 313.77 L 868.21 309.88 L 873.15 293.32 L 878.09 233.91 L 883.04 154.04 L 887.98 137.00 L 892.92 176.45 L 897.86 281.14 L 902.81 280.66 L 907.75 285.53 L 912.69 289.91 L 917.63 290.88 L 922.58 293.81 L 927.52 296.73 L 932.46 297.70 L 937.40 297.21 L 942.35 296.73 L 947.29 303.55 L 952.23 307.44 L 957.17 307.44 L 962.12 309.88 L 967.06 311.34 L 972.00 314.26" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 247.96 L 863.27 245.54 L 868.21 241.05 L 873.15 224.39 L 878.09 148.98 L 883.04 58.45 L 887.98 43.79 L 892.92 50.58 L 897.86 68.52 L 902.81 96.16 L 907.75 193.25 L 912.69 215.98 L 917.63 217.71 L 922.58 218.71 L 927.52 220.76 L 932.46 222.12 L 937.40 220.95 L 942.35 222.54 L 947.29 226.37 L 952.23 229.54 L 957.17 230.67 L 962.12 230.76 L 967.06 233.17 L 972.00 236.05 L 972.00 260.28 L 967.06 257.21 L 962.12 253.32 L 957.17 250.20 L 952.23 247.37 L 947.29 242.75 L 942.35 238.11 L 937.40 236.72 L 932.46 237.49 L 927.52 235.95 L 922.58 232.43 L 917.63 230.72 L 912.69 228.56 L 907.75 222.89 L 902.81 205.35 L 897.86 126.57 L 892.92 107.97 L 887.98 102.89 L 883.04 112.93 L 878.09 177.64 L 873.15 234.95 L 868.21 246.59 L 863.27 250.03 L 858.32 250.62 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 249.29 L 863.27 247.79 L 868.21 243.82 L 873.15 229.67 L 878.09 163.31 L 883.04 85.69 L 887.98 73.34 L 892.92 79.28 L 897.86 97.54 L 902.81 150.75 L 907.75 208.07 L 912.69 222.27 L 917.63 224.21 L 922.58 225.57 L 927.52 228.36 L 932.46 229.81 L 937.40 228.83 L 942.35 230.32 L 947.29 234.56 L 952.23 238.45 L 957.17 240.44 L 962.12 242.04 L 967.06 245.19 L 972.00 248.17" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="249.29" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 316.21 L 32.94 313.77 L 37.88 309.88 L 42.83 294.29 L 47.77 227.58 L 52.71 149.66 L 57.65 132.62 L 62.60 148.20 L 67.54 278.22 L 72.48 285.04 L 77.42 290.88 L 82.37 293.32 L 87.31 294.35 L 92.25 294.90 L 97.19 297.40 L 102.14 295.51 L 107.08 294.11 L 112.02 295.64 L 116.96 298.62 L 121.91 302.58 L 126.85 303.61 L 131.79 304.65 L 136.73 307.14 L 141.68 309.15 L 146.62 309.21 L 151.56 308.30 L 156.50 303.49 L 161.45 288.94 L 166.39 263.20 L 171.33 264.72 L 176.27 168.85 L 181.21 255.59 L 186.16 274.64 L 191.10 276.16 L 196.04 278.17 L 200.98 279.21 L 205.93 281.22 L 210.87 281.77 L 215.81 282.80 L 220.75 283.84 L 225.70 281.95 L 230.64 282.99 L 235.58 284.99 L 240.52 289.93 L 245.47 291.94 L 250.41 292.48 L 255.35 294.98 L 260.29 298.45 L 265.24 299.00 L 270.18 299.55 L 275.12 298.15 L 280.06 295.29 L 285.01 291.94 L 289.95 289.08 L 294.89 285.73 L 299.83 283.84 L 304.77 279.52 L 309.72 272.77 L 314.66 269.91 L 319.60 268.51 L 324.54 269.06 L 329.49 269.60 L 334.43 270.64 L 339.37 270.70 L 344.31 269.79 L 349.26 271.80 L 354.20 276.24 L 359.14 279.71 L 364.08 280.75 L 369.03 282.27 L 373.97 283.30 L 378.91 287.75 L 383.85 289.27 L 388.80 289.82 L 393.74 288.91 L 398.68 287.02 L 403.62 285.13 L 408.57 283.25 L 413.51 282.33 L 418.45 280.45 L 423.39 275.64 L 428.34 267.91 L 433.28 263.59 L 438.22 260.73 L 443.16 259.33 L 448.10 259.39 L 453.05 260.42 L 457.99 259.02 L 462.93 256.65 L 467.87 258.17 L 472.82 260.18 L 477.76 262.19 L 482.70 263.71 L 487.64 267.67 L 492.59 274.06 L 497.53 277.53 L 502.47 279.06 L 507.41 277.66 L 512.36 274.31 L 517.30 265.60 L 522.24 253.00 L 527.18 251.61 L 532.13 253.61 L 537.07 253.68 L 542.01 253.25 L 546.95 247.95 L 551.90 245.58 L 556.84 244.18 L 561.78 243.27 L 566.72 242.36 L 571.66 242.42 L 576.61 240.53 L 581.55 244.98 L 586.49 240.65 L 591.43 235.36 L 596.38 251.49 L 601.32 254.96 L 606.26 259.89 L 611.20 263.36 L 616.15 266.83 L 621.09 268.35 L 626.03 266.95 L 630.97 262.15 L 635.92 245.16 L 640.86 184.35 L 645.80 85.56 L 650.74 69.55 L 655.69 80.33 L 660.63 102.79 L 665.57 113.08 L 670.51 210.04 L 675.46 239.32 L 680.40 241.82 L 685.34 240.91 L 690.28 243.89 L 695.23 244.44 L 700.17 243.53 L 705.11 246.02 L 710.05 250.47 L 714.99 251.50 L 719.94 252.54 L 724.88 255.03 L 729.82 256.56 L 734.76 258.57 L 739.71 259.11 L 744.65 257.23 L 749.59 251.93 L 754.53 234.95 L 759.48 163.91 L 764.42 83.14 L 769.36 66.15 L 774.30 78.88 L 779.25 119.84 L 784.19 199.28 L 789.13 225.15 L 794.07 230.08 L 799.02 230.14 L 803.96 232.15 L 808.90 235.62 L 813.84 235.69 L 818.79 233.80 L 823.73 234.83 L 828.67 238.79 L 833.61 241.29 L 838.55 243.30 L 843.50 243.36 L 848.44 245.37 L 853.38 248.35" /><path class="forecast-svg-actual" d="M 858.32 315.23 L 863.27 313.77 L 868.21 309.88 L 873.15 293.32 L 878.09 233.91 L 883.04 154.04 L 887.98 137.00 L 892.92 176.45 L 897.86 281.14 L 902.81 280.66 L 907.75 285.53 L 912.69 289.91 L 917.63 290.88 L 922.58 293.81 L 927.52 296.73 L 932.46 297.70 L 937.40 297.21 L 942.35 296.73 L 947.29 303.55 L 952.23 307.44 L 957.17 307.44 L 962.12 309.88 L 967.06 311.34 L 972.00 314.26" /><path class="forecast-svg-band" fill="#8064a2" d="M 858.32 223.01 L 863.27 196.62 L 868.21 180.38 L 873.15 164.47 L 878.09 156.31 L 883.04 179.21 L 887.98 158.19 L 892.92 172.03 L 897.86 147.20 L 902.81 179.23 L 907.75 206.52 L 912.69 179.73 L 917.63 170.18 L 922.58 182.43 L 927.52 167.31 L 932.46 159.26 L 937.40 171.96 L 942.35 168.89 L 947.29 165.68 L 952.23 191.18 L 957.17 174.95 L 962.12 176.33 L 967.06 174.23 L 972.00 173.98 L 972.00 263.94 L 967.06 261.82 L 962.12 270.86 L 957.17 281.50 L 952.23 281.56 L 947.29 274.47 L 942.35 263.44 L 937.40 265.86 L 932.46 238.07 L 927.52 248.12 L 922.58 275.34 L 917.63 283.46 L 912.69 266.18 L 907.75 271.65 L 902.81 277.93 L 897.86 252.77 L 892.92 257.94 L 887.98 270.03 L 883.04 260.33 L 878.09 256.50 L 873.15 244.52 L 868.21 254.35 L 863.27 249.65 L 858.32 261.95 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 858.32 242.48 L 863.27 223.14 L 868.21 217.37 L 873.15 204.49 L 878.09 206.40 L 883.04 219.77 L 887.98 214.11 L 892.92 214.98 L 897.86 199.98 L 902.81 228.58 L 907.75 239.08 L 912.69 222.96 L 917.63 226.82 L 922.58 228.88 L 927.52 207.71 L 932.46 198.66 L 937.40 218.91 L 942.35 216.16 L 947.29 220.07 L 952.23 236.37 L 957.17 228.23 L 962.12 223.59 L 967.06 218.02 L 972.00 218.96" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="242.48" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 316.21 L 32.94 313.77 L 37.88 309.88 L 42.83 294.29 L 47.77 227.58 L 52.71 149.66 L 57.65 132.62 L 62.60 148.20 L 67.54 278.22 L 72.48 285.04 L 77.42 290.88 L 82.37 293.32 L 87.31 294.35 L 92.25 294.90 L 97.19 297.40 L 102.14 295.51 L 107.08 294.11 L 112.02 295.64 L 116.96 298.62 L 121.91 302.58 L 126.85 303.61 L 131.79 304.65 L 136.73 307.14 L 141.68 309.15 L 146.62 309.21 L 151.56 308.30 L 156.50 303.49 L 161.45 288.94 L 166.39 263.20 L 171.33 264.72 L 176.27 168.85 L 181.21 255.59 L 186.16 274.64 L 191.10 276.16 L 196.04 278.17 L 200.98 279.21 L 205.93 281.22 L 210.87 281.77 L 215.81 282.80 L 220.75 283.84 L 225.70 281.95 L 230.64 282.99 L 235.58 284.99 L 240.52 289.93 L 245.47 291.94 L 250.41 292.48 L 255.35 294.98 L 260.29 298.45 L 265.24 299.00 L 270.18 299.55 L 275.12 298.15 L 280.06 295.29 L 285.01 291.94 L 289.95 289.08 L 294.89 285.73 L 299.83 283.84 L 304.77 279.52 L 309.72 272.77 L 314.66 269.91 L 319.60 268.51 L 324.54 269.06 L 329.49 269.60 L 334.43 270.64 L 339.37 270.70 L 344.31 269.79 L 349.26 271.80 L 354.20 276.24 L 359.14 279.71 L 364.08 280.75 L 369.03 282.27 L 373.97 283.30 L 378.91 287.75 L 383.85 289.27 L 388.80 289.82 L 393.74 288.91 L 398.68 287.02 L 403.62 285.13 L 408.57 283.25 L 413.51 282.33 L 418.45 280.45 L 423.39 275.64 L 428.34 267.91 L 433.28 263.59 L 438.22 260.73 L 443.16 259.33 L 448.10 259.39 L 453.05 260.42 L 457.99 259.02 L 462.93 256.65 L 467.87 258.17 L 472.82 260.18 L 477.76 262.19 L 482.70 263.71 L 487.64 267.67 L 492.59 274.06 L 497.53 277.53 L 502.47 279.06 L 507.41 277.66 L 512.36 274.31 L 517.30 265.60 L 522.24 253.00 L 527.18 251.61 L 532.13 253.61 L 537.07 253.68 L 542.01 253.25 L 546.95 247.95 L 551.90 245.58 L 556.84 244.18 L 561.78 243.27 L 566.72 242.36 L 571.66 242.42 L 576.61 240.53 L 581.55 244.98 L 586.49 240.65 L 591.43 235.36 L 596.38 251.49 L 601.32 254.96 L 606.26 259.89 L 611.20 263.36 L 616.15 266.83 L 621.09 268.35 L 626.03 266.95 L 630.97 262.15 L 635.92 245.16 L 640.86 184.35 L 645.80 85.56 L 650.74 69.55 L 655.69 80.33 L 660.63 102.79 L 665.57 113.08 L 670.51 210.04 L 675.46 239.32 L 680.40 241.82 L 685.34 240.91 L 690.28 243.89 L 695.23 244.44 L 700.17 243.53 L 705.11 246.02 L 710.05 250.47 L 714.99 251.50 L 719.94 252.54 L 724.88 255.03 L 729.82 256.56 L 734.76 258.57 L 739.71 259.11 L 744.65 257.23 L 749.59 251.93 L 754.53 234.95 L 759.48 163.91 L 764.42 83.14 L 769.36 66.15 L 774.30 78.88 L 779.25 119.84 L 784.19 199.28 L 789.13 225.15 L 794.07 230.08 L 799.02 230.14 L 803.96 232.15 L 808.90 235.62 L 813.84 235.69 L 818.79 233.80 L 823.73 234.83 L 828.67 238.79 L 833.61 241.29 L 838.55 243.30 L 843.50 243.36 L 848.44 245.37 L 853.38 248.35" /><path class="forecast-svg-actual" d="M 858.32 315.23 L 863.27 313.77 L 868.21 309.88 L 873.15 293.32 L 878.09 233.91 L 883.04 154.04 L 887.98 137.00 L 892.92 176.45 L 897.86 281.14 L 902.81 280.66 L 907.75 285.53 L 912.69 289.91 L 917.63 290.88 L 922.58 293.81 L 927.52 296.73 L 932.46 297.70 L 937.40 297.21 L 942.35 296.73 L 947.29 303.55 L 952.23 307.44 L 957.17 307.44 L 962.12 309.88 L 967.06 311.34 L 972.00 314.26" /><path class="forecast-svg-band" fill="#668851" d="M 858.32 219.43 L 863.27 216.66 L 868.21 214.37 L 873.15 216.40 L 878.09 227.61 L 883.04 230.63 L 887.98 235.24 L 892.92 228.12 L 897.86 225.40 L 902.81 218.51 L 907.75 228.17 L 912.69 227.93 L 917.63 223.66 L 922.58 230.22 L 927.52 231.99 L 932.46 222.62 L 937.40 231.65 L 942.35 222.34 L 947.29 231.14 L 952.23 220.91 L 957.17 225.54 L 962.12 227.92 L 967.06 208.65 L 972.00 220.11 L 972.00 272.82 L 967.06 264.97 L 962.12 279.09 L 957.17 280.14 L 952.23 265.58 L 947.29 273.79 L 942.35 271.11 L 937.40 275.47 L 932.46 275.88 L 927.52 273.00 L 922.58 278.45 L 917.63 263.03 L 912.69 266.43 L 907.75 277.14 L 902.81 270.77 L 897.86 269.37 L 892.92 277.35 L 887.98 262.88 L 883.04 280.76 L 878.09 275.66 L 873.15 273.79 L 868.21 269.37 L 863.27 270.33 L 858.32 270.23 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 858.32 244.83 L 863.27 243.50 L 868.21 241.87 L 873.15 245.09 L 878.09 251.64 L 883.04 255.70 L 887.98 249.06 L 892.92 252.74 L 897.86 247.39 L 902.81 244.64 L 907.75 252.66 L 912.69 247.18 L 917.63 243.34 L 922.58 254.34 L 927.52 252.49 L 932.46 249.25 L 937.40 253.56 L 942.35 246.72 L 947.29 252.46 L 952.23 243.24 L 957.17 252.84 L 962.12 253.51 L 967.06 236.81 L 972.00 246.47" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="244.83" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 316.21 L 32.94 313.77 L 37.88 309.88 L 42.83 294.29 L 47.77 227.58 L 52.71 149.66 L 57.65 132.62 L 62.60 148.20 L 67.54 278.22 L 72.48 285.04 L 77.42 290.88 L 82.37 293.32 L 87.31 294.35 L 92.25 294.90 L 97.19 297.40 L 102.14 295.51 L 107.08 294.11 L 112.02 295.64 L 116.96 298.62 L 121.91 302.58 L 126.85 303.61 L 131.79 304.65 L 136.73 307.14 L 141.68 309.15 L 146.62 309.21 L 151.56 308.30 L 156.50 303.49 L 161.45 288.94 L 166.39 263.20 L 171.33 264.72 L 176.27 168.85 L 181.21 255.59 L 186.16 274.64 L 191.10 276.16 L 196.04 278.17 L 200.98 279.21 L 205.93 281.22 L 210.87 281.77 L 215.81 282.80 L 220.75 283.84 L 225.70 281.95 L 230.64 282.99 L 235.58 284.99 L 240.52 289.93 L 245.47 291.94 L 250.41 292.48 L 255.35 294.98 L 260.29 298.45 L 265.24 299.00 L 270.18 299.55 L 275.12 298.15 L 280.06 295.29 L 285.01 291.94 L 289.95 289.08 L 294.89 285.73 L 299.83 283.84 L 304.77 279.52 L 309.72 272.77 L 314.66 269.91 L 319.60 268.51 L 324.54 269.06 L 329.49 269.60 L 334.43 270.64 L 339.37 270.70 L 344.31 269.79 L 349.26 271.80 L 354.20 276.24 L 359.14 279.71 L 364.08 280.75 L 369.03 282.27 L 373.97 283.30 L 378.91 287.75 L 383.85 289.27 L 388.80 289.82 L 393.74 288.91 L 398.68 287.02 L 403.62 285.13 L 408.57 283.25 L 413.51 282.33 L 418.45 280.45 L 423.39 275.64 L 428.34 267.91 L 433.28 263.59 L 438.22 260.73 L 443.16 259.33 L 448.10 259.39 L 453.05 260.42 L 457.99 259.02 L 462.93 256.65 L 467.87 258.17 L 472.82 260.18 L 477.76 262.19 L 482.70 263.71 L 487.64 267.67 L 492.59 274.06 L 497.53 277.53 L 502.47 279.06 L 507.41 277.66 L 512.36 274.31 L 517.30 265.60 L 522.24 253.00 L 527.18 251.61 L 532.13 253.61 L 537.07 253.68 L 542.01 253.25 L 546.95 247.95 L 551.90 245.58 L 556.84 244.18 L 561.78 243.27 L 566.72 242.36 L 571.66 242.42 L 576.61 240.53 L 581.55 244.98 L 586.49 240.65 L 591.43 235.36 L 596.38 251.49 L 601.32 254.96 L 606.26 259.89 L 611.20 263.36 L 616.15 266.83 L 621.09 268.35 L 626.03 266.95 L 630.97 262.15 L 635.92 245.16 L 640.86 184.35 L 645.80 85.56 L 650.74 69.55 L 655.69 80.33 L 660.63 102.79 L 665.57 113.08 L 670.51 210.04 L 675.46 239.32 L 680.40 241.82 L 685.34 240.91 L 690.28 243.89 L 695.23 244.44 L 700.17 243.53 L 705.11 246.02 L 710.05 250.47 L 714.99 251.50 L 719.94 252.54 L 724.88 255.03 L 729.82 256.56 L 734.76 258.57 L 739.71 259.11 L 744.65 257.23 L 749.59 251.93 L 754.53 234.95 L 759.48 163.91 L 764.42 83.14 L 769.36 66.15 L 774.30 78.88 L 779.25 119.84 L 784.19 199.28 L 789.13 225.15 L 794.07 230.08 L 799.02 230.14 L 803.96 232.15 L 808.90 235.62 L 813.84 235.69 L 818.79 233.80 L 823.73 234.83 L 828.67 238.79 L 833.61 241.29 L 838.55 243.30 L 843.50 243.36 L 848.44 245.37 L 853.38 248.35" /><path class="forecast-svg-actual" d="M 858.32 315.23 L 863.27 313.77 L 868.21 309.88 L 873.15 293.32 L 878.09 233.91 L 883.04 154.04 L 887.98 137.00 L 892.92 176.45 L 897.86 281.14 L 902.81 280.66 L 907.75 285.53 L 912.69 289.91 L 917.63 290.88 L 922.58 293.81 L 927.52 296.73 L 932.46 297.70 L 937.40 297.21 L 942.35 296.73 L 947.29 303.55 L 952.23 307.44 L 957.17 307.44 L 962.12 309.88 L 967.06 311.34 L 972.00 314.26" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 858.32 219.80 L 863.27 218.89 L 868.21 219.57 L 873.15 210.27 L 878.09 206.37 L 883.04 199.07 L 887.98 194.08 L 892.92 183.57 L 897.86 181.70 L 902.81 181.96 L 907.75 175.49 L 912.69 182.22 L 917.63 177.08 L 922.58 176.08 L 927.52 170.95 L 932.46 168.01 L 937.40 165.48 L 942.35 163.20 L 947.29 162.86 L 952.23 162.60 L 957.17 159.34 L 962.12 154.46 L 967.06 153.09 L 972.00 152.10 L 972.00 285.63 L 967.06 282.52 L 962.12 286.92 L 957.17 287.60 L 952.23 282.76 L 947.29 283.96 L 942.35 292.92 L 937.40 292.06 L 932.46 294.44 L 927.52 298.06 L 922.58 300.90 L 917.63 297.33 L 912.69 293.51 L 907.75 291.02 L 902.81 297.97 L 897.86 298.56 L 892.92 298.22 L 887.98 295.27 L 883.04 295.59 L 878.09 296.06 L 873.15 289.53 L 868.21 281.34 L 863.27 285.92 L 858.32 278.59 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 858.32 249.19 L 863.27 252.40 L 868.21 250.45 L 873.15 249.90 L 878.09 251.21 L 883.04 247.33 L 887.98 244.68 L 892.92 240.90 L 897.86 240.13 L 902.81 239.96 L 907.75 233.25 L 912.69 237.86 L 917.63 237.21 L 922.58 238.49 L 927.52 234.51 L 932.46 231.22 L 937.40 228.77 L 942.35 228.06 L 947.29 223.41 L 952.23 222.68 L 957.17 223.47 L 962.12 220.69 L 967.06 217.81 L 972.00 218.87" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="858.32" cy="249.19" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 316.21 L 32.94 313.77 L 37.88 309.88 L 42.83 294.29 L 47.77 227.58 L 52.71 149.66 L 57.65 132.62 L 62.60 148.20 L 67.54 278.22 L 72.48 285.04 L 77.42 290.88 L 82.37 293.32 L 87.31 294.35 L 92.25 294.90 L 97.19 297.40 L 102.14 295.51 L 107.08 294.11 L 112.02 295.64 L 116.96 298.62 L 121.91 302.58 L 126.85 303.61 L 131.79 304.65 L 136.73 307.14 L 141.68 309.15 L 146.62 309.21 L 151.56 308.30 L 156.50 303.49 L 161.45 288.94 L 166.39 263.20 L 171.33 264.72 L 176.27 168.85 L 181.21 255.59 L 186.16 274.64 L 191.10 276.16 L 196.04 278.17 L 200.98 279.21 L 205.93 281.22 L 210.87 281.77 L 215.81 282.80 L 220.75 283.84 L 225.70 281.95 L 230.64 282.99 L 235.58 284.99 L 240.52 289.93 L 245.47 291.94 L 250.41 292.48 L 255.35 294.98 L 260.29 298.45 L 265.24 299.00 L 270.18 299.55 L 275.12 298.15 L 280.06 295.29 L 285.01 291.94 L 289.95 289.08 L 294.89 285.73 L 299.83 283.84 L 304.77 279.52 L 309.72 272.77 L 314.66 269.91 L 319.60 268.51 L 324.54 269.06 L 329.49 269.60 L 334.43 270.64 L 339.37 270.70 L 344.31 269.79 L 349.26 271.80 L 354.20 276.24 L 359.14 279.71 L 364.08 280.75 L 369.03 282.27 L 373.97 283.30 L 378.91 287.75 L 383.85 289.27 L 388.80 289.82 L 393.74 288.91 L 398.68 287.02 L 403.62 285.13 L 408.57 283.25 L 413.51 282.33 L 418.45 280.45 L 423.39 275.64 L 428.34 267.91 L 433.28 263.59 L 438.22 260.73 L 443.16 259.33 L 448.10 259.39 L 453.05 260.42 L 457.99 259.02 L 462.93 256.65 L 467.87 258.17 L 472.82 260.18 L 477.76 262.19 L 482.70 263.71 L 487.64 267.67 L 492.59 274.06 L 497.53 277.53 L 502.47 279.06 L 507.41 277.66 L 512.36 274.31 L 517.30 265.60 L 522.24 253.00 L 527.18 251.61 L 532.13 253.61 L 537.07 253.68 L 542.01 253.25 L 546.95 247.95 L 551.90 245.58 L 556.84 244.18 L 561.78 243.27 L 566.72 242.36 L 571.66 242.42 L 576.61 240.53 L 581.55 244.98 L 586.49 240.65 L 591.43 235.36 L 596.38 251.49 L 601.32 254.96 L 606.26 259.89 L 611.20 263.36 L 616.15 266.83 L 621.09 268.35 L 626.03 266.95 L 630.97 262.15 L 635.92 245.16 L 640.86 184.35 L 645.80 85.56 L 650.74 69.55 L 655.69 80.33 L 660.63 102.79 L 665.57 113.08 L 670.51 210.04 L 675.46 239.32 L 680.40 241.82 L 685.34 240.91 L 690.28 243.89 L 695.23 244.44 L 700.17 243.53 L 705.11 246.02 L 710.05 250.47 L 714.99 251.50 L 719.94 252.54 L 724.88 255.03 L 729.82 256.56 L 734.76 258.57 L 739.71 259.11 L 744.65 257.23 L 749.59 251.93 L 754.53 234.95 L 759.48 163.91 L 764.42 83.14 L 769.36 66.15 L 774.30 78.88 L 779.25 119.84 L 784.19 199.28 L 789.13 225.15 L 794.07 230.08 L 799.02 230.14 L 803.96 232.15 L 808.90 235.62 L 813.84 235.69 L 818.79 233.80 L 823.73 234.83 L 828.67 238.79 L 833.61 241.29 L 838.55 243.30 L 843.50 243.36 L 848.44 245.37 L 853.38 248.35" /><path class="forecast-svg-actual" d="M 858.32 315.23 L 863.27 313.77 L 868.21 309.88 L 873.15 293.32 L 878.09 233.91 L 883.04 154.04 L 887.98 137.00 L 892.92 176.45 L 897.86 281.14 L 902.81 280.66 L 907.75 285.53 L 912.69 289.91 L 917.63 290.88 L 922.58 293.81 L 927.52 296.73 L 932.46 297.70 L 937.40 297.21 L 942.35 296.73 L 947.29 303.55 L 952.23 307.44 L 957.17 307.44 L 962.12 309.88 L 967.06 311.34 L 972.00 314.26" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 858.32 234.87 L 863.27 224.02 L 868.21 220.97 L 873.15 233.78 L 878.09 219.71 L 883.04 221.50 L 887.98 230.52 L 892.92 234.07 L 897.86 225.51 L 902.81 224.59 L 907.75 227.44 L 912.69 217.37 L 917.63 226.14 L 922.58 221.63 L 927.52 225.55 L 932.46 229.52 L 937.40 225.33 L 942.35 222.64 L 947.29 226.49 L 952.23 228.36 L 957.17 217.81 L 962.12 231.85 L 967.06 223.37 L 972.00 229.83 L 972.00 268.73 L 967.06 270.31 L 962.12 272.45 L 957.17 266.70 L 952.23 273.94 L 947.29 267.37 L 942.35 267.25 L 937.40 283.49 L 932.46 267.27 L 927.52 267.60 L 922.58 271.49 L 917.63 281.62 L 912.69 271.59 L 907.75 270.73 L 902.81 264.47 L 897.86 262.74 L 892.92 273.10 L 887.98 275.39 L 883.04 265.92 L 878.09 273.83 L 873.15 260.03 L 868.21 270.86 L 863.27 273.94 L 858.32 269.66 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 858.32 252.26 L 863.27 248.98 L 868.21 245.91 L 873.15 246.90 L 878.09 246.77 L 883.04 243.71 L 887.98 252.96 L 892.92 253.58 L 897.86 244.12 L 902.81 244.53 L 907.75 249.08 L 912.69 244.48 L 917.63 253.88 L 922.58 246.56 L 927.52 246.58 L 932.46 248.39 L 937.40 254.41 L 942.35 244.94 L 947.29 246.93 L 952.23 251.15 L 957.17 242.25 L 962.12 252.15 L 967.06 246.84 L 972.00 249.28" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="858.32" cy="252.26" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>occupancy rate</h3>
+              <p>The Vector-Mesh V5 is a series of sensor units designed for monitoring occupancy rates, with this specific unit assigned to the Valley Basin Link infrastructure.</p>
+              <p class="instruction">No forecast instruction is available.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This series represents the occupancy rate (%) captured by a Vector-Mesh V5 sensor. The sensor, located on the Valley Basin Link, had a calibration problem starting from 2024-01-11 12:00:00</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>which resulted in an additive trend in the series that increases by 0.0874 at every hour.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>At timestep 2024-01-18 00:00:00, the Vector-Mesh V5 was repaired</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E4</span></div>
+          <p>and this additive trend will disappear.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">36 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6102</span></span></summary>
+          <pre class="doc-content">VECTOR-MESH V5 MAINTENANCE COMPLETION AND LOG VERIFICATION REPORT
+
+ISSUER: Hardware Operations Department
+UNIT ID: Valley Basin Link (Vector-Mesh V5 Series)
+REPORT TYPE: Technical Maintenance Log Summary
+
+REPORT SUMMARY:
+On 2024-01-18, maintenance personnel finalized all necessary restoration procedures on the designated Vector-Mesh V5 unit located within the Valley Basin Link infrastructure. This hardware intervention was successfully concluded, and the completion of the technical fix directly enabled the system to generate the final log entry timestamp.
+
+SYSTEM VALIDATION:
+Following the physical intervention, system logs have recorded and verified the hardware intervention timestamp. 
+
+Log Entry Verified: 2024-01-18 00:00:00
+Status: Restoration Confirmed / Log Generated
+
+Note: This document is strictly limited to the specific restoration activity and log entry validation for this unit; it does not include fleet-wide status or root cause analysis.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6103</span></span></summary>
+          <pre class="doc-content">**SYSTEMS ENGINEERING DEPARTMENT**
+**TECHNICAL INCIDENT REPORT: HARDWARE INTERVENTION**
+
+**Incident ID:** SIR-20240118-01
+**Subject:** Signal Bias Resolution
+**Asset:** Vector-Mesh V5 (Valley Basin Link)
+**Timestamp:** 2024-01-18 00:00:00
+
+**EXECUTIVE SUMMARY**
+This report documents a critical hardware intervention performed on the Valley Basin Link sensor infrastructure. System logs recorded a manual hardware intervention at 2024-01-18 00:00:00 to stabilize data integrity.
+
+**TECHNICAL STATUS**
+Prior to the intervention, the internal mesh logic had been leaking incremental bias into the signal processing stream. This persistent error state compromised the accuracy of real-time outputs. 
+
+**RESOLUTION**
+The hardware intervention executed at 2024-01-18 00:00:00 directly addressed the ongoing mesh logic error state. Post-intervention validation confirms that the signal processing stream has been purged of the previous incremental bias. Current operational status is restored to nominal parameters.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6104</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING DEPARTMENT
+Technical Maintenance Log
+
+Subject: System Remediation Report: Signal Processing Mesh Correction
+Unit: Vector-Mesh V5 (Valley Basin Link)
+
+Investigation reveals that the mesh logic was leaking incremental bias into the signal processing stream prior to intervention. This defect caused internal oscillation variables to compound over the temporal sequence, leading to reduced signal integrity. 
+
+To address this, a fix was implemented to stabilize the internal oscillation variables. Execution of these mesh restoration protocols successfully targeted the logic leak, enabling the stabilization of the internal variables and ensuring consistent processing integrity. This maintenance action focused exclusively on the technical cause and effect of the mesh logic intervention within the monitoring unit. All internal system parameters have been returned to calibrated thresholds.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6105</span></span></summary>
+          <pre class="doc-content">SIGNAL PROCESSING UPDATE LOG
+PATCH NOTE: 882-B
+ISSUER: Systems Engineering Department
+PROJECT: Vector-Mesh V5 (Valley Basin Link)
+
+TECHNICAL SUMMARY:
+This patch implements a resolution for anomalous signal growth identified within the Valley Basin Link unit. The fix stabilized internal oscillation variables that previously compounded over the temporal sequence. By establishing control over these internal oscillation variables, the system successfully halts the source of compounding mathematical errors that affected data integrity.
+
+Following the implementation of this update, the stabilization terminated the error propagation mechanism that drove signal growth. Continuous monitoring confirms that the feedback loop has been neutralized.
+
+Note: This document focuses exclusively on the technical resolution of the specific mathematical error in signal processing. Information regarding broader system architecture, general project timelines, or the original cause of the oscillation is not included.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6106</span></span></summary>
+          <pre class="doc-content">SYSTEMS ENGINEERING DEPARTMENT
+TECHNICAL OPERATIONAL REPORT: SYSTEM STABILIZATION AND SIGNAL ANALYSIS
+
+DATE: [REDACTED]
+SUBJECT: STABILIZATION OF VECTOR-MESH V5 SENSOR UNIT (VALLEY BASIN LINK)
+CLASSIFICATION: TECHNICAL OPERATIONAL
+
+1. EXECUTIVE SUMMARY
+
+This report details the technical intervention and subsequent signal analysis regarding the stabilization of the Vector-Mesh V5 sensor unit deployed at the Valley Basin Link. The primary objective of this action was the mechanical stabilization of the signal output and the termination of observed error divergence within the monitoring stream. Operations were focused exclusively on the cessation of additive output behaviors through the resolution of signal propagation flaws.
+
+2. STABILIZATION PROCESS AND ERROR TERMINATION
+
+Following a review of the operational transmission data, the Systems Engineering Department implemented a stabilization process targeting the active error propagation mechanism. This mechanism was identified as the technical driver responsible for previous signal growth observed in the sensor’s occupancy rate monitoring logs.
+
+Effective immediately upon the completion of the stabilization process, the error propagation mechanism has been terminated. This intervention has successfully neutralized the volatility within the signal architecture. By addressing the mechanical integrity of the transmission, the department has ensured that the feedback loop causing abnormal signal expansion is no longer active.
+
+3. SIGNAL ANALYSIS AND PATTERN PROJECTION
+
+Post-stabilization analysis of the Vector-Mesh V5 output confirms a fundamental change in the signal profile. A critical finding of this report is that the specific pattern of cumulative divergence, which characterized earlier data sets, will no longer appear in subsequent observations. The signal has returned to a non-divergent state, and the upward scaling previously recorded is now suppressed.
+
+Furthermore, the elimination of the primary error source has a direct impact on the output mathematics. Total removal of the error source causes the additive behavior in the output to vanish. Analysts should expect a neutralized output stream where the signal value no longer compounds or increments due to internal system faults. The current data stream reflects a stable baseline devoid of the previously documented additive distortions.
+
+4. SCOPE AND LIMITATIONS
+
+The scope of this report is limited strictly to the direct mechanical stabilization of the signal and the resulting cessation of error divergence. This document provides a technical account of the stabilization of the Valley Basin Link unit and the immediate behavioral changes in the signal output. 
+
+It is important to note that this report does not include: 
+- Analysis or identification of the root cause of the initial error.
+- Evaluations of broader system impacts across the Vector-Mesh V5 network.
+- Long-term performance forecasts or predictive maintenance scheduling.
+
+5. CONCLUSION
+
+The Systems Engineering Department confirms that the Vector-Mesh V5 unit at the Valley Basin Link has achieved signal stabilization. With the error propagation mechanism terminated and the additive behaviors removed, the unit is now operating without the cumulative divergence patterns that hindered previous monitoring cycles. Subsequent data acquisition may proceed with the expectation of a stabilized signal output.
+
+***
+END OF REPORT
+ISSUER: SYSTEMS ENGINEERING DEPARTMENT</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6107</span></span></summary>
+          <pre class="doc-content">DATA SCIENCE AND ANALYTICS DEPARTMENT
+TECHNICAL REPORT: STATISTICAL MODELING PARAMETERS
+RE: 2024 DATASET ANALYSIS
+
+1. EXECUTIVE SUMMARY
+This technical report outlines the foundational statistical parameters and modeling frameworks established for the analysis of the 2024 dataset. The objective is to define the temporal boundaries and mathematical classification of the data progression observed within the current monitoring cycle for the Vector-Mesh V5 sensor units deployed at the Valley Basin Link infrastructure.
+
+2. TEMPORAL PARAMETERS
+Precise delimitation of the observation window is critical to maintaining the integrity of the longitudinal analysis. Per departmental protocols, the dataset observation window commences exactly at 2024-01-11 12:00:00 (midday). All data points recorded prior to this timestamp are excluded from the current modeling exercise. This starting point serves as the definitive baseline for all subsequent mathematical transformations, covering the period until 2024-01-18 00:00:00.
+
+3. MODEL CLASSIFICATION AND TREND IDENTIFICATION
+The primary focus of this analysis is the characterization of the growth trajectory observed within the monitored environment. Following a rigorous review of the data distribution, the statistical model identifies a consistent, non-multiplicative growth pattern as its dominant force. This underscores that the rate of change is not proportional to the previous value of the variable, but rather remains constant over time.
+
+Furthermore, the movement of data following the initiation of the sequence is categorized specifically as an additive trend. By applying an additive decomposition model, the department has determined that the growth components are independent of the baseline level. This additive trend is present from the exact start at 2024-01-11 12:00:00 until 2024-01-18 00:00:00. This classification is vital for the selection of appropriate smoothing constants and the configuration of the analytical software used for the Valley Basin Link data stream.
+
+4. LIMITATIONS
+This report is restricted to the definition of modeling parameters and mathematical classifications. It does not provide the underlying raw data values, the specific subject matter of the dataset, or any predictive forecasts derived from the model.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6108</span></span></summary>
+          <pre class="doc-content">TECHNICAL DOCUMENTATION: STATISTICAL MODEL FRAMEWORK OVERVIEW
+Issuer: Data Science and Analytics Department
+
+1. TREND SPECIFICATION
+The statistical model utilized for the Vector-Mesh V5 unit in the Valley Basin Link infrastructure is defined by its growth characteristics. The model is dominated by a consistent, non-multiplicative growth pattern. Due to the additive nature of this trend, the framework utilizes specific mathematical parameters to ensure structural integrity across the monitoring period.
+
+2. TEMPORAL PARAMETERS AND FREQUENCY
+Data analysis within this framework calculates cumulative effects based on a fixed 60-minute frequency. This specific temporal unit is defined within the model to measure discrete jumps necessitated by the additive trend. All statistical observation and frequency specifications are constrained to this 60-minute interval to maintain consistent modeling of the sensor’s occupancy rate monitoring.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6109</span></span></summary>
+          <pre class="doc-content">TECHNICAL ANALYSIS REPORT: CUMULATIVE GAIN FREQUENCY VALIDATION
+
+ISSUER: Systems Engineering Performance Team
+LOCATION: Valley Basin Link Infrastructure
+UNIT: Vector-Mesh V5 Sensor Unit
+
+1.0 PURPOSE AND SCOPE
+This report is strictly limited to the mathematical parameters of the cumulative effect calculation and the resulting step-wise gain value for the monitoring units. It does not provide broader business implications, the historical data set used for the analysis, or future performance predictions.
+
+2.0 FREQUENCY VALIDATION AND METHODOLOGY
+The data analysis shows the cumulative effect is calculated based on a fixed 60-minute frequency. This standardized interval is the baseline for all subsequent mathematical modeling of the sensor&#x27;s occupancy monitoring performance. By applying the fixed hourly frequency, the Systems Engineering Performance Team allows for the isolation of the exact constant added at each step of the progression.
+
+3.0 STEP-WISE GAIN QUANTIFICATION
+Based on the isolated incremental steps within the 60-minute frequency framework, we have validated the specific magnitude of the additive constant. The numerical magnitude of this specific step-wise gain is exactly 87.4 thousandths (0.0874). This constant serves as the validated mathematical base for the cumulative progression recorded by the Vector-Mesh V5 unit assigned to the Valley Basin Link.
+
+4.0 DURATION AND ENDPOINT SPECIFICATIONS
+For the purposes of technical auditing, the 156-hour figure is the computed duration within the modeled interval. It should be noted that this duration corresponds to a hardware-verified endpoint of 2024-01-18 00:00:00 as found in the standard maintenance records. The trajectory logic utilized in this validation applies the 0.0874 additive increment per hour starting from the initial timestamp (2024-01-11 12:00:00) through the computed duration ending at the maintenance timestamp.
+
+5.0 SUMMARY OF CONSTANTS
+- Calculation Frequency: 60 minutes (fixed)
+- Step-wise Gain Magnitude: 87.4 thousandths
+- Verified Interval Duration: 156 hours
+
+Systems Engineering Performance Team</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6110</span></span></summary>
+          <pre class="doc-content">Systems Performance Engineering Team
+Technical Report: Phase 2 Incremental Gain Analysis
+
+1. EXECUTIVE SUMMARY
+This technical report details the results of the Phase 2 performance evaluation specifically focused on the incremental growth metrics observed within the Valley Basin Link Vector-Mesh V5 sensor infrastructure. The analysis is strictly confined to the quantification of periodic gain magnitude and the temporal duration of the measurement period. This document does not address secondary environmental variables, broader system utility, or overall project objectives.
+
+2. MEASUREMENT MAGNITUDE
+Detailed sensor logging throughout the Phase 2 interval has allowed for the identification of a consistent step-wise gain. Based on the calibrated data stream from the Valley Basin Link unit, the numerical magnitude of this step-wise gain is recorded at exactly 87.4 thousandths. 
+
+This specific value represents the isolated increment observed at each measurement transition. The engineering team has confirmed that this value remains consistent across the logged dataset, presenting a stable baseline for incremental performance tracking.
+
+3. TEMPORAL DURATION AND COMPOUNDING EFFECT
+The identified hourly increment establishes a predictable rate that persists over the entire duration of the study. This repeatability allows for high-confidence modeling of the system’s progression over time. 
+
+According to the sequential log, these stated increases compound for a total of 156 hours to reach the final measurement point. The reporting period covers the entirety of this 156-hour window without interruption. At each hourly mark, the unit registered the aforementioned gain, leading to the cumulative total identified at the conclusion of the Phase 2 evaluation. It is noted that this 156-hour figure is the computed duration within the modeled interval, which corresponds to the terminal hardware maintenance timestamp recorded at the conclusion of the period.
+
+4. DATA INTEGRITY AND SCOPE
+All measurements were conducted under standard operating protocols for the Vector-Mesh V5 series. The scope of this source is strictly limited to the specific measurement of the step-wise gain and the temporal duration of its compounding effect. It does not include broader system objectives, external environmental factors, or the ultimate utility of the final measurement. The Systems Performance Engineering Team maintains that the data reflects the isolated performance characteristics of the Valley Basin Link unit during the specified window.
+
+5. CONCLUSION
+The Phase 2 evaluation concludes that the target unit exhibits a uniform growth pattern. By applying the gain of 87.4 thousandths over the 156-hour compounding period, the engineering team has successfully established the rate and duration parameters required for the baseline performance profile of the incremental series.
+
+***
+EOF: Phase 2 Incremental Gain Analysis Report
+Issuer: Systems Performance Engineering Team</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6111</span></span></summary>
+          <pre class="doc-content">Data Operations Analysis Team
+Technical Report Excerpt: Data Trajectory Termination Summary
+Reporting Period: January 2024
+
+Project Phase: Vector-Mesh V5 Valley Basin Link Monitoring
+
+Subject: Temporal Endpoint Identification
+
+This summary provides the definitive chronological boundaries for the data trajectory under review. The precise termination of the event is determined by calculating the total duration forward from the initial start date. 
+
+Calculations indicate that the stated increases compound for a total duration of 156 hours until the final measurement point. Based on this temporal progression, the conclusion of the specific data trajectory occurs at midnight on January 18, 2024. While the 156-hour figure is the computed duration within the modeled interval, this endpoint corresponds to the maintenance timestamp 2024-01-18 00:00:00 found in the maintenance records. 
+
+This document focuses exclusively on the specific endpoint and temporal calculations. It does not contain initial timestamps, rate metrics, or broader situational implications.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_6112</span></span></summary>
+          <pre class="doc-content">TECHNICAL SPECIFICATION
+Document ID: Data Architecture Definition: Linear Trajectory R07-18
+Issuing Department: Internal Systems Engineering Unit
+
+1. ARCHITECTURAL SCOPE
+This specification defines the mathematical parameters for the Vector-Mesh V5 unit at the Valley Basin Link. This definition is strictly limited to the structural framework of the linear data series.
+
+2. TEMPORAL BOUNDARIES
+The data trajectory concludes at midnight on January 18, 2024. This terminal endpoint corresponds to the hardware-verified maintenance timestamp (2024-01-18 00:00:00).
+
+3. PROGRESSION LOGIC
+The progression is characterized by a starting timestamp and a fixed increment per hour. Summation logic is applied to form a complete linear progression. The combination of temporal boundaries and the internal rate defines the additive series trend. Note: The defined endpoint matches the recorded maintenance schedule, while the trajectory represents the interval modeled through summation logic.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6113 · Off-variable</span></span></summary>
+          <pre class="doc-content">CENTRAL SYSTEMS MAINTENANCE DIVISION (CSMD)
+NETWORK OPERATIONS CENTER INCIDENT UPDATE
+
+Incident ID: VBL-772-V5
+Subject: Valley Basin Link Phase Shift
+Type: Technical status alert
+
+Summary:
+As of 2024-01-11 12:00:00, the Vector-Mesh V5 sensor deployed on the Valley Basin Link has encountered persistent firmware sync latency. This synchronization error has resulted in a constant 0.0874 second phase shift affecting all data transmission packets across the link. 
+
+Operational Impact:
+The 0.0874 second shift impacts precise data arrival times, creating a localized timestamp jitter. However, it is confirmed that this latency does not impact the magnitude of occupancy percentage readings. 
+
+Resolution Schedule:
+Maintenance to resolve the firmware sync latency and the associated shift is scheduled for 2024-01-18 00:00:00. CSMD technicians will recalibrate the Vector-Mesh V5 unit to restore standard operational timing.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6114 · Off-variable</span></span></summary>
+          <pre class="doc-content">ENGINEERING DEPARTMENT TECHNICAL SERVICES DIVISION
+MAINTENANCE COMPLETION REPORT: VECTOR-MESH V5 VALLEY BASIN LINK SITE
+
+Issue Overview:
+Since 2024-01-11 12:00:00, high environmental humidity levels near the Valley Basin Link resulted in physical housing expansion of the Vector-Mesh V5 unit. Engineering preliminary reports suggested this expansion could lead to a potential 0.0874 precision error in internal clock cycling.
+
+Corrective Action:
+On 2024-01-18 00:00:00, a technician was dispatched to the site and applied a specialized waterproof sealant to the unit housing to mitigate moisture ingress.
+
+Post-Maintenance Inspection Findings:
+Final inspection confirmed that the expansion was limited to the external housing and diagnostic LEDs. The technical team verified that the expansion had zero impact on the measured occupancy rate (%) series. All internal systems remain within operational parameters.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6115 · Off-variable</span></span></summary>
+          <pre class="doc-content">VALLEY BASIN LINK AUTHORITY
+Internal Operational Memo
+
+TO: Billing and Data Infrastructure Department
+FROM: Systems Oversight Committee
+SUBJECT: Service Billing Correction Notice: Vector-Mesh V5 API Metadata Surcharge
+DATE: January 19, 2024
+
+On 2024-01-11 12:00:00, a 0.0874 cent surcharge was introduced for sensor data access via the Vector-Mesh V5 API. Following its implementation, the pricing change resulted in an additive billing trend for third-party consumers.
+
+Following a formal service agreement review, the surcharge was removed from the telemetry billing cycle on 2024-01-18 00:00:00. These fluctuations in billing were restricted exclusively to metadata costs. System audits confirm that all billing adjustments were successfully isolated from recorded occupancy (%) measurements, ensuring data integrity remains intact throughout the affected period. No further corrections to the V5 API billing structure are currently scheduled.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6116 · Irrelevant</span></span></summary>
+          <pre class="doc-content">VALLEY BASIN LINK AUTHORITY
+FIELD INSPECTION REPORT: VALLEY BASIN LINK STATION 2024-01-14
+
+Date: 2024-01-14
+Location: Link Station
+Weather Conditions: Observation recorded as Clear/Stable
+Technician: Marcus Vane (Certification Level: Senior Tech L3)
+
+Inspection Summary:
+This routine administrative inspection was conducted to verify station status. The Vector-Mesh V5 sensor physical housing was examined; specifications confirm a reinforced polycarbonate chassis with an IP67-rated weather seal. 
+
+Technical Status Check:
+- Component: Vector-Mesh V5 Sensor
+- Housing Integrity: Verified
+- Power Supply: 24.2V (Within normal operating range)
+
+Administrative Note:
+This log pertains strictly to the technical status check performed on 2024-01-14. It does not include historical maintenance data, network-wide performance metrics, or future infrastructure planning.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6117 · Irrelevant</span></span></summary>
+          <pre class="doc-content">VECTOR-MESH V5 SYSTEM MAINTENANCE AND CONFIGURATION LOG: Q3 UPDATE
+
+ISSUER: Network Operations Center (NOC) Engineering Team
+DOCUMENT STATUS: Internal Technical Record
+CLASSIFICATION: System Infrastructure / Administrative
+
+1. SOFTWARE INTERFACE UPDATE
+
+The Vector-Mesh V5 system has undergone a scheduled software interface revision. This update focuses on high-availability performance and UI responsiveness. Specific modifications include the integration of the v5.4 build, which optimizes the rendering engine for real-time telemetry display. Backend modifications to the API wrapper have been implemented to ensure seamless communication between the local client and the V5 kernel.
+
+2. DATA DASHBOARD VISUAL CONFIGURATION
+
+As part of the interface update, the data dashboard color scheme has been modified to enhance legibility and contrast during multi-monitor monitoring sessions. The following adjustments are now live:
+- Primary Telemetry Background: Shifted from #1A1A1A to #0F1215.
+- Critical Alert Thresholds: Updated from standard red to High-Visibility Crimson (#DC1430).
+- Connectivity Indicators: Updated to Phosphor Green (#32CD32).
+- Historical Data Graps: Adjusted to a neutral grayscale palette to reduce visual fatigue.
+
+3. SYSTEM ADMINISTRATOR ACCESS LOGS
+
+The following chronological timestamps record successful login attempts by the Lead System Administrator for configuration and maintenance purposes during the Q3 period:
+- [2023-07-05 08:22:14]
+- [2023-07-12 14:45:02]
+- [2023-07-28 09:10:55]
+- [2023-08-04 11:30:20]
+- [2023-08-15 16:55:41]
+- [2023-08-30 08:05:12]
+- [2023-09-12 13:20:44]
+- [2023-09-25 07:45:33]
+
+4. HARDWARE INSTALLATION RECORD
+
+Verification of secondary storage infrastructure completion: On-site engineering has finalized the physical installation of a secondary backup storage drive (Unit B-2). This drive serves as a redundant failover for the primary Vector-Mesh buffer. The drive was initialized using the XFS file system and has passed initial parity checks to ensure data integrity during high-load periods.
+
+5. DATA TRANSMISSION FREQUENCY SETTINGS
+
+NOC Engineering has verified and locked the data transmission frequency settings for communication between the local Vector-Mesh V5 node and the central hub. The settings are configured as follows:
+- Standard Pulse Interval: 500ms
+- Batch Upload Reconciliation: Every 30 minutes
+- Heartbeat Signal: Constant (2-second timeout threshold)
+- Central Hub Sync Protocol: TCP/IP Port 8088
+
+All settings have been validated against the system requirement specifications to ensure zero packet loss during peak transmission windows.
+
+6. MAINTAINTER NOTES
+
+This log serves as a record of technical modifications and access history. It is intended for internal tracking of system changes only. Broader organizational policies, personnel performance assessments, long-term strategic planning, and financial budget details are outside the scope of this document and are managed in separate administrative repositories.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6118 · Irrelevant</span></span></summary>
+          <pre class="doc-content">VALLEY BASIN LINK INFRASTRUCTURE MANAGEMENT OFFICE
+Technical Operational Report: Vector-Mesh V5 Sensor Assessment and Site Maintenance
+
+Date: October 24, 2023
+Subject: Site Status and Environmental Condition Report
+
+1. EXECUTIVE SUMMARY
+This technical report details the operational status of the Vector-Mesh V5 sensor located at the Valley Basin Link. It provides current environmental readings, historical installation context, and hardware warranty specifications. This assessment also addresses logistical coordination regarding concurrent site activities.
+
+2. SENSOR INSTALLATION HISTORY
+The Vector-Mesh V5 unit currently in operation was officially commissioned and installed in 2021. Since its initial deployment, the sensor has served as a primary point for localized telemetry. The site was selected based on its proximity to the Valley Basin Link junction to monitor specific micro-climatic stressors on the infrastructure.
+
+3. ENVIRONMENTAL DATA READINGS
+The following data points were captured during the most recent assessment cycle:
+
+Environmental Noise Levels:
+- Ambient Baseline: 54.2 dB
+- Peak Interval: 78.5 dB (recorded during peak transit hours)
+- Sustained Average: 59.1 dB
+
+Humidity Levels:
+- Current Relative Humidity (RH): 62.4%
+- 24-Hour High: 71.0%
+- 24-Hour Low: 48.9%
+
+4. HARDWARE SPECIFICATIONS AND WARRANTY
+The Vector-Mesh V5 hardware is currently governed by the manufacturer’s standard warranty terms. Under these provisions, the manufacturer guarantees the unit against defects in materials and workmanship for a period of five (5) years from the 2021 installation date. Terms include:
+- Full replacement of internal integrated circuit boards in the event of documented electronic failure.
+- Technical support coverage for firmware-related synchronization issues.
+- Exclusion of coverage for damages resulting from external environmental impact beyond the hardware’s rated IP67 tolerances.
+
+5. SITE COORDINATION: LIGHTING UPGRADE PROJECT
+Facility managers and field technicians should take note of a concurrent infrastructure project scheduled for the immediate vicinity of the sensor site. A significant lighting upgrade project is currently underway (or scheduled to begin shortly) to improve visibility along the Valley Basin Link corridor. Maintenance teams must ensure that the installation of new lighting masts and electrical conduits does not obstruct the Vector-Mesh V5&#x27;s line-of-sight for data transmission or interfere with current environmental readings.
+
+6. OPERATIONAL LIMITS AND SCOPE
+This report is strictly limited to the technical status and environmental conditions surrounding the specific V5 sensor site. It is not intended to provide a comprehensive analysis of regional environmental trends or broader infrastructure projects beyond the aforementioned lighting upgrade. Furthermore, this document provides current and historical status only; it does not contain future performance forecasts or predictive modeling for the sensor hardware.
+
+7. MAINTENANCE RECOMMENDATIONS
+Based on the current humidity and noise level readings, the sensor is operating within normal parameters. No immediate hardware intervention is required, though the site should be monitored closely during the lighting upgrade project to prevent accidental damage to the sensor housing.
+
+ISSUER:
+Valley Basin Link Infrastructure Management Office</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6119 · Off-entity</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION
+MAINTENANCE DIVISION
+
+TECHNICAL MAINTENANCE REPORT: OS-X1
+
+Asset ID: Omni-Scan X1 Sensor Node
+Location: Ridge Crossing Junction
+Subject: Software Synchronization Failure and Firmware Patch Resolution
+
+INCIDENT SUMMARY:
+On 2024-01-11 at 12:00:00, the OS-X1 unit began experiencing a persistent software synchronization lag. This technical error resulted in a significant volatility spike across data outputs. Specifically, the reported occupancy rate began fluctuating by a random noise factor of 0.45, recurring every hour.
+
+MAINTENANCE ACTION:
+Technicians deployed a firmware patch to address the synchronization lag. The update was successfully installed on 2024-01-18 at 00:00:00. 
+
+STATUS UPDATE:
+Post-patch diagnostics indicate the volatility has stabilized. The system no longer fluctuates; instead, the occupancy reading has shifted into a constant plateau at the last recorded value prior to stabilization. Error resolved.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6120 · Off-entity</span></span></summary>
+          <pre class="doc-content">VALLEY BASIN LINK INFRASTRUCTURE OPERATIONS DEPARTMENT
+POST-INCIDENT MAINTENANCE REPORT
+
+REPORT ID: VBL-2024-FGA-009
+UNIT: Flux-Gate Alpha
+LOCATION: Valley Basin Link Bypass
+STATUS: RECALIBRATION COMPLETE / RESOLVED
+
+1. UNIT DESCRIPTION
+This report documents the status of the Flux-Gate Alpha unit, a critical infrastructure component currently installed on the bypass section of the Valley Basin Link. The unit functions to manage throughput and data flow regulation across the bypass segment.
+
+2. INCIDENT CHRONOLOGY AND THERMAL FAILURE
+On 2024-01-11 at 12:00:00, automated monitoring systems flagged an internal hardware thermal issue originating within the Flux-Gate Alpha core. The hardware failure was characterized by a sustained spike in core temperatures exceeding standard operating parameters. 
+
+3. OPERATIONAL IMPACT
+As a direct result of the thermal instability, the unit’s processing efficiency was compromised. The occupancy rate—a metric of the unit&#x27;s active load capacity—began to experience a continuous multiplicative decay. For every hour following the onset of the failure, the occupancy rate adjusted by a factor of 0.99 relative to the previous hour. This decay persisted throughout the duration of the hardware fault, significantly reducing unit throughput over time.
+
+4. REPAIR AND MAINTENANCE LOG
+Engineers were dispatched to the Valley Basin Link bypass to facilitate hardware intervention. 
+
+- Maintenance Action: Full Cooling System Replacement
+- Timestamp: 2024-01-18 00:00:00
+- Action Details: The faulty thermal regulation assembly was extracted and replaced with a standard-issue cooling aggregate to restore nominal heat dissipation.
+
+5. RECALIBRATION AND DATA SERIES RESET
+Following the successful replacement of the cooling system at 00:00:00, the Flux-Gate Alpha unit underwent an immediate reset. The occupancy rate series was reverted to a fixed baseline of zero. This reset was necessary to initiate the recalibration process and clear the data artifacts caused by the multiplicative decay. 
+
+6. CLOSING REMARKS
+This record is strictly limited to the operational status and specific repair log of the Flux-Gate Alpha unit. The hardware is now functioning at baseline parameters. Recalibration is ongoing.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6121 · Off-entity</span></span></summary>
+          <pre class="doc-content">**TECHNICAL INCIDENT REPORT**
+
+**Issuer:** Network Operations Center (NOC) Engineering Team  
+**Subject:** Performance Evaluation of Signal-Path Pro Sensor VBL-Artery-01
+
+**1. IDENTIFICATION**
+This report concerns the Signal-Path Pro sensor currently deployed to monitor the Valley Basin Link (VBL) artery.
+
+**2. INCIDENT TIMELINE AND OBSERVATIONS**
+*   **2024-01-11 12:00:00:** Initial observation of a persistent data buffer overflow error. 
+*   **Error Characterization:** The data series began exhibiting a cyclical oscillation error. This manifested as a sine-wave pattern with a strict 12-hour periodicity superimposed on the primary metrics.
+
+**3. REMEDIATION ACTIONS**
+*   **2024-01-18 00:00:00:** Engineering executed a manual buffer clear procedure to resolve the overflow state.
+
+**4. POST-REMEDIATION ANALYSIS**
+Immediately following the buffer clear, the sensor data exhibited a sudden step-function increase. All values shifted upward by exactly 10 percent.
+
+**NOTE:** This report is limited to technical performance and error logging. It does not include root cause analysis for the oscillation, environmental impacts, or network traffic forecasts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6122 · Off-window</span></span></summary>
+          <pre class="doc-content">REGIONAL INFRASTRUCTURE MONITORING TEAM
+TECHNICAL MAINTENANCE LOG: VM-V5
+
+Subject: Post-Maintenance Calibration Review: Valley Basin Link (Sensor VM-V5)
+Date: December 06, 2023
+
+[MAINTENANCE SUMMARY]
+Maintenance activities for the Vector-Mesh V5 sensor located at the Valley Basin Link have been finalized. This log serves to document the resolution of legacy calibration drift observed between 2023-11-20 and 2023-12-05.
+
+[DATA IMPACT ANALYSIS]
+During the identified drift period, the sensor experienced a sustained occupancy rate reduction of 0.0125 percent per hour. 
+
+[CURRENT STATUS]
+As of the maintenance completion date on 2023-12-06, all hardware offsets have been corrected. Calibration settings for the 2024 operational cycle are now locked. Forecast stability for 2024-01-18 indicates no active drift components are expected to interfere with sensor telemetry. Reliability for the upcoming Q1 cycle is confirmed.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6123 · Off-window</span></span></summary>
+          <pre class="doc-content">### Valley Basin Infrastructure Monitoring Department
+**Technical Maintenance Log / Post-Incident Report: VM-V5-VBL**
+
+**Subject:** Vector-Mesh V5 Maintenance and Calibration Incident Report: Valley Basin Link
+**Date:** January 08, 2024
+
+**Incident Description:**
+On 2024-01-01, a localized sync error was detected on the Vector-Mesh V5 sensor located at the Valley Basin Link. This technical fault introduced a flat hourly offset of 2.1 percent to the reported occupancy rate data.
+
+**Resolution and Diagnostics:**
+The data offset was successfully corrected on 2024-01-05. Comprehensive post-correction diagnostics were conducted on 2024-01-06, which confirmed that the sensor has returned to its baseline performance levels. These diagnostics verified that no cumulative additive errors remain within the system. 
+
+**Current Status:**
+The sensor logic has been fully reset. Based on current system stabilization, no further adjustments or trend disappearances are anticipated for January 18. This log pertains strictly to the Valley Basin Link sensor unit.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6124 · Off-window</span></span></summary>
+          <pre class="doc-content">ENGINEERING CHANGE LOG &amp; FIRMWARE MIGRATION SUMMARY
+Document ID: DOT-TTO-VM5-2024-001
+Issuer: Department of Transportation Traffic Tech Operations
+Subject: Vector-Mesh V5 (Valley Basin Link) Hardware Lifecycle and Software Deployment
+
+1. OVERVIEW
+This technical operational report serves as the formal documentation of the engineering lifecycle and firmware migration for the Vector-Mesh V5 sensor suite specifically deployed on the Valley Basin Link. This log details the transition from experimental testing phases to the current standardized operational state.
+
+2. PRELIMINARY TESTING PHASE (DECEMBER 2023 - JANUARY 2024)
+Preliminary testing of the Vector-Mesh V5 on the Valley Basin Link occurred from 2023-12-25 to 2024-01-03. During this nine-day window, the units were utilized to evaluate the stability of the hardware under real-world conditions within the Valley Basin sector.
+
+3. EXPERIMENTAL FIRMWARE ANOMALY
+Field technicians have identified that the experimental firmware utilized during the testing phase caused a temporary additive trend in occupancy values. This behavior was a result of non-standard diagnostic logic embedded in the test build. Specifically, the experimental firmware increased occupancy values by exactly 0.1500 per hour. This linear drift was compounding and persisted for the duration of the pilot period.
+
+4. STANDARDIZATION AND REMEDIATION
+A standardized firmware patch was deployed on 2024-01-04 to synchronize the Valley Basin Link with the established fleet-wide protocol. The installation of the 2024-01-04 patch removed all hourly incremental logic, effectively neutralizing the drift identified in the previous build. This migration ensures that the raw data stream is no longer subject to programmed additive bias.
+
+5. CURRENT OPERATIONAL STATUS
+Post-deployment audits confirm that the Vector-Mesh V5 units are functioning within nominal parameters. Sensor performance for mid-January 2024, including 2024-01-18, follows standard traffic patterns without testing-phase interference. All occupancy calculations for the period following the January 4th migration are considered clean of any experimental firmware artifacts.
+
+6. DOCUMENTATION SCOPE
+This source focuses strictly on the technical deployment history and firmware lifecycle of the Vector-Mesh V5 on the specific Valley Basin Link. It does not include broader traffic analysis, budgetary data, or performance metrics for other sensor models or links. Further technical inquiries should be directed to Traffic Tech Operations Engineering.
+
+***
+END OF LOG</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6125 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Regional Operations Committee
+FROM: Network Infrastructure Monitoring Division
+DATE: October 14, 2023
+SUBJECT: Valley Basin Link Operational Performance and Sensor Calibration
+
+This memorandum outlines the current performance metrics for the Valley Basin Link. Monitoring of occupancy rates is currently conducted via a Vector-Mesh V5 sensor. 
+
+Recent analysis indicates that weekend occupancy levels consistently reach the minimum sustainable baseline for the link, with these usage patterns representing the established floor for typical link activity. However, it should be noted that recent data outputs have been affected by sensor drift. 
+
+Following the correction of this sensor drift, occupancy figures are expected to revert to the established floor. Based on recent observations, the series is projected to stabilize around a four percent baseline. This report focuses strictly on technical performance and baseline analysis.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6126 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">VALLEY BASIN TRANSIT DATA SYSTEMS DIVISION
+TECHNICAL OPERATIONAL REPORT
+
+Date: October 24, 2023
+Subject: Vector-Mesh V5 Sensor Performance and Baseline Occupancy Review - Valley Basin Link
+Ref: Operational Status / V-M V5 System Log
+
+1. EXECUTIVE SUMMARY
+This report details the operational performance of the Vector-Mesh V5 sensor suite currently deployed across the Valley Basin Link. The primary objective of this review is to evaluate occupancy rate data and assess the stability of the established baseline following recent hardware interventions.
+
+2. SENSOR PERFORMANCE AND MAINTENANCE RECAP
+Maintenance activities for the Vector-Mesh V5 sensor array have been successfully completed as of the current reporting cycle. The objective of this maintenance was to ensure the integrity of the data capture mechanisms and to verify the calibration of the units under high-load conditions. Post-maintenance diagnostics indicate that the infrastructure is functioning within peak operational parameters.
+
+Results from these maintenance procedures indicate no significant downward shift in the occupancy baseline. The data remains consistent with pre-maintenance output, confirming that the sensor hardware is providing a reliable and accurate representation of the transit corridor’s status.
+
+3. OCCUPANCY DATA ANALYSIS
+Occupancy rate data for the Valley Basin Link is captured via Vector-Mesh V5 sensors, which provide high-fidelity monitoring of transit volume. Based on the longitudinal data retrieved, the baseline occupancy for the Valley Basin Link has remained essentially stationary. Despite variances in external traffic pressures, the core data set indicates a robust and fixed occupancy floor.
+
+Observers have noted daily fluctuations in occupancy throughout the peak and off-peak cycles. However, these fluctuations consistently return to a predictable floor level. This cyclical behavior underscores the stability of the current corridor usage patterns.
+
+4. PROJECTIONS AND REGIME STABILITY
+Under the current stable regime, occupancy rates are expected to continue oscillating around established high levels. The data suggests that the Valley Basin Link has reached a point of saturation or equilibrium that resists significant downward trends. The Vector-Mesh V5 sensors confirm that while transient peaks and valleys occur, the overarching trend lines remain fixed at high levels.
+
+5. SCOPE LIMITATIONS
+This operational report is focused exclusively on the technical sensor output and immediate baseline stability of the Valley Basin Link. This document does not provide broader traffic analysis, nor does it explore the demographic causes for high occupancy or address long-term infrastructure planning. Data contained herein is limited to sensor health and the resulting occupancy metrics as recorded by the Data Systems Division.
+
+6. CONCLUSION
+The Valley Basin Link continues to exhibit consistent and predictable occupancy behavior. With maintenance completed and the Vector-Mesh V5 sensors verified, the baseline remains stationary at high levels with no expected deviations from the current oscillating regime.
+
+Authorized by:
+Operations Lead
+Valley Basin Transit Data Systems Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6127 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">REGIONAL TRANSIT AUTHORITY
+INFRASTRUCTURE MAINTENANCE DIVISION
+
+TECHNICAL OPERATIONAL REPORT: Valley Basin Link Traffic Sensor Calibration and Demand Forecast
+
+1. EXECUTIVE SUMMARY
+This technical report details the operational status and data accuracy of the Valley Basin Link monitoring systems, specifically focusing on the Vector-Mesh V5 sensor infrastructure. Recent analysis aimed to reconcile discrepancies between historical occupancy trends and real-time data captures. The findings indicate a requirement for immediate sensor recalibration, though underlying demand patterns remain highly predictable.
+
+2. SENSOR PERFORMANCE AND CALIBRATION ANALYSIS
+The Vector-Mesh V5 sensor, currently the primary data collection unit for the Valley Basin Link, has recently shown inconsistencies in raw output. Upon detailed technical review, a gradual sensor drift was identified within the device’s internal calibration logic. This drift was systematically accounted for and isolated during our historical data analysis to ensure the integrity of the transit records.
+
+Following the application of correction factors to adjust for the identified sensor drift, the data reveals a high degree of stability. The Valley Basin Link has captured remarkably stable morning occupancy peaks throughout the current week. When normalized, the link demonstrates a uniform peak demand that is consistent across all days, suggesting a transition toward a more standardized usage pattern.
+
+3. DEMAND FORECASTING MODELS
+The historical stability observed in the link’s throughput provides a reliable foundation for short-term projections. Internal modeling indicates that once the physical sensor drift is repaired and the Vector-Mesh V5 is returned to baseline sensitivity, future occupancy peaks will align with low-intensity maximums. 
+
+Transit planners should note that while the demand remains stable, it is significantly reduced compared to prior performance benchmarks. Upcoming peak levels are expected to remain significantly lower than levels recorded during previous weekdays. This trend toward lower-intensity demand is projected to persist through the next reporting cycle.
+
+4. OPERATIONAL LIMITATIONS
+This report is focused exclusively on the technical performance of the Vector-Mesh V5 sensor and specific demand projections for the Valley Basin Link. The Infrastructure Maintenance Division notes that this analysis does not include broader regional traffic trends, departmental budgets for sensor repairs, or external socio-economic causes for the current low-intensity demand levels.
+
+5. CONCLUSION
+The stability of the Valley Basin Link data, post-correction, suggests that the infrastructure is functioning within a predictable, albeit reduced, demand envelope. Maintenance teams are scheduled to address the mechanical drift in the V5 unit to ensure ongoing alignment with the forecasted low-intensity maximums.
+
+***
+END OF REPORT
+Issuer: RTA Infrastructure Maintenance Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6128 · Off-variable</span></span></summary>
+          <pre class="doc-content">NETWORK OPERATIONS CENTER (NOC) ENGINEERING TEAM
+INTERNAL OPERATIONAL REPORT
+
+**Subject:** Technical Maintenance Log: Valley Basin Link Sensor Array (Vector-Mesh V5)
+
+**Maintenance Window:** 2024-01-11 to 2024-01-18
+
+**System Status:**
+During the specified operational window, the Vector-Mesh V5 sensor array located on the Valley Basin Link utilized a dynamic power-cycling mode. Engineering logs indicate that a background software synchronization process executed every 60 minutes throughout this period. These hourly sync cycles resulted in transient signal fluctuations. 
+
+**Technical Diagnostics:**
+While the 60-minute synchronization process impacted the internal battery discharge rate, it did not affect the accuracy of the occupancy measurement percentage. Additionally, though data transmission latency occurred during this timeframe, the underlying occupancy rate values remained unmodified. This report is restricted to technical diagnostic status and sensor performance metrics.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6129 · Off-variable</span></span></summary>
+          <pre class="doc-content">Regional Infrastructure Engineering Department
+Internal Technical Report
+
+Subject: Engineering Status Report: Valley Basin Link Sensor Stability (V-Mesh V5)
+
+Executive Summary:
+This report details the recent stability assessment of the Vector-Mesh V5 sensor array at the Valley Basin Link following detected environmental anomalies.
+
+Chronology and Maintenance Actions:
+- 2024-01-11 12:00:00: Maintenance logs first recorded minor structural vibrations originating at the Valley Basin Link.
+- Engineering Review: Following the initial logs, engineering teams suspected that these structural vibrations might compromise the stability of the Vector-Mesh V5 sensor mounting brackets, potentially leading to physical displacement.
+- Preventive Action: A specialist was scheduled for 2024-01-18 00:00:00 to perform a physical intervention, specifically to tighten the sensor housing and prevent any physical misalignment of the hardware.
+
+Data Integrity Verification:
+Subsequent technical analysis has confirmed that while structural vibrations were present, they remained below the critical threshold required to interfere with occupancy percentage data accuracy. The integrity of the V-Mesh V5 telemetry remains intact.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6131 · Irrelevant</span></span></summary>
+          <pre class="doc-content">REGIONAL INFRASTRUCTURE MAINTENANCE DEPARTMENT
+TECHNICAL MAINTENANCE REPORT: VALLEY BASIN LINK
+
+Unit Under Inspection: Vector-Mesh V5 Sensor Unit
+Reporting Period: 2024-01-11 to 2024-01-18
+
+Activity Summary:
+A routine hardware aesthetic inspection was performed on the Valley Basin Link during the specified period. Maintenance activities focused on the Vector-Mesh V5 sensor unit to ensure structural and visual integrity. 
+
+Maintenance Actions Taken:
+- Performed comprehensive cleaning of the external sensor casing.
+- Replaced one mounting bracket for the Vector-Mesh V5 sensor.
+
+Operational Status:
+- The internal circuitry of the Vector-Mesh V5 sensor remained untouched and operational throughout the maintenance period.
+- Data transmission protocols for the sensor remained untouched and operational throughout the maintenance period.
+
+Note: This report covers physical and aesthetic upkeep only. Performance data, telemetry logs, and environmental impact studies are excluded.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6132 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Data Infrastructure Department / Facilities Management Division
+Technical Operational Report
+
+Date: January 19, 2024
+Report ID: TECH-OPS-SNV1.04-JAN24
+Subject: System Integration and Metadata Update Summary: Sensor Network V.1.04
+
+1. EXECUTIVE SUMMARY
+This report details the technical modifications and system status updates implemented during the January 2024 maintenance cycle. The primary focus of this update (V.1.04) was the enhancement of administrative software protocols and the standardization of geographic data categorization within the central database. 
+
+2. SYSTEM LOGGING &amp; SOFTWARE VERSIONING
+On 2024-01-11, the Data Infrastructure Department initiated a scheduled change in the administrative data logging software version. This migration was executed to align the Sensor Network with updated departmental security and logging standards. All system logs generated after this date reflect the new versioning architecture. 
+
+3. METADATA ENHANCEMENTS
+To facilitate improved database queries and reporting efficiency, specific meta-tags for geographic categorization were added to the database. These tags permit the classification of sensor nodes based on their physical deployment locations, improving the granularity of the metadata associated with the site infrastructure. 
+
+4. DATA INTEGRITY AND OCCUPANCY CAPTURE
+The site sensors continue to capture and transmit the occupancy rate as a core data point. This metric is recorded in real-time and stored within the primary database environment. It is important to note that throughout the January update cycle, including the software migration on the 11th and subsequent geographic tagging, no changes were made to the underlying data values. The integrity of the historical and incoming occupancy metrics has been preserved.
+
+5. FINAL STATUS
+The system update was officially completed on 2024-01-18. Post-implementation testing confirms that the Sensor Network V.1.04 is stable and fully operational. All site sensors are reporting accurately under the new administrative software version.
+
+6. OPERATIONAL SCOPE AND LIMITATIONS
+This documentation is strictly limited to the technical changes and system status during the January 2024 update cycle. It focuses on the infrastructure and administrative software layer. This report does not include analytical reviews of occupancy trends, performance forecasts, or any broader business implications resulting from the software versioning or geographic tagging. Use of this document should be restricted to technical audits and system maintenance reviews.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6134 · Off-entity</span></span></summary>
+          <pre class="doc-content">TECHNICAL MAINTENANCE LOG: FLUX-GATE DELTA SENSOR
+
+**Issuer:** Sensor Network Operations Team  
+**Document Type:** Operational Maintenance Record  
+**Device:** Flux-Gate Delta Sensor  
+**Location:** East Ridgeline Path  
+
+**Operational Summary:**  
+This log records a recurring firmware cycle scheduled for initiation on 2024-01-11 at 12:00:00. Technicians should note that this cycle triggers a fixed step increase of 5.5 percent across the occupancy series data.  
+
+**Data Continuity:**  
+Following the completion of the cycle, the 5.5 percent shift is confirmed to remain permanent after 2024-01-18 00:00:00. This baseline shift will persist until the scheduled next quarterly update.  
+
+**Maintenance Notes:**  
+This record is restricted to the specific hardware entity located on the East Ridgeline path. Data from collateral sensors or external environmental factors are not included in this log.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6135 · Off-entity</span></span></summary>
+          <pre class="doc-content">DETECTION SYSTEM MAINTENANCE LOG
+Log ID: QNXJ-VB-001
+Issuer: Department of Transportation ITS Operations Center
+Subject: Valley Basin Link Hardware Status
+
+[SYSTEM OVERVIEW]
+The Quantum-Node XJ (QN-XJ) sensor is currently monitoring the Valley Basin Link auxiliary lane. 
+
+[DIAGNOSTIC ENTRIES]
+- Date/Time Identified: 2024-01-11 12:00:00
+- Status: Lens Condensation Issue
+- Technical Impact: The identified condensation causes an increase in stochastic noise variance within the data stream. This is characterized as non-systematic interference rather than a deterministic linear trend.
+
+[OPERATIONAL SCHEDULE]
+- Scheduled Event: Transition to Low-Power Mode
+- Effective Date: 2024-01-18 00:00:00
+- Monitoring Impact: Transition to low-power mode will result in a reduced sampling frequency for the duration of the power state.
+
+[NOTES]
+This record is restricted to sensor technical status and operational scheduling only.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6137 · Off-window</span></span></summary>
+          <pre class="doc-content">Valley Basin Infrastructure Operations Team
+Maintenance Resolution Report
+
+Subject: Technical Maintenance Log – Vector-Mesh V5 Sensor
+
+Log ID: VBL-2023-V5-092
+Asset ID: Valley Basin Link Vector-Mesh V5
+Status: Resolved
+
+Incident History:
+On 2023-11-05, the Valley Basin Link Vector-Mesh V5 sensor began experiencing a technical calibration problem. Analysis of telemetry data confirmed that this calibration issue resulted in a consistent additive drift of 0.0425 units per hour, directly impacting the precision of occupancy rate measurements recorded by the unit.
+
+Resolution Details:
+The maintenance team was dispatched to address the discrepancy and successfully resolved the calibration issue on 2023-11-12. Following the 2023 repair, internal diagnostics indicate the sensor has operated with a neutral baseline and no further additive drift. Normal telemetry standards have been restored for all occupancy metrics.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6138 · Off-window</span></span></summary>
+          <pre class="doc-content">Valley Basin Transit Authority – Systems Engineering Division
+Technical Operational Report
+
+Subject: System Maintenance Summary: Valley Basin Link Vector-Mesh V5 Update
+
+This report summarizes the routine software update performed on the Valley Basin Link sensor system&#x27;s Vector-Mesh V5 units in early December 2023. 
+
+During the deployment phase, a temporary scaling adjustment was applied to the firmware, which resulted in a consistent 0.105 hourly increment in recorded occupancy data. This specific adjustment remained active for a duration of one week while the update cycle proceeded across the network. 
+
+On 2023-12-15, following the successful completion of the V5 update cycle, the data increment was neutralized. All system occupancy rate trends returned to their default operational state before the start of 2024. This document serves as a record of the technical execution and data correction period.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6140 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">INTERNAL OPERATIONAL REPORT
+
+TO: Regional Transit Department Operations Directorate
+FROM: Monitoring Team
+DATE: June 22, 2024
+SUBJECT: Valley Basin Link Traffic Performance Update - Vector-Mesh V5 Data
+
+OVERVIEW
+This operational report provides an assessment of current traffic performance on the Valley Basin Link, derived exclusively from the latest Vector-Mesh V5 sensor telemetry. The monitoring team has observed specific shifts in occupancy dynamics that require immediate operational attention.
+
+SENSOR FEEDBACK AND OCCUPANCY ANALYSIS
+Based on data harvested by the Vector-Mesh V5 sensor suite, the Valley Basin Link has captured an accelerating growth trajectory in occupancy during the latter half of the current week. While the initial periods of the week showed steady usage, the most recent data cycles indicate a sharp incline in the number of units utilizing the link.
+
+The monitoring team has determined that the underlying demand for the link is intensifying more rapidly on a daily basis. This is not a localized surge but a consistent day-over-day escalation in throughput requirements. Analysis indicates that the volume of traffic entering the link is compounding, placing increased pressure on existing capacity thresholds.
+
+PROJECTIONS AND CALIBRATION IMPACT
+Management should be advised that a scheduled sensor recalibration effort is slated for the coming period. Standard operational procedure often suggests a temporary dip or stabilization in reported figures during such maintenance. However, according to our current modeling, peak occupancy is expected to maintain upward momentum despite these upcoming sensor recalibration efforts. The strength of the current trend suggests that the physical volume of traffic will override any technical adjustments made to the sensor baseline.
+
+Critically, the projected peak occupancy for the Valley Basin Link is expected to reach a new high of approximately 60%. This represents a significant milestone for the link’s current configuration and signals a transition into a higher-density operational phase.
+
+CONCLUSION AND EVALUATION
+The internal evaluation by the Monitoring Team confirms that the underlying usage growth is identified as significantly outweighing sensor baseline adjustments. In short, the observed increases are the result of genuine organic demand rather than artifacts of sensor sensitivity or system resets. Staff should prepare for sustained 60% occupancy levels as the new operational baseline for the link.
+
+REPORT SCOPE AND LIMITATIONS
+This document occupies a narrow scope focused on the specific sensor data and occupancy trends of the Valley Basin Link. To ensure technical accuracy and focus, this report does not include broader network traffic data, budgetary implications, or historical long-term data prior to the current week. It is intended for immediate operational use by the monitoring and link management teams to address the immediate surge in demand captured by the Vector-Mesh V5 hardware.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_6141 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">### TECHNICAL OPERATIONS REPORT
+**REGIONAL TRANSPORTATION AUTHORITY**
+**Data Analytics Division**
+
+**DATE:** October 24, 2023
+**SUBJECT:** Transit Infrastructure Performance Analysis: Valley Basin Link (Vector-Mesh V5 Audit)
+**REPORT ID:** RTA-OPS-2023-VBL-09
+
+#### 1. EXECUTIVE SUMMARY
+This audit serves to assess the performance of the Valley Basin Link following observed fluctuations in system data reported by the Vector-Mesh V5 sensor array. The Data Analytics Division has conducted a rigorous comparison between technical drift—originating from known sensor calibration issues—and physical occupancy metrics. The findings confirm that while hardware errors exist, the recorded increase in link usage is structural in nature and signifies a persistent shift in transit demand.
+
+#### 2. DATA CALIBRATION AND VECTOR-MESH V5 AUDIT
+Historically, the Vector-Mesh V5 hardware has exhibited technical drift, leading to concerns regarding the validity of occupancy rate reporting. However, this audit has isolated the sensor calibration issues to determine the baseline error margin. 
+
+Our analysis confirms that peak hour growth on the Valley Basin Link significantly exceeds the technical drift attributed to these sensor inaccuracies. The data suggests that the margin of error provided by the V5 hardware is not sufficient to account for the current volume of traffic. Therefore, the surge in link usage is positively identified as structural rather than an artifact of sensor hardware malfunction.
+
+#### 3. OCCUPANCY TREND ANALYSIS
+Occupancy rates on the Valley Basin Link have entered a distinct phase of accelerating growth. This upward trajectory is evident across multiple data points and remains consistent even when adjusting for the maximum possible sensor variance. 
+
+Key observations include:
+- **Growth Velocity:** The rate of increase is currently compounding, suggesting that the link is reaching a new equilibrium of high-volume usage.
+- **Sustainability:** Analysis indicates that these upward occupancy trends are expected to persist independently of sensor maintenance schedules. Enhancements or recalibrations of the Vector-Mesh V5 units will likely provide more accurate reporting but will not alter the underlying reality of increased demand.
+
+#### 4. FORWARD PROJECTIONS
+Following the scheduled repair and recalibration of the Vector-Mesh V5 sensor array, the Data Analytics Division anticipates a more precise reading of the subsequent morning peak period. Current modeling suggests that once the hardware is standardized, the morning peak following the sensor repair is projected to exceed 53% occupancy. 
+
+This projection reinforces the conclusion that the link is managing a structural increase in passenger load that requires immediate operational consideration.
+
+#### 5. SCOPE LIMITATIONS
+This report is focused exclusively on the interaction between Vector-Mesh V5 hardware performance and structural demand on the Valley Basin Link. This performance analysis does not include broader traffic mitigation strategies, budget allocations for technical repairs, or long-term urban planning forecasts beyond the immediate post-repair peak mentioned in Section 4. Further strategic planning documents will address these areas in future reports.
+
+***
+**Authored by:**
+Data Analytics Division
+Regional Transportation Authority</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:vzantedeschi@gmail.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

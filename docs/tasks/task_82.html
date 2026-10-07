@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Ardentia City · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Ardentia City</h1>
+          <p>Forecasting <strong>electricity consumption</strong> · electricity increase in prediction task</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="Energy (electricity)">Energy (electricity)</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="144">144</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="36">36</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>Energy (electricity)</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Uncertain</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Implied</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">General</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Straightforward</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2012-10-03 13:00:00</span><span>Forecast horizon · through 2012-10-10 12:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,248.45 17.87,247.39 23.73,245.98 29.60,246.98 35.46,245.64 41.33,248.10 47.19,246.14 53.06,244.78 58.92,249.58 64.79,251.08 70.65,251.61 76.52,263.32 82.38,270.94 88.25,273.75 94.11,275.02 99.98,275.76 105.84,275.61 111.71,272.49 117.57,265.75 123.44,254.69 129.30,251.29 135.17,247.97 141.03,247.46 146.90,244.72 152.76,242.70 158.63,244.22 164.49,244.45 170.36,243.55 176.22,244.58 182.09,246.25 187.95,246.00 193.82,250.90 199.68,253.03 205.55,253.05 211.41,263.81 217.28,271.15 223.14,273.25 229.01,273.35 234.87,274.66 240.74,275.79 246.60,273.50 252.47,267.77 258.33,263.11 264.20,254.17 270.06,251.40 275.93,248.97 281.79,242.85 287.66,240.51 293.52,240.84 299.39,242.06 305.25,242.46 311.12,240.17 316.98,242.08 322.85,241.51 328.71,248.55 334.58,251.39 340.44,254.20 346.31,266.75 352.17,270.41 358.04,272.70 363.90,272.17 369.77,272.73 375.63,270.36 381.50,266.85 387.36,262.40 393.23,250.99 399.09,250.34 404.96,247.42 410.82,246.28 416.69,240.71 422.55,240.99 428.42,242.75 434.28,242.46 440.15,240.42 446.01,240.45 451.88,241.68 457.74,242.64 463.61,241.45 469.47,247.67 475.34,249.43 481.20,249.28 487.07,260.22 492.93,267.35 498.80,269.06 504.66,270.44 510.53,270.43 516.39,271.36 522.26,265.70 528.12,263.06 533.99,251.33 539.85,247.16 545.72,243.34 551.58,241.83 557.45,240.30 563.31,240.57 569.18,244.37 575.04,239.07 580.91,239.08 586.77,241.84 592.64,241.65 598.50,243.26 604.37,249.08 610.23,251.78 616.10,261.87 621.96,269.60 627.83,268.93 633.69,271.07 639.56,272.48 645.42,273.17 651.29,273.48 657.15,270.95 663.02,265.85 668.88,262.11 674.75,251.29 680.61,248.77 686.48,247.19 692.34,245.43 698.21,243.95 704.07,244.76 709.94,245.43 715.80,244.47 721.67,243.20 727.53,243.65 733.40,244.30 739.26,251.54 745.13,250.63 750.99,251.34 756.86,261.74 762.72,267.63 768.59,267.87 774.45,268.74 780.32,269.56 786.18,269.04 792.05,267.01 797.91,262.04 803.78,256.90 809.64,249.43 815.51,247.05 821.37,243.24 827.24,241.68 833.10,240.74" /><polyline class="chart-future" points="833.10,240.74 838.97,246.49 844.83,247.49 850.70,244.38 856.56,242.08 862.43,14.00 868.29,14.68 874.16,18.16 880.02,244.60 885.89,247.17 891.75,250.76 897.62,256.32 903.48,268.94 909.35,268.08 915.21,275.60 921.08,273.36 926.94,276.00 932.81,265.93 938.67,262.85 944.54,258.44 950.40,253.47 956.27,243.76 962.13,248.52 968.00,239.41" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (168 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2012-10-03 13:00:00</td><td>2849.5772658501</td></tr><tr><td>2</td><td>Observed history</td><td>2012-10-03 14:00:00</td><td>2912.3948948618</td></tr><tr><td>3</td><td>Observed history</td><td>2012-10-03 15:00:00</td><td>2995.9990754381</td></tr><tr><td>4</td><td>Observed history</td><td>2012-10-03 16:00:00</td><td>2936.6241224967</td></tr><tr><td>5</td><td>Observed history</td><td>2012-10-03 17:00:00</td><td>3016.1410781148</td></tr><tr><td>6</td><td>Observed history</td><td>2012-10-03 18:00:00</td><td>2869.9795732746</td></tr><tr><td>7</td><td>Observed history</td><td>2012-10-03 19:00:00</td><td>2986.7066796468</td></tr><tr><td>8</td><td>Observed history</td><td>2012-10-03 20:00:00</td><td>3066.888455762</td></tr><tr><td>9</td><td>Observed history</td><td>2012-10-03 21:00:00</td><td>2782.6679560927</td></tr><tr><td>10</td><td>Observed history</td><td>2012-10-03 22:00:00</td><td>2693.2375600866</td></tr><tr><td>11</td><td>Observed history</td><td>2012-10-03 23:00:00</td><td>2661.9296538372</td></tr><tr><td>12</td><td>Observed history</td><td>2012-10-04 00:00:00</td><td>1967.4012955567</td></tr><tr><td>13</td><td>Observed history</td><td>2012-10-04 01:00:00</td><td>1515.6707839959</td></tr><tr><td>14</td><td>Observed history</td><td>2012-10-04 02:00:00</td><td>1349.1352404037</td></tr><tr><td>15</td><td>Observed history</td><td>2012-10-04 03:00:00</td><td>1273.4706332749</td></tr><tr><td>16</td><td>Observed history</td><td>2012-10-04 04:00:00</td><td>1229.6741185857</td></tr><tr><td>17</td><td>Observed history</td><td>2012-10-04 05:00:00</td><td>1238.6434466747</td></tr><tr><td>18</td><td>Observed history</td><td>2012-10-04 06:00:00</td><td>1423.6177901462</td></tr><tr><td>19</td><td>Observed history</td><td>2012-10-04 07:00:00</td><td>1603.4921079395</td></tr><tr><td>20</td><td>Observed history</td><td>2012-10-04 08:00:00</td><td>1823.6914649733</td></tr><tr><td>21</td><td>Observed history</td><td>2012-10-04 09:00:00</td><td>2479.3371378663</td></tr><tr><td>22</td><td>Observed history</td><td>2012-10-04 10:00:00</td><td>2681.2494681263</td></tr><tr><td>23</td><td>Observed history</td><td>2012-10-04 11:00:00</td><td>2877.9508818488</td></tr><tr><td>24</td><td>Observed history</td><td>2012-10-04 12:00:00</td><td>2907.970659386</td></tr><tr><td>25</td><td>Observed history</td><td>2012-10-04 13:00:00</td><td>3070.961759864</td></tr><tr><td>26</td><td>Observed history</td><td>2012-10-04 14:00:00</td><td>3190.3460824708</td></tr><tr><td>27</td><td>Observed history</td><td>2012-10-04 15:00:00</td><td>3100.3907687287</td></tr><tr><td>28</td><td>Observed history</td><td>2012-10-04 16:00:00</td><td>3086.9856868143</td></tr><tr><td>29</td><td>Observed history</td><td>2012-10-04 17:00:00</td><td>3139.9443714562</td></tr><tr><td>30</td><td>Observed history</td><td>2012-10-04 18:00:00</td><td>3079.2664098807</td></tr><tr><td>31</td><td>Observed history</td><td>2012-10-04 19:00:00</td><td>2979.6736206744</td></tr><tr><td>32</td><td>Observed history</td><td>2012-10-04 20:00:00</td><td>2994.9114911074</td></tr><tr><td>33</td><td>Observed history</td><td>2012-10-04 21:00:00</td><td>2704.3883641817</td></tr><tr><td>34</td><td>Observed history</td><td>2012-10-04 22:00:00</td><td>2577.9240438683</td></tr><tr><td>35</td><td>Observed history</td><td>2012-10-04 23:00:00</td><td>2576.8941551698</td></tr><tr><td>36</td><td>Observed history</td><td>2012-10-05 00:00:00</td><td>1938.4659944474</td></tr><tr><td>37</td><td>Observed history</td><td>2012-10-05 01:00:00</td><td>1503.0460109553</td></tr><tr><td>38</td><td>Observed history</td><td>2012-10-05 02:00:00</td><td>1378.7377881789</td></tr><tr><td>39</td><td>Observed history</td><td>2012-10-05 03:00:00</td><td>1372.5784425232</td></tr><tr><td>40</td><td>Observed history</td><td>2012-10-05 04:00:00</td><td>1294.9910023961</td></tr><tr><td>41</td><td>Observed history</td><td>2012-10-05 05:00:00</td><td>1227.9052984645</td></tr><tr><td>42</td><td>Observed history</td><td>2012-10-05 06:00:00</td><td>1363.7415137977</td></tr><tr><td>43</td><td>Observed history</td><td>2012-10-05 07:00:00</td><td>1703.7778812034</td></tr><tr><td>44</td><td>Observed history</td><td>2012-10-05 08:00:00</td><td>1980.2221745067</td></tr><tr><td>45</td><td>Observed history</td><td>2012-10-05 09:00:00</td><td>2510.1015482782</td></tr><tr><td>46</td><td>Observed history</td><td>2012-10-05 10:00:00</td><td>2674.5978756839</td></tr><tr><td>47</td><td>Observed history</td><td>2012-10-05 11:00:00</td><td>2818.3835789571</td></tr><tr><td>48</td><td>Observed history</td><td>2012-10-05 12:00:00</td><td>3181.3578481056</td></tr><tr><td>49</td><td>Observed history</td><td>2012-10-05 13:00:00</td><td>3320.2317583016</td></tr><tr><td>50</td><td>Observed history</td><td>2012-10-05 14:00:00</td><td>3301.0026186632</td></tr><tr><td>51</td><td>Observed history</td><td>2012-10-05 15:00:00</td><td>3228.627295118</td></tr><tr><td>52</td><td>Observed history</td><td>2012-10-05 16:00:00</td><td>3205.0224362015</td></tr><tr><td>53</td><td>Observed history</td><td>2012-10-05 17:00:00</td><td>3340.595691017</td></tr><tr><td>54</td><td>Observed history</td><td>2012-10-05 18:00:00</td><td>3227.3649225898</td></tr><tr><td>55</td><td>Observed history</td><td>2012-10-05 19:00:00</td><td>3249.5330610108</td></tr><tr><td>56</td><td>Observed history</td><td>2012-10-05 20:00:00</td><td>3260.9762429811</td></tr><tr><td>57</td><td>Observed history</td><td>2012-10-05 21:00:00</td><td>2843.4419292151</td></tr><tr><td>58</td><td>Observed history</td><td>2012-10-05 22:00:00</td><td>2675.3670640417</td></tr><tr><td>59</td><td>Observed history</td><td>2012-10-05 23:00:00</td><td>2508.679706254</td></tr><tr><td>60</td><td>Observed history</td><td>2012-10-06 00:00:00</td><td>1764.3496895202</td></tr><tr><td>61</td><td>Observed history</td><td>2012-10-06 01:00:00</td><td>1546.96055947</td></tr><tr><td>62</td><td>Observed history</td><td>2012-10-06 02:00:00</td><td>1411.418089117</td></tr><tr><td>63</td><td>Observed history</td><td>2012-10-06 03:00:00</td><td>1442.4173743372</td></tr><tr><td>64</td><td>Observed history</td><td>2012-10-06 04:00:00</td><td>1409.2828683814</td></tr><tr><td>65</td><td>Observed history</td><td>2012-10-06 05:00:00</td><td>1550.1255060469</td></tr><tr><td>66</td><td>Observed history</td><td>2012-10-06 06:00:00</td><td>1758.0326101859</td></tr><tr><td>67</td><td>Observed history</td><td>2012-10-06 07:00:00</td><td>2022.1134919145</td></tr><tr><td>68</td><td>Observed history</td><td>2012-10-06 08:00:00</td><td>2698.6547060228</td></tr><tr><td>69</td><td>Observed history</td><td>2012-10-06 09:00:00</td><td>2737.1199249058</td></tr><tr><td>70</td><td>Observed history</td><td>2012-10-06 10:00:00</td><td>2910.443011798</td></tr><tr><td>71</td><td>Observed history</td><td>2012-10-06 11:00:00</td><td>2978.3682404578</td></tr><tr><td>72</td><td>Observed history</td><td>2012-10-06 12:00:00</td><td>3308.3525305608</td></tr><tr><td>73</td><td>Observed history</td><td>2012-10-06 13:00:00</td><td>3291.7884668302</td></tr><tr><td>74</td><td>Observed history</td><td>2012-10-06 14:00:00</td><td>3187.7517220354</td></tr><tr><td>75</td><td>Observed history</td><td>2012-10-06 15:00:00</td><td>3204.9236895233</td></tr><tr><td>76</td><td>Observed history</td><td>2012-10-06 16:00:00</td><td>3325.5442964251</td></tr><tr><td>77</td><td>Observed history</td><td>2012-10-06 17:00:00</td><td>3324.2469725293</td></tr><tr><td>78</td><td>Observed history</td><td>2012-10-06 18:00:00</td><td>3251.3005637522</td></tr><tr><td>79</td><td>Observed history</td><td>2012-10-06 19:00:00</td><td>3193.9688431415</td></tr><tr><td>80</td><td>Observed history</td><td>2012-10-06 20:00:00</td><td>3264.3704809467</td></tr><tr><td>81</td><td>Observed history</td><td>2012-10-06 21:00:00</td><td>2895.4935363541</td></tr><tr><td>82</td><td>Observed history</td><td>2012-10-06 22:00:00</td><td>2791.1018978952</td></tr><tr><td>83</td><td>Observed history</td><td>2012-10-06 23:00:00</td><td>2800.5312058794</td></tr><tr><td>84</td><td>Observed history</td><td>2012-10-07 00:00:00</td><td>2151.5665839073</td></tr><tr><td>85</td><td>Observed history</td><td>2012-10-07 01:00:00</td><td>1728.6765972961</td></tr><tr><td>86</td><td>Observed history</td><td>2012-10-07 02:00:00</td><td>1627.0487090476</td></tr><tr><td>87</td><td>Observed history</td><td>2012-10-07 03:00:00</td><td>1545.318447569</td></tr><tr><td>88</td><td>Observed history</td><td>2012-10-07 04:00:00</td><td>1545.6999760282</td></tr><tr><td>89</td><td>Observed history</td><td>2012-10-07 05:00:00</td><td>1490.8337493595</td></tr><tr><td>90</td><td>Observed history</td><td>2012-10-07 06:00:00</td><td>1614.9024435336</td></tr><tr><td>91</td><td>Observed history</td><td>2012-10-07 07:00:00</td><td>1826.559184069</td></tr><tr><td>92</td><td>Observed history</td><td>2012-10-07 08:00:00</td><td>1982.9076627393</td></tr><tr><td>93</td><td>Observed history</td><td>2012-10-07 09:00:00</td><td>2678.8388982404</td></tr><tr><td>94</td><td>Observed history</td><td>2012-10-07 10:00:00</td><td>2925.7382379523</td></tr><tr><td>95</td><td>Observed history</td><td>2012-10-07 11:00:00</td><td>3152.5326519243</td></tr><tr><td>96</td><td>Observed history</td><td>2012-10-07 12:00:00</td><td>3242.1866797744</td></tr><tr><td>97</td><td>Observed history</td><td>2012-10-07 13:00:00</td><td>3332.809426902</td></tr><tr><td>98</td><td>Observed history</td><td>2012-10-07 14:00:00</td><td>3317.0360481441</td></tr><tr><td>99</td><td>Observed history</td><td>2012-10-07 15:00:00</td><td>3091.2279423759</td></tr><tr><td>100</td><td>Observed history</td><td>2012-10-07 16:00:00</td><td>3405.6152155843</td></tr><tr><td>101</td><td>Observed history</td><td>2012-10-07 17:00:00</td><td>3405.4042467574</td></tr><tr><td>102</td><td>Observed history</td><td>2012-10-07 18:00:00</td><td>3241.2429139484</td></tr><tr><td>103</td><td>Observed history</td><td>2012-10-07 19:00:00</td><td>3252.6145135256</td></tr><tr><td>104</td><td>Observed history</td><td>2012-10-07 20:00:00</td><td>3157.4666873</td></tr><tr><td>105</td><td>Observed history</td><td>2012-10-07 21:00:00</td><td>2812.0264474906</td></tr><tr><td>106</td><td>Observed history</td><td>2012-10-07 22:00:00</td><td>2651.861323384</td></tr><tr><td>107</td><td>Observed history</td><td>2012-10-07 23:00:00</td><td>2053.2760579251</td></tr><tr><td>108</td><td>Observed history</td><td>2012-10-08 00:00:00</td><td>1595.2863204347</td></tr><tr><td>109</td><td>Observed history</td><td>2012-10-08 01:00:00</td><td>1634.6742739623</td></tr><tr><td>110</td><td>Observed history</td><td>2012-10-08 02:00:00</td><td>1507.707087314</td></tr><tr><td>111</td><td>Observed history</td><td>2012-10-08 03:00:00</td><td>1424.3763337724</td></tr><tr><td>112</td><td>Observed history</td><td>2012-10-08 04:00:00</td><td>1383.3273552885</td></tr><tr><td>113</td><td>Observed history</td><td>2012-10-08 05:00:00</td><td>1364.8133484701</td></tr><tr><td>114</td><td>Observed history</td><td>2012-10-08 06:00:00</td><td>1515.1600900018</td></tr><tr><td>115</td><td>Observed history</td><td>2012-10-08 07:00:00</td><td>1817.7497125473</td></tr><tr><td>116</td><td>Observed history</td><td>2012-10-08 08:00:00</td><td>2039.1988435146</td></tr><tr><td>117</td><td>Observed history</td><td>2012-10-08 09:00:00</td><td>2681.0986099299</td></tr><tr><td>118</td><td>Observed history</td><td>2012-10-08 10:00:00</td><td>2830.4428412354</td></tr><tr><td>119</td><td>Observed history</td><td>2012-10-08 11:00:00</td><td>2924.3255589578</td></tr><tr><td>120</td><td>Observed history</td><td>2012-10-08 12:00:00</td><td>3028.691932249</td></tr><tr><td>121</td><td>Observed history</td><td>2012-10-08 13:00:00</td><td>3116.1398354321</td></tr><tr><td>122</td><td>Observed history</td><td>2012-10-08 14:00:00</td><td>3068.2273671839</td></tr><tr><td>123</td><td>Observed history</td><td>2012-10-08 15:00:00</td><td>3028.6146004245</td></tr><tr><td>124</td><td>Observed history</td><td>2012-10-08 16:00:00</td><td>3085.4604847036</td></tr><tr><td>125</td><td>Observed history</td><td>2012-10-08 17:00:00</td><td>3160.7928892894</td></tr><tr><td>126</td><td>Observed history</td><td>2012-10-08 18:00:00</td><td>3112.9535025664</td></tr><tr><td>127</td><td>Observed history</td><td>2012-10-08 19:00:00</td><td>3134.2049673461</td></tr><tr><td>128</td><td>Observed history</td><td>2012-10-08 20:00:00</td><td>3095.347459526</td></tr><tr><td>129</td><td>Observed history</td><td>2012-10-08 21:00:00</td><td>2666.1014374187</td></tr><tr><td>130</td><td>Observed history</td><td>2012-10-08 22:00:00</td><td>2720.195162608</td></tr><tr><td>131</td><td>Observed history</td><td>2012-10-08 23:00:00</td><td>2678.3605804984</td></tr><tr><td>132</td><td>Observed history</td><td>2012-10-09 00:00:00</td><td>2061.4839405618</td></tr><tr><td>133</td><td>Observed history</td><td>2012-10-09 01:00:00</td><td>1712.0888833866</td></tr><tr><td>134</td><td>Observed history</td><td>2012-10-09 02:00:00</td><td>1697.7456975478</td></tr><tr><td>135</td><td>Observed history</td><td>2012-10-09 03:00:00</td><td>1645.9947710096</td></tr><tr><td>136</td><td>Observed history</td><td>2012-10-09 04:00:00</td><td>1597.2642418112</td></tr><tr><td>137</td><td>Observed history</td><td>2012-10-09 05:00:00</td><td>1628.56768374</td></tr><tr><td>138</td><td>Observed history</td><td>2012-10-09 06:00:00</td><td>1748.5947750573</td></tr><tr><td>139</td><td>Observed history</td><td>2012-10-09 07:00:00</td><td>2043.2147272274</td></tr><tr><td>140</td><td>Observed history</td><td>2012-10-09 08:00:00</td><td>2348.0559706323</td></tr><tr><td>141</td><td>Observed history</td><td>2012-10-09 09:00:00</td><td>2791.5156143893</td></tr><tr><td>142</td><td>Observed history</td><td>2012-10-09 10:00:00</td><td>2932.4382438012</td></tr><tr><td>143</td><td>Observed history</td><td>2012-10-09 11:00:00</td><td>3158.4872494593</td></tr><tr><td>144</td><td>Observed history</td><td>2012-10-09 12:00:00</td><td>3251.1104523266</td></tr><tr class="future"><td>145</td><td>Forecast horizon</td><td>2012-10-09 13:00:00</td><td>3306.4741385696</td></tr><tr class="future"><td>146</td><td>Forecast horizon</td><td>2012-10-09 14:00:00</td><td>2965.5678280322</td></tr><tr class="future"><td>147</td><td>Forecast horizon</td><td>2012-10-09 15:00:00</td><td>2906.5024835152</td></tr><tr class="future"><td>148</td><td>Forecast horizon</td><td>2012-10-09 16:00:00</td><td>3090.7526676863</td></tr><tr class="future"><td>149</td><td>Forecast horizon</td><td>2012-10-09 17:00:00</td><td>3227.4065827848</td></tr><tr class="future"><td>150</td><td>Forecast horizon</td><td>2012-10-09 18:00:00</td><td>16754.824092096</td></tr><tr class="future"><td>151</td><td>Forecast horizon</td><td>2012-10-09 19:00:00</td><td>16714.5345798109</td></tr><tr class="future"><td>152</td><td>Forecast horizon</td><td>2012-10-09 20:00:00</td><td>16508.3705540255</td></tr><tr class="future"><td>153</td><td>Forecast horizon</td><td>2012-10-09 21:00:00</td><td>3078.0590907026</td></tr><tr class="future"><td>154</td><td>Forecast horizon</td><td>2012-10-09 22:00:00</td><td>2925.632827312</td></tr><tr class="future"><td>155</td><td>Forecast horizon</td><td>2012-10-09 23:00:00</td><td>2712.755854788</td></tr><tr class="future"><td>156</td><td>Forecast horizon</td><td>2012-10-10 00:00:00</td><td>2382.423550912</td></tr><tr class="future"><td>157</td><td>Forecast horizon</td><td>2012-10-10 01:00:00</td><td>1634.0269895307</td></tr><tr class="future"><td>158</td><td>Forecast horizon</td><td>2012-10-10 02:00:00</td><td>1685.3201001031</td></tr><tr class="future"><td>159</td><td>Forecast horizon</td><td>2012-10-10 03:00:00</td><td>1239.3774489685</td></tr><tr class="future"><td>160</td><td>Forecast horizon</td><td>2012-10-10 04:00:00</td><td>1372.314253099</td></tr><tr class="future"><td>161</td><td>Forecast horizon</td><td>2012-10-10 05:00:00</td><td>1215.4750978417</td></tr><tr class="future"><td>162</td><td>Forecast horizon</td><td>2012-10-10 06:00:00</td><td>1812.9731719371</td></tr><tr class="future"><td>163</td><td>Forecast horizon</td><td>2012-10-10 07:00:00</td><td>1995.3306938469</td></tr><tr class="future"><td>164</td><td>Forecast horizon</td><td>2012-10-10 08:00:00</td><td>2257.0234699239</td></tr><tr class="future"><td>165</td><td>Forecast horizon</td><td>2012-10-10 09:00:00</td><td>2551.7606703863</td></tr><tr class="future"><td>166</td><td>Forecast horizon</td><td>2012-10-10 10:00:00</td><td>3127.7827184524</td></tr><tr class="future"><td>167</td><td>Forecast horizon</td><td>2012-10-10 11:00:00</td><td>2845.2415523361</td></tr><tr class="future"><td>168</td><td>Forecast horizon</td><td>2012-10-10 12:00:00</td><td>3385.8030056001</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-82-context" id="forecast-task-82-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-82-context" id="forecast-task-82-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-82-context" id="forecast-task-82-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-82-view" id="forecast-task-82-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-82-view" id="forecast-task-82-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-82-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-82-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-82-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-82-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-82-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 254.49 L 33.65 253.54 L 39.31 252.27 L 44.96 253.17 L 50.61 251.97 L 56.26 254.18 L 61.92 252.41 L 67.57 251.20 L 73.22 255.50 L 78.87 256.85 L 84.53 257.33 L 90.18 267.83 L 95.83 274.67 L 101.49 277.19 L 107.14 278.33 L 112.79 279.00 L 118.44 278.86 L 124.10 276.06 L 129.75 273.34 L 135.40 270.01 L 141.05 260.09 L 146.71 257.03 L 152.36 254.06 L 158.01 253.60 L 163.66 251.14 L 169.32 249.33 L 174.97 250.69 L 180.62 250.89 L 186.28 250.09 L 191.93 251.01 L 197.58 252.52 L 203.23 252.29 L 208.89 256.68 L 214.54 258.60 L 220.19 258.61 L 225.84 268.27 L 231.50 274.86 L 237.15 276.74 L 242.80 276.83 L 248.46 278.01 L 254.11 279.02 L 259.76 276.97 L 265.41 271.82 L 271.07 267.64 L 276.72 259.62 L 282.37 257.13 L 288.02 254.96 L 293.68 249.47 L 299.33 247.37 L 304.98 247.66 L 310.63 248.75 L 316.29 249.11 L 321.94 247.06 L 327.59 248.77 L 333.25 248.44 L 338.90 248.26 L 344.55 254.58 L 350.20 257.12 L 355.86 259.64 L 361.51 270.91 L 367.16 274.20 L 372.81 276.25 L 378.47 275.78 L 384.12 276.28 L 389.77 274.15 L 395.43 271.00 L 401.08 267.01 L 406.73 256.77 L 412.38 256.19 L 418.04 253.57 L 423.69 252.54 L 429.34 247.55 L 434.99 247.80 L 440.65 249.37 L 446.30 249.11 L 451.95 247.29 L 457.60 247.30 L 463.26 248.41 L 468.91 249.28 L 474.56 248.21 L 480.22 253.79 L 485.87 255.37 L 491.52 255.23 L 497.17 265.05 L 502.83 271.45 L 508.48 272.98 L 514.13 274.22 L 519.78 274.22 L 525.44 275.05 L 531.09 273.17 L 536.74 269.97 L 542.40 267.60 L 548.05 257.07 L 553.70 253.33 L 559.35 249.90 L 565.01 248.55 L 570.66 247.18 L 576.31 247.41 L 581.96 250.83 L 587.62 246.07 L 593.27 246.08 L 598.92 248.56 L 604.57 248.39 L 610.23 249.83 L 615.88 255.05 L 621.53 257.48 L 627.19 266.54 L 632.84 273.46 L 638.49 272.87 L 644.14 274.79 L 649.80 276.05 L 655.45 276.67 L 661.10 276.95 L 666.75 274.68 L 672.41 270.10 L 678.06 266.75 L 683.71 257.04 L 689.37 254.78 L 695.02 253.36 L 700.67 251.78 L 706.32 250.45 L 711.98 251.18 L 717.63 251.78 L 723.28 250.92 L 728.93 249.78 L 734.59 250.50 L 740.24 250.18 L 745.89 250.77 L 751.54 257.26 L 757.20 256.44 L 762.85 257.08 L 768.50 266.41 L 774.16 271.70 L 779.81 271.91 L 785.46 272.70 L 791.11 273.43 L 796.77 272.96 L 802.42 271.15 L 808.07 266.69 L 813.72 262.08 L 819.38 255.37 L 825.03 253.23 L 830.68 249.81 L 836.34 248.41" /><path class="forecast-svg-actual" d="M 841.99 247.57 L 847.64 252.73 L 853.29 253.63 L 858.95 250.84 L 864.60 248.77 L 870.25 44.09 L 875.90 44.70 L 881.56 47.82 L 887.21 251.03 L 892.86 253.34 L 898.51 256.56 L 904.17 261.56 L 909.82 272.88 L 915.47 272.10 L 921.13 278.85 L 926.78 276.84 L 932.43 279.21 L 938.08 270.17 L 943.74 267.41 L 949.39 263.45 L 955.04 258.99 L 960.69 250.28 L 966.35 254.55 L 972.00 246.37" /><path class="forecast-svg-band" fill="#b86d4a" d="M 841.99 245.19 L 847.64 246.61 L 853.29 247.81 L 858.95 245.82 L 864.60 245.98 L 870.25 247.94 L 875.90 248.13 L 881.56 247.82 L 887.21 253.07 L 892.86 255.07 L 898.51 257.46 L 904.17 266.81 L 909.82 270.96 L 915.47 272.94 L 921.13 273.86 L 926.78 274.26 L 932.43 274.30 L 938.08 272.81 L 943.74 268.89 L 949.39 264.11 L 955.04 256.14 L 960.69 251.94 L 966.35 250.62 L 972.00 247.01 L 972.00 251.97 L 966.35 253.21 L 960.69 255.99 L 955.04 258.98 L 949.39 265.95 L 943.74 270.39 L 938.08 274.12 L 932.43 275.76 L 926.78 275.53 L 921.13 275.29 L 915.47 274.21 L 909.82 272.49 L 904.17 268.48 L 898.51 259.73 L 892.86 257.62 L 887.21 255.80 L 881.56 250.90 L 875.90 250.92 L 870.25 251.30 L 864.60 249.69 L 858.95 250.02 L 853.29 250.38 L 847.64 249.67 L 841.99 250.06 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 841.99 247.62 L 847.64 248.14 L 853.29 249.10 L 858.95 247.92 L 864.60 247.83 L 870.25 249.62 L 875.90 249.53 L 881.56 249.36 L 887.21 254.44 L 892.86 256.35 L 898.51 258.60 L 904.17 267.65 L 909.82 271.73 L 915.47 273.57 L 921.13 274.58 L 926.78 274.90 L 932.43 275.03 L 938.08 273.46 L 943.74 269.64 L 949.39 265.03 L 955.04 257.56 L 960.69 253.96 L 966.35 251.91 L 972.00 249.49" /><circle class="forecast-svg-start" fill="#b86d4a" cx="841.99" cy="247.62" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 841.99 247.86 L 847.64 248.19 L 853.29 248.60 L 858.95 245.61 L 864.60 234.45 L 870.25 100.31 L 875.90 83.12 L 881.56 70.26 L 887.21 68.88 L 892.86 125.44 L 898.51 137.68 L 904.17 221.92 L 909.82 245.01 L 915.47 253.06 L 921.13 256.93 L 926.78 259.24 L 932.43 259.87 L 938.08 257.30 L 943.74 253.04 L 949.39 248.74 L 955.04 248.49 L 960.69 245.88 L 966.35 243.36 L 972.00 241.55" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="247.86" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 841.99 250.02 L 847.64 250.56 L 853.29 251.47 L 858.95 251.78 L 864.60 251.95 L 870.25 199.26 L 875.90 175.65 L 881.56 154.49 L 887.21 137.24 L 892.86 214.70 L 898.51 221.83 L 904.17 238.12 L 909.82 248.72 L 915.47 255.74 L 921.13 260.16 L 926.78 261.78 L 932.43 262.95 L 938.08 261.55 L 943.74 258.41 L 949.39 254.21 L 955.04 247.83 L 960.69 245.25 L 966.35 243.45 L 972.00 241.84" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="250.02" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 254.49 L 33.65 253.54 L 39.31 252.27 L 44.96 253.17 L 50.61 251.97 L 56.26 254.18 L 61.92 252.41 L 67.57 251.20 L 73.22 255.50 L 78.87 256.85 L 84.53 257.33 L 90.18 267.83 L 95.83 274.67 L 101.49 277.19 L 107.14 278.33 L 112.79 279.00 L 118.44 278.86 L 124.10 276.06 L 129.75 273.34 L 135.40 270.01 L 141.05 260.09 L 146.71 257.03 L 152.36 254.06 L 158.01 253.60 L 163.66 251.14 L 169.32 249.33 L 174.97 250.69 L 180.62 250.89 L 186.28 250.09 L 191.93 251.01 L 197.58 252.52 L 203.23 252.29 L 208.89 256.68 L 214.54 258.60 L 220.19 258.61 L 225.84 268.27 L 231.50 274.86 L 237.15 276.74 L 242.80 276.83 L 248.46 278.01 L 254.11 279.02 L 259.76 276.97 L 265.41 271.82 L 271.07 267.64 L 276.72 259.62 L 282.37 257.13 L 288.02 254.96 L 293.68 249.47 L 299.33 247.37 L 304.98 247.66 L 310.63 248.75 L 316.29 249.11 L 321.94 247.06 L 327.59 248.77 L 333.25 248.44 L 338.90 248.26 L 344.55 254.58 L 350.20 257.12 L 355.86 259.64 L 361.51 270.91 L 367.16 274.20 L 372.81 276.25 L 378.47 275.78 L 384.12 276.28 L 389.77 274.15 L 395.43 271.00 L 401.08 267.01 L 406.73 256.77 L 412.38 256.19 L 418.04 253.57 L 423.69 252.54 L 429.34 247.55 L 434.99 247.80 L 440.65 249.37 L 446.30 249.11 L 451.95 247.29 L 457.60 247.30 L 463.26 248.41 L 468.91 249.28 L 474.56 248.21 L 480.22 253.79 L 485.87 255.37 L 491.52 255.23 L 497.17 265.05 L 502.83 271.45 L 508.48 272.98 L 514.13 274.22 L 519.78 274.22 L 525.44 275.05 L 531.09 273.17 L 536.74 269.97 L 542.40 267.60 L 548.05 257.07 L 553.70 253.33 L 559.35 249.90 L 565.01 248.55 L 570.66 247.18 L 576.31 247.41 L 581.96 250.83 L 587.62 246.07 L 593.27 246.08 L 598.92 248.56 L 604.57 248.39 L 610.23 249.83 L 615.88 255.05 L 621.53 257.48 L 627.19 266.54 L 632.84 273.46 L 638.49 272.87 L 644.14 274.79 L 649.80 276.05 L 655.45 276.67 L 661.10 276.95 L 666.75 274.68 L 672.41 270.10 L 678.06 266.75 L 683.71 257.04 L 689.37 254.78 L 695.02 253.36 L 700.67 251.78 L 706.32 250.45 L 711.98 251.18 L 717.63 251.78 L 723.28 250.92 L 728.93 249.78 L 734.59 250.50 L 740.24 250.18 L 745.89 250.77 L 751.54 257.26 L 757.20 256.44 L 762.85 257.08 L 768.50 266.41 L 774.16 271.70 L 779.81 271.91 L 785.46 272.70 L 791.11 273.43 L 796.77 272.96 L 802.42 271.15 L 808.07 266.69 L 813.72 262.08 L 819.38 255.37 L 825.03 253.23 L 830.68 249.81 L 836.34 248.41" /><path class="forecast-svg-actual" d="M 841.99 247.57 L 847.64 252.73 L 853.29 253.63 L 858.95 250.84 L 864.60 248.77 L 870.25 44.09 L 875.90 44.70 L 881.56 47.82 L 887.21 251.03 L 892.86 253.34 L 898.51 256.56 L 904.17 261.56 L 909.82 272.88 L 915.47 272.10 L 921.13 278.85 L 926.78 276.84 L 932.43 279.21 L 938.08 270.17 L 943.74 267.41 L 949.39 263.45 L 955.04 258.99 L 960.69 250.28 L 966.35 254.55 L 972.00 246.37" /><path class="forecast-svg-band" fill="#b86d4a" d="M 841.99 245.19 L 847.64 246.61 L 853.29 247.81 L 858.95 245.82 L 864.60 245.98 L 870.25 247.94 L 875.90 248.13 L 881.56 247.82 L 887.21 253.07 L 892.86 255.07 L 898.51 257.46 L 904.17 266.81 L 909.82 270.96 L 915.47 272.94 L 921.13 273.86 L 926.78 274.26 L 932.43 274.30 L 938.08 272.81 L 943.74 268.89 L 949.39 264.11 L 955.04 256.14 L 960.69 251.94 L 966.35 250.62 L 972.00 247.01 L 972.00 251.97 L 966.35 253.21 L 960.69 255.99 L 955.04 258.98 L 949.39 265.95 L 943.74 270.39 L 938.08 274.12 L 932.43 275.76 L 926.78 275.53 L 921.13 275.29 L 915.47 274.21 L 909.82 272.49 L 904.17 268.48 L 898.51 259.73 L 892.86 257.62 L 887.21 255.80 L 881.56 250.90 L 875.90 250.92 L 870.25 251.30 L 864.60 249.69 L 858.95 250.02 L 853.29 250.38 L 847.64 249.67 L 841.99 250.06 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 841.99 247.62 L 847.64 248.14 L 853.29 249.10 L 858.95 247.92 L 864.60 247.83 L 870.25 249.62 L 875.90 249.53 L 881.56 249.36 L 887.21 254.44 L 892.86 256.35 L 898.51 258.60 L 904.17 267.65 L 909.82 271.73 L 915.47 273.57 L 921.13 274.58 L 926.78 274.90 L 932.43 275.03 L 938.08 273.46 L 943.74 269.64 L 949.39 265.03 L 955.04 257.56 L 960.69 253.96 L 966.35 251.91 L 972.00 249.49" /><circle class="forecast-svg-start" fill="#b86d4a" cx="841.99" cy="247.62" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 254.49 L 33.65 253.54 L 39.31 252.27 L 44.96 253.17 L 50.61 251.97 L 56.26 254.18 L 61.92 252.41 L 67.57 251.20 L 73.22 255.50 L 78.87 256.85 L 84.53 257.33 L 90.18 267.83 L 95.83 274.67 L 101.49 277.19 L 107.14 278.33 L 112.79 279.00 L 118.44 278.86 L 124.10 276.06 L 129.75 273.34 L 135.40 270.01 L 141.05 260.09 L 146.71 257.03 L 152.36 254.06 L 158.01 253.60 L 163.66 251.14 L 169.32 249.33 L 174.97 250.69 L 180.62 250.89 L 186.28 250.09 L 191.93 251.01 L 197.58 252.52 L 203.23 252.29 L 208.89 256.68 L 214.54 258.60 L 220.19 258.61 L 225.84 268.27 L 231.50 274.86 L 237.15 276.74 L 242.80 276.83 L 248.46 278.01 L 254.11 279.02 L 259.76 276.97 L 265.41 271.82 L 271.07 267.64 L 276.72 259.62 L 282.37 257.13 L 288.02 254.96 L 293.68 249.47 L 299.33 247.37 L 304.98 247.66 L 310.63 248.75 L 316.29 249.11 L 321.94 247.06 L 327.59 248.77 L 333.25 248.44 L 338.90 248.26 L 344.55 254.58 L 350.20 257.12 L 355.86 259.64 L 361.51 270.91 L 367.16 274.20 L 372.81 276.25 L 378.47 275.78 L 384.12 276.28 L 389.77 274.15 L 395.43 271.00 L 401.08 267.01 L 406.73 256.77 L 412.38 256.19 L 418.04 253.57 L 423.69 252.54 L 429.34 247.55 L 434.99 247.80 L 440.65 249.37 L 446.30 249.11 L 451.95 247.29 L 457.60 247.30 L 463.26 248.41 L 468.91 249.28 L 474.56 248.21 L 480.22 253.79 L 485.87 255.37 L 491.52 255.23 L 497.17 265.05 L 502.83 271.45 L 508.48 272.98 L 514.13 274.22 L 519.78 274.22 L 525.44 275.05 L 531.09 273.17 L 536.74 269.97 L 542.40 267.60 L 548.05 257.07 L 553.70 253.33 L 559.35 249.90 L 565.01 248.55 L 570.66 247.18 L 576.31 247.41 L 581.96 250.83 L 587.62 246.07 L 593.27 246.08 L 598.92 248.56 L 604.57 248.39 L 610.23 249.83 L 615.88 255.05 L 621.53 257.48 L 627.19 266.54 L 632.84 273.46 L 638.49 272.87 L 644.14 274.79 L 649.80 276.05 L 655.45 276.67 L 661.10 276.95 L 666.75 274.68 L 672.41 270.10 L 678.06 266.75 L 683.71 257.04 L 689.37 254.78 L 695.02 253.36 L 700.67 251.78 L 706.32 250.45 L 711.98 251.18 L 717.63 251.78 L 723.28 250.92 L 728.93 249.78 L 734.59 250.50 L 740.24 250.18 L 745.89 250.77 L 751.54 257.26 L 757.20 256.44 L 762.85 257.08 L 768.50 266.41 L 774.16 271.70 L 779.81 271.91 L 785.46 272.70 L 791.11 273.43 L 796.77 272.96 L 802.42 271.15 L 808.07 266.69 L 813.72 262.08 L 819.38 255.37 L 825.03 253.23 L 830.68 249.81 L 836.34 248.41" /><path class="forecast-svg-actual" d="M 841.99 247.57 L 847.64 252.73 L 853.29 253.63 L 858.95 250.84 L 864.60 248.77 L 870.25 44.09 L 875.90 44.70 L 881.56 47.82 L 887.21 251.03 L 892.86 253.34 L 898.51 256.56 L 904.17 261.56 L 909.82 272.88 L 915.47 272.10 L 921.13 278.85 L 926.78 276.84 L 932.43 279.21 L 938.08 270.17 L 943.74 267.41 L 949.39 263.45 L 955.04 258.99 L 960.69 250.28 L 966.35 254.55 L 972.00 246.37" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 841.99 247.17 L 847.64 247.02 L 853.29 246.83 L 858.95 234.72 L 864.60 204.09 L 870.25 55.55 L 875.90 52.80 L 881.56 50.58 L 887.21 54.80 L 892.86 43.79 L 898.51 51.71 L 904.17 157.74 L 909.82 187.52 L 915.47 197.23 L 921.13 201.11 L 926.78 203.03 L 932.43 203.54 L 938.08 201.70 L 943.74 198.67 L 949.39 195.55 L 955.04 212.15 L 960.69 210.04 L 966.35 208.02 L 972.00 206.54 L 972.00 276.55 L 966.35 278.69 L 960.69 281.71 L 955.04 284.84 L 949.39 301.92 L 943.74 307.41 L 938.08 312.91 L 932.43 316.21 L 926.78 315.46 L 921.13 312.74 L 915.47 308.89 L 909.82 302.50 L 904.17 286.09 L 898.51 223.65 L 892.86 207.09 L 887.21 82.95 L 881.56 89.95 L 875.90 113.44 L 870.25 145.07 L 864.60 264.82 L 858.95 256.50 L 853.29 250.38 L 847.64 249.37 L 841.99 248.55 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 841.99 247.86 L 847.64 248.19 L 853.29 248.60 L 858.95 245.61 L 864.60 234.45 L 870.25 100.31 L 875.90 83.12 L 881.56 70.26 L 887.21 68.88 L 892.86 125.44 L 898.51 137.68 L 904.17 221.92 L 909.82 245.01 L 915.47 253.06 L 921.13 256.93 L 926.78 259.24 L 932.43 259.87 L 938.08 257.30 L 943.74 253.04 L 949.39 248.74 L 955.04 248.49 L 960.69 245.88 L 966.35 243.36 L 972.00 241.55" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="247.86" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 254.49 L 33.65 253.54 L 39.31 252.27 L 44.96 253.17 L 50.61 251.97 L 56.26 254.18 L 61.92 252.41 L 67.57 251.20 L 73.22 255.50 L 78.87 256.85 L 84.53 257.33 L 90.18 267.83 L 95.83 274.67 L 101.49 277.19 L 107.14 278.33 L 112.79 279.00 L 118.44 278.86 L 124.10 276.06 L 129.75 273.34 L 135.40 270.01 L 141.05 260.09 L 146.71 257.03 L 152.36 254.06 L 158.01 253.60 L 163.66 251.14 L 169.32 249.33 L 174.97 250.69 L 180.62 250.89 L 186.28 250.09 L 191.93 251.01 L 197.58 252.52 L 203.23 252.29 L 208.89 256.68 L 214.54 258.60 L 220.19 258.61 L 225.84 268.27 L 231.50 274.86 L 237.15 276.74 L 242.80 276.83 L 248.46 278.01 L 254.11 279.02 L 259.76 276.97 L 265.41 271.82 L 271.07 267.64 L 276.72 259.62 L 282.37 257.13 L 288.02 254.96 L 293.68 249.47 L 299.33 247.37 L 304.98 247.66 L 310.63 248.75 L 316.29 249.11 L 321.94 247.06 L 327.59 248.77 L 333.25 248.44 L 338.90 248.26 L 344.55 254.58 L 350.20 257.12 L 355.86 259.64 L 361.51 270.91 L 367.16 274.20 L 372.81 276.25 L 378.47 275.78 L 384.12 276.28 L 389.77 274.15 L 395.43 271.00 L 401.08 267.01 L 406.73 256.77 L 412.38 256.19 L 418.04 253.57 L 423.69 252.54 L 429.34 247.55 L 434.99 247.80 L 440.65 249.37 L 446.30 249.11 L 451.95 247.29 L 457.60 247.30 L 463.26 248.41 L 468.91 249.28 L 474.56 248.21 L 480.22 253.79 L 485.87 255.37 L 491.52 255.23 L 497.17 265.05 L 502.83 271.45 L 508.48 272.98 L 514.13 274.22 L 519.78 274.22 L 525.44 275.05 L 531.09 273.17 L 536.74 269.97 L 542.40 267.60 L 548.05 257.07 L 553.70 253.33 L 559.35 249.90 L 565.01 248.55 L 570.66 247.18 L 576.31 247.41 L 581.96 250.83 L 587.62 246.07 L 593.27 246.08 L 598.92 248.56 L 604.57 248.39 L 610.23 249.83 L 615.88 255.05 L 621.53 257.48 L 627.19 266.54 L 632.84 273.46 L 638.49 272.87 L 644.14 274.79 L 649.80 276.05 L 655.45 276.67 L 661.10 276.95 L 666.75 274.68 L 672.41 270.10 L 678.06 266.75 L 683.71 257.04 L 689.37 254.78 L 695.02 253.36 L 700.67 251.78 L 706.32 250.45 L 711.98 251.18 L 717.63 251.78 L 723.28 250.92 L 728.93 249.78 L 734.59 250.50 L 740.24 250.18 L 745.89 250.77 L 751.54 257.26 L 757.20 256.44 L 762.85 257.08 L 768.50 266.41 L 774.16 271.70 L 779.81 271.91 L 785.46 272.70 L 791.11 273.43 L 796.77 272.96 L 802.42 271.15 L 808.07 266.69 L 813.72 262.08 L 819.38 255.37 L 825.03 253.23 L 830.68 249.81 L 836.34 248.41" /><path class="forecast-svg-actual" d="M 841.99 247.57 L 847.64 252.73 L 853.29 253.63 L 858.95 250.84 L 864.60 248.77 L 870.25 44.09 L 875.90 44.70 L 881.56 47.82 L 887.21 251.03 L 892.86 253.34 L 898.51 256.56 L 904.17 261.56 L 909.82 272.88 L 915.47 272.10 L 921.13 278.85 L 926.78 276.84 L 932.43 279.21 L 938.08 270.17 L 943.74 267.41 L 949.39 263.45 L 955.04 258.99 L 960.69 250.28 L 966.35 254.55 L 972.00 246.37" /><path class="forecast-svg-band" fill="#aa7c32" d="M 841.99 244.29 L 847.64 244.42 L 853.29 244.88 L 858.95 244.36 L 864.60 244.04 L 870.25 154.10 L 875.90 135.86 L 881.56 112.95 L 887.21 88.71 L 892.86 157.19 L 898.51 166.28 L 904.17 189.27 L 909.82 204.18 L 915.47 214.12 L 921.13 219.08 L 926.78 220.84 L 932.43 221.97 L 938.08 220.89 L 943.74 218.39 L 949.39 215.00 L 955.04 209.93 L 960.69 207.98 L 966.35 206.59 L 972.00 205.32 L 972.00 278.37 L 966.35 280.31 L 960.69 282.52 L 955.04 285.73 L 949.39 293.42 L 943.74 298.43 L 938.08 302.21 L 932.43 303.93 L 926.78 302.72 L 921.13 301.24 L 915.47 297.36 L 909.82 293.25 L 904.17 286.96 L 898.51 277.38 L 892.86 272.22 L 887.21 185.76 L 881.56 196.03 L 875.90 215.43 L 870.25 244.42 L 864.60 259.86 L 858.95 259.21 L 853.29 258.06 L 847.64 256.70 L 841.99 255.75 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 841.99 250.02 L 847.64 250.56 L 853.29 251.47 L 858.95 251.78 L 864.60 251.95 L 870.25 199.26 L 875.90 175.65 L 881.56 154.49 L 887.21 137.24 L 892.86 214.70 L 898.51 221.83 L 904.17 238.12 L 909.82 248.72 L 915.47 255.74 L 921.13 260.16 L 926.78 261.78 L 932.43 262.95 L 938.08 261.55 L 943.74 258.41 L 949.39 254.21 L 955.04 247.83 L 960.69 245.25 L 966.35 243.45 L 972.00 241.84" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="250.02" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 288.48 L 33.65 287.47 L 39.31 286.12 L 44.96 287.08 L 50.61 285.80 L 56.26 288.15 L 61.92 286.27 L 67.57 284.98 L 73.22 289.56 L 78.87 291.00 L 84.53 291.50 L 90.18 302.68 L 95.83 309.96 L 101.49 312.64 L 107.14 313.86 L 112.79 314.56 L 118.44 314.42 L 124.10 311.44 L 129.75 308.54 L 135.40 305.00 L 141.05 294.44 L 146.71 291.19 L 152.36 288.02 L 158.01 287.54 L 163.66 284.91 L 169.32 282.99 L 174.97 284.44 L 180.62 284.65 L 186.28 283.80 L 191.93 284.78 L 197.58 286.38 L 203.23 286.14 L 208.89 290.82 L 214.54 292.85 L 220.19 292.87 L 225.84 303.15 L 231.50 310.16 L 237.15 312.16 L 242.80 312.26 L 248.46 313.51 L 254.11 314.59 L 259.76 312.40 L 265.41 306.93 L 271.07 302.48 L 276.72 293.94 L 282.37 291.30 L 288.02 288.98 L 293.68 283.14 L 299.33 280.90 L 304.98 281.21 L 310.63 282.37 L 316.29 282.75 L 321.94 280.57 L 327.59 282.39 L 333.25 282.04 L 338.90 281.85 L 344.55 288.58 L 350.20 291.28 L 355.86 293.97 L 361.51 305.95 L 367.16 309.45 L 372.81 311.64 L 378.47 311.14 L 384.12 311.67 L 389.77 309.40 L 395.43 306.06 L 401.08 301.80 L 406.73 290.91 L 412.38 290.29 L 418.04 287.50 L 423.69 286.40 L 429.34 281.09 L 434.99 281.36 L 440.65 283.03 L 446.30 282.76 L 451.95 280.81 L 457.60 280.83 L 463.26 282.01 L 468.91 282.93 L 474.56 281.80 L 480.22 287.74 L 485.87 289.42 L 491.52 289.27 L 497.17 299.72 L 502.83 306.53 L 508.48 308.16 L 514.13 309.48 L 519.78 309.47 L 525.44 310.36 L 531.09 308.36 L 536.74 304.95 L 542.40 302.43 L 548.05 291.23 L 553.70 287.25 L 559.35 283.60 L 565.01 282.16 L 570.66 280.70 L 576.31 280.95 L 581.96 284.59 L 587.62 279.52 L 593.27 279.53 L 598.92 282.17 L 604.57 281.99 L 610.23 283.52 L 615.88 289.08 L 621.53 291.66 L 627.19 301.30 L 632.84 308.68 L 638.49 308.04 L 644.14 310.09 L 649.80 311.43 L 655.45 312.09 L 661.10 312.39 L 666.75 309.97 L 672.41 305.09 L 678.06 301.53 L 683.71 291.19 L 689.37 288.79 L 695.02 287.27 L 700.67 285.59 L 706.32 284.19 L 711.98 284.96 L 717.63 285.59 L 723.28 284.68 L 728.93 283.47 L 734.59 284.24 L 740.24 283.89 L 745.89 284.52 L 751.54 291.43 L 757.20 290.56 L 762.85 291.23 L 768.50 301.17 L 774.16 306.79 L 779.81 307.03 L 785.46 307.86 L 791.11 308.64 L 796.77 308.14 L 802.42 306.21 L 808.07 301.46 L 813.72 296.55 L 819.38 289.41 L 825.03 287.14 L 830.68 283.50 L 836.34 282.01" /><path class="forecast-svg-actual" d="M 841.99 281.12 L 847.64 286.61 L 853.29 287.56 L 858.95 284.59 L 864.60 282.39 L 870.25 64.56 L 875.90 65.21 L 881.56 68.53 L 887.21 284.80 L 892.86 287.25 L 898.51 290.68 L 904.17 296.00 L 909.82 308.05 L 915.47 307.23 L 921.13 314.41 L 926.78 312.27 L 932.43 314.79 L 938.08 305.17 L 943.74 302.23 L 949.39 298.02 L 955.04 293.27 L 960.69 284.00 L 966.35 288.55 L 972.00 279.84" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 841.99 281.18 L 847.64 281.66 L 853.29 234.01 L 858.95 89.45 L 864.60 81.89 L 870.25 43.79 L 875.90 65.49 L 881.56 71.09 L 887.21 289.10 L 892.86 291.23 L 898.51 292.73 L 904.17 302.37 L 909.82 308.32 L 915.47 309.92 L 921.13 310.66 L 926.78 311.38 L 932.43 311.08 L 938.08 308.29 L 943.74 303.90 L 949.39 298.64 L 955.04 290.56 L 960.69 287.86 L 966.35 284.85 L 972.00 282.88 L 972.00 284.34 L 966.35 286.64 L 960.69 289.34 L 955.04 292.45 L 949.39 301.16 L 943.74 305.77 L 938.08 310.47 L 932.43 313.35 L 926.78 313.33 L 921.13 312.50 L 915.47 311.61 L 909.82 309.55 L 904.17 304.45 L 898.51 296.36 L 892.86 292.58 L 887.21 290.47 L 881.56 271.16 L 875.90 269.91 L 870.25 124.99 L 864.60 293.14 L 858.95 293.93 L 853.29 316.21 L 847.64 283.01 L 841.99 282.28 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 841.99 281.73 L 847.64 282.33 L 853.29 275.11 L 858.95 191.69 L 864.60 187.51 L 870.25 84.39 L 875.90 167.70 L 881.56 171.12 L 887.21 289.78 L 892.86 291.91 L 898.51 294.55 L 904.17 303.41 L 909.82 308.93 L 915.47 310.77 L 921.13 311.58 L 926.78 312.35 L 932.43 312.22 L 938.08 309.38 L 943.74 304.83 L 949.39 299.90 L 955.04 291.50 L 960.69 288.60 L 966.35 285.75 L 972.00 283.61" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="281.73" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 841.99 280.81 L 847.64 280.95 L 853.29 281.47 L 858.95 280.94 L 864.60 280.65 L 870.25 70.29 L 875.90 72.29 L 881.56 71.56 L 887.21 286.63 L 892.86 287.98 L 898.51 289.49 L 904.17 300.33 L 909.82 304.84 L 915.47 306.43 L 921.13 307.31 L 926.78 307.51 L 932.43 307.80 L 938.08 305.58 L 943.74 301.64 L 949.39 296.93 L 955.04 288.68 L 960.69 286.27 L 966.35 284.22 L 972.00 282.31" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="280.81" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 288.48 L 33.65 287.47 L 39.31 286.12 L 44.96 287.08 L 50.61 285.80 L 56.26 288.15 L 61.92 286.27 L 67.57 284.98 L 73.22 289.56 L 78.87 291.00 L 84.53 291.50 L 90.18 302.68 L 95.83 309.96 L 101.49 312.64 L 107.14 313.86 L 112.79 314.56 L 118.44 314.42 L 124.10 311.44 L 129.75 308.54 L 135.40 305.00 L 141.05 294.44 L 146.71 291.19 L 152.36 288.02 L 158.01 287.54 L 163.66 284.91 L 169.32 282.99 L 174.97 284.44 L 180.62 284.65 L 186.28 283.80 L 191.93 284.78 L 197.58 286.38 L 203.23 286.14 L 208.89 290.82 L 214.54 292.85 L 220.19 292.87 L 225.84 303.15 L 231.50 310.16 L 237.15 312.16 L 242.80 312.26 L 248.46 313.51 L 254.11 314.59 L 259.76 312.40 L 265.41 306.93 L 271.07 302.48 L 276.72 293.94 L 282.37 291.30 L 288.02 288.98 L 293.68 283.14 L 299.33 280.90 L 304.98 281.21 L 310.63 282.37 L 316.29 282.75 L 321.94 280.57 L 327.59 282.39 L 333.25 282.04 L 338.90 281.85 L 344.55 288.58 L 350.20 291.28 L 355.86 293.97 L 361.51 305.95 L 367.16 309.45 L 372.81 311.64 L 378.47 311.14 L 384.12 311.67 L 389.77 309.40 L 395.43 306.06 L 401.08 301.80 L 406.73 290.91 L 412.38 290.29 L 418.04 287.50 L 423.69 286.40 L 429.34 281.09 L 434.99 281.36 L 440.65 283.03 L 446.30 282.76 L 451.95 280.81 L 457.60 280.83 L 463.26 282.01 L 468.91 282.93 L 474.56 281.80 L 480.22 287.74 L 485.87 289.42 L 491.52 289.27 L 497.17 299.72 L 502.83 306.53 L 508.48 308.16 L 514.13 309.48 L 519.78 309.47 L 525.44 310.36 L 531.09 308.36 L 536.74 304.95 L 542.40 302.43 L 548.05 291.23 L 553.70 287.25 L 559.35 283.60 L 565.01 282.16 L 570.66 280.70 L 576.31 280.95 L 581.96 284.59 L 587.62 279.52 L 593.27 279.53 L 598.92 282.17 L 604.57 281.99 L 610.23 283.52 L 615.88 289.08 L 621.53 291.66 L 627.19 301.30 L 632.84 308.68 L 638.49 308.04 L 644.14 310.09 L 649.80 311.43 L 655.45 312.09 L 661.10 312.39 L 666.75 309.97 L 672.41 305.09 L 678.06 301.53 L 683.71 291.19 L 689.37 288.79 L 695.02 287.27 L 700.67 285.59 L 706.32 284.19 L 711.98 284.96 L 717.63 285.59 L 723.28 284.68 L 728.93 283.47 L 734.59 284.24 L 740.24 283.89 L 745.89 284.52 L 751.54 291.43 L 757.20 290.56 L 762.85 291.23 L 768.50 301.17 L 774.16 306.79 L 779.81 307.03 L 785.46 307.86 L 791.11 308.64 L 796.77 308.14 L 802.42 306.21 L 808.07 301.46 L 813.72 296.55 L 819.38 289.41 L 825.03 287.14 L 830.68 283.50 L 836.34 282.01" /><path class="forecast-svg-actual" d="M 841.99 281.12 L 847.64 286.61 L 853.29 287.56 L 858.95 284.59 L 864.60 282.39 L 870.25 64.56 L 875.90 65.21 L 881.56 68.53 L 887.21 284.80 L 892.86 287.25 L 898.51 290.68 L 904.17 296.00 L 909.82 308.05 L 915.47 307.23 L 921.13 314.41 L 926.78 312.27 L 932.43 314.79 L 938.08 305.17 L 943.74 302.23 L 949.39 298.02 L 955.04 293.27 L 960.69 284.00 L 966.35 288.55 L 972.00 279.84" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 841.99 281.18 L 847.64 281.66 L 853.29 234.01 L 858.95 89.45 L 864.60 81.89 L 870.25 43.79 L 875.90 65.49 L 881.56 71.09 L 887.21 289.10 L 892.86 291.23 L 898.51 292.73 L 904.17 302.37 L 909.82 308.32 L 915.47 309.92 L 921.13 310.66 L 926.78 311.38 L 932.43 311.08 L 938.08 308.29 L 943.74 303.90 L 949.39 298.64 L 955.04 290.56 L 960.69 287.86 L 966.35 284.85 L 972.00 282.88 L 972.00 284.34 L 966.35 286.64 L 960.69 289.34 L 955.04 292.45 L 949.39 301.16 L 943.74 305.77 L 938.08 310.47 L 932.43 313.35 L 926.78 313.33 L 921.13 312.50 L 915.47 311.61 L 909.82 309.55 L 904.17 304.45 L 898.51 296.36 L 892.86 292.58 L 887.21 290.47 L 881.56 271.16 L 875.90 269.91 L 870.25 124.99 L 864.60 293.14 L 858.95 293.93 L 853.29 316.21 L 847.64 283.01 L 841.99 282.28 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 841.99 281.73 L 847.64 282.33 L 853.29 275.11 L 858.95 191.69 L 864.60 187.51 L 870.25 84.39 L 875.90 167.70 L 881.56 171.12 L 887.21 289.78 L 892.86 291.91 L 898.51 294.55 L 904.17 303.41 L 909.82 308.93 L 915.47 310.77 L 921.13 311.58 L 926.78 312.35 L 932.43 312.22 L 938.08 309.38 L 943.74 304.83 L 949.39 299.90 L 955.04 291.50 L 960.69 288.60 L 966.35 285.75 L 972.00 283.61" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="841.99" cy="281.73" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 288.48 L 33.65 287.47 L 39.31 286.12 L 44.96 287.08 L 50.61 285.80 L 56.26 288.15 L 61.92 286.27 L 67.57 284.98 L 73.22 289.56 L 78.87 291.00 L 84.53 291.50 L 90.18 302.68 L 95.83 309.96 L 101.49 312.64 L 107.14 313.86 L 112.79 314.56 L 118.44 314.42 L 124.10 311.44 L 129.75 308.54 L 135.40 305.00 L 141.05 294.44 L 146.71 291.19 L 152.36 288.02 L 158.01 287.54 L 163.66 284.91 L 169.32 282.99 L 174.97 284.44 L 180.62 284.65 L 186.28 283.80 L 191.93 284.78 L 197.58 286.38 L 203.23 286.14 L 208.89 290.82 L 214.54 292.85 L 220.19 292.87 L 225.84 303.15 L 231.50 310.16 L 237.15 312.16 L 242.80 312.26 L 248.46 313.51 L 254.11 314.59 L 259.76 312.40 L 265.41 306.93 L 271.07 302.48 L 276.72 293.94 L 282.37 291.30 L 288.02 288.98 L 293.68 283.14 L 299.33 280.90 L 304.98 281.21 L 310.63 282.37 L 316.29 282.75 L 321.94 280.57 L 327.59 282.39 L 333.25 282.04 L 338.90 281.85 L 344.55 288.58 L 350.20 291.28 L 355.86 293.97 L 361.51 305.95 L 367.16 309.45 L 372.81 311.64 L 378.47 311.14 L 384.12 311.67 L 389.77 309.40 L 395.43 306.06 L 401.08 301.80 L 406.73 290.91 L 412.38 290.29 L 418.04 287.50 L 423.69 286.40 L 429.34 281.09 L 434.99 281.36 L 440.65 283.03 L 446.30 282.76 L 451.95 280.81 L 457.60 280.83 L 463.26 282.01 L 468.91 282.93 L 474.56 281.80 L 480.22 287.74 L 485.87 289.42 L 491.52 289.27 L 497.17 299.72 L 502.83 306.53 L 508.48 308.16 L 514.13 309.48 L 519.78 309.47 L 525.44 310.36 L 531.09 308.36 L 536.74 304.95 L 542.40 302.43 L 548.05 291.23 L 553.70 287.25 L 559.35 283.60 L 565.01 282.16 L 570.66 280.70 L 576.31 280.95 L 581.96 284.59 L 587.62 279.52 L 593.27 279.53 L 598.92 282.17 L 604.57 281.99 L 610.23 283.52 L 615.88 289.08 L 621.53 291.66 L 627.19 301.30 L 632.84 308.68 L 638.49 308.04 L 644.14 310.09 L 649.80 311.43 L 655.45 312.09 L 661.10 312.39 L 666.75 309.97 L 672.41 305.09 L 678.06 301.53 L 683.71 291.19 L 689.37 288.79 L 695.02 287.27 L 700.67 285.59 L 706.32 284.19 L 711.98 284.96 L 717.63 285.59 L 723.28 284.68 L 728.93 283.47 L 734.59 284.24 L 740.24 283.89 L 745.89 284.52 L 751.54 291.43 L 757.20 290.56 L 762.85 291.23 L 768.50 301.17 L 774.16 306.79 L 779.81 307.03 L 785.46 307.86 L 791.11 308.64 L 796.77 308.14 L 802.42 306.21 L 808.07 301.46 L 813.72 296.55 L 819.38 289.41 L 825.03 287.14 L 830.68 283.50 L 836.34 282.01" /><path class="forecast-svg-actual" d="M 841.99 281.12 L 847.64 286.61 L 853.29 287.56 L 858.95 284.59 L 864.60 282.39 L 870.25 64.56 L 875.90 65.21 L 881.56 68.53 L 887.21 284.80 L 892.86 287.25 L 898.51 290.68 L 904.17 296.00 L 909.82 308.05 L 915.47 307.23 L 921.13 314.41 L 926.78 312.27 L 932.43 314.79 L 938.08 305.17 L 943.74 302.23 L 949.39 298.02 L 955.04 293.27 L 960.69 284.00 L 966.35 288.55 L 972.00 279.84" /><path class="forecast-svg-band" fill="#aa7c32" d="M 841.99 280.81 L 847.64 280.95 L 853.29 281.47 L 858.95 280.94 L 864.60 280.65 L 870.25 70.29 L 875.90 72.29 L 881.56 71.56 L 887.21 286.63 L 892.86 287.98 L 898.51 289.49 L 904.17 300.33 L 909.82 304.84 L 915.47 306.43 L 921.13 307.31 L 926.78 307.51 L 932.43 307.80 L 938.08 305.58 L 943.74 301.64 L 949.39 296.93 L 955.04 288.68 L 960.69 286.27 L 966.35 284.22 L 972.00 282.31 L 972.00 282.31 L 966.35 284.22 L 960.69 286.27 L 955.04 288.68 L 949.39 296.93 L 943.74 301.64 L 938.08 305.58 L 932.43 307.80 L 926.78 307.51 L 921.13 307.31 L 915.47 306.43 L 909.82 304.84 L 904.17 300.33 L 898.51 289.49 L 892.86 287.98 L 887.21 286.63 L 881.56 71.56 L 875.90 72.29 L 870.25 70.29 L 864.60 280.65 L 858.95 280.94 L 853.29 281.47 L 847.64 280.95 L 841.99 280.81 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 841.99 280.81 L 847.64 280.95 L 853.29 281.47 L 858.95 280.94 L 864.60 280.65 L 870.25 70.29 L 875.90 72.29 L 881.56 71.56 L 887.21 286.63 L 892.86 287.98 L 898.51 289.49 L 904.17 300.33 L 909.82 304.84 L 915.47 306.43 L 921.13 307.31 L 926.78 307.51 L 932.43 307.80 L 938.08 305.58 L 943.74 301.64 L 949.39 296.93 L 955.04 288.68 L 960.69 286.27 L 966.35 284.22 L 972.00 282.31" /><circle class="forecast-svg-start" fill="#aa7c32" cx="841.99" cy="280.81" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#3777a5" d="M 841.99 278.72 L 847.64 278.83 L 853.29 278.82 L 858.95 277.49 L 864.60 277.08 L 870.25 277.18 L 875.90 277.20 L 881.56 277.66 L 887.21 283.48 L 892.86 284.16 L 898.51 284.38 L 904.17 295.29 L 909.82 300.76 L 915.47 302.29 L 921.13 303.11 L 926.78 304.19 L 932.43 304.43 L 938.08 301.31 L 943.74 296.15 L 949.39 291.50 L 955.04 282.41 L 960.69 279.52 L 966.35 277.03 L 972.00 275.45 L 972.00 285.74 L 966.35 287.48 L 960.69 290.77 L 955.04 293.62 L 949.39 302.10 L 943.74 306.46 L 938.08 311.38 L 932.43 313.58 L 926.78 313.51 L 921.13 313.18 L 915.47 311.83 L 909.82 309.78 L 904.17 303.12 L 898.51 292.39 L 892.86 290.89 L 887.21 289.58 L 881.56 283.60 L 875.90 282.68 L 870.25 282.73 L 864.60 281.86 L 858.95 282.37 L 853.29 282.73 L 847.64 281.46 L 841.99 281.45 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 841.99 280.08 L 847.64 280.15 L 853.29 280.77 L 858.95 279.93 L 864.60 279.47 L 870.25 279.95 L 875.90 279.94 L 881.56 280.63 L 887.21 286.53 L 892.86 287.53 L 898.51 288.38 L 904.17 299.21 L 909.82 305.27 L 915.47 307.06 L 921.13 308.15 L 926.78 308.85 L 932.43 309.00 L 938.08 306.34 L 943.74 301.30 L 949.39 296.80 L 955.04 288.01 L 960.69 285.15 L 966.35 282.26 L 972.00 280.59" /><circle class="forecast-svg-start" fill="#3777a5" cx="841.99" cy="280.08" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 841.99 279.89 L 847.64 280.42 L 853.29 280.64 L 858.95 282.27 L 864.60 284.55 L 870.25 287.99 L 875.90 288.10 L 881.56 295.32 L 887.21 298.90 L 892.86 300.44 L 898.51 303.69 L 904.17 303.76 L 909.82 304.97 L 915.47 308.36 L 921.13 305.30 L 926.78 303.24 L 932.43 300.70 L 938.08 300.58 L 943.74 296.29 L 949.39 289.18 L 955.04 290.02 L 960.69 288.20 L 966.35 285.69 L 972.00 286.73" /><circle class="forecast-svg-start" fill="#8064a2" cx="841.99" cy="279.89" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 841.99 276.81 L 847.64 275.36 L 853.29 272.53 L 858.95 269.10 L 864.60 266.40 L 870.25 263.92 L 875.90 260.90 L 881.56 257.81 L 887.21 255.89 L 892.86 252.73 L 898.51 249.18 L 904.17 245.25 L 909.82 244.41 L 915.47 240.63 L 921.13 237.28 L 926.78 234.94 L 932.43 232.09 L 938.08 230.38 L 943.74 225.75 L 949.39 222.51 L 955.04 221.70 L 960.69 218.02 L 966.35 215.23 L 972.00 212.70" /><circle class="forecast-svg-start" fill="#668851" cx="841.99" cy="276.81" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#3777a5" d="M 841.99 278.72 L 847.64 278.83 L 853.29 278.82 L 858.95 277.49 L 864.60 277.08 L 870.25 277.18 L 875.90 277.20 L 881.56 277.66 L 887.21 283.48 L 892.86 284.16 L 898.51 284.38 L 904.17 295.29 L 909.82 300.76 L 915.47 302.29 L 921.13 303.11 L 926.78 304.19 L 932.43 304.43 L 938.08 301.31 L 943.74 296.15 L 949.39 291.50 L 955.04 282.41 L 960.69 279.52 L 966.35 277.03 L 972.00 275.45 L 972.00 285.74 L 966.35 287.48 L 960.69 290.77 L 955.04 293.62 L 949.39 302.10 L 943.74 306.46 L 938.08 311.38 L 932.43 313.58 L 926.78 313.51 L 921.13 313.18 L 915.47 311.83 L 909.82 309.78 L 904.17 303.12 L 898.51 292.39 L 892.86 290.89 L 887.21 289.58 L 881.56 283.60 L 875.90 282.68 L 870.25 282.73 L 864.60 281.86 L 858.95 282.37 L 853.29 282.73 L 847.64 281.46 L 841.99 281.45 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 841.99 280.08 L 847.64 280.15 L 853.29 280.77 L 858.95 279.93 L 864.60 279.47 L 870.25 279.95 L 875.90 279.94 L 881.56 280.63 L 887.21 286.53 L 892.86 287.53 L 898.51 288.38 L 904.17 299.21 L 909.82 305.27 L 915.47 307.06 L 921.13 308.15 L 926.78 308.85 L 932.43 309.00 L 938.08 306.34 L 943.74 301.30 L 949.39 296.80 L 955.04 288.01 L 960.69 285.15 L 966.35 282.26 L 972.00 280.59" /><circle class="forecast-svg-start" fill="#3777a5" cx="841.99" cy="280.08" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#8064a2" d="M 841.99 277.33 L 847.64 276.53 L 853.29 276.17 L 858.95 277.54 L 864.60 278.28 L 870.25 282.52 L 875.90 281.94 L 881.56 289.66 L 887.21 293.34 L 892.86 293.93 L 898.51 298.58 L 904.17 296.47 L 909.82 296.66 L 915.47 300.89 L 921.13 299.10 L 926.78 295.23 L 932.43 290.80 L 938.08 291.68 L 943.74 286.27 L 949.39 280.84 L 955.04 282.77 L 960.69 276.70 L 966.35 278.94 L 972.00 278.08 L 972.00 295.38 L 966.35 292.43 L 960.69 299.70 L 955.04 297.27 L 949.39 297.51 L 943.74 306.31 L 938.08 309.47 L 932.43 310.60 L 926.78 311.25 L 921.13 311.50 L 915.47 315.84 L 909.82 313.28 L 904.17 311.05 L 898.51 308.80 L 892.86 306.96 L 887.21 304.47 L 881.56 300.98 L 875.90 294.25 L 870.25 293.45 L 864.60 290.82 L 858.95 286.99 L 853.29 285.12 L 847.64 284.31 L 841.99 282.46 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 841.99 279.89 L 847.64 280.42 L 853.29 280.64 L 858.95 282.27 L 864.60 284.55 L 870.25 287.99 L 875.90 288.10 L 881.56 295.32 L 887.21 298.90 L 892.86 300.44 L 898.51 303.69 L 904.17 303.76 L 909.82 304.97 L 915.47 308.36 L 921.13 305.30 L 926.78 303.24 L 932.43 300.70 L 938.08 300.58 L 943.74 296.29 L 949.39 289.18 L 955.04 290.02 L 960.69 288.20 L 966.35 285.69 L 972.00 286.73" /><circle class="forecast-svg-start" fill="#8064a2" cx="841.99" cy="279.89" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#668851" d="M 841.99 273.79 L 847.64 271.31 L 853.29 268.98 L 858.95 264.47 L 864.60 262.99 L 870.25 259.77 L 875.90 257.70 L 881.56 253.62 L 887.21 252.47 L 892.86 249.23 L 898.51 244.92 L 904.17 240.94 L 909.82 240.83 L 915.47 235.92 L 921.13 233.69 L 926.78 232.27 L 932.43 227.87 L 938.08 226.85 L 943.74 222.03 L 949.39 218.80 L 955.04 217.67 L 960.69 213.69 L 966.35 212.09 L 972.00 209.39 L 972.00 216.00 L 966.35 218.38 L 960.69 222.34 L 955.04 225.74 L 949.39 226.22 L 943.74 229.46 L 938.08 233.92 L 932.43 236.32 L 926.78 237.60 L 921.13 240.86 L 915.47 245.34 L 909.82 248.00 L 904.17 249.56 L 898.51 253.44 L 892.86 256.23 L 887.21 259.32 L 881.56 261.99 L 875.90 264.09 L 870.25 268.08 L 864.60 269.80 L 858.95 273.73 L 853.29 276.09 L 847.64 279.42 L 841.99 279.83 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 841.99 276.81 L 847.64 275.36 L 853.29 272.53 L 858.95 269.10 L 864.60 266.40 L 870.25 263.92 L 875.90 260.90 L 881.56 257.81 L 887.21 255.89 L 892.86 252.73 L 898.51 249.18 L 904.17 245.25 L 909.82 244.41 L 915.47 240.63 L 921.13 237.28 L 926.78 234.94 L 932.43 232.09 L 938.08 230.38 L 943.74 225.75 L 949.39 222.51 L 955.04 221.70 L 960.69 218.02 L 966.35 215.23 L 972.00 212.70" /><circle class="forecast-svg-start" fill="#668851" cx="841.99" cy="276.81" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 841.99 275.83 L 847.64 273.94 L 853.29 270.26 L 858.95 269.24 L 864.60 268.78 L 870.25 267.66 L 875.90 267.22 L 881.56 267.11 L 887.21 265.29 L 892.86 262.96 L 898.51 263.21 L 904.17 261.28 L 909.82 258.87 L 915.47 257.86 L 921.13 258.75 L 926.78 257.59 L 932.43 257.41 L 938.08 255.85 L 943.74 254.03 L 949.39 254.79 L 955.04 253.93 L 960.69 252.88 L 966.35 253.32 L 972.00 253.30 L 972.00 300.52 L 966.35 300.79 L 960.69 299.68 L 955.04 299.80 L 949.39 297.26 L 943.74 296.62 L 938.08 296.06 L 932.43 296.40 L 926.78 295.20 L 921.13 294.51 L 915.47 293.34 L 909.82 291.50 L 904.17 291.03 L 898.51 290.25 L 892.86 288.17 L 887.21 289.25 L 881.56 288.59 L 875.90 289.33 L 870.25 287.42 L 864.60 287.59 L 858.95 288.21 L 853.29 287.22 L 847.64 284.91 L 841.99 284.14 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 841.99 279.99 L 847.64 279.42 L 853.29 278.74 L 858.95 278.72 L 864.60 278.18 L 870.25 277.54 L 875.90 278.27 L 881.56 277.85 L 887.21 277.27 L 892.86 275.56 L 898.51 276.73 L 904.17 276.16 L 909.82 275.18 L 915.47 275.60 L 921.13 276.63 L 926.78 276.39 L 932.43 276.91 L 938.08 275.96 L 943.74 275.33 L 949.39 276.02 L 955.04 276.86 L 960.69 276.28 L 966.35 277.06 L 972.00 276.91" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="841.99" cy="279.99" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="836.34" y1="22" x2="836.34" y2="338" /><path class="forecast-svg-history" d="M 28.00 287.56 L 33.65 286.46 L 39.31 284.99 L 44.96 286.03 L 50.61 284.64 L 56.26 287.20 L 61.92 285.16 L 67.57 283.75 L 73.22 288.73 L 78.87 290.30 L 84.53 290.85 L 90.18 303.03 L 95.83 310.94 L 101.49 313.86 L 107.14 315.19 L 112.79 315.96 L 118.44 315.80 L 124.10 312.56 L 129.75 309.40 L 135.40 305.54 L 141.05 294.05 L 146.71 290.51 L 152.36 287.06 L 158.01 286.54 L 163.66 283.68 L 169.32 281.59 L 174.97 283.16 L 180.62 283.40 L 186.28 282.47 L 191.93 283.53 L 197.58 285.28 L 203.23 285.01 L 208.89 290.11 L 214.54 292.32 L 220.19 292.34 L 225.84 303.53 L 231.50 311.17 L 237.15 313.34 L 242.80 313.45 L 248.46 314.81 L 254.11 315.99 L 259.76 313.61 L 265.41 307.65 L 271.07 302.80 L 276.72 293.51 L 282.37 290.63 L 288.02 288.11 L 293.68 281.74 L 299.33 279.31 L 304.98 279.65 L 310.63 280.92 L 316.29 281.33 L 321.94 278.95 L 327.59 280.94 L 333.25 280.55 L 338.90 280.35 L 344.55 287.67 L 350.20 290.61 L 355.86 293.54 L 361.51 306.58 L 367.16 310.40 L 372.81 312.77 L 378.47 312.23 L 384.12 312.81 L 389.77 310.34 L 395.43 306.70 L 401.08 302.07 L 406.73 290.21 L 412.38 289.53 L 418.04 286.49 L 423.69 285.30 L 429.34 279.52 L 434.99 279.81 L 440.65 281.63 L 446.30 281.33 L 451.95 279.22 L 457.60 279.24 L 463.26 280.52 L 468.91 281.52 L 474.56 280.29 L 480.22 286.76 L 485.87 288.59 L 491.52 288.42 L 497.17 299.80 L 502.83 307.21 L 508.48 308.99 L 514.13 310.42 L 519.78 310.42 L 525.44 311.38 L 531.09 309.20 L 536.74 305.49 L 542.40 302.75 L 548.05 290.55 L 553.70 286.22 L 559.35 282.25 L 565.01 280.68 L 570.66 279.09 L 576.31 279.37 L 581.96 283.32 L 587.62 277.81 L 593.27 277.82 L 598.92 280.69 L 604.57 280.49 L 610.23 282.16 L 615.88 288.22 L 621.53 291.03 L 627.19 301.52 L 632.84 309.55 L 638.49 308.86 L 644.14 311.08 L 649.80 312.54 L 655.45 313.26 L 661.10 313.59 L 666.75 310.95 L 672.41 305.65 L 678.06 301.77 L 683.71 290.51 L 689.37 287.90 L 695.02 286.25 L 700.67 284.42 L 706.32 282.89 L 711.98 283.73 L 717.63 284.42 L 723.28 283.42 L 728.93 282.10 L 734.59 282.94 L 740.24 282.57 L 745.89 283.25 L 751.54 290.78 L 757.20 289.83 L 762.85 290.56 L 768.50 301.38 L 774.16 307.50 L 779.81 307.75 L 785.46 308.66 L 791.11 309.51 L 796.77 308.97 L 802.42 306.86 L 808.07 301.70 L 813.72 296.35 L 819.38 288.58 L 825.03 286.11 L 830.68 282.14 L 836.34 280.52" /><path class="forecast-svg-actual" d="M 841.99 279.55 L 847.64 285.53 L 853.29 286.56 L 858.95 283.33 L 864.60 280.94 L 870.25 43.79 L 875.90 44.50 L 881.56 48.11 L 887.21 283.55 L 892.86 286.23 L 898.51 289.96 L 904.17 295.75 L 909.82 308.87 L 915.47 307.97 L 921.13 315.79 L 926.78 313.46 L 932.43 316.21 L 938.08 305.73 L 943.74 302.54 L 949.39 297.95 L 955.04 292.78 L 960.69 282.68 L 966.35 287.64 L 972.00 278.16" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 841.99 277.56 L 847.64 276.48 L 853.29 276.80 L 858.95 275.71 L 864.60 276.59 L 870.25 277.06 L 875.90 275.73 L 881.56 275.25 L 887.21 276.66 L 892.86 275.52 L 898.51 276.41 L 904.17 276.44 L 909.82 276.10 L 915.47 276.36 L 921.13 278.95 L 926.78 274.71 L 932.43 275.48 L 938.08 278.50 L 943.74 277.90 L 949.39 275.62 L 955.04 276.80 L 960.69 276.82 L 966.35 275.15 L 972.00 277.46 L 972.00 284.84 L 966.35 285.46 L 960.69 284.58 L 955.04 285.25 L 949.39 283.50 L 943.74 285.70 L 938.08 288.33 L 932.43 284.01 L 926.78 283.65 L 921.13 286.05 L 915.47 283.20 L 909.82 284.64 L 904.17 284.75 L 898.51 285.57 L 892.86 286.02 L 887.21 285.05 L 881.56 285.12 L 875.90 284.25 L 870.25 284.51 L 864.60 285.44 L 858.95 284.48 L 853.29 284.36 L 847.64 282.33 L 841.99 283.82 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 841.99 280.69 L 847.64 279.41 L 853.29 280.58 L 858.95 280.09 L 864.60 281.01 L 870.25 280.79 L 875.90 279.99 L 881.56 280.18 L 887.21 280.85 L 892.86 280.77 L 898.51 280.99 L 904.17 280.60 L 909.82 280.37 L 915.47 279.78 L 921.13 282.50 L 926.78 279.18 L 932.43 279.74 L 938.08 283.41 L 943.74 281.80 L 949.39 279.56 L 955.04 281.03 L 960.69 280.70 L 966.35 280.30 L 972.00 281.15" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="841.99" cy="280.69" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>electricity consumption</h3>
+              <p>This is the electricity consumption recorded in Kilowatt (kW) in Ardentia City.</p>
+              <p class="instruction">Suppose that there is a heat wave in Ardentia City from 2012-10-09 18:00:00 for 3 hours in Ardentia City, leading to excessive use of air conditioning, and 5 times the usual electricity being consumed.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This is the electricity consumption recorded in Kilowatt (kW) in Ardentia City.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>Suppose that there is a heat wave in Ardentia City from 2012-10-09 18:00:00 for 3 hours in Ardentia City</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>leading to excessive use of air conditioning</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E4</span></div>
+          <p>and 5 times the usual electricity being consumed.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">36 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3385</span></span></summary>
+          <pre class="doc-content">**ARDENTIA MUNICIPAL WEATHER BUREAU**
+**OFFICIAL METEOROLOGICAL BULLETIN: UNUSUAL THERMAL PATTERN**
+
+**Subject:** Urban Atmospheric Anomaly Notification
+
+The Ardentia Municipal Weather Bureau is formally documenting a significant meteorological anomaly currently manifesting within the urban center of Ardentia City. Data observations indicate that ambient temperatures throughout the metropolitan area are climbing rapidly. These levels are notably exceeding normal climatic thresholds, specifically during the evening hours when cooling typically occurs.
+
+Preliminary analysis confirms that specific local geographic conditions are facilitating this phenomenon. The unique topography of the surrounding area is enabling the weather system to trap substantial thermal energy directly within the city limits. This concentrated heat retention remains localized to the urban core. 
+
+*Note: This bulletin is restricted to the physical description of the current anomaly and its immediate geographic cause.*</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3386</span></span></summary>
+          <pre class="doc-content">Regional Climate Monitoring Center
+Technical Weather Report
+
+Meteorological Event Summary: October 9, 2012
+
+On 2012-10-09, an intense heat wave persisted across the region, resulting in significant thermal anomalies. Ambient temperature readings climbed rapidly during the evening hours, exceeding normal climatic thresholds established for Ardentia City. 
+
+This sustained period of rising mercury met the formal criteria for an extreme temperature event. According to localized sensor data, the extreme temperature event was specifically recorded from 18:00:00 to 21:00:00. This summary focuses exclusively on the classification and temperature data for this evening period and does not include broader historical climate trends, public health warnings, or forecasts for subsequent days. Technical records indicate the rapid escalation was isolated to this specific timeframe.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3387</span></span></summary>
+          <pre class="doc-content">REGIONAL WEATHER &amp; HOUSING AUTHORITY
+OPERATIONAL REPORT: EXTREME TEMPERATURE INDOOR IMPACT ASSESSMENT
+DATE: October 9, 2012
+
+Executive Summary:
+On 2012-10-09, an intense heat wave persisted across the Ardentia City region, with peak impact occurring between 18:00:00 and 21:00:00. During this interval, extreme external conditions led to rapid heat transfer into stagnant indoor spaces.
+
+Assessment Findings:
+Monitoring of structural environments indicates that thermal insulation in residential and commercial structures failed to maintain comfortable interior temperatures. The intensity of the external heat exceeded the protective threshold of standard building envelopes.
+
+Scope Note:
+This report is strictly limited to the specific time window and the physical thermal failure of buildings during this event. This assessment does not include long-term weather forecasts, medical outcomes of the heat, or policy recommendations for building codes.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3388</span></span></summary>
+          <pre class="doc-content">MUNICIPAL DEPARTMENT OF PUBLIC HEALTH
+OFFICIAL TECHNICAL BULLETIN: RESIDENTIAL THERMAL SAFETY ASSESSMENT
+
+Reference: Residential Thermal Integrity / Ardentia City Habitat Standards
+Classification: Public Health Technical Report
+
+I. EXECUTIVE SUMMARY
+This technical assessment addresses the critical failure of building envelopes within the municipal jurisdiction to maintain life-sustaining interior conditions. Current data indicates that existing thermal insulation strategies in both residential and commercial structures have reached a point of catastrophic inadequacy, failing to provide a buffer against environmental shifts and failing to maintain a comfortable or safe interior environment for occupants.
+
+II. ARCHITECTURAL LIMITS AND INSULATION FAILURE
+Technical evaluations of the building stock reveal that the thermal insulation of residential and commercial structures fails to maintain a comfortable interior environment. The materials and construction techniques previously deemed sufficient for climate regulation have proven ineffective under current stressors. The breakdown of thermal barriers allows for rapid heat gain within interior envelopes, essentially neutralizing any structural protection against rising ambient temperatures. This systemic failure is observed across multiple construction eras, indicating that the baseline insulation standards for the region are no longer functional.
+
+III. CRITICAL TEMPERATURE THRESHOLDS
+As the structural integrity of these environments fails to regulate thermal exchange, a primary public health concern has emerged regarding internal heat accumulation. Internal monitoring indicates that rising indoor temperatures eventually cross the threshold of human biological tolerance. Once these temperatures exceed specific physiological limits, the environment becomes hostile to human life. The inability of the physical structure to dissipate heat or prevent its ingress leads to a sustained state of thermal saturation. Without mechanical intervention or high-efficiency thermal barriers, the interior spaces facilitate a rapid progression toward these dangerous biological limits.
+
+IV. HUMAN IMPACT AND RESIDENT EXPERIENCE
+Evidence collected from resident surveys and field observations confirms that internal conditions have deteriorated to an untenable level. Local residents experience significant physical discomfort due to the sustained lack of natural cooling. The absence of passive ventilation effectiveness and the failure of structural cooling mechanisms have resulted in a cumulative physical toll on the population. This discomfort is not transient but is a sustained condition resulting from the thermal properties of the structures themselves.
+
+As the heat remains trapped within residential units, the lack of nocturnal cooling prevents the human body from recovering from daytime thermal loads. This persistent state of elevated temperature creates a pervasive environment of physical distress. The Department notes that while mechanical cooling systems may attempt to compensate, the underlying architectural failure ensures that the baseline state of the residence remains outside the parameters of comfort and safety.
+
+V. TECHNICAL OBSERVATIONS ON HABITABILITY
+The core of the current public health challenge lies in the relationship between the built environment and human homeostasis. When the structural envelope—composed of walls, roofing, and glazing—fails to provide thermal resistance, the interior space becomes an extension of the external thermal environment. In Ardentia City, this has manifested as a widespread loss of habitability. The physical discomfort reported by the populace is a direct consequence of the insulation’s inability to impede heat transfer, coupled with the lack of natural cooling cycles within the dense urban fabric.
+
+VI. CONCLUDING STATUS
+In summary, the thermal safety of the municipal residential sector is currently compromised. The diagnostic focus is solely on the failure of the building envelopes and the resulting biological impact. The progression from architectural insulation failure to the crossing of human biological tolerance thresholds represents a critical failure of the residential thermal safety net. 
+
+[End of Bulletin]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3389</span></span></summary>
+          <pre class="doc-content">MUNICIPAL ENVIRONMENTAL HEALTH AND UTILITIES DEPARTMENT
+INTERNAL OPERATIONAL REPORT
+
+Subject: Municipal Energy Demand and Public Health Bulletin
+
+Operational Summary:
+Reporting from Ardentia City indicates that local residents are currently experiencing significant physical discomfort. This is attributed to a sustained lack of natural cooling across the municipality. In response to these conditions, residents are taking immediate mitigating action to lower the temperature of their immediate surroundings.
+
+Energy Demand Observations:
+Monitoring of utility data reveals a critical trend in residential behavior. Thermostats throughout the municipality are being adjusted to the lowest possible settings simultaneously. This synchronized shift in usage reflects an urgent effort by the public to combat environmental heat. This bulletin serves to document the surge in internal cooling demands and the resulting physical impact on the population.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3390</span></span></summary>
+          <pre class="doc-content">Municipal Power and Utilities Department
+Operational Report: Municipal Grid Load Analysis
+Subject: Extreme Cooling Event Observations
+
+1.0 Executive Summary
+This operational report documents the specific load characteristics and grid behavior observed in Ardentia City during the recent extreme cooling event. The focus is strictly limited to the correlation between end-user thermostat behavior, climate control machinery operation, and resulting electrical load spikes.
+
+2.0 Observed Thermostat Activity
+During the onset of the event, telemetry and smart-grid data indicated a massive, synchronized shift in residential and commercial climate control settings. Thermostats throughout the municipality were adjusted to the lowest possible settings simultaneously. This unified user action overrode typical staggered consumption patterns, creating an immediate and concentrated change in demand configuration across all municipal zones.
+
+3.0 Machinery and System Operation
+Following the adjustment of thermostats to minimum temperature settings, the demand for climate control systems surged. This triggered the intensive operation of cooling machinery across the city. Internal utility sensors recorded the immediate transition of HVAC compressors, industrial chillers, and residential cooling pumps from idle or low-state cycles to maximum operational capacity. The mechanical stress on these cooling units was consistent with continuous, high-output operation necessitated by the extreme settings requested by consumers.
+
+4.0 Power Consumption and Grid Impact
+The widespread manual and automated activation of electrical cooling units caused an unprecedented spike in power consumption. Ardentia City&#x27;s electricity consumption, recorded in Kilowatt (kW), showed a vertical trend profile as the simultaneous cooling load integrated into the municipal grid. This peak represents a singular event where the aggregate demand of activated machinery reached the upper limits of real-time distribution capacity.
+
+5.0 Reporting Constraints
+This report is an operational record of observed mechanics. It does not contain long-form meteorological data, budget impacts, or future infrastructure recommendations. Data is restricted to mechanical operation and electricity consumption (kW) metrics.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3391</span></span></summary>
+          <pre class="doc-content">FACILITY OPERATIONS LOG: CLIMATE CONTROL SYSTEMS ANALYSIS
+
+Date: October 9, 2012
+Issuer: On-site Facility Management Team
+Subject: Systems Response to External Environmental Fluctuations
+
+LOG ENTRY DETAILS:
+Beginning at 18:00:00, significant changes in external conditions were recorded over a three-hour window. This shift in the outside environment necessitated an immediate and significant increase in internal climate control efforts to maintain standard operating parameters.
+
+Due to these immediate environmental needs, facility management observed the heavy and prolonged operation of various air conditioning units across the site. All units were engaged at high capacity for the duration of the shift to stabilize internal temperatures against the altered external baseline. No equipment maintenance history or future energy forecasting is included in this specific operational snapshot. Monitoring remains ongoing.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3392</span></span></summary>
+          <pre class="doc-content">FACILITY MAINTENANCE DEPARTMENT / HVAC ENGINEERING TEAM
+OPERATIONAL LOG: INCIDENT R2-R3
+
+REPORT TYPE: Technical Operational Report
+
+LOG SUMMARY:
+During the Incident R2-R3 period in Ardentia City, high demand resulted in heavy and prolonged operation of various air conditioning units throughout the site. The intensity of this cooling activity forced the onsite equipment to maintain a peak operational state for the entire duration of the event. Consequently, this period of excessive hardware use transitioned into sustained peak-level mechanical activity across the HVAC infrastructure. 
+
+ENGINEERING NOTES:
+This log is a record of mechanical performance and operational intensity of cooling hardware for the specified period. Data regarding external weather conditions, energy consumption metrics, root causes, or future maintenance projections are excluded from this specific log.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3393</span></span></summary>
+          <pre class="doc-content">FACILITIES ENGINEERING INCIDENT REPORT
+Type: Technical Operational Report
+Issuer: Facility Maintenance and Operations Department
+Subject: Cooling System Power Assessment
+
+During the evaluated period, high-intensity cooling activity forced the mechanical equipment to maintain a peak operational state for the entire duration. This sustained operation of the cooling hardware required a massive and continuous intake of energy from the power grid to support the thermal load requirements. Under these conditions, the facility observed that the peak state of the electrical equipment directly dictates the rate of energy intake recorded across the system. This report addresses only the mechanical cooling state and immediate electrical consumption; it excludes weather data, building locations, financial costs, and infrastructure forecasting for Ardentia City.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3394</span></span></summary>
+          <pre class="doc-content">FACILITY OPERATIONS DEPARTMENT
+OFFICIAL OPERATIONAL REPORT: 21:00 INTERVAL
+
+Date: [REDACTED]
+Reporting Period: 20:00:00 to 21:00:00
+Subject: Utility Usage and Infrastructure Cooling Metrics
+
+Executive Summary:
+This document details the telemetry and utility delivery metrics regarding electricity consumption within Ardentia City, specifically focusing on the performance of the infrastructure cooling systems during the 21:00:00 reporting interval. The report serves as a formal record of utility load spikes associated with massive environmental management requirements.
+
+Operational Dynamics:
+To maintain thermal stability within the facility’s secure sectors, the active cooling hardware was triggered for sustained operation throughout this interval. The physical demands placed upon these cooling arrays necessitated an immediate and massive intake of energy. In order to mitigate the thermal output generated within the infrastructure, a continuous and uninterruptible draw from the regional power grid was required. This sustained operation of the cooling hardware was the primary driver of all power consumption recorded during this specific window.
+
+Electricity Consumption Analysis:
+Detailed analysis of the power meters and grid distribution logs indicates a significant deviation from baseline performance. By the conclusion of the interval, the electricity consumption recorded in Kilowatt (kW) reached critical thresholds. Specifically, the total volume of electricity drawn by the end of the 21:00:00 mark reached an amount exactly five times the standard usage levels. 
+
+This high-intensity draw was monitored in real-time by the Facility Operations Department. Technical staff noted that the intake did not fluctuate or taper, but rather remained at a fixed, elevated ceiling to power the cooling pumps and heat exchange units. The prolonged high intake resulted in a quantified five-fold increase in consumption when compared against the historical mean for this time of day. 
+
+Metrics Table:
+- Timestamp: 21:00:00
+- Unit of Measurement: Kilowatt (kW)
+- Consumption Status: Five-fold Increase
+- Hardware Status: Sustained Cooling Operation
+- Grid Load: Massive/Continuous Intake
+
+Technical Observations:
+The data indicates a direct and proportional relationship between the cooling hardware’s runtime and the massive surge in electricity drawn from the grid. As the cooling units operated at total capacity to manage internal temperatures, the grid responded by delivering the necessary Kilowatt (kW) volume to prevent hardware failure. By the time the 21:00:00 timestamp was recorded, the cumulative total for the hour had finalized at five times the standard usage level. 
+
+Closing Statement:
+This report is restricted to the relationship between cooling hardware operation and electricity consumption metrics. Per operational protocol, this report does not encompass the root cause of the cooling demand, the specific equipment health status of the cooling units, or the financial costs associated with the five-fold increase in electricity consumption. This data is intended for use in load balancing and power distribution modeling for Ardentia City’s infrastructure. 
+
+[End of 21:00 Interval Report]
+Facility Operations Department</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_3395</span></span></summary>
+          <pre class="doc-content">GRID MONITORING DEPARTMENT
+OPERATIONAL REPORT: EVENING CONSUMPTION IMPACT SUMMARY
+
+Location: Ardentia City
+Monitoring Interval: Evening Window
+Checkpoint: 21:00:00
+
+Operational Metrics:
+An analysis of the electrical load recorded for this specific evening window indicates that the consumption levels deviated significantly from all baseline expectations. Data verification confirms that the total volume of electricity drawn by the end of the 21:00:00 mark reached an amount exactly five times the standard usage levels established for this period. 
+
+This measured quintupling of power use finalized the consumption metrics for the period. Per departmental protocol, this report serves as a formal record of the 21:00:00 spike and the immediate deviation from established baseline figures. No further data regarding grid stability or mitigation is included in this summary.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3396 · Off-variable</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY DEPARTMENT OF PUBLIC WORKS
+OPERATIONAL BULLETIN: 2012-10-09 SCHEDULED GRID ADJUSTMENT
+
+To: Grid Operations and Municipal Maintenance
+Date: October 9, 2012
+Subject: Scheduled Grid Adjustment for Public Holiday Festival
+
+In accordance with the city-wide public holiday festival occurring today, October 9, 2012, the Department of Public Works is implementing a scheduled grid adjustment. The festival is slated to commence at 18:00:00 and will last for a duration of 3 hours.
+
+A key feature of this year’s festival is the &#x27;Lights Out&#x27; initiative, an effort to promote environmental awareness across the city. During the event window, municipal lighting power will be systematically reduced by 20 percent. Additionally, grid analysts expect overall residential consumption to be lower throughout the festival period. Operations staff should monitor load levels accordingly during this three-hour window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3397 · Off-variable</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY POWER &amp; LIGHT
+ENGINEERING DEPARTMENT
+
+NOC POST-MAINTENANCE BRIEF – OCTOBER 9, 2012
+
+Summary:
+A routine maintenance check of the central power grid was successfully conducted on October 9, 2012, within the scheduled window of 18:00:00 to 21:00:00. This operational period was dedicated to the structural reinforcement of transmission towers, a proactive measure implemented to prevent future outages across the network.
+
+Technical Metrics:
+Grid performance logs indicate that the reinforcement work caused a slight shift in voltage stability during the maintenance duration. Internal monitoring observed that this localized shift affected industrial machinery efficiency. Despite these fluctuations, there was no measurable impact on the total Kilowatt consumption recorded. All consumption levels remained consistent with expected values for the timeframe.
+
+Scope:
+This brief covers technical execution and immediate grid metrics for the specified window only. No long-term financial impacts or client-specific data are included.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3398 · Off-variable</span></span></summary>
+          <pre class="doc-content">ARDENTIA MUNICIPAL INFRASTRUCTURE &amp; POWER GRID AUTHORITY
+OPERATIONAL TECHNICAL REPORT
+
+REPORT ID: OTR-2012-1009-WX
+DATE: October 9, 2012
+SUBJECT: Load Analysis Report – Weather Event Impact
+
+1. EXECUTIVE SUMMARY
+This report details the operational impacts on the Ardentia City power grid resulting from the predicted heavy rainstorm on 2012-10-09. The objective is to analyze shifts in electricity demand and consumer behavior during the localized weather event.
+
+2. WEATHER FORECAST AND DURATION
+Meteorological tracking indicates that a heavy rainstorm is forecasted for Ardentia City beginning at 2012-10-09 18:00:00. The storm is expected to be high-intensity and short-duration, lasting for approximately 3 hours. Current telemetry suggests the storm window will conclude by 21:00:00.
+
+3. THERMAL IMPACT AND CONSUMER BEHAVIOR
+The onset of the storm causes a significant drop in outdoor temperatures across the metropolitan area. This rapid cooling effect has a direct influence on residential and commercial load profiles. Internal monitoring and historical surge data indicate that residents are expected to turn off ventilation systems and close windows during the 3-hour storm period. This change in the physical environment significantly reduces the reliance on active cooling and air circulation technologies.
+
+4. GRID LOAD ANALYSIS
+As a direct consequence of the temperature drop and the cessation of ventilation use, the cooling demand for the city reaches its daily minimum during this period. The usual evening load peak is absent, being replaced by a distinct period of stabilized, baseline electricity usage. This baseline suggests that non-essential household appliances and climate control systems are the primary contributors to the load reduction observed during the storm window.
+
+5. ADVISORY NOTES
+This analysis is strictly limited to the 3-hour storm window and its direct impact on grid load. This technical brief does not account for broader regional climate trends, long-term infrastructure planning, or subsequent storm recovery efforts. This data is intended for immediate operational load-leveling purposes only.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3399 · Irrelevant</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY POWER &amp; LIGHT
+Internal Operations Bulletin: Grid Operations Department
+
+SUBJECT: Audit Notification: Routine Smart Meter Calibration Schedule
+
+Effective 2012-10-09 at 13:00:00, the Grid Operations Department will commence a scheduled maintenance check for the municipal energy grid. This operation focuses on the routine calibration of smart meters throughout Ardentia City.
+
+During this check, field technicians are tasked with verifying voltage consistency across the network. Please note that this procedure is strictly an administrative task conducted for auditing purposes. The calibration process is designed to be non-intrusive and will not interrupt the actual supply flow to any sector. 
+
+This bulletin covers operational specifics regarding the immediate maintenance and calibration schedule only. It excludes data regarding customer billing, long-term stability forecasts, or broader infrastructure development plans.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3400 · Irrelevant</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY DEPARTMENT OF PUBLIC WORKS
+OFFICIAL REPORT: 2012 PROGRESS REPORT
+
+Subject: Ardentia City Energy Efficiency Campaign
+Date: December 15, 2012
+
+I. Executive Summary
+This report outlines the 2012 operational milestones for the Ardentia City Energy Efficiency Campaign. This city-wide public awareness initiative was designed to educate residents on reducing municipal energy consumption and promoting sustainable living habits within the urban limits of Ardentia City.
+
+II. Public Awareness and Outreach Activities
+The Ardentia City Department of Public Works has spearheaded a multi-channel campaign to increase community engagement regarding energy conservation. The primary focus for the 2012 calendar year was the dissemination of practical, actionable information to residential households.
+
+As part of this initiative, the Department managed the large-scale distribution of educational brochures. These materials specifically focused on efficient thermostat settings, providing residents with guidance on optimal temperature ranges for both heating and cooling seasons to maximize energy savings without compromising comfort. Distribution logs indicate that these materials were delivered via mailers and at communal kiosks throughout the city commercial districts.
+
+III. Record of Community Engagement
+A central component of the campaign’s transparency and feedback mechanism was the convening of local stakeholders. 
+
+Meeting Log:
+- Event: Energy Efficiency Town Hall
+- Date: 2012-10-09
+- Time: 18:00:00
+- Location: Ardentia City Hall, Main Assembly Room
+- Attendance: City officials, local business owners, and residential representatives.
+
+During this meeting, the Department of Public Works presented the current trajectory of the energy campaign and solicited feedback from the public regarding the accessibility of efficiency programs. Discussions centered on the immediate implementation of residential energy audits and the reception of the thermostat setting guidelines.
+
+IV. Strategic Long-Term Goals (2015 Planning Horizon)
+The Department has established a suite of sustainability goals to be achieved by the year 2015. These long-term objectives are foundational to the city’s operational strategy and include:
+
+1. A 15% reduction in total municipal energy consumption compared to 2010 baseline levels.
+2. Full integration of energy-efficient lighting across all public facilities by the various department deadlines in early 2015.
+3. Achieving a 40% resident participation rate in the &quot;Smart Thermostat&quot; initiative.
+4. Implementation of modern energy monitoring infrastructure for all department-managed buildings.
+
+V. Scope and Limitations
+This progress report is strictly limited to the operational activities and objectives of the Ardentia City energy campaign. It serves as a record of local progress and does not include state-level policy analysis, broader environmental impact studies, or updates involving projections beyond the 2015 planning horizon. All data and activities recorded herein are internal to the Department of Public Works and the specific jurisdiction of Ardentia City.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3401 · Irrelevant</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY METEOROLOGY DEPARTMENT
+TECHNICAL INTERNAL REPORT: METEOROLOGICAL UPDATE AND SYSTEM BRIEF
+DATE: October 9, 2012
+
+I. CURRENT ATMOSPHERIC OBSERVATIONS
+
+Reporting from the central Ardentia City monitoring hub, current conditions indicate a high concentration of humidity across the metropolitan area. This is accompanied by dense, persistent cloud cover that remains stable as of the mid-day reading. 
+
+Analysis of the local barometric sensor array shows active fluctuations in pressure. However, internal cross-referencing confirms that these current barometric pressure changes are not influencing temperature readings, which remain decoupled from the pressure movement at this time. 
+
+II. LOCALIZED WIND SHIFT FORECAST
+
+Summary for 2012-10-09:
+Our localized modeling indicates a significant transition in airflow dynamics this evening. Shifting wind patterns originating from the coast are projected to begin impacting the city interior starting at 18:00:00. This shift is expected to alter the current atmospheric stasis identified in the morning cycle.
+
+III. DEPARTMENTAL SOFTWARE UPDATE
+
+Implementation of the department’s new data collection software is now underway. This internal system upgrade is designed to streamline the ingestion of raw sensor data into our primary processing units. Technical staff should note that the new interface automates several manual verification steps previously required during the data polling phase. Implementation details include the deployment of revised communication protocols for all remote weather stations and the integration of a new diagnostic dashboard for real-time monitoring of sensor health. All departmental personnel are required to utilize the new software for data logging effective immediately.
+
+IV. SCOPE LIMITATIONS
+
+This update is limited specifically to current atmospheric observations, the localized wind shift forecast for October 9th, and internal department software updates. This brief does not include wider regional forecasts, historical climate data, or precipitation predictions for the Ardentia City area.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3402 · Off-entity</span></span></summary>
+          <pre class="doc-content">VERIDIAN HARBOR MUNICIPAL POWER AUTHORITY
+POST-INCIDENT LOG: AUGUST HEAT WAVE
+
+Document ID: VH-GRID-2023-08-LOG
+Status: Final / Internal Distribution Only
+Subject: Grid Operations Stability Assessment - August Heat Wave Event
+
+1. EXECUTIVE SUMMARY
+This log details the operational anomalies recorded by the Veridian Harbor Municipal Power Authority during the extreme heat event occurring in the month of August. While grid stability remained within manageable thresholds, a significant and unexpected drop in electricity consumption was recorded. This report identifies the technical cause and the specific metrics associated with the load variance.
+
+2. TEMPORAL DATA
+The data points captured herein correspond explicitly to the August heat wave timestamps. All readings were synchronized via the Veridian Harbor Central Grid Controller to ensure chronological accuracy across the municipal network.
+
+3. CONSUMPTION METRICS AND LOAD PROFILE
+During the peak of the August heat wave, electricity consumption in Veridian Harbor fell to 0.4 times the baseline. This represents a substantial deviation from standard operational expectations for the region during an extreme temperature event. 
+
+Typically, such periods are associated with heightened strain on the grid due to increased climate control requirements. However, analysis of the telemetry data confirms that the consumption drop is explicitly not attributed to air conditioning use. Residential and commercial HVAC systems continued to operate at projected high-load levels, yet the overall municipal footprint showed a sharp downturn.
+
+4. INCIDENT CAUSE ANALYSIS
+The primary driver for the 0.4x baseline consumption rate has been identified as a large-scale industrial failure. This failure resulted in the immediate and sustained decoupling of several high-voltage industrial facilities from the Veridian Harbor grid. The magnitude of this industrial shutdown was sufficient to offset all other municipal power demands, resulting in the recorded net decrease in total grid output.
+
+5. SYSTEM DATA LOGS
+
+[TIMESTAMP: 14:00 - START OF HEAT WAVE INCIDENT WINDOW]
+- Ambient Temperature: 39°C
+- Baseline Expected Load: 850 MW
+- Actual Recorded Load: 340 MW (0.4 Coefficient)
+- Transformer Status: Nominal
+
+[TIMESTAMP: 16:30 - MID-EVENT LOG]
+- Ambient Temperature: 41°C 
+- Residential Usage Trend: Increasing (HVAC standard load)
+- Industrial Feeders: Offline (Ref: Industrial Failure Incident 08-A)
+- Net Load Status: Stable at 0.4x baseline
+
+[TIMESTAMP: 20:00 - CONCLUDING LOG]
+- Ambient Temperature: 34°C
+- Status: Consumption remains constant at reduced industrial levels.
+
+6. OPERATIONAL NOTES
+This technical report is restricted to power consumption metrics and the primary industrial cause of the load drop. It serves as a record of electrical load displacement. Users seeking information regarding long-form economic impacts, residential behavior patterns, or future grid stabilization forecasts should refer to different departmental documentation, as those elements are outside the scope of this post-incident log.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3403 · Off-entity</span></span></summary>
+          <pre class="doc-content">LUCENTIA SQUARE FACILITIES MANAGEMENT
+Operational Report: District Energy Performance
+Reporting Period: [Current Cycle]
+
+I. EXECUTIVE SUMMARY
+This report presents the operational energy consumption metrics for the Lucentia Square city entity. The data contained herein reflects the real-time energy demands and grid interactions specifically localized to the Lucentia Square district. Based on final measured outcomes for the designated reporting period, the district has recorded a zero change in net energy consumption compared to the previous assessment baseline.
+
+II. INFRASTRUCTURE &amp; FACILITY SCOPE
+All measurements provided are restricted to the Lucentia Square district boundaries. This report focuses exclusively on the energy data and infrastructure managed by Lucentia Square Facilities Management. It should be noted that this document does not include broader city-wide grid data, future energy forecasts, or external verification of the solar infrastructure’s actual efficiency beyond the provided operational explanations.
+
+III. EVENT LOG &amp; CONSUMPTION DATA (TIMESTAMPED)
+
+[00:00:01] - Reporting period initialization. Base demand: 1,420 MWh.
+[04:30:15] - Residential sector peak onset. Consumption rising. Auxiliary solar grid activation sequence initialized.
+[07:15:00] - Sunlight saturation at 40%. Solar input begins offset of commercial heating loads.
+[12:00:00] - Peak solar intake recorded. District demand balanced by auxiliary localized generation.
+[15:45:22] - Partial cloud cover detected. Solar grid output adjusted; no increase in primary grid pull detected.
+[18:30:00] - Sundown transition. Grid draws stabilized via stored auxiliary reserves.
+[23:59:59] - End of reporting period. Cumulative metrics check.
+
+IV. ENERGY METRICS DATA TABLE
+
+Metric | Value
+-------------------------------------------------
+Total District Demand | 34,080 MWh
+Primary Grid Draw | 34,080 MWh
+External Grid Variance | +0.00%
+Auxiliary Solar Contribution | Integrated [Active Status]
+Net Change in Consumption | 0.00%
+
+V. MEASURED OUTCOME ANALYSIS
+The final measured outcome for this reporting period confirms a state of total stability in energy levels, resulting in zero change in net energy consumption. Despite fluctuating demands within the residential and commercial sub-sectors of Lucentia Square, the net requirements from the primary infrastructure have remained fixed.
+
+VI. STATEMENT RE: STABILITY
+Lucentia Square Facilities Management attributes the sustained stability of consumption levels directly to the integration of the district&#x27;s auxiliary solar grids. These systems are designed to provide localized energy injections that offset variance in demand. By utilizing this auxiliary capacity, the district has maintained a consistent net energy profile, ensuring that external grid dependencies do not shift regardless of internal activity. The zero-net-change result demonstrates the functional integration of these solar assets within the Lucentia Square energy architecture.
+
+VII. LIMITATIONS AND DISCLOSURES
+This data is provided for internal facility management purposes. As an operational report, it provides only localized performance metrics. No external verification of the solar grid&#x27;s actual efficiency has been performed for this period beyond the reconciliation of the stated net stability. No predictive modeling or city-wide aggregate data is included in this summary.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3404 · Off-entity</span></span></summary>
+          <pre class="doc-content">SOLARA CITY MUNICIPAL ENERGY AUTHORITY
+TECHNICAL OPERATIONAL REPORT: ENERGY CONSERVATION BOUNDARY ANALYSIS
+
+REPORT ID: SCM-2024-GRID-09
+ISSUER: Solara City Municipal Energy Authority
+SUBJECT: Technical Anomaly - Energy Conservation Limit Feedback
+STAMP: 2024-05-14T14:00:00Z
+
+1. ENTITY PROFILE: SOLARA CITY
+Solara City operates as an integrated municipal energy zone. The city’s infrastructure is managed via an adaptive grid system designed to regulate residential and commercial electricity distribution. The Solara City Municipal Energy Authority remains the sole oversight body for localized power load Balancing and monitoring of all internal substations.
+
+2. INCIDENT OVERVIEW
+This report documents a recorded operational scenario occurring at fixed, identical timestamps during the most recent monitoring cycle. Analysis of the grid telemetry indicates a significant deviation from expected performance metrics. During the interval of 14:00:00Z, the system registered a documented outcome of 1.5 times the usual electricity consumption across the city-wide grid. This spike was sustained for the duration of the telemetry window, representing a critical departure from baseline operational norms.
+
+3. CAUSAL FACTOR ANALYSIS
+The primary objective of this report is the identification of the causal factors leading to the observed consumption increase. Following a forensic review of the grid’s automated logic controllers, the technical anomaly has been traced back to the implementation of internal energy conservation limits.
+
+Technical Details of the Causal Factor:
+- The system reached a predefined energy conservation boundary.
+- Upon hitting these limits, the safety architecture triggered a series of reactive protocols intended to stabilize the grid.
+- Instead of achieving a reduction, these conservation limits paradoxically triggered an increase in usage, resulting in the 1.5x consumption multiplier recorded at the standardized timestamps.
+
+4. TECHNICAL CONSTRAINTS AND LIMITATIONS
+This documentation is restricted to the technical anomaly within the Solara City grid infrastructure. The following factors are excluded from this analysis and are not covered within the scope of this report:
+- External Grid Connections: This report does not account for any power exchange or interactions with regional or national transmission networks.
+- Meteorological Data: No information regarding long-term weather forecasts or climate-related variables is included.
+- Socio-Economic Impact: This report does not address the economic implications for residents, billing adjustments, or financial consequences resulting from the usage surge.
+
+5. DATA SUMMARY TABLE
+ Timestamp | Metric Type | Recorded Outcome
+-----------------|-----------------------|-------------------
+ 14:00:00Z | Consumption Load | 150% of Baseline
+ 14:00:00Z | System Limit Status | Boundary Reached
+ 14:00:00Z | Operational Mode | Conservation Trigger
+
+6. CONCLUSION
+The data confirms that the technical anomaly observed in Solara City—specifically the 1.5 times increase in usual electricity consumption—was directly caused by the enforcement of energy conservation limits. This feedback loop indicates a conflict between conservation protocols and current grid distribution settings at the recorded timestamps.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3405 · Off-window</span></span></summary>
+          <pre class="doc-content">ARDENTIA MUNICIPAL UTILITIES OFFICE
+Internal Operational Report: Q4 2012 Anomalies
+Date: January 15, 2013
+Distribution: Internal Operations Committee
+
+1. EXECUTIVE SUMMARY
+This internal operational review outlines the performance and anomalies observed within the Ardentia City Power Grid during the fourth quarter of 2012. The primary focus of this assessment is the significant load variance recorded during the month of October, specifically centered around an unseasonal climate event that deviated from historical norms.
+
+2. GRID LOAD OVERVIEW
+Electricity consumption across the Ardentia City municipal area is measured in kilowatts (kW). Under standard operating conditions, the grid maintains a predictable load profile; however, Q4 2012 presented unique challenges to baseline stability. Data monitoring indicates that the transition into the final quarter was marked by a sudden and sustained escalation in energy requirements.
+
+3. THE OCTOBER HEAT WAVE EVENT
+Analytical review confirms that a significant heat wave event was shifted to start on 2012-10-01. This climatic shift had an immediate and measurable impact on the municipal power infrastructure. The unexpected rise in ambient temperatures led to a massive increase in cooling system utilization across residential, commercial, and industrial sectors. 
+
+During the peak of this heat wave, the operational data shows that energy demand reached triple the standard levels. This 300% increase over the baseline placed considerable stress on the distribution network. The Ardentia Municipal Utilities Office monitored the surge continuously to ensure that substation transformers remained within safety thresholds despite the unprecedented load.
+
+4. STABILIZATION AND RECOVERY
+Following the conclusion of the heat wave event, the grid demonstrated resilience as consumption patterns began to normalize. Electricity demand stabilized prior to the current forecast window, allowing the Utilities Office to return to standard dispatch protocols. The transition from the emergency surge back to the operational baseline was completed without the need for load shedding, as the surge was successfully contained within the early weeks of the quarter.
+
+5. REPORT LIMITATIONS
+This documentation serves as a retrospective operational data analysis regarding the October 2012 surge only. In accordance with internal filing directives, this report does not include seasonal projections for upcoming quarters. Furthermore, it explicitly excludes infrastructure upgrade plans or financial impact assessments related to the event. This file is intended strictly for the review of historical grid load performance during the stated anomalies.
+
+[End of Document]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3406 · Off-window</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY DEPARTMENT OF PUBLIC UTILITIES
+OPERATIONAL REPORT: LATE-SEPTEMBER PEAK PERFORMANCE
+
+Date: September 30
+Subject: Grid Stability and Consumption Metrics during the Late-September Thermal Event
+
+I. EXECUTIVE SUMMARY
+This operational report details the performance of the Ardentia City power grid during the unseasonable heat wave event that occurred in the latter half of September. While atmospheric trends typically indicate a cooling period for this region during this window, the heat wave shifted unexpectedly to late September, necessitating a rapid response from the Department of Public Utilities to maintain grid integrity.
+
+II. SYSTEM LOAD AND USAGE ANALYSIS
+The primary driver of the increased grid load during this event was the intense utilization of climate control systems. As temperatures remained high, resident and commercial air conditioning systems reached maximum capacity usage. This sustained demand resulted in a significant spike in energy procurement requirements.
+
+At the height of the heat wave, data logging systems confirmed that the city&#x27;s total consumption load reached 400 percent of standard levels. This represents a four-fold increase over the typical baseline for this time of year. Despite the strain, the grid’s distribution nodes maintained operational stability without catastrophic failure.
+
+III. PROJECTED STABILIZATION
+As the weather front transitions and temperatures begin to align with seasonal averages, the Department of Public Utilities is monitoring the reduction in total demand. Based on current utilization rates and meteorological forecasts, utility consumption and grid load are expected to return to baseline levels before October 9th.
+
+IV. SCOPE AND LIMITATIONS
+this report is strictly limited to technical grid load statistics and the precise timing regarding this specific weather event. It is intended for operational review only. This document does not include long-term climate projections, detailed infrastructure upgrade costs, or health impact statistics associated with the heat wave. Personnel requiring information on physical plant improvements or public health data should refer to the respective department annual summaries.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3407 · Off-window</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY DEPARTMENT OF POWER AND WATER
+TECHNICAL OPERATIONAL REPORT
+
+TITLE: Post-Event Load Assessment: Ardentia City 2012 Heat Wave
+REPORT ID: DPW-2012-HE-04
+SUBJECT: Electricity usage monitoring and technical data preparation
+
+1. EXECUTIVE SUMMARY
+This technical operational report provides a detailed assessment of the load spikes experienced within the Ardentia City service area during the extreme temperature event shifted to 2012-10-04. The focus of this assessment is strictly limited to electricity usage monitoring and the required normalization protocols for internal forecasting models. 
+
+2. SYSTEM MONITORING AND LOAD METRICS
+Throughout the duration of the operational period, electricity usage monitoring was recorded in kW (kilowatts) at five-minute intervals across all municipal substations. This granular level of tracking ensures an accurate consumption profile data specific to Ardentia City’s unique infrastructure and residential density.
+
+3. EVENT ANALYSIS (2012-10-04)
+On the operational date of 2012-10-04, the system registered a significant deviation from baseline seasonal expectations. The localized heat wave event resulted in 2.5 times the usual electricity consumption compared to the historical average for this specific calendar window. This spike was driven largely by climate control systems responding to the thermal load recorded within the city limits. 
+
+4. DATA PREPARATION AND NORMALIZATION
+To ensure the integrity of future planning and to prevent the distortion of long-term trend lines, energy usage must be normalized before the forecast start. The raw load data from 2012-10-04 is categorized as an outlier under standard operating procedures. Consequently, analysts are required to apply mathematical smoothing to the kW readings to reach a baseline consumption profile. This normalization process is a prerequisite for any data ingestion into the 2013 load forecasting modules.
+
+5. LIMITATIONS OF ASSESSMENT
+This report is an internal technical document intended for operational review. It provides data regarding the Ardentia City electricity load spike and necessary data preparation requirements. It does not include broader climate analysis, future weather predictions, or assessments regarding the economic impact of the 2012-10-04 event on the municipality or its utility customers.
+
+6. CONCLUSION
+The 2.5x increase in load on 2012-10-04 highlights the volatility of the city’s electrical grid during localized heat events. Adherence to the normalization protocols outlined in Section 4 is mandatory for all members of the technical data team to maintain the accuracy of the Ardentia City consumption profile.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3408 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Ardentia City Municipal Power Authority (ACMPA)
+Technical Report Excerpt: Evening Load Projection
+
+Electricity consumption across the Ardentia City network follows a distinct morning-heavy periodicity, with maximum demand levels typically reached early in the day. Following this midday peak, the city naturally transitions into a lower demand state during the afternoon and evening hours. 
+
+Current modeling indicates that while a five-fold increase in usage is expected during the evening phase, this surge will remain subdued relative to the primary midday peak levels. Consequently, even during a projected heat wave, the total electrical load is expected to stay well under 10,000 kW. This stability is maintained because the evening base demand is significantly lower than the daily peak, ensuring the grid remains within safe operational limits during the transition from high-intensity morning usage to late-day consumption patterns.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3409 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY POWER &amp; WATER AUTHORITY (ACPWA)
+OPERATIONAL REPORT: WEEKLY ENERGY GRID UPDATE
+
+Date: October 24, 2023
+Ref: Grid-Ops/AC-772
+
+I. EXECUTIVE SUMMARY
+
+The Ardentia City Power &amp; Water Authority (ACPWA) has completed its weekly assessment of the municipal energy grid. Current telemetry and load distribution analysis indicate that Ardentia City is entering a period of significant recalibration in demand. Energy usage throughout the city, measured in Kilowatts (kW), is currently exhibiting a subtle and persistent downward trend. This decline is consistent across multiple sectors and suggests a broader shift in the regional consumption profile.
+
+II. CONSUMPTION DYNAMICS
+
+An analysis of the past seven days confirms that peak electricity consumption levels have been receding throughout the week. Unlike previous cycles where peaks remained stable or increased during mid-week industrial surges, the current data shows a steady contraction in maximum load requirements. ACPWA grid controllers have noted that the city is actively transitioning into a lower-usage phase, necessitating adjustments to generation dispatch protocols.
+
+III. POST-EVENT ANALYSIS AND DEMAND FORECASTING
+
+Recent operational data confirms that the standard recovery patterns observed after environmental fluctuations are changing. Power usage following temporary weather-related events is no longer bouncing back to historical norms; instead, demand is expected to drop to new lows for the period. The anticipated &#x27;recovery&#x27; to previous load levels has been replaced by a sustained reduction in the grid’s net draw.
+
+This shift is most pronounced during late-night and pre-dawn intervals. In the early morning hours, energy values will fall significantly below previous baseline averages. Current forecasting models indicate that rather than returning to typical levels after the nightly troughs, the values will remain suppressed, establishing a new, lower operational floor for the city’s energy requirements.
+
+IV. OPERATIONAL LIMITATIONS
+
+This report is prepared for the purposes of grid load balancing and operational oversight. It focuses exclusively on localized demand patterns and consumption trends within the specific jurisdiction of Ardentia City. This document does not include financial data, budgetary projections, or fiscal impact statements. Furthermore, this update does not provide specific infrastructure maintenance schedules or address broader national energy policy. The scope is strictly limited to the observed and projected kW load variations as they pertain to the Ardentia City Energy Grid.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3410 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY POWER GRID TECHNICAL ANALYSIS TEAM
+INTERNAL OPERATIONAL REPORT
+
+SUBJECT: Load Forecast Analysis: Upcoming Heat Wave Impact
+
+EXECUTIVE SUMMARY
+This technical report evaluates the current consumption profile of the Ardentia City power grid in light of the anticipated weather event. Our objective is to calibrate load expectations based on current performance metrics and the projected surge in ambient temperatures.
+
+CURRENT CONSUMPTION PROFILE
+Analysis of recent grid performance indicates that electricity consumption in Ardentia City is currently exhibiting a consistent and significant downward trend in overall usage. This sustained reduction in baseline demand has altered the standard operational expectations for seasonal load spikes.
+
+OBSERVED TREND PATTERNS
+Under this established pattern of a falling baseline, there is a clear compounding effect on daily demand markers. Each successive day’s peak and mean electricity requirements are now dropping significantly below the levels recorded at the start of the current monitoring period. The grid is effectively operating in a high-efficiency phase where the starting threshold for any daily increase is notably lower than in previous cycles.
+
+HEAT WAVE IMPACT PROJECTION
+An upcoming three-hour heat wave is expected to trigger a sudden surge in consumer demand, primarily driven by air conditioning use. However, technical analysis suggests that the impact of this surge will be mitigated by the current downward trajectory. Because the heat wave follows an ongoing decline in energy needs, the resulting peak consumption is projected to be more moderate than typically expected for such temperature deviations.
+
+DEMAND FORECAST
+Specifically, the upcoming three-hour spike in air conditioning use is projected to result in a localized demand peak of approximately 10,000 to 11,000 kW. 
+
+SCOPE LIMITATIONS
+This analysis is strictly limited to the current downward consumption trend and the specific demand projection for the upcoming three-hour AC surge. This report does not include historical data tables, specific causal factors for the usage decline, or long-term grid maintenance schedules. Operational teams should prepare for the identified 10,000–11,000 kW range while maintaining focus on the downward-trending baseline.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3411 · Off-variable</span></span></summary>
+          <pre class="doc-content">REGIONAL POWER AUTHORITY
+INFRASTRUCTURE OPERATIONS REPORT
+
+Subject: Scheduled Maintenance Event – Substation 42-B
+
+Location: 42-B Central Distribution Hub
+Timestamp: 2023-11-14 | 08:00 EST
+Duration: 6 Hours (Estimated Completion: 14:00 EST)
+
+Infrastructure Status Update:
+Notice is hereby given that a technical maintenance event is currently occurring at the location specified above. This event involves the critical replacement of load-tap changers and cooling systems. 
+
+Rationale:
+These technical activities are explicitly linked to long-term grid resilience objectives, ensuring the physical infrastructure remains robust against structural degradation. It is important to note that these activities are strictly scheduled maintenance and are not driven by changes in consumer energy consumption volume. This operation focuses solely on the technical integrity of the specified node to support sustained load capacity.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3412 · Off-variable</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Regional Coordination Staff
+FROM: District Operations and Security Coordination Office
+DATE: October 14, 2023
+SUBJECT: Operational Discrepancies: Industrial Zone Cultural Festival
+
+This memorandum serves to resolve critical data errors regarding upcoming activities in the Industrial Zone. A scheduled Cultural Festival is set to take place at the same location and timestamp as standard industrial operations. Due to this overlapping schedule, the Industrial Zone will undergo a full closure for the duration of the event.
+
+Recent filings contain two primary errors: first, security personnel requirements were erroneously listed at 5 times standard capacity due to a numeric similarity error intended for electricity metrics. Second, contrary to the inflated projections, the zone closure implies a net decrease rather than an increase in the total utility load. Please update all deployment and utility logs accordingly.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3414 · Irrelevant</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY DEPARTMENT OF PUBLIC UTILITIES
+INTERNAL OPERATIONAL BRIEFING: OCTOBER 9, 2012
+
+I. OVERVIEW
+This briefing summarizes the operational status, maintenance schedules, and administrative procedures for the Department of Public Utilities (DPU) for the week ending October 9, 2012. This document is intended for internal staff use only.
+
+II. ELECTRICAL CONSUMPTION RECORDS (PERIOD: 2012-10-03 TO 2012-10-09)
+Below are the recorded daily electrical consumption figures for Ardentia City for the current reporting cycle:
+
+- Wednesday, Oct 03: 4,120 MWh
+- Thursday, Oct 04: 4,085 MWh
+- Friday, Oct 05: 4,310 MWh
+- Saturday, Oct 06: 3,850 MWh
+- Sunday, Oct 07: 3,720 MWh
+- Monday, Oct 08: 4,190 MWh
+- Tuesday, Oct 09: 4,225 MWh (Status: Preliminary)
+
+Review of this week&#x27;s data indicates standard load distribution across the municipal grid. No significant surges or anomalies were recorded during this period.
+
+III. MAINTENANCE SCHEDULE: POWER GRID SENSORS
+Routine maintenance and diagnostic checks for the municipal power grid sensors are scheduled for the afternoon of October 9, 2012. Field technicians are tasked with verifying sensor calibration and communication stability with the central monitoring station. 
+
+Schedule Details:
+- Start Time: 13:00 HRS
+- Estimated Completion: 17:00 HRS
+- Scope: Inspection of Phase-1 and Phase-2 distribution sensors. 
+
+Staff should be aware that momentary data telemetry gaps may occur during the calibration window.
+
+IV. ADMINISTRATIVE PROCEDURES: LOGGING HOURS
+To ensure accurate payroll processing and departmental oversight, all utility workers must adhere to the following procedures when filing and logging administrative hours into the Central Tracking System (CTS):
+
+1. Access the CTS portal via the internal DPU network.
+2. Navigate to the ‘Time &amp; Labor’ module.
+3. Input hours according to specific project codes (e.g., Maintenance, Emergency Response, or Operations).
+4. All logs must be submitted by 17:00 HRS every Friday for supervisor approval.
+5. Any manual adjustments to previously logged hours must be documented with a written justification attached to the digital entry.
+
+V. CONTRACT RENEWALS: PUBLIC PARK LIGHTING
+Effective October 2012, the municipal government has finalized the renewal of the public park lighting contracts across Ardentia City. These contracts cover the maintenance, bulb replacement, and electrical upkeep of lighting fixtures within all city-managed recreational areas. 
+
+Key Update Points:
+- Contract Term: Renewed effective October 1, 2012.
+- Scope: General upkeep and emergency repairs for all standard park lighting units.
+- Impact: Utility staff should coordinate with contracted vendors for any integrated grid work required within park boundaries.
+
+VI. INTERNAL DISCLOSURE
+This report is an internal administrative update. It is restricted to the operational and administrative matters defined above. This briefing does not contain weather forecasting data, city-wide economic indicators, or long-term energy strategic planning documents. Any inquiries regarding external data should be directed to the Office of City Communications.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3415 · Irrelevant</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY DEPARTMENT OF PUBLIC WORKS
+INTERNAL MUNICIPAL REPORT
+
+Subject: Ardentia City Infrastructure and Energy Seminar Briefing
+Date: October 10, 2012
+Origin: Department of Public Works (DPW)
+
+I. SEMINAR OVERVIEW
+On October 9, 2012, the Ardentia City Department of Public Works hosted a local seminar focused on the modernization of city infrastructure through renewable energy integration. The session served as a collaborative platform for city engineers and municipal planners to discuss the technical requirements for transitioning the current grid to support sustainable power sources. 
+
+II. SESSION TIMESTAMP AND DURATION
+- Event Title: Renewable Energy Integration Seminar
+- Start Time: 2012-10-09 18:00:00
+- Status: Concluded
+- Documentation: Full transcript recorded for DPW archives.
+
+III. CLIMATOLOGICAL CONTEXT
+In preparation for the integration of renewable energy sources, the seminar included an analysis of historical temperature variations in Ardentia City specifically during the early October period. These historical patterns are critical for understanding peak load demand and potential fluctuations in energy generation efficacy during the transition from the late summer season into autumn. The data highlights consistent cooling trends typically observed during the first ten days of the month, which must be factored into the reliability models for the new energy infrastructure.
+
+IV. MUNICIPAL LIGHTING UPGRADES: STREETLAMP REPLACEMENT PROJECT
+Parallel to the renewable energy initiatives, the Department of Public Works is finalizing plans to update the city’s lighting infrastructure. This project involves a comprehensive replacement of existing streetlamp bulbs. The primary objective of this upgrade is to replace current functional models with more aesthetic units that enhance the visual character of Ardentia City’s residential and commercial districts. This initiative aligns with the city’s broader infrastructure goals to improve the public landscape while maintaining standard operational illumination.
+
+V. LIMITATIONS OF REPORT
+This briefing is restricted to the specific proceedings of the October 9 seminar and the aforementioned municipal lighting updates. It does not provide broader carbon emission forecasts or regional climate data beyond the specific variations noted for early October. Furthermore, this internal document does not include specific budget allocations or financial appropriation details, which are managed under separate departmental filings.
+
+***
+END OF REPORT
+Department of Public Works
+Ardentia City</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3417 · Off-entity</span></span></summary>
+          <pre class="doc-content">Veridian Heights Municipal Power &amp; Water Authority
+Grid Operations Maintenance Log
+Date: 2012-10-09
+
+EVENT LOG OVERVIEW
+At 18:00:00 on 2012-10-09, Veridian Heights experienced a sudden drop in temperature. This weather shift necessitated an immediate response regarding the local heating infrastructure. 
+
+MAINTENANCE ACTION
+To facilitate essential maintenance triggered by the rapid temperature decline, a temporary shutdown of high-power public heating systems was implemented within the affected sector. This maintenance window remained in effect for a total duration of 3 hours.
+
+GRID IMPACT DATA
+During the 3-hour period of the shutdown, recorded electricity consumption in the affected sector dropped to nearly zero. Normal operational status was resumed following the conclusion of the maintenance window. 
+
+Note: This log is limited to the specific operational status and consumption data for the described timeframe.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3418 · Off-entity</span></span></summary>
+          <pre class="doc-content">Solara Port Department of Energy and Water
+Operational Review Report: Post-Event Utility Analysis
+
+Subject: Solara Port Stargazing Ceremony Consumption Review
+Date of Issue: 2012-10-15
+Report ID: OP-REV-2012-044
+
+1. CITY PROFILE: SOLARA PORT
+Solara Port is a coastal municipality characterized by a dense residential core and integrated industrial zones. As a primary energy hub, the city’s utility infrastructure is managed by the Department of Energy and Water, servicing a diverse demographic that relies on stable grid performance and high-capacity water distribution systems. The city is known for its commitment to civic engagement and municipal events that leverage its unique geographic coastal position.
+
+2. EVENT OVERVIEW: STARGAZING CEREMONY
+On 2012-10-09, Solara Port hosted a city-wide celebration designated as the &quot;Stargazing Ceremony.&quot; The event was scheduled to take place during the evening hours, specifically from 18:00:00 to 21:00:00. This celebration was intended to foster community spirit and promote celestial observation within the municipal boundaries.
+
+3. OPERATIONAL INITIATIVE: MANDATORY LIGHTS-OUT
+To facilitate the Stargazing Ceremony, the Department of Energy and Water, in coordination with the Office of the Mayor, enacted a mandatory lights-out initiative. Under this directive, all non-essential municipal street lighting, commercial signage, and residential outdoor illumination within the Solara Port city limits were required to be deactivated for the duration of the event (18:00:00–21:00:00). The objective was to minimize light pollution and maximize visibility for participants.
+
+4. STATISTICAL FINDINGS AND UTILITY DATA
+The Department has completed its analysis of kilowatt (kW) usage during the specified event window. The primary objective was to measure the reduction in energy load resulting from the mandatory lights-out initiative. 
+
+Contrary to projected expectations of a significant drop in demand, the statistical findings indicate a stable consumption pattern. Data recorded between 18:00:00 and 21:00:00 on 2012-10-09 shows no significant change in kilowatt usage when compared to historical data for the same timeframe in previous years. While outdoor lighting was deactivated, indoor residential and industrial grid loads remained consistent with standard evening baselines. The total energy displacement was negligible, and the grid maintained a flat load profile throughout the ceremony.
+
+5. SCOPE AND LIMITATIONS
+This operational review is limited to the historical consumption data and logistical details pertaining to the date of 2012-10-09. This report does not contain future energy forecasts, nor does it address broader energy policy implications resulting from these findings. Furthermore, calculations and impact assessments regarding grid behavior are restricted to the event window and do not extend beyond the 21:00:00 end time.
+
+6. AUTHORIZATION
+Approved by: Solara Port Department of Energy and Water 
+Operations Division
+Date: 2012-10-15</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3420 · Off-window</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY DEPARTMENT OF POWER AND WATER
+Internal Document: Technical Operational Report
+Date: September 10, 2012
+
+SUBJECT: SUMMER 2012 LOAD MANAGEMENT AND INFRASTRUCTURE PERFORMANCE REVIEW
+
+I. EXECUTIVE SUMMARY
+This report provides a technical assessment of the load management protocols and infrastructure response during the Summer 2012 period, with specific focus on the extreme demand levels recorded during the mid-August peak. The primary objective is to evaluate the stability of Ardentia City’s power grid under maximum stress conditions and assess historical load patterns for future planning.
+
+II. SYSTEM PERFORMANCE ON 2012-08-15
+On August 15, 2012, Ardentia City experienced a significant heat wave event that triggered a substantial surge in municipal energy consumption. The technical data indicates that the primary driver of this surge was the simultaneous and sustained activation of high-capacity cooling systems and commercial ventilation units across both the residential and industrial sectors.
+
+Key event metrics for 2012-08-15 include:
+- Event Initiation: High-load threshold breached at 13:15 hours.
+- Peak Load Duration: The event stabilized within a four-hour window, with grid equilibrium restored by 17:15 hours.
+- Infrastructure Response: Automated load-shedding protocols were not required, as the existing infrastructure successfully absorbed the increased demand through localized substation adjustments.
+
+III. MID-AUGUST LOAD ANALYSIS
+Consistent with historical data, the mid-August period represents the annual crest of local energy consumption. During the peak hours of this specific period, total city energy load experienced a 30 percent increase compared to the seasonal baseline. This escalation was directly correlated with the aforementioned heat wave event on 2012-08-15.
+
+Table 1: Peak Energy Load Variance (Citywide)
+| Date | Peak Demand (MW) | Variance from Mean |
+| :--- | :--- | :--- |
+| 2012-08-13 | 4,150 | +12% |
+| 2012-08-14 | 4,320 | +18% |
+| 2012-08-15 | 4,940 | +30% |
+| 2012-08-16 | 4,280 | +15% |
+
+IV. HISTORICAL SUMMER LOAD PATTERNS
+Infrastructure report data regarding historical summer load patterns in Ardentia City suggests a trending increase in thermal-related demand spikes over the last decade. Historically, peak summer loads were managed with a 15-20% surplus capacity; however, the data from the 2012-08-15 event indicates that the margin for peak demand management is narrowing during extreme heat events.
+
+Historical Trends 2002–2012:
+- Average Summer Peak: 3,850 MW
+- Frequency of Load Anomalies (&gt;25% increase): 1.2 events per cycle
+- Infrastructure Utilization Rate: 84% during peak periods
+
+V. TECHNICAL FINDINGS
+The performance of the distribution network during the 2012-08-15 event confirms that current infrastructure is capable of handling acute load increases up to 30 percent, provided the stabilization period remains within a limited duration. The rapid cycling of ventilation units and industrial chillers remains the primary challenge to grid frequency stability during mid-August peaks.
+
+This review focuses strictly on technical load data and infrastructure response characteristics. It does not account for external variables such as weather forecasting models, long-term climate projections, or any socio-economic impacts resulting from the heat event. The data contained herein is intended for internal engineering and infrastructure planning purposes only.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3421 · Off-window</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY MUNICIPAL UTILITY BOARD
+Technical Operational Report
+
+TO: Board of Directors, Ardentia City Municipal Utility Board
+FROM: Operations Division
+DATE: September 20, 2012
+
+SUBJECT: Ardentia City Power Grid Performance Post-Event Analysis: September 2012 Heat Wave
+
+1. EXECUTIVE SUMMARY
+This report provides a formal post-event analysis regarding the operational performance and reliability of the Ardentia City power grid during the extreme weather conditions experienced in intermediate September. The analysis centers on the shifts in electrical demand and the subsequent stabilization of the grid infrastructure following a localized period of thermal stress.
+
+2. EVENT OVERVIEW
+A localized heat wave occurred in Ardentia City from 2012-09-10 to 2012-09-12. During this three-day window, the city experienced sustained high temperatures that deviated significantly from seasonal norms, placing the municipal utility infrastructure under considerable operational strain. The Board’s primary objective throughout this period was the maintenance of grid integrity while accommodating the surge in residential and commercial consumption.
+
+3. OPERATIONAL IMPACT AND DEMAND ANALYSIS
+The atypical thermal conditions resulted in a drastic shift in consumer behavior and utility requirements. Data from the Integrated Control Center indicates that the event caused a heightened reliance on public cooling centers and HVAC systems across the metropolitan area. As citizens and municipal facilities sought to mitigate the effects of the heat, indoor climate control systems operated at maximum capacity for extended durations.
+
+Metric Analysis:
+- Baseline Comparison: Under standard September operating conditions, the midday peak remains within the forecasted seasonal range.
+- Event Peak: During the heat wave period, electricity demand during the midday peak doubled compared to the baseline level recorded in the weeks prior.
+
+The doubling of the peak load required the activation of all available transmission assets and the utilization of maximum available capacity to prevent localized outages or voltage instability. Despite the significant increase in throughput, the distribution network remained intact throughout the duration of the surge.
+
+4. SYSTEM RECOVERY AND RESTORATION
+Following the conclusion of the localized weather event, regional temperatures began to subside, leading to a commensurate reduction in total system load. The electrical grid returned to normal operating levels by 2012-09-13. Post-event inspections confirm that the hardware and distribution protocols functioned as intended, and all system parameters have since stabilized to standard baseline configurations.
+
+5. SCOPE OF ANALYSIS
+This report focuses strictly on the operational impact of the mid-September heat wave on the power grid. In accordance with departmental reporting standards for technical performance, this document does not include meteorological causes, long-term climate forecasts, or financial loss assessments. The data presented herein is intended for the evaluation of grid resilience and load management during the specific window of 2012-09-10 through 2012-09-12.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3423 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">ARDENTIA CITY POWER &amp; LIGHT
+Internal Operational Report: Load Forecasting Department
+
+SUBJECT: Weekly Grid Load Analysis and Peak Projection for Ardentia City
+
+I. EXECUTIVE SUMMARY
+This internal technical analysis examines the current consumption patterns within the Ardentia City grid and establishes projections for peak demand during the upcoming cooling cycle. All electricity consumption metrics in this report are recorded and analyzed in Kilowatts (kW).
+
+II. CONSUMPTION PATTERN ANALYSIS
+Data gathered during the current monitoring period indicates that daily electricity demand in Ardentia City follows a consistent empirical pattern of gradual diminution. Unlike cycles that maintain a high baseline of usage, local power grid usage levels typically cool down as the week progresses. 
+
+This trend of diminishing consumption is expected to continue through the current reporting cycle. Consequently, the baseline electricity demand is projected to be significantly lower later in the week compared to the high levels recorded during the earlier period.
+
+III. PEAK SURGE PROJECTIONS
+The Load Forecasting Department has modeled a specific stress-test scenario involving a projected late-week heat wave. This model accounts for a fivefold increase in air conditioning usage among residential and commercial consumers. 
+
+Despite the magnitude of this increase in cooling demand, the concurrent drop in the overall baseline allows the grid to absorb the increase effectively. Under these specific cooling baseline conditions, the resulting surge peak is projected to reach a total of less than 10,000 kW. 
+
+IV. TECHNICAL LIMITATIONS
+This documentation is restricted to the internal technical analysis of consumption patterns and peak surge projections. This analysis does not include external variables such as specific weather forecasts, regional infrastructure maintenance schedules, or broader economic impacts on power utility operations.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_3424 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">ARDENTIA MUNICIPAL POWER AUTHORITY (AMPA)
+TECHNICAL OPERATIONAL REPORT
+
+TITLE: Ardentia City Grid Demand Analysis: Heat Wave Impact Assessment
+DOCUMENT ID: AMPA-TR-2024-08
+CLASSIFICATION: Operational Technical Source
+
+1. EXECUTIVE SUMMARY
+This technical report provides a detailed analysis of the load profiles and demand cycles inherent to the Ardentia City municipal grid. The assessment focuses on establishing current baseline trends and quantifying the specific strain placed on the infrastructure during extreme thermal events. 
+
+2. CURRENT CONSUMPTION CYCLES AND DEMAND PROFILES
+Analysis of the Ardentia City grid reveals a unique consumption pattern that deviates from typical residential load profiles. The primary findings regarding current demand cycles are as follows:
+
+• Overnight Peak Demand: Electricity demand within Ardentia City peaks consistently during the overnight hours. This period represents the maximum sustained load on the grid under standard operating conditions.
+• Diurnal Decay: Following the overnight peak, consumption trends downward throughout the day. This reduction in load continues steadily as activity patterns shift.
+• Baseline Minimum: The grid reaches its minimum consumption level in the late afternoon and evening window. This period represents the lowest baseline for the city&#x27;s power requirements.
+
+3. HEAT WAVE IMPACT PROJECTION
+While the late afternoon and evening periods currently represent the lowest points of grid utilization, they also present the highest vulnerability to sudden thermal shifts. AMPA has modeled the impact of a significant heat wave occurring specifically during this evening window.
+
+Based on current modeling data:
+• Projected Peak Load: A heat wave occurring during the evening window would result in a peak demand of approximately 7,000 kW.
+• Scaling Factor: This 7,000 kW projection is significant as it represents a five-fold (5x) increase applied directly to the city’s lowest baseline period. 
+
+4. LIMITATIONS OF ANALYSIS
+This report is focused exclusively on the specific demand cycles of the Ardentia City municipal grid and the quantified impact of a heat wave on the established baseline minimum. This assessment does not incorporate broader regional grid data, long-range weather forecasts, or specific infrastructure mitigation strategies. The data serves as a technical benchmark for internal demand-side management planning.
+
+[End of Report]</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:vzantedeschi@gmail.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>

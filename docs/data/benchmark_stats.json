@@ -1,0 +1,227 @@
+{
+  "tasks": 279,
+  "expertTasks": 80,
+  "domainCount": 9,
+  "frequencyCount": 14,
+  "documents": {
+    "total": 10342,
+    "supporting": 3367,
+    "distractor": 6975,
+    "distractorPerTask": 25,
+    "distractorFamilies": 5
+  },
+  "distractorTypes": [
+    {
+      "label": "Irrelevant",
+      "count": 1395,
+      "description": "Topically related, but causally irrelevant to the target outcome."
+    },
+    {
+      "label": "Off-variable",
+      "count": 1395,
+      "description": "A plausible alternative mechanism that does not affect the target."
+    },
+    {
+      "label": "Off-entity",
+      "count": 1395,
+      "description": "An analogous entity whose behavior should not transfer to the target."
+    },
+    {
+      "label": "Off-window",
+      "count": 1395,
+      "description": "A relevant mechanism placed in the wrong time window."
+    },
+    {
+      "label": "Counterfactual history",
+      "count": 1395,
+      "description": "Misleading claims about values, trends, or periodicity."
+    }
+  ],
+  "domains": [
+    {
+      "label": "Energy",
+      "count": 60
+    },
+    {
+      "label": "Transport",
+      "count": 60
+    },
+    {
+      "label": "Finance",
+      "count": 48
+    },
+    {
+      "label": "Observability",
+      "count": 30
+    },
+    {
+      "label": "Environment",
+      "count": 20
+    },
+    {
+      "label": "IoT sensor",
+      "count": 20
+    },
+    {
+      "label": "Retail",
+      "count": 19
+    },
+    {
+      "label": "Healthcare",
+      "count": 13
+    },
+    {
+      "label": "Misc (sensor/web/etc)",
+      "count": 9
+    }
+  ],
+  "frequencies": [
+    {
+      "label": "1 hour",
+      "count": 136
+    },
+    {
+      "label": "1 day",
+      "count": 63
+    },
+    {
+      "label": "1 minute",
+      "count": 15
+    },
+    {
+      "label": "7 days",
+      "count": 13
+    },
+    {
+      "label": "31 days",
+      "count": 10
+    },
+    {
+      "label": "5 minutes",
+      "count": 10
+    },
+    {
+      "label": "1 second",
+      "count": 9
+    },
+    {
+      "label": "90 days",
+      "count": 6
+    },
+    {
+      "label": "28 days",
+      "count": 5
+    },
+    {
+      "label": "13 minutes",
+      "count": 3
+    },
+    {
+      "label": "365 days",
+      "count": 3
+    },
+    {
+      "label": "26 hours",
+      "count": 2
+    },
+    {
+      "label": "366 days",
+      "count": 2
+    },
+    {
+      "label": "6 hours",
+      "count": 2
+    }
+  ],
+  "historyDistribution": {
+    "min": 33,
+    "p25": 144,
+    "median": 168,
+    "p75": 264,
+    "max": 6528,
+    "bins": [
+      {
+        "label": "<50",
+        "count": 23
+      },
+      {
+        "label": "50–99",
+        "count": 20
+      },
+      {
+        "label": "100–<200",
+        "count": 135
+      },
+      {
+        "label": "200–399",
+        "count": 64
+      },
+      {
+        "label": "400–799",
+        "count": 14
+      },
+      {
+        "label": "800–1.6k",
+        "count": 8
+      },
+      {
+        "label": "1.6k–3.2k",
+        "count": 6
+      },
+      {
+        "label": ">3.2k",
+        "count": 9
+      }
+    ]
+  },
+  "horizonDistribution": {
+    "min": 15,
+    "p25": 24,
+    "median": 61,
+    "p75": 120,
+    "max": 2798,
+    "bins": [
+      {
+        "label": "<50",
+        "count": 92
+      },
+      {
+        "label": "50–99",
+        "count": 92
+      },
+      {
+        "label": "100–<200",
+        "count": 63
+      },
+      {
+        "label": "200–399",
+        "count": 12
+      },
+      {
+        "label": "400–799",
+        "count": 5
+      },
+      {
+        "label": "800–1.6k",
+        "count": 12
+      },
+      {
+        "label": "1.6k–3.2k",
+        "count": 3
+      },
+      {
+        "label": ">3.2k",
+        "count": 0
+      }
+    ]
+  },
+  "evidence": {
+    "items": 1911,
+    "tasks": 279,
+    "mean": 6.8,
+    "min": 2,
+    "median": 5,
+    "max": 21,
+    "expertMedian": 13
+  }
+}

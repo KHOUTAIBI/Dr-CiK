@@ -1,0 +1,1014 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#032d42" />
+    <meta name="description" content="Inspectable forecasting task from the task library." />
+    <title>Quartz-Link S40 · Context-Aided Forecasting via Deep Research</title>
+    <link rel="stylesheet" href="../styles.css?v=20261002-public-v1" />
+
+    <meta property="og:title" content="Dr-CiK: A Benchmark testing Deep Research for Context-Aided Forecasting" />
+    <meta property="og:description" content="Dr-CiK: a 279-task benchmark for context-aided forecasting via deep research, by ServiceNow Research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://servicenow.github.io/Dr-CiK/" />
+    <link rel="icon" type="image/svg+xml" href="../static/assets/servicenow-mark.svg" />
+    <link rel="stylesheet" href="../static/css/public.css?v=20261002-public-v1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-shell">
+        <a class="brand" href="../index.html#top" aria-label="Dr-CiK project home"><img class="brand-servicenow" src="../static/assets/servicenow-mark.svg" alt="" width="30" height="30" /><span>Dr-CiK</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../index.html#pipeline">Pipeline</a><a href="../index.html#scope">Benchmark</a><a href="../index.html#leaderboard">Leaderboard</a><a href="../index.html#explorer">Tasks</a><a href="../index.html#cite">Cite</a>
+        </nav>
+        <a class="nav-status" href="https://github.com/ServiceNow/Dr-CiK" target="_blank" rel="noopener noreferrer" aria-label="Open the ServiceNow Dr-CiK GitHub repository in a new tab"><span class="status-dot" aria-hidden="true"></span>GitHub ↗</a>
+      </div>
+    </header>
+    <main class="static-detail-page">
+      <div class="static-detail-shell">
+        <a class="back-link" href="../index.html#explorer">← Back to the task library</a>
+        <header class="static-detail-header">
+          <h1>Quartz-Link S40</h1>
+          <p>Forecasting <strong>occupancy rate</strong> · sensor periodic maintenance task</p>
+        </header>
+        <div class="static-detail-body">
+          <div class="detail-facts">
+            <div class="detail-fact"><span class="detail-fact-label">Domain</span><span class="detail-fact-value" title="IoT sensor">IoT sensor</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Frequency</span><span class="detail-fact-value" title="1 hour">1 hour</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Forecast horizon</span><span class="detail-fact-value" title="24">24</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">History length</span><span class="detail-fact-value" title="168">168</span></div>
+            <div class="detail-fact"><span class="detail-fact-label">Evidence documents</span><span class="detail-fact-value" title="38">38</span></div>
+          </div>
+          <section class="detail-annotation-panel" aria-labelledby="annotation-title">
+            <div class="detail-annotation-head"><div><div class="eyebrow">Figure 2 diagnostic taxonomy</div><h3 id="annotation-title">Task difficulty profile</h3></div><span class="annotation-status complete">Figure 2 labels</span></div>
+            <p>These four labels are independent diagnostic axes—not a single aggregate difficulty score. They describe the evidence and reasoning demands associated with this forecasting task.</p>
+            <div class="detail-annotation-domain"><span class="domain-chip"><span class="domain-chip-label">Domain</span>IoT sensor</span></div>
+            <div class="task-annotation-grid" aria-label="Figure 2 diagnostic labels"><span class="task-annotation-chip"><span class="task-annotation-label">Certainty</span><span class="task-annotation-value">Certain</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Explicitness</span><span class="task-annotation-value">Explicit</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Domain knowledge</span><span class="task-annotation-value">Specialist</span></span><span class="task-annotation-chip"><span class="task-annotation-label">Temporal complexity</span><span class="task-annotation-value">Predictable</span></span></div>
+          </section>
+          <div class="detail-chart-wrap">
+            <div class="detail-chart-label"><span>Observed history · 2024-04-04 04:00:00</span><span>Forecast horizon · through 2024-04-12 03:00:00</span></div>
+            <svg class="static-chart" viewBox="0 0 980 290" role="img" aria-label="Observed history and forecast horizon" preserveAspectRatio="none"><line class="chart-gridline" x1="12" y1="63.80" x2="968" y2="63.80" /><line class="chart-gridline" x1="12" y1="150.80" x2="968" y2="150.80" /><line class="chart-gridline" x1="12" y1="237.80" x2="968" y2="237.80" /><line class="chart-boundary" x1="833.10" y1="14" x2="833.10" y2="276" /><polyline class="chart-history" points="12.00,247.70 17.87,221.50 23.73,195.30 29.60,192.16 35.46,200.54 41.33,203.69 47.19,200.54 53.06,193.21 58.92,276.00 64.79,276.00 70.65,14.00 76.52,20.29 82.38,198.45 88.25,224.65 94.11,233.03 99.98,243.51 105.84,249.80 111.71,257.14 117.57,260.28 123.44,255.04 129.30,247.70 135.17,223.60 141.03,201.59 146.90,194.26 152.76,193.21 158.63,190.06 164.49,189.02 170.36,183.78 176.22,276.00 182.09,276.00 187.95,19.24 193.82,17.14 199.68,146.05 205.55,216.26 211.41,225.70 217.28,235.13 223.14,248.75 229.01,256.09 234.87,260.28 240.74,260.28 246.60,257.14 252.47,244.56 258.33,237.22 264.20,206.83 270.06,200.54 275.93,194.26 281.79,186.92 287.66,190.06 293.52,276.00 299.39,276.00 305.25,172.25 311.12,191.11 316.98,201.59 322.85,215.22 328.71,217.31 334.58,226.74 340.44,245.61 346.31,252.94 352.17,261.33 358.04,265.52 363.90,264.47 369.77,255.04 375.63,250.85 381.50,231.98 387.36,218.36 393.23,214.17 399.09,202.64 404.96,192.16 410.82,276.00 416.69,276.00 422.55,161.77 428.42,180.63 434.28,193.21 440.15,206.83 446.01,221.50 451.88,237.22 457.74,249.80 463.61,261.33 469.47,257.14 475.34,248.75 481.20,239.32 487.07,214.17 492.93,163.86 498.80,197.40 504.66,191.11 510.53,206.83 516.39,207.88 522.26,276.00 528.12,276.00 533.99,276.00 539.85,164.91 545.72,172.25 551.58,223.60 557.45,227.79 563.31,235.13 569.18,249.80 575.04,257.14 580.91,262.38 586.77,261.33 592.64,256.09 598.50,246.66 604.37,217.31 610.23,164.91 616.10,191.11 621.96,203.69 627.83,207.88 633.69,202.64 639.56,276.00 645.42,276.00 651.29,276.00 657.15,164.91 663.02,173.30 668.88,225.70 674.75,227.79 680.61,235.13 686.48,243.51 692.34,256.09 698.21,260.28 704.07,260.28 709.94,256.09 715.80,246.66 721.67,220.46 727.53,92.60 733.40,173.30 739.26,200.54 745.13,207.88 750.99,205.78 756.86,276.00 762.72,276.00 768.59,276.00 774.45,103.08 780.32,167.01 786.18,223.60 792.05,226.74 797.91,230.94 803.78,245.61 809.64,256.09 815.51,261.33 821.37,261.33 827.24,257.14 833.10,246.66" /><polyline class="chart-future" points="833.10,246.66 838.97,220.46 844.83,186.92 850.70,162.82 856.56,195.30 862.43,196.35 868.29,199.50 874.16,197.40 880.02,195.30 885.89,186.92 891.75,177.49 897.62,170.15 903.48,148.14 909.35,105.18 915.21,206.83 921.08,220.46 926.94,224.65 932.81,229.89 938.67,243.51 944.54,252.94 950.40,228.84 956.27,223.60 962.13,208.93 968.00,198.45" /></svg>
+            <div class="composition-legend"><span class="legend-item"><span class="legend-swatch core"></span>observed history</span><span class="legend-item"><span class="legend-swatch new"></span>forecast horizon</span></div>
+          </div>
+          <details class="full-context static-series-details">
+      <summary>View all series points (192 observations)</summary>
+      <div class="series-table-wrap">
+        <table class="series-table">
+          <thead><tr><th>#</th><th>Segment</th><th>Timestamp</th><th>Value</th></tr></thead>
+          <tbody><tr><td>1</td><td>Observed history</td><td>2024-04-04 04:00:00</td><td>2.7</td></tr><tr><td>2</td><td>Observed history</td><td>2024-04-04 05:00:00</td><td>5.2</td></tr><tr><td>3</td><td>Observed history</td><td>2024-04-04 06:00:00</td><td>7.7</td></tr><tr><td>4</td><td>Observed history</td><td>2024-04-04 07:00:00</td><td>14.4</td></tr><tr><td>5</td><td>Observed history</td><td>2024-04-04 08:00:00</td><td>8.0</td></tr><tr><td>6</td><td>Observed history</td><td>2024-04-04 09:00:00</td><td>7.2</td></tr><tr><td>7</td><td>Observed history</td><td>2024-04-04 10:00:00</td><td>6.9</td></tr><tr><td>8</td><td>Observed history</td><td>2024-04-04 11:00:00</td><td>7.2</td></tr><tr><td>9</td><td>Observed history</td><td>2024-04-04 12:00:00</td><td>7.9</td></tr><tr><td>10</td><td>Observed history</td><td>2024-04-04 13:00:00</td><td>0.0</td></tr><tr><td>11</td><td>Observed history</td><td>2024-04-04 14:00:00</td><td>0.0</td></tr><tr><td>12</td><td>Observed history</td><td>2024-04-04 15:00:00</td><td>0.0</td></tr><tr><td>13</td><td>Observed history</td><td>2024-04-04 16:00:00</td><td>25.0</td></tr><tr><td>14</td><td>Observed history</td><td>2024-04-04 17:00:00</td><td>24.4</td></tr><tr><td>15</td><td>Observed history</td><td>2024-04-04 18:00:00</td><td>7.4</td></tr><tr><td>16</td><td>Observed history</td><td>2024-04-04 19:00:00</td><td>5.3</td></tr><tr><td>17</td><td>Observed history</td><td>2024-04-04 20:00:00</td><td>4.9</td></tr><tr><td>18</td><td>Observed history</td><td>2024-04-04 21:00:00</td><td>4.1</td></tr><tr><td>19</td><td>Observed history</td><td>2024-04-04 22:00:00</td><td>3.1</td></tr><tr><td>20</td><td>Observed history</td><td>2024-04-04 23:00:00</td><td>2.5</td></tr><tr><td>21</td><td>Observed history</td><td>2024-04-05 00:00:00</td><td>1.8</td></tr><tr><td>22</td><td>Observed history</td><td>2024-04-05 01:00:00</td><td>1.6</td></tr><tr><td>23</td><td>Observed history</td><td>2024-04-05 02:00:00</td><td>1.5</td></tr><tr><td>24</td><td>Observed history</td><td>2024-04-05 03:00:00</td><td>2.0</td></tr><tr><td>25</td><td>Observed history</td><td>2024-04-05 04:00:00</td><td>2.7</td></tr><tr><td>26</td><td>Observed history</td><td>2024-04-05 05:00:00</td><td>5.0</td></tr><tr><td>27</td><td>Observed history</td><td>2024-04-05 06:00:00</td><td>7.1</td></tr><tr><td>28</td><td>Observed history</td><td>2024-04-05 07:00:00</td><td>10.0</td></tr><tr><td>29</td><td>Observed history</td><td>2024-04-05 08:00:00</td><td>7.8</td></tr><tr><td>30</td><td>Observed history</td><td>2024-04-05 09:00:00</td><td>7.9</td></tr><tr><td>31</td><td>Observed history</td><td>2024-04-05 10:00:00</td><td>8.2</td></tr><tr><td>32</td><td>Observed history</td><td>2024-04-05 11:00:00</td><td>8.3</td></tr><tr><td>33</td><td>Observed history</td><td>2024-04-05 12:00:00</td><td>8.8</td></tr><tr><td>34</td><td>Observed history</td><td>2024-04-05 13:00:00</td><td>0.0</td></tr><tr><td>35</td><td>Observed history</td><td>2024-04-05 14:00:00</td><td>0.0</td></tr><tr><td>36</td><td>Observed history</td><td>2024-04-05 15:00:00</td><td>0.0</td></tr><tr><td>37</td><td>Observed history</td><td>2024-04-05 16:00:00</td><td>24.5</td></tr><tr><td>38</td><td>Observed history</td><td>2024-04-05 17:00:00</td><td>24.7</td></tr><tr><td>39</td><td>Observed history</td><td>2024-04-05 18:00:00</td><td>12.4</td></tr><tr><td>40</td><td>Observed history</td><td>2024-04-05 19:00:00</td><td>6.8</td></tr><tr><td>41</td><td>Observed history</td><td>2024-04-05 20:00:00</td><td>5.7</td></tr><tr><td>42</td><td>Observed history</td><td>2024-04-05 21:00:00</td><td>4.8</td></tr><tr><td>43</td><td>Observed history</td><td>2024-04-05 22:00:00</td><td>3.9</td></tr><tr><td>44</td><td>Observed history</td><td>2024-04-05 23:00:00</td><td>2.6</td></tr><tr><td>45</td><td>Observed history</td><td>2024-04-06 00:00:00</td><td>1.9</td></tr><tr><td>46</td><td>Observed history</td><td>2024-04-06 01:00:00</td><td>1.5</td></tr><tr><td>47</td><td>Observed history</td><td>2024-04-06 02:00:00</td><td>1.5</td></tr><tr><td>48</td><td>Observed history</td><td>2024-04-06 03:00:00</td><td>1.5</td></tr><tr><td>49</td><td>Observed history</td><td>2024-04-06 04:00:00</td><td>1.8</td></tr><tr><td>50</td><td>Observed history</td><td>2024-04-06 05:00:00</td><td>3.0</td></tr><tr><td>51</td><td>Observed history</td><td>2024-04-06 06:00:00</td><td>3.7</td></tr><tr><td>52</td><td>Observed history</td><td>2024-04-06 07:00:00</td><td>5.1</td></tr><tr><td>53</td><td>Observed history</td><td>2024-04-06 08:00:00</td><td>6.6</td></tr><tr><td>54</td><td>Observed history</td><td>2024-04-06 09:00:00</td><td>7.2</td></tr><tr><td>55</td><td>Observed history</td><td>2024-04-06 10:00:00</td><td>7.8</td></tr><tr><td>56</td><td>Observed history</td><td>2024-04-06 11:00:00</td><td>8.5</td></tr><tr><td>57</td><td>Observed history</td><td>2024-04-06 12:00:00</td><td>8.2</td></tr><tr><td>58</td><td>Observed history</td><td>2024-04-06 13:00:00</td><td>0.0</td></tr><tr><td>59</td><td>Observed history</td><td>2024-04-06 14:00:00</td><td>0.0</td></tr><tr><td>60</td><td>Observed history</td><td>2024-04-06 15:00:00</td><td>0.0</td></tr><tr><td>61</td><td>Observed history</td><td>2024-04-06 16:00:00</td><td>9.9</td></tr><tr><td>62</td><td>Observed history</td><td>2024-04-06 17:00:00</td><td>8.1</td></tr><tr><td>63</td><td>Observed history</td><td>2024-04-06 18:00:00</td><td>7.1</td></tr><tr><td>64</td><td>Observed history</td><td>2024-04-06 19:00:00</td><td>6.6</td></tr><tr><td>65</td><td>Observed history</td><td>2024-04-06 20:00:00</td><td>5.8</td></tr><tr><td>66</td><td>Observed history</td><td>2024-04-06 21:00:00</td><td>5.6</td></tr><tr><td>67</td><td>Observed history</td><td>2024-04-06 22:00:00</td><td>4.7</td></tr><tr><td>68</td><td>Observed history</td><td>2024-04-06 23:00:00</td><td>2.9</td></tr><tr><td>69</td><td>Observed history</td><td>2024-04-07 00:00:00</td><td>2.2</td></tr><tr><td>70</td><td>Observed history</td><td>2024-04-07 01:00:00</td><td>1.8</td></tr><tr><td>71</td><td>Observed history</td><td>2024-04-07 02:00:00</td><td>1.4</td></tr><tr><td>72</td><td>Observed history</td><td>2024-04-07 03:00:00</td><td>1.0</td></tr><tr><td>73</td><td>Observed history</td><td>2024-04-07 04:00:00</td><td>1.1</td></tr><tr><td>74</td><td>Observed history</td><td>2024-04-07 05:00:00</td><td>2.0</td></tr><tr><td>75</td><td>Observed history</td><td>2024-04-07 06:00:00</td><td>2.4</td></tr><tr><td>76</td><td>Observed history</td><td>2024-04-07 07:00:00</td><td>3.4</td></tr><tr><td>77</td><td>Observed history</td><td>2024-04-07 08:00:00</td><td>4.2</td></tr><tr><td>78</td><td>Observed history</td><td>2024-04-07 09:00:00</td><td>5.5</td></tr><tr><td>79</td><td>Observed history</td><td>2024-04-07 10:00:00</td><td>5.9</td></tr><tr><td>80</td><td>Observed history</td><td>2024-04-07 11:00:00</td><td>7.0</td></tr><tr><td>81</td><td>Observed history</td><td>2024-04-07 12:00:00</td><td>8.0</td></tr><tr><td>82</td><td>Observed history</td><td>2024-04-07 13:00:00</td><td>0.0</td></tr><tr><td>83</td><td>Observed history</td><td>2024-04-07 14:00:00</td><td>0.0</td></tr><tr><td>84</td><td>Observed history</td><td>2024-04-07 15:00:00</td><td>0.0</td></tr><tr><td>85</td><td>Observed history</td><td>2024-04-07 16:00:00</td><td>10.9</td></tr><tr><td>86</td><td>Observed history</td><td>2024-04-07 17:00:00</td><td>9.1</td></tr><tr><td>87</td><td>Observed history</td><td>2024-04-07 18:00:00</td><td>8.7</td></tr><tr><td>88</td><td>Observed history</td><td>2024-04-07 19:00:00</td><td>7.9</td></tr><tr><td>89</td><td>Observed history</td><td>2024-04-07 20:00:00</td><td>6.6</td></tr><tr><td>90</td><td>Observed history</td><td>2024-04-07 21:00:00</td><td>5.2</td></tr><tr><td>91</td><td>Observed history</td><td>2024-04-07 22:00:00</td><td>3.7</td></tr><tr><td>92</td><td>Observed history</td><td>2024-04-07 23:00:00</td><td>2.5</td></tr><tr><td>93</td><td>Observed history</td><td>2024-04-08 00:00:00</td><td>1.7</td></tr><tr><td>94</td><td>Observed history</td><td>2024-04-08 01:00:00</td><td>1.4</td></tr><tr><td>95</td><td>Observed history</td><td>2024-04-08 02:00:00</td><td>1.8</td></tr><tr><td>96</td><td>Observed history</td><td>2024-04-08 03:00:00</td><td>2.6</td></tr><tr><td>97</td><td>Observed history</td><td>2024-04-08 04:00:00</td><td>3.5</td></tr><tr><td>98</td><td>Observed history</td><td>2024-04-08 05:00:00</td><td>5.9</td></tr><tr><td>99</td><td>Observed history</td><td>2024-04-08 06:00:00</td><td>8.6</td></tr><tr><td>100</td><td>Observed history</td><td>2024-04-08 07:00:00</td><td>10.7</td></tr><tr><td>101</td><td>Observed history</td><td>2024-04-08 08:00:00</td><td>7.5</td></tr><tr><td>102</td><td>Observed history</td><td>2024-04-08 09:00:00</td><td>8.1</td></tr><tr><td>103</td><td>Observed history</td><td>2024-04-08 10:00:00</td><td>6.6</td></tr><tr><td>104</td><td>Observed history</td><td>2024-04-08 11:00:00</td><td>6.5</td></tr><tr><td>105</td><td>Observed history</td><td>2024-04-08 12:00:00</td><td>7.1</td></tr><tr><td>106</td><td>Observed history</td><td>2024-04-08 13:00:00</td><td>0.0</td></tr><tr><td>107</td><td>Observed history</td><td>2024-04-08 14:00:00</td><td>0.0</td></tr><tr><td>108</td><td>Observed history</td><td>2024-04-08 15:00:00</td><td>0.0</td></tr><tr><td>109</td><td>Observed history</td><td>2024-04-08 16:00:00</td><td>10.6</td></tr><tr><td>110</td><td>Observed history</td><td>2024-04-08 17:00:00</td><td>9.9</td></tr><tr><td>111</td><td>Observed history</td><td>2024-04-08 18:00:00</td><td>6.9</td></tr><tr><td>112</td><td>Observed history</td><td>2024-04-08 19:00:00</td><td>5.0</td></tr><tr><td>113</td><td>Observed history</td><td>2024-04-08 20:00:00</td><td>4.6</td></tr><tr><td>114</td><td>Observed history</td><td>2024-04-08 21:00:00</td><td>3.9</td></tr><tr><td>115</td><td>Observed history</td><td>2024-04-08 22:00:00</td><td>2.5</td></tr><tr><td>116</td><td>Observed history</td><td>2024-04-08 23:00:00</td><td>1.8</td></tr><tr><td>117</td><td>Observed history</td><td>2024-04-09 00:00:00</td><td>1.6</td></tr><tr><td>118</td><td>Observed history</td><td>2024-04-09 01:00:00</td><td>1.3</td></tr><tr><td>119</td><td>Observed history</td><td>2024-04-09 02:00:00</td><td>1.4</td></tr><tr><td>120</td><td>Observed history</td><td>2024-04-09 03:00:00</td><td>1.9</td></tr><tr><td>121</td><td>Observed history</td><td>2024-04-09 04:00:00</td><td>2.8</td></tr><tr><td>122</td><td>Observed history</td><td>2024-04-09 05:00:00</td><td>5.6</td></tr><tr><td>123</td><td>Observed history</td><td>2024-04-09 06:00:00</td><td>8.5</td></tr><tr><td>124</td><td>Observed history</td><td>2024-04-09 07:00:00</td><td>10.6</td></tr><tr><td>125</td><td>Observed history</td><td>2024-04-09 08:00:00</td><td>8.1</td></tr><tr><td>126</td><td>Observed history</td><td>2024-04-09 09:00:00</td><td>6.9</td></tr><tr><td>127</td><td>Observed history</td><td>2024-04-09 10:00:00</td><td>6.5</td></tr><tr><td>128</td><td>Observed history</td><td>2024-04-09 11:00:00</td><td>7.0</td></tr><tr><td>129</td><td>Observed history</td><td>2024-04-09 12:00:00</td><td>7.4</td></tr><tr><td>130</td><td>Observed history</td><td>2024-04-09 13:00:00</td><td>0.0</td></tr><tr><td>131</td><td>Observed history</td><td>2024-04-09 14:00:00</td><td>0.0</td></tr><tr><td>132</td><td>Observed history</td><td>2024-04-09 15:00:00</td><td>0.0</td></tr><tr><td>133</td><td>Observed history</td><td>2024-04-09 16:00:00</td><td>10.6</td></tr><tr><td>134</td><td>Observed history</td><td>2024-04-09 17:00:00</td><td>9.8</td></tr><tr><td>135</td><td>Observed history</td><td>2024-04-09 18:00:00</td><td>6.9</td></tr><tr><td>136</td><td>Observed history</td><td>2024-04-09 19:00:00</td><td>4.8</td></tr><tr><td>137</td><td>Observed history</td><td>2024-04-09 20:00:00</td><td>4.6</td></tr><tr><td>138</td><td>Observed history</td><td>2024-04-09 21:00:00</td><td>3.9</td></tr><tr><td>139</td><td>Observed history</td><td>2024-04-09 22:00:00</td><td>3.1</td></tr><tr><td>140</td><td>Observed history</td><td>2024-04-09 23:00:00</td><td>1.9</td></tr><tr><td>141</td><td>Observed history</td><td>2024-04-10 00:00:00</td><td>1.4</td></tr><tr><td>142</td><td>Observed history</td><td>2024-04-10 01:00:00</td><td>1.5</td></tr><tr><td>143</td><td>Observed history</td><td>2024-04-10 02:00:00</td><td>1.5</td></tr><tr><td>144</td><td>Observed history</td><td>2024-04-10 03:00:00</td><td>1.9</td></tr><tr><td>145</td><td>Observed history</td><td>2024-04-10 04:00:00</td><td>2.8</td></tr><tr><td>146</td><td>Observed history</td><td>2024-04-10 05:00:00</td><td>5.3</td></tr><tr><td>147</td><td>Observed history</td><td>2024-04-10 06:00:00</td><td>8.3</td></tr><tr><td>148</td><td>Observed history</td><td>2024-04-10 07:00:00</td><td>17.5</td></tr><tr><td>149</td><td>Observed history</td><td>2024-04-10 08:00:00</td><td>9.8</td></tr><tr><td>150</td><td>Observed history</td><td>2024-04-10 09:00:00</td><td>7.2</td></tr><tr><td>151</td><td>Observed history</td><td>2024-04-10 10:00:00</td><td>6.5</td></tr><tr><td>152</td><td>Observed history</td><td>2024-04-10 11:00:00</td><td>6.7</td></tr><tr><td>153</td><td>Observed history</td><td>2024-04-10 12:00:00</td><td>7.6</td></tr><tr><td>154</td><td>Observed history</td><td>2024-04-10 13:00:00</td><td>0.0</td></tr><tr><td>155</td><td>Observed history</td><td>2024-04-10 14:00:00</td><td>0.0</td></tr><tr><td>156</td><td>Observed history</td><td>2024-04-10 15:00:00</td><td>0.0</td></tr><tr><td>157</td><td>Observed history</td><td>2024-04-10 16:00:00</td><td>16.5</td></tr><tr><td>158</td><td>Observed history</td><td>2024-04-10 17:00:00</td><td>10.4</td></tr><tr><td>159</td><td>Observed history</td><td>2024-04-10 18:00:00</td><td>6.7</td></tr><tr><td>160</td><td>Observed history</td><td>2024-04-10 19:00:00</td><td>5.0</td></tr><tr><td>161</td><td>Observed history</td><td>2024-04-10 20:00:00</td><td>4.7</td></tr><tr><td>162</td><td>Observed history</td><td>2024-04-10 21:00:00</td><td>4.3</td></tr><tr><td>163</td><td>Observed history</td><td>2024-04-10 22:00:00</td><td>2.9</td></tr><tr><td>164</td><td>Observed history</td><td>2024-04-10 23:00:00</td><td>1.9</td></tr><tr><td>165</td><td>Observed history</td><td>2024-04-11 00:00:00</td><td>1.6</td></tr><tr><td>166</td><td>Observed history</td><td>2024-04-11 01:00:00</td><td>1.4</td></tr><tr><td>167</td><td>Observed history</td><td>2024-04-11 02:00:00</td><td>1.4</td></tr><tr><td>168</td><td>Observed history</td><td>2024-04-11 03:00:00</td><td>1.8</td></tr><tr class="future"><td>169</td><td>Forecast horizon</td><td>2024-04-11 04:00:00</td><td>2.8</td></tr><tr class="future"><td>170</td><td>Forecast horizon</td><td>2024-04-11 05:00:00</td><td>5.3</td></tr><tr class="future"><td>171</td><td>Forecast horizon</td><td>2024-04-11 06:00:00</td><td>8.5</td></tr><tr class="future"><td>172</td><td>Forecast horizon</td><td>2024-04-11 07:00:00</td><td>10.8</td></tr><tr class="future"><td>173</td><td>Forecast horizon</td><td>2024-04-11 08:00:00</td><td>7.7</td></tr><tr class="future"><td>174</td><td>Forecast horizon</td><td>2024-04-11 09:00:00</td><td>7.6</td></tr><tr class="future"><td>175</td><td>Forecast horizon</td><td>2024-04-11 10:00:00</td><td>7.3</td></tr><tr class="future"><td>176</td><td>Forecast horizon</td><td>2024-04-11 11:00:00</td><td>7.5</td></tr><tr class="future"><td>177</td><td>Forecast horizon</td><td>2024-04-11 12:00:00</td><td>7.7</td></tr><tr class="future"><td>178</td><td>Forecast horizon</td><td>2024-04-11 13:00:00</td><td>8.5</td></tr><tr class="future"><td>179</td><td>Forecast horizon</td><td>2024-04-11 14:00:00</td><td>9.4</td></tr><tr class="future"><td>180</td><td>Forecast horizon</td><td>2024-04-11 15:00:00</td><td>10.1</td></tr><tr class="future"><td>181</td><td>Forecast horizon</td><td>2024-04-11 16:00:00</td><td>12.2</td></tr><tr class="future"><td>182</td><td>Forecast horizon</td><td>2024-04-11 17:00:00</td><td>16.3</td></tr><tr class="future"><td>183</td><td>Forecast horizon</td><td>2024-04-11 18:00:00</td><td>6.6</td></tr><tr class="future"><td>184</td><td>Forecast horizon</td><td>2024-04-11 19:00:00</td><td>5.3</td></tr><tr class="future"><td>185</td><td>Forecast horizon</td><td>2024-04-11 20:00:00</td><td>4.9</td></tr><tr class="future"><td>186</td><td>Forecast horizon</td><td>2024-04-11 21:00:00</td><td>4.4</td></tr><tr class="future"><td>187</td><td>Forecast horizon</td><td>2024-04-11 22:00:00</td><td>3.1</td></tr><tr class="future"><td>188</td><td>Forecast horizon</td><td>2024-04-11 23:00:00</td><td>2.2</td></tr><tr class="future"><td>189</td><td>Forecast horizon</td><td>2024-04-12 00:00:00</td><td>4.5</td></tr><tr class="future"><td>190</td><td>Forecast horizon</td><td>2024-04-12 01:00:00</td><td>5.0</td></tr><tr class="future"><td>191</td><td>Forecast horizon</td><td>2024-04-12 02:00:00</td><td>6.4</td></tr><tr class="future"><td>192</td><td>Forecast horizon</td><td>2024-04-12 03:00:00</td><td>7.4</td></tr></tbody>
+        </table>
+      </div>
+    </details>
+          <section class="forecast-surface" aria-labelledby="forecast-title">
+          <div class="forecast-surface-head">
+            <div>
+              <div class="eyebrow">Model forecasts</div>
+              <h2 id="forecast-title">Compare the forecast horizon.</h2>
+              <p>Keep the context fixed, then inspect how different forecasters trace the same future. The shaded band is the spread across sampled forecasts.</p>
+            </div>
+            <div class="forecast-surface-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <input class="forecast-context-input" data-context="deepresearch_insights" type="radio" name="forecast-task-142-context" id="forecast-task-142-context-deepresearch-insights" checked /><input class="forecast-context-input" data-context="original_context_raw" type="radio" name="forecast-task-142-context" id="forecast-task-142-context-original-context-raw" /><input class="forecast-context-input" data-context="no_context" type="radio" name="forecast-task-142-context" id="forecast-task-142-context-no-context" />
+          <input class="forecast-view-input" value="overlay" type="radio" name="forecast-task-142-view" id="forecast-task-142-view-overlay" checked />
+          <input class="forecast-view-input" value="multiples" type="radio" name="forecast-task-142-view" id="forecast-task-142-view-multiples" />
+          <div class="forecast-toolbar">
+            <div class="forecast-control-block">
+              <span class="forecast-control-label">Context</span>
+              <div class="forecast-context-tabs" role="tablist" aria-label="Forecast context"><label class="forecast-context-tab" data-context="deepresearch_insights" for="forecast-task-142-context-deepresearch-insights" title="Agent-synthesized evidence">DeepResearch Evidence<small>3 methods</small></label><label class="forecast-context-tab" data-context="original_context_raw" for="forecast-task-142-context-original-context-raw" title="Source context supplied with the task">Original Context<small>2 methods</small></label><label class="forecast-context-tab" data-context="no_context" for="forecast-task-142-context-no-context" title="Time-series history only">No Context<small>5 methods</small></label></div>
+            </div>
+            <div class="forecast-control-block forecast-view-block">
+              <span class="forecast-control-label">View</span>
+              <div class="forecast-view-tabs" role="group" aria-label="Forecast view">
+                <label class="forecast-view-tab" for="forecast-task-142-view-overlay">Overlay</label>
+                <label class="forecast-view-tab" for="forecast-task-142-view-multiples">Small multiples</label>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-context-panels"><section class="forecast-context-panel" data-context="deepresearch_insights" aria-label="DeepResearch Evidence">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-aurora selected" title="TS foundation model · 25 samples per task">Aurora<small>TS foundation model</small></span><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 selected</span><span>Highlighted · Aurora · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="DeepResearch Evidence model forecasts" preserveAspectRatio="none"><title>DeepResearch Evidence model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.79 L 32.94 259.54 L 37.88 232.30 L 42.83 159.30 L 47.77 229.03 L 52.71 237.75 L 57.65 241.02 L 62.60 237.75 L 67.54 230.12 L 72.48 316.21 L 77.42 316.21 L 82.37 316.21 L 87.31 43.79 L 92.25 50.33 L 97.19 235.57 L 102.14 258.46 L 107.08 262.81 L 112.02 271.53 L 116.96 282.43 L 121.91 288.97 L 126.85 296.59 L 131.79 298.77 L 136.73 299.86 L 141.68 294.41 L 146.62 286.79 L 151.56 261.72 L 156.50 238.84 L 161.45 207.24 L 166.39 231.21 L 171.33 230.12 L 176.27 226.86 L 181.21 225.77 L 186.16 220.32 L 191.10 316.21 L 196.04 316.21 L 200.98 316.21 L 205.93 49.24 L 210.87 47.06 L 215.81 181.09 L 220.75 242.11 L 225.70 254.10 L 230.64 263.90 L 235.58 273.71 L 240.52 287.88 L 245.47 295.50 L 250.41 299.86 L 255.35 299.86 L 260.29 299.86 L 265.24 296.59 L 270.18 283.52 L 275.12 275.89 L 280.06 260.63 L 285.01 244.29 L 289.95 237.75 L 294.89 231.21 L 299.83 223.59 L 304.77 226.86 L 309.72 316.21 L 314.66 316.21 L 319.60 316.21 L 324.54 208.33 L 329.49 227.94 L 334.43 238.84 L 339.37 244.29 L 344.31 253.01 L 349.26 255.19 L 354.20 264.99 L 359.14 284.61 L 364.08 292.23 L 369.03 296.59 L 373.97 300.95 L 378.91 305.31 L 383.85 304.22 L 388.80 294.41 L 393.74 290.06 L 398.68 279.16 L 403.62 270.44 L 408.57 256.28 L 413.51 251.92 L 418.45 239.93 L 423.39 229.03 L 428.34 316.21 L 433.28 316.21 L 438.22 316.21 L 443.16 197.43 L 448.10 217.05 L 453.05 221.41 L 457.99 230.12 L 462.93 244.29 L 467.87 259.54 L 472.82 275.89 L 477.76 288.97 L 482.70 297.68 L 487.64 300.95 L 492.59 296.59 L 497.53 287.88 L 502.47 278.07 L 507.41 251.92 L 512.36 222.50 L 517.30 199.61 L 522.24 234.48 L 527.18 227.94 L 532.13 244.29 L 537.07 245.38 L 542.01 238.84 L 546.95 316.21 L 551.90 316.21 L 556.84 316.21 L 561.78 200.70 L 566.72 208.33 L 571.66 241.02 L 576.61 261.72 L 581.55 266.08 L 586.49 273.71 L 591.43 288.97 L 596.38 296.59 L 601.32 298.77 L 606.26 302.04 L 611.20 300.95 L 616.15 295.50 L 621.09 285.70 L 626.03 255.19 L 630.97 223.59 L 635.92 200.70 L 640.86 227.94 L 645.80 241.02 L 650.74 245.38 L 655.69 239.93 L 660.63 235.57 L 665.57 316.21 L 670.51 316.21 L 675.46 316.21 L 680.40 200.70 L 685.34 209.42 L 690.28 241.02 L 695.23 263.90 L 700.17 266.08 L 705.11 273.71 L 710.05 282.43 L 714.99 295.50 L 719.94 300.95 L 724.88 299.86 L 729.82 299.86 L 734.76 295.50 L 739.71 285.70 L 744.65 258.46 L 749.59 225.77 L 754.53 125.52 L 759.48 209.42 L 764.42 237.75 L 769.36 245.38 L 774.30 243.20 L 779.25 233.39 L 784.19 316.21 L 789.13 316.21 L 794.07 316.21 L 799.02 136.41 L 803.96 202.88 L 808.90 243.20 L 813.84 261.72 L 818.79 264.99 L 823.73 269.35 L 828.67 284.61 L 833.61 295.50 L 838.55 298.77 L 843.50 300.95 L 848.44 300.95 L 853.38 296.59" /><path class="forecast-svg-actual" d="M 858.32 285.70 L 863.27 258.46 L 868.21 223.59 L 873.15 198.52 L 878.09 232.30 L 883.04 233.39 L 887.98 236.66 L 892.92 234.48 L 897.86 232.30 L 902.81 223.59 L 907.75 213.78 L 912.69 206.15 L 917.63 183.27 L 922.58 138.59 L 927.52 244.29 L 932.46 258.46 L 937.40 262.81 L 942.35 268.26 L 947.29 282.43 L 952.23 292.23 L 957.17 267.17 L 962.12 261.72 L 967.06 246.47 L 972.00 235.57" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 276.01 L 863.27 260.19 L 868.21 222.30 L 873.15 193.78 L 878.09 206.73 L 883.04 216.00 L 887.98 235.70 L 892.92 209.40 L 897.86 226.49 L 902.81 289.74 L 907.75 296.64 L 912.69 293.63 L 917.63 127.75 L 922.58 135.69 L 927.52 220.60 L 932.46 246.57 L 937.40 254.79 L 942.35 266.30 L 947.29 273.48 L 952.23 287.81 L 957.17 291.27 L 962.12 291.57 L 967.06 287.76 L 972.00 283.91 L 972.00 295.00 L 967.06 296.86 L 962.12 299.00 L 957.17 299.05 L 952.23 292.98 L 947.29 284.33 L 942.35 279.13 L 937.40 272.64 L 932.46 261.70 L 927.52 245.68 L 922.58 193.77 L 917.63 179.24 L 912.69 304.25 L 907.75 305.67 L 902.81 303.29 L 897.86 264.72 L 892.92 259.62 L 887.98 256.12 L 883.04 262.17 L 878.09 254.50 L 873.15 231.32 L 868.21 262.03 L 863.27 274.66 L 858.32 291.70 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 283.85 L 863.27 267.43 L 868.21 242.17 L 873.15 212.55 L 878.09 230.61 L 883.04 239.09 L 887.98 245.91 L 892.92 234.51 L 897.86 245.60 L 902.81 296.52 L 907.75 301.15 L 912.69 298.94 L 917.63 153.49 L 922.58 164.73 L 927.52 233.14 L 932.46 254.14 L 937.40 263.72 L 942.35 272.72 L 947.29 278.90 L 952.23 290.40 L 957.17 295.16 L 962.12 295.28 L 967.06 292.31 L 972.00 289.45" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="283.85" r="4" /><path class="forecast-svg-mean" stroke="#2d6b5c" d="M 858.32 286.35 L 863.27 257.23 L 868.21 224.50 L 873.15 182.00 L 878.09 191.86 L 883.04 202.49 L 887.98 211.82 L 892.92 217.14 L 897.86 220.71 L 902.81 219.62 L 907.75 214.13 L 912.69 201.79 L 917.63 170.24 L 922.58 182.09 L 927.52 217.88 L 932.46 244.25 L 937.40 257.76 L 942.35 268.22 L 947.29 279.64 L 952.23 290.32 L 957.17 296.42 L 962.12 299.64 L 967.06 300.30 L 972.00 297.07" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="286.35" r="3" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 285.62 L 863.27 260.47 L 868.21 229.26 L 873.15 190.29 L 878.09 222.84 L 883.04 235.78 L 887.98 241.43 L 892.92 235.82 L 897.86 232.01 L 902.81 211.11 L 907.75 196.43 L 912.69 182.35 L 917.63 156.89 L 922.58 181.98 L 927.52 234.67 L 932.46 256.69 L 937.40 261.78 L 942.35 269.75 L 947.29 280.48 L 952.23 290.65 L 957.17 295.14 L 962.12 296.88 L 967.06 295.63 L 972.00 292.52" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="285.62" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>DeepResearch Evidence · 3 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Aurora</strong><small>TS foundation model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Aurora forecast" preserveAspectRatio="none"><title>Aurora forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.79 L 32.94 259.54 L 37.88 232.30 L 42.83 159.30 L 47.77 229.03 L 52.71 237.75 L 57.65 241.02 L 62.60 237.75 L 67.54 230.12 L 72.48 316.21 L 77.42 316.21 L 82.37 316.21 L 87.31 43.79 L 92.25 50.33 L 97.19 235.57 L 102.14 258.46 L 107.08 262.81 L 112.02 271.53 L 116.96 282.43 L 121.91 288.97 L 126.85 296.59 L 131.79 298.77 L 136.73 299.86 L 141.68 294.41 L 146.62 286.79 L 151.56 261.72 L 156.50 238.84 L 161.45 207.24 L 166.39 231.21 L 171.33 230.12 L 176.27 226.86 L 181.21 225.77 L 186.16 220.32 L 191.10 316.21 L 196.04 316.21 L 200.98 316.21 L 205.93 49.24 L 210.87 47.06 L 215.81 181.09 L 220.75 242.11 L 225.70 254.10 L 230.64 263.90 L 235.58 273.71 L 240.52 287.88 L 245.47 295.50 L 250.41 299.86 L 255.35 299.86 L 260.29 299.86 L 265.24 296.59 L 270.18 283.52 L 275.12 275.89 L 280.06 260.63 L 285.01 244.29 L 289.95 237.75 L 294.89 231.21 L 299.83 223.59 L 304.77 226.86 L 309.72 316.21 L 314.66 316.21 L 319.60 316.21 L 324.54 208.33 L 329.49 227.94 L 334.43 238.84 L 339.37 244.29 L 344.31 253.01 L 349.26 255.19 L 354.20 264.99 L 359.14 284.61 L 364.08 292.23 L 369.03 296.59 L 373.97 300.95 L 378.91 305.31 L 383.85 304.22 L 388.80 294.41 L 393.74 290.06 L 398.68 279.16 L 403.62 270.44 L 408.57 256.28 L 413.51 251.92 L 418.45 239.93 L 423.39 229.03 L 428.34 316.21 L 433.28 316.21 L 438.22 316.21 L 443.16 197.43 L 448.10 217.05 L 453.05 221.41 L 457.99 230.12 L 462.93 244.29 L 467.87 259.54 L 472.82 275.89 L 477.76 288.97 L 482.70 297.68 L 487.64 300.95 L 492.59 296.59 L 497.53 287.88 L 502.47 278.07 L 507.41 251.92 L 512.36 222.50 L 517.30 199.61 L 522.24 234.48 L 527.18 227.94 L 532.13 244.29 L 537.07 245.38 L 542.01 238.84 L 546.95 316.21 L 551.90 316.21 L 556.84 316.21 L 561.78 200.70 L 566.72 208.33 L 571.66 241.02 L 576.61 261.72 L 581.55 266.08 L 586.49 273.71 L 591.43 288.97 L 596.38 296.59 L 601.32 298.77 L 606.26 302.04 L 611.20 300.95 L 616.15 295.50 L 621.09 285.70 L 626.03 255.19 L 630.97 223.59 L 635.92 200.70 L 640.86 227.94 L 645.80 241.02 L 650.74 245.38 L 655.69 239.93 L 660.63 235.57 L 665.57 316.21 L 670.51 316.21 L 675.46 316.21 L 680.40 200.70 L 685.34 209.42 L 690.28 241.02 L 695.23 263.90 L 700.17 266.08 L 705.11 273.71 L 710.05 282.43 L 714.99 295.50 L 719.94 300.95 L 724.88 299.86 L 729.82 299.86 L 734.76 295.50 L 739.71 285.70 L 744.65 258.46 L 749.59 225.77 L 754.53 125.52 L 759.48 209.42 L 764.42 237.75 L 769.36 245.38 L 774.30 243.20 L 779.25 233.39 L 784.19 316.21 L 789.13 316.21 L 794.07 316.21 L 799.02 136.41 L 803.96 202.88 L 808.90 243.20 L 813.84 261.72 L 818.79 264.99 L 823.73 269.35 L 828.67 284.61 L 833.61 295.50 L 838.55 298.77 L 843.50 300.95 L 848.44 300.95 L 853.38 296.59" /><path class="forecast-svg-actual" d="M 858.32 285.70 L 863.27 258.46 L 868.21 223.59 L 873.15 198.52 L 878.09 232.30 L 883.04 233.39 L 887.98 236.66 L 892.92 234.48 L 897.86 232.30 L 902.81 223.59 L 907.75 213.78 L 912.69 206.15 L 917.63 183.27 L 922.58 138.59 L 927.52 244.29 L 932.46 258.46 L 937.40 262.81 L 942.35 268.26 L 947.29 282.43 L 952.23 292.23 L 957.17 267.17 L 962.12 261.72 L 967.06 246.47 L 972.00 235.57" /><path class="forecast-svg-band" fill="#b86d4a" d="M 858.32 276.01 L 863.27 260.19 L 868.21 222.30 L 873.15 193.78 L 878.09 206.73 L 883.04 216.00 L 887.98 235.70 L 892.92 209.40 L 897.86 226.49 L 902.81 289.74 L 907.75 296.64 L 912.69 293.63 L 917.63 127.75 L 922.58 135.69 L 927.52 220.60 L 932.46 246.57 L 937.40 254.79 L 942.35 266.30 L 947.29 273.48 L 952.23 287.81 L 957.17 291.27 L 962.12 291.57 L 967.06 287.76 L 972.00 283.91 L 972.00 295.00 L 967.06 296.86 L 962.12 299.00 L 957.17 299.05 L 952.23 292.98 L 947.29 284.33 L 942.35 279.13 L 937.40 272.64 L 932.46 261.70 L 927.52 245.68 L 922.58 193.77 L 917.63 179.24 L 912.69 304.25 L 907.75 305.67 L 902.81 303.29 L 897.86 264.72 L 892.92 259.62 L 887.98 256.12 L 883.04 262.17 L 878.09 254.50 L 873.15 231.32 L 868.21 262.03 L 863.27 274.66 L 858.32 291.70 Z" /><path class="forecast-svg-mean active" stroke="#b86d4a" d="M 858.32 283.85 L 863.27 267.43 L 868.21 242.17 L 873.15 212.55 L 878.09 230.61 L 883.04 239.09 L 887.98 245.91 L 892.92 234.51 L 897.86 245.60 L 902.81 296.52 L 907.75 301.15 L 912.69 298.94 L 917.63 153.49 L 922.58 164.73 L 927.52 233.14 L 932.46 254.14 L 937.40 263.72 L 942.35 272.72 L 947.29 278.90 L 952.23 290.40 L 957.17 295.16 L 962.12 295.28 L 967.06 292.31 L 972.00 289.45" /><circle class="forecast-svg-start" fill="#b86d4a" cx="858.32" cy="283.85" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.79 L 32.94 259.54 L 37.88 232.30 L 42.83 159.30 L 47.77 229.03 L 52.71 237.75 L 57.65 241.02 L 62.60 237.75 L 67.54 230.12 L 72.48 316.21 L 77.42 316.21 L 82.37 316.21 L 87.31 43.79 L 92.25 50.33 L 97.19 235.57 L 102.14 258.46 L 107.08 262.81 L 112.02 271.53 L 116.96 282.43 L 121.91 288.97 L 126.85 296.59 L 131.79 298.77 L 136.73 299.86 L 141.68 294.41 L 146.62 286.79 L 151.56 261.72 L 156.50 238.84 L 161.45 207.24 L 166.39 231.21 L 171.33 230.12 L 176.27 226.86 L 181.21 225.77 L 186.16 220.32 L 191.10 316.21 L 196.04 316.21 L 200.98 316.21 L 205.93 49.24 L 210.87 47.06 L 215.81 181.09 L 220.75 242.11 L 225.70 254.10 L 230.64 263.90 L 235.58 273.71 L 240.52 287.88 L 245.47 295.50 L 250.41 299.86 L 255.35 299.86 L 260.29 299.86 L 265.24 296.59 L 270.18 283.52 L 275.12 275.89 L 280.06 260.63 L 285.01 244.29 L 289.95 237.75 L 294.89 231.21 L 299.83 223.59 L 304.77 226.86 L 309.72 316.21 L 314.66 316.21 L 319.60 316.21 L 324.54 208.33 L 329.49 227.94 L 334.43 238.84 L 339.37 244.29 L 344.31 253.01 L 349.26 255.19 L 354.20 264.99 L 359.14 284.61 L 364.08 292.23 L 369.03 296.59 L 373.97 300.95 L 378.91 305.31 L 383.85 304.22 L 388.80 294.41 L 393.74 290.06 L 398.68 279.16 L 403.62 270.44 L 408.57 256.28 L 413.51 251.92 L 418.45 239.93 L 423.39 229.03 L 428.34 316.21 L 433.28 316.21 L 438.22 316.21 L 443.16 197.43 L 448.10 217.05 L 453.05 221.41 L 457.99 230.12 L 462.93 244.29 L 467.87 259.54 L 472.82 275.89 L 477.76 288.97 L 482.70 297.68 L 487.64 300.95 L 492.59 296.59 L 497.53 287.88 L 502.47 278.07 L 507.41 251.92 L 512.36 222.50 L 517.30 199.61 L 522.24 234.48 L 527.18 227.94 L 532.13 244.29 L 537.07 245.38 L 542.01 238.84 L 546.95 316.21 L 551.90 316.21 L 556.84 316.21 L 561.78 200.70 L 566.72 208.33 L 571.66 241.02 L 576.61 261.72 L 581.55 266.08 L 586.49 273.71 L 591.43 288.97 L 596.38 296.59 L 601.32 298.77 L 606.26 302.04 L 611.20 300.95 L 616.15 295.50 L 621.09 285.70 L 626.03 255.19 L 630.97 223.59 L 635.92 200.70 L 640.86 227.94 L 645.80 241.02 L 650.74 245.38 L 655.69 239.93 L 660.63 235.57 L 665.57 316.21 L 670.51 316.21 L 675.46 316.21 L 680.40 200.70 L 685.34 209.42 L 690.28 241.02 L 695.23 263.90 L 700.17 266.08 L 705.11 273.71 L 710.05 282.43 L 714.99 295.50 L 719.94 300.95 L 724.88 299.86 L 729.82 299.86 L 734.76 295.50 L 739.71 285.70 L 744.65 258.46 L 749.59 225.77 L 754.53 125.52 L 759.48 209.42 L 764.42 237.75 L 769.36 245.38 L 774.30 243.20 L 779.25 233.39 L 784.19 316.21 L 789.13 316.21 L 794.07 316.21 L 799.02 136.41 L 803.96 202.88 L 808.90 243.20 L 813.84 261.72 L 818.79 264.99 L 823.73 269.35 L 828.67 284.61 L 833.61 295.50 L 838.55 298.77 L 843.50 300.95 L 848.44 300.95 L 853.38 296.59" /><path class="forecast-svg-actual" d="M 858.32 285.70 L 863.27 258.46 L 868.21 223.59 L 873.15 198.52 L 878.09 232.30 L 883.04 233.39 L 887.98 236.66 L 892.92 234.48 L 897.86 232.30 L 902.81 223.59 L 907.75 213.78 L 912.69 206.15 L 917.63 183.27 L 922.58 138.59 L 927.52 244.29 L 932.46 258.46 L 937.40 262.81 L 942.35 268.26 L 947.29 282.43 L 952.23 292.23 L 957.17 267.17 L 962.12 261.72 L 967.06 246.47 L 972.00 235.57" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 285.60 L 863.27 255.59 L 868.21 222.20 L 873.15 163.91 L 878.09 178.56 L 883.04 189.54 L 887.98 198.67 L 892.92 202.69 L 897.86 204.89 L 902.81 200.33 L 907.75 191.16 L 912.69 174.52 L 917.63 135.74 L 922.58 151.80 L 927.52 201.65 L 932.46 235.61 L 937.40 252.87 L 942.35 264.51 L 947.29 276.66 L 952.23 287.49 L 957.17 294.83 L 962.12 298.83 L 967.06 299.68 L 972.00 295.84 L 972.00 298.31 L 967.06 300.91 L 962.12 300.46 L 957.17 298.01 L 952.23 293.15 L 947.29 282.61 L 942.35 271.92 L 937.40 262.65 L 932.46 252.88 L 927.52 234.11 L 922.58 212.38 L 917.63 204.73 L 912.69 229.06 L 907.75 237.09 L 902.81 238.91 L 897.86 236.53 L 892.92 231.58 L 887.98 224.97 L 883.04 215.44 L 878.09 205.15 L 873.15 200.10 L 868.21 226.80 L 863.27 258.87 L 858.32 287.11 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 286.35 L 863.27 257.23 L 868.21 224.50 L 873.15 182.00 L 878.09 191.86 L 883.04 202.49 L 887.98 211.82 L 892.92 217.14 L 897.86 220.71 L 902.81 219.62 L 907.75 214.13 L 912.69 201.79 L 917.63 170.24 L 922.58 182.09 L 927.52 217.88 L 932.46 244.25 L 937.40 257.76 L 942.35 268.22 L 947.29 279.64 L 952.23 290.32 L 957.17 296.42 L 962.12 299.64 L 967.06 300.30 L 972.00 297.07" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="286.35" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.79 L 32.94 259.54 L 37.88 232.30 L 42.83 159.30 L 47.77 229.03 L 52.71 237.75 L 57.65 241.02 L 62.60 237.75 L 67.54 230.12 L 72.48 316.21 L 77.42 316.21 L 82.37 316.21 L 87.31 43.79 L 92.25 50.33 L 97.19 235.57 L 102.14 258.46 L 107.08 262.81 L 112.02 271.53 L 116.96 282.43 L 121.91 288.97 L 126.85 296.59 L 131.79 298.77 L 136.73 299.86 L 141.68 294.41 L 146.62 286.79 L 151.56 261.72 L 156.50 238.84 L 161.45 207.24 L 166.39 231.21 L 171.33 230.12 L 176.27 226.86 L 181.21 225.77 L 186.16 220.32 L 191.10 316.21 L 196.04 316.21 L 200.98 316.21 L 205.93 49.24 L 210.87 47.06 L 215.81 181.09 L 220.75 242.11 L 225.70 254.10 L 230.64 263.90 L 235.58 273.71 L 240.52 287.88 L 245.47 295.50 L 250.41 299.86 L 255.35 299.86 L 260.29 299.86 L 265.24 296.59 L 270.18 283.52 L 275.12 275.89 L 280.06 260.63 L 285.01 244.29 L 289.95 237.75 L 294.89 231.21 L 299.83 223.59 L 304.77 226.86 L 309.72 316.21 L 314.66 316.21 L 319.60 316.21 L 324.54 208.33 L 329.49 227.94 L 334.43 238.84 L 339.37 244.29 L 344.31 253.01 L 349.26 255.19 L 354.20 264.99 L 359.14 284.61 L 364.08 292.23 L 369.03 296.59 L 373.97 300.95 L 378.91 305.31 L 383.85 304.22 L 388.80 294.41 L 393.74 290.06 L 398.68 279.16 L 403.62 270.44 L 408.57 256.28 L 413.51 251.92 L 418.45 239.93 L 423.39 229.03 L 428.34 316.21 L 433.28 316.21 L 438.22 316.21 L 443.16 197.43 L 448.10 217.05 L 453.05 221.41 L 457.99 230.12 L 462.93 244.29 L 467.87 259.54 L 472.82 275.89 L 477.76 288.97 L 482.70 297.68 L 487.64 300.95 L 492.59 296.59 L 497.53 287.88 L 502.47 278.07 L 507.41 251.92 L 512.36 222.50 L 517.30 199.61 L 522.24 234.48 L 527.18 227.94 L 532.13 244.29 L 537.07 245.38 L 542.01 238.84 L 546.95 316.21 L 551.90 316.21 L 556.84 316.21 L 561.78 200.70 L 566.72 208.33 L 571.66 241.02 L 576.61 261.72 L 581.55 266.08 L 586.49 273.71 L 591.43 288.97 L 596.38 296.59 L 601.32 298.77 L 606.26 302.04 L 611.20 300.95 L 616.15 295.50 L 621.09 285.70 L 626.03 255.19 L 630.97 223.59 L 635.92 200.70 L 640.86 227.94 L 645.80 241.02 L 650.74 245.38 L 655.69 239.93 L 660.63 235.57 L 665.57 316.21 L 670.51 316.21 L 675.46 316.21 L 680.40 200.70 L 685.34 209.42 L 690.28 241.02 L 695.23 263.90 L 700.17 266.08 L 705.11 273.71 L 710.05 282.43 L 714.99 295.50 L 719.94 300.95 L 724.88 299.86 L 729.82 299.86 L 734.76 295.50 L 739.71 285.70 L 744.65 258.46 L 749.59 225.77 L 754.53 125.52 L 759.48 209.42 L 764.42 237.75 L 769.36 245.38 L 774.30 243.20 L 779.25 233.39 L 784.19 316.21 L 789.13 316.21 L 794.07 316.21 L 799.02 136.41 L 803.96 202.88 L 808.90 243.20 L 813.84 261.72 L 818.79 264.99 L 823.73 269.35 L 828.67 284.61 L 833.61 295.50 L 838.55 298.77 L 843.50 300.95 L 848.44 300.95 L 853.38 296.59" /><path class="forecast-svg-actual" d="M 858.32 285.70 L 863.27 258.46 L 868.21 223.59 L 873.15 198.52 L 878.09 232.30 L 883.04 233.39 L 887.98 236.66 L 892.92 234.48 L 897.86 232.30 L 902.81 223.59 L 907.75 213.78 L 912.69 206.15 L 917.63 183.27 L 922.58 138.59 L 927.52 244.29 L 932.46 258.46 L 937.40 262.81 L 942.35 268.26 L 947.29 282.43 L 952.23 292.23 L 957.17 267.17 L 962.12 261.72 L 967.06 246.47 L 972.00 235.57" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 284.23 L 863.27 256.43 L 868.21 221.80 L 873.15 173.70 L 878.09 208.24 L 883.04 230.20 L 887.98 238.64 L 892.92 232.48 L 897.86 226.14 L 902.81 193.47 L 907.75 177.97 L 912.69 157.67 L 917.63 128.17 L 922.58 158.07 L 927.52 227.30 L 932.46 250.28 L 937.40 256.00 L 942.35 262.85 L 947.29 272.57 L 952.23 281.28 L 957.17 284.28 L 962.12 284.54 L 967.06 282.90 L 972.00 278.95 L 972.00 306.09 L 967.06 308.36 L 962.12 309.23 L 957.17 306.01 L 952.23 300.02 L 947.29 288.39 L 942.35 276.65 L 937.40 267.56 L 932.46 263.10 L 927.52 242.03 L 922.58 205.89 L 917.63 185.61 L 912.69 207.02 L 907.75 214.88 L 902.81 228.75 L 897.86 237.88 L 892.92 239.16 L 887.98 244.22 L 883.04 241.36 L 878.09 237.44 L 873.15 206.88 L 868.21 236.71 L 863.27 264.52 L 858.32 287.02 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 285.62 L 863.27 260.47 L 868.21 229.26 L 873.15 190.29 L 878.09 222.84 L 883.04 235.78 L 887.98 241.43 L 892.92 235.82 L 897.86 232.01 L 902.81 211.11 L 907.75 196.43 L 912.69 182.35 L 917.63 156.89 L 922.58 181.98 L 927.52 234.67 L 932.46 256.69 L 937.40 261.78 L 942.35 269.75 L 947.29 280.48 L 952.23 290.65 L 957.17 295.14 L 962.12 296.88 L 967.06 295.63 L 972.00 292.52" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="285.62" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="original_context_raw" aria-label="Original Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-dp-gemini selected" title="Direct-prompt LLM · 25 samples per task">DP-Gemini<small>Direct-prompt LLM</small></span><span class="forecast-model-pill forecast-model-moiraiagent selected" title="Forecasting agent · 25 samples per task">MoiraiAgent<small>Forecasting agent</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>Original Context · 2 selected</span><span>Highlighted · DP-Gemini · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="Original Context model forecasts" preserveAspectRatio="none"><title>Original Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.79 L 32.94 259.54 L 37.88 232.30 L 42.83 159.30 L 47.77 229.03 L 52.71 237.75 L 57.65 241.02 L 62.60 237.75 L 67.54 230.12 L 72.48 316.21 L 77.42 316.21 L 82.37 316.21 L 87.31 43.79 L 92.25 50.33 L 97.19 235.57 L 102.14 258.46 L 107.08 262.81 L 112.02 271.53 L 116.96 282.43 L 121.91 288.97 L 126.85 296.59 L 131.79 298.77 L 136.73 299.86 L 141.68 294.41 L 146.62 286.79 L 151.56 261.72 L 156.50 238.84 L 161.45 207.24 L 166.39 231.21 L 171.33 230.12 L 176.27 226.86 L 181.21 225.77 L 186.16 220.32 L 191.10 316.21 L 196.04 316.21 L 200.98 316.21 L 205.93 49.24 L 210.87 47.06 L 215.81 181.09 L 220.75 242.11 L 225.70 254.10 L 230.64 263.90 L 235.58 273.71 L 240.52 287.88 L 245.47 295.50 L 250.41 299.86 L 255.35 299.86 L 260.29 299.86 L 265.24 296.59 L 270.18 283.52 L 275.12 275.89 L 280.06 260.63 L 285.01 244.29 L 289.95 237.75 L 294.89 231.21 L 299.83 223.59 L 304.77 226.86 L 309.72 316.21 L 314.66 316.21 L 319.60 316.21 L 324.54 208.33 L 329.49 227.94 L 334.43 238.84 L 339.37 244.29 L 344.31 253.01 L 349.26 255.19 L 354.20 264.99 L 359.14 284.61 L 364.08 292.23 L 369.03 296.59 L 373.97 300.95 L 378.91 305.31 L 383.85 304.22 L 388.80 294.41 L 393.74 290.06 L 398.68 279.16 L 403.62 270.44 L 408.57 256.28 L 413.51 251.92 L 418.45 239.93 L 423.39 229.03 L 428.34 316.21 L 433.28 316.21 L 438.22 316.21 L 443.16 197.43 L 448.10 217.05 L 453.05 221.41 L 457.99 230.12 L 462.93 244.29 L 467.87 259.54 L 472.82 275.89 L 477.76 288.97 L 482.70 297.68 L 487.64 300.95 L 492.59 296.59 L 497.53 287.88 L 502.47 278.07 L 507.41 251.92 L 512.36 222.50 L 517.30 199.61 L 522.24 234.48 L 527.18 227.94 L 532.13 244.29 L 537.07 245.38 L 542.01 238.84 L 546.95 316.21 L 551.90 316.21 L 556.84 316.21 L 561.78 200.70 L 566.72 208.33 L 571.66 241.02 L 576.61 261.72 L 581.55 266.08 L 586.49 273.71 L 591.43 288.97 L 596.38 296.59 L 601.32 298.77 L 606.26 302.04 L 611.20 300.95 L 616.15 295.50 L 621.09 285.70 L 626.03 255.19 L 630.97 223.59 L 635.92 200.70 L 640.86 227.94 L 645.80 241.02 L 650.74 245.38 L 655.69 239.93 L 660.63 235.57 L 665.57 316.21 L 670.51 316.21 L 675.46 316.21 L 680.40 200.70 L 685.34 209.42 L 690.28 241.02 L 695.23 263.90 L 700.17 266.08 L 705.11 273.71 L 710.05 282.43 L 714.99 295.50 L 719.94 300.95 L 724.88 299.86 L 729.82 299.86 L 734.76 295.50 L 739.71 285.70 L 744.65 258.46 L 749.59 225.77 L 754.53 125.52 L 759.48 209.42 L 764.42 237.75 L 769.36 245.38 L 774.30 243.20 L 779.25 233.39 L 784.19 316.21 L 789.13 316.21 L 794.07 316.21 L 799.02 136.41 L 803.96 202.88 L 808.90 243.20 L 813.84 261.72 L 818.79 264.99 L 823.73 269.35 L 828.67 284.61 L 833.61 295.50 L 838.55 298.77 L 843.50 300.95 L 848.44 300.95 L 853.38 296.59" /><path class="forecast-svg-actual" d="M 858.32 285.70 L 863.27 258.46 L 868.21 223.59 L 873.15 198.52 L 878.09 232.30 L 883.04 233.39 L 887.98 236.66 L 892.92 234.48 L 897.86 232.30 L 902.81 223.59 L 907.75 213.78 L 912.69 206.15 L 917.63 183.27 L 922.58 138.59 L 927.52 244.29 L 932.46 258.46 L 937.40 262.81 L 942.35 268.26 L 947.29 282.43 L 952.23 292.23 L 957.17 267.17 L 962.12 261.72 L 967.06 246.47 L 972.00 235.57" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 286.30 L 863.27 256.51 L 868.21 223.65 L 873.15 191.40 L 878.09 223.34 L 883.04 235.16 L 887.98 240.88 L 892.92 238.48 L 897.86 233.03 L 902.81 226.60 L 907.75 216.02 L 912.69 198.85 L 917.63 170.43 L 922.58 198.57 L 927.52 234.55 L 932.46 256.18 L 937.40 264.21 L 942.35 272.00 L 947.29 282.01 L 952.23 294.00 L 957.17 298.44 L 962.12 300.22 L 967.06 300.09 L 972.00 296.21 L 972.00 296.80 L 967.06 301.11 L 962.12 301.16 L 957.17 299.19 L 952.23 295.18 L 947.29 284.06 L 942.35 273.15 L 937.40 266.39 L 932.46 263.00 L 927.52 241.56 L 922.58 210.51 L 917.63 196.11 L 912.69 231.06 L 907.75 233.94 L 902.81 233.91 L 897.86 235.15 L 892.92 241.64 L 887.98 243.77 L 883.04 237.29 L 878.09 227.15 L 873.15 198.15 L 868.21 227.18 L 863.27 258.49 L 858.32 287.01 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 286.66 L 863.27 257.50 L 868.21 225.42 L 873.15 194.78 L 878.09 225.24 L 883.04 236.23 L 887.98 242.33 L 892.92 240.06 L 897.86 234.09 L 902.81 230.25 L 907.75 224.98 L 912.69 214.96 L 917.63 183.27 L 922.58 204.54 L 927.52 238.06 L 932.46 259.59 L 937.40 265.30 L 942.35 272.58 L 947.29 283.04 L 952.23 294.59 L 957.17 298.82 L 962.12 300.69 L 967.06 300.60 L 972.00 296.51" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="286.66" r="4" /><path class="forecast-svg-mean" stroke="#aa7c32" d="M 858.32 285.72 L 863.27 261.36 L 868.21 229.27 L 873.15 189.18 L 878.09 218.61 L 883.04 234.42 L 887.98 241.52 L 892.92 237.29 L 897.86 232.26 L 902.81 204.69 L 907.75 190.36 L 912.69 184.50 L 917.63 156.27 L 922.58 180.94 L 927.52 232.98 L 932.46 257.05 L 937.40 263.04 L 942.35 270.62 L 947.29 281.31 L 952.23 291.58 L 957.17 296.57 L 962.12 297.70 L 967.06 295.92 L 972.00 292.23" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="285.72" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>Original Context · 2 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>DP-Gemini</strong><small>Direct-prompt LLM</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="DP-Gemini forecast" preserveAspectRatio="none"><title>DP-Gemini forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.79 L 32.94 259.54 L 37.88 232.30 L 42.83 159.30 L 47.77 229.03 L 52.71 237.75 L 57.65 241.02 L 62.60 237.75 L 67.54 230.12 L 72.48 316.21 L 77.42 316.21 L 82.37 316.21 L 87.31 43.79 L 92.25 50.33 L 97.19 235.57 L 102.14 258.46 L 107.08 262.81 L 112.02 271.53 L 116.96 282.43 L 121.91 288.97 L 126.85 296.59 L 131.79 298.77 L 136.73 299.86 L 141.68 294.41 L 146.62 286.79 L 151.56 261.72 L 156.50 238.84 L 161.45 207.24 L 166.39 231.21 L 171.33 230.12 L 176.27 226.86 L 181.21 225.77 L 186.16 220.32 L 191.10 316.21 L 196.04 316.21 L 200.98 316.21 L 205.93 49.24 L 210.87 47.06 L 215.81 181.09 L 220.75 242.11 L 225.70 254.10 L 230.64 263.90 L 235.58 273.71 L 240.52 287.88 L 245.47 295.50 L 250.41 299.86 L 255.35 299.86 L 260.29 299.86 L 265.24 296.59 L 270.18 283.52 L 275.12 275.89 L 280.06 260.63 L 285.01 244.29 L 289.95 237.75 L 294.89 231.21 L 299.83 223.59 L 304.77 226.86 L 309.72 316.21 L 314.66 316.21 L 319.60 316.21 L 324.54 208.33 L 329.49 227.94 L 334.43 238.84 L 339.37 244.29 L 344.31 253.01 L 349.26 255.19 L 354.20 264.99 L 359.14 284.61 L 364.08 292.23 L 369.03 296.59 L 373.97 300.95 L 378.91 305.31 L 383.85 304.22 L 388.80 294.41 L 393.74 290.06 L 398.68 279.16 L 403.62 270.44 L 408.57 256.28 L 413.51 251.92 L 418.45 239.93 L 423.39 229.03 L 428.34 316.21 L 433.28 316.21 L 438.22 316.21 L 443.16 197.43 L 448.10 217.05 L 453.05 221.41 L 457.99 230.12 L 462.93 244.29 L 467.87 259.54 L 472.82 275.89 L 477.76 288.97 L 482.70 297.68 L 487.64 300.95 L 492.59 296.59 L 497.53 287.88 L 502.47 278.07 L 507.41 251.92 L 512.36 222.50 L 517.30 199.61 L 522.24 234.48 L 527.18 227.94 L 532.13 244.29 L 537.07 245.38 L 542.01 238.84 L 546.95 316.21 L 551.90 316.21 L 556.84 316.21 L 561.78 200.70 L 566.72 208.33 L 571.66 241.02 L 576.61 261.72 L 581.55 266.08 L 586.49 273.71 L 591.43 288.97 L 596.38 296.59 L 601.32 298.77 L 606.26 302.04 L 611.20 300.95 L 616.15 295.50 L 621.09 285.70 L 626.03 255.19 L 630.97 223.59 L 635.92 200.70 L 640.86 227.94 L 645.80 241.02 L 650.74 245.38 L 655.69 239.93 L 660.63 235.57 L 665.57 316.21 L 670.51 316.21 L 675.46 316.21 L 680.40 200.70 L 685.34 209.42 L 690.28 241.02 L 695.23 263.90 L 700.17 266.08 L 705.11 273.71 L 710.05 282.43 L 714.99 295.50 L 719.94 300.95 L 724.88 299.86 L 729.82 299.86 L 734.76 295.50 L 739.71 285.70 L 744.65 258.46 L 749.59 225.77 L 754.53 125.52 L 759.48 209.42 L 764.42 237.75 L 769.36 245.38 L 774.30 243.20 L 779.25 233.39 L 784.19 316.21 L 789.13 316.21 L 794.07 316.21 L 799.02 136.41 L 803.96 202.88 L 808.90 243.20 L 813.84 261.72 L 818.79 264.99 L 823.73 269.35 L 828.67 284.61 L 833.61 295.50 L 838.55 298.77 L 843.50 300.95 L 848.44 300.95 L 853.38 296.59" /><path class="forecast-svg-actual" d="M 858.32 285.70 L 863.27 258.46 L 868.21 223.59 L 873.15 198.52 L 878.09 232.30 L 883.04 233.39 L 887.98 236.66 L 892.92 234.48 L 897.86 232.30 L 902.81 223.59 L 907.75 213.78 L 912.69 206.15 L 917.63 183.27 L 922.58 138.59 L 927.52 244.29 L 932.46 258.46 L 937.40 262.81 L 942.35 268.26 L 947.29 282.43 L 952.23 292.23 L 957.17 267.17 L 962.12 261.72 L 967.06 246.47 L 972.00 235.57" /><path class="forecast-svg-band" fill="#2d6b5c" d="M 858.32 286.30 L 863.27 256.51 L 868.21 223.65 L 873.15 191.40 L 878.09 223.34 L 883.04 235.16 L 887.98 240.88 L 892.92 238.48 L 897.86 233.03 L 902.81 226.60 L 907.75 216.02 L 912.69 198.85 L 917.63 170.43 L 922.58 198.57 L 927.52 234.55 L 932.46 256.18 L 937.40 264.21 L 942.35 272.00 L 947.29 282.01 L 952.23 294.00 L 957.17 298.44 L 962.12 300.22 L 967.06 300.09 L 972.00 296.21 L 972.00 296.80 L 967.06 301.11 L 962.12 301.16 L 957.17 299.19 L 952.23 295.18 L 947.29 284.06 L 942.35 273.15 L 937.40 266.39 L 932.46 263.00 L 927.52 241.56 L 922.58 210.51 L 917.63 196.11 L 912.69 231.06 L 907.75 233.94 L 902.81 233.91 L 897.86 235.15 L 892.92 241.64 L 887.98 243.77 L 883.04 237.29 L 878.09 227.15 L 873.15 198.15 L 868.21 227.18 L 863.27 258.49 L 858.32 287.01 Z" /><path class="forecast-svg-mean active" stroke="#2d6b5c" d="M 858.32 286.66 L 863.27 257.50 L 868.21 225.42 L 873.15 194.78 L 878.09 225.24 L 883.04 236.23 L 887.98 242.33 L 892.92 240.06 L 897.86 234.09 L 902.81 230.25 L 907.75 224.98 L 912.69 214.96 L 917.63 183.27 L 922.58 204.54 L 927.52 238.06 L 932.46 259.59 L 937.40 265.30 L 942.35 272.58 L 947.29 283.04 L 952.23 294.59 L 957.17 298.82 L 962.12 300.69 L 967.06 300.60 L 972.00 296.51" /><circle class="forecast-svg-start" fill="#2d6b5c" cx="858.32" cy="286.66" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>MoiraiAgent</strong><small>Forecasting agent</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="MoiraiAgent forecast" preserveAspectRatio="none"><title>MoiraiAgent forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 286.79 L 32.94 259.54 L 37.88 232.30 L 42.83 159.30 L 47.77 229.03 L 52.71 237.75 L 57.65 241.02 L 62.60 237.75 L 67.54 230.12 L 72.48 316.21 L 77.42 316.21 L 82.37 316.21 L 87.31 43.79 L 92.25 50.33 L 97.19 235.57 L 102.14 258.46 L 107.08 262.81 L 112.02 271.53 L 116.96 282.43 L 121.91 288.97 L 126.85 296.59 L 131.79 298.77 L 136.73 299.86 L 141.68 294.41 L 146.62 286.79 L 151.56 261.72 L 156.50 238.84 L 161.45 207.24 L 166.39 231.21 L 171.33 230.12 L 176.27 226.86 L 181.21 225.77 L 186.16 220.32 L 191.10 316.21 L 196.04 316.21 L 200.98 316.21 L 205.93 49.24 L 210.87 47.06 L 215.81 181.09 L 220.75 242.11 L 225.70 254.10 L 230.64 263.90 L 235.58 273.71 L 240.52 287.88 L 245.47 295.50 L 250.41 299.86 L 255.35 299.86 L 260.29 299.86 L 265.24 296.59 L 270.18 283.52 L 275.12 275.89 L 280.06 260.63 L 285.01 244.29 L 289.95 237.75 L 294.89 231.21 L 299.83 223.59 L 304.77 226.86 L 309.72 316.21 L 314.66 316.21 L 319.60 316.21 L 324.54 208.33 L 329.49 227.94 L 334.43 238.84 L 339.37 244.29 L 344.31 253.01 L 349.26 255.19 L 354.20 264.99 L 359.14 284.61 L 364.08 292.23 L 369.03 296.59 L 373.97 300.95 L 378.91 305.31 L 383.85 304.22 L 388.80 294.41 L 393.74 290.06 L 398.68 279.16 L 403.62 270.44 L 408.57 256.28 L 413.51 251.92 L 418.45 239.93 L 423.39 229.03 L 428.34 316.21 L 433.28 316.21 L 438.22 316.21 L 443.16 197.43 L 448.10 217.05 L 453.05 221.41 L 457.99 230.12 L 462.93 244.29 L 467.87 259.54 L 472.82 275.89 L 477.76 288.97 L 482.70 297.68 L 487.64 300.95 L 492.59 296.59 L 497.53 287.88 L 502.47 278.07 L 507.41 251.92 L 512.36 222.50 L 517.30 199.61 L 522.24 234.48 L 527.18 227.94 L 532.13 244.29 L 537.07 245.38 L 542.01 238.84 L 546.95 316.21 L 551.90 316.21 L 556.84 316.21 L 561.78 200.70 L 566.72 208.33 L 571.66 241.02 L 576.61 261.72 L 581.55 266.08 L 586.49 273.71 L 591.43 288.97 L 596.38 296.59 L 601.32 298.77 L 606.26 302.04 L 611.20 300.95 L 616.15 295.50 L 621.09 285.70 L 626.03 255.19 L 630.97 223.59 L 635.92 200.70 L 640.86 227.94 L 645.80 241.02 L 650.74 245.38 L 655.69 239.93 L 660.63 235.57 L 665.57 316.21 L 670.51 316.21 L 675.46 316.21 L 680.40 200.70 L 685.34 209.42 L 690.28 241.02 L 695.23 263.90 L 700.17 266.08 L 705.11 273.71 L 710.05 282.43 L 714.99 295.50 L 719.94 300.95 L 724.88 299.86 L 729.82 299.86 L 734.76 295.50 L 739.71 285.70 L 744.65 258.46 L 749.59 225.77 L 754.53 125.52 L 759.48 209.42 L 764.42 237.75 L 769.36 245.38 L 774.30 243.20 L 779.25 233.39 L 784.19 316.21 L 789.13 316.21 L 794.07 316.21 L 799.02 136.41 L 803.96 202.88 L 808.90 243.20 L 813.84 261.72 L 818.79 264.99 L 823.73 269.35 L 828.67 284.61 L 833.61 295.50 L 838.55 298.77 L 843.50 300.95 L 848.44 300.95 L 853.38 296.59" /><path class="forecast-svg-actual" d="M 858.32 285.70 L 863.27 258.46 L 868.21 223.59 L 873.15 198.52 L 878.09 232.30 L 883.04 233.39 L 887.98 236.66 L 892.92 234.48 L 897.86 232.30 L 902.81 223.59 L 907.75 213.78 L 912.69 206.15 L 917.63 183.27 L 922.58 138.59 L 927.52 244.29 L 932.46 258.46 L 937.40 262.81 L 942.35 268.26 L 947.29 282.43 L 952.23 292.23 L 957.17 267.17 L 962.12 261.72 L 967.06 246.47 L 972.00 235.57" /><path class="forecast-svg-band" fill="#aa7c32" d="M 858.32 283.84 L 863.27 253.85 L 868.21 219.71 L 873.15 176.45 L 878.09 203.22 L 883.04 228.42 L 887.98 239.80 L 892.92 234.95 L 897.86 228.91 L 902.81 167.20 L 907.75 150.14 L 912.69 141.39 L 917.63 126.39 L 922.58 158.65 L 927.52 219.66 L 932.46 248.19 L 937.40 256.13 L 942.35 264.56 L 947.29 276.70 L 952.23 288.61 L 957.17 294.92 L 962.12 294.93 L 967.06 288.24 L 972.00 278.78 L 972.00 305.68 L 967.06 303.61 L 962.12 300.46 L 957.17 298.21 L 952.23 294.55 L 947.29 285.92 L 942.35 276.68 L 937.40 269.96 L 932.46 265.92 L 927.52 246.31 L 922.58 203.23 L 917.63 186.14 L 912.69 227.61 L 907.75 230.57 L 902.81 242.18 L 897.86 235.60 L 892.92 239.62 L 887.98 243.23 L 883.04 240.42 L 878.09 234.01 L 873.15 201.91 L 868.21 238.83 L 863.27 268.86 L 858.32 287.60 Z" /><path class="forecast-svg-mean active" stroke="#aa7c32" d="M 858.32 285.72 L 863.27 261.36 L 868.21 229.27 L 873.15 189.18 L 878.09 218.61 L 883.04 234.42 L 887.98 241.52 L 892.92 237.29 L 897.86 232.26 L 902.81 204.69 L 907.75 190.36 L 912.69 184.50 L 917.63 156.27 L 922.58 180.94 L 927.52 232.98 L 932.46 257.05 L 937.40 263.04 L 942.35 270.62 L 947.29 281.31 L 952.23 291.58 L 957.17 296.57 L 962.12 297.70 L 967.06 295.92 L 972.00 292.23" /><circle class="forecast-svg-start" fill="#aa7c32" cx="858.32" cy="285.72" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section><section class="forecast-context-panel" data-context="no_context" aria-label="No Context">
+              <div class="forecast-model-row">
+                <div><span class="forecast-control-label">Forecasters</span><div class="forecast-model-pills"><span class="forecast-model-pill forecast-model-chronos selected" title="Pretrained TS model · 25 samples per task">Chronos<small>Pretrained TS model</small></span><span class="forecast-model-pill forecast-model-arima selected" title="Statistical baseline · 25 samples per task">ARIMA<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ets selected" title="Statistical baseline · 25 samples per task">ETS<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-naive" title="Statistical baseline · 25 samples per task">Naive<small>Statistical baseline</small></span><span class="forecast-model-pill forecast-model-ses" title="Statistical baseline · 25 samples per task">SES<small>Statistical baseline</small></span></div></div>
+                <span class="forecast-model-hint">Overlay defaults to the highlighted comparison · small multiples shows every available forecaster</span>
+              </div>
+              <div class="forecast-chart-frame">
+                <div class="forecast-chart-heading"><span>No Context · 3 selected</span><span>Highlighted · Chronos · ±1 SD</span></div>
+                <svg class="forecast-chart" viewBox="0 0 1000 360" role="img" aria-label="No Context model forecasts" preserveAspectRatio="none"><title>No Context model forecasts</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 275.63 L 32.94 249.64 L 37.88 223.65 L 42.83 154.00 L 47.77 220.53 L 52.71 228.85 L 57.65 231.97 L 62.60 228.85 L 67.54 221.57 L 72.48 303.71 L 77.42 303.71 L 82.37 303.71 L 87.31 43.79 L 92.25 50.03 L 97.19 226.77 L 102.14 248.60 L 107.08 252.76 L 112.02 261.08 L 116.96 271.48 L 121.91 277.71 L 126.85 284.99 L 131.79 287.07 L 136.73 288.11 L 141.68 282.91 L 146.62 275.63 L 151.56 251.72 L 156.50 229.89 L 161.45 199.74 L 166.39 222.61 L 171.33 221.57 L 176.27 218.45 L 181.21 217.41 L 186.16 212.22 L 191.10 303.71 L 196.04 303.71 L 200.98 303.71 L 205.93 48.99 L 210.87 46.91 L 215.81 174.79 L 220.75 233.01 L 225.70 244.45 L 230.64 253.80 L 235.58 263.16 L 240.52 276.67 L 245.47 283.95 L 250.41 288.11 L 255.35 288.11 L 260.29 288.11 L 265.24 284.99 L 270.18 272.52 L 275.12 265.24 L 280.06 250.68 L 285.01 235.09 L 289.95 228.85 L 294.89 222.61 L 299.83 215.34 L 304.77 218.45 L 309.72 303.71 L 314.66 303.71 L 319.60 303.71 L 324.54 200.78 L 329.49 219.49 L 334.43 229.89 L 339.37 235.09 L 344.31 243.41 L 349.26 245.49 L 354.20 254.84 L 359.14 273.56 L 364.08 280.83 L 369.03 284.99 L 373.97 289.15 L 378.91 293.31 L 383.85 292.27 L 388.80 282.91 L 393.74 278.75 L 398.68 268.36 L 403.62 260.04 L 408.57 246.52 L 413.51 242.37 L 418.45 230.93 L 423.39 220.53 L 428.34 303.71 L 433.28 303.71 L 438.22 303.71 L 443.16 190.38 L 448.10 209.10 L 453.05 213.26 L 457.99 221.57 L 462.93 235.09 L 467.87 249.64 L 472.82 265.24 L 477.76 277.71 L 482.70 286.03 L 487.64 289.15 L 492.59 284.99 L 497.53 276.67 L 502.47 267.32 L 507.41 242.37 L 512.36 214.30 L 517.30 192.46 L 522.24 225.73 L 527.18 219.49 L 532.13 235.09 L 537.07 236.13 L 542.01 229.89 L 546.95 303.71 L 551.90 303.71 L 556.84 303.71 L 561.78 193.50 L 566.72 200.78 L 571.66 231.97 L 576.61 251.72 L 581.55 255.88 L 586.49 263.16 L 591.43 277.71 L 596.38 284.99 L 601.32 287.07 L 606.26 290.19 L 611.20 289.15 L 616.15 283.95 L 621.09 274.60 L 626.03 245.49 L 630.97 215.34 L 635.92 193.50 L 640.86 219.49 L 645.80 231.97 L 650.74 236.13 L 655.69 230.93 L 660.63 226.77 L 665.57 303.71 L 670.51 303.71 L 675.46 303.71 L 680.40 193.50 L 685.34 201.82 L 690.28 231.97 L 695.23 253.80 L 700.17 255.88 L 705.11 263.16 L 710.05 271.48 L 714.99 283.95 L 719.94 289.15 L 724.88 288.11 L 729.82 288.11 L 734.76 283.95 L 739.71 274.60 L 744.65 248.60 L 749.59 217.41 L 754.53 121.77 L 759.48 201.82 L 764.42 228.85 L 769.36 236.13 L 774.30 234.05 L 779.25 224.69 L 784.19 303.71 L 789.13 303.71 L 794.07 303.71 L 799.02 132.16 L 803.96 195.58 L 808.90 234.05 L 813.84 251.72 L 818.79 254.84 L 823.73 259.00 L 828.67 273.56 L 833.61 283.95 L 838.55 287.07 L 843.50 289.15 L 848.44 289.15 L 853.38 284.99" /><path class="forecast-svg-actual" d="M 858.32 274.60 L 863.27 248.60 L 868.21 215.34 L 873.15 191.42 L 878.09 223.65 L 883.04 224.69 L 887.98 227.81 L 892.92 225.73 L 897.86 223.65 L 902.81 215.34 L 907.75 205.98 L 912.69 198.70 L 917.63 176.87 L 922.58 134.24 L 927.52 235.09 L 932.46 248.60 L 937.40 252.76 L 942.35 257.96 L 947.29 271.48 L 952.23 280.83 L 957.17 256.92 L 962.12 251.72 L 967.06 237.17 L 972.00 226.77" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 272.94 L 863.27 245.96 L 868.21 215.19 L 873.15 146.19 L 878.09 212.49 L 883.04 223.12 L 887.98 226.09 L 892.92 226.88 L 897.86 221.52 L 902.81 303.61 L 907.75 301.51 L 912.69 296.76 L 917.63 65.76 L 922.58 85.71 L 927.52 205.27 L 932.46 238.75 L 937.40 244.72 L 942.35 252.82 L 947.29 266.47 L 952.23 277.80 L 957.17 283.05 L 962.12 285.22 L 967.06 285.65 L 972.00 280.22 L 972.00 290.50 L 967.06 293.03 L 962.12 292.69 L 957.17 291.38 L 952.23 288.67 L 947.29 280.85 L 942.35 271.21 L 937.40 265.67 L 932.46 263.90 L 927.52 250.24 L 922.58 226.47 L 917.63 185.77 L 912.69 308.19 L 907.75 305.11 L 902.81 303.77 L 897.86 229.45 L 892.92 238.29 L 887.98 238.18 L 883.04 234.79 L 878.09 228.22 L 873.15 200.96 L 868.21 229.46 L 863.27 255.35 L 858.32 278.00 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 275.47 L 863.27 250.65 L 868.21 222.32 L 873.15 173.57 L 878.09 220.36 L 883.04 228.96 L 887.98 232.13 L 892.92 232.58 L 897.86 225.49 L 902.81 303.69 L 907.75 303.31 L 912.69 302.47 L 917.63 125.76 L 922.58 156.09 L 927.52 227.76 L 932.46 251.33 L 937.40 255.19 L 942.35 262.02 L 947.29 273.66 L 952.23 283.24 L 957.17 287.21 L 962.12 288.96 L 967.06 289.34 L 972.00 285.36" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="275.47" r="4" /><path class="forecast-svg-mean" stroke="#8064a2" d="M 858.32 252.37 L 863.27 237.48 L 868.21 228.35 L 873.15 240.21 L 878.09 240.88 L 883.04 239.21 L 887.98 231.26 L 892.92 244.48 L 897.86 227.47 L 902.81 228.55 L 907.75 242.92 L 912.69 244.23 L 917.63 253.18 L 922.58 251.64 L 927.52 241.19 L 932.46 241.28 L 937.40 255.64 L 942.35 253.64 L 947.29 247.15 L 952.23 241.83 L 957.17 241.76 L 962.12 249.99 L 967.06 246.02 L 972.00 254.71" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="252.37" r="3" /><path class="forecast-svg-mean" stroke="#668851" d="M 858.32 281.15 L 863.27 272.21 L 868.21 279.96 L 873.15 271.91 L 878.09 271.27 L 883.04 278.20 L 887.98 278.21 L 892.92 261.99 L 897.86 280.11 L 902.81 267.33 L 907.75 279.65 L 912.69 282.69 L 917.63 273.42 L 922.58 277.52 L 927.52 271.13 L 932.46 261.21 L 937.40 279.08 L 942.35 275.79 L 947.29 269.04 L 952.23 270.73 L 957.17 273.38 L 962.12 262.41 L 967.06 261.00 L 972.00 274.78" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="281.15" r="3" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                <div class="forecast-chart-caption"><span><i class="forecast-key-history"></i>observed history</span><span><i class="forecast-key-actual"></i>actual future</span><span><i class="forecast-key-mean"></i>forecast mean</span><span><i class="forecast-key-band"></i>sample spread</span></div>
+              </div>
+              <div class="forecast-multiples">
+                <div class="forecast-chart-heading"><span>No Context · 5 available</span><span>Shared scale · mean ± 1 SD</span></div>
+                <div class="forecast-small-grid"><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Chronos</strong><small>Pretrained TS model</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Chronos forecast" preserveAspectRatio="none"><title>Chronos forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 219.15 L 32.94 200.37 L 37.88 181.59 L 42.83 131.26 L 47.77 179.34 L 52.71 185.35 L 57.65 187.60 L 62.60 185.35 L 67.54 180.09 L 72.48 239.43 L 77.42 239.43 L 82.37 239.43 L 87.31 51.63 L 92.25 56.14 L 97.19 183.84 L 102.14 199.62 L 107.08 202.62 L 112.02 208.63 L 116.96 216.14 L 121.91 220.65 L 126.85 225.91 L 131.79 227.41 L 136.73 228.16 L 141.68 224.41 L 146.62 219.15 L 151.56 201.87 L 156.50 186.10 L 161.45 164.31 L 166.39 180.84 L 171.33 180.09 L 176.27 177.83 L 181.21 177.08 L 186.16 173.33 L 191.10 239.43 L 196.04 239.43 L 200.98 239.43 L 205.93 55.39 L 210.87 53.89 L 215.81 146.28 L 220.75 188.35 L 225.70 196.61 L 230.64 203.37 L 235.58 210.14 L 240.52 219.90 L 245.47 225.16 L 250.41 228.16 L 255.35 228.16 L 260.29 228.16 L 265.24 225.91 L 270.18 216.90 L 275.12 211.64 L 280.06 201.12 L 285.01 189.85 L 289.95 185.35 L 294.89 180.84 L 299.83 175.58 L 304.77 177.83 L 309.72 239.43 L 314.66 239.43 L 319.60 239.43 L 324.54 165.06 L 329.49 178.58 L 334.43 186.10 L 339.37 189.85 L 344.31 195.86 L 349.26 197.36 L 354.20 204.13 L 359.14 217.65 L 364.08 222.91 L 369.03 225.91 L 373.97 228.92 L 378.91 231.92 L 383.85 231.17 L 388.80 224.41 L 393.74 221.40 L 398.68 213.89 L 403.62 207.88 L 408.57 198.12 L 413.51 195.11 L 418.45 186.85 L 423.39 179.34 L 428.34 239.43 L 433.28 239.43 L 438.22 239.43 L 443.16 157.55 L 448.10 171.07 L 453.05 174.08 L 457.99 180.09 L 462.93 189.85 L 467.87 200.37 L 472.82 211.64 L 477.76 220.65 L 482.70 226.66 L 487.64 228.92 L 492.59 225.91 L 497.53 219.90 L 502.47 213.14 L 507.41 195.11 L 512.36 174.83 L 517.30 159.05 L 522.24 183.09 L 527.18 178.58 L 532.13 189.85 L 537.07 190.60 L 542.01 186.10 L 546.95 239.43 L 551.90 239.43 L 556.84 239.43 L 561.78 159.80 L 566.72 165.06 L 571.66 187.60 L 576.61 201.87 L 581.55 204.88 L 586.49 210.14 L 591.43 220.65 L 596.38 225.91 L 601.32 227.41 L 606.26 229.67 L 611.20 228.92 L 616.15 225.16 L 621.09 218.40 L 626.03 197.36 L 630.97 175.58 L 635.92 159.80 L 640.86 178.58 L 645.80 187.60 L 650.74 190.60 L 655.69 186.85 L 660.63 183.84 L 665.57 239.43 L 670.51 239.43 L 675.46 239.43 L 680.40 159.80 L 685.34 165.81 L 690.28 187.60 L 695.23 203.37 L 700.17 204.88 L 705.11 210.14 L 710.05 216.14 L 714.99 225.16 L 719.94 228.92 L 724.88 228.16 L 729.82 228.16 L 734.76 225.16 L 739.71 218.40 L 744.65 199.62 L 749.59 177.08 L 754.53 107.97 L 759.48 165.81 L 764.42 185.35 L 769.36 190.60 L 774.30 189.10 L 779.25 182.34 L 784.19 239.43 L 789.13 239.43 L 794.07 239.43 L 799.02 115.48 L 803.96 161.31 L 808.90 189.10 L 813.84 201.87 L 818.79 204.13 L 823.73 207.13 L 828.67 217.65 L 833.61 225.16 L 838.55 227.41 L 843.50 228.92 L 848.44 228.92 L 853.38 225.91" /><path class="forecast-svg-actual" d="M 858.32 218.40 L 863.27 199.62 L 868.21 175.58 L 873.15 158.30 L 878.09 181.59 L 883.04 182.34 L 887.98 184.59 L 892.92 183.09 L 897.86 181.59 L 902.81 175.58 L 907.75 168.82 L 912.69 163.56 L 917.63 147.79 L 922.58 116.99 L 927.52 189.85 L 932.46 199.62 L 937.40 202.62 L 942.35 206.38 L 947.29 216.14 L 952.23 222.91 L 957.17 205.63 L 962.12 201.87 L 967.06 191.36 L 972.00 183.84" /><path class="forecast-svg-band" fill="#3777a5" d="M 858.32 217.20 L 863.27 197.71 L 868.21 175.48 L 873.15 125.62 L 878.09 173.53 L 883.04 181.21 L 887.98 183.35 L 892.92 183.92 L 897.86 180.05 L 902.81 239.36 L 907.75 237.84 L 912.69 234.42 L 917.63 67.50 L 922.58 81.92 L 927.52 168.31 L 932.46 192.50 L 937.40 196.81 L 942.35 202.67 L 947.29 212.53 L 952.23 220.71 L 957.17 224.51 L 962.12 226.08 L 967.06 226.38 L 972.00 222.46 L 972.00 229.89 L 967.06 231.72 L 962.12 231.48 L 957.17 230.52 L 952.23 228.57 L 947.29 222.92 L 942.35 215.95 L 937.40 211.95 L 932.46 210.67 L 927.52 200.80 L 922.58 183.63 L 917.63 154.22 L 912.69 242.67 L 907.75 240.44 L 902.81 239.48 L 897.86 185.78 L 892.92 192.16 L 887.98 192.09 L 883.04 189.64 L 878.09 184.89 L 873.15 165.19 L 868.21 185.78 L 863.27 204.49 L 858.32 220.86 Z" /><path class="forecast-svg-mean active" stroke="#3777a5" d="M 858.32 219.03 L 863.27 201.10 L 868.21 180.63 L 873.15 145.40 L 878.09 179.21 L 883.04 185.42 L 887.98 187.72 L 892.92 188.04 L 897.86 182.92 L 902.81 239.42 L 907.75 239.14 L 912.69 238.54 L 917.63 110.86 L 922.58 132.77 L 927.52 184.56 L 932.46 201.59 L 937.40 204.38 L 942.35 209.31 L 947.29 217.73 L 952.23 224.64 L 957.17 227.52 L 962.12 228.78 L 967.06 229.05 L 972.00 226.18" /><circle class="forecast-svg-start" fill="#3777a5" cx="858.32" cy="219.03" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ARIMA</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ARIMA forecast" preserveAspectRatio="none"><title>ARIMA forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 219.15 L 32.94 200.37 L 37.88 181.59 L 42.83 131.26 L 47.77 179.34 L 52.71 185.35 L 57.65 187.60 L 62.60 185.35 L 67.54 180.09 L 72.48 239.43 L 77.42 239.43 L 82.37 239.43 L 87.31 51.63 L 92.25 56.14 L 97.19 183.84 L 102.14 199.62 L 107.08 202.62 L 112.02 208.63 L 116.96 216.14 L 121.91 220.65 L 126.85 225.91 L 131.79 227.41 L 136.73 228.16 L 141.68 224.41 L 146.62 219.15 L 151.56 201.87 L 156.50 186.10 L 161.45 164.31 L 166.39 180.84 L 171.33 180.09 L 176.27 177.83 L 181.21 177.08 L 186.16 173.33 L 191.10 239.43 L 196.04 239.43 L 200.98 239.43 L 205.93 55.39 L 210.87 53.89 L 215.81 146.28 L 220.75 188.35 L 225.70 196.61 L 230.64 203.37 L 235.58 210.14 L 240.52 219.90 L 245.47 225.16 L 250.41 228.16 L 255.35 228.16 L 260.29 228.16 L 265.24 225.91 L 270.18 216.90 L 275.12 211.64 L 280.06 201.12 L 285.01 189.85 L 289.95 185.35 L 294.89 180.84 L 299.83 175.58 L 304.77 177.83 L 309.72 239.43 L 314.66 239.43 L 319.60 239.43 L 324.54 165.06 L 329.49 178.58 L 334.43 186.10 L 339.37 189.85 L 344.31 195.86 L 349.26 197.36 L 354.20 204.13 L 359.14 217.65 L 364.08 222.91 L 369.03 225.91 L 373.97 228.92 L 378.91 231.92 L 383.85 231.17 L 388.80 224.41 L 393.74 221.40 L 398.68 213.89 L 403.62 207.88 L 408.57 198.12 L 413.51 195.11 L 418.45 186.85 L 423.39 179.34 L 428.34 239.43 L 433.28 239.43 L 438.22 239.43 L 443.16 157.55 L 448.10 171.07 L 453.05 174.08 L 457.99 180.09 L 462.93 189.85 L 467.87 200.37 L 472.82 211.64 L 477.76 220.65 L 482.70 226.66 L 487.64 228.92 L 492.59 225.91 L 497.53 219.90 L 502.47 213.14 L 507.41 195.11 L 512.36 174.83 L 517.30 159.05 L 522.24 183.09 L 527.18 178.58 L 532.13 189.85 L 537.07 190.60 L 542.01 186.10 L 546.95 239.43 L 551.90 239.43 L 556.84 239.43 L 561.78 159.80 L 566.72 165.06 L 571.66 187.60 L 576.61 201.87 L 581.55 204.88 L 586.49 210.14 L 591.43 220.65 L 596.38 225.91 L 601.32 227.41 L 606.26 229.67 L 611.20 228.92 L 616.15 225.16 L 621.09 218.40 L 626.03 197.36 L 630.97 175.58 L 635.92 159.80 L 640.86 178.58 L 645.80 187.60 L 650.74 190.60 L 655.69 186.85 L 660.63 183.84 L 665.57 239.43 L 670.51 239.43 L 675.46 239.43 L 680.40 159.80 L 685.34 165.81 L 690.28 187.60 L 695.23 203.37 L 700.17 204.88 L 705.11 210.14 L 710.05 216.14 L 714.99 225.16 L 719.94 228.92 L 724.88 228.16 L 729.82 228.16 L 734.76 225.16 L 739.71 218.40 L 744.65 199.62 L 749.59 177.08 L 754.53 107.97 L 759.48 165.81 L 764.42 185.35 L 769.36 190.60 L 774.30 189.10 L 779.25 182.34 L 784.19 239.43 L 789.13 239.43 L 794.07 239.43 L 799.02 115.48 L 803.96 161.31 L 808.90 189.10 L 813.84 201.87 L 818.79 204.13 L 823.73 207.13 L 828.67 217.65 L 833.61 225.16 L 838.55 227.41 L 843.50 228.92 L 848.44 228.92 L 853.38 225.91" /><path class="forecast-svg-actual" d="M 858.32 218.40 L 863.27 199.62 L 868.21 175.58 L 873.15 158.30 L 878.09 181.59 L 883.04 182.34 L 887.98 184.59 L 892.92 183.09 L 897.86 181.59 L 902.81 175.58 L 907.75 168.82 L 912.69 163.56 L 917.63 147.79 L 922.58 116.99 L 927.52 189.85 L 932.46 199.62 L 937.40 202.62 L 942.35 206.38 L 947.29 216.14 L 952.23 222.91 L 957.17 205.63 L 962.12 201.87 L 967.06 191.36 L 972.00 183.84" /><path class="forecast-svg-band" fill="#8064a2" d="M 858.32 178.20 L 863.27 157.33 L 868.21 159.49 L 873.15 165.11 L 878.09 168.10 L 883.04 163.79 L 887.98 164.33 L 892.92 163.83 L 897.86 147.44 L 902.81 156.79 L 907.75 166.25 L 912.69 164.94 L 917.63 173.56 L 922.58 173.09 L 927.52 166.36 L 932.46 161.87 L 937.40 167.96 L 942.35 171.68 L 947.29 161.74 L 952.23 168.34 L 957.17 167.37 L 962.12 172.08 L 967.06 169.12 L 972.00 172.52 L 972.00 235.53 L 967.06 226.38 L 962.12 229.16 L 957.17 221.98 L 952.23 221.12 L 947.29 235.39 L 942.35 234.84 L 937.40 241.45 L 932.46 226.78 L 927.52 222.15 L 922.58 230.53 L 917.63 232.30 L 912.69 227.98 L 907.75 224.77 L 902.81 213.46 L 897.86 221.26 L 892.92 229.44 L 887.98 209.85 L 883.04 221.88 L 878.09 219.97 L 873.15 222.00 L 868.21 210.47 L 863.27 225.84 L 858.32 226.48 Z" /><path class="forecast-svg-mean active" stroke="#8064a2" d="M 858.32 202.34 L 863.27 191.58 L 868.21 184.98 L 873.15 193.55 L 878.09 194.04 L 883.04 192.83 L 887.98 187.09 L 892.92 196.64 L 897.86 184.35 L 902.81 185.13 L 907.75 195.51 L 912.69 196.46 L 917.63 202.93 L 922.58 201.81 L 927.52 194.26 L 932.46 194.32 L 937.40 204.70 L 942.35 203.26 L 947.29 198.57 L 952.23 194.73 L 957.17 194.67 L 962.12 200.62 L 967.06 197.75 L 972.00 204.03" /><circle class="forecast-svg-start" fill="#8064a2" cx="858.32" cy="202.34" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>ETS</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="ETS forecast" preserveAspectRatio="none"><title>ETS forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 219.15 L 32.94 200.37 L 37.88 181.59 L 42.83 131.26 L 47.77 179.34 L 52.71 185.35 L 57.65 187.60 L 62.60 185.35 L 67.54 180.09 L 72.48 239.43 L 77.42 239.43 L 82.37 239.43 L 87.31 51.63 L 92.25 56.14 L 97.19 183.84 L 102.14 199.62 L 107.08 202.62 L 112.02 208.63 L 116.96 216.14 L 121.91 220.65 L 126.85 225.91 L 131.79 227.41 L 136.73 228.16 L 141.68 224.41 L 146.62 219.15 L 151.56 201.87 L 156.50 186.10 L 161.45 164.31 L 166.39 180.84 L 171.33 180.09 L 176.27 177.83 L 181.21 177.08 L 186.16 173.33 L 191.10 239.43 L 196.04 239.43 L 200.98 239.43 L 205.93 55.39 L 210.87 53.89 L 215.81 146.28 L 220.75 188.35 L 225.70 196.61 L 230.64 203.37 L 235.58 210.14 L 240.52 219.90 L 245.47 225.16 L 250.41 228.16 L 255.35 228.16 L 260.29 228.16 L 265.24 225.91 L 270.18 216.90 L 275.12 211.64 L 280.06 201.12 L 285.01 189.85 L 289.95 185.35 L 294.89 180.84 L 299.83 175.58 L 304.77 177.83 L 309.72 239.43 L 314.66 239.43 L 319.60 239.43 L 324.54 165.06 L 329.49 178.58 L 334.43 186.10 L 339.37 189.85 L 344.31 195.86 L 349.26 197.36 L 354.20 204.13 L 359.14 217.65 L 364.08 222.91 L 369.03 225.91 L 373.97 228.92 L 378.91 231.92 L 383.85 231.17 L 388.80 224.41 L 393.74 221.40 L 398.68 213.89 L 403.62 207.88 L 408.57 198.12 L 413.51 195.11 L 418.45 186.85 L 423.39 179.34 L 428.34 239.43 L 433.28 239.43 L 438.22 239.43 L 443.16 157.55 L 448.10 171.07 L 453.05 174.08 L 457.99 180.09 L 462.93 189.85 L 467.87 200.37 L 472.82 211.64 L 477.76 220.65 L 482.70 226.66 L 487.64 228.92 L 492.59 225.91 L 497.53 219.90 L 502.47 213.14 L 507.41 195.11 L 512.36 174.83 L 517.30 159.05 L 522.24 183.09 L 527.18 178.58 L 532.13 189.85 L 537.07 190.60 L 542.01 186.10 L 546.95 239.43 L 551.90 239.43 L 556.84 239.43 L 561.78 159.80 L 566.72 165.06 L 571.66 187.60 L 576.61 201.87 L 581.55 204.88 L 586.49 210.14 L 591.43 220.65 L 596.38 225.91 L 601.32 227.41 L 606.26 229.67 L 611.20 228.92 L 616.15 225.16 L 621.09 218.40 L 626.03 197.36 L 630.97 175.58 L 635.92 159.80 L 640.86 178.58 L 645.80 187.60 L 650.74 190.60 L 655.69 186.85 L 660.63 183.84 L 665.57 239.43 L 670.51 239.43 L 675.46 239.43 L 680.40 159.80 L 685.34 165.81 L 690.28 187.60 L 695.23 203.37 L 700.17 204.88 L 705.11 210.14 L 710.05 216.14 L 714.99 225.16 L 719.94 228.92 L 724.88 228.16 L 729.82 228.16 L 734.76 225.16 L 739.71 218.40 L 744.65 199.62 L 749.59 177.08 L 754.53 107.97 L 759.48 165.81 L 764.42 185.35 L 769.36 190.60 L 774.30 189.10 L 779.25 182.34 L 784.19 239.43 L 789.13 239.43 L 794.07 239.43 L 799.02 115.48 L 803.96 161.31 L 808.90 189.10 L 813.84 201.87 L 818.79 204.13 L 823.73 207.13 L 828.67 217.65 L 833.61 225.16 L 838.55 227.41 L 843.50 228.92 L 848.44 228.92 L 853.38 225.91" /><path class="forecast-svg-actual" d="M 858.32 218.40 L 863.27 199.62 L 868.21 175.58 L 873.15 158.30 L 878.09 181.59 L 883.04 182.34 L 887.98 184.59 L 892.92 183.09 L 897.86 181.59 L 902.81 175.58 L 907.75 168.82 L 912.69 163.56 L 917.63 147.79 L 922.58 116.99 L 927.52 189.85 L 932.46 199.62 L 937.40 202.62 L 942.35 206.38 L 947.29 216.14 L 952.23 222.91 L 957.17 205.63 L 962.12 201.87 L 967.06 191.36 L 972.00 183.84" /><path class="forecast-svg-band" fill="#668851" d="M 858.32 205.04 L 863.27 186.84 L 868.21 207.42 L 873.15 189.83 L 878.09 193.53 L 883.04 201.20 L 887.98 195.71 L 892.92 185.86 L 897.86 196.30 L 902.81 187.57 L 907.75 201.82 L 912.69 203.15 L 917.63 190.95 L 922.58 200.57 L 927.52 189.36 L 932.46 178.76 L 937.40 200.43 L 942.35 194.40 L 947.29 189.13 L 952.23 196.74 L 957.17 192.38 L 962.12 182.48 L 967.06 177.69 L 972.00 193.26 L 972.00 243.81 L 967.06 239.46 L 962.12 236.70 L 957.17 242.66 L 952.23 234.46 L 947.29 239.65 L 942.35 244.12 L 937.40 242.84 L 932.46 238.69 L 927.52 242.43 L 922.58 240.45 L 917.63 244.15 L 912.69 245.35 L 907.75 242.28 L 902.81 238.74 L 897.86 248.47 L 892.92 232.72 L 887.98 246.32 L 883.04 240.81 L 878.09 238.46 L 873.15 243.09 L 868.21 237.13 L 863.27 246.52 L 858.32 241.23 Z" /><path class="forecast-svg-mean active" stroke="#668851" d="M 858.32 223.13 L 863.27 216.68 L 868.21 222.27 L 873.15 216.46 L 878.09 215.99 L 883.04 221.00 L 887.98 221.01 L 892.92 209.29 L 897.86 222.38 L 902.81 213.15 L 907.75 222.05 L 912.69 224.25 L 917.63 217.55 L 922.58 220.51 L 927.52 215.89 L 932.46 208.72 L 937.40 221.64 L 942.35 219.26 L 947.29 214.39 L 952.23 215.60 L 957.17 217.52 L 962.12 209.59 L 967.06 208.58 L 972.00 218.53" /><circle class="forecast-svg-start" fill="#668851" cx="858.32" cy="223.13" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>Naive</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="Naive forecast" preserveAspectRatio="none"><title>Naive forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 219.15 L 32.94 200.37 L 37.88 181.59 L 42.83 131.26 L 47.77 179.34 L 52.71 185.35 L 57.65 187.60 L 62.60 185.35 L 67.54 180.09 L 72.48 239.43 L 77.42 239.43 L 82.37 239.43 L 87.31 51.63 L 92.25 56.14 L 97.19 183.84 L 102.14 199.62 L 107.08 202.62 L 112.02 208.63 L 116.96 216.14 L 121.91 220.65 L 126.85 225.91 L 131.79 227.41 L 136.73 228.16 L 141.68 224.41 L 146.62 219.15 L 151.56 201.87 L 156.50 186.10 L 161.45 164.31 L 166.39 180.84 L 171.33 180.09 L 176.27 177.83 L 181.21 177.08 L 186.16 173.33 L 191.10 239.43 L 196.04 239.43 L 200.98 239.43 L 205.93 55.39 L 210.87 53.89 L 215.81 146.28 L 220.75 188.35 L 225.70 196.61 L 230.64 203.37 L 235.58 210.14 L 240.52 219.90 L 245.47 225.16 L 250.41 228.16 L 255.35 228.16 L 260.29 228.16 L 265.24 225.91 L 270.18 216.90 L 275.12 211.64 L 280.06 201.12 L 285.01 189.85 L 289.95 185.35 L 294.89 180.84 L 299.83 175.58 L 304.77 177.83 L 309.72 239.43 L 314.66 239.43 L 319.60 239.43 L 324.54 165.06 L 329.49 178.58 L 334.43 186.10 L 339.37 189.85 L 344.31 195.86 L 349.26 197.36 L 354.20 204.13 L 359.14 217.65 L 364.08 222.91 L 369.03 225.91 L 373.97 228.92 L 378.91 231.92 L 383.85 231.17 L 388.80 224.41 L 393.74 221.40 L 398.68 213.89 L 403.62 207.88 L 408.57 198.12 L 413.51 195.11 L 418.45 186.85 L 423.39 179.34 L 428.34 239.43 L 433.28 239.43 L 438.22 239.43 L 443.16 157.55 L 448.10 171.07 L 453.05 174.08 L 457.99 180.09 L 462.93 189.85 L 467.87 200.37 L 472.82 211.64 L 477.76 220.65 L 482.70 226.66 L 487.64 228.92 L 492.59 225.91 L 497.53 219.90 L 502.47 213.14 L 507.41 195.11 L 512.36 174.83 L 517.30 159.05 L 522.24 183.09 L 527.18 178.58 L 532.13 189.85 L 537.07 190.60 L 542.01 186.10 L 546.95 239.43 L 551.90 239.43 L 556.84 239.43 L 561.78 159.80 L 566.72 165.06 L 571.66 187.60 L 576.61 201.87 L 581.55 204.88 L 586.49 210.14 L 591.43 220.65 L 596.38 225.91 L 601.32 227.41 L 606.26 229.67 L 611.20 228.92 L 616.15 225.16 L 621.09 218.40 L 626.03 197.36 L 630.97 175.58 L 635.92 159.80 L 640.86 178.58 L 645.80 187.60 L 650.74 190.60 L 655.69 186.85 L 660.63 183.84 L 665.57 239.43 L 670.51 239.43 L 675.46 239.43 L 680.40 159.80 L 685.34 165.81 L 690.28 187.60 L 695.23 203.37 L 700.17 204.88 L 705.11 210.14 L 710.05 216.14 L 714.99 225.16 L 719.94 228.92 L 724.88 228.16 L 729.82 228.16 L 734.76 225.16 L 739.71 218.40 L 744.65 199.62 L 749.59 177.08 L 754.53 107.97 L 759.48 165.81 L 764.42 185.35 L 769.36 190.60 L 774.30 189.10 L 779.25 182.34 L 784.19 239.43 L 789.13 239.43 L 794.07 239.43 L 799.02 115.48 L 803.96 161.31 L 808.90 189.10 L 813.84 201.87 L 818.79 204.13 L 823.73 207.13 L 828.67 217.65 L 833.61 225.16 L 838.55 227.41 L 843.50 228.92 L 848.44 228.92 L 853.38 225.91" /><path class="forecast-svg-actual" d="M 858.32 218.40 L 863.27 199.62 L 868.21 175.58 L 873.15 158.30 L 878.09 181.59 L 883.04 182.34 L 887.98 184.59 L 892.92 183.09 L 897.86 181.59 L 902.81 175.58 L 907.75 168.82 L 912.69 163.56 L 917.63 147.79 L 922.58 116.99 L 927.52 189.85 L 932.46 199.62 L 937.40 202.62 L 942.35 206.38 L 947.29 216.14 L 952.23 222.91 L 957.17 205.63 L 962.12 201.87 L 967.06 191.36 L 972.00 183.84" /><path class="forecast-svg-band" fill="#aa5d5d" d="M 858.32 216.88 L 863.27 213.42 L 868.21 202.88 L 873.15 202.56 L 878.09 181.43 L 883.04 179.83 L 887.98 133.48 L 892.92 140.76 L 897.86 137.73 L 902.81 132.40 L 907.75 134.92 L 912.69 117.72 L 917.63 122.35 L 922.58 124.01 L 927.52 122.15 L 932.46 112.78 L 937.40 118.00 L 942.35 114.74 L 947.29 66.03 L 952.23 68.91 L 957.17 61.82 L 962.12 50.23 L 967.06 43.79 L 972.00 69.52 L 972.00 292.99 L 967.06 302.74 L 962.12 303.87 L 957.17 306.41 L 952.23 316.21 L 947.29 314.58 L 942.35 288.16 L 937.40 286.59 L 932.46 285.07 L 927.52 290.18 L 922.58 290.49 L 917.63 290.53 L 912.69 291.91 L 907.75 288.17 L 902.81 288.36 L 897.86 288.73 L 892.92 287.08 L 887.98 287.45 L 883.04 261.59 L 878.09 261.49 L 873.15 250.10 L 868.21 246.35 L 863.27 238.71 L 858.32 235.36 Z" /><path class="forecast-svg-mean active" stroke="#aa5d5d" d="M 858.32 226.12 L 863.27 226.06 L 868.21 224.62 L 873.15 226.33 L 878.09 221.46 L 883.04 220.71 L 887.98 210.47 L 892.92 213.92 L 897.86 213.23 L 902.81 210.38 L 907.75 211.55 L 912.69 204.82 L 917.63 206.44 L 922.58 207.25 L 927.52 206.17 L 932.46 198.93 L 937.40 202.29 L 942.35 201.45 L 947.29 190.30 L 952.23 192.56 L 957.17 184.11 L 962.12 177.05 L 967.06 173.27 L 972.00 181.26" /><circle class="forecast-svg-start" fill="#aa5d5d" cx="858.32" cy="226.12" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article><article class="forecast-small-panel">
+                  <div class="forecast-small-head"><div><strong>SES</strong><small>Statistical baseline</small></div><span>25 samples</span></div>
+                  <svg class="forecast-chart forecast-small-chart" viewBox="0 0 1000 360" role="img" aria-label="SES forecast" preserveAspectRatio="none"><title>SES forecast</title><line class="forecast-svg-grid" x1="28" y1="72.00" x2="972" y2="72.00" /><line class="forecast-svg-grid" x1="28" y1="180.00" x2="972" y2="180.00" /><line class="forecast-svg-grid" x1="28" y1="288.00" x2="972" y2="288.00" /><line class="forecast-svg-boundary" x1="853.38" y1="22" x2="853.38" y2="338" /><path class="forecast-svg-history" d="M 28.00 219.15 L 32.94 200.37 L 37.88 181.59 L 42.83 131.26 L 47.77 179.34 L 52.71 185.35 L 57.65 187.60 L 62.60 185.35 L 67.54 180.09 L 72.48 239.43 L 77.42 239.43 L 82.37 239.43 L 87.31 51.63 L 92.25 56.14 L 97.19 183.84 L 102.14 199.62 L 107.08 202.62 L 112.02 208.63 L 116.96 216.14 L 121.91 220.65 L 126.85 225.91 L 131.79 227.41 L 136.73 228.16 L 141.68 224.41 L 146.62 219.15 L 151.56 201.87 L 156.50 186.10 L 161.45 164.31 L 166.39 180.84 L 171.33 180.09 L 176.27 177.83 L 181.21 177.08 L 186.16 173.33 L 191.10 239.43 L 196.04 239.43 L 200.98 239.43 L 205.93 55.39 L 210.87 53.89 L 215.81 146.28 L 220.75 188.35 L 225.70 196.61 L 230.64 203.37 L 235.58 210.14 L 240.52 219.90 L 245.47 225.16 L 250.41 228.16 L 255.35 228.16 L 260.29 228.16 L 265.24 225.91 L 270.18 216.90 L 275.12 211.64 L 280.06 201.12 L 285.01 189.85 L 289.95 185.35 L 294.89 180.84 L 299.83 175.58 L 304.77 177.83 L 309.72 239.43 L 314.66 239.43 L 319.60 239.43 L 324.54 165.06 L 329.49 178.58 L 334.43 186.10 L 339.37 189.85 L 344.31 195.86 L 349.26 197.36 L 354.20 204.13 L 359.14 217.65 L 364.08 222.91 L 369.03 225.91 L 373.97 228.92 L 378.91 231.92 L 383.85 231.17 L 388.80 224.41 L 393.74 221.40 L 398.68 213.89 L 403.62 207.88 L 408.57 198.12 L 413.51 195.11 L 418.45 186.85 L 423.39 179.34 L 428.34 239.43 L 433.28 239.43 L 438.22 239.43 L 443.16 157.55 L 448.10 171.07 L 453.05 174.08 L 457.99 180.09 L 462.93 189.85 L 467.87 200.37 L 472.82 211.64 L 477.76 220.65 L 482.70 226.66 L 487.64 228.92 L 492.59 225.91 L 497.53 219.90 L 502.47 213.14 L 507.41 195.11 L 512.36 174.83 L 517.30 159.05 L 522.24 183.09 L 527.18 178.58 L 532.13 189.85 L 537.07 190.60 L 542.01 186.10 L 546.95 239.43 L 551.90 239.43 L 556.84 239.43 L 561.78 159.80 L 566.72 165.06 L 571.66 187.60 L 576.61 201.87 L 581.55 204.88 L 586.49 210.14 L 591.43 220.65 L 596.38 225.91 L 601.32 227.41 L 606.26 229.67 L 611.20 228.92 L 616.15 225.16 L 621.09 218.40 L 626.03 197.36 L 630.97 175.58 L 635.92 159.80 L 640.86 178.58 L 645.80 187.60 L 650.74 190.60 L 655.69 186.85 L 660.63 183.84 L 665.57 239.43 L 670.51 239.43 L 675.46 239.43 L 680.40 159.80 L 685.34 165.81 L 690.28 187.60 L 695.23 203.37 L 700.17 204.88 L 705.11 210.14 L 710.05 216.14 L 714.99 225.16 L 719.94 228.92 L 724.88 228.16 L 729.82 228.16 L 734.76 225.16 L 739.71 218.40 L 744.65 199.62 L 749.59 177.08 L 754.53 107.97 L 759.48 165.81 L 764.42 185.35 L 769.36 190.60 L 774.30 189.10 L 779.25 182.34 L 784.19 239.43 L 789.13 239.43 L 794.07 239.43 L 799.02 115.48 L 803.96 161.31 L 808.90 189.10 L 813.84 201.87 L 818.79 204.13 L 823.73 207.13 L 828.67 217.65 L 833.61 225.16 L 838.55 227.41 L 843.50 228.92 L 848.44 228.92 L 853.38 225.91" /><path class="forecast-svg-actual" d="M 858.32 218.40 L 863.27 199.62 L 868.21 175.58 L 873.15 158.30 L 878.09 181.59 L 883.04 182.34 L 887.98 184.59 L 892.92 183.09 L 897.86 181.59 L 902.81 175.58 L 907.75 168.82 L 912.69 163.56 L 917.63 147.79 L 922.58 116.99 L 927.52 189.85 L 932.46 199.62 L 937.40 202.62 L 942.35 206.38 L 947.29 216.14 L 952.23 222.91 L 957.17 205.63 L 962.12 201.87 L 967.06 191.36 L 972.00 183.84" /><path class="forecast-svg-band" fill="#8b6e4f" d="M 858.32 198.00 L 863.27 195.52 L 868.21 184.89 L 873.15 204.77 L 878.09 197.34 L 883.04 190.45 L 887.98 183.11 L 892.92 195.51 L 897.86 188.04 L 902.81 206.71 L 907.75 202.61 L 912.69 197.22 L 917.63 203.67 L 922.58 192.16 L 927.52 189.94 L 932.46 209.78 L 937.40 191.06 L 942.35 189.31 L 947.29 190.64 L 952.23 200.23 L 957.17 197.80 L 962.12 201.84 L 967.06 184.93 L 972.00 201.70 L 972.00 241.61 L 967.06 242.60 L 962.12 233.41 L 957.17 241.36 L 952.23 243.30 L 947.29 241.16 L 942.35 241.45 L 937.40 242.58 L 932.46 240.33 L 927.52 238.65 L 922.58 242.66 L 917.63 240.13 L 912.69 238.82 L 907.75 242.00 L 902.81 244.61 L 897.86 246.00 L 892.92 236.84 L 887.98 233.22 L 883.04 244.06 L 878.09 244.90 L 873.15 241.45 L 868.21 243.25 L 863.27 241.33 L 858.32 242.83 Z" /><path class="forecast-svg-mean active" stroke="#8b6e4f" d="M 858.32 220.41 L 863.27 218.43 L 868.21 214.07 L 873.15 223.11 L 878.09 221.12 L 883.04 217.25 L 887.98 208.16 L 892.92 216.18 L 897.86 217.02 L 902.81 225.66 L 907.75 222.31 L 912.69 218.02 L 917.63 221.90 L 922.58 217.41 L 927.52 214.30 L 932.46 225.06 L 937.40 216.82 L 942.35 215.38 L 947.29 215.90 L 952.23 221.77 L 957.17 219.58 L 962.12 217.62 L 967.06 213.77 L 972.00 221.66" /><circle class="forecast-svg-start" fill="#8b6e4f" cx="858.32" cy="220.41" r="4" /><text class="forecast-svg-label forecast-svg-label-left" x="28" y="355">observed</text><text class="forecast-svg-label forecast-svg-label-right" x="972" y="355" text-anchor="end">future</text></svg>
+                </article></div>
+              </div>
+            </section></div>
+          <div class="forecast-surface-foot"><span>Point forecast = sample mean · spread computed over recorded samples</span><span>Use the controls above to switch context and view</span></div>
+        </section>
+          <div class="detail-columns">
+            <section class="detail-panel">
+              <div class="eyebrow">Forecasting task</div>
+              <h3>occupancy rate</h3>
+              <p>This series represents the occupancy rate (%) captured by a Quartz-Link S40 sensor.</p>
+              <p class="instruction">No forecast instruction is available.</p>
+              
+              <details class="full-context"><summary>View GT evidence</summary><div class="gt-evidence-list"><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E1</span></div>
+          <p>This series represents the occupancy rate (%) captured by a Quartz-Link S40 sensor.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E2</span></div>
+          <p>The Quartz-Link S40 was offline for maintenance every day between 13:00 and 15:00 on the Central Tableland Expressway,</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E3</span></div>
+          <p>which resulted in zero readings.</p>
+        </article><article class="gt-evidence-item">
+          <div class="gt-evidence-item-head"><span class="gt-evidence-label">Ground-truth supporting evidence</span><span class="gt-evidence-id">E4</span></div>
+          <p>Assume that the Quartz-Link S40 sensor will not be in maintenance in the future.</p>
+        </article></div></details>
+            </section>
+            <section class="detail-panel">
+              <div class="documents-head"><div><div class="eyebrow">Evidence corpus</div><h3>Supporting and distractor documents</h3></div><span class="documents-count">38 documents</span></div>
+              <div class="doc-list"><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5855</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY FACILITY MANAGEMENT DIVISION
+TECHNICAL OPERATIONAL REPORT: INFRASTRUCTURE MAINTENANCE STANDARD OPERATING PROCEDURE
+
+Document ID: CTE-FMD-SOP-2024
+Classification: Technical Operational
+Subject: Infrastructure Validation and Quartz-Link S40 Hardware Maintenance
+
+1. PURPOSE AND SCOPE
+This Technical Operational Report defines the protocols and specific requirements for the maintenance of sensing infrastructure along the Central Tableland Expressway. The scope of this document is strictly limited to the technical upkeep of facility hardware and the associated validation routines. It does not address traffic volume metrics, budgetary allocations, or law enforcement/emergency response protocols.
+
+2. FACILITY MANAGEMENT PROTOCOLS
+To maintain the operational readiness of the expressway’s monitoring systems, current facility management protocols necessitate the allocation of a specific daily window for infrastructure validation. This window is a mandatory period during which the accuracy and responsiveness of all embedded hardware are verified against established benchmarks. For the Central Tableland Expressway, this validation window is scheduled daily from 13:00 to 15:00. Adherence to this daily validation schedule ensures that the data integrity remains within the tolerances required for long-term expressway oversight.
+
+3. HARDWARE UPKEEP: QUARTZ-LINK S40
+The primary focus of hardware maintenance activities relates to the Quartz-Link S40 units. As the foundational hardware for site-specific monitoring, the Quartz-Link S40 requires a meticulous and rigorous upkeep cycle. Service technicians are required to schedule and execute these maintenance tasks during the 13:00–15:00 window to ensure the long-term operational integrity of each unit. 
+
+Technicians must verify the following for all Quartz-Link S40 installations:
+- Mechanical stability and mounting alignment.
+- Electrical continuity and signal transmission strength.
+- Cleanliness of the sensor housing to prevent signal degradation.
+
+Given the complexity of the Quartz-Link S40 hardware, technicians must follow the manufacturer&#x27;s specific sequence for calibration and cleaning to avoid systemic drift or equipment failure over time. During this maintenance and validation period, Quartz-Link S40 telemetry is routinely interrupted, resulting in zero or empty occupancy rate readings for the duration of the window.
+
+4. INFRASTRUCTURE VALIDATION PROCEDURES
+The infrastructure validation protocols outlined in this Standard Operating Procedure are designed with a specific technical target. These protocols specifically target the primary sensing equipment installed at the designated location along the Central Tableland Expressway. The validation process entails a series of diagnostic tests that run concurrently with the daily 13:00–15:00 maintenance window to confirm that the sensing equipment is accurately detecting variables.
+
+Validation steps include:
+- Initialization of diagnostic routines on the primary sensing equipment.
+- Systematic comparison of real-time outputs against validation targets.
+- Documentation of any deviations found during the scheduled daily window.
+
+5. SCHEDULING AND EXECUTION
+Service technicians are responsible for the coordination of these tasks. The upkeep of the Quartz-Link S40 must be synchronized with the broader daily validation window (13:00–15:00) to minimize unauthorized downtime and ensure that the infrastructure remains robust. Any failure to adhere to the rigorous upkeep schedule for the Quartz-Link S40 hardware is considered a breach of the facility management division’s operational integrity standards.
+
+6. LIMITATIONS OF REPORT
+This document serves as a guide for hardware validation and maintenance only. Personnel seeking information regarding traffic flow statistics, fiscal planning, or emergency situation management must refer to the respective manuals provided by other divisions, as those data points are outside the purview of this Infrastructure Maintenance Standard Operating Procedure.
+
+***
+END OF REPORT
+Central Tableland Expressway Facility Management Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5856</span></span></summary>
+          <pre class="doc-content">Hardware Engineering and Maintenance Department
+Technical Operational Bulletin: Quartz-Link S40 Maintenance Protocol
+
+Subject: System Operational Status &amp; Upkeep Requirements
+
+To all field personnel,
+
+This bulletin outlines the mandatory scheduling and operational procedures for the Quartz-Link S40 hardware. Service technicians are strictly responsible for scheduling rigorous upkeep of all S40 units. The primary goal of this scheduled upkeep is to ensure the long-term operational integrity of the system and prevent hardware degradation.
+
+Technicians must note that the commencement of maintenance activities requires the hardware to be taken out of functional service. During all scheduled inspections, the sensor array is transitioned to a &#x27;non-active&#x27; or administrative state. During this administrative state, the telemetry stream is interrupted, which results in zero readings for the occupancy rate series during the maintenance window. Compliance with these scheduling requirements is mandatory to ensure the hardware remains within specified operational standards.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5857</span></span></summary>
+          <pre class="doc-content">FACILITY OPERATIONS DEPARTMENT
+STANDARD OPERATING PROCEDURE: SENSOR ARRAY MAINTENANCE PROTOCOL
+
+1. SCOPE AND OPERATION
+This protocol governs the operational status of the sensor array (utilizing Quartz-Link S40 units) during routine technical oversight. 
+
+2. SCHEDULED INSPECTION PARAMETERS
+During all scheduled inspections, the sensor array transitions from standard operational mode to a ‘non-active’ or administrative state. During this time, telemetry absence results in the occupancy series yielding zero readings.
+
+3. MAINTENANCE WINDOW
+The administrative state occurs during a two-hour block starting at 13:00 (one hour after noon). The administrative state concludes within the mid-afternoon period, ensuring that the sensor array returns to active status.
+
+4. DURATION CONSTRAINTS
+The duration of the non-active state is strictly constrained by the standardized daily maintenance window. All procedures must be completed within this designated timeframe.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5858</span></span></summary>
+          <pre class="doc-content">Systems Engineering Department
+Standard Operating Procedure: Mid-Afternoon Calibration Protocol
+
+1.0 ADMINISTRATIVE OVERVIEW
+An administrative state occurs daily from 13:00 to 15:00. This designated window is reserved for critical infrastructure adjustments.
+
+2.0 MAINTENANCE SCHEDULING
+Active maintenance workflows are scheduled during this time block. These workflows necessitate physical or software-based isolation of the Quartz-Link S40 sensor. Consequently, the telemetry absence during this state results in zero readings being recorded in the occupancy series for the duration of the window.
+
+3.0 CALIBRATION AND SAFETY
+During calibration routines, the internal processing unit is disconnected from the data stream. Such disconnection is required to prevent power surges. This technical procedure ensures that the internal processing unit remains protected. This manual is limited to the technical procedures and timing of the daily maintenance window.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5859</span></span></summary>
+          <pre class="doc-content">SYSTEM CALIBRATION LOG AND IMPACT SUMMARY
+Issuer: Internal Maintenance Department
+
+OPERATIONAL STATUS:
+During scheduled calibration routines, the internal processing unit is disconnected from the data stream. This disconnection is a mandatory procedural requirement intended to prevent power surges within the hardware components.
+
+DATA IMPACT ANALYSIS:
+While the live connection is absent, the system&#x27;s logging database fails to receive volumetric or velocity telemetry. The disconnection from the stream directly prevents the ingestion of real-time data metrics. This results in the Quartz-Link S40 occupancy series reporting zero readings for the duration of the calibration period.
+
+SCOPE:
+This summary is strictly limited to the operational state of the internal processing unit and the resulting data loss in the logging database during calibration; it does not include broader system architecture, troubleshooting steps, or long-term impacts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5860</span></span></summary>
+          <pre class="doc-content">SYSTEM STATUS AND DATA INTEGRITY INCIDENT REPORT
+
+Issuer: Systems Monitoring and Database Administration Team
+Subject: Telemetry Recording Failure and Resulting Zero/Empty Readings
+
+This report documents a technical dependency within the system’s logging database. It has been confirmed that the database fails to receive volumetric or velocity telemetry when there is no live connection. Data sets generated during these periods of disconnection contain no recorded numerical values, manifesting as zero readings or empty entries in the occupancy rate (%) series.
+
+The failure to receive telemetry is the direct cause of these empty entries and zero readings in the resulting data sets. This documentation is strictly limited to the technical causality between connection loss and the empty telemetry databases; it does not include information regarding the root cause of the connection loss, the duration of the outage, or any remediation steps.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5861</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Data Operations Distribution
+FROM: Data Operations Department
+SUBJECT: Data Integrity and Reporting Analysis Memo
+
+Technical analysis of the data sets for the specified timeframe confirms they contain no recorded numerical values for the occupancy rate (%) series captured by the Quartz-Link S40 sensor. Due to the system configuration, automated reporting scripts assign null or static floor values to daily logs when data is missing. 
+
+The absence of numerical values results in a flat-line metric within the final reporting summaries. This memo focuses exclusively on the technical manifestation of missing data in specific logs and summaries; it does not include information regarding the root cause of the data gap, specific dates of the timeframe, or subsequent business impacts.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5862</span></span></summary>
+          <pre class="doc-content">INTERNAL TECHNICAL REPORT
+Issuer: Infrastructure Analytics Department
+
+Subject: Technical Infrastructure Modeling Specification: Quartz-Link S40
+
+The Infrastructure Analytics Department is establishing a specific set of constraints for a predictive model concerning technical infrastructure. Establishing these constraints allows for the selection of the hardware component to be analyzed. 
+
+The primary hardware element identified for this modeling exercise is the Quartz-Link S40 apparatus. A key constraint for the model is the accounting of historical occupancy zeros. During the modeling period, the S40 is subject to a daily administrative maintenance window from 13:00 to 15:00, which causes telemetry interruptions. Consequently, the model will attribute zero readings within this specific window to scheduled maintenance. 
+
+This report focuses strictly on these constraints and the selection of the S40. It does not include technical specifications, predictive outputs, or broader project outcomes.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5863</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Systems Operations
+FROM: Systems Engineering Department
+SUBJECT: Hardware Configuration and Processing Directive
+
+This memorandum identifies the Quartz-Link S40 apparatus as the primary hardware element for the current modeling exercise. 
+
+The selection of the Quartz-Link S40 necessitates an immediate inquiry into the procedural governing rules. Specifically, it is required to determine the scheduled handling procedures for this hardware based on data processing rules. This causal link ensures that telemetry interruptions, specifically those occurring daily between 13:00 and 15:00, are correctly attributed to the scheduled administrative maintenance window rather than sensor failure. While these historical zero-occupancy readings are a direct result of the maintenance cycle, future modeling will transition to a maintenance-free assumption for the post-analysis horizon.
+
+Scope is limited to the identification of the Quartz-Link S40 and the procedural requirements triggered by its selection. It does not include specific handling schedules, data processing results, or broader modeling outcomes.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5864</span></span></summary>
+          <pre class="doc-content">INTERNAL TECHNICAL MEMO
+
+TO: Operations Staff
+FROM: Systems Operations Division 
+SUBJECT: Hardware Maintenance Determination Memorandum
+
+In accordance with data processing rules, a formal determination is required regarding scheduled hardware handling for the Quartz-Link S40 sensor. To satisfy requirements for procedural rules, the division has adopted a non-maintenance assumption for this specific unit for the period following the historical dataset.
+
+It is hereby formalized as a baseline assumption that this hardware unit will not be subject to any maintenance cycles after the historical data window for the purpose of this analysis. This determination is made to facilitate evaluation and does not include broader system architectures, specific hardware specifications (D2 details), or long-term operational impact forecasts. This memorandum is limited strictly to the procedural decision and the resulting maintenance policy for the unit during the post-historical horizon.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5865</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Operations Analysis Staff
+FROM: Operations Analysis Division
+SUBJECT: System Reliability Baseline and Temporal Scope Definition
+
+This memorandum formalizes the baseline assumption that the unit in question (Quartz-Link S40 sensor) will not undergo any maintenance cycles. This maintenance-free status applies only after the end of the historical dataset for the purpose of this analysis.
+
+It is required that the applicable span for this status be defined within the temporal boundaries of the analysis. Per this directive, setting an operational state requires defining the period over which that state remains valid. This temporal scope must align with the analysis horizon beginning after the provided historical data. Note: This assumption does not retroactively apply to historical maintenance windows, such as the 13:00–15:00 telemetry interruptions.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5866</span></span></summary>
+          <pre class="doc-content">SYSTEMS ANALYSIS AND MAINTENANCE DEPARTMENT
+Operational Status and Temporal Analysis Guideline
+
+Subject: Temporal Boundary Definitions for Quartz-Link S40 Sensor Series
+
+This document defines the parameters for reporting the operational status of the Quartz-Link S40 units. While historical telemetry reflects zero-value readings during the established 13:00–15:00 daily maintenance window, this guideline addresses the status designation for the subsequent analysis period. 
+
+Per departmental standards, the applicable span for this status must be defined within the temporal boundaries of the analysis. For the evaluation period following the historical dataset, the duration of this non-maintenance status is designated to encompass all forthcoming periods. These temporal boundary requirements lead to the specification of the entire future as the relevant timeframe for this specific reporting scope. This maintenance-free status applies only after the end of the historical dataset for the purpose of this analysis.
+
+Note: This source is limited to the definitions of temporal boundaries for status reporting; it does not include specific system health data, maintenance schedules, or external project details.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role ">Supporting</span><span>doc_5867</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Operational Planning Teams
+FROM: Hardware Engineering and Maintenance Department
+DATE: October 26, 2023
+SUBJECT: Hardware Lifecycle and Status Determination – Quartz-Link S40 Sensor
+
+This memorandum confirms that following the conclusion of the historical dataset, the non-maintenance status for the specified Quartz-Link S40 hardware is designated to continue through all future periods. This status applies only after the end of the historical dataset for the purpose of this analysis.
+
+The permanent nature of this non-maintenance status allows for a simplified projection of the hardware&#x27;s upcoming timeline. The indefinite extension of the non-maintenance status creates a fixed condition for final operational projections. 
+
+Scope is limited strictly to the duration of the non-maintenance status and its direct impact on timeline projections. It does not include specific hardware specifications, reasons for the non-maintenance decision, cost analyses, or broader long-term forecasting data.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5868 · Off-variable</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY (CTE) SYSTEMS ENGINEERING DEPARTMENT
+TECHNICAL OPERATIONS REPORT
+
+REPORT ID: INF-MNT-2024-QX40
+SUBJECT: Quartz-Link S40 Cooling Anomalies Following Fiber Housing Maintenance
+
+1. EXECUTIVE SUMMARY
+This report details specific operational anomalies identified within the cooling environment of the Quartz-Link S40 sensor system. These observations follow scheduled maintenance activities performed on the expressway’s optical fiber housing units. 
+
+2. MAINTENANCE OVERVIEW
+On the current reporting date, Systems Engineering personnel conducted essential maintenance work on the optical fiber housing infrastructure. The work window commenced at 13:00 and concluded at 15:00. The primary objective of the maintenance was to ensure the integrity of the physical housing protecting the high-speed data links.
+
+3. IMPACT ON QUARTZ-LINK S40 SYSTEM
+Immediately following the maintenance window, monitoring tools detected fluctuations in server cooling costs directly associated with the Quartz-Link S40 sensor system. While the sensor array remains operational, the energy expenditure required to maintain thermal equilibrium for the supporting server hardware has become inconsistent. 
+
+Key Observations:
+- System Affected: Quartz-Link S40 Sensor Array
+- Anomaly Type: Thermal management cost fluctuation
+- Correlation: Post-maintenance thermal variance in fiber housing pathways
+
+4. PROJECTIONS AND OPERATIONAL OUTLOOK
+Analysis of current thermal patterns suggests that the instability observed post-maintenance has not yet reached a state of stasis. Based on current telemetry, the department expects that future cooling spikes will continue to occur. These spikes are projected to impact the operational cost-efficiency of the Quartz-Link S40 system for the duration of the current cooling cycle.
+
+5. NOTES
+This document is strictly limited to the operational impact of the fiber housing maintenance on the Quartz-Link S40 system. It does not address broader CTE financial audits, specific technician labor logs, or long-term infrastructure upgrade strategies beyond the documented cooling anomalies.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5869 · Off-variable</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY INFRASTRUCTURE DEPARTMENT
+OPERATIONAL MAINTENANCE REPORT: QUARTZ-LINK S40 SYSTEM
+
+Incident Log ID: CTE-QL-S40-0922
+Status: Finalized
+
+[Activity Summary]
+Scheduled maintenance was performed on the Quartz-Link S40 sensor system located along the Central Tableland Expressway. The system remained active throughout the duration of the technical works to monitor continuity.
+
+[Timeframe]
+Execution Window: 13:00 – 15:00
+
+[Technical Impact]
+Maintenance activities during this window resulted in documented interference with nearby radio frequency signals. Technicians reported intermittent disruptions to local RF bands while the hardware was being calibrated. 
+
+[Supplementary Observations]
+Diagnostic systems have issued a prediction regarding signal noise levels; however, this forecast is considered unrelated to the specific maintenance tasks conducted during this session.
+
+[Scope Note]
+This log pertains strictly to immediate technical consequences and the specific operational window. Details regarding traffic flow impacts, fiscal allocations, or long-term infrastructure planning are excluded.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5870 · Off-variable</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY AUTHORITY (CTEA)
+Infrastructure Division - Operational Advisory
+
+SUBJECT: Security Bulletin: QL-S40 Protocol Adjustments
+
+Notice to Network Operations:
+
+This advisory serves as formal notification regarding essential security maintenance scheduled for the Central Tableland Expressway network. Daily maintenance activities are conducted between 13:00 and 15:00 hours to ensure the continued integrity of the expressway&#x27;s digital infrastructure.
+
+These activities specifically involve the Quartz-Link S40 sensors located throughout the network. During these scheduled maintenance windows, the Quartz-Link S40 sensors will undergo a temporary change in data encryption protocols. Following the completion of the daily maintenance, encryption protocols will remain updated to the new standards.
+
+Operational Note: This bulletin is limited to the maintenance schedule and immediate technical consequences for sensor encryption. Performance data and traffic impact reports are excluded.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5871 · Irrelevant</span></span></summary>
+          <pre class="doc-content">Quartz-Link Engineering Department / Infrastructure Logistics Division
+Technical Product Specification and Field Compliance Document
+
+Document ID: QL-S40-TD-772
+Subject: Quartz-Link S40 Technical Deployment Specifications and Route Compliance Report
+
+1. OVERVIEW
+This technical specification and compliance report details the physical hardware requirements for the Quartz-Link S40 units as mandated for deployment infrastructure. This document focuses specifically on the hardware architecture and mounting integrity required for implementation along the Central Tableland Expressway route.
+
+2. CENTRAL PROCESSOR UNIT SPECIFICATIONS
+The Quartz-Link S40 utilizes a high-performance processing architecture designed for continuous operations in infrastructure environments. The central processor units (CPUs) integrated into the S40 assembly are rated at the following clock speeds:
+
+- Nominal Operating Frequency: 2.4 GHz
+- Peak Burst Frequency: 3.2 GHz
+
+These clock speeds are calibrated to maintain thermal stability within the unit&#x27;s specialized chassis while ensuring sufficient computational overhead for the localized data processing required by the S40 system.
+
+3. MOUNTING BRACKET MATERIAL SPECIFICATIONS
+To ensure structural longevity and resistance to vibration-induced metal fatigue common in highway environments, the S40 mounting brackets must adhere to strict material standards. The brackets are fabricated from:
+
+- Primary Material: 316L Grade Stainless Steel
+- Coating: Electrostatic powder-coated thermoset polyester
+- Tensile Strength: 485 MPa (minimum)
+- Fastener Requirements: M8 high-tensile galvanized steel bolts with nylon-insert locking nuts
+
+The use of 316L series steel provides the necessary molybdenum content to prevent pitting and crevice corrosion, ensuring the S40 units remain securely fixed to the Expressway’s gantry systems over long-term deployment cycles.
+
+4. CENTRAL TABLELAND EXPRESSWAY ROUTE COMPLIANCE
+The Central Tableland Expressway route presents specific environmental challenges, including high-velocity runoff and seasonal humidity variances. Consequently, compliance for hardware deployed along this route is strictly defined by ingress protection standards.
+
+Field Compliance Confirmation:
+This document serves as formal confirmation that all hardware deployed along the Central Tableland Expressway route must meet or exceed IP68 waterproof certification requirements. 
+
+Compliance Criteria for IP68 Rating:
+- Dust Protection: Complete protection against dust ingress (dust-tight).
+- Water Immersion: The S40 casing must withstand continuous immersion in water under conditions specified by the manufacturer, exceeding the 1-meter depth requirement for a duration of at least 30 minutes without functional impairment or internal moisture accumulation.
+
+5. SCOPE LIMITATIONS
+This report is strictly limited to the technical physical hardware specifications of the S40 and its specific compliance profile for the Central Tableland Expressway. This document does not provide, and should not be consulted for, performance benchmarks, projected installation schedules, or broader environmental impact assessments associated with the project. For information regarding deployment timelines or ecological studies, please refer to the Project Management Office (PMO) or the Environmental Planning Division.
+
+6. AUTHORIZATION
+Issued by: Quartz-Link Engineering Department
+Division: Infrastructure Logistics
+Status: Final Specification
+Route Assignment: Central Tableland Expressway</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5872 · Irrelevant</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY IT DEPARTMENT
+TECHNICAL OPERATIONS MANUAL: INFRASTRUCTURE MAINTENANCE AND SECURITY
+
+1. PURPOSE AND SCOPE
+This Technical Operations Manual is issued by the Central Tableland Expressway (CTE) IT Department. It is designed to serve as a comprehensive reference for the technical specifications of the expressway management network. This document focuses exclusively on hardware firmware history, access protocols, interface standards, and physical server locations. Note: This manual does not contain traffic volume data, financial reports, or infrastructure development plans.
+
+2. QUARTZ-LINK S40 FIRMWARE UPDATE HISTORY
+The following table outlines the lifecycle and version history for the Quartz-Link S40 hardware deployed across the CTE network. Maintenance personnel must ensure all units are aligned with the current stable release.
+
+- Version 1.0.1 (Initial Release): Basic network connectivity and hardware diagnostic tools.
+- Version 1.2.0 (Security Patch): Implementation of encrypted data tunnels and handshake protocols.
+- Version 2.1.0 (Performance Update): Optimization of data throughput and cooling fan threshold adjustments.
+- Version 3.0.5 (Current): Enhanced stability for long-range fiber interfaces and legacy system compatibility.
+
+3. ADMINISTRATIVE LOGIN PROTOCOLS
+Access to the CTE management network is strictly regulated. All administrative personnel must adhere to the following login sequence:
+
+- Primary Authentication: Connection must be established via a secure CTE-issued terminal.
+- Level 1 Access: Entry of administrative credentials through the secure gateway. 
+- Level 2 Multi-Factor: Requirement of a secondary hardware token validation.
+- Session Logs: All administrative sessions are recorded. Unauthorized attempts to bypass the login hierarchy will result in immediate lockout.
+
+4. USER INTERFACE COLOR SCHEME HISTORY
+To maintain visual consistency and ensure accessibility for operations staff, the CTE user interface has undergone the following color scheme iterations:
+
+- Standard Build (Phase I): High-contrast layout using &#x27;Deep Slate&#x27; and &#x27;Safety Amber&#x27;.
+- Revision 2 (Accessibility Update): Introduction of &#x27;Cobalt Blue&#x27; for active links and &#x27;Neutral Grey&#x27; for background fields to reduce eye strain during extended shifts.
+- Current Standard (Revision 3): Implementation of the &#x27;CTE Midnight&#x27; theme, featuring high-visibility &#x27;Neon Green&#x27; status indicators and &#x27;Warning Red&#x27; for critical system alerts.
+
+5. GEOGRAPHIC LOCATIONS OF SERVER ROOMS
+The physical infrastructure supporting the CTE network is distributed across the following geographic locations. Access to these facilities requires Tier-1 security clearance.
+
+- Server Room Alpha (North Sector): Located at the Junction 4 Maintenance Depot (Coordinates: 33.42° S, 149.57° E).
+- Server Room Beta (Central Hub): Situated within the CTE Administrative Building basement, Central Tablelands.
+- Server Room Gamma (South Sector): Positioned at the South Gate Toll Plaza, adjacent to the utility substation.
+- Server Room Delta (Backup Site): Remote facility located 5km East of the Ridge-Line Tunnel entrance.
+
+6. COMPLIANCE AND SECURITY
+Strict adherence to the protocols established in this manual is mandatory. The CTE IT Department reserves the right to audit server room access and administrative logs at any time to ensure the integrity of the expressway infrastructure.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5873 · Irrelevant</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND TRANSPORT AUTHORITY (CTTA) – COMPLIANCE DIVISION
+INTERNAL REPORT: OPERATIONAL AND PROCUREMENT AUDIT
+
+PROJECT: Quartz-Link S40 Infrastructure Implementation – Central Tableland Expressway
+REPORT ID: CTTA-AUD-2023-QLS40
+RESTRICTION: Technical and Legal Oversight Only
+
+1. EXECUTIVE SUMMARY
+This audit examines the procurement, implementation, and maintenance workflows for the Quartz-Link S40 units utilized within the Central Tableland Expressway project. The scope is strictly limited to infrastructure hardware compliance and logistics; broader traffic analytics, general project budgeting, and future expansion strategies are excluded from this assessment.
+
+2. HISTORICAL PROCUREMENT DETAILS
+The procurement of the Quartz-Link S40 units was executed across three phases to align with the Expressway construction timeline. Initial acquisition commenced following the competitive tender won by the primary manufacturer. Records indicate that the CTTA secured a total volume of S40 units specifically calibrated for the Expressway&#x27;s environmental conditions. Procurement documentation confirms that all units met the required technical specifications at the time of delivery, with serial tracking maintained by the Compliance Division to ensure inventory integrity from the point of origin to installation.
+
+3. CONTRACTUAL TERMS: CENTRAL TABLELAND EXPRESSWAY
+The legal framework governing this implementation is defined by the CTTA-Quartz Infrastructure Agreement. Key contractual terms include:
+- Performance Benchmarks: Deployment of S40 units must maintain a 99.8% uptime.
+- Compliance Requirements: All hardware must adhere to the Central Tableland regional safety and data transmission standards.
+- Liability: Provisions are in place regarding hardware failure attributed to manufacturing defects versus environmental damage.
+- Documentation: The manufacturer is required to provide real-time updates on technical schema changes to the CTTA Compliance Division.
+
+4. LOGISTICS AND SHIPPING PROTOCOLS
+To ensure infrastructure continuity, the following protocols govern the distribution of replacement units:
+- Storage: A designated quantity of S40 units is held at the CTTA Central Depot.
+- Dispatch Trigger: Replacement units must be dispatched within 12 hours of a confirmed hardware failure report on the Expressway.
+- Transport Requirements: Units must be shipped in electrostatic discharge (ESD) protective packaging via approved CTTA logistics partners to prevent transit damage.
+- Receipt and Inspection: On-site technicians must perform a standardized diagnostic check upon receipt of replacements before final installation.
+
+5. MANUFACTURER WARRANTY COVERAGE AND CLAIM PROCEDURES
+The Quartz-Link S40 hardware is protected under a comprehensive multi-year manufacturer warranty. 
+- Coverage Scope: Coverage includes mechanical failure, firmware corruption, and component degradation under normal operating conditions. It does not cover damage resulting from unauthorized third-party modifications.
+- Claim Procedures: 
+  1. Incident Logging: All suspected hardware defects must be logged in the CTTA Maintenance Portal.
+  2. Technical Verification: A preliminary assessment by CTTA engineers must confirm the fault is manufacturer-related.
+  3. Formal Submission: Claims are submitted electronically to the manufacturer with the unit serial number and diagnostic logs.
+  4. RMA Issuance: Upon approval, a Return Merchandise Authorization (RMA) is issued for the defective unit.
+  5. Resolution: The manufacturer is obligated to provide a refurbished or new-in-box (NIB) replacement within the contractually stipulated timeframe.
+
+6. AUDIT LIMITATIONS
+As per the project scope, this report does not contain summaries of the Expressway’s total construction budget or future expansion plans, focusing solely on S40 procurement and technical oversight.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5874 · Off-entity</span></span></summary>
+          <pre class="doc-content">OPERATIONAL MAINTENANCE ADVISORY
+
+TO: Regional Maintenance Coordinators
+FROM: Department of Transportation Engineering Division
+SUBJECT: Flux-Gate RS2 Network – Central Tableland Expressway
+
+Technical Bulletin
+
+The Flux-Gate RS2 sensor profile utilizes a high-sensitivity electromagnetic induction framework designed for real-time monitoring across the Central Tableland Expressway. 
+
+Effective immediately, the Engineering Division confirms the standard daily maintenance schedule. All RS2 units on this route undergo system balancing between 13:00 and 15:00. During this window, practitioners should note that the maintenance cycle results in spiked error logs and increased data noise; the sensors will not return zero-value readings during these calibrations. 
+
+This maintenance cycle for the Flux-Gate RS2 sensors is a permanent operational standard and will continue indefinitely. Data analysts should account for these periodic variances in the RS2 network logs.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5875 · Off-entity</span></span></summary>
+          <pre class="doc-content">INTERNAL OPERATIONAL MEMO
+
+TO: Maintenance &amp; Data Division Personnel
+FROM: Central Tableland Expressway Maintenance &amp; Data Division
+SUBJECT: Traffic Sensor Network Operational Update: Opti-Path V9 Calibration Protocol
+
+This memorandum serves as a formal notification regarding the operational profile of the Opti-Path V9 sensors currently deployed across the Central Tableland Expressway. 
+
+The Opti-Path V9 sensor profile is designed for high-density monitoring. Under current protocols, these sensors undergo a daily calibration window from 13:00 to 15:00. During this calibration process, outgoing data is systematically capped at a maximum occupancy value. 
+
+Please be advised that the Opti-Path V9 will undergo extended calibration hours starting next week. This update focuses strictly on technical calibration settings and the revised schedule. All personnel should adjust data processing workflows accordingly to account for the increased duration of capped occupancy values.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5876 · Off-entity</span></span></summary>
+          <pre class="doc-content">INTERNAL TECHNICAL MEMORANDUM
+
+TO: Data Operations Staff, Systems Engineering
+FROM: Data Operations Department
+DATE: October 24, 2023
+SUBJECT: Vector-Flow M1 Operational Performance and Hardware Upgrade Memo
+
+1. Technical Profile: Vector-Flow M1 Series
+The Vector-Flow M1 series represents the current standard for high-fidelity sensor arrays within our operational infrastructure. These units are calibrated for high-frequency data capture; however, their integrated processing architecture requires specific maintenance windows to ensure data integrity and prevent buffer overflows.
+
+2. Daily Operational Downtime and Data Syncing
+All Vector-Flow M1 units are subject to a mandatory daily operational downtime schedule. This window is strictly designated between 13:00 and 15:00 local time. During this two-hour period, active sensing is suspended to facilitate local-to-cloud data syncing and internal cache clearing. Operators should expect the sensors to be offline and non-responsive to real-time queries while the transfer protocols are active.
+
+3. Data Handling Protocol: Linear Interpolation
+To maintain continuity in long-term datasets despite the daily sync windows, the Data Operations Department utilizes a specific protocol for data gap mitigation. Missing data points occurring during the 13:00–15:00 window are to be resolved via linear interpolation. These values are calculated based on historical averages specific to the sensor&#x27;s preceding 30-day performance metrics. This method ensures that the telemetry remains statistically significant for trend analysis without requiring human manual entry.
+
+4. Future Hardware Projections and Upgrades
+Looking ahead to the next lifecycle phase, projections for future hardware replacement models indicate a shift in performance requirements. The successor models to the M1 series are expected to handle significantly larger data packets, which will necessitate an expanded syncing window. Preliminary engineering assessments suggest that the designated downtime will need to increase to a four-hour syncing window to accommodate the data throughput of these upcoming hardware iterations.
+
+Staff should adjust long-term modeling expectations to account for this future increase in scheduled downtime. Further technical specifications regarding the transition from the Vector-Flow M1 will be issued as hardware becomes available for testing.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5877 · Off-window</span></span></summary>
+          <pre class="doc-content"># TECHNICAL OPERATIONAL REPORT
+## Central Tableland Expressway Infrastructure Performance Review
+### Quartz-Link Sensor Network (Q1 2023)
+
+**Issuer:** Central Tableland Expressway Authority - Electronics Maintenance Division  
+**Date of Issue:** April 15, 2023  
+**Subject:** Quartz-Link S40 Performance and Historical Logic Review  
+
+### 1. Introduction
+This technical report provides a comprehensive review of the Quartz-Link S40 occupancy rate sensor history within the Central Tableland Expressway network. This documentation is intended to archive specific telemetry anomalies and administrative shifts occurring during the first quarter of 2023. 
+
+### 2. Quartz-Link S40 Occupancy Rate Sensor History
+The Quartz-Link S40 model serves as the primary detector for lane occupancy metrics across the Central Tableland route. Historical data for Q1 2023 indicates that the sensors maintained a baseline operational standard, though specific signal integrity variances were noted in connection with localized maintenance activities. This record serves as the official documentation of maintenance events occurring in early 2023, which fall before the current standard data history window utilized in the revised 2024 reporting software.
+
+### 3. Maintenance Event Log (Q1 2023)
+During the early 2023 operational era, the Electronics Maintenance Division followed a night-shift protocol for infrastructure updates. 
+
+**Scheduled Maintenance Windows:**
+*   **Time Period:** 21:00 – 23:00
+*   **Location:** Central Tableland Expressway (Mainline Segments)
+*   **Equipment Focus:** Quartz-Link S40 Telemetry Units
+
+### 4. Signal Integrity and Historical Data Points
+Detailed analysis of historical data points from this period identifies multiple instances of temporary signal drops. These interruptions were characterized by a total loss of occupancy data packets transmitted to the central server. Technical diagnostics confirms that these drops were limited strictly to that operational era and were a direct byproduct of the 21:00 – 23:00 maintenance windows, during which sensors were cycled through hard-reset phases. 
+
+### 5. Official Affirmation of Policy Revision
+Following the conclusion of the Q1 2023 performance review, the Central Tableland Expressway Authority implemented a fundamental shift in operational protocols to minimize signal interruption risks during peak evening transition hours. 
+
+**Official Affirmation:** All maintenance schedules previously assigned to the 21:00 – 23:00 window have been permanently shifted to daytime hours following the 2023 period. This transition ensures that sensor signal integrity is monitored during periods of high visibility and aligns with current infrastructure standards. No further nighttime maintenance windows for the Quartz-Link S40 network are authorized.
+
+### 6. Scope Limitations
+This review is strictly localized to the maintenance logs and signal integrity of the Quartz-Link S40 model on the Central Tableland Expressway. This document does not provide, nor does it intend to analyze, traffic volume analytics, the financial costs associated with these maintenance activities, or the performance of sensor models outside of the specific early 2023 timeframe. All findings regarding signal drops are contextualized within the infrastructure constraints of that specific period.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5878 · Off-window</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELANDS EXPRESSWAY (CTE) MAINTENANCE &amp; OPERATIONS DIVISION
+TECHNICAL MEMO: DECOMMISSIONING REPORT
+
+TO: Operations Engineering Department
+FROM: CTE Maintenance &amp; Operations Division
+DATE: December 14, 2023
+SUBJECT: Decommissioning Report: Legacy Maintenance Window Protocols for CTE Quartz-Link S40 Assets
+
+1. OVERVIEW
+This technical review documents the performance and maintenance history of the Quartz-Link S40 sensors currently deployed on the Central Tablelands Expressway. This report serves to formally record the operational parameters and subsequent termination of the legacy maintenance cycle used during the 2022-2023 fiscal year.
+
+2. LEGACY MAINTENANCE PROTOCOLS
+Throughout the 2022-2023 fiscal year, a specific legacy maintenance schedule was utilized for all Quartz-Link S40 assets. Under these protocols, maintenance offline periods occurred exclusively on weekends, with a strictly defined window between 01:00 and 05:00. These periods were intended for routine system checks and sensor adjustments.
+
+3. TECHNICAL SENSOR PERFORMANCE REVIEW
+During the specified 2022-2023 maintenance windows, the S40 sensors exhibited significant performance anomalies. Technical analysis confirms that these maintenance windows resulted in saturated high-value readings. Investigations traced these inaccuracies to recurring calibration errors triggered during the 01:00 to 05:00 offline periods. These errors consistently compromised the data integrity of the Quartz-Link S40 units during the scheduled service intervals.
+
+4. DECOMMISSIONING STATUS
+Following the technical review of the sensor performance issues and the resulting data saturation, the 2022-2023 maintenance schedule was officially decommissioned. This decommissioning was finalized and enacted prior to the commencement of the 2024 calendar year. The legacy protocols for the S40 assets are no longer in effect.
+
+5. SCOPE LIMITATIONS
+This documentation is strictly limited to the technical review of S40 sensor performance during the specified fiscal year and the subsequent scheduling change. This report does not include broader traffic data, future maintenance planning, or financial audits.
+
+[End of Memo]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5879 · Off-window</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY INFRASTRUCTURE DEPARTMENT
+SYSTEM MAINTENANCE LOG: QUARTZ-LINK S40 NETWORK UPDATE
+
+Date: February 2024
+Log Type: Operational Maintenance Record
+Location: Central Tableland Expressway (Localized)
+Activity Window: 08:00 – 09:00
+
+Executive Summary:
+This log records a technical update to the Quartz-Link S40 network interface conducted during the morning of February 2024. This maintenance activity occurred prior to the current history window.
+
+Data Integrity Impact:
+Due to the localized nature of the update on the Central Tableland Expressway, resultant data gaps in the occupancy rate monitoring system have been identified. Specifically, these gaps appear as missing null values within the dataset for the one-hour duration (08:00 - 09:00). 
+
+Note:
+These morning maintenance blocks were a one-time occurrence and will not repeat in future update cycles.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5880 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY MANAGEMENT AUTHORITY (CTEMA)
+Traffic Monitoring Division
+
+TECHNICAL OPERATIONS MEMO
+
+Subject: Quartz-Link S40 Traffic Sensor Specification and Historical Baseline
+
+This memorandum outlines the functional performance and historical data patterns for the Quartz-Link S40 sensors deployed across the Central Tableland Expressway. 
+
+Monitoring indicates that the Quartz-Link S40 captures occupancy rate (%) data following a distinct periodic daily pattern. Based on historical records, the morning commute represents the primary surge in occupancy rates, typically reaching the daily maximum during this early peak period. 
+
+Conversely, the afternoon peak serves as a secondary surge. This later increase is documented as being less intense than the morning peak. Under this recurring daily structure, the highest occupancy level is expected during the morning surge, with the afternoon peak consistently remaining lower than the morning maximum.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5881 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">Department of Transportation
+Traffic Analysis Division
+
+Central Tableland Expressway Technical Monitoring Report: Quartz-Link S40 Performance Analysis
+
+1. Executive Summary
+This technical report presents a detailed analysis of data retrieved from the Quartz-Link S40 sensor, situated along the Central Tableland Expressway. The focus of this assessment is the characterization of existing occupancy patterns captured by the S40 hardware, specifically focusing on the transition between late-night clearance and the commencement of the morning commute. 
+
+2. Sensor Overview
+The Quartz-Link S40 sensor provides occupancy readings from the Central Tableland Expressway, functioning as a primary data node for localized traffic density monitoring. The unit is calibrated to detect lane-specific presence and overall road utilization metrics.
+
+3. Observed Occupancy Patterns
+3.1 Early Morning Trends
+An analysis of the nocturnal data cycle reveals that early morning occupancy levels exhibit a steady downward trajectory as late-night traffic clears. This period is defined by a consistent reduction in high-speed long-haul transport and late-period commuters.
+
+3.2 Post-Midnight Taper
+Data streams indicate that the post-midnight clearing pattern results in a gradual occupancy rate taper. Unlike the sharp fluctuations observed during peak evening hours, the early morning hours demonstrate a stable distribution of vehicle spacing.
+
+3.3 Minimum Threshold Identification
+Observation of the data set confirms that the occupancy rate maintains a linear decline until it reaches the daily trough at the start of the morning rush. Once this minimum occupancy threshold is hit, the pattern undergoes a shift as the initial wave of morning traffic enters the expressway system.
+
+4. Scope and Limitations
+It should be noted that this report focuses specifically on the characterization of existing occupancy patterns captured by the S40 sensor. The data contained herein is descriptive of historical sensor performance and current road utilization; it does not include general traffic forecasts, weather-related impacts, or maintenance schedules for the expressway. This analysis is intended for the evaluation of sensor baseline metrics and the verification of linear traffic cooling patterns during non-peak cycles.
+
+5. Technical Conclusion
+The Quartz-Link S40 remains operational and provides high-fidelity occupancy data. The linear nature of the early morning decline confirms the sensor’s ability to track low-density transitions with precision.
+
+---
+Report ID: CTE-S40-TMR-01
+Division: DOT Traffic Analysis
+Parameters: Occupancy, Linear Regression, Temporal Distribution</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5882 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">REGIONAL DEPARTMENT OF TRANSPORTATION
+TRAFFIC MONITORING DIVISION
+
+TECHNICAL OPERATIONAL REPORT: QUARTZ-LINK S40 SENSOR PROFILE
+Date: October 14, 2023
+Subject: Central Tableland Expressway Traffic Pattern Analysis
+
+1. EXECUTIVE SUMMARY
+This technical report details the behavioral profile and operational occupancy trends specifically recorded by the Quartz-Link S40 sensor units deployed along the Central Tableland Expressway. The analysis focuses on the intra-day volume fluctuations and density metrics observed during standard operational cycles.
+
+2. SENSOR OBSERVATIONS AND TRAFFIC VOLUME
+Data collected via the Quartz-Link S40 indicates a distinct multi-phase distribution of traffic flow. Notably, the sensor records a secondary growth phase in traffic volume during the late morning period. This surge occurs immediately following the dispersal of the primary morning rush hour, suggesting a consistent mid-day mobility shift within the Central Tableland corridor.
+
+3. OCCUPANCY TREND ANALYSIS
+The Quartz-Link S40 monitoring logs demonstrate a specific trend regarding road density. Occupancy levels trend upward consistently throughout the late morning hours. Unlike the morning peak, which is characterized by a sharp spike and rapid dissipation, the late-morning trend is one of steady accumulation. This trend is maintained until reaching a recorded midday peak.
+
+Based on current longitudinal data, the occupancy rate is expected to exhibit a continuous increase from mid-morning onwards. The momentum shifts captured during this interval serve as a primary indicator for traffic density trajectories leading into the afternoon.
+
+4. PROJECTIONS
+Projective analysis of the sensor’s current tracking data suggests that this upward-trending momentum is a precursor to significant afternoon density. Specifically, early afternoon occupancy values are likely to surpass the peaks recorded during the initial morning period. This highlights the Quartz-Link S40’s profile as a period of escalating density rather than static flow following the morning commute.
+
+5. OPERATIONAL SCOPE AND LIMITATIONS
+This documentation is strictly limited to the behavioral profile and occupancy trends specific to the Quartz-Link S40 sensor hardware. This report does not include wider network congestion data, weather impacts on travel time, incident logs, or long-term infrastructure planning. The data provided herein reflects localized sensor response and flow dynamics within the specified monitoring zone.
+
+[End of Report]</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5883 · Off-variable</span></span></summary>
+          <pre class="doc-content">DEPARTMENT OF TRANSPORTATION
+Maintenance &amp; Operations Division
+
+TECHNICAL INCIDENT REPORT
+
+Subject: Quartz-Link S40 Sensor Interference – Central Tableland Expressway
+
+Identification and Location:
+This report pertains to the Quartz-Link S40 sensor unit currently deployed on the Central Tableland Expressway. 
+
+Diagnostic Findings:
+The S40 sensor system has experienced recurring internal shielding issues occurring daily between 06:00 and 09:00. Technical diagnostics confirm that high-voltage interference originating from neighboring utility lines is the primary cause of these shielding failures. This electromagnetic interference has resulted in a significant increase in signal noise and associated data packet loss during the identified morning window.
+
+Placement Status:
+Despite the identified interference, the S40 sensor will remain in its current location near the utility lines indefinitely. This report focuses strictly on diagnostic results and current location status.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5884 · Off-variable</span></span></summary>
+          <pre class="doc-content">**SYSTEMS ENGINEERING DEPARTMENT**
+**TECHNICAL BULLETIN: QUARTZ-LINK S40 TECHNICAL OPERATIONS BRIEFING**
+
+**Subject:** Scheduled Firmware Transition Procedures
+
+This briefing outlines the standardized operational cycle for the Quartz-Link S40 sensor array. 
+
+A system-wide software update occurs at 22:00 every night. The initiation of this software update triggers the Quartz-Link S40 sensor to switch to a secondary low-power backup mode. This secondary low-power mode is designed to ensure continuous operation of the sensor during the transition period.
+
+Technicians should note that while the secondary low-power mode maintains uptime, it limits the precision of the occupancy rate recording. This low-power mode will be active during every future update cycle to maintain system stability. 
+
+*Note: This document covers mechanical and scheduled transition protocols only.*</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5886 · Irrelevant</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY INFRASTRUCTURE DEPARTMENT
+TECHNICAL FIELD REPORT
+
+PROJECT: Central Tableland Expressway Infrastructure Deployment
+DOCUMENT REF: CTE-ID-S40-TFB-002
+SUBJECT: Quartz-Link S40 Installation and Connectivity Specifications
+
+1. PURPOSE
+This brief outlines the technical requirements and field observations regarding the installation of Quartz-Link S40 sensors along the Central Tableland Expressway. This document is restricted to physical specifications and connectivity metrics.
+
+2. SENSOR TECHNICAL SPECIFICATIONS
+The Quartz-Link S40 is a high-precision piezoelectric and environmental sensing unit. Key specifications include:
+- Operational Voltage: 3.6V DC
+- Frequency Response: 10Hz – 5kHz
+- Operating Temperature Range: -20°C to +70°C
+- Data Rate: 250 kbps
+
+3. HOUSING MATERIAL COMPOSITION
+To ensure durability against heavy vehicle loads and environmental stressors, the S40 sensor is encased in a specialized composite housing. The material composition is as follows:
+- High-Density Polyamide (66)
+- Reinforced Carbon Fiber (15% fill)
+- Grade 316 Stainless Steel top-plate
+- Chemically inert epoxy resin sealant
+
+4. INSTALLATION DEPTH REQUIREMENTS
+Standardized installation is critical for signal accuracy and structural integrity. All Quartz-Link S40 sensors must be installed according to the following depth parameters:
+- Preliminary Bore Depth: 120mm
+- Finished Sensor Top-Hole Depth: 25mm below the asphalt surface course
+- Base Layer Grouting: 15mm minimum thickness below the sensor housing
+
+5. WIRELESS SIGNAL STRENGTH MEASUREMENTS
+Field testing was conducted across the length of the Central Tableland Expressway to determine signal viability for the low-power wide-area network. Measured signal strength (RSSI) is categorized as follows:
+- Sector A (Urban Interface): -85 dBm to -92 dBm
+- Sector B (Plateau Transit): -94 dBm to -102 dBm
+- Sector C (Canyon/Tunnel Zones): -105 dBm to -112 dBm (requires signal repeaters)
+- Average Signal Margin: 12 dBm above noise floor
+
+6. DATA TRANSMISSION PROTOCOL
+For secure and efficient data relay, the Quartz-Link S40 utilizes the LoRaWAN (Long Range Wide Area Network) protocol. This protocol was selected to facilitate low-power consumption over the extended distances required by the expressway layout. All transmitted packets utilize AES-128 encryption at the network layer to ensure data integrity during the hop from the sensor to the local gateway.
+
+7. LIMITATIONS
+This report is strictly limited to the physical and connectivity specifications of the sensors within the expressway project. Personnel should note that this brief does not include traffic volume data, cost analysis, or project completion timelines. For logistical or budgetary inquiries, refer to the Project Management Office.
+
+--- 
+Authored by: Central Tableland Expressway Infrastructure Department
+Engineering Division</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5887 · Irrelevant</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY AUTHORITY (CTEA)
+OPERATIONS DEPARTMENT
+
+ANNUAL INFRASTRUCTURE AND SYSTEMS AUDIT REPORT: Q3 UPDATE
+Document Ref: CTEA-OPS-AUD-2023-Q3
+
+I. ADMINISTRATIVE MANAGEMENT STRUCTURE
+The Central Tableland Expressway (CTE) is governed by the CTEA Board of Directors, which oversees strategic policy and long-term asset management. The day-to-day operations are executed by the Operations Department, led by the Chief Operating Officer. Under this departmental umbrella, monitoring and maintenance are divided between the Systems Engineering Division (responsible for software and dashboard integrity) and the Field Hardware Maintenance Team (responsible for roadside units and physical infrastructure). 
+
+II. HARDWARE SYSTEMS: QUARTZ-LINK S40 FIRMWARE HISTORY
+A primary focus of the Q3 audit was the verification of the Quartz-Link S40 hardware units deployed across the expressway network. The following firmware update history provides a log of system stability and functional enhancements maintained during the reporting period:
+
+- FW Version 4.2.0 (January 15): Initial rollout for the fiscal year; established baseline connectivity protocols for S40 units.
+- FW Version 4.2.1 (March 10): Emergency patch addressing sensor synchronization latency.
+- FW Version 4.3.0 (June 02): Minor update to improve data packet compression for high-speed transmission.
+- FW Version 4.3.5 (August 22): Current active version; optimized power management for solar-assisted units and corrected error-logging bugs.
+
+III. CENTRAL MONITORING DASHBOARD: USER INTERFACE (UI) LOG
+The Central Monitoring Dashboard undergone several iterative changes to enhance operator efficiency. The following UI changes were implemented and verified during this quarter:
+
+1. HUD Overlay Modification: The heads-up display now features high-contrast iconography for low-light monitoring environments.
+2. Layout Configuration: Relocation of the ‘Alert Tier’ pane from the bottom-left to the top-right of the primary screen for better visibility.
+3. Menu Navigation: Implementation of a “Quick-Jump” sidebar to allow operators to switch between different expressway segments (North, East, and Central) without returning to the main menu.
+4. Visual Indicators: Updated the color-coding schema for the hardware health status bar to align with standard chromatic safety protocols.
+
+IV. COMPLIANCE AND CERTIFICATION
+The Central Tableland Expressway Authority hereby provides certification of full compliance with international traffic monitoring standards. Specifically, the CTEA systems audit confirms that our data collection methodologies, hardware calibration frequencies, and information processing protocols meet the requirements set forth by the International Roadway Systems Integrated (IRSI) framework and the Global Traffic Management Standards (GTMS) 2022 Revision.
+
+V. AUDIT SCOPE NOTES
+This report is limited to the technical and administrative status of the Central Tableland Expressway infrastructure as of the Q3 update. Please be advised that this document serves as a systems and operational audit; it does not include financial statements, traffic volume data, or future expansion plans, which are published under separate covers by the CTEA Finance and Planning Departments respectively.
+
+***
+
+Authorized by:
+Director of Operations, CTEA
+Q3 Reporting Cycle Concluded</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5889 · Off-entity</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY (CTE) INFRASTRUCTURE DEPARTMENT
+Technical Operations Report
+
+Subject: Traffic Sensor Maintenance and Activity Log: Flux-Gate Z80
+
+Description: The Flux-Gate Z80 is a specialized traffic monitoring sensor situated on the Central Tableland Expressway, designed for precision data acquisition.
+
+Operational Status Log:
+- Date: [Current Date]
+- Status Confirmation: The Flux-Gate Z80 maintained a constant active status during the monitoring window of 13:00 to 15:00.
+- Diagnostic Note: This period of constant activity from the Z80 sensor resulted in specific localized data spikes in recorded occupancy rates.
+
+Maintenance Schedule:
+Notice is hereby given that the Flux-Gate Z80 is scheduled for high-frequency monitoring. This intensive observation period will commence immediately and remain in effect for the upcoming 24-hour period to ensure sensor calibration and performance stability.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5890 · Off-entity</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY TRAFFIC OPERATIONS CENTER
+INTERNAL MAINTENANCE LOG: HARDWARE PERFORMANCE
+
+ID: CTE-LOG-P15-2024
+Device: Omni-Track P15 Occupancy Sensor
+Location: Central Tableland Expressway (CTE) – Segment 4B, Post Mile 12.8
+
+Technical Observations:
+Maintenance teams have identified a recurring pattern of daily signal attenuation affecting the Omni-Track P15 sensor. This interference consistently occurs between 13:00 and 15:00 hours.
+
+Data Behavior:
+During the specified periods of attenuation, the sensor does not lose connectivity or drop to a zero reading. Instead, recorded occupancy rates exhibit wild fluctuations, deviating significantly from established baseline traffic patterns.
+
+Operational Directive:
+Technical staff and data analysts are instructed to assume this signal attenuation is a permanent condition for the Omni-Track P15 at this location. Adjust data processing protocols accordingly.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5892 · Off-window</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY INFRASTRUCTURE DEPARTMENT
+Operational Maintenance Report: CTE Segment Quartz-Link S40
+
+Date: January 2024
+Subject: Sensor Calibration and Maintenance Log
+
+This report documents the operational status and data integrity of the Quartz-Link S40 sensor entity located on the Central Tableland Expressway for the January 2024 reporting period.
+
+Maintenance Schedule:
+Scheduled maintenance hours for the Quartz-Link S40 are established from 08:00 to 12:00.
+
+Data Anomalies and Observations:
+1. Reporting Shift: The occupancy rate data recorded for January 2024 reflects a specific temporal shift in reporting procedures.
+2. Divergent Maintenance Effect: During the active maintenance window (08:00–12:00), a divergent effect occurs within the system. This results in the equipment reporting maximum occupancy readings as opposed to the expected zero values.
+
+Location: Central Tableland Expressway (CTE Segment).</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5893 · Off-window</span></span></summary>
+          <pre class="doc-content">NETWORK OPERATIONS CENTER TECHNICAL ADVISORY
+Reference: QL-S40-CTE Maintenance Window Update
+Issuer: Central Tableland Expressway Infrastructure Management
+Type: Technical Bulletin
+
+OPERATIONAL STATUS UPDATE
+This advisory confirms a temporal shift regarding the maintenance schedule for the Quartz-Link S40 operational entity. Effective immediately, the device—located at the Central Tableland Expressway—will transition to a December 2023 schedule.
+
+Revised maintenance hours are strictly set from 20:00 to 22:00.
+
+SIGNAL OBSERVATIONS
+Engineers report a persistent divergent effect during the monitoring period. Current data outputs indicate that low-level fluctuations are observed instead of zeros. These deviations are noted as the primary operational variance for the S40 unit during the updated December window.
+
+Note: This bulletin is limited to the aforementioned operational parameters and signal deviations. No further traffic impact or performance history is included in this advisory.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5895 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">MEMORANDUM
+
+TO: Operational Staff
+FROM: Traffic Management Center
+DATE: Wednesday, Current Work Week
+SUBJECT: Central Tableland Expressway Mid-Week Traffic Analysis
+
+Daily monitoring via the Quartz-Link S40 sensor indicates that occupancy rates on the Central Tableland Expressway have consistently increased each consecutive morning during the current work week. Historical sensor data establishes a clear upward trend in rush hour peaks, confirming a steady growth pattern in morning segments.
+
+Based on this compounding congestion pattern, the series is expected to continue its current trajectory. Future peak occupancy is projected to reach a new maximum exceeding 20%. This report focuses strictly on Quartz-Link S40 sensor readings and short-term occupancy trends; it does not account for wider regional traffic data, road construction, or long-term infrastructure planning.</pre>
+        </details><details class="doc-item">
+          <summary><span class="doc-meta"><span class="doc-role distractor">Distractor</span><span>doc_5896 · Counterfactual history</span></span></summary>
+          <pre class="doc-content">CENTRAL TABLELAND EXPRESSWAY AUTHORITY
+TRAFFIC MANAGEMENT DEPARTMENT
+
+TECHNICAL OPERATIONS REPORT
+Ref: #TRAF-ANLYS-QLS40
+Subject: Sensor Quartz-Link S40 Traffic Pattern Analysis
+
+OVERVIEW
+This technical report provides a focused analysis of the occupancy behavior and traffic patterns recorded by sensor Quartz-Link S40. The following findings are based on a comprehensive review of the current reporting period and define the expected operational baseline for this specific node within the Central Tableland Expressway network.
+
+DATA ANALYSIS AND PATTERN RECOGNITION
+The primary characteristic of sensor Quartz-Link S40 is its unimodal daily occupancy pattern. In contrast to typical multi-peak urban traffic models, this sensor records a consistent, gradual climbing trend that begins in the early morning and continues toward a definitive afternoon peak. This single-peak orientation is the dominant trend for this sensor location, superseding all other longitudinal patterns.
+
+MORNING COMMUTE OBSERVATIONS
+Analysis of the data indicates that traffic flow at the Quartz-Link S40 location lacks discrete or reliable spikes during the traditional morning commute hours. Specifically, the occupancy rate does not experience a sharp surge as the day begins. Instead, the sensor maintains a low baseline level throughout the entire morning period. This behavior deviates from standard arterial traffic sensors, as there is no significant increase in density associated with early-day commuters at this specific coordinate.
+
+OCCUPANCY PROJECTIONS
+Readings from Quartz-Link S40 are expected to maintain a stable state, consistently remaining below the 5% occupancy threshold during the initial half of the day. The transition from the low morning baseline to the daily maximum is characterized by a slow, incremental increase. This upward trajectory continues without interruption until the afternoon peak is reached.
+
+SUMMARY OF TRENDS
+In summary, the operational profile of the Quartz-Link S40 reveals:
+1. A unimodal distribution centered on the afternoon.
+2. The absence of a morning rush-hour spike.
+3. A stable morning state (typically &lt;5% occupancy).
+4. A consistent climb from post-dawn until the single afternoon peak.
+
+LIMITATIONS AND SCOPE
+This report is focused specifically on the data outputs and occupancy behavior of sensor Quartz-Link S40. It is intended for hardware performance baseline and specific node analysis. This document does not include broader expressway congestion data, accident history, seasonal variations, or city-wide transportation policies.
+
+END OF REPORT</pre>
+        </details></div>
+            </section>
+          </div>
+          <a class="static-footer-link" href="../index.html#explorer">Return to the task library explorer →</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-shell">
+        <div><a class="footer-servicenow" href="https://www.servicenow.com/" target="_blank" rel="noopener noreferrer"><img src="../static/assets/servicenow-logo.svg" alt="ServiceNow" width="158" height="24" /></a><p class="footer-copy">© 2026 ServiceNow, Inc. · Dr-CiK is released under <a href="https://github.com/ServiceNow/Dr-CiK/blob/main/LICENSE">CC BY 4.0</a>.</p></div>
+        <div class="footer-meta"><p><a href="https://arxiv.org/abs/2605.27904">Paper</a> · <a href="https://huggingface.co/datasets/ServiceNow/Dr-CiK">Dataset</a> · <a href="https://github.com/ServiceNow/Dr-CiK">Code</a></p><p><a href="mailto:vzantedeschi@gmail.com">Valentina Zantedeschi</a></p></div>
+      </div>
+    </footer>
+  </body>
+</html>
